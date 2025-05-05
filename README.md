@@ -1,1 +1,1 @@
-# book
+# placeholder repo for the book
