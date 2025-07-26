@@ -1,0 +1,10 @@
+<script>
+  //find all citation links which are abolute links and make them relative (so they copy better into the blog)
+  //they look like https://thewebsite#ref-jin2026 and leave only #ref-jin2026
+  document.addEventListener("DOMContentLoaded", function () {
+    const currentPage = window.location.pathname.split("/").pop();
+    document.querySelectorAll("a[href^='" + currentPage + "#ref-']").forEach(link => {
+      link.setAttribute("href", link.getAttribute("href").replace(currentPage, ''));
+    });
+  });
+</script>
