@@ -6,7 +6,7 @@ bibliographystyle: apa # or whatever style we want here
 toc: true
 ---
 
-## Authors: Charlotte Desvages, Brittany Blankinship, Umberto Noè, Pawel Orzechowski
+## Authors: Charlotte Desvages, Pawel Orzechowski, Brittany Blankinship, Umberto Noè
 
 In this chapter we will share our experiences with a structured group work format that we believe fosters student engagement, well-being, and transferable skills.
 
