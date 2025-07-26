@@ -10,7 +10,6 @@ format:
             file: _theme/accessibility.html
         grid:
           margin-width: 350px
-        include-in-header: fix-citation.html
 
 website:
     title: "TODO: put a book title here"
