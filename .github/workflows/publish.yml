@@ -48,5 +48,8 @@ jobs:
           git add .
           git commit -m "Deploy to GitHub Pages" || echo "No changes to commit"
           git push --force "https://${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" gh-pages
+          echo 'page should be at: https://teaching-programming.github.io/book/'
+          
+      
           
 
