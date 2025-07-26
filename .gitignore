@@ -1,3 +1,19 @@
+# quarto
+/.quarto/
+/_site/
+
+#operating systems
+# Windows
+Thumbs.db
+desktop.ini
+
+# OS X
+.DS_Store
+.Spotlight-V100
+.Trashes
+._*
+
+
 # History files
 .Rhistory
 .Rapp.history
