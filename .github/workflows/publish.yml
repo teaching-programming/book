@@ -28,6 +28,15 @@ jobs:
       - name: files
         run: |
           tree -fi
+          
+      - name: Commit quatro outut to Main
+        run: |
+          # Commit and push changes
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add .
+          git commit -m "Quarto export to docs" || echo "No changes to commit"
+          git push --force "https://${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" main
         
       - name: Deploy to GitHub Pages
         run: |
