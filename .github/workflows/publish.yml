@@ -27,7 +27,7 @@ jobs:
 
       - name: files
         run: |
-          ls -a
+          tree -fi
         
       - name: Deploy to GitHub Pages
         run: |
