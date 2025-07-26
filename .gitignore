@@ -1,7 +1,3 @@
-# quarto
-/.quarto/
-/_site/
-
 #operating systems
 # Windows
 Thumbs.db
@@ -55,13 +51,9 @@ vignettes/*.pdf
 # R Environment Variables
 .Renviron
 
-# pkgdown site
-docs/
-
 # translation temp files
 po/*~
 
 # RStudio Connect folder
 rsconnect/
-
 /.quarto/
