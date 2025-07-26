@@ -1,0 +1,24 @@
+project:
+    type: website
+
+format:
+    html:
+        theme: [cosmo, _theme/atkinson.scss]
+        css: _theme/styles.css
+        include-before-body:
+            file: _theme/accessibility.html
+        grid:
+          margin-width: 350px
+
+website:
+    title: "TODO: put a book title here"
+    margin-header: _theme/_accessibility_sidebar.qmd
+
+book:
+  title: "TODO: put a book title here"
+  author: "TODO"
+  date: "TODO"
+  page-navigation: true
+  chapters:
+    - index.qmd
+    - chapter-pair-programming-groupwork-script.qmd
