@@ -1,0 +1,68 @@
+/* css styles */
+:root {
+    --eye-strain: 0%;
+    --hue-rotate: 0deg;
+    --padding: 0em;
+    --line-spacing: 150%;
+}
+
+@media screen {
+    html {
+        /* the secret sauce - can be tweaked, but sepia should come after brightness to ensure white backgrounds don't stay white */
+        filter: brightness(calc(100% - 0.5*var(--eye-strain))) contrast(calc(100% - 0.5*var(--eye-strain))) hue-rotate(var(--hue-rotate)) saturate(calc(100% + 0.1*var(--eye-strain))) sepia(calc(2 * var(--eye-strain)));
+    }
+}
+
+
+/* Accessibility controls */
+#accessibility-controls {
+    border: 1px solid var(--bs-body-color);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+details > summary {
+    color: var(--bs-body-color);
+}
+
+
+/* Each row in the options */
+.control-group {
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.control-group > label {
+    min-width: 4em;
+}
+
+
+/* Slider width */
+input[type="range"] {
+    width: 8em;
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+}
+
+
+/* Drop-down box */
+select {
+    margin-left: 10px;
+    color: var(--bs-body-color);
+}
+
+
+/* Adaptive main content width and line spacing*/
+#quarto-document-content {
+    padding-left: var(--padding);
+    padding-right: var(--padding);
+    line-height: var(--line-spacing);
+}
+
+
+#resetDefaults {
+    color: var(--bs-body-color);
+}
