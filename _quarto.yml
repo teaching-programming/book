@@ -34,8 +34,8 @@ book:
         search: true
         collapse-level: 1
     margin-header: _theme/_accessibility_sidebar.qmd
-    output_file: teaching_programming_across_disciplines
-    downloads: pdf, epub
+    output-file: teaching_programming_across_disciplines
+    downloads: [pdf, epub]
     chapters:
         - index.qmd
         - part: "First theme"
