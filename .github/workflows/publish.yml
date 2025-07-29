@@ -10,7 +10,7 @@ name: Quarto Publish
 # note: render (but not deploy) can be run this locally, with 'quarto render' in your terminal
 
 jobs:
-  build-deploy-main:
+  build-deploy:
     if: github.event.pull_request.merged == true && github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     permissions:
@@ -18,38 +18,13 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
- 
+
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
- 
-      - name: Render
-        run: quarto render
 
-      - name: files
-        run: |
-          tree -fi
-          
-      - name: Commit quatro outut to Main
-        run: |
-          # Commit and push changes
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add .
-          git commit -m "Quarto export to docs" || echo "No changes to commit"
-          git push --force "https://${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" main
-        
-      - name: Deploy to GitHub Pages
-        run: |
-          # Commit and push changes
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git branch -d gh-pages || true
-          git switch gh-pages || git switch --create gh-pages
-          git add .
-          git commit -m "Deploy to GitHub Pages" || echo "No changes to commit"
-          git push --force "https://${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" gh-pages
-          echo 'page should be at: https://teaching-programming.github.io/book/'
-          
-      
-          
-
+      - name: Render and Publish
+        uses: quarto-dev/quarto-actions/publish@v2
+        with:
+          target: gh-pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
