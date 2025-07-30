@@ -87,5 +87,3 @@ Pair programming has worked in our programming classes, but we very much see the
 
 ## References
 
-::: {#refs}
-:::

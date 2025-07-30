@@ -3,13 +3,15 @@ project:
     output-dir: _book/
     render:
       - "*.qmd"
+    pre-render: touch .nojekyll
+    post-render: rm ./.nojekyll
 
 execute:
     freeze: auto
 
 format:
     html:
-        number-sections: true
+        number-sections: false
         eval: true
         theme: [cosmo, _theme/atkinson.scss]
         css: _theme/styles.css
@@ -40,7 +42,7 @@ book:
         - index.qmd
         - part: "First theme"
           chapters:
-              - chapters/chapter-pair-programming-groupwork-script.qmd
+              - 00-chapter-template.qmd
         - part: "Second theme"
           chapters:
-              - chapters/chapter-template.qmd
+              - 01-chapter-pair-programming-groupwork-script.qmd
