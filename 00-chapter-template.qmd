@@ -8,4 +8,9 @@ bibliography: references.bib
 An example citation [@williams2010pair].
 
 
-## References
+
+::: {.content-visible when-format="html" unless-format="epub"}
+
+## References {.unnumbered}
+
+:::

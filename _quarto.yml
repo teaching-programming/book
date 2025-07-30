@@ -11,7 +11,7 @@ execute:
 
 format:
     html:
-        number-sections: false
+        number-sections: true
         eval: true
         theme: [cosmo, _theme/atkinson.scss]
         css: _theme/styles.css
@@ -26,23 +26,27 @@ format:
             body-width: 900px
             margin-width: 330px
             gutter-width: 30px
+    pdf:
+        include-in-header: _theme/latex_preamble.tex
+        bibliography: references.bib
+    epub:
+        bibliography: references.bib
 
 book:
     title: "Teaching Programming across Disciplines"
-    references: references.bib
+
     page-navigation: true
     sidebar:
         style: "docked"
         search: true
         collapse-level: 1
     margin-header: _theme/_accessibility_sidebar.qmd
+
     output-file: teaching_programming_across_disciplines
     downloads: [pdf, epub]
+
     chapters:
         - index.qmd
-        - part: "First theme"
-          chapters:
-              - 00-chapter-template.qmd
-        - part: "Second theme"
-          chapters:
-              - 01-chapter-pair-programming-groupwork-script.qmd
+        - 00-chapter-template.qmd
+        - 01-chapter-pair-programming-groupwork-script.qmd
+        - 99-bibliography.qmd

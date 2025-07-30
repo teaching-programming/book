@@ -3,6 +3,6 @@ title: "Teaching Programming across Disciplines"
 toc: true
 ---
 
-## TODO: Welcome
+Welcome to our book!
 
 main page? preface? title etc
