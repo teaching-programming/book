@@ -1,0 +1,16 @@
+---
+title: "Chapter title"
+bibliography: references.bib
+---
+
+## First section
+
+An example citation [@williams2010pair].
+
+
+
+::: {.content-visible when-format="html" unless-format="epub"}
+
+## References {.unnumbered}
+
+:::

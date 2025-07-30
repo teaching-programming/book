@@ -1,13 +1,8 @@
 ---
 title: "Teaching Programming across Disciplines"
-format: html
 toc: true
 ---
 
-# TODO: Welcome
+Welcome to our book!
 
 main page? preface? title etc
-
-## Table of Contents
-
-- [Chapter : Structured group work with assigned asymmetrical roles and switching - Lessons from Pair Programming across disciplines](chapter-pair-programming-groupwork-script.qmd)
