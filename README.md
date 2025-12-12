@@ -38,3 +38,25 @@ website:
     title: "Display settings toolbar for Quarto"
     margin-header: _theme/_accessibility_sidebar.qmd
 ```
+
+## Inclusion of math formula
+LaTeX $e^{i \pi} = -1$
+
+## Inclusion of table and image
+
+| Index-based implementation             | Matrix-based implementation               |
+|:--------------------------------------:|:-----------------------------------------:|
+| ![Lattice 1](./chapters/images/ch32/Lattice1.PNG) <br/> `dqxdx[i][j] = (qx[i][j]-qx[i-1][j])/dx`  | ![Lattice 2](./chapters/images/ch32/Lattice2.PNG) <br/> `dqxdx[1:][:] = (qx[1:][:]-qx[0:-1][:])/dx` |
+
+## Multiple-row table
+
+| CivEng                       | CompSci                                                  |
+|------------------------------|----------------------------------------------------------|
+| • Paradigms: imperative, procedural  <br/>   • Object type: concrete, physically meaningful   <br/>  • Action: math and logic operations applied to parameters of the object <br/> |   • Paradigm: object-oriented <br/> • Object type: abstract, blueprint to generate instances <br/> • Action: objects’ methods invoked on instances.         |
+
+## Table and math
+
+| Math  | Code |
+|-------|----------------------------------|
+| $ C_D = \left[ \frac{0.4}{1 + \ln(z_0 / h)} \right]^2$ | `CD = (0.4/(math.log(h/zo)-1))**2` |
+

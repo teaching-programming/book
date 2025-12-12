@@ -26,7 +26,9 @@ CivEng students generally do not encounter any difficulty in implementing a seri
 as well as translating formula to code. For example, in the snippet below, the drag coefficient 
 is readily calculated according to the math equation
 
-...
+| Math  | Code |
+|-------|----------------------------------|
+| $ C_D = \left[ \frac{0.4}{1 + \ln(z_0 / h)} \right]^2$ | `CD = (0.4/(math.log(h/zo)-1))**2` |
 
 CivEng students are well aware of complex engineering formulas and would be willing to write lengthy statements 
 for mathematical expressions. Furthermore, they have adopted the style of naming variables according to 
@@ -35,13 +37,17 @@ the symbolic representation which is widely agreed in the literature.
 A branching construction would not cause much difficulty, this time is to calculate the critical flow velocity. 
 The CivEng student surely does not confuse with units:
 
-...
+| Math  |  Code   |
+|-------|----------------------------------|
+| $$ U_{cr} =\left\lbrace  \begin{array}{ll} {0.19} D_{50}^{0.1} \log(4h/D_{90}) & \text{for }  D_{50} < {0.5} \text{  mm}; \\ {8.5} D_{50}^{0.6} \log(4h/D_{90}) & \text{for } {0.5} \text{ mm}  < D_{50} < 2 \text{ mm}; \end{array} \right. $$ | <pre>if d50 < 0.5E-3: #mm <br/> &nbsp; Ucr=0.19*(d50 ** 0.1) * math.log10(4 * h/d90)<br/> else: <br/>  &nbsp; Ucr=8.5*(d50 ** 0.6) * math.log10(4*h/d90)  </pre> |
 
 The implementation of a mass-conservation equation should not cause too much problem. Here the naive implementation 
 of using a nested list to emulate a 2-D array, which doesn’t seem much performant. But that’s enough for the CivEng 
 who wants to get the job done.
 
-...
+| Math  |  Code   |
+|-------|----------------------------------|
+| $$\frac{\partial z_b}{\partial t} = -(1-n) \left( \frac{\partial q_x}{\partial x} + \frac{\partial q_y}{\partial y}  \right)$$ | <pre>for i in range(1,nrows):<br/> &nbsp; for j in range(1,ncols):<br/> &nbsp; &nbsp; dzbdt[i][j] = -(1-n) * \ <br/>  &nbsp; &nbsp;  &nbsp; &nbsp; ((qx[i][j]-qx[i-1][j])/dx + \ <br/>  &nbsp; &nbsp;  &nbsp; &nbsp; (qy[i][j]-qy[i][j-1])/dy) </pre> |
 
 The use of matrix operations would involve broadcasting and but with gain in performance, usually quoted as 
 some 10 times [@langtangen2006python]. Fortunately, the disadvantage can be overcome with Julia programming. 
@@ -49,7 +55,10 @@ Really, if you were to consider the stencil involved (figure below, where the ar
 the code is more transparent when using an index system with (i±1). When using matrix manipulation, the bounds 
 must be specified correctly in all matrix subscripts. 
 
-...
+| Index-based implementation             | Matrix-based implementation               |
+|:--------------------------------------:|:-----------------------------------------:|
+| ![Lattice 1](./chapters/images/ch32/Lattice1.PNG) <br/> `dqxdx[i][j] = (qx[i][j]-qx[i-1][j])/dx`  | ![Lattice 2](./chapters/images/ch32/Lattice2.PNG) <br/> `dqxdx[1:][:] = (qx[1:][:]-qx[0:-1][:])/dx` |
+
 
 Another source of confusion is due to the concept of “views” in NumPy, for which the submatrix, e.g. 
 `dqxdx[1:][:]` in the snippet above, is a copy of the array `dqxdx`. Surely, this can be explained 
@@ -84,11 +93,9 @@ in both the inner and outer scopes despite that these name would not conflict.
 An important aspect of moving from a CivEng to a programmer is to re-imagining the conceptual model 
 for the system. Compare:
 
-| CivEng                                                                  | CompSci                                                  |
-|-------------------------------------------------------------------------|----------------------------------------------------------|
-| * Paradigms: imperative, procedural                                     | * Paradigm: object-oriented                              |
-| * Object type: concrete, physically meaningful                          | * Object type: abstract, blueprint to generate instances |
-| * Action: math and logic operations applied to parameters of the object | * Action: objects’ methods invoked on instances.         |
+| CivEng                       | CompSci                                                  |
+|------------------------------|----------------------------------------------------------|
+| • Paradigms: imperative, procedural  <br/>   • Object type: concrete, physically meaningful   <br/>  • Action: math and logic operations applied to parameters of the object <br/> |   • Paradigm: object-oriented <br/> • Object type: abstract, blueprint to generate instances <br/> • Action: objects’ methods invoked on instances.         |
 
 Admittedly, it is not easy to persuade the student to adopt an OOP style programming to benefit future use. 
 While for certain disciplines, e.g. chemistry, the notion of class is inherent (class of elements), the CivEng 
