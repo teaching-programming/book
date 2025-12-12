@@ -44,7 +44,7 @@ who wants to get the job done.
 ...
 
 The use of matrix operations would involve broadcasting and but with gain in performance, usually quoted as 
-some 10 times (Langtangen 2008). Fortunately, the disadvantage can be overcome with Julia programming. 
+some 10 times [@langtangen2006python]. Fortunately, the disadvantage can be overcome with Julia programming. 
 Really, if you were to consider the stencil involved (figure below, where the arrows denote subtraction), 
 the code is more transparent when using an index system with (i±1). When using matrix manipulation, the bounds 
 must be specified correctly in all matrix subscripts. 
@@ -54,7 +54,7 @@ must be specified correctly in all matrix subscripts.
 Another source of confusion is due to the concept of “views” in NumPy, for which the submatrix, e.g. 
 `dqxdx[1:][:]` in the snippet above, is a copy of the array `dqxdx`. Surely, this can be explained 
 to the students, but every such issue can add up and discourage the learners. Therefore, an “agreement” 
-might be made beforehand, that the matrix qx here is calculated once and cannot be modified thereafter. 
+might be made beforehand, that the matrix `qx` here is calculated once and cannot be modified thereafter. 
 Or else, you have to switch to another programming language, e.g. MATLAB.
 
 ### Dimension and units in civil engineering
@@ -66,6 +66,74 @@ during computation. Another advantage is that by adhering to the rules of dimens
 naturally familiarise themselves with the type system and therefore will not have much difficulties dealing 
 with languages like C#, Java, Scala, or to go forward and write type annotations in their Python code. 
 
+## Code reuse
+
+Reusing code is actually more difficult to CivEng students than writing new code! During the tutorial, 
+however, students were exposed to a limited amount of prewritten code in the form of Jupyter notebooks only. 
+By reading these Jupyter notebook, the students were able to pick out relevant code cells and run them. 
+They would know which chunks of code should be executed if an error message emerges showing undefined variables. 
+But when the students copy chunks of code from the sample file to their own notebook, renaming variables 
+is often required. Another issue is lexical scoping. Being more acquainted to “physical” objects rather 
+than information “pieces”, CivEng students would insist using different names for variable appearing 
+in both the inner and outer scopes despite that these name would not conflict.
+
+## Code development
+
+### Mental orientation
+
+An important aspect of moving from a CivEng to a programmer is to re-imagining the conceptual model 
+for the system. Compare:
+
+| CivEng                                                                  | CompSci                                                  |
+|-------------------------------------------------------------------------|----------------------------------------------------------|
+| * Paradigms: imperative, procedural                                     | * Paradigm: object-oriented                              |
+| * Object type: concrete, physically meaningful                          | * Object type: abstract, blueprint to generate instances |
+| * Action: math and logic operations applied to parameters of the object | * Action: objects’ methods invoked on instances.         |
+
+Admittedly, it is not easy to persuade the student to adopt an OOP style programming to benefit future use. 
+While for certain disciplines, e.g. chemistry, the notion of class is inherent (class of elements), the CivEng 
+is more inclined to think about real-world entities: a particular building, canal, etc. to be modelled.
+
+## Generalisation
+
+CivEng students understand the use of functions and are adept in translating formulation various 
+calculation routines to functions. So that is pretty enough for generalising code, isn’t it? 
+During a practice session, after having the students to estimate the derivative *f* ′(*x*0) 
+for the specific functions *f*(*x*) \= *x*2 and *f*(*x*) \= cos *x*,  I required them to 
+generalise their `deriv` function to accept any math function. Well, how can? – they doubted, 
+until I showed that we can just incorporate the function under investigation into the function deriv. 
+A first step toward functional programming. 
+
+## Tooling
+
+The students are happy with Jupyter notebooks during class. Syntax highlighting, code auto-completion, 
+and embedded plot outputs are features that are highly appreciated. Nevertheless, a dedicated evironment 
+like VSCode is needed for students who want to develop larger programs with debugging and version control 
+(e.g. Git). 
+
+# Good practices
+
+The list is non-exhaustive yet would be useful for CivEng students who start to develop their code:
+
+* Variable names to follow the literature. When possible, use the unicode characters for Greek letters 
+(subject to the language’s feature – this is favourable for Julia with keyboard shortcuts for such 
+characters/symbols);  
+* Extensive documentation is needed since there are many empirical formulae used in CivEng and 
+the choice of a formula should be justified based on the context.  
+* Whenever the names are cluttered, consider using namespaces; (Knowledge on the engineering specialisation 
+is required.)  
+* If facilitated by the language (in the case of Julia), prefer using loops with index variables 
+(\[*i*±1\]) rather than implicit array position index (\[:\]).  
+* Generalise code with functions  
+* Using an IDE to organise and debug code (first step), and then aim toward collaboration, 
+version control and testing.
+
+In summary, although there are not much material available for CivEng students for code development, 
+there are patterns they may adopt to boost their performance at work. In this chapter, I present 
+some such common patterns. Due to the variety nature of the disciplines that a CivEng may involve, 
+it is by no means to present a single context that they can build programs upon. Rather, I demonstrate 
+a case of water/hydraulic engineering and sediment transport, showcasing field variables, spatial derivatives 
+and implementing a finite difference numerical solution.
 
 ## NB
 
