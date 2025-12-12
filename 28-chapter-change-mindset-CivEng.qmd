@@ -1,0 +1,81 @@
+---
+title: "Change in mindset of civil engineering students toward programming"
+bibliography: references.bib
+---
+
+> Author: Nguyen Q. Chien, the University of Edinburgh
+
+## Introduction
+
+Recent advances in computing allow engineers to use programming more efficiently in their routine tasks. 
+Specifically, students in civil engineering branch (CivEng) have rather firm concept of domain problem 
+and considerable skills in problem solving with the capability of computing. However, the reality 
+is far from job done: translating their manual-solving skill to computer code is non-trivial. 
+In order to do so, they have to change their mindset to produce code that they can reuse and benefit others as well.
+
+This article presents some of my experience in guiding two classes: one with Python and one with Julia. 
+In both classes I focused on the practical aspect of solving a typical engineering problem — 
+calculating the flux of sediment in natural waterbodies (e.g. lakes, rivers) — rather than 
+delving into merits of the two languages nor making any comparison between them.
+
+## Code Implementation
+
+### Logic of calculation
+
+CivEng students generally do not encounter any difficulty in implementing a series of formulae in order, 
+as well as translating formula to code. For example, in the snippet below, the drag coefficient 
+is readily calculated according to the math equation
+
+...
+
+CivEng students are well aware of complex engineering formulas and would be willing to write lengthy statements 
+for mathematical expressions. Furthermore, they have adopted the style of naming variables according to 
+the symbolic representation which is widely agreed in the literature. 
+
+A branching construction would not cause much difficulty, this time is to calculate the critical flow velocity. 
+The CivEng student surely does not confuse with units:
+
+...
+
+The implementation of a mass-conservation equation should not cause too much problem. Here the naive implementation 
+of using a nested list to emulate a 2-D array, which doesn’t seem much performant. But that’s enough for the CivEng 
+who wants to get the job done.
+
+...
+
+The use of matrix operations would involve broadcasting and but with gain in performance, usually quoted as 
+some 10 times (Langtangen 2008). Fortunately, the disadvantage can be overcome with Julia programming. 
+Really, if you were to consider the stencil involved (figure below, where the arrows denote subtraction), 
+the code is more transparent when using an index system with (i±1). When using matrix manipulation, the bounds 
+must be specified correctly in all matrix subscripts. 
+
+...
+
+Another source of confusion is due to the concept of “views” in NumPy, for which the submatrix, e.g. 
+`dqxdx[1:][:]` in the snippet above, is a copy of the array `dqxdx`. Surely, this can be explained 
+to the students, but every such issue can add up and discourage the learners. Therefore, an “agreement” 
+might be made beforehand, that the matrix qx here is calculated once and cannot be modified thereafter. 
+Or else, you have to switch to another programming language, e.g. MATLAB.
+
+### Dimension and units in civil engineering
+
+A particular strength of the CivEng student is having keen eyes on physical quantities. The branching statement 
+presented above show that the student was aware of units and apply corresponding coefficients. The ability 
+to tell the meaning from numbers allow them to check intermediate results and correct potential errors 
+during computation. Another advantage is that by adhering to the rules of dimensions in physics, the student 
+naturally familiarise themselves with the type system and therefore will not have much difficulties dealing 
+with languages like C#, Java, Scala, or to go forward and write type annotations in their Python code. 
+
+
+## NB
+
+An example citation [@williams2010pair].
+
+![Some Caption](/chapters/images/pairprog_chapter_online_ideas.png "Some Title"){fig-alt="Some alt text."}
+
+
+::: {.content-visible when-format="html" unless-format="epub"}
+
+## References {.unnumbered}
+
+:::
