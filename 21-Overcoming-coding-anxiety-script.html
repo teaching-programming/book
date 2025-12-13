@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Bibliography – Teaching Programming across Disciplines</title>
+<title>5&nbsp; Overcoming coding anxiety: learnings and strategies – Teaching Programming across Disciplines</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -50,7 +50,8 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./21-Overcoming-coding-anxiety-script.html" rel="prev">
+<link href="./99-bibliography.html" rel="next">
+<link href="./02-chapter-stats-coding.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -90,6 +91,35 @@ div.csl-indent {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="_theme/styles.css">
 </head>
@@ -103,7 +133,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./99-bibliography.html">Bibliography</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./21-Overcoming-coding-anxiety-script.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Overcoming coding anxiety: learnings and strategies</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -173,13 +203,13 @@ div.csl-indent {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./21-Overcoming-coding-anxiety-script.html" class="sidebar-item-text sidebar-link">
+  <a href="./21-Overcoming-coding-anxiety-script.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Overcoming coding anxiety: learnings and strategies</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./99-bibliography.html" class="sidebar-item-text sidebar-link active">
+  <a href="./99-bibliography.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Bibliography</span></a>
   </div>
 </li>
@@ -237,7 +267,18 @@ div.csl-indent {
 
 </details>
 </div></div>
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#authors-tiago-a.-marques-william-p.-kay1-chris-oldnall1-chris-sutherland1-robert-s.-young1" id="toc-authors-tiago-a.-marques-william-p.-kay1-chris-oldnall1-chris-sutherland1-robert-s.-young1" class="nav-link active" data-scroll-target="#authors-tiago-a.-marques-william-p.-kay1-chris-oldnall1-chris-sutherland1-robert-s.-young1"><span class="header-section-number">5.1</span> Authors: Tiago A. Marques, William P. Kay<span class="math inline">\(^1\)</span>, Chris Oldnall<span class="math inline">\(^1\)</span>, Chris Sutherland<span class="math inline">\(^1\)</span>, Robert S. Young<span class="math inline">\(^1\)</span></a></li>
+  <li><a href="#recognising-and-refocusing-anxiety" id="toc-recognising-and-refocusing-anxiety" class="nav-link" data-scroll-target="#recognising-and-refocusing-anxiety"><span class="header-section-number">5.2</span> Recognising and Refocusing Anxiety</a></li>
+  <li><a href="#building-confidence-through-active-learning" id="toc-building-confidence-through-active-learning" class="nav-link" data-scroll-target="#building-confidence-through-active-learning"><span class="header-section-number">5.3</span> Building Confidence Through Active Learning</a></li>
+  <li><a href="#support-and-collaboration-beyond-the-classroom" id="toc-support-and-collaboration-beyond-the-classroom" class="nav-link" data-scroll-target="#support-and-collaboration-beyond-the-classroom"><span class="header-section-number">5.4</span> Support and Collaboration Beyond the Classroom</a></li>
+  <li><a href="#key-takeaways" id="toc-key-takeaways" class="nav-link" data-scroll-target="#key-takeaways"><span class="header-section-number">5.5</span> Key Takeaways</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -344,7 +385,7 @@ div.csl-indent {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Bibliography</h1>
+<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Overcoming coding anxiety: learnings and strategies</span></h1>
 </div>
 
 
@@ -361,6 +402,66 @@ div.csl-indent {
 </header>
 
 
+<section id="authors-tiago-a.-marques-william-p.-kay1-chris-oldnall1-chris-sutherland1-robert-s.-young1" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="authors-tiago-a.-marques-william-p.-kay1-chris-oldnall1-chris-sutherland1-robert-s.-young1"><span class="header-section-number">5.1</span> Authors: Tiago A. Marques, William P. Kay<span class="math inline">\(^1\)</span>, Chris Oldnall<span class="math inline">\(^1\)</span>, Chris Sutherland<span class="math inline">\(^1\)</span>, Robert S. Young<span class="math inline">\(^1\)</span></h2>
+<p>1 Authors contributed equally and are listed alphabetically.</p>
+<p>Programming or coding anxiety is defined as ‘a psychological state engendered when a student experiences or expects to lose self-esteem in confronting a computing situation’ <span class="citation" data-cites="Connolly2009">(<a href="#ref-Connolly2009" role="doc-biblioref">Connolly, Murphy, and Moore 2009</a>)</span>. Coding anxiety may be driven, in part, by other anxieties such as computer anxiety <span class="citation" data-cites="chua1999computer meinhardt2022computer">(<a href="#ref-chua1999computer" role="doc-biblioref">Chua, Chen, and Wong 1999</a>; <a href="#ref-meinhardt2022computer" role="doc-biblioref">Meinhardt-Injac and Skowronek 2022</a>)</span> or statistics anxiety (<span class="citation" data-cites="Zeidner1991">(<a href="#ref-Zeidner1991" role="doc-biblioref">Zeidner 1991</a>)</span>, amongst others. One may assume that “digital natives” <span class="citation" data-cites="Bennett2008">(<a href="#ref-Bennett2008" role="doc-biblioref">Bennett, Maton, and Kervin 2008</a>)</span> experience a lower level of computer anxiety; this assumption may not naturally translate to coding anxiety <span class="citation" data-cites="nolan2016role">(<a href="#ref-nolan2016role" role="doc-biblioref">Nolan and Bergin 2016</a>)</span>. Indeed, computer anxiety could be attributed to, for example, variable exposure to coding and an over-reliance on connected digital ecosystems during childhood <span class="citation" data-cites="OECD2025">(<a href="#ref-OECD2025" role="doc-biblioref"><em>How’s Life for Children in the Digital Age?</em> 2025</a>)</span>. The attribution of coding anxiety, however, is a more nuanced issue. Different levels of coding anxiety for mathematics and biomedical undergraduate students exist <span class="citation" data-cites="miller2024anxiety">(<a href="#ref-miller2024anxiety" role="doc-biblioref">Miller and Pyper 2024</a>)</span>, with the former finding coding to be more enjoyable, and hence having lower anxiety levels, than the latter. More broadly, student identity and background can also contribute to anxiety-linked barriers to learning, such as gender <span class="citation" data-cites="forrester2022undergraduate">(<a href="#ref-forrester2022undergraduate" role="doc-biblioref">Forrester et al. 2022</a>)</span> or learning in a non-native language <span class="citation" data-cites="kaur2024silent">(<a href="#ref-kaur2024silent" role="doc-biblioref">Kaur and Newell 2024</a>)</span>.</p>
+<p>Given that coding anxiety can be attributed to a variety of sources <span class="citation" data-cites="pan2025conquering">(<a href="#ref-pan2025conquering" role="doc-biblioref">PAN and Harun 2025</a>)</span>, here we draw on our collective experience of teaching coding, provide perspectives on coding anxiety, and offer strategies to mitigate it. We focus specifically on students for whom coding is not their core academic focus, but rather a necessary tool encountered when taking classes involving statistics, data analysis, experimental design, and modelling. It is possible that these students have had no prior exposure to coding, and their initial interactions will define their longer-term relationship with coding, and as a consequence, how they navigate an increasingly data-centric world where coding is an attractive, liberating, and increasingly essential skill.</p>
+</section>
+<section id="recognising-and-refocusing-anxiety" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="recognising-and-refocusing-anxiety"><span class="header-section-number">5.2</span> Recognising and Refocusing Anxiety</h2>
+<p>Anxiety sustains itself through a self-perpetuating cycle <span class="citation" data-cites="mkrtchian2017modeling">(<a href="#ref-mkrtchian2017modeling" role="doc-biblioref">Mkrtchian et al. 2017</a>)</span>. It is believed to start with a trigger (e.g., a bad experience), which leads one to avoid future associated triggers in an attempt to feel some short-term relief <span class="citation" data-cites="hofmann2018rethinking">(<a href="#ref-hofmann2018rethinking" role="doc-biblioref">Hofmann and Hay 2018</a>)</span>. However, such avoidance can lead to heightened anxiety in the long term <span class="citation" data-cites="mkrtchian2017modeling">(<a href="#ref-mkrtchian2017modeling" role="doc-biblioref">Mkrtchian et al. 2017</a>)</span>. Since the brain learns that avoidance temporarily decreases anxiety, even if only momentarily, it may eventually prevent an individual from engaging with the trigger entirely. If the trigger is computer code, then coding becomes something to avoid, and hence coding anxiety is born. In contrast, confronting the trigger can build confidence and reduce anxiety over time <strong>TODO: missing reference : Kampmannetal2019 ? </strong>.</p>
+<p>We believe that recognising learners’ coding anxieties upfront is an important first step towards demystifying it. Once students realise that this is an identified problem common to many, rather than something affecting them alone, they are one step closer to overcoming it. Humour, including self-deprecating jokes, describing how, despite now being the teacher, you once suffered from coding anxiety, can go a long way towards making students feel better. Cartoons may also be an effective way of making anxiety itself less daunting (Figure 1). If existing online content is not enough, and making cartoons is not one’s gift, AI-generated images could easily be created for that purpose - just make sure people have 5 fingers!</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/statsanx_humour.png" class="img-fluid figure-img"></p>
+<figcaption>Figure 1 - An example of a humorous cartoon that normalises coding anxiety (https://www.thesquarecomics.com/)</figcaption>
+</figure>
+</div>
+<p>Given anxiety’s negative feedback loop, the best way to combat anxiety might be to break this vicious cycle (Figure 2). As an instructor or teacher, this can be achieved by providing positive experiences with coding. Importantly, after acknowledging that coding anxiety is real, the solutions should be presented along with how, as a teacher, overcoming their anxiety will be supported. For example, reflecting on their personal experience, the teacher could describe how they became at ease with coding. Such a role model could serve as a powerful catalyst for students to realise they can overcome their own coding anxiety too.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/statsanx-cycle.png" class="img-fluid figure-img"></p>
+<figcaption>Figure 2. The cycle of anxiety. Coding is identified as the trigger and the teacher serves as a diffuser to intervene in multiple places and in multiple ways to break the cycle. Adapted from https://www.mentalyc.com/</figcaption>
+</figure>
+</div>
+<p>Gauging the class’s perception towards coding should prove useful in lowering overall anxiety. Collecting information about a priori fears or causes of anxiety related to one’s course, including - but not exclusively - coding anxiety, as well as course expectations, provides clues to what might be good strategies to adopt. In-class feedback tools like Mentimenter (www.mentimenter.com), allow students to provide feedback, anonymously and in real time, to make the course more accessible in an informal, friendly, and interactive way. This could generate useful ideas, including specific suggestions, for how to reduce anxiety. Additionally, having students reflect on how anxious they are about coding might allow them to identify shared problems and anxieties across the class.</p>
+</section>
+<section id="building-confidence-through-active-learning" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="building-confidence-through-active-learning"><span class="header-section-number">5.3</span> Building Confidence Through Active Learning</h2>
+<p>Early hands-on activities involving code, but not necessarily creating their own code, could prove beneficial by focusing on the end product rather than the means to get there. Even exercises where students simply copy-paste code, without knowing why it does what it does (but being told that later they will be able to code it themselves), could go a long way in reducing anxiety. Such exercises allow students to see how useful coding is for tasks they would like to do, but which would be impossible to do manually. Focusing on the outcomes students are interested in and can relate to makes them less reluctant to learn programming than if they just see it as a barrier. For example, one could take a couple of large datasets linked by a common variable, and ask students to examine the files in a text editor and “understand” the data. Then the students can be given code to produce a captivating visualisation (Figure 3) with relevant insights for the subject matter of their course. Focusing on the reward, rather than the trigger, can lower anxiety <span class="citation" data-cites="Xiao2022">(<a href="#ref-Xiao2022" role="doc-biblioref">Xiao et al. 2022</a>)</span> and hopefully inspire students to create similar outputs themselves.</p>
+<p><strong>TODO: missing image? please keep in mind naming convention</strong></p>
+<p>Fig. 3. Example of a beautiful visualisation created using R (a map of elephant movements through Kruger National Park). Produced by Dr Pratik Gupte (Imperial College London) and reused here with his permission.</p>
+<p>Having fun reduces anxiety in a wide variety of contexts, so why not try it for coding anxiety, too? Coding need not be boring! There are many resources that one can use to showcase how coding can be fun. Having fun coding will mean that when coding becomes required, students’ receptivity to it is increased. R packages like <code>memer</code> and <code>mermery</code> allow meme creation from within R, while generative art packages can produce abstract paintings from code (Figure 4). The R package fun makes games and activities accessible from within the R environment. As an example, the classic game Minesweeper can be played within R via a single line of code defining the size of the area and the number of bombs. All the above can be used to introduce, in an informal setting, the concepts of functions and arguments. At the end of a long coding session, or even during one, package praise can also come in handy. A call to its single function <code>praise()</code> returns positive feedback like “You are wonderful!” or “You are supreme!”. These simple statements often put a smile on students’ faces, and based on our experience, that is halfway towards reducing anxiety. Finally, if students just can’t code but want to “fake it till they make it”, the R function <code>look_busy()</code> in the <code>player</code> package will produce output on the console that will make anyone else believe students are working hard. We have used several of these approaches and provide them as a starting point, but given R is a dynamic and ever-evolving environment, other fun and engaging options must live out there waiting to be used by teachers to help reduce code anxiety.</p>
+<p><img src="images/statsanx_memes.png" class="img-fluid"></p>
+<p>Figure 4. Examples of how R coding can be fun. Top-left: A meme showcasing how memes can reduce code anxiety; this meme can be recreated with 2 lines of code using package “memer”. Top-right: A painting created in “aRtsy”, a generative art R package. Bottom-left: An instance of a minesweeper game created in package “fun”, demonstrating the authors inability to play it. Bottom-centre: An example of an animal that can be drawn in R syntax using the “cowsay” package. Bottom-right: The “CatterPlots” package can be used to generate scatterplots that include cats.</p>
+<p>Live coding can be one of the most effective tools to demystify programming and reduce coding anxiety. When teachers write and run code in real time, narrating their thought process as they go (and getting error messages), they model both the practice and the mindset of coding. Students witness that even experienced coders make mistakes, encounter errors, and debug them systematically. This transparency transforms coding from a mysterious, high-stakes activity into a visible process of exploration, reasoning, and iteration.</p>
+<p>Importantly, the approach taken during live coding matters as much as the content. Speaking aloud while typing, eg, explaining why particular commands are chosen, predicting outputs before running them, and pausing to invite student predictions, turns what might otherwise be a passive demonstration into an interactive learning experience. When an error appears, embrace it as an opportunity to model problem-solving, showing that mistakes are normal, and even useful. Seeing a tutor respond to an error message with curiosity rather than panic can profoundly reframe students’ emotional response to failure.</p>
+<p>To lower anxiety further, live coding should begin with simple, visually rewarding tasks. Plot a small dataset, calculate a mean, or clean a short table. This way, students can follow the logic without feeling overwhelmed by syntax. Gradually, the exercises can build in complexity, moving from replication to modification and finally to creative application. When possible, students can be invited to suggest the next line of code, predict what will happen if a parameter is changed, or even take over the keyboard for short stretches.</p>
+<p>Finally, recording or providing annotated versions of live coding sessions allows students to revisit material at their own pace. This ensures that the spontaneity of live teaching is complemented by the reassurance of reviewable, structured notes. By combining openness, interaction, and a healthy acceptance of mistakes, live coding transforms what might otherwise be a source of anxiety into a collective, confidence-building experience.</p>
+<p>There can be multiple approaches to teaching code and statistical data analysis, and some of these might improve or contribute to coding anxiety (link to chapter Sequential vs.&nbsp;Simultaneous: Approaches to Learning Programming and Statistics). Common wisdom also says that the first step is the hardest for any journey. In our experience, if students start with small, manageable, and clearly described tasks, their initial experience with coding will be positive, which will decrease anxiety levels when facing harder tasks. Therefore, we suggest that students are first given easy-to-follow tasks with step-by-step instructions, allowing confidence to grow. This is consistent with the strategy suggested by <span class="citation" data-cites="Auker2020">Auker and Barthelmess (<a href="#ref-Auker2020" role="doc-biblioref">2020</a>)</span>. Later classes or assignments may contain less detailed guidance or be more open-ended, allowing students to explore their newfound confidence in their coding abilities at their own pace.</p>
+</section>
+<section id="support-and-collaboration-beyond-the-classroom" class="level2" data-number="5.4">
+<h2 data-number="5.4" class="anchored" data-anchor-id="support-and-collaboration-beyond-the-classroom"><span class="header-section-number">5.4</span> Support and Collaboration Beyond the Classroom</h2>
+<p>Coding confidence often grows most effectively outside formal teaching time. Low-pressure practice, whether collaborative or individual, helps students reinforce skills and approach coding with curiosity rather than fear. Teachers can support this by structuring opportunities for independent study and peer interactions that sustain progress between classes. One simple but effective technique is to encourage students to maintain a short ‘coding diary’, allowing for normalisation of occasional frustration and celebration of key achievements.</p>
+<p>The fear of revealing a lack of coding ability can be a powerful barrier, discouraging students from even attempting new exercises and progressing in their learning. Independent work outside the classroom, supported by additional materials, can help overcome this. Providing a list of such resources will help students realise that they can learn on their own and that it will give them a head start. In our experience, a particularly interesting resource comes via the R package <code>swirl</code> (https://swirlstats.com/). Swirl “teaches you R programming and data science interactively, at your own pace, and right in the R console!”. Contents can be explored independently, or by following the prompts of a ‘virtual tutor’ (link to generative AI chapter). Students are amused by a virtual tutor calling them by their name, meaning that they engage with the learning experience in a positive mood.</p>
+<p>Sharing the learning journey with others can be equally powerful. The mantra “a problem shared is a problem halved” can be operationalised while teaching programming via pair-programming (Figure 5 + link to other chapters). Pair-programming might be a useful strategy to lower coding anxiety levels <strong>TODO missing REF Brougham et al.&nbsp;2020</strong>. Nonetheless, these are not universal findings; see <span class="citation" data-cites="Krizsan2024">Krizsan and Lambic (<a href="#ref-Krizsan2024" role="doc-biblioref">2024</a>)</span> for a case where performance was apparently improved, but without a decrease in anxiety levels. Online pair-programming might be less intimidating for some students, although it is not clear whether the benefits associated with live pair-programming apply <span class="citation" data-cites="Hafeez2023">Hafeez et al. (<a href="#ref-Hafeez2023" role="doc-biblioref">2023</a>)</span>.</p>
+<p>AI-assisted pair-programming, where a coder is paired with an AI agent, has become an accessible alternative. It could be used to the same effect as human-human pair-programming <span class="citation" data-cites="Fan2025">(<a href="#ref-Fan2025" role="doc-biblioref">Fan et al. 2025</a>)</span>. This might be easier for students who would otherwise be reluctant to expose their difficulties to a colleague. Nonetheless, while AI-assisted pair-programming has been shown to enhance motivation, reduce anxiety, and even improve performance, it does not fully match the collaborative depth and social presence achieved through human-human pairing <span class="citation" data-cites="Fan2025">(<a href="#ref-Fan2025" role="doc-biblioref">Fan et al. 2025</a>)</span>. <strong>TODO: is this meant to be the same reference?</strong> Regardless of the pair-programming mode considered, we believe that if well thought out and prepared, pair-programing activities can be used to lower coding anxiety levels in a range of students.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/statsanx_pair.png" class="img-fluid figure-img"></p>
+<figcaption>Figure 5. Pair-programming can help lower one’s coding anxiety.</figcaption>
+</figure>
+</div>
+<p>Students can be encouraged to further their learning journey by ‘teaming up’ with peers to continue to pair-programme outside of the classroom environment. It has been observed that this can assist with coding anxiety both through additional assistance in a familiar mode and also through the mechanism of shared endurance and a head-on approach to the anxiety barrier.</p>
+<p>Ultimately, supporting learners beyond the classroom is about fostering autonomy and connection in equal measure. When students know they can access help, whether from peers, teachers, lecturers, or AI tools, they are less likely to interpret difficulties as personal failings. Instead, they begin to view coding as a shared and iterative process that need not come with coding anxiety but natural failure and success routines.</p>
+</section>
+<section id="key-takeaways" class="level2" data-number="5.5">
+<h2 data-number="5.5" class="anchored" data-anchor-id="key-takeaways"><span class="header-section-number">5.5</span> Key Takeaways</h2>
+<p>Coding anxiety is real, especially for students for whom coding is a core part of their disciplinary focus. This barrier should be recognised, and we have a responsibility and opportunity to normalise it in teaching settings and explain why and how the anxiety cycle can be broken. Overcoming coding anxiety should be presented as a personal endeavour, but one that instructors and peers, along with a growing number of resources, will support. As a teacher, effective methods for breaking the anxiety cycle are as pedagogically important as content creation. Moreover, you will become an anxiety diffuser, starting by exploring ways to provide rewards from coding activities. In particular, activities allowing students to see the potential of coding to achieve tasks they are inherently interested in should be considered. Providing encouragement and additional resources for learning how to code, and promoting additional high-rewarding coding activities, are likely to help further. Strategies to share the burden, like pair-programming, could further boost self-confidence in coding. Overall, different audiences and topics will require slightly different approaches, so engaging with students and intervening using strategies discussed above will be fundamental for reducing coding anxiety and improving learning.</p>
+</section>
+<section id="references" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="references">References</h2>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
@@ -369,9 +470,6 @@ Auker, Linda A., and Erika L. Barthelmess. 2020. <span>“Teaching r in the Unde
 </div>
 <div id="ref-Bennett2008" class="csl-entry" role="listitem">
 Bennett, Sue, Karl Maton, and Lisa Kervin. 2008. <span>“The <span>‘Digital Natives’</span> Debate: A Critical Review of the Evidence.”</span> <em>British Journal of Educational Technology</em> 39 (5): 775–86. <a href="https://doi.org/10.1111/j.1467-8535.2007.00793.x">https://doi.org/10.1111/j.1467-8535.2007.00793.x</a>.
-</div>
-<div id="ref-bromage2022teaching" class="csl-entry" role="listitem">
-Bromage, Adrian, Sarah Pierce, Tom Reader, and Lindsey Compton. 2022. <span>“Teaching Statistics to Non-Specialists: Challenges and Strategies for Success.”</span> <em>Journal of Further and Higher Education</em> 46 (1): 46–61.
 </div>
 <div id="ref-chua1999computer" class="csl-entry" role="listitem">
 Chua, Siew Lian, Der-Thanq Chen, and Angela FL Wong. 1999. <span>“Computer Anxiety and Its Correlates: A Meta-Analysis.”</span> <em>Computers in Human Behavior</em> 15 (5): 609–23.
@@ -382,20 +480,11 @@ Connolly, Cornelia, Eamonn Murphy, and Sarah Moore. 2009. <span>“Programming A
 <div id="ref-Fan2025" class="csl-entry" role="listitem">
 Fan, Guangrui, Dandan Liu, Rui Zhang, and Lihu Pan. 2025. <span>“The Impact of AI-Assisted Pair Programming on Student Motivation, Programming Anxiety, Collaborative Learning, and Programming Performance: A Comparative Study with Traditional Pair Programming and Individual Approaches.”</span> <em>International Journal of STEM Education</em> 12 (1). <a href="https://doi.org/10.1186/s40594-025-00537-3">https://doi.org/10.1186/s40594-025-00537-3</a>.
 </div>
-<div id="ref-fearns2023data" class="csl-entry" role="listitem">
-Fearns, Josh, Lydia Harriss, and Clare Lally. 2023. <span>“Data Science Skills in the UK Workforce.”</span>
-</div>
 <div id="ref-forrester2022undergraduate" class="csl-entry" role="listitem">
 Forrester, Chiara, Shane Schwikert, James Foster, and Lisa Corwin. 2022. <span>“Undergraduate r Programming Anxiety in Ecology: Persistent Gender Gaps and Coping Strategies.”</span> <em>CBE—Life Sciences Education</em> 21 (2): ar29.
 </div>
-<div id="ref-gimenez2013can" class="csl-entry" role="listitem">
-Gimenez, Olivier, Fitsum Abadi, Jean-Yves Barnagaud, Laetitia Blanc, Mathieu Buoro, Sarah Cubaynes, Marine Desprez, et al. 2013. <span>“How Can Quantitative Ecology Be Attractive to Young Scientists? Balancing Computer/Desk Work with Fieldwork.”</span> <em>Animal Conservation</em> 16 (2): 134–36.
-</div>
 <div id="ref-Hafeez2023" class="csl-entry" role="listitem">
 Hafeez, Mustafa, Anand Karki, Yara Radwan, Anis Saha, and Angela Zavaleta Bernuy. 2023. <span>“Evaluating the Efficacy and Impacts of Remote Pair Programming for Introductory Computer Science Students.”</span> In <em>Proceedings of the 25th Western Canadian Conference on Computing Education</em>, 1–7. WCCCE ’23. ACM. <a href="https://doi.org/10.1145/3593342.3593351">https://doi.org/10.1145/3593342.3593351</a>.
-</div>
-<div id="ref-hanks2011pair" class="csl-entry" role="listitem">
-Hanks, Brian, Sue Fitzgerald, Renée McCauley, Laurie Murphy, and Carol Zander. 2011. <span>“Pair Programming in Education: A Literature Review.”</span> <em>Computer Science Education</em> 21 (2): 135–73.
 </div>
 <div id="ref-hofmann2018rethinking" class="csl-entry" role="listitem">
 Hofmann, Stefan G, and Aleena C Hay. 2018. <span>“Rethinking Avoidance: Toward a Balanced Approach to Avoidance in Treating Anxiety Disorders.”</span> <em>Journal of Anxiety Disorders</em> 55: 14–21.
@@ -406,17 +495,11 @@ Hofmann, Stefan G, and Aleena C Hay. 2018. <span>“Rethinking Avoidance: Toward
 <div id="ref-kaur2024silent" class="csl-entry" role="listitem">
 Kaur, Tarandeep, and Samantha Newell. 2024. <span>“The Silent Struggle: Experiences of Non-Native English-Speaking Psychology Students.”</span> <em>Australian Journal of Psychology</em> 76 (1): 2360983.
 </div>
-<div id="ref-kelly1992teaching" class="csl-entry" role="listitem">
-Kelly, Martyn. 1992. <span>“Teaching Statistics to Biologists.”</span> <em>Journal of Biological Education</em> 26 (3): 200–203.
-</div>
 <div id="ref-Krizsan2024" class="csl-entry" role="listitem">
 Krizsan, Tibor, and Dragan Lambic. 2024. <span>“Examining the Impact of Pair Programming on Efficiency, Motivation, and Stress Among Students of Different Skills and Abilities in Lower Grades in Elementary Schools.”</span> <em>Education and Information Technologies</em> 29 (18): 25257–80. <a href="https://doi.org/10.1007/s10639-024-12859-w">https://doi.org/10.1007/s10639-024-12859-w</a>.
 </div>
 <div id="ref-meinhardt2022computer" class="csl-entry" role="listitem">
 Meinhardt-Injac, Bozana, and Carina Skowronek. 2022. <span>“Computer Self-Efficacy and Computer Anxiety in Social Work Students: Implications for Social Work Education.”</span> <em>Nordic Social Work Research</em> 12 (3): 392–405.
-</div>
-<div id="ref-metz2008teaching" class="csl-entry" role="listitem">
-Metz, Anneke M. 2008. <span>“Teaching Statistics in Biology: Using Inquiry-Based Learning to Strengthen Understanding of Statistical Analysis in Biology Laboratory Courses.”</span> <em>CBE—Life Sciences Education</em> 7 (3): 317–26.
 </div>
 <div id="ref-miller2024anxiety" class="csl-entry" role="listitem">
 Miller, Ainsley, and Kate Pyper. 2024. <span>“Anxiety Around Learning r in First Year Undergraduate Students: Mathematics Versus Biomedical Sciences Students.”</span> <em>Journal of Statistics and Data Science Education</em> 32 (1): 47–53.
@@ -424,32 +507,11 @@ Miller, Ainsley, and Kate Pyper. 2024. <span>“Anxiety Around Learning r in Fir
 <div id="ref-mkrtchian2017modeling" class="csl-entry" role="listitem">
 Mkrtchian, Anahit, Jessica Aylward, Peter Dayan, Jonathan P Roiser, and Oliver J Robinson. 2017. <span>“Modeling Avoidance in Mood and Anxiety Disorders Using Reinforcement Learning.”</span> <em>Biological Psychiatry</em> 82 (7): 532–39.
 </div>
-<div id="ref-mustafa1996challenge" class="csl-entry" role="listitem">
-Mustafa, R Yilmaz. 1996. <span>“The Challenge of Teaching Statistics to Non-Specialists.”</span> <em>Journal of Statistics Education</em> 4 (1).
-</div>
 <div id="ref-nolan2016role" class="csl-entry" role="listitem">
 Nolan, Keith, and Susan Bergin. 2016. <span>“The Role of Anxiety When Learning to Program: A Systematic Review of the Literature.”</span> In <em>Proceedings of the 16th Koli Calling International Conference on Computing Education Research</em>, 61–70.
 </div>
-<div id="ref-o2016teaching" class="csl-entry" role="listitem">
-O’Hara, Robert B. 2016. <span>“On Teaching Ecologists Contemporary Methods in Statistics.”</span> Wiley Online Library.
-</div>
 <div id="ref-pan2025conquering" class="csl-entry" role="listitem">
 PAN, YING, and Jamalludin Harun. 2025. <span>“Conquering Coding Fears: A Systematic Review of Programming Anxiety in Higher Education.”</span> <em>Journal of Information Technology Education: Research</em> 24: 020.
-</div>
-<div id="ref-pletzer2010predictors" class="csl-entry" role="listitem">
-Pletzer, Belinda, Guilherme Wood, Korbinian Moeller, Hans-Christoph Nuerk, and Hubert H Kerschbaum. 2010. <span>“Predictors of Performance in a Real-Life Statistics Examination Depend on the Individual Cortisol Profile.”</span> <em>Biological Psychology</em> 85 (3): 410–16.
-</div>
-<div id="ref-saltz2020using" class="csl-entry" role="listitem">
-Saltz, Jeffrey, and Robert Heckman. 2020. <span>“Using Structured Pair Activities in a Distributed Online Breakout Room.”</span> <em>Online Learning</em> 24 (1): 227–44.
-</div>
-<div id="ref-sweller2018instructional" class="csl-entry" role="listitem">
-Sweller, John. 2018. <span>“Instructional Design.”</span> In <em>Encyclopedia of Evolutionary Psychological Science</em>, 1–5. Springer.
-</div>
-<div id="ref-weinberger2011principles" class="csl-entry" role="listitem">
-Weinberger, Armin. 2011. <span>“Principles of Transactive Computer-Supported Collaboration Scripts.”</span> <em>Nordic Journal of Digital Literacy</em> 6 (3): 189–202.
-</div>
-<div id="ref-williams2010pair" class="csl-entry" role="listitem">
-Williams, Laurie A. 2010. <span>“Pair Programming.”</span> <em>Encyclopedia of Software Engineering</em> 2.
 </div>
 <div id="ref-Xiao2022" class="csl-entry" role="listitem">
 Xiao, Pei, Liang Chen, Xiaoqin Dong, Zhiya Zhao, Jincong Yu, Dongming Wang, and Wenzhen Li. 2022. <span>“Anxiety, Depression, and Satisfaction with Life Among College Students in China: Nine Months After Initiation of the Outbreak of COVID-19.”</span> <em>Frontiers in Psychiatry</em> 12 (January). <a href="https://doi.org/10.3389/fpsyt.2021.777190">https://doi.org/10.3389/fpsyt.2021.777190</a>.
@@ -458,6 +520,7 @@ Xiao, Pei, Liang Chen, Xiaoqin Dong, Zhiya Zhao, Jincong Yu, Dongming Wang, and 
 Zeidner, Moshe. 1991. <span>“Statistics and Mathematics Anxiety in Social Science Students: Some Interesting Parallels.”</span> <em>British Journal of Educational Psychology</em> 61 (3): 319–28. <a href="https://doi.org/10.1111/j.2044-8279.1991.tb00989.x">https://doi.org/10.1111/j.2044-8279.1991.tb00989.x</a>.
 </div>
 </div>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -862,11 +925,14 @@ Zeidner, Moshe. 1991. <span>“Statistics and Mathematics Anxiety in Social Scie
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./21-Overcoming-coding-anxiety-script.html" class="pagination-link" aria-label="Overcoming coding anxiety: learnings and strategies">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Overcoming coding anxiety: learnings and strategies</span></span>
+      <a href="./02-chapter-stats-coding.html" class="pagination-link" aria-label="Sequential vs. Simultaneous: Approaches to Learning Programming and Statistics">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Sequential vs.&nbsp;Simultaneous: Approaches to Learning Programming and Statistics</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
+      <a href="./99-bibliography.html" class="pagination-link" aria-label="Bibliography">
+        <span class="nav-page-text">Bibliography</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
   </div>
 </nav>
 </div> <!-- /content -->

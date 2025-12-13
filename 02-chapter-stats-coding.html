@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Teaching Programming across Disciplines</title>
+<title>4&nbsp; Sequential vs.&nbsp;Simultaneous: Approaches to Learning Programming and Statistics – Teaching Programming across Disciplines</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -30,7 +50,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./00-chapter-template.html" rel="next">
+<link href="./21-Overcoming-coding-anxiety-script.html" rel="next">
+<link href="./01-chapter-pair-programming-groupwork-script.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -83,7 +104,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Teaching Programming across Disciplines</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./02-chapter-stats-coding.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Sequential vs.&nbsp;Simultaneous: Approaches to Learning Programming and Statistics</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -129,7 +150,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Teaching Programming across Disciplines</span></span></a>
   </div>
 </li>
@@ -147,7 +168,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./02-chapter-stats-coding.html" class="sidebar-item-text sidebar-link">
+  <a href="./02-chapter-stats-coding.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Sequential vs.&nbsp;Simultaneous: Approaches to Learning Programming and Statistics</span></span></a>
   </div>
 </li>
@@ -217,7 +238,31 @@ ul.task-list li input[type="checkbox"] {
 
 </details>
 </div></div>
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#authors-robert-s.-young-rebecca-l.-colquhoun-tiago-a.-marques-brittany-blankinship-ozan-evkaya" id="toc-authors-robert-s.-young-rebecca-l.-colquhoun-tiago-a.-marques-brittany-blankinship-ozan-evkaya" class="nav-link active" data-scroll-target="#authors-robert-s.-young-rebecca-l.-colquhoun-tiago-a.-marques-brittany-blankinship-ozan-evkaya"><span class="header-section-number">4.1</span> Authors: Robert S. Young, Rebecca L. Colquhoun, Tiago A. Marques, Brittany Blankinship, Ozan Evkaya</a></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction"><span class="header-section-number">5</span> Introduction</a></li>
+  <li><a href="#teaching-statistics-before-programming" id="toc-teaching-statistics-before-programming" class="nav-link" data-scroll-target="#teaching-statistics-before-programming"><span class="header-section-number">6</span> Teaching statistics before programming</a>
+  <ul class="collapse">
+  <li><a href="#example" id="toc-example" class="nav-link" data-scroll-target="#example"><span class="header-section-number">6.0.1</span> Example:</a></li>
+  </ul></li>
+  <li><a href="#teaching-programming-before-statistics" id="toc-teaching-programming-before-statistics" class="nav-link" data-scroll-target="#teaching-programming-before-statistics"><span class="header-section-number">7</span> Teaching programming before statistics</a>
+  <ul class="collapse">
+  <li><a href="#example-1" id="toc-example-1" class="nav-link" data-scroll-target="#example-1"><span class="header-section-number">7.0.1</span> Example:</a></li>
+  </ul></li>
+  <li><a href="#teaching-programming-and-statistics-together" id="toc-teaching-programming-and-statistics-together" class="nav-link" data-scroll-target="#teaching-programming-and-statistics-together"><span class="header-section-number">8</span> Teaching programming and statistics together</a>
+  <ul class="collapse">
+  <li><a href="#example-2" id="toc-example-2" class="nav-link" data-scroll-target="#example-2"><span class="header-section-number">8.0.1</span> Example:</a></li>
+  </ul></li>
+  <li><a href="#practical-strategies-for-teaching-statistics-and-programming" id="toc-practical-strategies-for-teaching-statistics-and-programming" class="nav-link" data-scroll-target="#practical-strategies-for-teaching-statistics-and-programming"><span class="header-section-number">9</span> Practical strategies for teaching statistics and programming</a>
+  <ul class="collapse">
+  <li><a href="#example-3" id="toc-example-3" class="nav-link" data-scroll-target="#example-3"><span class="header-section-number">9.0.1</span> Example:</a></li>
+  </ul></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><span class="header-section-number">10</span> Conclusion</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -324,7 +369,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Teaching Programming across Disciplines</h1>
+<h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Sequential vs.&nbsp;Simultaneous: Approaches to Learning Programming and Statistics</span></h1>
 </div>
 
 
@@ -341,10 +386,95 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Welcome to our book!</p>
-<p>main page? preface? title etc</p>
+<section id="authors-robert-s.-young-rebecca-l.-colquhoun-tiago-a.-marques-brittany-blankinship-ozan-evkaya" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="authors-robert-s.-young-rebecca-l.-colquhoun-tiago-a.-marques-brittany-blankinship-ozan-evkaya"><span class="header-section-number">4.1</span> Authors: Robert S. Young, Rebecca L. Colquhoun, Tiago A. Marques, Brittany Blankinship, Ozan Evkaya</h2>
+</section>
+<section id="introduction" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Introduction</h1>
+<p>We live in a data driven world. Much research in STEM departments requires skills in data description, prediction and inference which are usually developed during statistics modules but, increasingly, non-trivial statistical analysis requires some degree of computer programming. Therefore, for many undergraduate degree programmes, two closely interrelated but fundamentally distinct disciplines, programming and statistics, must often both be taught to undergraduates. There are different possible approaches regarding how to teach these subjects, most notably whether to deliver them simultaneously or sequentially. In this chapter, we focus on undergraduate level teaching in subject areas that are not primarily programming or statistics. Based on our own teaching experiences, we discuss the advantages and disadvantages to different approaches in an attempt to provide guidance on the best way to approach curriculum design.</p>
+<p>The topic of teaching statistics to non-specialists has been discussed at length <span class="citation" data-cites="kelly1992teaching mustafa1996challenge metz2008teaching gimenez2013can o2016teaching bromage2022teaching">(<a href="#ref-kelly1992teaching" role="doc-biblioref">Kelly 1992</a>; <a href="#ref-mustafa1996challenge" role="doc-biblioref">Mustafa 1996</a>; <a href="#ref-metz2008teaching" role="doc-biblioref">Metz 2008</a>; <a href="#ref-gimenez2013can" role="doc-biblioref">Gimenez et al. 2013</a>; <a href="#ref-o2016teaching" role="doc-biblioref">O’Hara 2016</a>; <a href="#ref-bromage2022teaching" role="doc-biblioref">Bromage et al. 2022</a>)</span>. How to do so while acknowledging that programming is also an important and related skill has received less focus which we hope to begin to address here. In all scenarios teachers need to be mindful of their own educational context, the learning outcome of their course and, above all, what knowledge and skills they want students to get out of learning both programming and statistics.</p>
+</section>
+<section id="teaching-statistics-before-programming" class="level1" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> Teaching statistics before programming</h1>
+<p>Based on our experience, this is perhaps the original or “old school” approach. Many authors in fact were taught in such a way in their own undergraduate degrees prior to the advent of high quality open-source programming languages (e.g., Python, R, etc.) being used widely in academia. The primary advantage of this approach is the focus on core theoretical concepts in statistics (e.g., probability distributions, critical value tables) without additional considerations regarding technology or implementation. In disciplines where students are likely to need to perform statistical analyses in different applications and using a range of technology depending on the subfield they study, this may be the most useful approach. This is also true in disciplines where computers are not always available such as fieldwork, where we want students to be able to identify where they could do ‘back-of-the-envelope’ statistical analyses. This approach serves to more prominently highlight to students that statistics need not always require computational implementation, which can be lost when programming and statistics teaching are commingled. However, from our experience and perspective, this may be less preferred in undergraduate contexts where the primary subject area is not statistics or programming as this can lead to the links between statistics and programming being lost - potentially leading to a reduced insight into the applications of both.</p>
+<section id="example" class="level3" data-number="6.0.1">
+<h3 data-number="6.0.1" class="anchored" data-anchor-id="example"><span class="header-section-number">6.0.1</span> Example:</h3>
+<p>A first year geoscience course, which first teaches statistics independently of programming before moving on to a combined approach using the Python programming language. Later in the year, students were on fieldwork at the “Ammonite Pavement” in Dorset, and were asked to measure the size of some ammonite fossils. As they were comfortable with pen-and-paper statistical analysis, they took the initiative to more rigorously find the distribution of ammonite sizes, and to calculate how many ammonites they needed to measure to be confident of having a representative sample. Though the statistics course did continue on to students applying programming to solve statistical questions, the in-the-field experiment was made possible by students first learning to do statistics by hand.</p>
+</section>
+</section>
+<section id="teaching-programming-before-statistics" class="level1" data-number="7">
+<h1 data-number="7"><span class="header-section-number">7</span> Teaching programming before statistics</h1>
+<p>A complementary approach we have identified is to first teach programming, and then follow this with statistics lessons that make use of students’ programming skills. Here, students have time to consolidate their programming skills and build their programming mindset whilst still being able to build knowledge and understanding through a computational investigation of statistical concepts.</p>
+<p>The main disadvantage of this approach is that it requires more curriculum time, which many programmes cannot afford. It also requires that the two courses are designed with interaction in mind. For example, using the same programming language in both courses (e.g., jamovi), or purposefully keeping the programming course language agnostic (e.g., giving examples in multiple languages). Teaching statistics in a manner which is reliant on the use of programming may present a barrier for students who are less confident in programming. Indeed depending on the overall curriculum design, students may have forgotten much of the programming learnt by the time they are learning statistics.</p>
+<section id="example-1" class="level3" data-number="7.0.1">
+<h3 data-number="7.0.1" class="anchored" data-anchor-id="example-1"><span class="header-section-number">7.0.1</span> Example:</h3>
+<p>The concept of variance was introduced using a programming approach prior to describing the formal statistical method when teaching Analysis of Variance (ANOVA) to a second-year undergraduate course in biomedical informatics. Students were first shown how to use simulations (sampling within replacement) to compare differences between pairs of samples within and across treatment groups. These empirical results were used to derive the probability of these groups being statistically different from each other and introduced the concept of variance as a quantitative measure. In the subsequent week, the formal mathematics behind the ANOVA were introduced. Students learnt how to implement this using R and, when reasonable, to perform post-hoc tests to determine which treatment group pairs were significantly different from each other. This deliberate approach allowed students to fully comprehend the underlying theory before learning how to implement this and interpret the output in real-world scenarios.</p>
+</section>
+</section>
+<section id="teaching-programming-and-statistics-together" class="level1" data-number="8">
+<h1 data-number="8"><span class="header-section-number">8</span> Teaching programming and statistics together</h1>
+<p>The final approach we have identified is to teach programming and statistics together. This can take multiple forms: within a single module one can teach either programming or statistics first, and then immediately use these skills to teach the other, or the teaching of programming and statistics can be truly interleaved.</p>
+<p>Teaching these subjects together has clear advantages. Students can experience a more immediate and deeper understanding of statistics, since they can independently probe the concepts being taught, e.g by running simulations. This could facilitate students “building” their statistical knowledge, after an introduction to a new programming and statistics concept each week. For those students where the barrier to statistics learning is past experience with maths <span class="citation" data-cites="pletzer2010predictors">(<a href="#ref-pletzer2010predictors" role="doc-biblioref">Pletzer et al. 2010</a>)</span>, presenting statistical concepts through code snippets may reduce this barrier compared to presenting the same idea using mathematical notation. However, for others the opposite may be true and they could find it easier to explore concepts programmatically after a formal mathematical introduction.</p>
+<p>A major disadvantage of combining the teaching of programming and statistics is the risk of cognitive overload. Where both topics are taught concurrently, students do not have the time to consolidate information into their long-term memory and thus the working-memory load is higher <span class="citation" data-cites="sweller2018instructional">(<a href="#ref-sweller2018instructional" role="doc-biblioref">Sweller 2018</a>)</span>. Many students will experience hurdles in their learning of both statistics and programming, and these may interact to further impede student attainment compared to students who are more comfortable with one or both topics. For students who are not being taught in their native language, the need to acquire domain-specific vocabulary in two topics at once may further exacerbate issues of cognitive overload. Thoughtful course design can reduce this burden, but it is likely to remain higher than with standalone courses. Besides, the volume of the weekly content should be balanced and tied sequentially in a logical flow to avoid further issues on students’ cognitive overload. There may also be concern that students will experience reduced development of computational and algorithmic thinking, since they may only use programming to do statistics. For some disciplines, this may be an appropriate outcome, if the field generally only uses programming for statistical applications and analysis. However, where the course aims to set students up to progress to higher-level programming courses, students may benefit from programming teaching being focussed on a broader range of applications. Besides, the use of suitable programming language can be a key aspect that may impact the student learning performances positively or negatively.</p>
+<section id="example-2" class="level3" data-number="8.0.1">
+<h3 data-number="8.0.1" class="anchored" data-anchor-id="example-2"><span class="header-section-number">8.0.1</span> Example:</h3>
+<p>After seeing a concept such as linear modeling as a part of statistical modeling toolkit, 1st-year undergraduate students from different mathematical degree programmes were shown the related code snippet. Slides either showed the mathematical and code representation side by side or sequentially within this same class, allowing students to make connections across the two approaches.</p>
+<p>After lectures, students participated in workshops where context-specific questions with new data sets were shared to give students a fresh start each time. For workshop exercises, they needed to either adapt code snippets based on the given data or create new versions of code to solve the given exercises. It is important to leave sufficient pauses - either during or between classes - during this style of delivery to allow students to fully digest the content from both disciplines.</p>
+</section>
+</section>
+<section id="practical-strategies-for-teaching-statistics-and-programming" class="level1" data-number="9">
+<h1 data-number="9"><span class="header-section-number">9</span> Practical strategies for teaching statistics and programming</h1>
+<p>We next include a number of specific approaches to teaching both programming and statistics. Firstly, we believe that it is important to embed all teaching of these topics into the subject matter of the overreaching course or programming, particularly when programming or statistics are not the principal teaching focus. This may include creating appealing visualisations, testing data to determine whether the patterns observed are statistically significant, or discussing the conclusions that can be obtained in the research field from this work.</p>
+<p>Secondly, statistical methodologies should be described clearly using a computational approach. While it is helpful to discuss the mathematical approach to generating a test statistic, we recommend that this is routinely followed up with the programming approach required to generate the same result. In this way, the close relationship between these two types of work will be demonstrated while also consolidating the underlying statistical concepts by repeating them from different perspectives.</p>
+<p>A third strategy is to develop a “programming or coding mindset” by foregrounding the use of programming as an important transferable skill in itself, rather than solely a tool to support the work of performing statistical analysis. Students need to be taught how to interact with data using programming languages (e.g., R and/or Python) rather than directly through apps (e.g., give careful consideration to file paths, focus on good naming conventions in code, not using spaces in file names, and discriminating characters, numbers and special characters). Time should be devoted to debugging code, perhaps through live coding during lectures.</p>
+<p>Finally we note that it is critical to motivate and enthuse students about the potential for both statistics and programming. For example, using a computational approach to perform statistical analysis can increase the reproducibility of the obtained results and improve the confidence that genuine scientific discoveries are reported. These skills are also highly in demand in the job market. As an illustrative summary, the gap in data-driven technical skills reported in 2023 in the UK includes specialist data skills (including statistics), programming and software engineering skills to manage and analyse data sets <span class="citation" data-cites="fearns2023data">(<a href="#ref-fearns2023data" role="doc-biblioref">Fearns, Harriss, and Lally 2023</a>)</span>.</p>
+<section id="example-3" class="level3" data-number="9.0.1">
+<h3 data-number="9.0.1" class="anchored" data-anchor-id="example-3"><span class="header-section-number">9.0.1</span> Example:</h3>
+<p>In teaching a postgraduate course that covers both Python and R, a course activity was introduced to promote the development of a “coding mindset” called ‘Error of the Week’. This feature celebrates errors as a learning opportunity rather than a source of embarrassment or frustration. Students share errors on discussion boards, including solutions if applicable. The course team responds to every post and during the live session the course lead or tutor highlights a particularly interesting or common error to the class, debugging it live. These discussion boards then act as a common error glossary for the course. These strategies reduce the hurdle that programming can often present to students, allowing for more time to focus on understanding and interpreting statistical outputs.</p>
+</section>
+</section>
+<section id="conclusion" class="level1" data-number="10">
+<h1 data-number="10"><span class="header-section-number">10</span> Conclusion</h1>
+<p>We have outlined three approaches for teaching programming and statistics: teaching statistics first; teaching programming first; and teaching both skills together. These approaches each have advantages and disadvantages, and will be best suited in different settings. In deciding which approach is most suitable it is important to consider the desired learning outcomes, overall programme design and the cognitive load for students, which will vary depending on the educational context and prior student experiences. Considered design of teaching activities can overcome many of the barriers that students may experience through their programming and statistics learning. We hope that through highlighting the advantages and disadvantages of different approaches this chapter will help educators make strategic decisions about how best to teach and encourage the learning of programming and statistics to their students.</p>
+<p>Links to other chapters</p>
+<p>Possible links to other chapters, which we might need to articulate with (this might not be an exhaustive list, just those we identified so far - might be useful info for the editorial team too)</p>
+<ol type="1">
+<li><p>Curriculum Design Overview</p></li>
+<li><p>A Practical Guide to Teaching Python as a Computational Tool for Introductory Data Analysis</p></li>
+<li><p>A guide to empowering students to develop a coding mindset</p></li>
+</ol>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-bromage2022teaching" class="csl-entry" role="listitem">
+Bromage, Adrian, Sarah Pierce, Tom Reader, and Lindsey Compton. 2022. <span>“Teaching Statistics to Non-Specialists: Challenges and Strategies for Success.”</span> <em>Journal of Further and Higher Education</em> 46 (1): 46–61.
+</div>
+<div id="ref-fearns2023data" class="csl-entry" role="listitem">
+Fearns, Josh, Lydia Harriss, and Clare Lally. 2023. <span>“Data Science Skills in the UK Workforce.”</span>
+</div>
+<div id="ref-gimenez2013can" class="csl-entry" role="listitem">
+Gimenez, Olivier, Fitsum Abadi, Jean-Yves Barnagaud, Laetitia Blanc, Mathieu Buoro, Sarah Cubaynes, Marine Desprez, et al. 2013. <span>“How Can Quantitative Ecology Be Attractive to Young Scientists? Balancing Computer/Desk Work with Fieldwork.”</span> <em>Animal Conservation</em> 16 (2): 134–36.
+</div>
+<div id="ref-kelly1992teaching" class="csl-entry" role="listitem">
+Kelly, Martyn. 1992. <span>“Teaching Statistics to Biologists.”</span> <em>Journal of Biological Education</em> 26 (3): 200–203.
+</div>
+<div id="ref-metz2008teaching" class="csl-entry" role="listitem">
+Metz, Anneke M. 2008. <span>“Teaching Statistics in Biology: Using Inquiry-Based Learning to Strengthen Understanding of Statistical Analysis in Biology Laboratory Courses.”</span> <em>CBE—Life Sciences Education</em> 7 (3): 317–26.
+</div>
+<div id="ref-mustafa1996challenge" class="csl-entry" role="listitem">
+Mustafa, R Yilmaz. 1996. <span>“The Challenge of Teaching Statistics to Non-Specialists.”</span> <em>Journal of Statistics Education</em> 4 (1).
+</div>
+<div id="ref-o2016teaching" class="csl-entry" role="listitem">
+O’Hara, Robert B. 2016. <span>“On Teaching Ecologists Contemporary Methods in Statistics.”</span> Wiley Online Library.
+</div>
+<div id="ref-pletzer2010predictors" class="csl-entry" role="listitem">
+Pletzer, Belinda, Guilherme Wood, Korbinian Moeller, Hans-Christoph Nuerk, and Hubert H Kerschbaum. 2010. <span>“Predictors of Performance in a Real-Life Statistics Examination Depend on the Individual Cortisol Profile.”</span> <em>Biological Psychology</em> 85 (3): 410–16.
+</div>
+<div id="ref-sweller2018instructional" class="csl-entry" role="listitem">
+Sweller, John. 2018. <span>“Instructional Design.”</span> In <em>Encyclopedia of Evolutionary Psychological Science</em>, 1–5. Springer.
+</div>
+</div>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -749,10 +879,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./01-chapter-pair-programming-groupwork-script.html" class="pagination-link" aria-label="Structured group work with assigned asymmetrical roles and switching - Lessons from Pair Programming across disciplines">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Structured group work with assigned asymmetrical roles and switching - Lessons from Pair Programming across disciplines</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./00-chapter-template.html" class="pagination-link" aria-label="Title of Example Chapter">
-        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Title of Example Chapter</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./21-Overcoming-coding-anxiety-script.html" class="pagination-link" aria-label="Overcoming coding anxiety: learnings and strategies">
+        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Overcoming coding anxiety: learnings and strategies</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
