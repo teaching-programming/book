@@ -58,3 +58,6 @@ po/*~
 rsconnect/
 /.quarto/
 /_book/
+
+*.html
+*_files/*
