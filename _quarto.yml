@@ -49,4 +49,6 @@ book:
         - index.qmd
         - 00-chapter-template.qmd
         - 01-chapter-pair-programming-groupwork-script.qmd
+        - 02-chapter-stats-coding.qmd
+        - 21-Overcoming-coding-anxiety-script.qmd
         - 99-bibliography.qmd
