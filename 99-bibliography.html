@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.33">
+<meta name="generator" content="quarto-1.8.26">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -53,14 +53,15 @@ div.csl-indent {
 <link href="./01-chapter-pair-programming-groupwork-script.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-8ea6181ce15aa6aff8e6b1a19ebba49b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-c480644c8e52a4274f2302259c21bc8b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -351,11 +352,38 @@ div.csl-indent {
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-bromage2022teaching" class="csl-entry" role="listitem">
+Bromage, Adrian, Sarah Pierce, Tom Reader, and Lindsey Compton. 2022. <span>“Teaching Statistics to Non-Specialists: Challenges and Strategies for Success.”</span> <em>Journal of Further and Higher Education</em> 46 (1): 46–61.
+</div>
+<div id="ref-fearns2023data" class="csl-entry" role="listitem">
+Fearns, Josh, Lydia Harriss, and Clare Lally. 2023. <span>“Data Science Skills in the UK Workforce.”</span>
+</div>
+<div id="ref-gimenez2013can" class="csl-entry" role="listitem">
+Gimenez, Olivier, Fitsum Abadi, Jean-Yves Barnagaud, Laetitia Blanc, Mathieu Buoro, Sarah Cubaynes, Marine Desprez, et al. 2013. <span>“How Can Quantitative Ecology Be Attractive to Young Scientists? Balancing Computer/Desk Work with Fieldwork.”</span> <em>Animal Conservation</em> 16 (2): 134–36.
+</div>
 <div id="ref-hanks2011pair" class="csl-entry" role="listitem">
 Hanks, Brian, Sue Fitzgerald, Renée McCauley, Laurie Murphy, and Carol Zander. 2011. <span>“Pair Programming in Education: A Literature Review.”</span> <em>Computer Science Education</em> 21 (2): 135–73.
 </div>
+<div id="ref-kelly1992teaching" class="csl-entry" role="listitem">
+Kelly, Martyn. 1992. <span>“Teaching Statistics to Biologists.”</span> <em>Journal of Biological Education</em> 26 (3): 200–203.
+</div>
+<div id="ref-metz2008teaching" class="csl-entry" role="listitem">
+Metz, Anneke M. 2008. <span>“Teaching Statistics in Biology: Using Inquiry-Based Learning to Strengthen Understanding of Statistical Analysis in Biology Laboratory Courses.”</span> <em>CBE—Life Sciences Education</em> 7 (3): 317–26.
+</div>
+<div id="ref-mustafa1996challenge" class="csl-entry" role="listitem">
+Mustafa, R Yilmaz. 1996. <span>“The Challenge of Teaching Statistics to Non-Specialists.”</span> <em>Journal of Statistics Education</em> 4 (1).
+</div>
+<div id="ref-o2016teaching" class="csl-entry" role="listitem">
+O’Hara, Robert B. 2016. <span>“On Teaching Ecologists Contemporary Methods in Statistics.”</span> Wiley Online Library.
+</div>
+<div id="ref-pletzer2010predictors" class="csl-entry" role="listitem">
+Pletzer, Belinda, Guilherme Wood, Korbinian Moeller, Hans-Christoph Nuerk, and Hubert H Kerschbaum. 2010. <span>“Predictors of Performance in a Real-Life Statistics Examination Depend on the Individual Cortisol Profile.”</span> <em>Biological Psychology</em> 85 (3): 410–16.
+</div>
 <div id="ref-saltz2020using" class="csl-entry" role="listitem">
 Saltz, Jeffrey, and Robert Heckman. 2020. <span>“Using Structured Pair Activities in a Distributed Online Breakout Room.”</span> <em>Online Learning</em> 24 (1): 227–44.
+</div>
+<div id="ref-sweller2018instructional" class="csl-entry" role="listitem">
+Sweller, John. 2018. <span>“Instructional Design.”</span> In <em>Encyclopedia of Evolutionary Psychological Science</em>, 1–5. Springer.
 </div>
 <div id="ref-weinberger2011principles" class="csl-entry" role="listitem">
 Weinberger, Armin. 2011. <span>“Principles of Transactive Computer-Supported Collaboration Scripts.”</span> <em>Nordic Journal of Digital Literacy</em> 6 (3): 189–202.
@@ -417,13 +445,14 @@ Williams, Laurie A. 2010. <span>“Pair Programming.”</span> <em>Encyclopedia 
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
