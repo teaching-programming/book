@@ -115,10 +115,11 @@ vignettes/*.pdf
 # translation temp files
 po/*~
 
-# RStudio Connect folder
+# RStudio Connect folder 
 rsconnect/
 /.quarto/
 /_book/
 
+#quarto outputs
 *.html
 *_files/*
