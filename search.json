@@ -12,31 +12,31 @@
   {
     "objectID": "00-chapter-template.html",
     "href": "00-chapter-template.html",
-    "title": "2  Title of Example Chapter",
+    "title": "2  Title of Example Chapter (as will apper on top h1 header and in table of contents)",
     "section": "",
-    "text": "2.1 First section\nAn example citation (Williams 2010).",
+    "text": "2.1 First: things to include",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Title of Example Chapter</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Title of Example Chapter (as will apper on top h1 header and in table of contents)</span>"
     ]
   },
   {
-    "objectID": "00-chapter-template.html#first-section",
-    "href": "00-chapter-template.html#first-section",
-    "title": "2  Title of Example Chapter",
+    "objectID": "00-chapter-template.html#first-things-to-include",
+    "href": "00-chapter-template.html#first-things-to-include",
+    "title": "2  Title of Example Chapter (as will apper on top h1 header and in table of contents)",
     "section": "",
-    "text": "Some Caption",
+    "text": "2.1.1 Subsection references\nAn example citation (Williams 2010).\nAn example citation Williams (2010).\n\n\n2.1.2 Subsection link types\nhttps://quarto.org\nexample link\n\n\n2.1.3 Subsection images\npicture: with caption, source, title, alt and link \npicture wrapped in a link, this way picture links to somewhere\n\n\n\nSome Caption",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Title of Example Chapter</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Title of Example Chapter (as will apper on top h1 header and in table of contents)</span>"
     ]
   },
   {
     "objectID": "00-chapter-template.html#references",
     "href": "00-chapter-template.html#references",
-    "title": "2  Title of Example Chapter",
+    "title": "2  Title of Example Chapter (as will apper on top h1 header and in table of contents)",
     "section": "References",
     "text": "References\n\n\n\n\nWilliams, Laurie A. 2010. “Pair Programming.” Encyclopedia of Software Engineering 2.",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Title of Example Chapter</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Title of Example Chapter (as will apper on top h1 header and in table of contents)</span>"
     ]
   },
   {
