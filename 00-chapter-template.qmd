@@ -11,6 +11,8 @@ An example citation [@williams2010pair].
 
 An example citation @williams2010pair.
 
+Inner book citation: [@TeachProgAcross_C01]
+
 ### Subsection link types
 
 <https://quarto.org>
