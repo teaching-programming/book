@@ -77,7 +77,7 @@ book:
 #        - C27_curriculum-design-overview.qmd
 #        - C28_incorporating-reproducibility.qmd
 #        - C29_notebooks-for-novices.qmd
-#        - C13_project-based-teaching.qmd
+#        - C30_project-based-teaching.qmd
 #        - C31_leveraging-the-heterogeneity.qmd
 #        - C32_civil-engineering.qmd
         - C33_coding-anxiety.qmd
