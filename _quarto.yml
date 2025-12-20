@@ -48,7 +48,40 @@ book:
     chapters:
         - index.qmd
         - 00-chapter-template.qmd
-        - 01-chapter-pair-programming-groupwork-script.qmd
-        - 02-chapter-stats-coding.qmd
-        - 21-Overcoming-coding-anxiety-script.qmd
+#       - C01_teaching-python
+#        - C02_genai-before-during-after
+#        - C03_online-teaching-reflections
+#        - C04_computer-says-no
+#        - C05_coding-mindset
+#        - C06_feminists-and-anarchists
+#        - C07_teaching-C-to-novices
+#        - C08_ai-boom-or-bust
+#        - C09_debugging-beyond-the-debugger
+#        - C10_teaching-with-genai
+        - C11_sequential-vs-simultaneous
+#        - C12_pair-programming-overview
+#        - C13_pair-programming-adventure
+#        - C14_foster-inclusion-and-accessibility
+#        - C15_programming-without-computers
+#        - C16_pair-programming-extensions
+#        - C17_coding-with-music
+#        - C18_social-learning-modelling
+#        - C19_genai-capabilities-and-challenges
+#        - C20_automatic-marking
+#        - C21_programming-across-disciplines-usefulness
+#        - C22_interdisciplinary-by-design
+#        - C23_pair-programming-fusion
+#        - C24_lost-in-translation
+#        - C25_supporting-new-tutors
+#        - C26_assessment-and-feedback-overview
+#        - C27_curriculum-design-overview
+#        - C28_incorporating-reproducibility
+#        - C29_notebooks-for-novices
+#        - C13_project-based-teaching
+#        - C31_leveraging-the-heterogeneity
+#        - C32_civil-engineering
+        - C33_coding-anxiety
+#        - C34_three-stars-one-wish
+#        - C35_action-feedback-plan
+        - C36_pair-programming-across-disciplines
         - 99-bibliography.qmd
