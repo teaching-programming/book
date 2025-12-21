@@ -20,11 +20,11 @@ An example citation @williams2010pair.
 ### Subsection images
 
 picture: with caption, source, title, alt and link
-![Some Caption](/chapters/images/pairprog_chapter_online_ideas.png "Some Title"){fig-alt="Some alt text."}
+![Some Caption](/chapters/images/C36_pair-programming-across-disciplines_online_ideas.png "Some Title"){fig-alt="Some alt text."}
 
 picture wrapped in a link, this way picture links to somewhere
 
-[![Some Caption](/chapters/images/pairprog_chapter_online_ideas.png "Some Title"){fig-alt="Some alt text."}](https://quarto.org)
+[![Some Caption](/chapters/images/C36_pair-programming-across-disciplines_online_ideas.png "Some Title"){fig-alt="Some alt text."}](https://quarto.org)
 
 ::: {.content-visible when-format="html" unless-format="epub"}
 

@@ -61,7 +61,7 @@ Students also appreciate how discussing with a peer can generate new ideas. A pa
 
 > "Group discussions often have unexpected results." - UG, Psychology
 
-!["So the way I understand it, is ...", "I see another way to solve this!", "That's cool! I never thought about it this way"](/chapters/images/pairprog_chapter_online_ideas.png "Exchange of Ideas between online students."){fig-alt="Drawing of group of students on an online call. Speech bubbles show that students are saying things."}
+!["So the way I understand it, is ...", "I see another way to solve this!", "That's cool! I never thought about it this way"](/chapters/images/C36_pair-programming-across-disciplines_online_ideas.png "Exchange of Ideas between online students."){fig-alt="Drawing of group of students on an online call. Speech bubbles show that students are saying things."}
 
 Although the roles are asymmetrical at any particular point in time, taking turns ensures that all students benefit equitably from playing both roles over the course of a session or a semester.
 
