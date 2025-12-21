@@ -13,7 +13,7 @@ In this chapter we will share our experiences with a structured group work forma
 
 In the software industry, people often work in pairs, which evolved over the years into a standard collaborative practice called "pair programming" [@williams2010pair]. Partners take turns playing two different roles: driver and navigator. The driver has exclusive control of the shared computer, and the navigator guides the driver by acting as their sounding board. Being in each role allows them to gain and contribute unique perspectives on the task at hand. Switching roles frequently allows both partners to get the most out of the experience.
 
-!["I think your idea will work, let me type it in!"," I see a bracket missing on line 7", "Let's run this code and see what happens.", "Yay, we did it! It works!"](/chapters/images/pairprog_chapter_driver_and_navigator_speak.png "Example things the Driver and Navigator could say."){fig-alt="Drawing of two students pair programming together using one keyboard. They take turns saying something, starting with the one holding the keyboard."}
+!["I think your idea will work, let me type it in!"," I see a bracket missing on line 7", "Let's run this code and see what happens.", "Yay, we did it! It works!"](/chapters/images/C36_pair-programming-across-disciplines_driver_and_navigator_speak.png "Example things the Driver and Navigator could say."){fig-alt="Drawing of two students pair programming together using one keyboard. They take turns saying something, starting with the one holding the keyboard."}
 
 The purpose of the exercise is not only to produce better output (e.g., code) but also to: share knowledge and practice (cross-pollinate ideas); help each other to grow; create friendships and community; and foster a culture of being able to doubt and ask for help (you're never struggling alone).
 
@@ -31,7 +31,7 @@ As a structured way to work together (a "collaboration script" [@weinberger2011p
 
 > "Making sure everyone takes turns being the driver means everyone needs to contribute." - UG, Psychology
 
-!["Hello! Which of you is driving now?", "Is it time to switch drivers?", "Do you need help getting unblocked or are you just cracking on?"](/chapters/images/pairprog_chapter_tutor_helps.png "Tutor is helping a group of students."){fig-alt="Tutor is approaching a pair of students. Speech bubble shows tutor talking. Students are in the process of passing a keyboard to each other."}
+!["Hello! Which of you is driving now?", "Is it time to switch drivers?", "Do you need help getting unblocked or are you just cracking on?"](/chapters/images/C36_pair-programming-across-disciplines_tutor_helps.png "Tutor is helping a group of students."){fig-alt="Tutor is approaching a pair of students. Speech bubble shows tutor talking. Students are in the process of passing a keyboard to each other."}
 
 As a result, we see students engage more. They take responsibility for their group, attend more sessions, and come better prepared to not let their teammates down.
 
@@ -43,7 +43,7 @@ Having defined roles doesn't leave room for any one student to take over the tas
 
 Although the structured roles are not a magic bullet to prevent these issues, they can provide tools for both students and tutors to maintain a safer learning environment. One useful strategy is for tutors to casually check in with the groups, leading with the question: "who is the driver?". This does two things: first, it is a temperature check of whether the collaboration is working well; second, it reinforces the expectation that students should stick to the script at all times, even after the tutor leaves.
 
-!["What if I end up in a pair with someone who is mean, or much more advanced than me?", "I'm uncomfortable in socially complex situations. Will I know what to say and do in a group...", "Should I just always work with the same friend, or would I miss out on meeting new people, and learning new coding styles"](/chapters/images/pairprog_chapter_group_anxiety.png "Anxiety about being part of a group"){fig-alt="Visibly anxious is saying something, with a group of other students in the background"}
+!["What if I end up in a pair with someone who is mean, or much more advanced than me?", "I'm uncomfortable in socially complex situations. Will I know what to say and do in a group...", "Should I just always work with the same friend, or would I miss out on meeting new people, and learning new coding styles"](/chapters/images/C36_pair-programming-across-disciplines_group_anxiety.png "Anxiety about being part of a group"){fig-alt="Visibly anxious is saying something, with a group of other students in the background"}
 
 If a student is undermined by their partner, they can fall back on the script to reassert themselves as a valued contributor, or to communicate the issue with a tutor. This can reduce the emotional cost required to flag or confront bad behaviour directly, by giving both students and tutors a tool to defuse the situation.
 
