@@ -1,9 +1,11 @@
 ---
 title: "Change in mindset of civil engineering students toward programming"
+format: html
 bibliography: references.bib
+toc: true
 ---
 
-> Author: Nguyen Q. Chien, the University of Edinburgh
+## Author: Nguyen Q. Chien
 
 ## Introduction
 
@@ -99,7 +101,7 @@ for the system. Compare:
 
 Admittedly, it is not easy to persuade the student to adopt an OOP style programming to benefit future use. 
 While for certain disciplines, e.g. chemistry, the notion of class is inherent (class of elements), the CivEng 
-is more inclined to think about real-world entities: a particular building, canal, etc. to be modelled.
+is more inclined to think about real-world entities: a particular building, a canal, etc. to be modelled.
 
 ## Generalisation
 
@@ -115,7 +117,7 @@ A first step toward functional programming.
 
 The students are happy with Jupyter notebooks during class. Syntax highlighting, code auto-completion, 
 and embedded plot outputs are features that are highly appreciated. Nevertheless, a dedicated evironment 
-like VSCode is needed for students who want to develop larger programs with debugging and version control 
+like VS Code is needed for students who want to develop larger programs with debugging and version control 
 (e.g. Git). 
 
 # Good practices
@@ -132,7 +134,7 @@ is required.)
 * If facilitated by the language (in the case of Julia), prefer using loops with index variables 
 (\[*i*±1\]) rather than implicit array position index (\[:\]).  
 * Generalise code with functions  
-* Using an IDE to organise and debug code (first step), and then aim toward collaboration, 
+* Using an IDE to organise and debug the code (first step), and then aim toward collaboration, 
 version control and testing.
 
 In summary, although there are not much material available for CivEng students for code development, 
@@ -141,12 +143,6 @@ some such common patterns. Due to the variety nature of the disciplines that a C
 it is by no means to present a single context that they can build programs upon. Rather, I demonstrate 
 a case of water/hydraulic engineering and sediment transport, showcasing field variables, spatial derivatives 
 and implementing a finite difference numerical solution.
-
-## NB
-
-An example citation [@williams2010pair].
-
-![Some Caption](/chapters/images/pairprog_chapter_online_ideas.png "Some Title"){fig-alt="Some alt text."}
 
 
 ::: {.content-visible when-format="html" unless-format="epub"}
