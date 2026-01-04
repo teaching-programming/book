@@ -1,20 +1,19 @@
 on:
-  pull_request:
-    types: [closed]  # Trigger when PR is closed
-    branches:
-      - main
-  workflow_dispatch:
+  push:
+    branches: [ main ]
+    # Push to main happens when a PR is closed. Benefit of this over trigger on a PR is that this uses a TOKEN with full access  
  
 name: Quarto Publish
  
 # note: render (but not deploy) can be run this locally, with 'quarto render' in your terminal
+permissions:
+  contents: write
 
 jobs:
   build-deploy:
     if: github.event.pull_request.merged == true && github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
+
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
