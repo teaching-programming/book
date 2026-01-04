@@ -59,7 +59,7 @@ book:
 #        - C09_debugging-beyond-the-debugger.qmd
 #        - C10_teaching-with-genai.qmd
         - C11_sequential-vs-simultaneous.qmd
-#        - C12_pair-programming-overview.qmd
+        - C12_pair-programming-overview.qmd
 #        - C13_pair-programming-adventure.qmd
 #        - C14_foster-inclusion-and-accessibility.qmd
 #        - C15_programming-without-computers.qmd
