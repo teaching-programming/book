@@ -48,5 +48,40 @@ book:
     chapters:
         - index.qmd
         - 00-chapter-template.qmd
-        - 01-chapter-pair-programming-groupwork-script.qmd
+#       - C01_teaching-python.qmd
+#        - C02_genai-before-during-after.qmd
+#        - C03_online-teaching-reflections.qmd
+#        - C04_computer-says-no.qmd
+#        - C05_coding-mindset.qmd
+#        - C06_feminists-and-anarchists.qmd
+#        - C07_teaching-C-to-novices.qmd
+#        - C08_ai-boom-or-bust.qmd
+#        - C09_debugging-beyond-the-debugger.qmd
+#        - C10_teaching-with-genai.qmd
+        - C11_sequential-vs-simultaneous.qmd
+#        - C12_pair-programming-overview.qmd
+#        - C13_pair-programming-adventure.qmd
+#        - C14_foster-inclusion-and-accessibility.qmd
+#        - C15_programming-without-computers.qmd
+#        - C16_pair-programming-extensions.qmd
+#        - C17_coding-with-music.qmd
+#        - C18_social-learning-modelling.qmd
+#        - C19_genai-capabilities-and-challenges.qmd
+#        - C20_automatic-marking.qmd
+#        - C21_programming-across-disciplines-usefulness.qmd
+#        - C22_interdisciplinary-by-design.qmd
+#        - C23_pair-programming-fusion.qmd
+#        - C24_lost-in-translation.qmd
+#        - C25_supporting-new-tutors.qmd
+#        - C26_assessment-and-feedback-overview.qmd
+#        - C27_curriculum-design-overview.qmd
+#        - C28_incorporating-reproducibility.qmd
+#        - C29_notebooks-for-novices.qmd
+#        - C30_project-based-teaching.qmd
+#        - C31_leveraging-the-heterogeneity.qmd
+#        - C32_civil-engineering.qmd
+        - C33_coding-anxiety.qmd
+#        - C34_three-stars-one-wish.qmd
+#        - C35_action-feedback-plan.qmd
+        - C36_pair-programming-across-disciplines.qmd
         - 99-bibliography.qmd
