@@ -130,6 +130,12 @@ To complete the setup, provide your group with an **Equipment List** of software
 
 As you advance through the course, update the **Adventure Map** and regularly remind learners of how far they have travelled in their journey, emphasising Learning Outcomes addressed throughout activities and assignments.
 
+::: {.content-visible when-format="html" unless-format="epub"}
+
+## References {.unnumbered}
+
+:::
+
 ## **References:**
 
 1. Wilkinson RG, Ashworth C. Fragments of anarchism in higher education critical art pedagogies. Arts and Humanities in Higher Education. 2025\. 24(3), 259-277. \[https://doi.org/10.1177/14740222241313303\]  
