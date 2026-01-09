@@ -8,6 +8,8 @@ toc: true
 
 ## Authors: Francisco Queiroz, Maeve Murphy Quinn
 
+# Introduction
+
 You find yourself in a large room with no windows; the air is still, and nothing suggests the passing of time. The door closes behind you, and it won't open for another hour or two. As you stand in front of the room, you realise there is nothing between you and what seems to be a party of the most intimidating, unpredictable creatures.
 
 Students.
@@ -18,9 +20,7 @@ This system is inspired by variations of Role-Playing games that do not require 
 
 ***Disclaimer**:* the collaborative, open-ended nature of some steps here described might suit workshops and short courses better than credit-bearing modules with strictly pre-defined learning outcomes. That said, syllabi are often flexible enough to allow for this ad-hoc, collaborative approach (or at least some tweaking\!). 
 
-## **Setup:**
-
-### **Accessing the toolkit**
+# Accessing the toolkit
 
 Go to this chapter's repository on \[[https://zenodo.org/records/17702161](https://zenodo.org/records/17702161)\]. There, you will find a toolkit for planning your teaching that includes templates for:
 
@@ -33,7 +33,7 @@ Go to this chapter's repository on \[[https://zenodo.org/records/17702161](https
 
 These are available as .docx and .rtf documents, but feel free to adapt them to whatever format or platform you want.
 
-### **Character building: presenting learners and educators' profiles**
+# Character building: presenting learners and educators' profiles
 
 A good first step is to understand everyone's aspirations and previous experiences. At this stage, invite all students and educators (including yourself) to complete a **Character Sheet**. Once everyone has completed theirs, go through a round of introductions. Focus on understanding everyone's strong points, ambitions, and fears.
 
@@ -51,7 +51,7 @@ The Character Sheet could potentially help identify potential topics for class a
 
 Time for creating character sheet: 15 min. Discussion: 15 min
 
-### **Challenges ahead: establishing learning outcomes and syllabus**
+# Challenges ahead: establishing learning outcomes and syllabus
 
 Use the **Bestiary** template to establish (or remind) learners of the course learning outcomes and syllabus. Discuss what they will learn, giving examples if necessary. Depending on your course's flexibility, outcomes and topics can be decided on the spot. Usually, you will want to choose a set of learning outcomes and lessons beforehand. 
 
@@ -69,7 +69,7 @@ Time for discussion and adjustments: 15 min
 
 ***Note:***  Many programmes require educators to achieve specific learning outcomes. If you are the one in charge of keeping the programme or module specification form, a good practice would be keeping it flexible enough so that new, emerging topics can be brought into the syllabus.
 
-### **The treasure map: structuring the course and learning activities**
+# The treasure map: structuring the course and learning activities
 
 Use the **Adventure Map** to discuss the sequence of learning material and activities, assessment (beasts), and how they relate to learning outcomes. Keep the discussion open so that learners can suggest, based on their expertise, perceived needs or fears, how to best organise the learning trajectory. This collective effort into creating a learning journey that does not follow a blueprint is another characteristic of anarchist pedagogies (DeLeon, 2012). To structure their journey, place items from the **Bestiary** into the journey map, and associating them with the course's Learning outcomes (see example below):
 
@@ -81,7 +81,7 @@ Time for discussion and adjustments: 30 min
 
 **Note:** the Adventure Map document was designed to help educators and students to set out learning outcomes, syllabi, and assessments. It is informed by [material created by the University of Leeds OD\&PL](https://sway.cloud.microsoft/C1YkluhNgPxGx5um?ref=Link) (no date).
 
-### **P.A.R.T.Y: organising groups and groupwork**
+# P.A.R.T.Y: organising groups and groupwork
 
 As a group (or groups, depending on the number of students), complete the **Party Guidelines** sheet, establishing ground rules on how to deal with each other and the group, as well as roles for each participant. Aiming for consensus would be ideal. A quick introduction and [effective guide on how to achieve consensus](http://www.seedsforchange.org.uk/shortconsensus) in group meetings was created by grassroots group Seeds for Change (no date).
 
@@ -98,7 +98,7 @@ Party Guidelines should help teamwork run smoothly, including agreements for con
 
 **Note:** the Party Guidelines document was designed to help learners manage their groupwork. They are informed by [frameworks from the Institute for Academic Development at the University of Edinburgh](https://institute-academic-development.ed.ac.uk/study-hub/learning-resources/group-working) (no date) and the LearnHigher CETL at the University of Bradford ([no date](https://aldinhe.ac.uk/product/learnhigher-resources/group-work-booklet/), no [date](https://aldinhe.ac.uk/product/learnhigher-resources/ground-rules-for-group-work/)) under Creative Commons Attribution-Non-Commercial licences.
 
-### **A kind of magic: distributing learning material**
+# A kind of magic: distributing learning material
 
 Whether you are using a textbook, slides, PDFs, online videos, or else, use the **Skills and Spellbook** to signpost where students can find learning material that is relevant to their learning journey. Those can be tailored to individual lessons and activities, or as a general compendium (Warhammer pun not intended), and they could be presented all at once or separately as the learning advances. Again, you could populate it with resources related to students' aspirations (as in the example below).
 
@@ -113,7 +113,7 @@ Whether you are using a textbook, slides, PDFs, online videos, or else, use the 
 >| **Information and Instructions**: 
 >| Accessible through Github's youtube playlist at \[https://[www.youtube.com/playlist?list=PL0lo9MOBetEFcp4SCWinBdpml9B2U25-f](http://www.youtube.com/playlist?list=PL0lo9MOBetEFcp4SCWinBdpml9B2U25-f)\] 
 
-### **Equipment list: providing software and resources**
+# Equipment list: providing software and resources
 
 To complete the setup, provide your group with an **Equipment List** of software and other resources they might need to use to advance the journey. You should have a preliminary list ready, but be open to suggestions from students. Below, an example that would support our student with his desire to learn source code management and versioning:
 
@@ -126,9 +126,9 @@ To complete the setup, provide your group with an **Equipment List** of software
 >| Purpose: Source code versioning 
 >| URL for download or installation instructions: [https://desktop.github.com/download/](https://desktop.github.com/download/) 
 
-## **Running the campaign**
+# Setup complete: happy adventures!
 
-As you advance through the course, update the **Adventure Map** and regularly remind learners of how far they have travelled in their journey, emphasising Learning Outcomes addressed throughout activities and assignments.
+Once you complete the previous steps, you will hopefully have generated all you and your students need to accomplish the course objectives and keep track of your achievements. As you advance through the course, update the **Adventure Map** and regularly remind learners of how far they have travelled in their journey, emphasising Learning Outcomes addressed throughout activities and assignments.
 
 ::: {.content-visible when-format="html" unless-format="epub"}
 
