@@ -1,4 +1,12 @@
-# **Anarchists and Dungeon Crawlers: co-designing programming teaching experiences**
+---
+title: "Anarchists and Dungeon Crawlers: co-designing programming teaching experiences"
+format: html
+editor: visual
+bibliography: references.bib
+toc: true
+---
+
+## Authors: Francisco Queiroz, Maeve Murphy Quinn
 
 You find yourself in a large room with no windows; the air is still, and nothing suggests the passing of time. The door closes behind you, and it won't open for another hour or two. As you stand in front of the room, you realise there is nothing between you and what seems to be a party of the most intimidating, unpredictable creatures.
 
