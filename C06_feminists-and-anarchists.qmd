@@ -37,7 +37,7 @@ These are available as .docx and .rtf documents, but feel free to adapt them to 
 
 A good first step is to understand everyone's aspirations and previous experiences. At this stage, invite all students and educators (including yourself) to complete a **Character Sheet**. Once everyone has completed theirs, go through a round of introductions. Focus on understanding everyone's strong points, ambitions, and fears.
 
-The Character Sheet document was designed to help learners understand and share their own experience, needs, expectations, skills, and challenges. It is informed by [Student Persona templates provided by the Open University](https://www.open.ac.uk/blogs/learning-design/?page_id=457) under Creative Commons Attribution-Non-Commercial licenses (Open University).
+The Character Sheet document was designed to help learners understand and share their own experience, needs, expectations, skills, and challenges. It is informed by [Student Persona templates provided by the Open University](https://www.open.ac.uk/blogs/learning-design/?page_id=457) under Creative Commons Attribution-Non-Commercial licenses [@OpenUniversity].
 
 The Character Sheet could potentially help identify potential topics for class and barriers to be removed. For instance:
 
