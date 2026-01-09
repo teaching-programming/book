@@ -14,7 +14,7 @@ Students.
 
 Fear not, though. You are about to learn how to deal with this kind of situation. Dealing with students’ expectations (and your own) can be hard, but we believe that by working together, you will be able to deliver the learning experience that gets everyone to the next level. In this chapter, inspired in equal parts by tabletop role-playing and anarchist pedagogies, we present steps you can take during an initial or preliminary learning activity for a course. 
 
-This system is inspired by variations of Role-Playing games that do not require a Dungeon Master as mediator, such as various ones from [Tomkin Press](https://tomkinpress.com/). On a very literal level, it follows the anarchist maxim of 'No gods, no masters' which, in its turn, can be reflected in horizontal approaches to higher education, where students and educators operate side-by-side (Wilkinson and Ashworth, 2025).
+This system is inspired by variations of Role-Playing games that do not require a Dungeon Master as mediator, such as various ones from [Tomkin Press](https://tomkinpress.com/). On a very literal level, it follows the anarchist maxim of 'No gods, no masters' which, in its turn, can be reflected in horizontal approaches to higher education, where students and educators operate side-by-side [@wilkinson2025fragments].
 
 ***Disclaimer**:* the collaborative, open-ended nature of some steps here described might suit workshops and short courses better than credit-bearing modules with strictly pre-defined learning outcomes. That said, syllabi are often flexible enough to allow for this ad-hoc, collaborative approach (or at least some tweaking\!). 
 
@@ -35,7 +35,7 @@ These are available as .docx and .rtf documents, but feel free to adapt them to 
 
 ### **Character building: presenting learners and educators' profiles**
 
-A good first step is to understand everyone's aspirations and previous experiences. At this stage, invite all students and educators (including yourself) to complete a **Character Sheet** \[2\]. Once everyone has completed theirs, go through a round of introductions. Focus on understanding everyone's strong points, ambitions, and fears.
+A good first step is to understand everyone's aspirations and previous experiences. At this stage, invite all students and educators (including yourself) to complete a **Character Sheet**. Once everyone has completed theirs, go through a round of introductions. Focus on understanding everyone's strong points, ambitions, and fears.
 
 The Character Sheet document was designed to help learners understand and share their own experience, needs, expectations, skills, and challenges. It is informed by [Student Persona templates provided by the Open University](https://www.open.ac.uk/blogs/learning-design/?page_id=457) under Creative Commons Attribution-Non-Commercial licenses (Open University).
 
