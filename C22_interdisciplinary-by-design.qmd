@@ -1,33 +1,110 @@
 ---
-title: "Title of Example Chapter (as will apper on top h1 header and in table of contents)"
+title: "Interdisciplinary by Design: The Centre for Data, Culture, & Society Training Programme"
 bibliography: references.bib
 ---
 
-## First: things to include
+## Authors: Lucia Michelin & Lisa Otty
 
-### Subsection references
+### Abstract
 
-An example citation [@williams2010pair].
+This chapter discusses the Centre for Data, Culture & Society's (CDCS) training initiative, which aims to integrate computational methods into humanities research. CDCS is committed to fostering methodological innovation and advancing digital research skills within the academic community. It provides targeted support and expertise to both individual researchers and groups, enhancing their capacity to employ digital techniques in the arts, humanities, and social sciences. Importantly, the initiative bridges the gap between technology and traditional research methods, preparing scholars to adeptly incorporate digital tools into their work. The CDCS training programme is distinguished by its interdisciplinary and peer-led educational model, which serves researchers at different stages of their career and with very heterogenous levels of digital literacy. The programme fosters a shared language across disciplines, enabling scholars from non-technical backgrounds to embrace coding-based methods confidently. A natural outcome of this approach is that it enables us to observe how the newly acquired shared language facilitates collaboration and interdisciplinary work, effectively breaking down traditional disciplinary barriers. This aspect is particularly crucial in enabling researchers trained in non-technical disciplines to confidently navigate and employ complex digital tools in their work.
 
-An example citation @williams2010pair.
+Today's researchers work in a rapidly changing technological environment, tackling complex global challenges: the ability to work across disciplines, scales, and sectors is increasingly important. In this context many researchers are embracing data-led approaches and there is an increase in demand for training in the kinds of applied methods that would traditionally have been taught only in computer science and STEM disciplines through coding-based approaches. Scholars in the arts and humanities, who bring invaluable critical, creative and ethical perspectives to interdisciplinary projects, face specific challenges in acquiring these technical skills: barriers include confidence, grounding assumptions, language and a lack of tailored skills development opportunities. The inherent complexity of computational methodologies, along with unfamiliar technical language and processes, can prove a significant stumbling block to researchers whose time and resource is limited. Empowering such researchers to engage and explore the value of these approaches supports not only more effective collaboration, but also more nuanced, reflective and ground-breaking interdisciplinary projects.
 
-### Subsection link types
+[The Centre for Data, Culture & Society (CDCS)](https://www.cdcs.ed.ac.uk/) at the University of Edinburgh[\[1\]](#_ftn1) was founded with a mission to inspire and support scholars across the arts, humanities and social sciences to explore, navigate and utilize the potential of data-led and computational methods.  To build capacity and support for interdisciplinary digital research projects, and to support the sharing of relevant knowledge, methods and resources between subject areas and schools, it was deliberately positioned outside of academic departments: support from a cross-school academic advisory board ensures that all of the research communities within the College of Arts, Humanities and Social Sciences can feed into planning and prioritization.  Through a range of technical services, CDCS offers a space for experimentation and tries to catalyze innovation, fostering a culture of peer-collaboration and knowledge sharing.  It provides tailored and flexible support including bespoke technical support and advice, prototyping sandpits, data clinics and opportunities to develop communities of practice. This collaborative ecosystem is further enriched by regular networking events and workshops that provide flexible opportunities for professional development and interdisciplinary engagement. The Centre is staffed by a professional services team that includes a director, training manager, and events coordinator as well as training fellows and research software engineers.
 
-<https://quarto.org>
+The CDCS training programme is a key part of the Centre’s offer and has been developed over the last six years to provide participants with practical support in applying computational methods to their projects. It is designed to be inclusive, accessible, and practical, and offers a variety of formats to accommodate diverse learning preferences, ranging from workshops and seminars to intensive boot camps, self-paced learning materials and online courses. ‘Digital Method of the Month’ sessions, for example, provide beginner-friendly introductions into a specific approach or technique.[\[2\]](#_ftn2) These hour-long sessions are designed to give researchers a practical sense of what each method involves before committing significant time to it. They create a welcoming, entry-level space for exploring new approaches, with frank discussion of tools, challenges, and the realities of applying methods in practice.  
 
-[example link](https://quarto.org)
+A foundational principle of the training programme is that it is ‘by researchers, for researchers’ and delivered by a cohort of Training Fellows, leveraging peer-led instruction to build competencies within a supportive community. The fellowship program recruits doctoral candidates and early-career researchers who use computational methods in their projects.[\[3\]](#_ftn3) It offers them an opportunity to deliver courses, teach and mentor their peers, thus fostering an environment of reciprocal learning and reinforcing their own understanding of the subject matter. This peer-led structure serves to nurture networks of support and collaboration. A key example is the Centre’s Bring Your Own Data (BYOD) sessions, which enable students to bring their work into the learning environment, discuss their processes and problems and troubleshoot together. This allows participants to get hands-on experience and supports learners in translating their new skills to their own research environments, thus reducing barriers to implementation and encouraging ongoing usage of computational methods.
 
-### Subsection images
+One of the main challenges in teaching computational methods to researchers in the Humanities and Social Sciences is the technological language barrier. Many participants enter workshops without a shared vocabulary for describing what they are trying to achieve through the application of code-based tools. The Centre tackles this by intentionally focusing on building a shared terminology that helps attendees build up their understanding while mapping their research needs against specific computational methods. Instructors provide clear definitions of key terms, introduce foundational structures, and carefully explain the “grammar” and syntax of computational processes. This approach equips participants with language that they can use to continue learning independently – as we always tell learners, half of the battle is knowing what words to google!
 
-picture: with caption, source, title, alt and link
-![Some Caption](/chapters/images/C36_pair-programming-across-disciplines_online_ideas.png "Some Title"){fig-alt="Some alt text."}
+Concepts are made more accessible through metaphors and examples drawn from the humanities and social sciences. For instance, the CDCS Training Manager Lucia Michielin, often introduces the process of building working code chunks by way of a comparison to translating dead languages such as Ancient Greek or Latin. This analogy is grounded in real learning experiences as it relates to her experience as a Classics PhD, trying to find a way to connect unfamiliar computational methods to research tasks she already understood. Training Fellows are encouraged to foreground their own learning experiences and the analogies they have found helpful, which gives trainees insight not only into the method at hand but also into others’ learning processes and how they can be adapted to different contexts.
 
-picture wrapped in a link, this way picture links to somewhere
+Lessons pay close attention to vocabulary, avoid unnecessary jargon, and focus on core principles, ensuring that no prior computational knowledge is assumed. Participants are encouraged to discuss, consolidate, and actively apply new terminology, reinforcing understanding and enabling them to articulate complex ideas in computational terms. The learning process is framed as analogous to acquiring a new language: mastering basic structures first, then building fluency through repeated practice and application.
 
-[![Some Caption](/chapters/images/C36_pair-programming-across-disciplines_online_ideas.png "Some Title"){fig-alt="Some alt text."}](https://quarto.org)
+Given the international dimension of researchers at the University of Edinburgh, this language barrier can sometimes extend to natural language itself. International students and researchers may struggle to find the right terminology to articulate their needs, particularly when confronted with frustratingly obscure error messages. A helpful strategy is to encourage them to set their coding interface to their native language. This forces them to interpret and translate the error into English when explaining it to the instructor. This mental process of navigating between languages not only clarifies the issue for the instructor but also helps the learner develop a deeper understanding of the underlying computational problem and strengthens their ability to articulate technical challenges in a second language.
 
-::: {.content-visible when-format="html" unless-format="epub"}
+By establishing a shared language, the Centre also promotes interdisciplinary collaboration. Researchers from different backgrounds gain confidence in approaching computational problems, bridging gaps between disciplinary cultures. This not only enhances the immediate learning experience but fosters sustained engagement with computational methods: Participants are more likely to translate their new skills into their own work, reducing barriers to implementation, and encouraging ongoing use their learning. As a shared language is developed, it also provides a common framework for exploring questions and problems. A good example of this is the success of the “Data Surgeries” sessions, which provide one-to-one meetings where researchers receive tailored advice on applying digital and data-driven methods to their projects. These hour-long consultations are led by our Training Fellows, who often come from different disciplinary backgrounds than the researchers they are assisting. Fellows help with data processing, troubleshooting, and guide participants toward additional resources or further training.
 
-## References {.unnumbered}
+Alongside the Training Fellow-led programme of courses and workshops, the Centre focuses on reinforcing an interdisciplinary and peer-led approach through a range of formats and materials.  Since July 2020, the Centre for Data, Culture and Society has been a member of the [*Programming Historian*](https://programminghistorian.org/en/) Institutional Partner Programme, a partnership that reflects our sustained commitment to open, peer-reviewed, and sustainable training resources.  In practice, many *Programming Historian* tutorials have been incorporated into CDCS activities: they are used in *Masterclasses* (ad hoc deep dives into innovative computational methods for research) and in *Silent Discos* (asynchronous online workshops; see chapter “[Reflections on Online Teaching](https://github.com/teaching-programming/book/C03_online-teaching-reflections.qmd)”).
 
-:::
+The tutorials also underpin the “further reading” sections of the Centre’s structured [*Training Pathways*](https://www.cdcs.ed.ac.uk/training/training-pathways), guiding learners towards high-quality, freely accessible materials that extend beyond the workshops themselves. Covering diverse topics such as data visualisation, statistical analysis, text analysis, sentiment analysis, and working with 3D Data, these Training Pathways are designed to provide structured, accessible guidance through a wide range of digital research methods. They are aimed at beginners and offer a scaffolded approach that helps learners identify which skills to acquire first and how to progress: each pathway highlights essential steps, tools, and concepts, while providing guidance on potential challenges and pointers to areas for further exploration. Rather than presenting methods in isolation, the pathways emphasize the connection between methods and underlying skills, highlighting often overlooked but crucial practices. For example, they make clear that even the most polished data visualisation is meaningless if the underlying dataset has not been rigorously collected and carefully cleaned. By drawing attention to these foundational steps, the pathways reveal the “hidden” work that underpins robust and reliable research outcomes, and, by combining practical instructions with curated “further reading,” they give learners confidence and direction, enabling them to approach computational methods incrementally rather than feeling overwhelmed.
+
+Since its launch, the Centre has produced a substantial body of training materials designed to be open, adaptable, and widely accessible to any discipline. These resources are collaboratively developed by a network of researchers from diverse research backgrounds, ensuring that all materials are proofed and checked to ensure they are jargon-free and speak effectively to a general scholarly audience. All materials are shared openly via GitHub repositories (<https://github.com/DCS-training>) under a CC-BY 4.0 license, ranging from markdown help pages to PowerPoint presentations and notebooks (mostly R or Python based). This open model not only ensures that the resources can be freely accessed and reused but also encourages continuous refinement and improvement based on user feedback and emerging research needs.
+
+Overall, CDCS plays a pivotal role in removing barriers that have traditionally hindered the use of computational methods in various disciplines. This flexible approach has proven successful, with around 600 to 700 researchers per year benefiting from the Centre’s work. By emphasizing interdisciplinarity, peer-support, flexible formats, and explicitly showing learning processes, the Centre is effectively transforming how researchers in the arts, humanities and social sciences engage with digital and computational technologies. This approach not only enhances individual research capacity but also contributes to the broader academic and societal understanding of data, culture, and society, leading to innovative solutions to complex global challenges. As computational methods continue to weave into the fabric of research across disciplines, initiatives like those at CDCS will be indispensable in preparing researchers to navigate and lead in this new digital era.
+
+----------------------------------------------------------------------------------------------------------------
+
+[\[1\]](#_ftnref1) Founded in 2019, CDCS is a strategic initiative of the College of Arts, Humanities and Social Sciences at the University of Edinburgh.  Since 2021 it has been part of the [Edinburgh Futures Institute](https://www.efi.ed.ac.uk), one of five innovation hubs established through the [Data-Driven  Innovation Programme](https://ddi.ac.uk/) funded by the [Edinburgh and South East Scotland City Region Deal](https://esescityregiondeal.org.uk/).  Alongside its training programme, CDCS offers events, technical services and infrastructure for data-led research.
+
+[\[2\]](#_ftnref2) For each meeting, we also prepare a [Markdown file](https://github.com/DCS-training/Digital-Method-of-the-Month) that provides attendees with starting notes to support their work on a specific method.
+
+[\[3\]](#_ftnref3) The Training Fellows are recruited annually (with the possibility of extending their contract) through an open call to current PhDs and ECRs, and through a standard interview panel. Once appointed, they are offered a Guaranteed Hours contract. This provides flexibility, assuring them sufficient hours to design and deliver one training course and leaving open the possibility of taking on more work, if they have capacity and interest. How many hours each TF works every year can vary considerably and is dependent on programming, availability, skills, and budget. Once they start their contract, they receive a general induction covering our aims and delivery methods, past training courses and available materials. After that they work with the Training Manager to design the programme. Each year there is a combination of returning and new Training Fellows, and during the first semester the new TFs normally start as helpers in courses led by more experienced Training Fellows or by running courses where the material has already been consolidated and just needs a simple refresh and update. During this phase, they learn how to provide feedback on material delivered by others, and they familiarise themselves with different methods of delivery. Thereafter, more often in the second semester, they are invited to submit ideas for new training material or more consistent revisions of existing training material. At each stage, they receive and give feedback on materials and delivery methods, both from their peers and from the Training Manager (we use GitHub for our materials as it supports this constant review process). The pedagogical progress of the Training Fellows—from helping in a class led by someone else to producing brand new training material—is usually dependent on their previous experience and capacity, but by the end of their contract, they will all have experience in developing new or extensively revised training material.
+
+### *Appendix 1: Digital Method of the Month Session in Detail*
+
+#### **General aim of the DMMs**:
+
+Informal meetings to create a safe space to freely discuss the practicalities of learning and implementing a new digital skill in research.
+
+Each month a method is selected, and the meeting itself is a practical discussion on what it takes to learn and master the method.
+
+During the meeting we try to answer the following question
+
+-   What this method is really about?
+
+-   How much time will it take to get the basics?
+
+-   What are the software options available?
+
+-   What are the most common pitfalls?
+
+-   Where can you find more info on the subject?
+
+#### **Duration:**
+
+1 h
+
+#### **Schedule:**
+
+-   00:00-00:10 Housekeeping and intro
+
+-   00:10-00:25 Round of Presentation of the attendees (to collect specific interest and hurdles of the attendees)
+
+-   00:25 –00:50 Discussion using the .md document
+
+-   00:50-01:00 Discussion on available resources for learning, way forwards and wrapping up
+
+#### **Example:**
+
+Digital Method of the Month on Working with GIS and Geographical Datasets
+
+#### **Learning Objectives**:
+
+-   Become familiar with the main concepts of Geospatial Data and GIS
+
+-   Understanding the easiest pitfall new practitioner can incur into when starting working with these tools
+
+#### **Material Provided:**
+
+-   Housekeeping slides with rules of the DMM
+
+-   .md file with major points of discussion written out with hyperlinks to further resources (all previously run DMM md files are available at: [https://github.com/DCS-training/Digital-Method-of-the-Month/tree/main/DMM%20Docs](https://github.com/DCS-training/Digital-Method-of-the-Month/tree/main/DMM%20Docshttps://github.com/DCS-training/Digital-Method-of-the-Month/tree/main/DMM%20Docs))
+
+#### **Main discussion Points:**
+
+-   Concepts and jargon that practitioners need to familiarize with – e.g. difference between vectors and raster and practical repercussion of working with either data sources, standards of data (like shapefiles, GeoPackages, GeoTiff etc..), downloading data vs connect to OSM and WMS services, etc.
+
+-   Time frame for learning and important theoretical topics – e.g. the importance to fully understand how reference systems works and what are the consequences of picking the wrong reference system
+
+-   Easy pitfall for newbies – e.g. propriety vs open source extension, information tree organization, etc.
+
+-   Future possible issues - thorny issues that they will encounter down the lines once they will move to more intermediate and advanced techniques (e.g. implementation with coding environments, working collaboratively, managing 3D data)
+
+-   Main software available with pro and con of the main options
+
+-   List of helpful websites/blogs on where to ask for help
+
+-   Resources to learn GIS both as self-learner than within the Centre and the university in general

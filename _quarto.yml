@@ -69,7 +69,7 @@ book:
 #        - C19_genai-capabilities-and-challenges.qmd
 #        - C20_automatic-marking.qmd
 #        - C21_programming-across-disciplines-usefulness.qmd
-#        - C22_interdisciplinary-by-design.qmd
+        - C22_interdisciplinary-by-design.qmd
 #        - C23_pair-programming-fusion.qmd
 #        - C24_lost-in-translation.qmd
 #        - C25_supporting-new-tutors.qmd
