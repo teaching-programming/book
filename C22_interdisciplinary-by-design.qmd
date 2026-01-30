@@ -11,11 +11,11 @@ This chapter discusses the Centre for Data, Culture & Society's (CDCS) training 
 
 Today's researchers work in a rapidly changing technological environment, tackling complex global challenges: the ability to work across disciplines, scales, and sectors is increasingly important. In this context many researchers are embracing data-led approaches and there is an increase in demand for training in the kinds of applied methods that would traditionally have been taught only in computer science and STEM disciplines through coding-based approaches. Scholars in the arts and humanities, who bring invaluable critical, creative and ethical perspectives to interdisciplinary projects, face specific challenges in acquiring these technical skills: barriers include confidence, grounding assumptions, language and a lack of tailored skills development opportunities. The inherent complexity of computational methodologies, along with unfamiliar technical language and processes, can prove a significant stumbling block to researchers whose time and resource is limited. Empowering such researchers to engage and explore the value of these approaches supports not only more effective collaboration, but also more nuanced, reflective and ground-breaking interdisciplinary projects.
 
-[The Centre for Data, Culture & Society (CDCS)](https://www.cdcs.ed.ac.uk/) at the University of Edinburgh[\[1\]](#_ftn1) was founded with a mission to inspire and support scholars across the arts, humanities and social sciences to explore, navigate and utilize the potential of data-led and computational methods.  To build capacity and support for interdisciplinary digital research projects, and to support the sharing of relevant knowledge, methods and resources between subject areas and schools, it was deliberately positioned outside of academic departments: support from a cross-school academic advisory board ensures that all of the research communities within the College of Arts, Humanities and Social Sciences can feed into planning and prioritization.  Through a range of technical services, CDCS offers a space for experimentation and tries to catalyze innovation, fostering a culture of peer-collaboration and knowledge sharing.  It provides tailored and flexible support including bespoke technical support and advice, prototyping sandpits, data clinics and opportunities to develop communities of practice. This collaborative ecosystem is further enriched by regular networking events and workshops that provide flexible opportunities for professional development and interdisciplinary engagement. The Centre is staffed by a professional services team that includes a director, training manager, and events coordinator as well as training fellows and research software engineers.
+[The Centre for Data, Culture & Society (CDCS)](https://www.cdcs.ed.ac.uk/) at the University of Edinburgh[^footnote-cdcs] was founded with a mission to inspire and support scholars across the arts, humanities and social sciences to explore, navigate and utilize the potential of data-led and computational methods.  To build capacity and support for interdisciplinary digital research projects, and to support the sharing of relevant knowledge, methods and resources between subject areas and schools, it was deliberately positioned outside of academic departments: support from a cross-school academic advisory board ensures that all of the research communities within the College of Arts, Humanities and Social Sciences can feed into planning and prioritization.  Through a range of technical services, CDCS offers a space for experimentation and tries to catalyze innovation, fostering a culture of peer-collaboration and knowledge sharing.  It provides tailored and flexible support including bespoke technical support and advice, prototyping sandpits, data clinics and opportunities to develop communities of practice. This collaborative ecosystem is further enriched by regular networking events and workshops that provide flexible opportunities for professional development and interdisciplinary engagement. The Centre is staffed by a professional services team that includes a director, training manager, and events coordinator as well as training fellows and research software engineers.
 
-The CDCS training programme is a key part of the Centre’s offer and has been developed over the last six years to provide participants with practical support in applying computational methods to their projects. It is designed to be inclusive, accessible, and practical, and offers a variety of formats to accommodate diverse learning preferences, ranging from workshops and seminars to intensive boot camps, self-paced learning materials and online courses. ‘Digital Method of the Month’ sessions, for example, provide beginner-friendly introductions into a specific approach or technique.[\[2\]](#_ftn2) These hour-long sessions are designed to give researchers a practical sense of what each method involves before committing significant time to it. They create a welcoming, entry-level space for exploring new approaches, with frank discussion of tools, challenges, and the realities of applying methods in practice.  
+The CDCS training programme is a key part of the Centre’s offer and has been developed over the last six years to provide participants with practical support in applying computational methods to their projects. It is designed to be inclusive, accessible, and practical, and offers a variety of formats to accommodate diverse learning preferences, ranging from workshops and seminars to intensive boot camps, self-paced learning materials and online courses. ‘Digital Method of the Month’ sessions, for example, provide beginner-friendly introductions into a specific approach or technique.[^footnote-dmm] These hour-long sessions are designed to give researchers a practical sense of what each method involves before committing significant time to it. They create a welcoming, entry-level space for exploring new approaches, with frank discussion of tools, challenges, and the realities of applying methods in practice.  
 
-A foundational principle of the training programme is that it is ‘by researchers, for researchers’ and delivered by a cohort of Training Fellows, leveraging peer-led instruction to build competencies within a supportive community. The fellowship program recruits doctoral candidates and early-career researchers who use computational methods in their projects.[\[3\]](#_ftn3) It offers them an opportunity to deliver courses, teach and mentor their peers, thus fostering an environment of reciprocal learning and reinforcing their own understanding of the subject matter. This peer-led structure serves to nurture networks of support and collaboration. A key example is the Centre’s Bring Your Own Data (BYOD) sessions, which enable students to bring their work into the learning environment, discuss their processes and problems and troubleshoot together. This allows participants to get hands-on experience and supports learners in translating their new skills to their own research environments, thus reducing barriers to implementation and encouraging ongoing usage of computational methods.
+A foundational principle of the training programme is that it is ‘by researchers, for researchers’ and delivered by a cohort of Training Fellows, leveraging peer-led instruction to build competencies within a supportive community. The fellowship program recruits doctoral candidates and early-career researchers who use computational methods in their projects.[^footnote-fellows] It offers them an opportunity to deliver courses, teach and mentor their peers, thus fostering an environment of reciprocal learning and reinforcing their own understanding of the subject matter. This peer-led structure serves to nurture networks of support and collaboration. A key example is the Centre’s Bring Your Own Data (BYOD) sessions, which enable students to bring their work into the learning environment, discuss their processes and problems and troubleshoot together. This allows participants to get hands-on experience and supports learners in translating their new skills to their own research environments, thus reducing barriers to implementation and encouraging ongoing usage of computational methods.
 
 One of the main challenges in teaching computational methods to researchers in the Humanities and Social Sciences is the technological language barrier. Many participants enter workshops without a shared vocabulary for describing what they are trying to achieve through the application of code-based tools. The Centre tackles this by intentionally focusing on building a shared terminology that helps attendees build up their understanding while mapping their research needs against specific computational methods. Instructors provide clear definitions of key terms, introduce foundational structures, and carefully explain the “grammar” and syntax of computational processes. This approach equips participants with language that they can use to continue learning independently – as we always tell learners, half of the battle is knowing what words to google!
 
@@ -35,17 +35,11 @@ Since its launch, the Centre has produced a substantial body of training materia
 
 Overall, CDCS plays a pivotal role in removing barriers that have traditionally hindered the use of computational methods in various disciplines. This flexible approach has proven successful, with around 600 to 700 researchers per year benefiting from the Centre’s work. By emphasizing interdisciplinarity, peer-support, flexible formats, and explicitly showing learning processes, the Centre is effectively transforming how researchers in the arts, humanities and social sciences engage with digital and computational technologies. This approach not only enhances individual research capacity but also contributes to the broader academic and societal understanding of data, culture, and society, leading to innovative solutions to complex global challenges. As computational methods continue to weave into the fabric of research across disciplines, initiatives like those at CDCS will be indispensable in preparing researchers to navigate and lead in this new digital era.
 
-----------------------------------------------------------------------------------------------------------------
+---
 
-[\[1\]](#_ftnref1) Founded in 2019, CDCS is a strategic initiative of the College of Arts, Humanities and Social Sciences at the University of Edinburgh.  Since 2021 it has been part of the [Edinburgh Futures Institute](https://www.efi.ed.ac.uk), one of five innovation hubs established through the [Data-Driven  Innovation Programme](https://ddi.ac.uk/) funded by the [Edinburgh and South East Scotland City Region Deal](https://esescityregiondeal.org.uk/).  Alongside its training programme, CDCS offers events, technical services and infrastructure for data-led research.
+## *Appendix 1: Digital Method of the Month Session in Detail*
 
-[\[2\]](#_ftnref2) For each meeting, we also prepare a [Markdown file](https://github.com/DCS-training/Digital-Method-of-the-Month) that provides attendees with starting notes to support their work on a specific method.
-
-[\[3\]](#_ftnref3) The Training Fellows are recruited annually (with the possibility of extending their contract) through an open call to current PhDs and ECRs, and through a standard interview panel. Once appointed, they are offered a Guaranteed Hours contract. This provides flexibility, assuring them sufficient hours to design and deliver one training course and leaving open the possibility of taking on more work, if they have capacity and interest. How many hours each TF works every year can vary considerably and is dependent on programming, availability, skills, and budget. Once they start their contract, they receive a general induction covering our aims and delivery methods, past training courses and available materials. After that they work with the Training Manager to design the programme. Each year there is a combination of returning and new Training Fellows, and during the first semester the new TFs normally start as helpers in courses led by more experienced Training Fellows or by running courses where the material has already been consolidated and just needs a simple refresh and update. During this phase, they learn how to provide feedback on material delivered by others, and they familiarise themselves with different methods of delivery. Thereafter, more often in the second semester, they are invited to submit ideas for new training material or more consistent revisions of existing training material. At each stage, they receive and give feedback on materials and delivery methods, both from their peers and from the Training Manager (we use GitHub for our materials as it supports this constant review process). The pedagogical progress of the Training Fellows—from helping in a class led by someone else to producing brand new training material—is usually dependent on their previous experience and capacity, but by the end of their contract, they will all have experience in developing new or extensively revised training material.
-
-### *Appendix 1: Digital Method of the Month Session in Detail*
-
-#### **General aim of the DMMs**:
+### **General aim of the DMMs**:
 
 Informal meetings to create a safe space to freely discuss the practicalities of learning and implementing a new digital skill in research.
 
@@ -63,11 +57,11 @@ During the meeting we try to answer the following question
 
 -   Where can you find more info on the subject?
 
-#### **Duration:**
+### **Duration:**
 
 1 h
 
-#### **Schedule:**
+### **Schedule:**
 
 -   00:00-00:10 Housekeeping and intro
 
@@ -77,23 +71,23 @@ During the meeting we try to answer the following question
 
 -   00:50-01:00 Discussion on available resources for learning, way forwards and wrapping up
 
-#### **Example:**
+### **Example:**
 
 Digital Method of the Month on Working with GIS and Geographical Datasets
 
-#### **Learning Objectives**:
+### **Learning Objectives**:
 
 -   Become familiar with the main concepts of Geospatial Data and GIS
 
 -   Understanding the easiest pitfall new practitioner can incur into when starting working with these tools
 
-#### **Material Provided:**
+### **Material Provided:**
 
 -   Housekeeping slides with rules of the DMM
 
 -   .md file with major points of discussion written out with hyperlinks to further resources (all previously run DMM md files are available at: [https://github.com/DCS-training/Digital-Method-of-the-Month/tree/main/DMM%20Docs](https://github.com/DCS-training/Digital-Method-of-the-Month/tree/main/DMM%20Docshttps://github.com/DCS-training/Digital-Method-of-the-Month/tree/main/DMM%20Docs))
 
-#### **Main discussion Points:**
+### **Main discussion Points:**
 
 -   Concepts and jargon that practitioners need to familiarize with – e.g. difference between vectors and raster and practical repercussion of working with either data sources, standards of data (like shapefiles, GeoPackages, GeoTiff etc..), downloading data vs connect to OSM and WMS services, etc.
 
@@ -108,3 +102,19 @@ Digital Method of the Month on Working with GIS and Geographical Datasets
 -   List of helpful websites/blogs on where to ask for help
 
 -   Resources to learn GIS both as self-learner than within the Centre and the university in general
+
+
+
+<!-- footnotes below -->
+
+[^footnote-cdcs]: Founded in 2019, CDCS is a strategic initiative of the College of Arts, Humanities and Social Sciences at the University of Edinburgh.  Since 2021 it has been part of the [Edinburgh Futures Institute](https://www.efi.ed.ac.uk), one of five innovation hubs established through the [Data-Driven  Innovation Programme](https://ddi.ac.uk/) funded by the [Edinburgh and South East Scotland City Region Deal](https://esescityregiondeal.org.uk/).  Alongside its training programme, CDCS offers events, technical services and infrastructure for data-led research.
+
+[^footnote-dmm]: For each meeting, we also prepare a [Markdown file](https://github.com/DCS-training/Digital-Method-of-the-Month) that provides attendees with starting notes to support their work on a specific method.
+
+[^footnote-fellows]: The Training Fellows are recruited annually (with the possibility of extending their contract) through an open call to current PhDs and ECRs, and through a standard interview panel. Once appointed, they are offered a Guaranteed Hours contract.
+
+    This provides flexibility, assuring them sufficient hours to design and deliver one training course and leaving open the possibility of taking on more work, if they have capacity and interest. How many hours each TF works every year can vary considerably and is dependent on programming, availability, skills, and budget. Once they start their contract, they receive a general induction covering our aims and delivery methods, past training courses and available materials. After that they work with the Training Manager to design the programme.
+    
+    Each year there is a combination of returning and new Training Fellows, and during the first semester the new TFs normally start as helpers in courses led by more experienced Training Fellows or by running courses where the material has already been consolidated and just needs a simple refresh and update. During this phase, they learn how to provide feedback on material delivered by others, and they familiarise themselves with different methods of delivery. Thereafter, more often in the second semester, they are invited to submit ideas for new training material or more consistent revisions of existing training material. At each stage, they receive and give feedback on materials and delivery methods, both from their peers and from the Training Manager (we use GitHub for our materials as it supports this constant review process).
+    
+    The pedagogical progress of the Training Fellows—from helping in a class led by someone else to producing brand new training material—is usually dependent on their previous experience and capacity, but by the end of their contract, they will all have experience in developing new or extensively revised training material.
