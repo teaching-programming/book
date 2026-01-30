@@ -39,11 +39,15 @@ In the book, reference data is contained in a separate `.bib` file containing on
     - Directly from the publisher pages: find the option to export the citation, and select the BibTeX format.
     - All reference manager software should give you the option to export one or more references in BibTeX format.
     - Some of these will give you the text directly or copy it to your clipboard; others will give you a .bib file, which you can open in a plain text editor. In any case, paste the contents in your `myrefs.bib` file. Be careful to paste the curly brackets correctly!
-3. In your Markdown `.md` file, use `[@bibtex-tag]` in the text wherever you want to cite the work corresponding to the `bibtex-tag` entry in `myrefs.bib`.
+3. In your Markdown `.md` file, use `[@banana]` in the text wherever you want to cite the work corresponding to the `banana` entry in `myrefs.bib`.
 
 This is all you need to do; your references will be formatted automatically at the bottom of your chapter.
 
 [TODO: internal refs? do we do this ourselves?]
+
+[TODO: reference a website, use footnotes]
+
+[TODO: footnotes]
 
 If this is extremely confusing, the editing team will be able to do this on your behalf; in this case, please make sure that all of the references in your manuscript include a URL or DOI pointing to the publisher page, so that we can retrieve the citation data.
 
@@ -57,6 +61,7 @@ If this is extremely confusing, the editing team will be able to do this on your
 5. Replace the `title:` in the header with the title of your chapter (in double quotes).
 6. Copy and paste the contents of your `myrefs.bib` file to the **end** of the `references.bib` file, after all the other entries.
 7. Commit your changes back to your GitHub repo. [TODO: push if you did it locally?]
+8. [TODO: if you have Quarto installed, you can render to preview and fix issues. In RStudio, open `index.qmd`, and click the Render button (blue arrow).]
 
 [TODO: pull request instructions]
 
