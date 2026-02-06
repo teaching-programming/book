@@ -11,7 +11,7 @@ execute:
 
 format:
     html:
-        number-sections: true
+        number-sections: false
         eval: true
         theme: [cosmo, _theme/atkinson.scss]
         css: _theme/styles.css

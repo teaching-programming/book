@@ -1,8 +1,8 @@
 # Teaching Programming Across Disciplines - Guidance for chapter authors
 
-[Video instructions are available](https://media.ed.ac.uk/media//1_7nk68kt4) for chapter authors on how to submit your reviewed chapter to the GitHub repository. The slides shown in the video are also [available here](TODO: LINK TO SLIDES).
+[Video instructions are available](https://media.ed.ac.uk/media//1_7nk68kt4) for chapter authors on how to submit your reviewed chapter to the GitHub repository. The slides shown in the video are also [TODO available here](TODO: LINK TO SLIDES).
 
-The main steps are also summarised below. **If you need assistance with any/all part(s) of the process, please contact [TODO: contact email?]().**
+The main steps are also summarised below. **If you need assistance with any/all part(s) of the process, please email [`pairprogramming@ed.ac.uk`](mailto:pairprogramming@ed.ac.uk).** 
 
 
 ## Finalise your chapter
@@ -50,6 +50,13 @@ This is all you need to do; your references will be formatted automatically at t
 [TODO: footnotes]
 
 If this is extremely confusing, the editing team will be able to do this on your behalf; in this case, please make sure that all of the references in your manuscript include a URL or DOI pointing to the publisher page, so that we can retrieve the citation data.
+
+
+## Format your footnotes
+
+If you have added academic references as footnotes, please reformat them as proper references instead (see [Format your references](#format-your-references)).
+
+Footnotes can still be used for footnote text, as shown [in the chapter template](00-chapter-template.qmd) (see the rendered footnotes on the website.
 
 
 ## Submit your chapter to GitHub

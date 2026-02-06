@@ -1,32 +1,68 @@
 ---
-title: "Title of Example Chapter (as will apper on top h1 header and in table of contents)"
+title: "Title of Example Chapter (as will appear on top h1 header and in table of contents)"
 bibliography: references.bib
+author:
+  - name: John Doe
+    email: john@doe.com
+  - name: Jane Doe
+    email: jane@doe.com
+keywords:
+  - markdown
+  - example
 ---
 
-## First: things to include
+## Your first top-level section
 
-### Subsection references
+### A subsection
 
-An example citation [@williams2010pair].
+This is an example subsection, starting with `###`.
 
-An example citation @williams2010pair.
+## Quarto Markdown quick examples
 
-Inner book citation: [@TeachProgAcross_C01]
+### Citations
 
-### Subsection link types
+An example citation [@williams2010pair]. You can also cite @williams2010pair in the text, without the brackets.
 
-<https://quarto.org>
+This is a reference to a chapter of a book [@TeachProgAcross_C01]. You can find it in `references.bib`; it uses the `@inbook` type.
 
-[example link](https://quarto.org)
+The "References" section will be populated automatically at the bottom.
 
-### Subsection images
+### Footnotes
 
-picture: with caption, source, title, alt and link
-![Some Caption](/chapters/images/C36_pair-programming-across-disciplines_online_ideas.png "Some Title"){fig-alt="Some alt text."}
+This is some text with a footnote[^C00-myfootnote].
 
-picture wrapped in a link, this way picture links to somewhere
+[^C00-myfootnote]: Write the content of your footnote here.
 
-[![Some Caption](/chapters/images/C36_pair-programming-across-disciplines_online_ideas.png "Some Title"){fig-alt="Some alt text."}](https://quarto.org)
+    If you need a multiline footnote, indent the following lines with 4 spaces...
+
+    ...like this. Everything indented will be part of the footnote.
+
+### URL links
+
+You should use [link text](https://quarto.org) to include URL links.
+
+Only if it is relevant to display the full URL in the text, use `<...>`: <https://quarto.org>
+
+### Images
+
+
+![This is the caption for an image, sized to take 70% of the screen width.](/chapters/images/C36_pair-programming-across-disciplines_online_ideas.png "Some Title, appears on mouse hover"){fig-alt="Some alt text for accessibility." width=70%}
+
+
+[![This is the caption for an image with a clickable link.](/chapters/images/C36_pair-programming-across-disciplines_online_ideas.png "Some Title, appears on mouse hover"){fig-alt="Some alt text for accessibility." width=70%}](https://quarto.org)
+
+
+### Putting some content in a box
+
+:::{.callout-tip icon="false"}
+# Title of your box
+
+You can put some content in a box like this, called a [callout](https://quarto.org/docs/authoring/callouts.html), if you want it to be visually distinct from the rest of your chapter. This could be e.g. if you write an example or a short case study.
+
+:::
+
+
+
 
 ::: {.content-visible when-format="html" unless-format="epub"}
 
