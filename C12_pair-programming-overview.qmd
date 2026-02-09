@@ -1,13 +1,34 @@
 ---
 title: "Where do I even start with Pair Programming in my classroom? Conversation with seasoned practitioners."
-format: html
 bibliography: references.bib
-toc: true
+author:
+  - name: Pawel Orzechowski
+    corresponding: true
+    email: pawel.orzechowski@ed.ac.uk
+    affiliations:
+      - ref: uoe
+  - name: Brittany Blankinship
+    email: brittany.blankinship@ed.ac.uk
+    affiliations:
+      - ref: uoe
+  - name: Kasia Banas
+    email: kasia.banas@ed.ac.uk
+    affiliations:
+      - ref: uoe
+affiliations:
+  - id: uoe
+    name: Edinburgh Medical School, University of Edinburgh
+    
+keywords:
+  - pair programming
+  - groupwork
 ---
 
-## Authors: Pawel Orzechowski, Brittany Blankinship, Kasia Banas
+## Context
 
-In this chapter we present an interview with two educators who have been using pair programming for many years. They will introduce the practice and answer frequently asked questions about using pair programming in education.
+In this chapter we present a conversation between three educators who have been using pair programming for many years. They will introduce the practice and answer frequently asked questions about using pair programming in education.
+
+You can listen to the [audio podcast version of this interview](https://media.ed.ac.uk/media/1_xnjvow1u). Thank you to Miłosz Karpowicz and Jan Banaś for audio editing advice and help.
 
 ## Communicating the why
 
@@ -293,7 +314,7 @@ All you'll need to start is: a willing colleague or friend; two hours of time; a
 
 For example if you do not have clear roles (who's the driver, and who's the navigator) it might fall into chaos or into working separately. If you do not switch, the person with more confidence or experience can end up hogging the keyboard. Or if you create bigger groups, people might disengage and not take ownership of the exercise. I'd say, start with the simple 'vanilla' off-the-shelf pair programming, and then find what works best in your context.
 
-**Interviewer:** This sounds like very useful advice and first steps! And if people want to know more, they can find out about it on the website of our community, which is at [www.pairprogramming.ed.ac.uk](http://pairprogramming.ed.ac.uk) ! Thanks for talking to me today. I am Dr Kasia Banas, and I've been talking today with Dr Brittany Blankinship and Dr Pawel Orzechowski from the Edinburgh Medical School at the University of Edinburgh.
+**Interviewer:** This sounds like very useful advice and first steps! And if people want to know more, they can find out about it on the website of our community, which is at <www.pairprogramming.ed.ac.uk>! Thanks for talking to me today. I am Dr Kasia Banas, and I've been talking today with Dr Brittany Blankinship and Dr Pawel Orzechowski from the Edinburgh Medical School at the University of Edinburgh.
 
 **Brittany:** Thanks for having us!
 
