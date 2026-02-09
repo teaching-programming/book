@@ -41,7 +41,7 @@ This is some text with a footnote[^C00-myfootnote].
 
 You should use [link text](https://quarto.org) to include URL links.
 
-Only if it is relevant to display the full URL in the text, use `<...>`: <https://quarto.org>
+This should very rarely be the case, but if it is relevant to display the full URL in the text, use `<...>`: <https://quarto.org>
 
 ### Images
 

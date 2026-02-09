@@ -29,6 +29,7 @@ format:
     pdf:
         include-in-header: _theme/latex_preamble.tex
         bibliography: references.bib
+        links-as-notes: true
     epub:
         bibliography: references.bib
 
