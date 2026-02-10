@@ -1,8 +1,8 @@
 # Teaching Programming Across Disciplines - Guidance for chapter authors
 
-[Video instructions are available](https://media.ed.ac.uk/media//1_7nk68kt4) for chapter authors on how to submit your reviewed chapter to the GitHub repository. The slides shown in the video are also [TODO available here](TODO: LINK TO SLIDES).
+[Video instructions are available](https://media.ed.ac.uk/media//1_7nk68kt4) for chapter authors on how to submit your reviewed chapter to the GitHub repository. The PDF slides can be downloaded from the video attachments. The main steps are also summarised below.
 
-The main steps are also summarised below. **If you need assistance with any/all part(s) of the process, please email [`pairprogramming@ed.ac.uk`](mailto:pairprogramming@ed.ac.uk).** 
+**If you need assistance with any/all part(s) of the process, please email Charlotte ([`charlotte.desvages@ed.ac.uk`](mailto:charlotte.desvages@ed.ac.uk)) and Pawel ([`Pawel.Orzechowski@ed.ac.uk`](mailto:Pawel.Orzechowski@ed.ac.uk))**, and CC the editing team inbox ([`pairprogramming@ed.ac.uk`](mailto:pairprogramming@ed.ac.uk)).
 
 
 ## Finalise your chapter
@@ -65,29 +65,36 @@ Footnotes can still be used for footnote text, as demonstrated [in the chapter t
 
 1. When you have a final Markdown version of your chapter, choose one person with a GitHub account to submit it.
 2. Fork the [book repository](https://github.com/teaching-programming/book) by clicking the "Fork" button on the top right of the screen. This creates your own copy of the book, associated with your GitHub account (the URL should be `github.com/your-github-username/book`, or another name if you chose a different one when creating your fork).
+    - If you had already created your fork previously, and it is now "X commits behind", click "Sync fork", then "Update branch" to make sure your fork is still synchronised with the main book repo.
 
 The following instructions explain how to edit the files directly in the browser, assuming little to no familiarity with GitHub. If you are comfortable enough using git and GitHub, you can just clone your fork locally, edit the files, and push your changes back to GitHub.
 
 3. Find the `Cxx_chapter-title.qmd` file which corresponds to your chapter, click on the file, and edit it by clicking on the pencil icon on the top right.
-    - Delete lines 6 to 27 (inclusive) in the file. **TODO: change this if template changes**
-    - Copy and paste the contents of your Markdown manuscript `mychapter.md` into the file, replacing the lines you just deleted. Do not include the title!
-    - Replace the `title:` in the header with the title of your chapter (in double quotes).
-    - **TODO: author info**
+    - Add your **chapter title** next to the `title:` in the header (in double quotes).
+    - Add **author information** in the header under `author:`. You can add more authors by repeating the block starting with `- name:`, and delete the `email:` line if any authors don't want to share their email address.
+    - Add **keywords** for you chapter under `keywords:`.
+    - Delete the line indicated in the file, and copy and paste the **contents of your manuscript** `mychapter.md` in its place. Don't include the title, author information, or keywords, as you've already put these in the header.
     - Commit your changes.
 4. Find the `references.bib` file on GitHub, and edit it.
     - Do not delete anything in the file!
     - Copy and paste the contents of your own `references.bib` file to the **end** of the `references.bib` file on GitHub, after all the other existing entries.
     - Commit your changes.
+5. Find the `_quarto.yml` file on GitHub, and edit it.
+    - Find the line starting with `#` and containing `Cxx_chapter-title.qmd` corresponding to your chapter.
+    - Delete the `#` at the start of the line.
+    - Commit your changes.
 
 ### Optional: Preview your chapter
 
-If you have Quarto installed on your computer, you can render the book to preview your chapter and fix issues.
+Optionally, if you have Quarto installed on your computer, you can render the book to preview your chapter and fix issues.
 
 1. Download all the files in your fork. You can clone the repository, or just click on Code > Local > Download ZIP and extract the ZIP.
 2. Render the book using Quarto:
-    - If you use RStudio, add the main folder to the workspace, open `index.qmd`, and click the Render button (blue arrow).
+    - If you use RStudio, add the `book` folder to your workspace, open `index.qmd`, and click the Render button (blue arrow).
     - If you use terminal commands, navigate to the main folder, and run `quarto render`.
 3. When rendered, open `_book/Cxx_chapter-title.html` in a browser.
+
+If you want to make any further changes then, don't forget to push or reupload them to your fork on GitHub when you are done.
 
 ### Merge your fork with the main book
 
@@ -98,8 +105,8 @@ Now, your fork of the book should contain your chapter; let's merge it back into
     - `Cxx_chapter-title.qmd` which should now contain your chapter,
     - `references.bib` which should now contain your BibTeX references at the end of the file,
     - `_quarto.yml` which should have the `#` removed on the `Cxx_chapter-title.qmd` line.
-3. Optionally, if you want to leave the editing team any comments or ask questions about formatting, you can do so in the text box.
-4. Once you are happy with your changes, click on "Create pull request".
+3. Optionally, if you want to leave the editing team any comments or ask questions, you can do so in the text box.
+4. Once you've checked that you are happy with your changes, click on "Create pull request".
 
 The editing team will take it from here. We might need to make further changes and tweaks before we're able to merge your chapter and close the pull request; you will be able to see all of this by going back to view your pull request from the main book repository. If we need to ask you any questions, we will tag you so that you get notified by email, and you will be able to respond directly from the pull request page as well.
 

@@ -22,7 +22,7 @@
   
     <div class="control-group">
         <label for="paddingSlider">Padding</label>
-        <input type="range" id="paddingSlider" min="0" max="12" value="0">
+        <input type="range" id="paddingSlider" min="0" max="12" value="3">
         <span id="paddingValue">0</span>
     </div>
   
@@ -33,7 +33,7 @@
     </div>
   
     <div class="control-group">
-        <label for="fontFamily">Font family</label>
+        <label for="fontFamily">Font</label>
         <select id="fontFamily">
             <option value="'Atkinson Hyperlegible', sans-serif">Atkinson Hyperlegible</option>
             <option value="Arial, Helvetica, sans-serif">Sans-serif</option>

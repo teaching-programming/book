@@ -50,7 +50,7 @@ input[type="range"] {
 
 /* Drop-down box */
 select {
-    margin-left: 10px;
+    margin-left: -0.5em;
     color: var(--bs-body-color);
 }
 
