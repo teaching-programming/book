@@ -63,7 +63,7 @@ book:
         - C12_pair-programming-overview.qmd
 #        - C13_pair-programming-adventure.qmd
 #        - C14_foster-inclusion-and-accessibility.qmd
-#        - C15_programming-without-computers.qmd
+        - C15_programming-without-computers.qmd
 #        - C16_pair-programming-extensions.qmd
 #        - C17_coding-with-music.qmd
 #        - C18_social-learning-modelling.qmd
