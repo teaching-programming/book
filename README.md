@@ -20,7 +20,7 @@ If you didn't write your chapter as a [Markdown file](https://www.markdownguide.
 
 Once you have a Markdown version, here are the final tweaks needed to match the format of the book. You can also look inside the [chapter template](00-chapter-template.qmd), which acts as a cheat-sheet showing short snippets of all those things in action.
 
-### Add captions and alt-text to your images
+### Format your images
 
 In the Markdown file, your images will look like this:
 
@@ -28,7 +28,9 @@ In the Markdown file, your images will look like this:
 
 Change it to the following (note the change to the image file path):
 
-`![Your image caption](/chapters/images/yourimagefile.png "Title, which will be displayed on mouse hover"){fig-alt="Some alt text which describes the image for screen reader users"}`
+`![Your image caption](/chapters/images/Cxx_yourimagefile.png "Title, which will be displayed on mouse hover"){fig-alt="Some alt text which describes the image for screen reader users"}`
+
+Don't forget to also rename your image files to add `Cxx_` at the start of the file name, corresponding to your chapter ID.
 
 
 ### Format your references
@@ -83,6 +85,7 @@ The following instructions explain how to edit the files directly in the browser
     - Find the line starting with `#` and containing `Cxx_chapter-title.qmd` corresponding to your chapter.
     - Delete the `#` at the start of the line.
     - Commit your changes.
+6. If you have images, find the `chapters/images/` folder, open it, and click "Add file" > "Upload files" on the top right of the screen to upload your image files.
 
 ### Optional: Preview your chapter
 
