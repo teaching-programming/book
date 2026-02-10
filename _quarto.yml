@@ -54,7 +54,7 @@ book:
 #        - C03_online-teaching-reflections.qmd
 #        - C04_computer-says-no.qmd
 #        - C05_coding-mindset.qmd
-#        - C06_feminists-and-anarchists.qmd
+        - C06_feminists-and-anarchists.qmd
 #        - C07_teaching-C-to-novices.qmd
 #        - C08_ai-boom-or-bust.qmd
 #        - C09_debugging-beyond-the-debugger.qmd
