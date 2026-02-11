@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.25">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Robert S. Young">
+<meta name="author" content="Rebecca L. Colquhoun">
+<meta name="author" content="Tiago A. Marques">
+<meta name="author" content="Brittany Blankinship">
+<meta name="author" content="Ozan Evkaya">
+<meta name="author" content="William P. Kay">
+
+<title>Sequential vs.&nbsp;Simultaneous: Approaches to Learning Programming and Statistics</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="02-chapter-stats-coding_files/libs/clipboard/clipboard.min.js"></script>
+<script src="02-chapter-stats-coding_files/libs/quarto-html/quarto.js" type="module"></script>
+<script src="02-chapter-stats-coding_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="02-chapter-stats-coding_files/libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="02-chapter-stats-coding_files/libs/quarto-html/popper.min.js"></script>
+<script src="02-chapter-stats-coding_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="02-chapter-stats-coding_files/libs/quarto-html/anchor.min.js"></script>
+<link href="02-chapter-stats-coding_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="02-chapter-stats-coding_files/libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="02-chapter-stats-coding_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="02-chapter-stats-coding_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="02-chapter-stats-coding_files/libs/bootstrap/bootstrap-d6a003b94517c951b2d65075d42fb01b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="quarto-light">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#teaching-statistics-before-programming" id="toc-teaching-statistics-before-programming" class="nav-link" data-scroll-target="#teaching-statistics-before-programming">Teaching statistics before programming</a></li>
+  <li><a href="#teaching-programming-before-statistics" id="toc-teaching-programming-before-statistics" class="nav-link" data-scroll-target="#teaching-programming-before-statistics">Teaching programming before statistics</a></li>
+  <li><a href="#teaching-programming-and-statistics-together" id="toc-teaching-programming-and-statistics-together" class="nav-link" data-scroll-target="#teaching-programming-and-statistics-together">Teaching programming and statistics together</a></li>
+  <li><a href="#practical-strategies-for-teaching-statistics-and-programming" id="toc-practical-strategies-for-teaching-statistics-and-programming" class="nav-link" data-scroll-target="#practical-strategies-for-teaching-statistics-and-programming">Practical strategies for teaching statistics and programming</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
+  <li><a href="#links-to-other-chapters" id="toc-links-to-other-chapters" class="nav-link" data-scroll-target="#links-to-other-chapters">Links to other chapters</a></li>
+  </ul>
+</nav>
+</div>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Sequential vs.&nbsp;Simultaneous: Approaches to Learning Programming and Statistics</h1>
+</div>
+
+
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Authors</div>
+  <div class="quarto-title-meta-heading">Affiliations</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Robert S. Young </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Usher Institute, University of Edinburgh and Zhejiang University - University of Edinburgh (ZJE) Institute
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Rebecca L. Colquhoun </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Department of Earth Science and Engineering, Imperial College Longon
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Tiago A. Marques </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            School of Mathematics, University of St Andrews
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Brittany Blankinship </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Usher Institute, University of Edinburgh
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Ozan Evkaya </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            School of Mathematics, University of Edinburgh
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">William P. Kay </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            School of Biosciences, Cardiff University
+          </p>
+      </div>
+  </div>
+
+<div class="quarto-title-meta">
+
+      
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="introduction" class="level1">
+<h1>Introduction</h1>
+<p>We live in a data driven world. Much research in STEM departments requires skills in data description, prediction and inference which are often developed through statistics modules but, increasingly, non-trivial statistical analysis requires computer programming. Therefore, for many undergraduate degree programmes, two closely interrelated but technically distinct disciplines - programming and statistics - must often both be taught. There are different possible approaches to teaching these subjects, most notably whether to deliver them simultaneously or sequentially. In this chapter, we focus on undergraduate level teaching in subject areas that are not primarily programming or statistics. We discuss the advantages and disadvantages to three different approaches and provide guidance on best practice in instructional technique and curriculum design. Case-study examples based on our own teaching experiences are provided throughout to illustrate these strategies.</p>
+<p>The topic of teaching statistics to non-specialists has been discussed at length <span class="citation" data-cites="kelly1992teaching mustafa1996challenge metz2008teaching gimenez2013can o2016teaching bromage2022teaching">(<a href="#ref-kelly1992teaching" role="doc-biblioref">Kelly 1992</a>; <a href="#ref-mustafa1996challenge" role="doc-biblioref">Mustafa 1996</a>; <a href="#ref-metz2008teaching" role="doc-biblioref">Metz 2008</a>; <a href="#ref-gimenez2013can" role="doc-biblioref">Gimenez et al. 2013</a>; <a href="#ref-o2016teaching" role="doc-biblioref">O’Hara 2016</a>; <a href="#ref-bromage2022teaching" role="doc-biblioref">Bromage et al. 2022</a>)</span>. How to do so while acknowledging that programming is an important and related skill has received less focus, which we address here. In all scenarios teachers should be mindful of their own educational context, and, inter alia, what knowledge and skills they want their students to obtain from learning both programming and statistics.</p>
+</section>
+<section id="teaching-statistics-before-programming" class="level1">
+<h1>Teaching statistics before programming</h1>
+<p>This is perhaps the original or “old school” approach. As authors, many of us were taught in this way in our own undergraduate degrees prior to the widespread use of high quality, open-source programming languages (e.g., Python, R). Drawing on our experience, we have found that a key advantage of this approach is its focus on core theoretical concepts in statistics (e.g., probability distributions, uncertainty) without the additional cognitive load associated with technology or implementation. In disciplines where students are likely to need to perform statistical analyses across different contexts and using a range of technologies, this emphasis on foundational statistical reasoning has been particularly valuable.</p>
+<p>In practice, we have found that this approach cultivates in students both the ability to conduct ‘back-of-the-envelope’ analyses in settings where computers are not always available (such as during fieldwork), and enables them to ‘think on their feet’ when off-the-shelf methods aren’t suitable. Importantly, we have observed these behaviours emerge spontaneously rather than through explicit scaffolding.</p>
+<p>A second benefit of this approach is that it foregrounds statistics as a discipline in its own right, independent of computation, which can be obscured when programming and statistics are taught together. However, in undergraduate contexts where the primary subject area is not statistics or programming, separating the two can lead to the links between statistics and programming being weakened, potentially reducing insight into the applications of both. This has reinforced for us the benefit of applying statistical understanding once a conceptual foundation has been established. Indeed, if we choose a statistics-first approach then we strive to ensure that students are afforded opportunities to use computational approaches (e.g., programming or domain-specific interfaces such as STATA) to put their statistical understanding into practice at a later date.</p>
+<div class="callout callout-style-default callout-tip no-icon callout-titled" title="Example">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Example
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>In a first-year geoscience course, statistics was taught independently of programming before moving to a combined approach using Python. Later in the year, during fieldwork at the “Ammonite Pavement” in Dorset, students were asked to measure the size of some ammonite fossils. As they were comfortable with pen-and-paper statistical analysis, students took the initiative to more rigorously characterise the distribution of ammonite sizes, and to estimate the number of observations required to obtain a representative sample. Whilst the statistics course subsequently saw students applying programming to address statistical questions, this in-the-field investigation was facilitated by students first learning to do statistics by hand. Student engagement with ‘back-of-the-envelope’ statistics in the field emerged autonomously, but as a result we would consider highlighting the potential benefit of this sequencing explicitly for all students.</p>
+</div>
+</div>
+</section>
+<section id="teaching-programming-before-statistics" class="level1">
+<h1>Teaching programming before statistics</h1>
+<p>An alternative approach we have adopted in some contexts is to teach programming first, followed by statistics lessons that make explicit use of students’ programming skills. Here, students have time to consolidate their programming skills and build their programming mindset. They can then build knowledge and understanding through computational investigation of statistical concepts, before being introduced to formal statistical definitions.</p>
+<p>This approach requires more curriculum time than many programmes can accommodate. It also requires that the programming and statistics&nbsp; courses are designed with interaction in mind. For example, using the same programming language in both courses, or intentionally keeping the programming course language-agnostic (e.g., giving examples in multiple languages). We suggest that if this alignment is absent, students may find it more challenging to apply their programming knowledge to statistical contexts.</p>
+<p>We have also observed that teaching statistics in a manner which is reliant on the use of programming can present a barrier for students who are less confident in this, particularly early in the curriculum. Indeed, depending on the overall curriculum design, students may have forgotten much of the programming learnt by the time they are learning statistics. We have particularly observed this skill fade at the start of a subsequent academic year following a long summer break. This has led us to conclude that this approach is most effective when programming instruction is closely timed with subsequent statistical teaching, and that particularly between years there is the need to build in time for refresher training. We would avoid a programming-first design when coordination across modules is weak or when a long gap makes knowledge decay likely.</p>
+<div class="callout callout-style-default callout-tip no-icon callout-titled" title="Example">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Example
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>In a second-year course in biomedical informatics, the concept of variance was introduced using a programming-first approach prior to presenting the formal statistical framework of Analysis of Variance (ANOVA). Students were first shown how to use simulations (sampling with replacement) to compare differences between pairs of samples within and across treatment groups. These empirical results were then used to derive the probability of observing a difference between groups and to introduce the concept of variance as a quantitative measure. In the following week, the formal mathematics underlying ANOVA were introduced. Students subsequently learnt how to implement ANOVA using R and, when appropriate, to perform post-hoc pairwise tests to interpret observed differences among treatment groups. We found that this deliberate sequencing helped students to comprehend the underlying theory before learning how to implement the analysis and interpret the output in real-world scenarios. Of course, a trade-off in this approach was the additional contact time needed to run simulations and then later revisit notation, requiring a reduction of coverage elsewhere.</p>
+</div>
+</div>
+</section>
+<section id="teaching-programming-and-statistics-together" class="level1">
+<h1>Teaching programming and statistics together</h1>
+<p>The final approach we have identified is to teach programming and statistics together <span class="citation" data-cites="sarvary2014bio">(<a href="#ref-sarvary2014bio" role="doc-biblioref">Sarvary 2014</a>)</span>. In practice, we have seen this implemented in two ways: within a single module, instructors can teach either programming or statistics first and immediately apply it to the other, or the two can be truly interleaved e.g., by introducing new programming constructs and statistical concepts in parallel.</p>
+<p>This integrated approach has clear pedagogical advantages. Most importantly, students have reported that they feel able to engage immediately with statistical concepts through computation, and that this can promote a deeper understanding of statistics and its application. Furthermore, this can be supported by introducing new programming approaches when required alongside novel statistical techniques. Students may take a constructivist learning approach to building their statistical knowledge, e.g., by running simulations and adapting code provided in class. For students whose prior negative experience with mathematics presents a barrier to learning statistics <span class="citation" data-cites="pletzer2010predictors">(<a href="#ref-pletzer2010predictors" role="doc-biblioref">Pletzer et al. 2010</a>)</span>, we have found that introducing statistical concepts through code snippets can reduce this anxiety compared to presenting the same idea using formal mathematical notation. That said, our experience also highlights that for some the opposite is true i.e., that they find it easier to explore concepts programmatically after a formal mathematical introduction.</p>
+<p>Despite the benefits of this approach, we have found that the principal challenge of teaching programming and statistics together is the risk of cognitive overload. When both topics are taught concurrently, students are not always able to consolidate new material into their long-term memory and thus the working-memory load is higher <span class="citation" data-cites="sweller2018instructional">(<a href="#ref-sweller2018instructional" role="doc-biblioref">Sweller 2018</a>)</span>. In practice, many students will experience hurdles in their learning of both statistics and programming, and these may compound each other to further impede student attainment. We have observed that this effect can be exacerbated for students who are not learning in their native language, as they need to acquire domain-specific vocabulary in two topics simultaneously.</p>
+<p>While thoughtful course design - such as carefully and explicitly scaffolding topics, and limiting weekly learning outcomes - can mitigate cognitive overload, it is likely to remain higher when teaching programming and statistics together than with standalone courses <span class="citation" data-cites="auker2020teaching">(<a href="#ref-auker2020teaching" role="doc-biblioref">Auker and Barthelmess 2020</a>)</span>. Additional trade-offs have also emerged. In some implementations, students’ development of broader computational or algorithmic thinking was reduced, since programming was used almost exclusively to perform&nbsp; statistics. For disciplines where programming is primarily used for this purpose, this may be an appropriate outcome. However, where courses aim to set students up to progress to higher-level programming courses, we have found that students benefit from learning to apply programming skills across a broader range of applications to widen their transferable competence. Finally, the choice of programming language and environment can substantially impact learning outcomes, both positively and negatively. This highlights the need for careful course design, e.g., choosing a beginner-friendly programming language when adopting a fully integrated approach. We would therefore recommend avoiding a fully integrated design when class time is too tight, or when support for learners studying in a non-native language is limited.</p>
+<div class="callout callout-style-default callout-tip no-icon callout-titled" title="Example">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Example
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>In a first-year undergraduate course with students from several mathematically oriented degree programmes, concepts such as linear modeling were introduced alongside their computational implementation. During lectures, slides either showed the mathematical and code representations side-by-side or sequentially within the same session, allowing students to make connections across the two representations.</p>
+<p>Students then participated in workshops where context-specific exercises with new datasets were given, requiring students to start afresh each time. Students needed to either adapt code snippets based on the given data, or write new code to address each task. We found that regularly changing datasets encouraged transfer of knowledge rather than rote replication. We also learnt that with this style of delivery it was necessary to provide sufficient pauses - either during or between classes - to allow students to fully digest the content from both disciplines, meaning that less time was available for other activities.</p>
+</div>
+</div>
+</section>
+<section id="practical-strategies-for-teaching-statistics-and-programming" class="level1">
+<h1>Practical strategies for teaching statistics and programming</h1>
+<p>Drawing on our teaching experience across a range of programmes, we now summarise a number of practical strategies that we have found effective when teaching programming and statistics, regardless of whether these topics are taught sequentially or simultaneously.</p>
+<p>First, we have learnt that embedding the teaching of these topics into the subject matter of the overarching course is critical for student engagement, particularly when programming or statistics are not the principal focus of the degree programme. This embedding may take multiple forms, such as creating appealing visualisations, using authentic datasets, or discussing the conclusions that can be obtained in the students’ particular research field. In our experience, this contextualisation helps students understand not only how to perform relevant analyses, but why they are important for their discipline.</p>
+<p>Second, statistical methodologies are most effectively taught when also described clearly using a computational approach. For example, while it is helpful to describe the formal mathematical derivation for generating a test statistic, we recommend that this is routinely followed up with the programming approach required to generate the same result. Demonstrating the same concept from both perspectives helps students to consolidate the underlying statistical concepts and to see how statistics are applied in practice, highlighting&nbsp; the close connection between the two approaches.</p>
+<p>A third strategy that has emerged from our teaching is to foster a “programming or coding mindset”. We found it important to foreground programming as an important transferable skill in its own right, rather than solely being a tool to perform statistical analysis. This involved teaching students how to interact with data programmatically rather than relying on graphical user interfaces or apps alone. In practice, this included providing explicit instruction in code annotation, file paths, naming conventions, and being able to discriminate between characters, numbers, and special symbols. We also found that dedicating time to debugging code - particularly through live programming in lectures - helps to demystify programming and normalise common programming errors.</p>
+<p>Finally, our experience strongly suggests that motivating and enthusing students about both statistics and programming is critical. For example, framing computational statistics as a means to increase reproducibility, transparency, and confidence in scientific discoveries helps students appreciate its broader value. We have also found that highlighting the fact that these skills are universally applicable, lucrative, and in high demand in the job market, including beyond academia, is useful for motivating engagement. As an illustrative example, note that the gap in data-driven technical skills reported in 2023 in the UK includes specialist data skills (including statistics), alongside programming and software engineering skills required to manage and analyse datasets <span class="citation" data-cites="fearns2023data">(<a href="#ref-fearns2023data" role="doc-biblioref">Fearns, Harriss, and Lally 2023</a>)</span>.</p>
+<div class="callout callout-style-default callout-tip no-icon callout-titled" title="Example">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Example
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>In a postgraduate course covering both Python and R, we introduced a recurring activity designed to foster a “coding mindset”, called ‘Error of the Week’. This feature celebrates errors as learning opportunities rather than sources of embarrassment or frustration. Students were encouraged to share errors on a discussion board, including solutions if applicable. As a course team we responded to every post, and during live sessions the course lead or tutor highlighted a particularly interesting or common error to the class, debugging it live. Over the duration of the course, these discussion boards evolved into a common error glossary for all. We found that these strategies lowered the psychological barrier that programming can often present to students, allowing for more time to be devoted to understanding and interpreting statistical outputs.</p>
+</div>
+</div>
+</section>
+<section id="conclusion" class="level1">
+<h1>Conclusion</h1>
+<p>We have outlined three approaches for teaching programming and statistics: teaching statistics first; teaching programming first; and teaching both skills together. Our experiences suggest that each approach has clear strengths and limitations, and will be best suited in different settings. In deciding which approach is most suitable it is important to consider the desired learning outcomes, overall programme design, and the cognitive load placed on students, all of which will vary depending on educational context and prior student experience.</p>
+<p>Teaching statistics before programming is particularly useful when the priority is to develop strong, transferable statistical reasoning. Teaching programming before statistics can work well when early development of computational confidence is a key goal, and when there is sufficient time and alignment to support knowledge transfer. With careful instructional design, and sufficient curriculum time, many of the affective barriers students experience when learning programming and statistics can be mitigated. Under these conditions, our preferred approach would be to teach programming and statistics together, as this enables students to engage immediately with statistical concepts through computation, and develop a complementary understanding of both. We hope that by highlighting the advantages and disadvantages of different approaches and suggesting practical teaching strategies, this chapter will help educators to make informed decisions about how best to teach and encourage the learning of programming and statistics to their students.</p>
+</section>
+<section id="links-to-other-chapters" class="level1">
+<h1>Links to other chapters</h1>
+<p>Possible links to other chapters, which we might need to articulate with (this might not be an exhaustive list, just those we identified so far - might be useful info for the editorial team too)</p>
+<ol type="1">
+<li><p>Curriculum Design Overview</p></li>
+<li><p>A Practical Guide to Teaching Python as a Computational Tool for Introductory Data Analysis</p></li>
+<li><p>A guide to empowering students to develop a coding mindset</p></li>
+</ol>
+
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-auker2020teaching" class="csl-entry" role="listitem">
+Auker, Linda A., and Erika L. Barthelmess. 2020. <span>“Teaching r in the Undergraduate Ecology Classroom: Approaches, Lessons Learned, and Recommendations.”</span> <em>Ecosphere</em> 11 (4): e03060. https://doi.org/<a href="https://doi.org/10.1002/ecs2.3060">https://doi.org/10.1002/ecs2.3060</a>.
+</div>
+<div id="ref-bromage2022teaching" class="csl-entry" role="listitem">
+Bromage, Adrian, Sarah Pierce, Tom Reader, and Lindsey Compton. 2022. <span>“Teaching Statistics to Non-Specialists: Challenges and Strategies for Success.”</span> <em>Journal of Further and Higher Education</em> 46 (1): 46–61.
+</div>
+<div id="ref-fearns2023data" class="csl-entry" role="listitem">
+Fearns, Josh, Lydia Harriss, and Clare Lally. 2023. <span>“Data Science Skills in the UK Workforce.”</span>
+</div>
+<div id="ref-gimenez2013can" class="csl-entry" role="listitem">
+Gimenez, Olivier, Fitsum Abadi, Jean-Yves Barnagaud, Laetitia Blanc, Mathieu Buoro, Sarah Cubaynes, Marine Desprez, et al. 2013. <span>“How Can Quantitative Ecology Be Attractive to Young Scientists? Balancing Computer/Desk Work with Fieldwork.”</span> <em>Animal Conservation</em> 16 (2): 134–36.
+</div>
+<div id="ref-kelly1992teaching" class="csl-entry" role="listitem">
+Kelly, Martyn. 1992. <span>“Teaching Statistics to Biologists.”</span> <em>Journal of Biological Education</em> 26 (3): 200–203.
+</div>
+<div id="ref-metz2008teaching" class="csl-entry" role="listitem">
+Metz, Anneke M. 2008. <span>“Teaching Statistics in Biology: Using Inquiry-Based Learning to Strengthen Understanding of Statistical Analysis in Biology Laboratory Courses.”</span> <em>CBE—Life Sciences Education</em> 7 (3): 317–26.
+</div>
+<div id="ref-mustafa1996challenge" class="csl-entry" role="listitem">
+Mustafa, R Yilmaz. 1996. <span>“The Challenge of Teaching Statistics to Non-Specialists.”</span> <em>Journal of Statistics Education</em> 4 (1).
+</div>
+<div id="ref-o2016teaching" class="csl-entry" role="listitem">
+O’Hara, Robert B. 2016. <span>“On Teaching Ecologists Contemporary Methods in Statistics.”</span> Wiley Online Library.
+</div>
+<div id="ref-pletzer2010predictors" class="csl-entry" role="listitem">
+Pletzer, Belinda, Guilherme Wood, Korbinian Moeller, Hans-Christoph Nuerk, and Hubert H Kerschbaum. 2010. <span>“Predictors of Performance in a Real-Life Statistics Examination Depend on the Individual Cortisol Profile.”</span> <em>Biological Psychology</em> 85 (3): 410–16.
+</div>
+<div id="ref-sarvary2014bio" class="csl-entry" role="listitem">
+Sarvary, Mark. 2014. <span>“Biostatistics in the Classroom: Teaching Introductory Biology Students How to Use the Statistical Software <span>‘r’</span> Effectively.”</span> <em>Tested Studies for Laboratory Teaching Proceedings of the Association for Biology Laboratory Education</em> 35 (January): 405–7.
+</div>
+<div id="ref-sweller2018instructional" class="csl-entry" role="listitem">
+Sweller, John. 2018. <span>“Instructional Design.”</span> In <em>Encyclopedia of Evolutionary Psychological Science</em>, 1–5. Springer.
+</div>
+</div></section></div></main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
