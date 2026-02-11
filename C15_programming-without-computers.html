@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.27">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="David Cutting">
+<meta name="author" content="Neil Anderson">
+<meta name="author" content="Matthew Collins">
+<meta name="keywords" content="computational thinking, computationalthinking, barriers, unplugged, play">
+
+<title>Removing Barriers by Programming Without Computers – Teaching Programming across Disciplines</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./C33_coding-anxiety.html" rel="next">
+<link href="./C12_pair-programming-overview.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-c480644c8e52a4274f2302259c21bc8b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="_theme/styles.css">
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./C15_programming-without-computers.html"><span class="chapter-title">Removing Barriers by Programming Without Computers</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Teaching Programming across Disciplines</a> 
+        <div class="sidebar-tools-main">
+    <div class="dropdown">
+      <a href="" title="Download" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Download"><i class="bi bi-download"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="./teaching_programming_across_disciplines.pdf">
+              <i class="bi bi-file-pdf pe-1"></i>
+            Download PDF
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="./teaching_programming_across_disciplines.epub">
+              <i class="bi bi-journal pe-1"></i>
+            Download ePub
+            </a>
+          </li>
+      </ul>
+    </div>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Teaching Programming across Disciplines</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./00-chapter-template.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Title of Example Chapter (as will appear on top h1 header and in table of contents)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C11_sequential-vs-simultaneous.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Sequential vs.&nbsp;Simultaneous: Approaches to Learning Programming and Statistics</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C12_pair-programming-overview.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Where do I even start with Pair Programming in my classroom? Conversation with seasoned practitioners.</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C15_programming-without-computers.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Removing Barriers by Programming Without Computers</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C33_coding-anxiety.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Overcoming coding anxiety: learnings and strategies</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C36_pair-programming-across-disciplines.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Structured group work with assigned asymmetrical roles and switching - Lessons from Pair Programming across disciplines</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./99-bibliography.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bibliography</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar"><div class="quarto-margin-header"><div class="margin-header-item">
+<details id="accessibility-controls">
+    <summary>Display options</summary>
+  
+    <div class="control-group">
+        <label for="fontSizeSlider">Font size</label>
+        <input type="range" id="fontSizeSlider" min="8" max="32" value="16">
+        <span id="fontSizeValue">16</span>px
+    </div>
+  
+    <div class="control-group">
+        <label for="eyeStrainSlider">Eye strain</label>
+        <input type="range" id="eyeStrainSlider" min="0" max="50" value="0">
+        <span id="eyeStrainValue">0</span>%
+    </div>
+  
+    <div class="control-group">
+        <label for="hueRotateSlider">Hue</label>
+        <input type="range" id="hueRotateSlider" min="0" max="360" value="0">
+        <span id="hueRotateValue">0</span>
+    </div>
+  
+    <div class="control-group">
+        <label for="paddingSlider">Padding</label>
+        <input type="range" id="paddingSlider" min="0" max="12" value="3">
+        <span id="paddingValue">0</span>
+    </div>
+  
+    <div class="control-group">
+        <label for="lineSpacingSlider">Spacing</label>
+        <input type="range" id="lineSpacingSlider" min="80" max="250" value="150">
+        <span id="lineSpacingValue">150</span>%
+    </div>
+  
+    <div class="control-group">
+        <label for="fontFamily">Font</label>
+        <select id="fontFamily">
+            <option value="'Atkinson Hyperlegible', sans-serif">Atkinson Hyperlegible</option>
+            <option value="Arial, Helvetica, sans-serif">Sans-serif</option>
+            <option value="Georgia, 'Bitstream Charter', Times, serif">Serif</option>
+        </select>
+    </div>
+  
+    <div class="control-group">
+        <button id="resetDefaults">Reset to Defaults</button>
+    </div>
+
+</details>
+</div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#unplugged-programming-with-progboard" id="toc-unplugged-programming-with-progboard" class="nav-link" data-scroll-target="#unplugged-programming-with-progboard">Unplugged Programming with ProgBoard</a>
+  <ul class="collapse">
+  <li><a href="#sequence" id="toc-sequence" class="nav-link" data-scroll-target="#sequence">Sequence</a></li>
+  <li><a href="#selection" id="toc-selection" class="nav-link" data-scroll-target="#selection">Selection</a></li>
+  <li><a href="#iteration" id="toc-iteration" class="nav-link" data-scroll-target="#iteration">Iteration</a></li>
+  <li><a href="#variables" id="toc-variables" class="nav-link" data-scroll-target="#variables">Variables</a></li>
+  <li><a href="#benefits-of-the-progboard" id="toc-benefits-of-the-progboard" class="nav-link" data-scroll-target="#benefits-of-the-progboard">Benefits of the ProgBoard</a></li>
+  </ul></li>
+  <li><a href="#the-play-kit-approach-for-first-year-students" id="toc-the-play-kit-approach-for-first-year-students" class="nav-link" data-scroll-target="#the-play-kit-approach-for-first-year-students">The Play-Kit Approach for First-Year Students</a>
+  <ul class="collapse">
+  <li><a href="#design-principles" id="toc-design-principles" class="nav-link" data-scroll-target="#design-principles">Design Principles</a></li>
+  <li><a href="#examples-of-activities" id="toc-examples-of-activities" class="nav-link" data-scroll-target="#examples-of-activities">Examples of Activities</a></li>
+  <li><a href="#preliminary-evaluation" id="toc-preliminary-evaluation" class="nav-link" data-scroll-target="#preliminary-evaluation">Preliminary Evaluation</a></li>
+  </ul></li>
+  <li><a href="#discussion" id="toc-discussion" class="nav-link" data-scroll-target="#discussion">Discussion</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const fontSizeSlider = document.getElementById('fontSizeSlider');
+        const fontSizeValue = document.getElementById('fontSizeValue');
+
+        const hueRotateSlider = document.getElementById('hueRotateSlider');
+        const hueRotateValue = document.getElementById('hueRotateValue');
+
+        const eyeStrainSlider = document.getElementById('eyeStrainSlider');
+        const eyeStrainValue = document.getElementById('eyeStrainValue');
+
+        const paddingSlider = document.getElementById('paddingSlider');
+        const paddingValue = document.getElementById('paddingValue');
+
+        const lineSpacingSlider = document.getElementById('lineSpacingSlider');
+        const lineSpacingValue = document.getElementById('lineSpacingValue');
+
+        const fontFamilySelect = document.getElementById('fontFamily');
+
+        const html = document.documentElement;
+        const resetButton = document.getElementById('resetDefaults');
+
+        // Define default values
+        const defaults = {
+            fontSize: 16,
+            hueRotate: 0,
+            eyeStrain: 0,
+            padding: 0,
+            lineSpacing: 150,
+            fontFamily: "'Atkinson Hyperlegible', Arial, Helvetica, sans-serif"
+        };
+
+        function updateStyles() {
+            html.style.setProperty('--bs-root-font-size', fontSizeSlider.value + 'px');
+            html.style.setProperty('--hue-rotate', hueRotateSlider.value + 'deg');
+            html.style.setProperty('--eye-strain', eyeStrainSlider.value + '%');
+            html.style.setProperty('--padding', paddingSlider.value + 'em');
+            html.style.setProperty('--line-spacing', lineSpacingSlider.value + '%');
+            html.style.setProperty('--bs-body-font-family', fontFamilySelect.value);
+
+            fontSizeValue.textContent = fontSizeSlider.value;
+            hueRotateValue.textContent = hueRotateSlider.value;
+            eyeStrainValue.textContent = eyeStrainSlider.value;
+            paddingValue.textContent = paddingSlider.value;
+            lineSpacingValue.textContent = lineSpacingSlider.value;
+
+            saveSettings();
+        }
+
+        // Function to save settings to localStorage
+        function saveSettings() {
+            const settings = {
+                fontSize: fontSizeSlider.value,
+                hueRotate: hueRotateSlider.value,
+                eyeStrain: eyeStrainSlider.value,
+                padding: paddingSlider.value,
+                lineSpacing: lineSpacingSlider.value,
+                fontFamily: fontFamilySelect.value
+            };
+            localStorage.setItem('accessibilitySettings', JSON.stringify(settings));
+        }
+
+        // Function to load settings from localStorage
+        function loadSettings() {
+            const savedSettings = localStorage.getItem('accessibilitySettings');
+            if (savedSettings) {
+                const settings = JSON.parse(savedSettings);
+                fontSizeSlider.value = settings.fontSize;
+                hueRotateSlider.value = settings.hueRotate;
+                eyeStrainSlider.value = settings.eyeStrain;
+                paddingSlider.value = settings.padding;
+                lineSpacingSlider.value = settings.lineSpacing;
+                fontFamilySelect.value = settings.fontFamily;
+                updateStyles();
+            }
+        }
+
+        function resetToDefaults() {
+            fontSizeSlider.value = defaults.fontSize;
+            hueRotateSlider.value = defaults.hueRotate;
+            eyeStrainSlider.value = defaults.eyeStrain;
+            paddingSlider.value = defaults.padding;
+            lineSpacingSlider.value = defaults.lineSpacing;
+            fontFamilySelect.value = defaults.fontFamily;
+            updateStyles();
+            localStorage.removeItem('accessibilitySettings');
+        }
+
+        fontSizeSlider.oninput = updateStyles;
+        hueRotateSlider.oninput = updateStyles;
+        eyeStrainSlider.oninput = updateStyles;
+        paddingSlider.oninput = updateStyles;
+        lineSpacingSlider.oninput = updateStyles;
+        fontFamilySelect.onchange = updateStyles;
+        resetButton.onclick = resetToDefaults;
+
+        loadSettings();
+
+    });
+</script>
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-title">Removing Barriers by Programming Without Computers</span></h1>
+</div>
+
+
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Authors</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">David Cutting <a href="mailto:d.cutting@qub.ac.uk" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            School of Electronics, Electrical Engineering and Computer Science, Queen’s University Belfast
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Neil Anderson <a href="mailto:n.anderson@qub.ac.uk" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            School of Electronics, Electrical Engineering and Computer Science, Queen’s University Belfast
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Matthew Collins <a href="mailto:m.collins@qub.ac.uk" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            School of Electronics, Electrical Engineering and Computer Science, Queen’s University Belfast
+          </p>
+      </div>
+  </div>
+
+<div class="quarto-title-meta">
+
+      
+  
+    
+  </div>
+  
+
+<div>
+  <div class="keywords">
+    <div class="block-title">Keywords</div>
+    <p>computational thinking, computationalthinking, barriers, unplugged, play</p>
+  </div>
+</div>
+
+</header>
+
+
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>Computational thinking (CT) has increasingly been recognised as a key competence for learners in the 21st century <span class="citation" data-cites="C15_r1">(<a href="#ref-C15_r1" role="doc-biblioref">Wing 2006</a>)</span>. It is not limited to computer scientists but has been identified as a “universally applicable attitude and skill set” <span class="citation" data-cites="C15_r1">(<a href="#ref-C15_r1" role="doc-biblioref">Wing 2006</a>)</span>. CT involves problem-solving processes that enable individuals to approach complex challenges by decomposing them into smaller parts, designing algorithms, recognising patterns, abstracting irrelevant details, and applying logical reasoning <span class="citation" data-cites="C15_r2">(<a href="#ref-C15_r2" role="doc-biblioref">Aho 2012</a>)</span>. These skills are foundational for programming but are also valuable in wider contexts such as mathematics, engineering, social sciences, and everyday problem-solving <span class="citation" data-cites="C15_r3">(<a href="#ref-C15_r3" role="doc-biblioref">Tedre and Denning 2016</a>)</span>.</p>
+<p>Despite its importance, the teaching and learning of programming and CT is challenging. For many learners, the initial encounter with programming involves exposure to a programming language and development environment. While these tools are essential for producing executable code, they can impose significant barriers to entry. Syntax errors, cryptic error messages, and the abstract nature of code execution often discourage beginners <span class="citation" data-cites="C15_r4">(<a href="#ref-C15_r4" role="doc-biblioref">Robins, Rountree, and Rountree 2003</a>)</span> and many students focus narrowly on the mechanics of a programming language, rather than grasping the underlying concepts of problem-solving and algorithmic thinking <span class="citation" data-cites="C15_r5">(<a href="#ref-C15_r5" role="doc-biblioref">Koulouri, Lauria, and Macredie 2014</a>)</span>.</p>
+<p>These difficulties are not confined to school-aged learners. Lifelong learners, professionals seeking to re-skill, and students from non-computing disciplines also experience barriers when first attempting to program. Studies have highlighted that learners without prior computing exposure often report low confidence, high anxiety, and a perception that programming is inaccessible or only suitable for “technical people” <span class="citation" data-cites="C15_r6">(<a href="#ref-C15_r6" role="doc-biblioref">Lye and Koh 2014</a>)</span>. Such perceptions contribute to underrepresentation of many groups in computing, particularly women, mature learners, and students from non-traditional backgrounds <span class="citation" data-cites="C15_r7">(<a href="#ref-C15_r7" role="doc-biblioref">Sentance and Csizmadia 2017</a>)</span>.</p>
+<p>Another barrier is the mismatch between learners’ expectations and the nature of programming tasks. In formal education, assessments often emphasise correctness of code rather than exploration of ideas. Learners may therefore see programming as a high-stakes activity where failure is punished rather than as an opportunity for experimentation and iterative problem-solving <span class="citation" data-cites="C15_r8">(<a href="#ref-C15_r8" role="doc-biblioref">Watson and Li 2014</a>)</span>. This can lead to disengagement, particularly when feedback comes in the form of obscure compiler errors rather than supportive guidance.</p>
+<p>Alternative methods for introducing CT have been explored over the last two decades. The “Computer Science Unplugged” movement has shown that unplugged activities—teaching computing concepts without computers—can successfully build intuition and engagement <span class="citation" data-cites="C15_r9">(<a href="#ref-C15_r9" role="doc-biblioref">Bell et al. 2009</a>)</span>. By using games, puzzles, and physical activities, learners can experiment with computational structures in a low-stakes environment. Similarly, tangible resources such as cards, tiles, and worksheets have been used to teach sequencing, logic, and algorithms in ways that reduce dependence on technology infrastructure <span class="citation" data-cites="C15_r10">(<a href="#ref-C15_r10" role="doc-biblioref">Curzon et al. 2014</a>)</span>. These approaches are especially valuable in contexts where computer access is limited, such as in under-resourced schools or outreach programmes <span class="citation" data-cites="C15_r11">(<a href="#ref-C15_r11" role="doc-biblioref">United Nations Educational, Scientific and Cultural Organization (UNESCO) 2023</a>)</span>.</p>
+<p>This chapter discusses two approaches to teaching programming and CT without the use of computers. The first is the <strong>ProgBoard</strong>, a printable tool that enables learners to explore sequence, selection, and iteration. The second is a <strong>play-kit for first-year computing students</strong>, developed to foster computational thinking through playful and tangible activities. The chapter then draws connections between these approaches and the wider challenges of accessibility and inclusion in programming education, concluding with a reflection on the potential of such methods for diverse learner groups.</p>
+</section>
+<section id="unplugged-programming-with-progboard" class="level2">
+<h2 class="anchored" data-anchor-id="unplugged-programming-with-progboard">Unplugged Programming with ProgBoard</h2>
+<p>The <strong>ProgBoard</strong>, developed as part of the “Think Like a Computer” initiative <span class="citation" data-cites="C15_r12">(<a href="#ref-C15_r12" role="doc-biblioref">Cutting 2025</a>)</span> and available from <a href="https://thinklikeacomputer.org">thinklikeacomputer.org</a>, provides learners with a structured way to engage with programming fundamentals in a tangible form. It is a printable teaching tool designed to introduce the three fundamental programming constructs of <strong>sequence</strong>, <strong>selection</strong>, <strong>iteration</strong>, and <strong>variables</strong> all without requiring a computer.</p>
+<p>The board itself consists of a grid on which tokens representing instructions can be placed. Problems are posed in the form of challenges, such as navigating a path, following rules, or producing repeated patterns. Learners construct solutions by arranging instruction tokens in order, creating simple algorithms that can be “executed” by following the board step by step.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./chapters/images/C15_pb3.jpg" title="ProgBoard used in a Chinese University" class="img-fluid figure-img" style="width:70.0%" alt="Five students work together on a ProgBoard printed on a sheet of paper."></p>
+<figcaption>A ProgBoard being used to break the ice with during international programming teaching in China.</figcaption>
+</figure>
+</div>
+<section id="sequence" class="level3">
+<h3 class="anchored" data-anchor-id="sequence">Sequence</h3>
+<p>Sequence is taught by requiring learners to arrange steps in a specific order. For example, if the task is to move an object from one side of the board to another, instructions such as “move forward”, “turn left”, and “pick up” must be placed in the correct sequence. Learners can then manually follow the sequence to check whether the task is achieved. This provides an embodied experience of algorithm design, reinforcing the importance of ordering in programming.</p>
+</section>
+<section id="selection" class="level3">
+<h3 class="anchored" data-anchor-id="selection">Selection</h3>
+<p>Selection is introduced by conditional markers. For instance, learners may encounter a task where an object must only be picked up “if it is red”. Tokens representing conditional statements are placed on the board, and learners must branch their instructions based on the condition. This tangible representation of branching logic helps learners to understand one of the most challenging concepts in programming: making decisions based on conditions.</p>
+</section>
+<section id="iteration" class="level3">
+<h3 class="anchored" data-anchor-id="iteration">Iteration</h3>
+<p>Iteration is represented by tokens that indicate repetition. For example, a loop marker may allow a sequence of steps to be repeated a specified number of times. Learners may be tasked with drawing a square by repeating a set of instructions four times. Through physically repeating steps, they grasp the efficiency and power of loops compared to writing out repeated instructions.</p>
+</section>
+<section id="variables" class="level3">
+<h3 class="anchored" data-anchor-id="variables">Variables</h3>
+<p>Variables are introduced in the form of counters (“keep count of how many…”) initially and then as <strong>named variables</strong>, for example “x is three, move forward x squares and each time your counter is in a red square, add one to x”. The use of variables in combination with selection for branching logic and iteration allows learners to see how simple algebra aligns with variables in programming and also introduced the concept of state.</p>
+</section>
+<section id="benefits-of-the-progboard" class="level3">
+<h3 class="anchored" data-anchor-id="benefits-of-the-progboard">Benefits of the ProgBoard</h3>
+<p>The ProgBoard reduces cognitive load by focusing on concepts rather than syntax. By externalising algorithms into a physical form, learners can see and manipulate their thought processes. Errors become visible as misplaced tokens or illogical sequences, which can be corrected collaboratively. This is in contrast to the intimidating error messages encountered in programming environments.</p>
+<p>The tool also supports <strong>collaborative learning</strong>. Students can work in groups, discuss solutions, and challenge each other to design efficient algorithms. Peer explanation reinforces understanding, as learners must articulate the reasoning behind their token placements.</p>
+<p>Research on unplugged activities has shown that such approaches are particularly effective for learners with limited prior exposure to computing <span class="citation" data-cites="C15_r13">(<a href="#ref-C15_r13" role="doc-biblioref">Denning 2017</a>)</span>. By engaging learners in hands-on tasks, the ProgBoard provides a stepping stone into programming that lowers anxiety and builds confidence.</p>
+</section>
+</section>
+<section id="the-play-kit-approach-for-first-year-students" class="level2">
+<h2 class="anchored" data-anchor-id="the-play-kit-approach-for-first-year-students">The Play-Kit Approach for First-Year Students</h2>
+<p>A second approach to programming without computers has been developed through the design of a <strong>play-kit for incoming first-year university students</strong>. This initiative, derived from the work undertaken at Maynooth University on their primary school CT workbook, aimed to introduce learners to computational thinking through playful, tangible interactions <span class="citation" data-cites="C15_r14">(<a href="#ref-C15_r14" role="doc-biblioref">Anderson et al. 2025</a>)</span> so is therefore widely applicable and not limited to students studying computer science.</p>
+<p>The project emerged from the recognition that incoming students often have diverse levels of experience in computing. Some may have extensive programming backgrounds, while others may never have written a line of code. A one-size-fits-all approach risks alienating both groups. The play-kit therefore sought to provide accessible, engaging activities that introduce CT concepts in a non-intimidating way.</p>
+<section id="design-principles" class="level3">
+<h3 class="anchored" data-anchor-id="design-principles">Design Principles</h3>
+<p>The play-kit was co-designed by students and academic staff, drawing on resources originally developed for primary school learners but adapted to suit a university-level audience. Several guiding principles shaped its design:</p>
+<ol type="1">
+<li><strong>Accessibility</strong> - reliance on colour was reduced to support learners with colour vision deficiencies.</li>
+<li><strong>Visual instructions</strong> - activities emphasised pictorial guidance rather than dense text, reducing language barriers.</li>
+<li><strong>Playfulness</strong> - tasks were framed as puzzles or games, encouraging creativity and engagement.</li>
+<li><strong>Breadth of CT skills</strong> - activities covered decomposition, algorithms, pattern recognition, logic, representation, and abstraction.</li>
+</ol>
+</section>
+<section id="examples-of-activities" class="level3">
+<h3 class="anchored" data-anchor-id="examples-of-activities">Examples of Activities</h3>
+<ul>
+<li><strong>Bracelet Patterns</strong>: Students extend and complete sequences of beads arranged in patterns, developing skills in pattern recognition, decomposition, and logic.</li>
+<li><strong>Code Breaker</strong>: A symbolic substitution exercise where learners decode messages using simple ciphers. This fosters skills in representation and abstraction.</li>
+<li><strong>Escape the Grid</strong>: A maze-based challenge where characters must move according to specified rules. This introduces conditional logic and algorithmic pathfinding.</li>
+<li><strong>Castles and Wyverns</strong>: A dice-based game where outcomes depend on nested conditions, encouraging learners to apply probabilistic reasoning and selection.</li>
+<li><strong>Marble Race</strong>: Learners simulate the timing of marbles released into tracks, exploring concurrency, sequencing, and time-based reasoning.</li>
+</ul>
+<p>These activities allow learners to explore computational concepts in a playful environment. Unlike programming assignments that require precise syntax, the play-kit enables safe exploration. Mistakes are opportunities for discussion and learning rather than points lost.</p>
+</section>
+<section id="preliminary-evaluation" class="level3">
+<h3 class="anchored" data-anchor-id="preliminary-evaluation">Preliminary Evaluation</h3>
+<p>Early feedback from workshops suggested that the play-kit was effective in lowering barriers for learners who felt intimidated by programming. Students reported increased confidence, greater willingness to collaborate, and enjoyment of the playful format <span class="citation" data-cites="C15_r14">(<a href="#ref-C15_r14" role="doc-biblioref">Anderson et al. 2025</a>)</span>. The tangible, hands-on nature of the activities was particularly valued, as it contrasted with the abstractness of code.</p>
+</section>
+</section>
+<section id="discussion" class="level2">
+<h2 class="anchored" data-anchor-id="discussion">Discussion</h2>
+<p>The two approaches explored in this chapter—the ProgBoard and the play-kit demonstrate the potential of introducing computational thinking (CT) and programming concepts without direct reliance on computers. While they differ in context, design, and target audience, they share a common aim: to make programming more approachable by lowering barriers and foregrounding concepts before syntax. By situating programming in a tangible and playful space, both approaches challenge the assumption that programming must begin with a computer and instead suggest that thinking skills can, and perhaps should, be nurtured in more accessible ways.</p>
+<p>One of the most significant contributions of unplugged approaches is the way they reduce <strong>cognitive load</strong> for beginners. Research has consistently shown that novices often struggle with the dual burden of understanding abstract programming concepts and mastering the mechanics of a programming language at the same time <span class="citation" data-cites="C15_r15">(<a href="#ref-C15_r15" role="doc-biblioref">Sweller 1988</a>)</span>. For instance, a student may conceptually understand that a loop repeats a set of actions, but may be unable to express this understanding in Python, Java, or C without encountering frustrating syntax errors. By externalising programming logic into physical forms, as seen in the ProgBoard tokens or play-kit puzzles, learners can focus on what the computer is being asked to do, rather than how the instructions are formally expressed. This separation of concerns provides a clearer path to mastery: concepts first, formal languages later.</p>
+<p>Equally important is the potential for these activities to support <strong>diverse learner groups</strong>. Traditional programming environments tend to privilege students who are already confident with computers or who have prior experience in coding. This creates inequities, with learners from non-computing backgrounds often left behind. Lifelong learners, interdisciplinary students, and those with limited digital literacy can find the initial learning curve intimidating, reinforcing the stereotype that programming is only for “tech experts.” By contrast, both the ProgBoard and the play-kit offer accessible, low-barrier entry points where learners can engage in computational problem-solving without needing technical fluency. This is especially relevant in outreach contexts, professional development programmes, and in regions where reliable access to computers is limited.</p>
+<p>The <strong>affective dimension of learning</strong> should not be overlooked. Fear of failure is a well-documented barrier in programming education, where small mistakes in syntax can lead to discouraging error messages and wasted time <span class="citation" data-cites="C15_r8">(<a href="#ref-C15_r8" role="doc-biblioref">Watson and Li 2014</a>)</span>. In unplugged contexts, however, mistakes become opportunities for dialogue and playful exploration. If a sequence of tokens fails to solve a ProgBoard puzzle, learners can quickly rearrange the steps and try again. If a group misinterprets the rules of a play-kit game, the result is not an intimidating compiler error but a chance to reflect, discuss, and iterate. This transformation of errors into constructive learning moments fosters resilience and helps to cultivate a growth mindset around programming.</p>
+<p>Furthermore, the <strong>playful nature</strong> of these activities contributes to learner motivation and engagement. Play has long been recognised as a powerful mode of learning <span class="citation" data-cites="C15_r17 C15_r18">(<a href="#ref-C15_r17" role="doc-biblioref">Papert 2020</a>; <a href="#ref-C15_r18" role="doc-biblioref">Whitton 2022</a>)</span>. It encourages experimentation, risk-taking, and persistence, qualities that are central to effective problem-solving in computing. By embedding CT tasks into puzzles, games, and tangible challenges, the ProgBoard and play-kit avoid framing programming as a purely technical skill. Instead, they emphasise creativity, exploration, and fun—qualities that can be especially important for engaging students who might not initially see themselves as “coders.” For example, the fantasy-themed “Castles and Wyverns” dice game from the play-kit illustrates how algorithmic logic can be learned through an imaginative context, rather than an abstract lecture on conditional statements.</p>
+<p>The <strong>transferability of skills</strong> developed in these unplugged settings is also crucial. While the activities do not produce working code, they cultivate habits of mind—such as decomposition, abstraction, and algorithmic reasoning—that can be readily applied in formal programming environments. In this way, unplugged activities function as a <strong>bridge</strong>. Once learners have gained confidence with the underlying concepts, they are better equipped to face the complexity of programming languages and development environments. This scaffolding effect has been linked to improved retention and success rates in introductory programming courses <span class="citation" data-cites="C15_r19">(<a href="#ref-C15_r19" role="doc-biblioref">Luxton-Reilly et al. 2018</a>)</span>.</p>
+<p>Finally, both approaches point to the <strong>broader potential of programming without computers</strong>. Their application need not be limited to early stages of computer science education. They could be adapted for interdisciplinary teaching, allowing students in fields as varied as biology, business, or the arts to engage with computational thinking in a way that feels relevant to their domain. They could also be used in informal education settings—libraries, community workshops, or online learning platforms—to broaden participation in computing. For educators, unplugged methods provide flexible, low-cost tools that can be adapted to different curricula, learner profiles, and institutional contexts.</p>
+<p>Taken together, these observations suggest that unplugged approaches should not be viewed merely as supplementary activities or temporary scaffolds, but as integral components of a broader strategy to democratise computational education. By making programming more tangible, playful, and inclusive, they help dismantle barriers that have historically excluded many learners from engaging with computing. In doing so, they lay the groundwork for more diverse, resilient, and conceptually grounded cohorts of future programmers.</p>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>Programming without computers represents an effective and inclusive approach to developing computational thinking skills. By focusing on concepts rather than syntax, learners are able to engage with programming fundamentals in an accessible, playful, and low-stakes environment.</p>
+<p>The ProgBoard demonstrates how simple, printable resources can teach sequence, selection, and iteration. The play-kit for first-year students illustrates how playful, tangible activities can introduce decomposition, algorithms, logic, and abstraction in ways that reduce anxiety and increase motivation.</p>
+<p>Together, these approaches highlight the value of unplugged activities as a means of lowering barriers, supporting diverse learners, and broadening participation in computing. They serve as stepping stones to computer-based programming, ensuring that learners enter digital environments with confidence and conceptual clarity.</p>
+<p>It is concluded that the continued development and evaluation of unplugged programming approaches has significant potential for education at all levels. By reimagining how programming is introduced, educators can make computational thinking accessible to all learners, regardless of background or prior experience.</p>
+</section>
+<section id="references" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="references">References</h2>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-C15_r2" class="csl-entry" role="listitem">
+Aho, Alfred V. 2012. <span>“Computation and Computational Thinking.”</span> <em>The Computer Journal</em> 55 (7): 832–35.
+</div>
+<div id="ref-C15_r14" class="csl-entry" role="listitem">
+Anderson, Neil, Maria Angela Ferrario, Aidan McGowan, Matthew Collins, Jonathan W Browning, Leo Galway, Philip Hanna, David Cutting, and Darryl Stewart. 2025. <span>“Learning to <span>‘Think’</span> Through Playful Interactions: A Play-Kit for Incoming First-Year Computing Students.”</span> In <em>2025 IEEE Global Engineering Education Conference (EDUCON)</em>, 1–3. IEEE.
+</div>
+<div id="ref-C15_r9" class="csl-entry" role="listitem">
+Bell, Tim, Jason Alexander, Isaac Freeman, and Mick Grimley. 2009. <span>“Computer Science Unplugged: School Students Doing Real Computing Without Computers.”</span> <em>New Zealand Journal of Applied Computing and Information Technology</em> 13 (1): 20–29.
+</div>
+<div id="ref-C15_r10" class="csl-entry" role="listitem">
+Curzon, Paul, Peter W McOwan, Nicola Plant, and Laura R Meagher. 2014. <span>“Introducing Teachers to Computational Thinking Using Unplugged Storytelling.”</span> In <em>Proceedings of the 9th Workshop in Primary and Secondary Computing Education</em>, 89–92.
+</div>
+<div id="ref-C15_r12" class="csl-entry" role="listitem">
+Cutting, D. 2025. <span>“<span>The ProgBoard</span>.”</span> <a href="https://thinklikeacomputer.org">https://thinklikeacomputer.org</a>.
+</div>
+<div id="ref-C15_r13" class="csl-entry" role="listitem">
+Denning, Peter J. 2017. <span>“Remaining Trouble Spots with Computational Thinking.”</span> <em>Communications of the ACM</em> 60 (6): 33–39.
+</div>
+<div id="ref-C15_r5" class="csl-entry" role="listitem">
+Koulouri, Theodora, Stanislao Lauria, and Robert D Macredie. 2014. <span>“Teaching Introductory Programming: A Quantitative Evaluation of Different Approaches.”</span> <em>ACM Transactions on Computing Education (TOCE)</em> 14 (4): 1–28.
+</div>
+<div id="ref-C15_r19" class="csl-entry" role="listitem">
+Luxton-Reilly, Andrew, Simon, Ibrahim Albluwi, Brett A Becker, Michail Giannakos, Amruth N Kumar, Linda Ott, et al. 2018. <span>“Introductory Programming: A Systematic Literature Review.”</span> In <em>Proceedings Companion of the 23rd Annual ACM Conference on Innovation and Technology in Computer Science Education</em>, 55–106.
+</div>
+<div id="ref-C15_r6" class="csl-entry" role="listitem">
+Lye, Sze Yee, and Joyce Hwee Ling Koh. 2014. <span>“Review on Teaching and Learning of Computational Thinking Through Programming: What Is Next for k-12?”</span> <em>Computers in Human Behavior</em> 41: 51–61.
+</div>
+<div id="ref-C15_r17" class="csl-entry" role="listitem">
+Papert, Seymour A. 2020. <em>Mindstorms: Children, Computers, and Powerful Ideas</em>. Basic books.
+</div>
+<div id="ref-C15_r4" class="csl-entry" role="listitem">
+Robins, Anthony, Janet Rountree, and Nathan Rountree. 2003. <span>“Learning and Teaching Programming: A Review and Discussion.”</span> <em>Computer Science Education</em> 13 (2): 137–72.
+</div>
+<div id="ref-C15_r7" class="csl-entry" role="listitem">
+Sentance, Sue, and Andrew Csizmadia. 2017. <span>“Computing in the Curriculum: Challenges and Strategies from a Teacher’s Perspective.”</span> <em>Education and Information Technologies</em> 22 (2): 469–95.
+</div>
+<div id="ref-C15_r15" class="csl-entry" role="listitem">
+Sweller, John. 1988. <span>“Cognitive Load During Problem Solving: Effects on Learning.”</span> <em>Cognitive Science</em> 12 (2): 257–85.
+</div>
+<div id="ref-C15_r3" class="csl-entry" role="listitem">
+Tedre, Matti, and Peter J Denning. 2016. <span>“The Long Quest for Computational Thinking.”</span> In <em>Proceedings of the 16th Koli Calling International Conference on Computing Education Research</em>, 120–29.
+</div>
+<div id="ref-C15_r11" class="csl-entry" role="listitem">
+United Nations Educational, Scientific and Cultural Organization (UNESCO). 2023. <span>“Global Education Monitoring Report 2023: Technology in Education – a Tool on Whose Terms?”</span> Paris, France: UNESCO. <a href="https://www.unesco.org/gem-report/en/publication/technology">https://www.unesco.org/gem-report/en/publication/technology</a>.
+</div>
+<div id="ref-C15_r8" class="csl-entry" role="listitem">
+Watson, Christopher, and Frederick WB Li. 2014. <span>“Failure Rates in Introductory Programming Revisited.”</span> In <em>Proceedings of the 2014 Conference on Innovation &amp; Technology in Computer Science Education</em>, 39–44.
+</div>
+<div id="ref-C15_r18" class="csl-entry" role="listitem">
+Whitton, Nicola. 2022. <em>Play and Learning in Adulthood: Reimagining Pedagogy and the Politics of Education</em>. Springer Nature.
+</div>
+<div id="ref-C15_r1" class="csl-entry" role="listitem">
+Wing, Jeannette M. 2006. <span>“Computational Thinking.”</span> <em>Communications of the ACM</em> 49 (3): 33–35.
+</div>
+</div>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./C12_pair-programming-overview.html" class="pagination-link" aria-label="Where do I even start with Pair Programming in my classroom? Conversation with seasoned practitioners.">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Where do I even start with Pair Programming in my classroom? Conversation with seasoned practitioners.</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./C33_coding-anxiety.html" class="pagination-link" aria-label="Overcoming coding anxiety: learnings and strategies">
+        <span class="nav-page-text"><span class="chapter-title">Overcoming coding anxiety: learnings and strategies</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
