@@ -18,6 +18,7 @@ format:
         code-line-numbers: true
         code-block-bg: true
         code-block-border-left: true
+        repo-url: https://github.com/teaching-programming/book
         toc: true
         include-before-body:
             file: _theme/accessibility.html
