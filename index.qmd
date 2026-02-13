@@ -3,6 +3,19 @@ title: "Teaching Programming across Disciplines"
 toc: true
 ---
 
-Welcome to our book!
+Welcome to our book!  
 
-main page? preface? title etc
+We are a community of teachers and educators of computer programming outside of traditional computer science settings. Our 300+ members around the world meet every year for a [Winter School](https://pairprogramming.ed.ac.uk/category/winter-school/) and co-author a [book called Teaching Programming across Disciplines](https://pairprogramming.ed.ac.uk/join-book/) (this very book). 
+
+Our book is an edited, open-access volume comprised of many short chapters written by groups of authors.  
+
+We will be launching the **first edition of Teaching Programming Across Disciplines** at the “Summer-time Winter School” on **22 June 2026**! 🌈 
+
+The **hard deadline for chapter submissions** is **1 April 2026** – meaning your chapter should be edited, polished, and on the GitHub Repository (watch [Pawel’s video](https://media.ed.ac.uk/media//1_7nk68kt4) for instructions on how to do this). You will the book growing from now until 1 April 2026 as chapters are added. 
+📖 There will be a print copy available (eventually... stay tuned).   
+
+We hold monthly writing retreats, which authors or anyone interested in having dedicated writing time with a group of lovely people are welcome to join. We also have a newsletter with book updates and (interesting) events. 
+➡️ If you would like to join our mailing list, email [pairprogramming@ed.ac.uk](mailto:pairprogramming@ed.ac.uk)  
+
+
+🖋️ The Book Team (Brittany Blankinship, Franziska McManus, Pawel Orzechowski, Kasia Banas, Charlotte Desvages, Beatrice Alex, Umberto Noé, Ozan Evkaya, Serveh Sharifi Far, Clare Llewellyn) 
