@@ -11,7 +11,7 @@ Our book is an edited, open-access volume comprised of many short chapters writt
 
 We will be launching the **first edition of Teaching Programming Across Disciplines** at the “Summer-time Winter School” on **22 June 2026**! 🌈 
 
-The **hard deadline for chapter submissions** is **1 April 2026** – meaning your chapter should be edited, polished, and on the GitHub Repository (watch [Pawel’s video](https://media.ed.ac.uk/media//1_7nk68kt4) for instructions on how to do this). You will the book growing from now until 1 April 2026 as chapters are added. 
+The **hard deadline for chapter submissions** is **1 April 2026** – meaning your chapter should be edited, polished, and on the GitHub Repository (watch [Pawel’s video](https://media.ed.ac.uk/media//1_7nk68kt4) for instructions on how to do this). The book will be growing from now until 1 April 2026 as chapters are added. 
 📖 There will be a print copy available (eventually... stay tuned).   
 
 We hold monthly writing retreats, which authors or anyone interested in having dedicated writing time with a group of lovely people are welcome to join. We also have a newsletter with book updates and (interesting) events. 
