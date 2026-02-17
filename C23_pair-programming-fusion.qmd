@@ -40,13 +40,13 @@ When we first designed and ran *Text Mining for Social Research*[^C23-course-inf
 
 Pair programming is central to our course [@williams2000strengthening;@hannay2009effectiveness;@hanks2011pair], but pairing students effectively in a fusion setting presented its challenges. We experimented with assigning students in same-mode pairs (on-site-on-site or online-online) and mixed-mode pairs (on-site-online), adjusting pairs every hour to help students feel part of a single, integrated cohort. Each new pairing required students to renegotiate key aspects of their collaboration: how they worked together, who took the lead, and how they interacted with instructors. This constant reshuffling reinforced the sense of a shared learning experience across both modes.
 
-![Figure 1: Different modes of paired students working together on programming exercises.](/chapters/images/C23_pair-programming-fusion-modes.png "Modes"){fig-alt="Different modes of paired students working together on programming exercises."}
+![Figure 1: Different modes of paired students working together on programming exercises.](/chapters/images/C23_pair-programming-fusion-modes.png "Modes"){fig-alt="Different modes of paired students working together on programming exercises." width=70%}
 
 We encountered several challenges in this type of paired learning approach (audio issues, cognitive load, context switching). This could especially affect students when accessibility issues or other special circumstances are compounded or clash with the learning environment.   
 
 While students generally preferred mixed-mode pairs (see Figure 2\) and reported feeling more connected to the broader cohort, this arrangement proved exhausting to both online and on-site participants. The background noise in the classroom, combined with the additional cognitive load students experienced as a result of this noise, can leave them feeling drained by the end of a session.
 
-![Figure 2: Mixed-mode pair programming in action with noise in background.](/chapters/images/C23_pair-programming-fusion-noisy-background.png "Mixed mode pairs"){fig-alt="Mixed mode pair programming in action with noise in the background."}
+![Figure 2: Mixed-mode pair programming in action with noise in background.](/chapters/images/C23_pair-programming-fusion-noisy-background.png "Mixed mode pairs"){fig-alt="Mixed mode pair programming in action with noise in the background." width=70%}
 
 The size and acoustics of the classroom are key factors to consider when using pair programming in teaching. Background noise not only causes “Zoom fatigue” for online students [@bailenson2021nonverbal], especially in longer events like ours, but also affects the on-site students who wear headphones to connect to their mixed-mode buddy. Such overload issues disproportionately affect neurodiverse learners who may struggle with auditory processing or filtering competing stimuli. In our case, additional room facilities or even a quiet area outside of the classroom proved handy for such interactions. As a teaching team, we hadn’t originally anticipated this need. We are known to improvise and have once used a “broom cupboard” as an overflow space to support mixed-mode pairs.
 
@@ -69,7 +69,7 @@ In a traditional classroom, students can simply raise a hand and ask the teacher
 This led to a surprising phenomenon for on-site students in mixed-mode pairs, suddenly hearing a voice in their headphones from one of the teaching team they had just interacted with in person a few minutes earlier, like a friendly ghost. At first, this unexpected presence was disorientating, diverting attention and requiring a cognitive shift (see Figure 3). To normalise the experience, we consciously used online helpers for all mixed-mode pair work. While initially some students were spooked by the fluidity of the “ghost” seeming to be everywhere at once, they quickly found this both friendly and helpful.
 
 
-![Figure 3: The ghost helper effect.](/chapters/images/C23_pair-programming-fusion-ghost-helper.png "Ghost helper effect"){fig-alt="The ghost helper effect."}
+![Figure 3: The ghost helper effect.](/chapters/images/C23_pair-programming-fusion-ghost-helper.png "Ghost helper effect"){fig-alt="The ghost helper effect." width=70%}
 
 In taking this approach, it was important for students to feel a sense of parity in how the course was being delivered and to develop a fluidity between online and on-site. With staff being online and visible through their own cameras, they could speak to both groups directly through the same method. Rather than speaking to an online student through an on-site partner’s webcam or relaying information to be passed on, this ensured that all information was delivered simultaneously and created a sense of fluidity between students and staff.
 
@@ -97,11 +97,11 @@ We wondered whether we could create a feedback mechanism which is easier to comp
 
 For our fusion course, we could not find a tool which would deliver exactly what we needed at the time, so we used a shared digital whiteboard. The whiteboard would always start with several empty scales, and each student would be invited to type the letter X in the appropriate place on the whiteboard (see Figure 4). Since we gathered this feedback every 1-2 hours of the course (after each badge), we had very granular data about the two days of our course. In the animation below, you can see the way the mood in the room changed as the course progressed, which was very useful for us to see and respond to.
 
-![Figure 4: Feedback collected at the end of each badge.](/chapters/images/C23_pair-programming-fusion-relentless-feedback-gif.png "Final feedback"){fig-alt="Feedback collected at the end of each badge."}
+![Figure 4: Feedback collected at the end of each badge.](/chapters/images/C23_pair-programming-fusion-relentless-feedback-gif.gif "Final feedback"){fig-alt="Feedback collected at the end of each badge." width=70%}
 
 For completeness, this technique is not limited only to online or hybrid environments, as we also tried it on in-person bootcamp courses as a means of gathering and sharing feedback in the room (Figure 5).
 
-![Figure 5: Feedback collected during a one-day intensive course on Hands-on Data Visualisation within Edinburgh Medical School at the University of Edinburgh.](/chapters/images/C23_pair-programming-fusion-relentless-feedback-sharpie.png "Example feedback"){fig-alt="Feedback collected during a one-day intensive course on Hands-on Data Visualisation within Edinburgh Medical School at the University of Edinburgh."}
+![Figure 5: Feedback collected during a one-day intensive course on Hands-on Data Visualisation within Edinburgh Medical School at the University of Edinburgh.](/chapters/images/C23_pair-programming-fusion-relentless-feedback-sharpie.png "Example feedback"){fig-alt="Feedback collected during a one-day intensive course on Hands-on Data Visualisation within Edinburgh Medical School at the University of Edinburgh." width=70%}
 
 
 ### 2\) Chat Blast and Other Micro-contributions
@@ -110,7 +110,7 @@ Following the same philosophy as in the feedback above, we wanted to give studen
 
 At specific points in the course, we also asked all students to type a quick, micro contribution into the chat all at the same time, i.e. a Chat Blast (see Figure 6), to encourage engagement and shared participation.  We took the Three Stars and A Wish approach, which is used by teachers in primary schools to help pupils focus on what is working and what needs improving [@larson2008continuous]. In our case, we flipped this around and asked students to provide us with “Three stars and a wish” about the course in the chat of the video call. This enabled them to share their thoughts not only on what they liked about the course but also gave them permission to point out things that could be improved or things they struggled with.
 
-![Figure 6: Chat blast with feedback using the “Three stars and a wish” method.](/chapters/images/C23_pair-programming-fusion-chat-blast.png "Chat blast."){fig-alt="Chat blast with feedback using the “Three stars and a wish” method."}
+![Figure 6: Chat blast with feedback using the “Three stars and a wish” method.](/chapters/images/C23_pair-programming-fusion-chat-blast.png "Chat blast."){fig-alt="Chat blast with feedback using the “Three stars and a wish” method." width=70%}
 
 Using the Chat Blast method, we exposed the fact that we were learning from the students as well. We were constantly adjusting the course in an agile way according to the feedback received from students when possible. We also exposed the fact that not everything goes right all the time, that we are human beings who can make mistakes and are learning how to adapt to each new group of students in a fusion teaching environment.
 
