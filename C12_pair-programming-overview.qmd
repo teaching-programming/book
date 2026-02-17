@@ -4,15 +4,12 @@ bibliography: references.bib
 author:
   - name: Pawel Orzechowski
     corresponding: true
-    email: pawel.orzechowski@ed.ac.uk
     affiliations:
       - ref: uoe
   - name: Brittany Blankinship
-    email: brittany.blankinship@ed.ac.uk
     affiliations:
       - ref: uoe
   - name: Kasia Banas
-    email: kasia.banas@ed.ac.uk
     affiliations:
       - ref: uoe
 affiliations:
@@ -30,6 +27,9 @@ In this chapter we present a conversation between three educators who have been 
 
 You can listen to the [audio podcast version of this interview](https://media.ed.ac.uk/media/1_xnjvow1u). Thank you to Miłosz Karpowicz and Jan Banaś for audio editing advice and help.
 
+![Authors recording the podcast version. We rigged the space for optimal audio quality and comfort.](/chapters/images/C12_pair-programming-overview_podcast_recording.jpg "Authors recording the podcast version. We rigged the space for optimal audio quality and comfort."){fig-alt="Photo of authors recoring the podcast. On the photo there are annotations about how we created a standing table from ironingboard, and used carpets and curtains to control external noise." width=70%}
+
+
 ## Communicating the why
 
 ### Let's jump right in:
@@ -45,6 +45,8 @@ I’ve decided to interview my team who are experienced with pair programming in
 **Kasia:** Hello, my name is Kasia and I have been teaching programming for 5 years now. I also use pair programming in my courses, particularly those I teach in person. Join me over the next while as I interview my colleagues and ask them some of the questions that frequently come up when we introduce pair programming to other people.
 
 ### What is Pair Programming?
+
+![In pair programming two students work on one computer: Driver operates the computer, while Navigator helps them to find problems and offers advice.](/chapters/images/C12_pair-programming-overview_two_students.png ""){fig-alt="Drawing of two students practicing pair programming - only one is typing on a computer. They talk to each other." width=70%}
 
 **Interviewer:** Let's start with the basics: What is Pair programming (or pair-groupwork in general) and how does it differ from just working in a pair?
 
@@ -67,6 +69,8 @@ When it's time to switch roles you would just pass the keyboard around. Or a whi
 **Brittany:** We've been using it across our departments for about a decade, with about two thousands students in total. We've gathered a lot of expertise and are reaching a place where we're starting to look more analytically into what works and what doesn't. Especially what types of pair programming give people a better learning experience and better outcomes.
 
 ### Why PP is good for learning {#why-pp-is-good-for-learning}
+
+![Students swap roles frequently to have experience of driging and navigating](/chapters/images/C12_pair-programming-overview_keyboard_switch.png ""){fig-alt="Drawing of two students opracticing pair programming - only one is typing on a computer. They talk to each other. Then they swap who holds the keyboard." width=70%}
 
 **Interviewer:** That's right, it is all about learning better after all. So how does pair programming fit into your courses? Where does it shine and where does it not?
 
@@ -173,6 +177,8 @@ To create an equitable world with diversity and inclusion in focus, we can't jus
 **Interviewer:** Oh, I see how pair programming could be a great practice for inclusivity, and how we have an important mission here as teachers to make sure that it is in fact inclusive.
 
 ### Logistics (room, equipment)
+
+![In online pair programming instructors continuously roam between breakout rooms, prioritising those with raised hands. Instructions take 'ownership' of parts of 'the room'. When instructor enters a breakout room, they first ask students to describe the problem and what was already tried. After that instructor will gives help students.](/chapters/images/C12_pair-programming-overview_keyboard_switch.png){fig-alt="Drawing of an online breakout room setup. There are speech bubbles showing teacher converses with students. Arrows show teachers jumping between brekaout rooms." width=70%}
 
 **Interviewer:** I have a few more questions about the practical side of things. When doing pair programming in person, what equipment do you need? Will any classroom do? Do you need special screens, tables, chairs?
 
