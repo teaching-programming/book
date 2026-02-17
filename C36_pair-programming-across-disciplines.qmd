@@ -1,19 +1,37 @@
 ---
 title: "Structured group work with assigned asymmetrical roles and switching - Lessons from Pair Programming across disciplines"
-format: html
 bibliography: references.bib
-toc: true
+author:
+  - name: Charlotte Desvages
+    email: charlotte.desvages@ed.ac.uk
+    affiliations: School of Mathematics and Maxwell Institute for the Mathematical Sciences, University of Edinburgh
+  - name: Pawel Orzechowski
+    email: TODO include?
+    affiliations: Edinburgh Medical School, University of Edinburgh
+  - name: Brittany Blankinship
+    email: TODO include?
+    affiliations: Edinburgh Medical School, University of Edinburgh
+  - name: Umberto Noè
+    email: TODO include?
+    affiliations: School of Philosophy, Psychology, and Language Sciences, University of Edinburgh
+keywords:
+  - pair programming
+  - group work
+  - student voice
+  - community
 ---
 
-## Authors: Charlotte Desvages, Pawel Orzechowski, Brittany Blankinship, Umberto Noè
+## Introduction
 
-In this chapter we will share our experiences with a structured group work format that we believe fosters student engagement, well-being, and transferable skills.
+TODO: keep this as introduction, or ditch it?
+
+In this chapter, we share our experiences with pair programming as a structured group work format that we believe fosters student engagement, well-being, and transferable skills. We argue that the same pedagogical benefits can also be realised when used for non-programming tasks.
 
 ## What is "pair programming"? (and why should you care?)
 
 In the software industry, people often work in pairs, which evolved over the years into a standard collaborative practice called "pair programming" [@williams2010pair]. Partners take turns playing two different roles: driver and navigator. The driver has exclusive control of the shared computer, and the navigator guides the driver by acting as their sounding board. Being in each role allows them to gain and contribute unique perspectives on the task at hand. Switching roles frequently allows both partners to get the most out of the experience.
 
-!["I think your idea will work, let me type it in!"," I see a bracket missing on line 7", "Let's run this code and see what happens.", "Yay, we did it! It works!"](/chapters/images/C36_pair-programming-across-disciplines_driver_and_navigator_speak.png "Example things the Driver and Navigator could say."){fig-alt="Drawing of two students pair programming together using one keyboard. They take turns saying something, starting with the one holding the keyboard."}
+!["I think your idea will work, let me type it in!"," I see a bracket missing on line 7", "Let's run this code and see what happens.", "Yay, we did it! It works!"](/chapters/images/C36_pair-programming-across-disciplines_driver_and_navigator_speak.png "Example things the Driver and Navigator could say."){fig-alt="Drawing of two students pair programming together using one keyboard. They take turns saying something, starting with the one holding the keyboard." width=70%}
 
 The purpose of the exercise is not only to produce better output (e.g., code) but also to: share knowledge and practice (cross-pollinate ideas); help each other to grow; create friendships and community; and foster a culture of being able to doubt and ask for help (you're never struggling alone).
 
@@ -31,7 +49,7 @@ As a structured way to work together (a "collaboration script" [@weinberger2011p
 
 > "Making sure everyone takes turns being the driver means everyone needs to contribute." - UG, Psychology
 
-!["Hello! Which of you is driving now?", "Is it time to switch drivers?", "Do you need help getting unblocked or are you just cracking on?"](/chapters/images/C36_pair-programming-across-disciplines_tutor_helps.png "Tutor is helping a group of students."){fig-alt="Tutor is approaching a pair of students. Speech bubble shows tutor talking. Students are in the process of passing a keyboard to each other."}
+!["Hello! Which of you is driving now?", "Is it time to switch drivers?", "Do you need help getting unblocked or are you just cracking on?"](/chapters/images/C36_pair-programming-across-disciplines_tutor_helps.png "Tutor is helping a group of students."){fig-alt="Tutor is approaching a pair of students. Speech bubble shows tutor talking. Students are in the process of passing a keyboard to each other." width=70%}
 
 As a result, we see students engage more. They take responsibility for their group, attend more sessions, and come better prepared to not let their teammates down.
 
@@ -43,7 +61,7 @@ Having defined roles doesn't leave room for any one student to take over the tas
 
 Although the structured roles are not a magic bullet to prevent these issues, they can provide tools for both students and tutors to maintain a safer learning environment. One useful strategy is for tutors to casually check in with the groups, leading with the question: "who is the driver?". This does two things: first, it is a temperature check of whether the collaboration is working well; second, it reinforces the expectation that students should stick to the script at all times, even after the tutor leaves.
 
-!["What if I end up in a pair with someone who is mean, or much more advanced than me?", "I'm uncomfortable in socially complex situations. Will I know what to say and do in a group...", "Should I just always work with the same friend, or would I miss out on meeting new people, and learning new coding styles"](/chapters/images/C36_pair-programming-across-disciplines_group_anxiety.png "Anxiety about being part of a group"){fig-alt="Visibly anxious is saying something, with a group of other students in the background"}
+!["What if I end up in a pair with someone who is mean, or much more advanced than me?", "I'm uncomfortable in socially complex situations. Will I know what to say and do in a group...", "Should I just always work with the same friend, or would I miss out on meeting new people, and learning new coding styles"](/chapters/images/C36_pair-programming-across-disciplines_group_anxiety.png "Anxiety about being part of a group"){fig-alt="Visibly anxious is saying something, with a group of other students in the background" width=70%}
 
 If a student is undermined by their partner, they can fall back on the script to reassert themselves as a valued contributor, or to communicate the issue with a tutor. This can reduce the emotional cost required to flag or confront bad behaviour directly, by giving both students and tutors a tool to defuse the situation.
 
@@ -61,7 +79,7 @@ Students also appreciate how discussing with a peer can generate new ideas. A pa
 
 > "Group discussions often have unexpected results." - UG, Psychology
 
-!["So the way I understand it, is ...", "I see another way to solve this!", "That's cool! I never thought about it this way"](/chapters/images/C36_pair-programming-across-disciplines_online_ideas.png "Exchange of Ideas between online students."){fig-alt="Drawing of group of students on an online call. Speech bubbles show that students are saying things."}
+!["So the way I understand it, is ...", "I see another way to solve this!", "That's cool! I never thought about it this way"](/chapters/images/C36_pair-programming-across-disciplines_online_ideas.png "Exchange of Ideas between online students."){fig-alt="Drawing of group of students on an online call. Speech bubbles show that students are saying things." width=70%}
 
 Although the roles are asymmetrical at any particular point in time, taking turns ensures that all students benefit equitably from playing both roles over the course of a session or a semester.
 
@@ -89,9 +107,9 @@ Although the strategies discussed above can minimise this, there is no single co
 
 We have come together as a community of practice for mutual support. We have found it incredibly valuable as educators to discuss experiences, tackle challenges, and share examples of good practice.
 
-## This blog post was pair-programmed
+## This chapter was pair-programmed
 
-Pair programming has worked in our programming classes, but we very much see the value of this kind of structured group work outwith a programming context. For instance, we "pair-programmed" the writing and editing of this very blog post over two sunny afternoons. We took turns being the driver typing on a laptop, while everyone else navigated, contributing their ideas and wording. We believe that the principles we have discussed are widely applicable across disciplines, and we look forward to finding out how colleagues adapt it in their classrooms.
+Pair programming has worked in our programming classes, but we very much see the value of this kind of structured group work outwith a programming context. For instance, we "pair-programmed" the writing and editing of this very chapter over two sunny afternoons. We took turns being the driver typing on a laptop, while everyone else navigated, contributing their ideas and wording. We believe that the principles we have discussed are widely applicable across disciplines, and we look forward to finding out how colleagues adapt it in their classrooms.
 
 ::: {.content-visible when-format="html" unless-format="epub"}
 ## References {.unnumbered}

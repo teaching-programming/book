@@ -1,38 +1,53 @@
 ---
 title: "Sequential vs. Simultaneous: Approaches to Learning Programming and Statistics"
-format: html
-editor: visual
 bibliography: references.bib
-toc: true
+author:
+  - name: Robert S. Young
+    email: TODO
+    affiliations: TODO
+  - name: Rebecca L. Colquhoun
+    email: TODO
+    affiliations: TODO
+  - name: Tiago A. Marques
+    email: TODO
+    affiliations: TODO
+  - name: Brittany Blankinship
+    email: TODO
+    affiliations: Edinburgh Medical School, University of Edinburgh
+  - name: Ozan Evkaya
+    email: TODO
+    affiliations: School of Mathematics and Maxwell Institute for the Mathematical Sciences, University of Edinburgh
+
+keywords:
+  - TODO
+  - TODO
 ---
 
-## Authors: Robert S. Young, Rebecca L. Colquhoun, Tiago A. Marques, Brittany Blankinship, Ozan Evkaya
-
-# Introduction
+## Introduction
 
 We live in a data driven world. Much research in STEM departments requires skills in data description, prediction and inference which are usually developed during statistics modules but, increasingly, non-trivial statistical analysis requires some degree of computer programming. Therefore, for many undergraduate degree programmes, two closely interrelated but fundamentally distinct disciplines, programming and statistics, must often both be taught to undergraduates. There are different possible approaches regarding how to teach these subjects, most notably whether to deliver them simultaneously or sequentially. In this chapter, we focus on undergraduate level teaching in subject areas that are not primarily programming or statistics. Based on our own teaching experiences, we discuss the advantages and disadvantages to different approaches in an attempt to provide guidance on the best way to approach curriculum design.
 
 The topic of teaching statistics to non-specialists has been discussed at length [@kelly1992teaching; @mustafa1996challenge; @metz2008teaching; @gimenez2013can; @o2016teaching; @bromage2022teaching]. How to do so while acknowledging that programming is also an important and related skill has received less focus which we hope to begin to address here. In all scenarios teachers need to be mindful of their own educational context, the learning outcome of their course and, above all, what knowledge and skills they want students to get out of learning both programming and statistics.
 
-# Teaching statistics before programming
+## Teaching statistics before programming
 
 Based on our experience, this is perhaps the original or “old school” approach. Many authors in fact were taught in such a way in their own undergraduate degrees prior to the advent of high quality open-source programming languages (e.g., Python, R, etc.) being used widely in academia. The primary advantage of this approach is the focus on core theoretical concepts in statistics (e.g., probability distributions, critical value tables) without additional considerations regarding technology or implementation. In disciplines where students are likely to need to perform statistical analyses in different applications and using a range of technology depending on the subfield they study, this may be the most useful approach. This is also true in disciplines where computers are not always available such as fieldwork, where we want students to be able to identify where they could do ‘back-of-the-envelope’ statistical analyses. This approach serves to more prominently highlight to students that statistics need not always require computational implementation, which can be lost when programming and statistics teaching are commingled. However, from our experience and perspective, this may be less preferred in undergraduate contexts where the primary subject area is not statistics or programming as this can lead to the links between statistics and programming being lost - potentially leading to a reduced insight into the applications of both.
 
-### Example:
+#### Example:
 
 A first year geoscience course, which first teaches statistics independently of programming before moving on to a combined approach using the Python programming language. Later in the year, students were on fieldwork at the “Ammonite Pavement” in Dorset, and were asked to measure the size of some ammonite fossils. As they were comfortable with pen-and-paper statistical analysis, they took the initiative to more rigorously find the distribution of ammonite sizes, and to calculate how many ammonites they needed to measure to be confident of having a representative sample. Though the statistics course did continue on to students applying programming to solve statistical questions, the in-the-field experiment was made possible by students first learning to do statistics by hand.
 
-# Teaching programming before statistics
+## Teaching programming before statistics
 
 A complementary approach we have identified is to first teach programming, and then follow this with statistics lessons that make use of students’ programming skills. Here, students have time to consolidate their programming skills and build their programming mindset whilst still being able to build knowledge and understanding through a computational investigation of statistical concepts.
 
 The main disadvantage of this approach is that it requires more curriculum time, which many programmes cannot afford. It also requires that the two courses are designed with interaction in mind. For example, using the same programming language in both courses (e.g., jamovi), or purposefully keeping the programming course language agnostic (e.g., giving examples in multiple languages). Teaching statistics in a manner which is reliant on the use of programming may present a barrier for students who are less confident in programming. Indeed depending on the overall curriculum design, students may have forgotten much of the programming learnt by the time they are learning statistics.
 
-### Example:
+#### Example:
 
 The concept of variance was introduced using a programming approach prior to describing the formal statistical method when teaching Analysis of Variance (ANOVA) to a second-year undergraduate course in biomedical informatics. Students were first shown how to use simulations (sampling within replacement) to compare differences between pairs of samples within and across treatment groups. These empirical results were used to derive the probability of these groups being statistically different from each other and introduced the concept of variance as a quantitative measure. In the subsequent week, the formal mathematics behind the ANOVA were introduced. Students learnt how to implement this using R and, when reasonable, to perform post-hoc tests to determine which treatment group pairs were significantly different from each other. This deliberate approach allowed students to fully comprehend the underlying theory before learning how to implement this and interpret the output in real-world scenarios.
 
-# Teaching programming and statistics together
+## Teaching programming and statistics together
 
 The final approach we have identified is to teach programming and statistics together. This can take multiple forms: within a single module one can teach either programming or statistics first, and then immediately use these skills to teach the other, or the teaching of programming and statistics can be truly interleaved.
 
@@ -40,13 +55,13 @@ Teaching these subjects together has clear advantages. Students can experience a
 
 A major disadvantage of combining the teaching of programming and statistics is the risk of cognitive overload. Where both topics are taught concurrently, students do not have the time to consolidate information into their long-term memory and thus the working-memory load is higher [@sweller2018instructional]. Many students will experience hurdles in their learning of both statistics and programming, and these may interact to further impede student attainment compared to students who are more comfortable with one or both topics. For students who are not being taught in their native language, the need to acquire domain-specific vocabulary in two topics at once may further exacerbate issues of cognitive overload. Thoughtful course design can reduce this burden, but it is likely to remain higher than with standalone courses. Besides, the volume of the weekly content should be balanced and tied sequentially in a logical flow to avoid further issues on students' cognitive overload. There may also be concern that students will experience reduced development of computational and algorithmic thinking, since they may only use programming to do statistics. For some disciplines, this may be an appropriate outcome, if the field generally only uses programming for statistical applications and analysis. However, where the course aims to set students up to progress to higher-level programming courses, students may benefit from programming teaching being focussed on a broader range of applications. Besides, the use of suitable programming language can be a key aspect that may impact the student learning performances positively or negatively.
 
-### Example:
+#### Example:
 
 After seeing a concept such as linear modeling as a part of statistical modeling toolkit, 1st-year undergraduate students from different mathematical degree programmes were shown the related code snippet. Slides either showed the mathematical and code representation side by side or sequentially within this same class, allowing students to make connections across the two approaches.
 
 After lectures, students participated in workshops where context-specific questions with new data sets were shared to give students a fresh start each time. For workshop exercises, they needed to either adapt code snippets based on the given data or create new versions of code to solve the given exercises. It is important to leave sufficient pauses - either during or between classes - during this style of delivery to allow students to fully digest the content from both disciplines.
 
-# Practical strategies for teaching statistics and programming
+## Practical strategies for teaching statistics and programming
 
 We next include a number of specific approaches to teaching both programming and statistics. Firstly, we believe that it is important to embed all teaching of these topics into the subject matter of the overreaching course or programming, particularly when programming or statistics are not the principal teaching focus. This may include creating appealing visualisations, testing data to determine whether the patterns observed are statistically significant, or discussing the conclusions that can be obtained in the research field from this work.
 
@@ -56,11 +71,11 @@ A third strategy is to develop a “programming or coding mindset” by foregrou
 
 Finally we note that it is critical to motivate and enthuse students about the potential for both statistics and programming. For example, using a computational approach to perform statistical analysis can increase the reproducibility of the obtained results and improve the confidence that genuine scientific discoveries are reported. These skills are also highly in demand in the job market. As an illustrative summary, the gap in data-driven technical skills reported in 2023 in the UK includes specialist data skills (including statistics), programming and software engineering skills to manage and analyse data sets [@fearns2023data].
 
-### Example:
+#### Example:
 
 In teaching a postgraduate course that covers both Python and R, a course activity was introduced to promote the development of a “coding mindset” called ‘Error of the Week’. This feature celebrates errors as a learning opportunity rather than a source of embarrassment or frustration. Students share errors on discussion boards, including solutions if applicable. The course team responds to every post and during the live session the course lead or tutor highlights a particularly interesting or common error to the class, debugging it live. These discussion boards then act as a common error glossary for the course. These strategies reduce the hurdle that programming can often present to students, allowing for more time to focus on understanding and interpreting statistical outputs.
 
-# Conclusion
+## Conclusion
 
 We have outlined three approaches for teaching programming and statistics: teaching statistics first; teaching programming first; and teaching both skills together. These approaches each have advantages and disadvantages, and will be best suited in different settings. In deciding which approach is most suitable it is important to consider the desired learning outcomes, overall programme design and the cognitive load for students, which will vary depending on the educational context and prior student experiences. Considered design of teaching activities can overcome many of the barriers that students may experience through their programming and statistics learning. We hope that through highlighting the advantages and disadvantages of different approaches this chapter will help educators make strategic decisions about how best to teach and encourage the learning of programming and statistics to their students.
 

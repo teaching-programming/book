@@ -1,33 +1,26 @@
 ---
-title: "Title of Example Chapter (as will apper on top h1 header and in table of contents)"
+title: "your chapter title"
 bibliography: references.bib
+author:
+  - name: Author One
+    email: author@one.com
+    affiliations: institution or company
+
+keywords:
+  - your
+  - chapter
+  - keywords
 ---
 
-## First: things to include
 
-### Subsection references
 
-An example citation [@williams2010pair].
+[DELETE THIS LINE AND REPLACE IT WITH YOUR MANUSCRIPT]
 
-An example citation @williams2010pair.
 
-### Subsection link types
-
-<https://quarto.org>
-
-[example link](https://quarto.org)
-
-### Subsection images
-
-picture: with caption, source, title, alt and link
-![Some Caption](/chapters/images/C36_pair-programming-across-disciplines_online_ideas.png "Some Title"){fig-alt="Some alt text."}
-
-picture wrapped in a link, this way picture links to somewhere
-
-[![Some Caption](/chapters/images/C36_pair-programming-across-disciplines_online_ideas.png "Some Title"){fig-alt="Some alt text."}](https://quarto.org)
 
 ::: {.content-visible when-format="html" unless-format="epub"}
 
 ## References {.unnumbered}
 
 :::
+
