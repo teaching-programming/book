@@ -1,3 +1,4 @@
+---
 title: "Chapter: Learning Together Across Modes: Online and On-site Pair Programming in a Fusion Course"
 bibliography: references.bib
 
@@ -18,6 +19,7 @@ keywords:
   - teaching programming
   - text mining
   - stories
+---
 
 ## Introduction
 
@@ -27,15 +29,16 @@ In this chapter, we want to share our experience of developing and teaching an e
 
 Pair programming \[TODO: REF C12\_pair-programming-overview\] \[TODO REF CH36\] is central to our course, but pairing students effectively in a fusion setting presents its challenges. It was important to us for our entire cohort to feel a sense of parity; this could not be an in-person course with people watching online. We wanted to develop fluidity between the modes. We worked hard at this and broke down the barrier between the room and online. We created a classroom in which both teachers and students can be vulnerable and open, so that we can grow from each other's mistakes, and communicate with respect.
 
-When we first designed and ran *Text Mining for Social Research* \[REF: FOOTNOTE1\], the Edinburgh Futures Institute’s first fusion course at the University of Edinburgh, we knew we were stepping into uncharted territory [@alex2021online]. Fusion courses integrate both in-person and online students, requiring thoughtful interaction strategies to create a cohesive learning experience. While hybrid teaching models have been explored extensively [@beatty2019hybrid, @raes2020systematic] and so has the value of peer instruction [e.g., @porter2011experience], our fusion approach to intensive pair programming represents a novel application of these principles to collaborative coding education. With a team of four (three lecturers and one teaching assistant), we had the flexibility to experiment with innovative teaching strategies that bridged the gap between online and on-site students. This chapter presents our experiences and lessons learned when experimenting with three key interaction methods: *Negotiating Fusion-Pairs*, *the Ghost Helper Effect* and *Micro-interactions*.
+When we first designed and ran *Text Mining for Social Research*[^C23-course-information], the Edinburgh Futures Institute’s first fusion course at the University of Edinburgh, we knew we were stepping into uncharted territory [@alex2021online]. Fusion courses integrate both in-person and online students, requiring thoughtful interaction strategies to create a cohesive learning experience. While hybrid teaching models have been explored extensively [@beatty2019hybrid;@raes2020systematic] and so has the value of peer instruction [@porter2011experience], our fusion approach to intensive pair programming represents a novel application of these principles to collaborative coding education. With a team of four (three lecturers and one teaching assistant), we had the flexibility to experiment with innovative teaching strategies that bridged the gap between online and on-site students. This chapter presents our experiences and lessons learned when experimenting with three key interaction methods: *Negotiating Fusion-Pairs*, *the Ghost Helper Effect* and *Micro-interactions*.
 
-**FOOTNOTE1: This was a two-day intensive bootcamp course for 30 postgraduate students (15 on-site, 15 online). Each day consisted of four 1.5-hour-long sessions, with each session starting with a 15-minute introduction, an hour of coding in pairs and a 15-minute Q\&A session.**
+
+[^C23-course-information]: This was a two-day intensive bootcamp course for 30 postgraduate students (15 on-site, 15 online). Each day consisted of four 1.5-hour-long sessions, with each session starting with a 15-minute introduction, an hour of coding in pairs and a 15-minute Q&A session.
 
 ## Making Fusion Pairs Work
 
 *A reflection on what needs to be considered when pair programming in a fusion classroom*
 
-Pair programming is central to our course [@williams2000strengthening, @hannay2009effectiveness, @hanks2011pair], but pairing students effectively in a fusion setting presented its challenges. We experimented with assigning students in same-mode pairs (on-site-on-site or online-online) and mixed-mode pairs (on-site-online), adjusting pairs every hour to help students feel part of a single, integrated cohort. Each new pairing required students to renegotiate key aspects of their collaboration: how they worked together, who took the lead, and how they interacted with instructors. This constant reshuffling reinforced the sense of a shared learning experience across both modes.
+Pair programming is central to our course [@williams2000strengthening;@hannay2009effectiveness;@hanks2011pair], but pairing students effectively in a fusion setting presented its challenges. We experimented with assigning students in same-mode pairs (on-site-on-site or online-online) and mixed-mode pairs (on-site-online), adjusting pairs every hour to help students feel part of a single, integrated cohort. Each new pairing required students to renegotiate key aspects of their collaboration: how they worked together, who took the lead, and how they interacted with instructors. This constant reshuffling reinforced the sense of a shared learning experience across both modes.
 
 ![Figure 1: Different modes of paired students working together on programming exercises.](/chapters/images/Cxx_yourimagefile.png "Modes"){fig-alt=" Different modes of paired students working together on programming exercises."}
 
