@@ -26,10 +26,14 @@ author:
   email: chris.oldnall@ed.ac.uk
   roles: "second author" 
   affiliations: 
-- name: Chris Sutherland 
-  email:css6@st-andrews.ac.uk
-  roles: "second author" 
-  affiliations: 
+- name: Chris Sutherland
+  email: css6@st-andrews.ac.uk
+  corresponding: false
+  affiliation:
+    - name: University of St Andrews
+      department: Centre for Research into Ecological and Environmental Modelling
+      city: St Andrews
+      country: Scotland
 - name: Robert S. Young 
   email: robert.young@ed.ac.uk
   roles: "second author" 
