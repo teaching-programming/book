@@ -18,10 +18,14 @@ author:
     - name: University of St Andrews 
       department: Centre for Research into Ecological and Environmental Modelling 
       city: St Andrews country: Scotland 
-- name: William P. Kay 
+- name: William P. Kay
   email: kayw@cardiff.ac.uk
-  roles: "second author" 
-  affiliations: 
+  corresponding: false
+  affiliation:
+    - name: Cardiff University
+      department: School of Biosciences
+      city: Cardiff
+      country: Wales
 - name: Chris Oldnall 
   email: chris.oldnall@ed.ac.uk
   roles: "second author" 
