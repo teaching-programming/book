@@ -25,12 +25,16 @@ keywords:
 
 In this chapter we present a conversation between three educators who have been using pair programming for many years. They will introduce the practice and answer frequently asked questions about using pair programming in education.
 
-You can listen to the [audio podcast version of this interview](https://media.ed.ac.uk/media/1_xnjvow1u). Thank you to Miłosz Karpowicz and Jan Banaś for audio editing advice and help.
+You can also listen to the [audio podcast version of this interview](https://media.ed.ac.uk/media/1_xnjvow1u). Thank you to Miłosz Karpowicz and Jan Banaś for audio editing advice and help.
+
+#TODO: Photo of the authors while recording the podcast.
 
 ![Authors recording the podcast version. We rigged the space for optimal audio quality and comfort.](/chapters/images/C12_pair-programming-overview_podcast_recording.jpg "Authors recording the podcast version. We rigged the space for optimal audio quality and comfort."){fig-alt="Photo of authors recoring the podcast. On the photo there are annotations about how we created a standing table from ironingboard, and used carpets and curtains to control external noise." width=70%}
 
 
 ## Communicating the why
+
+#TODO: Add image showing the concept of pair programming
 
 ### Let's jump right in:
 
@@ -125,6 +129,8 @@ Depending on the course, sometimes the benefits take a session or two to become 
 Being at university, or even learning in general, is a social experience, so the fact that people are all different is great! This is one of the benefits of pair programming - interacting with people from different cultures, languages, backgrounds. Differences between you and your partner are a benefit, not a problem. The programmers would say "it's a feature, not a bug (haha)".
 
 ## Preparing for the session
+
+#TODO: Add image showing something about pair programming
 
 **Interviewer:** Ok, this sounds really cool. Can we now talk a little bit about the practicalities? Walk me through how pair programming actually happens in the classroom.
 
@@ -247,6 +253,8 @@ Same goes for any logistical issues, like patchy internet in online classes, or 
 It works really well when the driver is pitching the solution to the group and they approve of it, or suggest improvements. It seems to work well, especially when well integrated into the design of the whole course. Pair programming is a very flexible way to collaborate, but it's important to communicate the roles, the structure and the expectations to students very clearly.
 
 ## Running a session
+
+#TODO: Add image showing something about pair programming
 
 ### Before we start / Preparing the group
 

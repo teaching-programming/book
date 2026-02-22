@@ -11,13 +11,14 @@ execute:
 
 format:
     html:
-        number-sections: true
+        number-sections: false
         eval: true
         theme: [cosmo, _theme/atkinson.scss]
         css: _theme/styles.css
         code-line-numbers: true
         code-block-bg: true
         code-block-border-left: true
+        repo-url: https://github.com/teaching-programming/book
         toc: true
         include-before-body:
             file: _theme/accessibility.html
@@ -29,6 +30,7 @@ format:
     pdf:
         include-in-header: _theme/latex_preamble.tex
         bibliography: references.bib
+        links-as-notes: true
     epub:
         bibliography: references.bib
 
@@ -48,7 +50,7 @@ book:
     chapters:
         - index.qmd
         - 00-chapter-template.qmd
-#       - C01_teaching-python.qmd
+#        - C01_teaching-python.qmd
 #        - C02_genai-before-during-after.qmd
 #        - C03_online-teaching-reflections.qmd
 #        - C04_computer-says-no.qmd
@@ -62,7 +64,7 @@ book:
         - C12_pair-programming-overview.qmd
 #        - C13_pair-programming-adventure.qmd
 #        - C14_foster-inclusion-and-accessibility.qmd
-#        - C15_programming-without-computers.qmd
+        - C15_programming-without-computers.qmd
 #        - C16_pair-programming-extensions.qmd
 #        - C17_coding-with-music.qmd
 #        - C18_social-learning-modelling.qmd
