@@ -32,6 +32,7 @@ Change it to the following (note the change to the image file path):
 
 Don't forget to also rename your image files to add `Cxx_` at the start of the file name, corresponding to your chapter ID.
 
+**If your chapter includes animated images e.g. in .gif format, you will need to provide print-friendly alternatives**. To do that, include both print and non-print versions, surrounded by ::: separator including `content-visible` accompanied by either `unless-format="html"` (for print) or `when-format="html"` (for website). There is a working example in the [chapter 23 in the section about 'relentless feeback'](https://github.com/teaching-programming/book/blob/main/C23_pair-programming-fusion.qmd) which [when rendered will look like this in the websote](https://teaching-programming.github.io/book/C23_pair-programming-fusion.html#relentless-feedback).
 
 ### Format your references
 
