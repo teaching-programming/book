@@ -1,5 +1,5 @@
 ---
-title: "Chapter: Learning Together Across Modes: Online and On-site Pair Programming in a Fusion Course"
+title: "Learning Together Across Modes: Online and On-site Pair Programming in a Fusion Course"
 bibliography: references.bib
 
 author:
@@ -97,7 +97,13 @@ We wondered whether we could create a feedback mechanism which is easier to comp
 
 For our fusion course, we could not find a tool which would deliver exactly what we needed at the time, so we used a shared digital whiteboard. The whiteboard would always start with several empty scales, and each student would be invited to type the letter X in the appropriate place on the whiteboard (see Figure 4). Since we gathered this feedback every 1-2 hours of the course (after each badge), we had very granular data about the two days of our course. In the animation below, you can see the way the mood in the room changed as the course progressed, which was very useful for us to see and respond to.
 
-![Figure 4: Feedback collected at the end of each badge.](/chapters/images/C23_pair-programming-fusion-relentless-feedback-gif.gif "Final feedback"){fig-alt="Feedback collected at the end of each badge." width=70%}
+::: {.content-visible unless-format="html"}
+![Figure 4: Feedback collected at the end of each badge.](/chapters/images/C23_pair-programming-fusion-relentless-feedback-gif.png "Final feedback"){fig-alt="Drawing with a number of axis on which students give feedback. Feedback for about 10 students is annotated. Categories include 'was it hard' and 'did you learn a lot'" width=70%}
+:::
+::: {.content-visible when-format="html"}
+![Figure 4: Feedback collected at the end of each badge.](/chapters/images/C23_pair-programming-fusion-relentless-feedback-gif.gif "Final feedback"){fig-alt="Drawing with a number of axis on which students give feedback. Feedback for about 10 students is annotated. Categories include 'was it hard' and 'did you learn a lot'" width=70%}
+:::
+
 
 For completeness, this technique is not limited only to online or hybrid environments, as we also tried it on in-person bootcamp courses as a means of gathering and sharing feedback in the room (Figure 5).
 
