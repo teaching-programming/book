@@ -22,10 +22,18 @@ author:
       department: School of Biosciences
       city: Cardiff
       country: Wales
-- name: Chris Oldnall 
+- name: Christopher Aldous Oldnall
   email: chris.oldnall@ed.ac.uk
-  roles: "second author" 
-  affiliations: 
+  corresponding: false
+  affiliation:
+    - name: The University of Edinburgh
+      department: School of Mathematics
+      city: Edinburgh
+      country: UK
+    - name: The University of Edinburgh
+      department: Edinburgh Medical School
+      city: Edinburgh
+      country: UK
 - name: Chris Sutherland
   email: css6@st-andrews.ac.uk
   corresponding: false
@@ -34,10 +42,18 @@ author:
       department: Centre for Research into Ecological and Environmental Modelling
       city: St Andrews
       country: Scotland
-- name: Robert S. Young 
+- name: Robert S. Young
   email: robert.young@ed.ac.uk
-  roles: "second author" 
+  corresponding: false
   affiliation:
+    - name: The University of Edinburgh
+      department: Usher Institute and Zhejiang University - University of Edinburgh (ZJE) Institute
+      city: Edinburgh
+      country: UK
+    - name: Zhejiang University
+      department: Zhejiang University - University of Edinburgh (ZJE) Institute
+      city: Haining
+      country: China
 
 keywords:
   - anxiety
