@@ -121,7 +121,7 @@ Depending on the course, sometimes the benefits take a session or two to become 
 
 Being at university, or even learning in general, is a social experience, so the fact that people are all different is great! This is one of the benefits of pair programming - interacting with people from different cultures, languages, backgrounds. Differences between you and your partner are a benefit, not a problem. The programmers would say "it's a feature, not a bug (haha)".
 
-![Students swap roles frequently to have experience of driging and navigating](/chapters/images/C12_pair-programming-overview_keyboard_switch.png ""){fig-alt="Drawing of two students opracticing pair programming - only one is typing on a computer. They talk to each other. Then they swap who holds the keyboard." width=70%}
+![Students swap roles frequently to have experience of driving and navigating](/chapters/images/C12_pair-programming-overview_keyboard_switch.png ""){fig-alt="Drawing of two students opracticing pair programming - only one is typing on a computer. They talk to each other. Then they swap who holds the keyboard." width=70%}
 
 ## Preparing for the session
 
