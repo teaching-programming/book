@@ -24,7 +24,12 @@ Fear not, though. You are about to learn how to deal with this kind of situation
 
 This system is inspired by variations of Role-Playing games that do not require a Dungeon Master as mediator, such as various ones from [Tomkin Press](https://tomkinpress.com/). On a very literal level, it follows the anarchist maxim of 'No gods, no masters' which, in its turn, can be reflected in horizontal approaches to higher education, where students and educators operate side-by-side [@wilkinson2025fragments].
 
-***Disclaimer:*** the collaborative, open-ended nature of some steps here described might suit workshops and short courses better than credit-bearing modules with strictly pre-defined learning outcomes. That said, syllabi are often flexible enough to allow for this ad-hoc, collaborative approach (or at least some tweaking).
+::: {.callout-note icon="false"}
+# Disclaimer
+
+The collaborative, open-ended nature of some steps here described might suit workshops and short courses better than credit-bearing modules with strictly pre-defined learning outcomes. That said, syllabi are often flexible enough to allow for this ad-hoc, collaborative approach (or at least some tweaking).
+
+:::
 
 ## Accessing the toolkit
 
@@ -41,9 +46,9 @@ These are available as `.docx` and `.rtf` documents, but feel free to adapt them
 
 ## Character building: presenting learners and educators' profiles
 
-A good first step is to understand everyone's aspirations and previous experiences. At this stage, invite all students and educators (including yourself) to complete a **Character Sheet**. Once everyone has completed theirs, go through a round of introductions. Focus on understanding everyone's strong points, ambitions, and fears.
+A good first step is to understand everyone's aspirations and previous experiences. At this stage, invite all students and educators (including yourself) to complete a **Character Sheet**[^C06-ftn00]. Once everyone has completed theirs, go through a round of introductions. Focus on understanding everyone's strong points, ambitions, and fears.
 
-The Character Sheet document was designed to help learners understand and share their own experience, needs, expectations, skills, and challenges. It is informed by [Student Persona templates provided by the Open University](https://www.open.ac.uk/blogs/learning-design/?page_id=457) under Creative Commons Attribution-Non-Commercial licenses.
+[^C06-ftn00]: The Character Sheet document was designed to help learners understand and share their own experience, needs, expectations, skills, and challenges. It is informed by [Student Persona templates provided by the Open University](https://www.open.ac.uk/blogs/learning-design/?page_id=457) under Creative Commons Attribution-Non-Commercial licenses.
 
 The Character Sheet could potentially help identify potential topics for class and barriers to be removed.
 
@@ -69,7 +74,7 @@ The Character Sheet could potentially help identify potential topics for class a
 
 ## Challenges ahead: establishing learning outcomes and syllabus
 
-Use the **Bestiary** template to establish (or remind) learners of the course learning outcomes and syllabus. Discuss what they will learn, giving examples if necessary. Depending on your course's flexibility, outcomes and topics can be decided on the spot. Usually, you will want to choose a set of learning outcomes and lessons beforehand.
+Use the **Bestiary** template to establish (or remind) learners of the course learning outcomes and syllabus. Discuss what they will learn, giving examples if necessary. Depending on your course's flexibility, outcomes and topics can be decided on the spot. Usually, you will want to choose a set of learning outcomes and lessons beforehand[^C06-ftn01].
 
 ::: {.callout-tip icon="false"}
 # Example: Bestiary
@@ -91,11 +96,11 @@ Use the **Bestiary** template to establish (or remind) learners of the course le
 
 :::
 
-**Note:** Many programmes require educators to achieve specific learning outcomes. If you are the one in charge of keeping the programme or module specification form, a good practice would be keeping it flexible enough so that new, emerging topics can be brought into the syllabus.
+[^C06-ftn01]: Many programmes require educators to achieve specific learning outcomes. If you are the one in charge of keeping the programme or module specification form, a good practice would be keeping it flexible enough so that new, emerging topics can be brought into the syllabus.
 
 ## The treasure map: structuring the course and learning activities
 
-Use the **Adventure Map** to discuss the sequence of learning material and activities, assessment (beasts), and how they relate to learning outcomes. Keep the discussion open so that learners can suggest, based on their expertise, perceived needs or fears, how to best organise the learning trajectory. This collective effort into creating a learning journey that does not follow a blueprint is another characteristic of anarchist pedagogies [@deleon2012anarchism]. To structure their journey, place items from the **Bestiary** into the journey map, and associating them with the course's Learning outcomes.
+Use the **Adventure Map**[^C06-ftn02] to discuss the sequence of learning material and activities, assessment (beasts), and how they relate to learning outcomes. Keep the discussion open so that learners can suggest, based on their expertise, perceived needs or fears, how to best organise the learning trajectory. This collective effort into creating a learning journey that does not follow a blueprint is another characteristic of anarchist pedagogies [@deleon2012anarchism]. To structure their journey, place items from the **Bestiary** into the journey map, and associating them with the course's Learning outcomes.
 
 
 ::: {.callout-tip icon="false"}
@@ -110,12 +115,12 @@ Use the **Adventure Map** to discuss the sequence of learning material and activ
 :::
 
 
-**Note:** the Adventure Map document was designed to help educators and students to set out learning outcomes, syllabi, and assessments. It is informed by [material created by the University of Leeds OD&PL](https://sway.cloud.microsoft/C1YkluhNgPxGx5um?ref=Link).
+[^C06-ftn02]: The Adventure Map document was designed to help educators and students to set out learning outcomes, syllabi, and assessments. It is informed by [material created by the University of Leeds OD&PL](https://sway.cloud.microsoft/C1YkluhNgPxGx5um?ref=Link).
 
 
 ## P.A.R.T.Y: organising groups and groupwork
 
-As a group (or groups, depending on the number of students), complete the **Party Guidelines** sheet, establishing ground rules on how to deal with each other and the group, as well as roles for each participant. Aiming for consensus would be ideal. A quick introduction and [effective guide on how to achieve consensus](http://www.seedsforchange.org.uk/shortconsensus) in group meetings was created by workers' co-op of campaigners Seeds for Change.
+As a group (or groups, depending on the number of students), complete the **Party Guidelines** sheet[^C06-ftn03], establishing ground rules on how to deal with each other and the group, as well as roles for each participant. Aiming for consensus would be ideal. A quick introduction and [effective guide on how to achieve consensus](http://www.seedsforchange.org.uk/shortconsensus) in group meetings was created by workers' co-op of campaigners Seeds for Change.
 
 Go over the **Adventure Map**, discussing how to best achieve the challenges (either individually or as pairs or teams). Discuss different strategies for group work; for instance, should everyone work on every aspect of the assignment, or should they focus on their own areas of expertise and interest?
 
@@ -132,7 +137,7 @@ Party Guidelines should help teamwork run smoothly, including agreements for con
 
 :::
 
-**Note:** the Party Guidelines document was designed to help learners manage their groupwork. They are informed by [frameworks from the Institute for Academic Development](https://institute-academic-development.ed.ac.uk/study-hub/learning-resources/group-working) [@IADUniversityofEdinburgh_2024] and the Learn Higher CETL at the University of Bradford [@LearnHigher_2012a; @LearnHigher_2012b] under Creative Commons Attribution-Non-Commercial licences.
+[^C06-ftn03]: The Party Guidelines document was designed to help learners manage their groupwork. They are informed by [frameworks from the Institute for Academic Development](https://institute-academic-development.ed.ac.uk/study-hub/learning-resources/group-working) [@IADUniversityofEdinburgh_2024] and the Learn Higher CETL at the University of Bradford [@LearnHigher_2012a; @LearnHigher_2012b] under Creative Commons Attribution-Non-Commercial licences.
 
 
 ## A kind of magic: distributing learning material
