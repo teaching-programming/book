@@ -319,8 +319,10 @@ All you'll need to start is: a willing colleague or friend; two hours of time; a
 
 For example if you do not have clear roles (who's the driver, and who's the navigator) it might fall into chaos or into working separately. If you do not switch, the person with more confidence or experience can end up hogging the keyboard. Or if you create bigger groups, people might disengage and not take ownership of the exercise. I'd say, start with the simple 'vanilla' off-the-shelf pair programming, and then find what works best in your context.
 
-**Interviewer:** This sounds like very useful advice and first steps! And if people want to know more, they can find out about it on the website of our community, which is at <www.pairprogramming.ed.ac.uk>! Thanks for talking to me today. I am Dr Kasia Banas, and I've been talking today with Dr Brittany Blankinship and Dr Pawel Orzechowski from the Edinburgh Medical School at the University of Edinburgh.
+**Interviewer:** This sounds like very useful advice and first steps! And if people want to know more, they can find out about it on the website of our community[^C12-ftn1]! Thanks for talking to me today. I am Dr Kasia Banas, and I've been talking today with Dr Brittany Blankinship and Dr Pawel Orzechowski from the Edinburgh Medical School at the University of Edinburgh.
 
 **Brittany:** Thanks for having us!
 
 **Pawel:** Thank you!
+
+[^C12-ftn1]: <pairprogramming.ed.ac.uk>
