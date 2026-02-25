@@ -15,11 +15,15 @@ keywords:
 
 When people from humanities/social science start learning to code, they might feel alone in the dark end of the woods. But they are not, and you are not. As soon as you see programming as a storytelling exercise, your metaphors and narratives become breadcrumbs which will guide you on this transformative journey.
 
-::: {.callout-note appearance="simple" title="Disclaimer"}
-This article is written like an annoying food blog: it starts with a [wishy-washy poetic blurb](#poetic-intro) which you will probably scroll past anyway; followed by [the actual recipe, details and process](#summer-school-details); just to finish with some [practical recommendations](#practical-tips) the author may or may not have been paid to include... (Also I will overuse punctuation (coders do that)). Enjoy\!
+::: {.callout-note appearance="simple" title="Disclaimer: this chapter is written like an annoying food blog"}
+- It starts with a [wishy-washy poetic blurb](#poetic-intro) which you will probably scroll past anyway;
+- followed by [the actual recipe, details and process](#summer-school-details);
+- just to finish with some [practical recommendations](#practical-tips) the author may or may not have been paid to include...
+
+(Also I will overuse punctuation (coders do that)). Enjoy!
 :::
 
-![Laptop stickers from the summer school, including the pair-programming proficiency badge](/chapters/images/C39_gentle-introduction-summer-school-laptop-sticker.jpg){fig-alt="TODO" }
+![Laptop stickers from the summer school, including the pair-programming proficiency badge](/chapters/images/C39_gentle-introduction-summer-school-laptop-sticker.jpg){fig-alt="photo of stickers on a laptop. One sticker says 'Text and Data Analysis DCS Summer School'." }
 
 ### Coding is like dancing, right? {#poetic-intro}
 
@@ -51,7 +55,7 @@ And before you notice, you get better at assembling IKEA furniture, or fixing yo
 
 When you learn coding, just like any other skill, you anchor it in your skills, memories, metaphors and ways of thinking [@ambrose2010learning]. You keep drawing on old patterns and constantly creating new ones. You solve more intricate puzzles and express those solutions in a very specific language. And as you master that new language you learn new nouns, verbs, acronyms and proverb-like shortcuts to achieve your goal quicker and more elegantly. You can imagine that this process gets easier as you do it more, right?  
 
-![instructors and some of the attendees of the CDCS summer school Gentle Introduction to Coding](/chapters/images/C39_gentle-introduction-summer-school-attendees.jpg){fig-alt="TODO" }
+![Instructors and some of the attendees of the CDCS summer school Gentle Introduction to Coding](/chapters/images/C39_gentle-introduction-summer-school-attendees.jpg){fig-alt="Photo of summer school participants taken on a summer day in a park in front of a university building in Edinburgh" }
 
 ### How to apply this practically in learning?
 
@@ -65,7 +69,7 @@ I’ve seen students with experiences of hospitality or parenthood be great at p
 
 As well as seeing your peers’ learning process, it is good to visualise your goals. Over the course of the week we were joined by people who use code at different stages of their careers in social sciences so that students see how diverse and impactful knowing how to code can be. Our keynote speaker Melissa Terras spoke about how coding ecosystems change in research; our guest speakers Alessia Calafiore, Bea Alex and Clare Llewellyn shared how they use coding in politics, literature and geography; while our teaching assistants Karim Rivera Lares and Chris Oldnall brought new perspectives from their work in psychology, maths and medicine.  
 
-![When two students use pair-programming: 'the driver' (left) is a person who types, 'the navigator' (right) is their companion, as they solve a problem together](/chapters/images/C39_gentle-introduction-summer-school-pair-programming.png){fig-alt="TODO" }
+![When two students use pair-programming: 'the driver' (left) is a person who types, 'the navigator' (right) is their companion, as they solve a problem together](/chapters/images/C39_gentle-introduction-summer-school-pair-programming.png){fig-alt="Drawing of two students pair programming together on one computer. On the left one of them is holding keyboard, then on the right the other one is holding the keyboard." }
 
 Throughout the summer school, students submitted frequent 'relentless' feedback \[TODO link to hybrid chapter\] in the form of short bullet points about what resonated with them \[TODO link to 3s1w chapter\].
 
@@ -85,7 +89,7 @@ While the ‘Driver’ (person who types) talks out loud about what they are doi
 
 Did you ever notice that in the process of explaining your problem to someone you often find a solution by yourself? For example you cannot find something, and as soon as you ask your flatmate you find it (“oh, never-mind, I found that folder / wrench / salt. It was in front of my eyes all along”). Verbalising/spelling-out a problem (to someone, or to yourself) often facilitates solving it by yourself. Such structured ‘talking to yourself’ is very common in programming and we call it “rubber-ducking”. That’s because if there is no one there to listen to your problem, just find a rubber duck (a floating bath-toy type) and talk to it. And as you talk, your problem becomes clearer. In pair programming we have something even better – a partner who can not only listen, but also asks questions. Often they are at a different level than you, so questions can be unexpected and enlightening. Through this practice students learn transferable skills of how to talk, listen and negotiate in a collaborative environment.   
 
-![graph showing student attitudes over first 4 days of the summer school](/chapters/images/C39_gentle-introduction-summer-school-feedback-days.png){fig-alt="TODO" }
+![Graph showing student attitudes over first 4 days of the summer school](/chapters/images/C39_gentle-introduction-summer-school-feedback-days.png){fig-alt="grpah showing student feedback over 5 days of the course. Answers to 5 questions are show. Visible trend is that over time things were getting more difficult, but students keep finding it useful, learn a lot and enjoy working in pairs." }
 
 Cross-pollinating ideas in pair programming works surprisingly well in diverse groups (btw. ‘pear’ is spelled differently than ‘pair’, but did you know that if two pear trees exchange pollen they will have more and healthier fruit?). Each partner brings their own background, metaphors and ways of understanding, while also experiencing someone else’s ways. All learning during the summer school happened with partners, who we changed every 2 hours. That meant that the diversity of skills and backgrounds worked to our advantage, as it led to spreading of good practice and also allowed people to meet with each other.
 
@@ -95,11 +99,11 @@ If you’d like to know more about Pair programming, join our special interest g
 
 I find it easier to learn something new when it is separated into manageable chunks, especially when I understand how each chunk fits into a bigger picture. I also love it when assembling all the pieces feels personal, fun and challenges how I see things. That’s why I resonated so deeply with Threshold Concepts [@meyer2003threshold] (thank you [PgCAP](https://institute-academic-development.ed.ac.uk/learning-teaching/cpd/postgraduate-certificate)\!) – a theory that some knowledge cannot be unlearned and is transformative (like crossing a door threshold). That’s why all of the summer school content was separated into 15 Badges (achievements, blocks, sections). Each badge was a 1.5-hour-long chunk of knowledge/skill and each built on top of all previous achievements. To collect a badge students participated in a 20 minute interactive presentation from the teaching team, followed by an hour of pair-programming, and a few minutes of self-reflection.  
 
-![examples of badges that students could achieve during the summer school](/chapters/images/C39_gentle-introduction-summer-school-badges-list.png){fig-alt="TODO" }
+![Examples of badges that students could achieve during the summer school](/chapters/images/C39_gentle-introduction-summer-school-badges-list.png){fig-alt="Picture with small stickers badges showoing a number of topics of the course, like 'writing code, runnig code' oir 'loops repeat things'" }
 
 Have you ever tried writing a “gratitude journal” at the end of the day, by listing things that you are grateful for? It consolidates experiences you had, frames them in positive ways and enables incorporating them into our fabric of experience [@bono2020new]. To reflect on the personal and transformative component of learning, students ended each badge by writing a 4-sentence-long self reflection. We used the “3 stars and 1 wish” method from primary schools, where everyone lists 3 things that spoke to them personally, and 1 thing they wish they understood better [@llewellyn2020teaching]. Every 2 hours, every student wrote that mini-reflection. Externalising thoughts is designed to help everyone to remember and encode what they learned, but also allows the instructor team to identify parts of content which need revisiting.  
 
-![components of each badge are: slides, coding exercises and self-reflection mini-diary](/chapters/images/C39_gentle-introduction-summer-school-badges-structure.png){fig-alt="TODO" }
+![Components of each badge are: slides, coding exercises and self-reflection mini-diary](/chapters/images/C39_gentle-introduction-summer-school-badges-structure.png){fig-alt="drawing showing what a structure od each badge. It shows an equasion that badge is made of lecture video, coding exercises with tasks, and a short student reflection." }
 
 We leaned into our inner children not just during the reflective mini-diary, but also during the interactive parts of the presentation. Did you notice that it can be surprisingly challenging but also joyful to wonder “How would you explain this to a very smart 8 year old?”. It was great to see how kind and clear people’s descriptions are when they imagine talking to a child. We also played “I’m not a native speaker, what does this word mean?” which was particularly joyful since me and many students did not grow up speaking English. It is very surprising how technical words have their roots in everyday language, and exploring those roots does make it easier to integrate the jargon. For example “index” points at things, (just like an index finger) and “key” unlocks one value (just like door key).  
 
@@ -107,7 +111,7 @@ We leaned into our inner children not just during the reflective mini-diary, but
 
 > “I had been looking for a course like this for a while, but found the tutorials and online courses too complicated, and self-learning too overwhelming starting from zero. \[…\] I had been 100% dreading getting to the social media analysis part of my PhD – after this course, I’m really looking forward to getting to it\!\!” - student feedback
 
-![graph showing students' self-perceived improvement in terms of skills before and after the summer-school, on scale from 0 to 5](/chapters/images/C39_gentle-introduction-summer-school-skills.png){fig-alt="TODO" }
+![Graph showing students' self-perceived improvement in terms of skills before and after the summer-school, on scale from 0 to 5](/chapters/images/C39_gentle-introduction-summer-school-skills.png){fig-alt="Graph showing results of student questionnaire about their confidence before and after the course. Trends show improved confidence (on average 2-3 points on a 0 to 5 scale). Skills include 'reading code', 'discussing code' and 'coding concepts'" }
 
 ### As promised: some practical top tips for running similar courses: {#practical-tips}
 
@@ -120,7 +124,7 @@ We leaned into our inner children not just during the reflective mini-diary, but
 4. For presentations big screens are brighter than projectors, but much smaller, and also tend to be mounted lower on the wall. A big projector usually projects higher so it will make it easier for people at the back to see the slides. If you’re in the room with a low-mounted big screen, you might have to edit your slides to have nothing important at the bottom of the slide (bottom section of each slide was invisible to students sitting at the back).
 
 5. Go to your lecture room on the day before to check projectors, chairs, cables. In our room the previous room users unplugged all AV equipment for some reason, but luckily we noticed in the morning and called the wonderful tech-support team who fixed it on time.   
-!['Time Timer' is a large clock designed for primary schools which we used to indicate when driver and navigator should switch roles](/chapters/images/C39_gentle-introduction-summer-school-timer.jpg){fig-alt="TODO" }
+!['Time Timer' is a large clock designed for primary schools which we used to indicate when driver and navigator should switch roles](/chapters/images/C39_gentle-introduction-summer-school-timer.jpg){fig-alt="Picture of a classroom setup where projector shows a clock counting down to 15 minutes. Image on a projector comes from a physical clock with a document camera pointed at it." }
 
 6. For quick questionnaires and feedback use Microsoft Forms available to all staff and students (not the ones where you need to be logged-in). They also present results in a quick nice set of graphs.
 
@@ -142,8 +146,7 @@ We leaned into our inner children not just during the reflective mini-diary, but
 
 To sum it all up, our summer school combined a number of teaching methods, which did resonate with the participants. Splitting content into Badges enabled us to scaffold learning, and be very agile about which parts to skip, and which to expand, following what the group wanted. Practical exercises all involved pair-programming and constant peer-feedback for cross-pollination of skills. Frequent reflections with 3 stars & 1 wish and classroom discussions created a feedback loop between the students and the teaching team (shout out to Karim and Chris, my amazing teaching assistants). Additionally, since most participants were early career academics/students, their feedback often mentioned not just learning to code, but learning how to run a well-designed, modern and interactive course.
 
-![graph showing feedback from students about components of the course on a scale 1-5](/chapters/images/C39_gentle-introduction-summer-school-feedback-course.png){fig-alt="TODO" }
-
+![Graph showing feedback from students about components of the course on a scale 1-5](/chapters/images/C39_gentle-introduction-summer-school-feedback-course.png){fig-alt="Graph showing student setisfacytion witht he event. Most measures show average scores of 4 or more on a scale 1 to 5." }
 
 ::: {.content-visible when-format="html" unless-format="epub"}
 
