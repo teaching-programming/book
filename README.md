@@ -54,13 +54,15 @@ If you've never used BibTeX and this is confusing, the editing team will be able
 
 If you reference any website with a URL, insert the link in-line in the text, as is done throughout this document and in the [chapter template](https://teaching-programming.github.io/book/00-chapter-template.html).
 
-
 ### Format your footnotes
 
 If you have added citations/references as footnotes, please reformat them as proper references instead (see [Format your references](#format-your-references)).
 
 Footnotes can still be used for footnote text, as demonstrated [in the chapter template](00-chapter-template.qmd) (see the rendered footnotes [on the website](https://teaching-programming.github.io/book/00-chapter-template.html)). Please use `[^Cxx-your-footnote-tag]` for footnote tags, where `Cxx` is your chapter ID.
 
+### Create 'inner links' pointing to another part of your own article {#inner-links}
+
+To create a link to a header in your own chapter you need to do two things: give this header a unique id by putting `{#some-unique-id}` at the end of your header text. Then you link to it in a similar way to normal links, `[take me there](#some-unique-id)` - here's an [example link to this section](#inner-links)
 
 ## Submit your chapter to GitHub
 
