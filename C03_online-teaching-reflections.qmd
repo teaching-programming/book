@@ -1,0 +1,26 @@
+---
+title: "your chapter title"
+bibliography: references.bib
+author:
+  - name: Author One
+    email: author@one.com
+    affiliations: institution or company
+
+keywords:
+  - your
+  - chapter
+  - keywords
+---
+
+
+
+[DELETE THIS LINE AND REPLACE IT WITH YOUR MANUSCRIPT]
+
+
+
+::: {.content-visible when-format="html" unless-format="epub"}
+
+## References {.unnumbered}
+
+:::
+
