@@ -1,0 +1,78 @@
+---
+title: "Title of Example Chapter (as will appear on top h1 header and in table of contents)"
+bibliography: references.bib
+author:
+  - name: Author One
+    email: author@one.com
+    corresponding: true
+    affiliations: Edinburgh Medical School, University of Edinburgh
+  - name: Author Two
+    email: author@two.com
+    affiliations: Edinburgh Medical School, University of Edinburgh
+  - name: Author Three
+    email: author@three.com
+    affiliations: School of Mathematics and Maxwell Institute for the Mathematical Sciences, University of Edinburgh
+
+keywords:
+  - markdown
+  - example
+---
+
+## Your first top-level section
+
+### A subsection
+
+This is an example subsection, starting with `###`.
+
+## Quarto Markdown quick examples
+
+### Citations
+
+An example citation [@williams2010pair]. You can also cite @williams2010pair in the text, without the brackets.
+
+This is a reference to a chapter of a book [@TeachProgAcross_C01]. You can find it in `references.bib`; it uses the `@inbook` type.
+
+The "References" section will be populated automatically at the bottom.
+
+### Footnotes
+
+This is some text with a footnote[^C00-myfootnote].
+
+[^C00-myfootnote]: Write the content of your footnote here.
+
+    If you need a multiline footnote, indent the following lines with 4 spaces...
+
+    ...like this. Everything indented will be part of the footnote.
+
+### URL links
+
+Use [link text](https://quarto.org) to include URL links; please refer to the accessibility guidance in the book submission guidelines.
+
+If it is absolutely necessary to display the full URL in the text, use `<...>`: <https://quarto.org>
+
+### Images
+
+
+![This is the caption for an image, sized to take 70% of the screen width.](/chapters/images/C36_pair-programming-across-disciplines_online_ideas.png "Some Title, appears on mouse hover"){fig-alt="Some alt text for accessibility." width=70%}
+
+
+[![This is the caption for an image with a clickable link.](/chapters/images/C36_pair-programming-across-disciplines_online_ideas.png "Some Title, appears on mouse hover"){fig-alt="Some alt text for accessibility." width=70%}](https://quarto.org)
+
+
+### Putting some content in a box
+
+:::{.callout-tip icon="false"}
+# Title of your box
+
+You can put some content in a box like this, called a [callout](https://quarto.org/docs/authoring/callouts.html), if you want it to be visually distinct from the rest of your chapter. This could be e.g. if you write an example or a short case study.
+
+:::
+
+
+
+
+::: {.content-visible when-format="html" unless-format="epub"}
+
+## References {.unnumbered}
+
+:::
