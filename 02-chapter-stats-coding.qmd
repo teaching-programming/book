@@ -4,15 +4,16 @@ format: html
 editor: visual
 bibliography: references.bib
 toc: true
+csl: vancouver.csl
 author:
   - name: Robert S. Young
-    affiliation: Usher Institute, University of Edinburgh and Zhejiang University - University of Edinburgh (ZJE) Institute
+    affiliation: Edinburgh Medical School, University of Edinburgh and Zhejiang University - University of Edinburgh (ZJE) Institute
   - name: Rebecca L. Colquhoun
     affiliation: Department of Earth Science and Engineering, Imperial College London
   - name: Tiago A. Marques
     affiliation: School of Mathematics, University of St Andrews
   - name: Brittany Blankinship
-    affiliation:  Usher Institute, University of Edinburgh
+    affiliation:  Edinburgh Medical School, University of Edinburgh
   - name: Ozan Evkaya
     affiliation: School of Mathematics, University of Edinburgh
   - name: William P. Kay
