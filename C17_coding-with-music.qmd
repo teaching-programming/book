@@ -4,10 +4,10 @@ bibliography: references.bib
 author:
   - name: Tom Mudd
     email: tom.mudd@ed.ac.uk
-    affiliations: TODO CHECK Reid School of Music, Edinburgh College of Art, University of Edinburgh
+    affiliations: Reid School of Music, Edinburgh College of Art, University of Edinburgh
   - name: Yashique Chalil
     email: ychalil@ed.ac.uk
-    affiliations: TODO
+    affiliations: Reid School of Music, Edinburgh College of Art, University of Edinburgh
   - name: Matthew Hamilton
     email: matthew.hamilton2@unibo.it
     affiliations: TODO
