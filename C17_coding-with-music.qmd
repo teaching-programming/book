@@ -44,8 +44,6 @@ Making code that engages with sound and music can be fun, even with only a very 
 
 We will first explore motivations for connecting music with programming, followed by A brief overview of the rich existing work in this domain. The set of practical accompanying resources that can serve as starting points into different kinds of music/coding projects are introduced next.
 
-TODO keep? which is followed in @sec-resourcetable by a list of additional tools that can serve as starting points for working with sound and code.
-
 
 ## Why combine programming with sound and music? {#sec-why}
 
@@ -55,7 +53,7 @@ Programming concepts can be playfully explored in musical contexts. For example,
 
 Sound and music can also be used to present and experience data in different ways. Data sonification has a long history [@worrall_2019], from giving a constant awareness of something otherwise invisible as with Geiger counters or medical monitoring devices, to hearing emergent behaviours in dynamical systems, providing auditory graphs for the visually impaired [@walker_mauney_2010], or creative projects that use the data for musical ends [@bulley_jones_2011; @barrett_mair_2014].
 
-![Two examples of arrays becoming sound and music. On the left, the array is translated into note values. On the right, the array is translated directly to an audio file.](/chapters/images/C17_fig1_arrays_as_sound_and_music.svg){#fig-arrays-as-music width=70% fig-alt="Left image: a command to create an array of numbers, above a representation of a MIDI score and a traditional music score. Right image: another command to create an array of numbers, above a plot of a single period of a sin wave."}
+![Two examples of arrays becoming sound and music. On the left, the array is translated into note values. On the right, the array is translated directly to an audio file.](/chapters/images/C17_fig1_arrays_as_sound_and_music.svg){#fig-arrays-as-music fig-alt="Left image: a command to create an array of numbers, above a representation of a MIDI score and a traditional music score. Right image: another command to create an array of numbers, above a plot of a single period of a sin wave."}
 
 There are obvious parallels here with coding and visual art. Environments such as Processing [@reas_2006] connect programming with image and animation, motivating learning and exploration [@reas_and_fry_2007 p. 1]. As explored in the following section, there is a similarly rich history of music making in programming pedagogy. To mix music, art, computers and coding therefore continues a long and fruitful tradition [@reichardt_1971; @dreher_2014; @wang_17], and can serve as a reminder to both students and educators that coding is fundamentally about making things and is therefore a creative act.
 
@@ -127,7 +125,7 @@ Five example resources accompany this chapter, reflecting some of the different 
 
 This resource is aimed at students who have started on Python quite recently. It attempts to make musical output as simple and accessible as possible. Students are shown how to generate piano pieces as MIDI data which can be played back directly within a Python notebook. Students can develop their understanding of fundamental concepts programming concepts such as lists, loops and conditionals. The ability to directly hear the results is intended to motivate students to think about how they can develop the code by themselves to try to explore how they can start to tailor the musical output towards something they find sonically interesting or satisfying.
 
-::: {#fig-python-piano layout="[60, 40]" layout-valign="bottom"}
+::: {#fig-python-piano layout="[45, 55]" layout-valign="bottom"}
 
 ![Code](/chapters/images/C17_fig2a_python_piano.png){fig-alt="A section of commented Python code which generates a piano chord."}
 
@@ -193,29 +191,31 @@ This chapter has touched briefly on some of the many connections between sound, 
 > Have you figured out how to recreate your favorite pop song with code? Great! Now try composing a new song that's all your own. Or see if you can create new types of music that are easier to make with code than without it --- or even types of music that are impossible to create without a computer! What do you come up with? Can you make new sounds that nobody in the world has ever heard before? Can you make musical "instruments" that you can interact with to perform music that you could never make with a piano or a violin? What else could you create, that nobody before you has ever made?
 
 
-## Resource List for educators {#sec-resourcetable}
+::: {.appendix}
 
-TODO: keep this, or do we have everything linked and referenced in the text?
+## Appendix: Resource list for educators {#sec-resourcetable .unnumbered}
 
-::: {#tbl-placeholder}
+:::: {#tbl-resource-list}
 
-  --------------- --------------------------- ---------------------- ----------------------
-  **Name**        **Style**                   **Language**           **URL**
-  EarSketch       Browser IDE                 Python or JavaScript   earsketch.gatech.edu
-  gm (R)          Library                     R                      flujoo.github.io/gm
-  Mido            Library                     Python                 mido.readthedocs.io
-  Max             Visual coding               \-                     cycling74.com
-  PureData        Visual coding               \-                     puredata.info
-  Scratch         Browser IDE visual coding   Visual coding          scratch.mit.edu
-  Sonic Pi        IDE                         Ruby                   sonic-pi.net
-  Strudel         Browser IDE                 \-                     strudel.cc
-  SuperCollider   Programming language        \-                     
-  Tau5            Browser IDE                 \-                     tau5.live
-  TidalCycles     Live coding environment     \-                     tidalcycles.org
-  TunePad         Browser IDE                 Python                 tunepad.com
-  --------------- --------------------------- ---------------------- ----------------------
+  -------------------------------------- --------------------------- ----------------------
+  **Name**                               **Type**                    **URL**
+  EarSketch (Python or Javascript)       Browser IDE                 <https://earsketch.gatech.edu>
+  gm (R)                                 Library                     <https://flujoo.github.io/gm>
+  Mido (Python)                          Library                     <https://mido.readthedocs.io>
+  Max                                    Visual coding               <https://cycling74.com>
+  PureData                               Visual coding               <https://puredata.info>
+  Scratch                                Browser IDE, visual coding  <https://scratch.mit.edu>
+  Sonic Pi (Ruby)                        Live coding environment     <https://sonic-pi.net>
+  Strudel                                Browser IDE                 <https://strudel.cc>
+  SuperCollider                          Programming language        <https://supercollider.github.io>
+  Tau5                                   Browser IDE                 <https://tau5.live>
+  TidalCycles                            Live coding environment     <https://tidalcycles.org>
+  TunePad (Python)                       Browser IDE                 <https://tunepad.com>
+  -------------------------------------- --------------------------- ----------------------
 
-An incomplete list of software and software libraries for exploring music and sound in coding contexts.
+An non-exhaustive list of software and software libraries for exploring music and sound in coding contexts.
+
+::::
 
 :::
 
