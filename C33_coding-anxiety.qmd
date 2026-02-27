@@ -27,7 +27,7 @@ author:
   corresponding: false
   affiliation:
     - name: The University of Edinburgh
-      department: School of Mathematics
+      department: School of Mathematics and Maxwell Institute for the Mathematical Sciences
       city: Edinburgh
       country: UK
     - name: The University of Edinburgh
@@ -47,7 +47,7 @@ author:
   corresponding: false
   affiliation:
     - name: The University of Edinburgh
-      department: Usher Institute and Zhejiang University - University of Edinburgh (ZJE) Institute
+      department: Usher Institute
       city: Edinburgh
       country: UK
     - name: Zhejiang University
@@ -64,7 +64,7 @@ keywords:
 
 Coding is increasingly acknowledged as a core component of data analysis across disciplines, yet it is often presented to students as a tool rather than a primary focus of study. For these students, it is likely that they have no prior exposure to coding. These initial interactions will define a long-term relationship with programming, and as a consequence, how they navigate an increasingly data-centric world. Understanding and addressing barriers to learning coding is essential to support learning, and here we consider one major barrier: coding anxiety.
 
-Coding anxiety, or programming anxiety is defined as 'a psychological state engendered when a student experiences or expects to lose self-esteem in confronting a computing situation' [@Connolly2009]. It may be driven, in part, by other anxieties, such as computer anxiety [@chua1999computer; @meinhardt2022computer] or statistics anxiety [@Zeidner1991], among others. While one may assume that "digital natives" [@Bennett2008] experience a lower level of computer anxiety, this assumption may not naturally translate to coding anxiety [@nolan2016role]. Factors such as variable exposure to coding, an over-reliance on connected digital ecosystems during childhood [@OECD25], or disciplinary background, may influence levels of anxiety. For example, different levels of coding anxiety exist for mathematics and biomedical undergraduate students [@miller2024anxiety], with the former finding coding to be more enjoyable, and hence having lower anxiety. More broadly, student identity and background can also contribute to anxiety-linked barriers to learning, such as gender [@forrester2022undergraduate]  or learning in a non-native language [@kaur2024silent].
+Coding anxiety, or programming anxiety is defined as 'a psychological state engendered when a student experiences or expects to lose self-esteem in confronting a computing situation' [@Connolly2009]. It may be driven, in part, by other anxieties, such as computer anxiety [@chua1999computer; @meinhardt2022computer] or statistics anxiety [@Zeidner1991], among others. While one may assume that "digital natives" [@Bennett2008] experience a lower level of computer anxiety, this assumption may not naturally translate to coding anxiety [@nolan2016role]. Factors such as variable exposure to coding, an over-reliance on connected digital ecosystems during childhood [@OECD2025], or disciplinary background, may influence levels of anxiety. For example, different levels of coding anxiety exist for mathematics and biomedical undergraduate students [@miller2024anxiety], with the former finding coding to be more enjoyable, and hence having lower anxiety. More broadly, student identity and background can also contribute to anxiety-linked barriers to learning, such as gender [@forrester2022undergraduate]  or learning in a non-native language [@kaur2024silent].
 
 Given the multifaceted nature of coding anxiety [@pan2025conquering],  here we draw on our collective experience of teaching coding, provide perspectives on coding anxiety, and offer strategies to mitigate it. We focus specifically on students for whom coding is not their core academic focus, but rather a necessary skill set required when taking classes involving statistics, data analysis, experimental design, and modelling.
 
