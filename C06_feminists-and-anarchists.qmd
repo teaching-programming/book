@@ -1,33 +1,210 @@
 ---
-title: "Title of Example Chapter (as will apper on top h1 header and in table of contents)"
+title: "Anarchists and Dungeon Crawlers: co-designing programming teaching experiences"
 bibliography: references.bib
+author:
+  - name: Francisco Queiroz
+    email: TODO
+    affiliations: TODO
+  - name: Maeve Murphy Quinn
+    email: TODO
+    affiliations: TODO
+
+keywords:
+  - TODO
+  - TODO
 ---
 
-## First: things to include
+## Introduction
 
-### Subsection references
+You find yourself in a large room with no windows; the air is still, and nothing suggests the passing of time. The door closes behind you, and it won't open for another hour or two. As you stand in front of the room, you realise there is nothing between you and what seems to be a party of the most intimidating, unpredictable creatures.
 
-An example citation [@williams2010pair].
+Students.
 
-An example citation @williams2010pair.
+Fear not, though. You are about to learn how to deal with this kind of situation. Dealing with students’ expectations (and your own) can be hard, but we believe that by working together, you will be able to deliver the learning experience that gets everyone to the next level. In this chapter, inspired in equal parts by tabletop role-playing and anarchist pedagogies, we present steps you can take during an initial or preliminary learning activity for a course.
 
-### Subsection link types
+This system is inspired by variations of Role-Playing games that do not require a Dungeon Master as mediator, such as various ones from [Tomkin Press](https://tomkinpress.com/). On a very literal level, it follows the anarchist maxim of 'No gods, no masters' which, in its turn, can be reflected in horizontal approaches to higher education, where students and educators operate side-by-side [@wilkinson2025fragments].
 
-<https://quarto.org>
+::: {.callout-note icon="false"}
+# Disclaimer
 
-[example link](https://quarto.org)
+The collaborative, open-ended nature of some steps here described might suit workshops and short courses better than credit-bearing modules with strictly pre-defined learning outcomes. That said, syllabi are often flexible enough to allow for this ad-hoc, collaborative approach (or at least some tweaking).
 
-### Subsection images
+:::
 
-picture: with caption, source, title, alt and link
-![Some Caption](/chapters/images/C36_pair-programming-across-disciplines_online_ideas.png "Some Title"){fig-alt="Some alt text."}
+## Accessing the toolkit
 
-picture wrapped in a link, this way picture links to somewhere
+Go to [this chapter's companion repository](https://zenodo.org/records/17702161). There, you will find a toolkit for planning your teaching that includes templates for:
 
-[![Some Caption](/chapters/images/C36_pair-programming-across-disciplines_online_ideas.png "Some Title"){fig-alt="Some alt text."}](https://quarto.org)
+- Character Sheet
+- Bestiary
+- Adventure Map
+- Party Guidelines
+- Equipment List
+- Skills and Spellbook
+
+These are available as `.docx` and `.rtf` documents, but feel free to adapt them to whatever format or platform you want.
+
+## Character building: presenting learners and educators' profiles
+
+A good first step is to understand everyone's aspirations and previous experiences. At this stage, invite all students and educators (including yourself) to complete a **Character Sheet**[^C06-ftn00]. Once everyone has completed theirs, go through a round of introductions. Focus on understanding everyone's strong points, ambitions, and fears.
+
+[^C06-ftn00]: The Character Sheet document was designed to help learners understand and share their own experience, needs, expectations, skills, and challenges. It is informed by [Student Persona templates provided by the Open University](https://www.open.ac.uk/blogs/learning-design/?page_id=457) under Creative Commons Attribution-Non-Commercial licenses.
+
+The Character Sheet could potentially help identify potential topics for class and barriers to be removed.
+
+::: {.callout-tip icon="false"}
+# Example: Character Sheet
+
+- _Creation: 15 min_
+- _Discussion: 15 min_
+
+| **Expectations:**
+| Learning how to manage and collaborate in bigger projects using git/GitHub
+|
+| **Previous education and professional experiences:**
+| Self-taught web-development.
+|
+| **(...)**
+|
+| **Study Skills Weaknesses:**
+| Might have developed bad habits from self-teaching.
+
+:::
+
+
+## Challenges ahead: establishing learning outcomes and syllabus
+
+Use the **Bestiary** template to establish (or remind) learners of the course learning outcomes and syllabus. Discuss what they will learn, giving examples if necessary. Depending on your course's flexibility, outcomes and topics can be decided on the spot. Usually, you will want to choose a set of learning outcomes and lessons beforehand[^C06-ftn01].
+
+::: {.callout-tip icon="false"}
+# Example: Bestiary
+
+- _Discussion and adjustments: 15 min_
+
+| **Name:**
+| Create GitHub repository for your project
+| **\[x\]** Main Quest  **\[ \]** Side Quest
+|
+| **Learning Outcomes:**
+| 1. Apply best practices to source code management and versioning
+|
+| **Challenge:**
+| Follow all steps from creating a GitHub account to creating a new (empty) repository.
+|
+| **Relevant Equipment and Skills:**
+| GitHub website, GitHub Desktop, Online learning material on GitHub for beginners.
+
+:::
+
+[^C06-ftn01]: Many programmes require educators to achieve specific learning outcomes. If you are the one in charge of keeping the programme or module specification form, a good practice would be keeping it flexible enough so that new, emerging topics can be brought into the syllabus.
+
+## The treasure map: structuring the course and learning activities
+
+Use the **Adventure Map**[^C06-ftn02] to discuss the sequence of learning material and activities, assessment (beasts), and how they relate to learning outcomes. Keep the discussion open so that learners can suggest, based on their expertise, perceived needs or fears, how to best organise the learning trajectory. This collective effort into creating a learning journey that does not follow a blueprint is another characteristic of anarchist pedagogies [@deleon2012anarchism]. To structure their journey, place items from the **Bestiary** into the journey map, and associating them with the course's Learning outcomes.
+
+
+::: {.callout-tip icon="false"}
+# Example: Adventure Map
+
+- _Discussion and adjustments: 30 min_
+
+| Session | Topics | Main Quest | Sidequest(s) | Learning Outcomes |
+|---------------|---------------|---------------|---------------|---------------|
+| 1 | Source-code management | Create GitHub repository for your project | Follow another student's repository | 1\. Apply best practices to source code management and versioning |
+
+:::
+
+
+[^C06-ftn02]: The Adventure Map document was designed to help educators and students to set out learning outcomes, syllabi, and assessments. It is informed by [material created by the University of Leeds OD&PL](https://sway.cloud.microsoft/C1YkluhNgPxGx5um?ref=Link).
+
+
+## P.A.R.T.Y: organising groups and groupwork
+
+As a group (or groups, depending on the number of students), complete the **Party Guidelines** sheet[^C06-ftn03], establishing ground rules on how to deal with each other and the group, as well as roles for each participant. Aiming for consensus would be ideal. A quick introduction and [effective guide on how to achieve consensus](http://www.seedsforchange.org.uk/shortconsensus) in group meetings was created by workers' co-op of campaigners Seeds for Change.
+
+Go over the **Adventure Map**, discussing how to best achieve the challenges (either individually or as pairs or teams). Discuss different strategies for group work; for instance, should everyone work on every aspect of the assignment, or should they focus on their own areas of expertise and interest?
+
+Party Guidelines should help teamwork run smoothly, including agreements for conflict resolution.
+
+::: {.callout-tip icon="false"}
+# Example: Party Guidelines
+
+- _Discussion and adjustments: 15 min_
+
+| Topic | Rule |
+|------------------------------------|------------------------------------|
+| What should someone do if they cannot attend a meeting or complete work on time? | Group will redistribute work according to members' strengths. |
+
+:::
+
+[^C06-ftn03]: The Party Guidelines document was designed to help learners manage their groupwork. They are informed by [frameworks from the Institute for Academic Development](https://institute-academic-development.ed.ac.uk/study-hub/learning-resources/group-working) [@IADUniversityofEdinburgh_2024] and the Learn Higher CETL at the University of Bradford [@LearnHigher_2012a; @LearnHigher_2012b] under Creative Commons Attribution-Non-Commercial licences.
+
+
+## A kind of magic: distributing learning material
+
+Whether you are using a textbook, slides, PDFs, online videos, or else, use the **Skills and Spellbook** to signpost where students can find learning material that is relevant to their learning journey. Those can be tailored to individual lessons and activities, or as a general compendium (Warhammer pun not intended), and they could be presented all at once or separately as the learning advances. Again, you could populate it with resources related to students' aspirations.
+
+::: {.callout-tip icon="false"}
+# Example: Skills and Spellbook
+
+| **Topic:**
+| Source code versioning
+|
+| **Resource Name:**
+| Online learning material on GitHub for beginners
+|
+| **What it is for:**
+| Learning the basics of GitHub for software versioning.
+|
+| **Study Skills Weaknesses:**
+| Might have developed bad habits from self-teaching.
+|
+| **Information and Instructions**:
+| Accessible through [GitHub's YouTube playlist](http://www.youtube.com/playlist?list=PL0lo9MOBetEFcp4SCWinBdpml9B2U25-f)
+
+:::
+
+## Equipment list: providing software and resources
+
+To complete the setup, provide your group with an **Equipment List** of software and other resources they might need to use to advance the journey. You should have a preliminary list ready, but be open to suggestions from students. Below, an example that would support our student with his desire to learn source code management and versioning.
+
+::: {.callout-tip icon="false"}
+# Example: Equipment List
+
+| **Websites:**
+| Name: GitHub
+| Purpose: Source code management and versioning
+| URL: <https://www.github.com>
+|
+| **Software:**
+| Name: GitHub Desktop
+| Purpose: Source code versioning
+| URL for download or installation instructions: <https://desktop.github.com/download/>
+
+:::
+
+
+## Setup complete: happy adventures!
+
+Once you have completed the previous steps, you will have generated everything you and your students need to accomplish course objectives and keep track of your achievements. 
+At the start of each learning session, use the **Adventure Map** to update students on their next steps, and on how far they have travelled so far.
+
+Throughout the semester, following the plan from the **Adventure Map**, present new tasks, resources, and skills, from the **Bestiary**, Equipment **List**, and **Skills and Spellbook**, respectively. 
+
+Frequently remind students to keep their **Character Sheet** updated with the new skills they acquire.
+
+If conducting group work, remind them of the rules expressed in their **Party Guidelines** whenever there is conflict.
+
+At the end of the course, remind students of their journey, highlighting the learning outcomes achieved along the way. Hopefully, this collaborative approach to learning will have made your job (and of your students) easier and more enjoyable.
+
+Happy teaching!
+
+
+## Acknowledgement
+
+The authors would like to thank Samantha Ahern and Lucia Michielin for their revision and feedback.
+
 
 ::: {.content-visible when-format="html" unless-format="epub"}
-
 ## References {.unnumbered}
-
 :::
