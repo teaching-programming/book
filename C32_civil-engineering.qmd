@@ -1,30 +1,149 @@
 ---
-title: "Title of Example Chapter (as will apper on top h1 header and in table of contents)"
+title: "Change in mindset of civil engineering students toward programming"
+format: html
 bibliography: references.bib
+toc: true
 ---
 
-## First: things to include
+## Author: Nguyen Q. Chien
 
-### Subsection references
+## Introduction
 
-An example citation [@williams2010pair].
+Recent advances in computing allow engineers to use programming more efficiently in their routine tasks. 
+Specifically, students in civil engineering branch (CivEng) have rather firm concept of domain problem 
+and considerable skills in problem solving with the capability of computing. However, the reality 
+is far from job done: translating their manual-solving skill to computer code is non-trivial. 
+In order to do so, they have to change their mindset to produce code that they can reuse and benefit others as well.
 
-An example citation @williams2010pair.
+This article presents some of my experience in guiding two classes: one with Python and one with Julia. 
+In both classes I focused on the practical aspect of solving a typical engineering problem — 
+calculating the flux of sediment in natural waterbodies (e.g. lakes, rivers) — rather than 
+delving into merits of the two languages nor making any comparison between them.
 
-### Subsection link types
+## Code Implementation
 
-<https://quarto.org>
+### Logic of calculation
 
-[example link](https://quarto.org)
+CivEng students generally do not encounter any difficulty in implementing a series of formulae in order, 
+as well as translating formula to code. For example, in the snippet below, the drag coefficient 
+is readily calculated according to the math equation
 
-### Subsection images
+| Math  | Code |
+|-------|----------------------------------|
+| $ C_D = \left[ \frac{0.4}{1 + \ln(z_0 / h)} \right]^2$ | `CD = (0.4/(math.log(h/zo)-1))**2` |
 
-picture: with caption, source, title, alt and link
-![Some Caption](/chapters/images/C36_pair-programming-across-disciplines_online_ideas.png "Some Title"){fig-alt="Some alt text."}
+CivEng students are well aware of complex engineering formulas and would be willing to write lengthy statements 
+for mathematical expressions. Furthermore, they have adopted the style of naming variables according to 
+the symbolic representation which is widely agreed in the literature. 
 
-picture wrapped in a link, this way picture links to somewhere
+A branching construction would not cause much difficulty, this time is to calculate the critical flow velocity. 
+The CivEng student surely does not confuse with units:
 
-[![Some Caption](/chapters/images/C36_pair-programming-across-disciplines_online_ideas.png "Some Title"){fig-alt="Some alt text."}](https://quarto.org)
+| Math  |  Code   |
+|-------|----------------------------------|
+| $$ U_{cr} =\left\lbrace  \begin{array}{ll} {0.19} D_{50}^{0.1} \log(4h/D_{90}) & \text{for }  D_{50} < {0.5} \text{  mm}; \\ {8.5} D_{50}^{0.6} \log(4h/D_{90}) & \text{for } {0.5} \text{ mm}  < D_{50} < 2 \text{ mm}; \end{array} \right. $$ | <pre>if d50 < 0.5E-3: #mm <br/> &nbsp; Ucr=0.19*(d50 ** 0.1) * math.log10(4 * h/d90)<br/> else: <br/>  &nbsp; Ucr=8.5*(d50 ** 0.6) * math.log10(4*h/d90)  </pre> |
+
+The implementation of a mass-conservation equation should not cause too much problem. Here the naive implementation 
+of using a nested list to emulate a 2-D array, which doesn’t seem much performant. But that’s enough for the CivEng 
+who wants to get the job done.
+
+| Math  |  Code   |
+|-------|----------------------------------|
+| $$\frac{\partial z_b}{\partial t} = -(1-n) \left( \frac{\partial q_x}{\partial x} + \frac{\partial q_y}{\partial y}  \right)$$ | <pre>for i in range(1,nrows):<br/> &nbsp; for j in range(1,ncols):<br/> &nbsp; &nbsp; dzbdt[i][j] = -(1-n) * \ <br/>  &nbsp; &nbsp;  &nbsp; &nbsp; ((qx[i][j]-qx[i-1][j])/dx + \ <br/>  &nbsp; &nbsp;  &nbsp; &nbsp; (qy[i][j]-qy[i][j-1])/dy) </pre> |
+
+The use of matrix operations would involve broadcasting and but with gain in performance, usually quoted as 
+some 10 times [@langtangen2006python]. Fortunately, the disadvantage can be overcome with Julia programming. 
+Really, if you were to consider the stencil involved (figure below, where the arrows denote subtraction), 
+the code is more transparent when using an index system with (i±1). When using matrix manipulation, the bounds 
+must be specified correctly in all matrix subscripts. 
+
+| Index-based implementation             | Matrix-based implementation               |
+|:--------------------------------------:|:-----------------------------------------:|
+| ![Lattice 1](./chapters/images/ch32/Lattice1.PNG) <br/> `dqxdx[i][j] = (qx[i][j]-qx[i-1][j])/dx`  | ![Lattice 2](./chapters/images/ch32/Lattice2.PNG) <br/> `dqxdx[1:][:] = (qx[1:][:]-qx[0:-1][:])/dx` |
+
+
+Another source of confusion is due to the concept of “views” in NumPy, for which the submatrix, e.g. 
+`dqxdx[1:][:]` in the snippet above, is a copy of the array `dqxdx`. Surely, this can be explained 
+to the students, but every such issue can add up and discourage the learners. Therefore, an “agreement” 
+might be made beforehand, that the matrix `qx` here is calculated once and cannot be modified thereafter. 
+Or else, you have to switch to another programming language, e.g. MATLAB.
+
+### Dimension and units in civil engineering
+
+A particular strength of the CivEng student is having keen eyes on physical quantities. The branching statement 
+presented above show that the student was aware of units and apply corresponding coefficients. The ability 
+to tell the meaning from numbers allow them to check intermediate results and correct potential errors 
+during computation. Another advantage is that by adhering to the rules of dimensions in physics, the student 
+naturally familiarise themselves with the type system and therefore will not have much difficulties dealing 
+with languages like C#, Java, Scala, or to go forward and write type annotations in their Python code. 
+
+## Code reuse
+
+Reusing code is actually more difficult to CivEng students than writing new code! During the tutorial, 
+however, students were exposed to a limited amount of prewritten code in the form of Jupyter notebooks only. 
+By reading these Jupyter notebook, the students were able to pick out relevant code cells and run them. 
+They would know which chunks of code should be executed if an error message emerges showing undefined variables. 
+But when the students copy chunks of code from the sample file to their own notebook, renaming variables 
+is often required. Another issue is lexical scoping. Being more acquainted to “physical” objects rather 
+than information “pieces”, CivEng students would insist using different names for variable appearing 
+in both the inner and outer scopes despite that these name would not conflict.
+
+## Code development
+
+### Mental orientation
+
+An important aspect of moving from a CivEng to a programmer is to re-imagining the conceptual model 
+for the system. Compare:
+
+| CivEng                       | CompSci                                                  |
+|------------------------------|----------------------------------------------------------|
+| • Paradigms: imperative, procedural  <br/>   • Object type: concrete, physically meaningful   <br/>  • Action: math and logic operations applied to parameters of the object <br/> |   • Paradigm: object-oriented <br/> • Object type: abstract, blueprint to generate instances <br/> • Action: objects’ methods invoked on instances.         |
+
+Admittedly, it is not easy to persuade the student to adopt an OOP style programming to benefit future use. 
+While for certain disciplines, e.g. chemistry, the notion of class is inherent (class of elements), the CivEng 
+is more inclined to think about real-world entities: a particular building, a canal, etc. to be modelled.
+
+## Generalisation
+
+CivEng students understand the use of functions and are adept in translating formulation various 
+calculation routines to functions. So that is pretty enough for generalising code, isn’t it? 
+During a practice session, after having the students to estimate the derivative *f* ′(*x*0) 
+for the specific functions *f*(*x*) \= *x*2 and *f*(*x*) \= cos *x*,  I required them to 
+generalise their `deriv` function to accept any math function. Well, how can? – they doubted, 
+until I showed that we can just incorporate the function under investigation into the function deriv. 
+A first step toward functional programming. 
+
+## Tooling
+
+The students are happy with Jupyter notebooks during class. Syntax highlighting, code auto-completion, 
+and embedded plot outputs are features that are highly appreciated. Nevertheless, a dedicated evironment 
+like VS Code is needed for students who want to develop larger programs with debugging and version control 
+(e.g. Git). 
+
+# Good practices
+
+The list is non-exhaustive yet would be useful for CivEng students who start to develop their code:
+
+* Variable names to follow the literature. When possible, use the unicode characters for Greek letters 
+(subject to the language’s feature – this is favourable for Julia with keyboard shortcuts for such 
+characters/symbols);  
+* Extensive documentation is needed since there are many empirical formulae used in CivEng and 
+the choice of a formula should be justified based on the context.  
+* Whenever the names are cluttered, consider using namespaces; (Knowledge on the engineering specialisation 
+is required.)  
+* If facilitated by the language (in the case of Julia), prefer using loops with index variables 
+(\[*i*±1\]) rather than implicit array position index (\[:\]).  
+* Generalise code with functions  
+* Using an IDE to organise and debug the code (first step), and then aim toward collaboration, 
+version control and testing.
+
+In summary, although there are not much material available for CivEng students for code development, 
+there are patterns they may adopt to boost their performance at work. In this chapter, I present 
+some such common patterns. Due to the variety nature of the disciplines that a CivEng may involve, 
+it is by no means to present a single context that they can build programs upon. Rather, I demonstrate 
+a case of water/hydraulic engineering and sediment transport, showcasing field variables, spatial derivatives 
+and implementing a finite difference numerical solution.
+
 
 ::: {.content-visible when-format="html" unless-format="epub"}
 
