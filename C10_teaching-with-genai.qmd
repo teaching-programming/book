@@ -1,25 +1,238 @@
 ---
-title: "your chapter title"
+title: "Optimistic outlook on Teaching, Learning and Assessment for coding with the emergence of generative AI"
 bibliography: references.bib
-author:
-  - name: Author One
-    email: author@one.com
-    affiliations: institution or company
 
+author:
+  - name: Steven Watterson
+    email: s.watterson@ulster.ac.uk
+    affiliations: Personalised Medicine Centre, School of Medicine, Ulster University, Northlands Road, Derry~Londonderry, Northern Ireland, BT48 7JL
+   # corresponding: True
+  - name: Laila Dabab Nahas
+    email: ldababn@ed.ac.uk
+    affiliation: Edinburgh Medical School, The University of Edinburgh, 5-7 Little France Road, Edinburgh BioQuarter, Edinburgh, EH16 4UX
+  - name: Tuğrulcan Elmas
+    email: tugrulcan@ed.ac.uk
+    affiliation: School of Informatics, The University of Edinburgh, Dugald Stewart Building, 10 Crichton St, Edinburgh EH8 9AB
+  - name: Hebatallah Shoukry
+    email: h.shoukry@hw.ac.uk
+    affiliation: School of Engineering and Physical Sciences, Heriot-Watt University, Edinburgh, EH14 4AS
+
+  - name: Ozan Evkaya
+    email: Ozan.Evkaya@ed.ac.uk
+    affiliations: School of Mathematics, The University of Edinburgh, James Clerk Maxwell Building, Peter Guthrie Tait Road, Edinburgh, EH9 3FD
+    
 keywords:
-  - your
-  - chapter
-  - keywords
+  - GenAI‑resistant assessment
+    AI‑assisted coding
+  - Prompt engineering
 ---
 
+### For whom this chapter is:
 
+This chapter is for higher education educators who teach coding or programming and are looking for ideas to use GenAI in teaching and update their assessment practices in the era of AI.
 
-[DELETE THIS LINE AND REPLACE IT WITH YOUR MANUSCRIPT]
+### **Introduction**
 
+The introduction of generative AI (genAI) has transformed how staff and students view teaching, learning and assessment. Whilst education is a diverse sector, there has been universal recognition that genAI has the potential to derail teaching and learning activities [@bente2024conceptual] [@brennan2023coding]. The traditional paradigm of communicating ideas, tutoring understanding and assessing learning has become harder to police as authentic when genAI tools can synthesize text rapidly and easily to a level consistent with passable understanding. Were genAI tools highly exclusive with limited availability then that risk might be modest, but they have been made widely and freely available, by technology companies that students already trust, as those companies look to build their user bases.
 
+In light of the impact that genAI will have on teaching, learning and assessment and recognising that it is likely to become part of the graduate’s tool set, it is worth considering how we can adapt teaching both to support learners to develop their skills with genAI tools, but also to defend the authenticity of learning and assessment as far as possible. Here, we consider strategies that can be followed to incorporate genAI into teaching and to adapt assessment to mitigate the risk from genAI-based fraudulent completion. To understand the rationale for these strategies, it is important to have some understanding of how genAI tools work.
+
+### **How generative AI work?**
+
+GenAI takes a mathematical approach to describing language. Sentences can be broken up into words, partial-words and elements of punctuation. These components are known as tokens and the combination of tokens that make up a line of text is mapped to a data point on a set of axes (in a high number of dimensions). Some processing is applied when creating the data point that weights the relative importance and order of the tokens in the text. Similar text will be mapped to nearby data points, whereas very different text will be mapped to data points that lie far apart [@hua2024investigating]. The words, partial-words and punctuation that the genAI recognises as tokens are its vocabulary and the data point describing the text is fed into a neural network that calculates the probabilities of each token next following the text, where the neural network itself has been trained with [large volumes of literature](Large%20Language%20Models:%20What%20You%20Need%20to%20Know%20in%202026%20%7C%20HatchWorks%20AI) [@jiang2020can]. The genAI algorithm doesn’t always pick the highest probability next token, but one of the most probable and how much it is allowed to deviate from the most probable choice is a model parameter that ensures some variability in the responses generated. Once the next token has been selected, it is added to the text, a new data point is calculated and this is fed into the neural network, with the process repeating until a suitable volume of text has been generated or a stop signal is reached [@ponmalar2025evaluation].
+
+It is worth emphasizing that the text generated is a statistical construction based on the training literature, not a series of quotes. This means that factually correct sentence structures cannot be guaranteed and are only likely to be generated when they are common in the training literature. Factually correct sentences about uncommon topics are harder to produce consistently [@jiang2020can].
+
+This system is known as a Large Language Model (LLM) and it forms the basis of most genAIs. One quirk of LLMs is that they are trained to consider the input text, which is formed from the prompt, as factual and to reference it with little statistical reinterpretation. Furthermore, prompts can be extremely lengthy [@gan2023sensitivity]. We can combine these two properties of LLMs to improve the factual accuracy of the generated text by including factual source materials as part of the prompt. This is usually done in a process called Retrieval Augmented Generation (RAG) and it is a way to dramatically improve the factual recall of the generated text. By using RAG, the LLM can be formulated so that it generates narrative text fluently based on its training data, but draws on factual details from source materials through RAG. It yields a system that can be both conversational and factually accurate [@miao2024integrating].
+
+### **The current state of genAI in learning and teaching**
+
+We are still in the early stages of exploring the implications for genAI in teaching and learning. The literature reveals contradictions in how genAI tools are employed in education. From one perspective, genAI offers promising benefits when integrated into educational settings under the guidance of educators using factual frameworks such as RAG. Some systematic studies have shown that genAI can facilitate student learning, enhancing cognitive, and technical and interpersonal skills, and students who used genAI performed better than those who did not [@daniel2025can] [@heung2025chatgpt]. Additionally, students using genAI outperform those who do not in areas such as learning performance, AI awareness, and managing cognitive load. However, students who do not use genAI tools demonstrate better critical thinking [@ji2025human]. Whilst critical thinking is ordinarily superior amongst non-genAI-using student groups [@ji2025human]when genAI is used appropriately improvements in critical thinking have been shown [@daniel2025can]. It has been recommended as best practice to encourage students to first attempt tasks independently before consulting genAI tools [@kosmyna2025your].
+
+From the other perspective, questions remain about how to deal with the unguided use of these tools, which can lead to over-reliance and missed learning opportunities for students who over-delegate to genAI tools [@kosmyna2025your] [@pearson2025internet]. This phenomenon, known as “cognitive offloading”, occurs when individuals choose not to commit details to memory or invest effort in learning skills, instead relying heavily on genAI tools to retrieve data and complete tasks for them [@pearson2025internet] [@fan2025beware]. These challenges are not new. With the advent of search engines, it was documented [@pearson2025internet] that there was a tendency to memorise less information, instead counting on search engines to facilitate the retrieval of web-based data as a means of recall. As genAI grows in quality and capability, there is a risk that cognitive offloading may go beyond recall and result in entrusting entire tasks to AI irresponsibly [@fan2025beware]. Hallucinations and the biases gained in training genAI tools both present the risk of unintentionally adopting incorrect information and there is concern over the influence of the companies providing the genAI tools, where accidental or deliberate training biases could affect public usage [@pearson2025internet].
+
+The key differentiator in outcomes is how genAI is employed. Without proper guidance students can over-rely on genAI tools, substituting the generated output for their own ideas. It is essential to equip students with strategies to harness genAI's potential whilst avoiding its pitfalls [@boers2025exploring]. Many studies have emphasized the need for longitudinal research to understand the long-term effects of genAI on recall and cognitive skills, but in the absence of longitudinal research, we must continue to innovate, develop and adapt the guidance and best practices that will support students effectively in integrating genAI into their academic and professional lives.
+
+### **GenAI as a teaching and learning partner**
+
+GenAI has enormous potential to support students as a teaching and learning partner, offering detailed explanations, engaging in discussions, and interactively responding to queries 24 hours a day, 7 days a week. This makes it a valuable tool that can fulfill a wide range of roles.
+
+1.  ***GenAI as topic expert***
+
+By using Retrieval-Augmented Generation (RAG) to integrate a factual corpus of knowledge into genAI responses, it becomes possible to consider employing genAI tools as expert systems that can support both staff to teach and students to learn. As a teaching assistant, genAI has the potential to support staff to create more learning materials across more learning modalities than is currently possible in limited time, which can enhance support for students with different learning preferences [@article]. GenAI has the further potential to act as the first receiver for student questions and queries. By increasing the productivity of teaching staff and by resolving the more straightforward queries, genAI tools have the potential to help teaching staff to increase the time committed to key pedagogical task [@nyaaba2024generative].
+
+GenAI also has the potential to directly benefit the student by acting as a topic expert available 24/7 that can interact with the student and expand on the areas of greatest need, providing truly personalised support. With access to course documentation, it can also help with management of deadlines and timetables, etc. (for example, see Example input 1-2). Due to the proximity of the data points in vector space that represent related ideas, genAIs can connect related ideas well and are adept at providing alternative explanations (as a result of their inherited randomness). GenAIs, therefore, can perform well in tutoring roles and have been well received in studies of student adoption [@kanont2024generative] [@bouzid2024leveraging] [@watterson2025ai].
+
+::: {.callout-tip icon="false"}
+### Example input 1: Administrative information and code provided by RAG to a LLM.
+
+**Module Handbook**\
+Degree Programme: Programming exercises for coders. Module Code: 1234. Office Hours: Tuesday and Thursday 2pm-4pm. Module Coordinator: Hamish McBeth. Room Number: 12. Course Duration: 12 weeks.Assessments: Examinations are in weeks 6 and 12. Coursework deadlines are at the end of week 5 and the end of week 11.
+
+**MyCode.py**
+
+```{python}
+import numpy as np, pandas as pd 
+from sklearn.datasets import load_iris 
+from sklearn.decomposition import PCA  
+
+iris = load_iris() 
+pca = PCA(n_components=2) 
+principalComponents = pca.fit_transform(iris.data)  
+
+print(f"Explained variance by PC1 is ",  pca.explained_variance_ratio_[0], f"Explained variance by PC2 is ",  pca.explained_variance_ratio_[1])
+```
+:::
+
+::: {.callout-tip icon="false"}
+### Example input 2: Responses to administrative and code queries using Google Gemini 2.5 Flash and NotebookLM
+
+**Prompt:** Who is the coordinator and where and when can I find them?Response: The Module Coordinator is Hamish McBeth. You can find him in Room Number 12 during his office hours, which are Tuesday and Thursday from 2pm to 4pm.
+
+**Prompt:** Concisely, what does this code do and what does it print out?Response: The code performs Principal Component Analysis (PCA) on the Iris dataset, reducing its dimensionality to two principal components. It then prints the explained variance ratio for PC1 and the explained variance ratio for PC2.
+:::
+
+2.  ***AI as a coding partner***
+
+An effective paradigm used to teach coding is that of paired programming where two coders collaborate on a single script. Each takes a separate role, with one acting as the primary code-writer (driver) and the other acting to spot errors, provide structural feedback and manage the resources needed (navigator). By separating the coding activity into writing and reflective roles, paired programming can improve the efficiency of code delivery and, by alternating roles, both partners have the opportunity to learn as they work [@김지연2023ai].
+
+Where a coder does not have a coding partner, a genAI can take on the role. As a writing partner, genAI tools can create code for a precise prompt. GenAI tools are more accurate and less prone to syntactical errors than humans (i.e., they are less likely to forget a comma or bracket or miss a function specific parameters), but they can lack sufficient context to ensure that the code meets every explicit and implicit requirement of a brief or that the blocks of code generated independently can integrate adequately. These errors can be addressed by the coder. As a reflective partner, genAI tools can evaluate code, recognise structural errors and suggest refinements to a specific remit (Example input3) to support the coder. In both cases, the quality of the role-play will be very sensitive to the prompt and so some trial and error may be required. It may be advantageous to separately specify roles in system-level prompts, which are commonly used to frame the subsequent dialogues.
+
+::: {.callout-tip icon="false"}
+### Example input 3: An example of a prompted critique for the code in Example input 1 (Gemini 2.5 Flash/NotebookLM)
+
+**Prompt:** Please concisely critique this code.
+
+**Response:** This code snippet from "Iris Dataset PCA Explained Variance" effectively demonstrates the application of Principal Component Analysis (PCA) to the Iris dataset. Here's a concise critique:
+
+Positive Aspects:
+
+-   Clarity and Purpose: The code is straightforward, clearly showing how to load data, initialise PCA with two components, and then fit and transform the data to calculate the explained variance ratios.
+-   Standard Libraries: It uses widely accepted libraries such as sklearn.datasets, sklearn.decomposition, and numpy for data loading, PCA, and numerical operations, respectively.
+-   Direct Output: The print statement effectively displays the explained variance for the first two principal components (PC1 and PC2).
+
+Areas for Improvement:
+
+-   Unused Imports and Variables: The pandas library is imported (import pandas as pd) but not utilised in the provided code snippet. Similarly, the principalComponents variable, which stores the transformed data, is created but not used for any subsequent operations within this specific excerpt.
+-   Scope: While effective for its stated purpose, the snippet could be extended with visualisations (e.g., a scree plot) or further analysis to demonstrate the practical application of the principal components for dimensionality reduction.
+:::
+
+A number of Integrated Development Environments (IDEs) already include AIs as a coding partner and this approach is regularly used in industry. Developer surveys and interviews have recorded improvements in code quality and developer satisfaction, but with questions over code reliability, explainability and trust [@bughin2024role] [@chen2024impact]. Studies have shown that paired programming with a genAI tool delivers the best assignment outcomes for students compared to human paired programming or solo programming[@bughin2024role] [@lyu2025will]. However other studies have suggested that the improvements in the speed with which code is created are offset by the additional time needed to debug the code [@imai2022github] and that concerns about sensitive parts of code bases mean that genAI tools cannot support projects consistently, only in a piecemeal manner [@coutinho2024role].
+
+3.  ***AI as a puzzle setter***
+
+GenAIs can be prompted to generate coding questions along with worked solutions. This can be invaluable as a way to efficiently produce formative exercises and it becomes very powerful when preexisting scripts or code-bases are included by RAG to use as a reference document [@pourcel2024aces]. Typical exercises can include (i) generating incomplete blocks of code for students to complete, (ii) Parsons puzzles where students rearrange instructions into the correct sequence, or (iii) asking students to interpret the behaviour of a generated block of code (Example input 4) [@pourcel2024aces] [@hou2024codetailor]. This approach allows formative coding exercises to be generated with relative ease that align directly to topics of study, such as a particular algorithm or data set.
+
+::: {.callout-tip icon="false"}
+### Example input 4: Using the genAI tools to create coding puzzles from the script provided by RAG in Example input 1 (Gemini 2.5 Flash/NotebookLM).
+
+**Prompt**: Produce a version of this code with key words missing that can be used as a teaching and learning exercise.
+
+**Response**:
+
+```{import numpy as np, ____ as pd}
+from sklearn.datasets import ____
+from sklearn.decomposition import ____
+
+iris = load_iris()
+pca = PCA(n_components=____)
+principalComponents = pca.____(iris.data)
+
+print(f"Explained variance by PC1 is ", pca.____, f"Explained variance by PC2 is ", pca.____)
+```
+
+**Prompt**: Please rearrange this code in a parsons puzzle.
+
+**Response**: Parsons Puzzle: Reconstruct the PCA CodePlease arrange these lines of code in the correct sequence to perform PCA on the Iris dataset and print the explained variance ratio. Pay attention to the order and any necessary indentation.
+
+`{1. from sklearn.datasets import load_iris} 2. pca = PCA(n_components=2) 3. print(f"Explained variance by PC1 is ", pca.explained_variance_ratio_, f"Explained variance by PC2 is ", pca.explained_variance_ratio_[1]) 4. principalComponents = pca.fit_transform(iris.data) 5. import numpy as np, pandas as pd6. iris = load_iris() 7. from sklearn.decomposition import PCA`
+
+**How to Solve:** Your task is to place these lines in the logical order of execution for the script. The original script begins with imports, then loads data, initializes the PCA model, performs the transformation, and finally prints the results
+:::
+
+### **GenAI as a coding tool for the student**
+
+As the use of genAI tools to create code grows, the role of the coder will necessarily change. The coder will no longer directly produce code, but instead supervise the tools generating the code. Nonetheless, the requirement to stand over the code and take responsibility for its correctness and accuracy will remain. This can be achieved either (i) by forensically working through the code produced by the genAI tools or (ii) modularising the challenge, having the genAI tools separately produce code for each module and then evaluating the performance of each module’s code separately and in combination. The latter is a form of unit testing; a process widely used in industry to manage complex projects across coding teams. Here, it transforms the student into a code manager [@trautsch2017there] [@osherove2009art]. This way of working is both likely to scale better as projects become increasingly sophisticated, but also has the benefit of starting students to think and work in ways that are closer to software roles in industry [@vorel2025generative] [@bhatia2024unit]. In addition, it is very important to notice that a code manager is not for first or second years students but for more senior students after fully understanding and acquiring the foundational skills to spot mistakes.
+
+A unit testing approach means introducing a formal design stage where projects are broken into constituent modules/units with clear specifications [@osherove2009art] [@northwood2018full] in which written modules/units are (i) configured with a state and data on which to run (Arrange), (ii) run on the data and state (Act) and (iii) evaluated on the correctness of the output (Assert). A Test Runner is then constructed to evaluate a range of inputs and outputs for each module.
+
+A basic unit testing framework evaluates the behaviour of the code, not the code itself, which is well suited to contexts where coding can be entirely devolved to genAI tools. Where the use of particular commands or data structures is a requirement, the tests must be adapted to reflect this. Ensuring that the tests are rigorous and appropriate will become a new skill and responsibility for the student.
+
+Unit testing is not only a tool for students to use in code development, but also a tool for staff to use when assessing student submissions and significant work has been undertaken evaluating how well genAI tools can create unit tests from project briefs [@bhatia2024unit] [@mock2024generative]. There, GenAI such as ChatGPT, Copilot and Gemini were studied in a variety of programming languages such as Python and Java. It was found that such tools perform well, especially in terms of repetitive tests. However, the literature stresses the necessity of human oversight for correctness because of its weaknesses, such as incorrect or hallucinated assertions and weak reasoning about program logic so it requires significant human review.
+
+### **Assessing Learning**
+
+Assessment should always evaluate whether learning has taken place, but, depending on the format, there is significant potential for genAI to be used fraudulently. The ease of use and high availability of genAI tools means that conventional take-home, open book, step-wise assignments are highly vulnerable to completion by genAI tools.
+
+Whilst it is impossible to devise assessments that are invulnerable to genAI tools, especially when they must remain accessible to students of a wide range of levels of academic ability, there are strategies we can follow that increase the difficulty and therefore reduce the likelihood of students using genAI in their submissions. Across the range of academic abilities, the most capable students will feel that they have the least to gain and the most to lose from fraudulently using genAI. At the other extreme, the least academically able students will feel that they have the most to gain and the least to lose. However, the least able students are also often those who are the least invested in their learning. Our guiding principle to making assessments resistant to genAIs, is that we must design assignments so that the workload required to complete it by genAI, ideally exceeds the workload of making an honest submission, but at least exceeds the level of work that less capable students are prepared to commit. Nonetheless, a motivated and capable student will always be able to engineer prompts that support the completion of an assignment. Thus, each of those techniques comes with challenges such as the better start-bias, where students start learning at different levels which we need to take into account and appreciate when developing these strategies. We will consider several strategies here and for a particular exercise, a combination of strategies may be optimal.
+
+1.  ***Supervision of assessment***
+
+Amongst the simplest ways to maintain the authenticity of assessment is to enforce strict supervision. This is a time- and labour-consuming approach and is not necessarily an efficient use of resources, especially for longer and more complex assignments.
+
+A more time-efficient version of this approach involves replacing complex assignments that evaluate the coordinated use of multiple learning outcomes with a series of shorter competency-based assessments each testing a single atomised component of the learning outcomes. This might be a series of tests in which a student is asked to demonstrate core elemental coding skills whilst being observed one-to-one by the assessor. Each assessment for each student may require only a short time, with a binary pass/fail outcome, and progression from the programme then becomes dependent on a portfolio of demonstrated competencies.
+
+2.  ***Insufficiency***
+
+We can frustrate genAI by designing assignments with briefs that are individually incomplete and require knowledge from multiple sources to be made complete. Such an assessment must be designed so that a student must bring understanding gained elsewhere to the assessment to fully understand the brief. For a student to use genAI tools successfully on the assessment, they must both piece together the missing information from the other sources and also formulate it in a way that complements the content of the brief and can be interpreted unambiguously by the genAI tool. Whilst this will be attainable for the most capable students, returning to the principle described above, we only need to design an assessment so that compiling the brief and the missing information into successful prompts incurs a greater workload than a less capable student is prepared to commit.
+
+Designing assignments that bring together learning from multiple sources, potentially across different modalities (e.g., using videos, written text and external resources), maximises the workload in completing the assignment brief and therefore the challenge of building a useful prompt for a genAI tool. In practice, incompleteness can take the form of ambiguous phrasing, ambiguous technical detail, missing stages of a pipeline, or newly introduced terminology with resolutions and definitions embedded elsewhere in the programme (for example, having the general in text while more details are in another form such as a video). What inhibits a student from using genAI tools successfully in this case is that they must not only piece together the missing information needed to complete the assessment brief, but also formulate it in a way that is useful and unambiguous for genAI completion.\
+Finally, teachers must be aware that some risks could arise from such approaches for developing such assessments. For example, giving extra attention to material accessibility for some students with special needs and trying to avoid extra unnecessary pressure could be added to students as barriers, such as extra time or effort to put in order to complete the assessment.
+
+3.  ***Misdirection***
+
+We can construct assignments so that they are interpreted differently by students and by genAI. The simplest example is where hidden text is placed in an assessment brief. Typically, this is text embedded in a paragraph at a small and unobtrusive font size, coloured to blend into the background. This hidden text will not be seen by the student who manually attempts the assessment brief, but when the brief is copied or imported into a genAI tool, the hidden text is exposed and treated as a part of the brief. The hidden text can negate a statement, add digits to critical numbers or misdirect the genAI and whilst it will be observed by a diligent student, it may go unobserved when less care is taken, especially in longer briefs where the hidden text can become harder to discern.
+
+Critically, the hidden text should be chosen so as to lead to incorrect responses when the brief is imported or copied into a genAI prompt without careful attention. This may help in making it more complicated for students who are using GenAI to obtain sufficient marks without extra care and true engagement with the assessment. We can not consider this an effective way for detecting GenAI misuse but we can make it harder for those who misuse GenAI to get undeserved accomplishments.
+
+4.  ***Reverse Engineering assessments***
+
+The principal strength of genAI tools lies in their ability to follow a sequence of steps and instructions. Assessments that move away from asking students to complete a prescribed sequence of steps and instead to explore permutations of options to identify an optimal solution are therefore likely to be inherently more challenging for genAI tools to complete.
+
+One such approach is to ask the student to reverse engineer an analysis or technique. Providing a student with a starting data set, the output from an analytical pipeline and an understanding of the possible steps that could be combined to derive the output from the starting data set, it is possible to design assessments in which the student must experiment to identify the combination of steps that generate the output from the starting data. If this pipeline has been completely explained elsewhere, this becomes a specialised case of an insufficiency assessment where part of the instructions can be retrieved from elsewhere in the programme. However, if the sequence of steps have not been taught together, but only individually and with alternatives having been explored, the student will have to evaluate multiple permutations of options. Depending on the explicitness of the assessment brief, the number of steps that must be combined and the number of options available at each step, genAI tools are unlikely to enumerate all possible options to identify the correct answer.
+
+2.  ***Unsighted data sets and structures***
+
+GenAIs are exposed to large volumes of preexisting scientific literature as part of their training. Assessments that are designed based on widely published data sets or data structures are likely to be easier for genAI tools to complete than assessments based on rare or bespoke data sets and structures. GenAIs are sensitive to prompts and will attempt to create code for data sets and structures described in the prompt, but if the assessment data sets and structures are sufficiently uncommon then the differences between this and the sets and structures in the related training data may cause the genAI tools to code imperfectly, with errors for the rare and bespoke examples. Students will then be challenged and need to demonstrate competency to debug these errors. An effective, rare source of data might be that held within databases as this is less likely to have been scraped as part of a training set.
+
+This approach comes with the caveat that experience of working with standardised data sets and structures are often an important learning outcome and so directing students towards the rare and bespoke and away from standard data sets and structures may not be constructive or translational.
+
+5.  ***Student Self-Assessment***
+
+Whilst it is strategically important to frustrate the use of genAI in assessment, at the same time, we must acknowledge that genAI tools have a place supporting student learning and we need to encourage students to use AI constructively to prepare them for the workplace. When used effectively, AI can enhance productivity, ensure continuous skill development and provide a more secure future aligned with emerging technologies.
+
+Asking students to outline the logical steps they planned and followed using AI tools as an assistant for completing tasks or assessments introduces a certain degree of transparency around genAI engagement [@cotelli2025fostering]. They should describe the steps taken to validate genAI outputs, as well as how they addressed biases and disparities in the results. A self-assessment provides students with the additional opportunity to reflect on their experience of working with genAI tools, identifying when genAI use was most beneficial, when it was not or was unproductive and how it has improved their learning skills and helped them to achieve their goals [@combrinck2025student]. Checklists have already been introduced to students to disclose and reflect on their use of genAI either as part of their assessment or as general guidance (see Table 1)
+
+Table 1. A quick-to-use checklist for the use of genAI in assignments taken from the [University of Leeds](https://generative-ai.leeds.ac.uk/ai-and-assessments/gen-ai-quick-checklist/).
+
+|  |  |
+|----|----|
+| I have checked the assessment brief or have spoken to my tutor or supervisor and can confirm that use of Gen AI is not prohibited for my assessment type. |  |
+| I have reviewed the Academic Integrity principles to help me avoid unintentional plagiarism. |  |
+| I have understood the risks and limitations of using Gen AI, including a recognition of issues of bias, sensitivity, accuracy, appropriate content and ethical issues. |  |
+| I have considered how the Gen AI tool will use the data I input (including checking the terms and conditions and privacy policy) and have chosen an appropriate Gen AI tool for my task. |  |
+| I have checked and critically reviewed any quotations, citations or outputs that the Gen AI tool has generated. |  |
+| I have not submitted any Personally Identifiable Information (PII) to a Gen AI tool. |  |
+| I have ensured that no part of my assessment copies or paraphrases Gen AI outputs without acknowledgement. |  |
+| I have ensured that my assignment / research remains my own work. |  |
+| I have appropriately referenced the use of Gen AI tools in my work. |  |
+| I have saved copies of Gen AI outputs used in preparing my assessment. These copies may be asked to be provided as an appendix to my assessment or as part of any misconduct process. |  |
+| I sought help from my tutors or the Library’s Learning Development Team when I was unsure about use of Gen AI or needed further guidance. |  |
+
+### **The digital divergence**
+
+The introduction of any new technology can create inequalities between those who are skilled and able to exploit the technology and those who aren’t. However, conventionally, new technologies have been peripheral to the main tasks of coding and so have only offered incremental benefits to productivity. The great potential for genAI tools lies in their ability to directly create code and therefore accelerate productivity. This is qualitatively different to productivity boosts seen before (e.g., before it used to be manually catching typos and errors, while now it could be easily highlighted and caught with different editors or tools supported by genAI).
+
+Skilled use of GenAI tools will not only affect the pace at which code is created, but also the scale, so that code can be created quickly and more easily in parallel. These developments will necessarily place an emphasis on code management and prompt engineering, which will have to be taught alongside the fundamentals of coding. These new paradigms raise the level at which a student will be expected to operate and create new standards of excellence for student learners, but adding new and more layered skills to a teaching programme is likely to exacerbate the academic divide between weaker and stronger learners [@suarez2025verge] [@rottner2025ai].
+
+At the same time, because genAIs have weakened the legitimacy of the simplest structures of assessment, not only is the syllabus likely to develop in sophistication, but so too will the structures and formats of assessment, potentially compounding confusion and further exacerbating the academic gap between weaker and stronger learners.
+
+### **Conclusion**
+
+Here we have introduced genAI as both an asset to teaching and learning and a threat to the authenticity of assessment. We have highlighted evidence that genAI tools can improve productivity, but not necessarily across all the skills associated with coding and that there maybe risks associated with students becoming dependent on genAI tools. In particular, we highlight the roles that genAI tools can play that support teaching and learning, namely as a topic expert, coding partner and puzzle setter. We also explore how assessments can be adapted to be more resistant to fraudulent completion by genAI tools, accepting that no assessment can be perfectly invulnerable, but that the least engaged students arguably have the most to gain and so are the highest risk group.
+
+Ultimately, we believe that the introduction of genAI will transform coding so that the coder’s role becomes that of a code manager. This may change the approach taken to the coding exercises. However, these transformations are so central to how coding is taught, learned and applied that not all students may be able to adapt equally well across all ability levels. Hence, there is a significant risk that their introduction may exacerbate the gap in abilities rather than close it.
 
 ::: {.content-visible when-format="html" unless-format="epub"}
-
 ## References {.unnumbered}
-
 :::
