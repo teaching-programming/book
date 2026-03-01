@@ -1,25 +1,271 @@
 ---
-title: "your chapter title"
+title: "Reflections on GenAI Capabilities & Challenges in Coding Education
+"
 bibliography: references.bib
 author:
-  - name: Author One
-    email: author@one.com
-    affiliations: institution or company
-
+  - name: Tuğrulcan Elmas
+    email: tugrulcan@ed.ac.uk
+    affiliation: School of Informatics, The University of Edinburgh, Dugald Stewart Building, 10 Crichton St, Edinburgh EH8 9AB
+  - name: Hebatallah Shoukry
+    email: h.shoukry@hw.ac.uk
+    affiliation: School of Engineering and Physical Sciences, Heriot-Watt University, Edinburgh, EH14 4AS
+  - name: Ozan Evkaya
+    email: Ozan.Evkaya@ed.ac.uk
+    affiliations: School of Mathematics, The University of Edinburgh, James Clerk Maxwell Building, Peter Guthrie Tait Road, Edinburgh, EH9 3FD
+  - name: Laila Dabab Nahas
+    email: ldababn@ed.ac.uk
+    affiliation: Edinburgh Medical School, The University of Edinburgh, 5-7 Little France Road, Edinburgh BioQuarter, Edinburgh, EH16 4UX
+  - name: Steven Watterson
+    email: s.watterson@ulster.ac.uk
+    affiliations: Personalised Medicine Centre, School of Medicine, Ulster University, Northlands Road, Derry~Londonderry, Northern Ireland, BT48 7JL
+    
 keywords:
-  - your
-  - chapter
-  - keywords
+  - llms
+  - AI-Supported Teaching
+  - Personalised Learning
+  - prototyping course materials
+  - reflections
 ---
 
+### For whom this chapter is:
 
+This chapter provides an overview of how GenAI can be meaningfully integrated into coding education, examining its capabilities and challenges. It is intended for educators (particularly those teaching programming, computer science, or computational thinking) who seek a practical and research‑informed understanding of how GenAI may reshape their classrooms.
 
-[DELETE THIS LINE AND REPLACE IT WITH YOUR MANUSCRIPT]
+### **Introduction**
 
+Generative Artificial Intelligence (GenAI) is fundamentally changing how we approach teaching and learning, especially in coding education. GenAI models can generate code, debug programs, and explain complex concepts, making them powerful tools for both learning programming and supporting instructional practice.
 
+Throughout this chapter, we use the term *GenAI* to refer primarily to large language models (LLMs) and their associated tools, since LLMs are the dominant mechanism through which generative capabilities impact coding education.
+
+The integration of GenAI presents significant capabilities across four key areas: course material, support, assessment, and evaluation. GenAI can quickly create and update content, provide line‑by‑line code explanations, and personalise learning for students. It offers continuous, scalable assistance, supports the creation of diverse and personalised coding assessments, and enables immediate and interactive feedback for evaluation.
+
+Despite these opportunities, integrating GenAI into coding education comes with challenges. Key concerns include potential inaccuracies, risks to academic integrity, and the possibility of over‑reliance that may hinder core skill development. Ethical questions and uncertainty about how best to integrate GenAI into curricula further complicate adoption.
+
+To understand these capabilities and challenges in context, we now turn to a brief overview of how LLMs work. This background provides essential foundations for interpreting GenAI's behaviour in educational environments.
+
+## 1. How do LLMs work?
+
+Large language models (LLMs) generate text in response to prompts and are built through two stages: **pretraining**, where they learn general language patterns by predicting the next word, and **fine tuning**, which adapts them to tasks such as answering questions, summarising, or conversation. Finetuning can also be extended by users for domain‑specific needs.
+
+![Figure 1: (Top) LLMs development through a two-step process: pretraining & finetuning (Bottom) Enhancement of LLMs through RAG & Reasoning.](images/LLMs_development.png){fig-align="center"}
+
+LLMs can also be improved **without further training**. **Prompt engineering** shapes model behavior through role instructions or system prompts, while **Retrieval Augment Generation (RAG)** enhances prompts with relevant data from external sources. **Reasoning** further improves output quality by allowing the model to tackle user queries step by step and utilize more time and resources to answer. Many top-performing LLMs now adopt this paradigm.
+
+LLMs are especially proficient at generating code and commands. This capability has driven the rapid integration of LLM features including autocomplete, code generation, chat assistants, and autonomous coding agents into tools for end users. **LLM Agents** such as Claude Code and Codex can plan, generate, and execute code with access to tools like browsers, terminals, and development environments. They can enable applications ranging from interactive data visualisations to full web applications with minimal user intervention. Thus, agents automating work are now reshaping how both professionals and students work and code, and carry direct implications for coding education.
+
+## 2. GenAI Capabilities in Coding Education
+
+Following our discussion on how LLMs' work, we now explore its capabilities and how these models can support teaching and learning. We use two taxonomies: one based on content type (aligned with traditional educational process) and another based on the specific aspect of learning dimensions. Table 1 summarises how GenAI can address each aspect.
+
+Table 1. Summary of Opportunities in a thematic way
+
+| Material | Efficiency | Effectiveness | Personalisation |
+|:-----------------|:-----------------|:-----------------|:-----------------|
+| Course Material | Prototyping Content | Creating engaging, multimodal, interactive content with student-led interventions | Translation, tailoring according to students needs and learning capabilities, offering alternative explanations, using cultural or interest-based themes, adjusting the courses during the term |
+| Support | Support being always available, scaling teaching assistance | GPT-powered tutors simulating live sessions with AI avatars, context-aware Q&A | Personalised tutors, personalised answers in discussion boards |
+| Assessment | Creating exercises, quizzes and projects at scale, dynamically creating exercises, automatically evaluating student answers | New types of exercises based on usage of GenAI such as prompting code specifications and probeable problems | Adjusting complexity, difficulty for diverse learner, personalizing exercises to match students' interests and cultural background |
+| Evaluation | Automated assessment, Automating the grading of coding assignments, saving educators time. | Comprehensive feedback, enabling clarifications in feedback, interactive feedbacks using more accurate and interactive tracking of student progress | Tailored feedback to each assignment |
+
+### 2.1. Course Material: Planning & Delivery
+
+Developing high‑quality course material is resource‑intensive, especially in fast‑moving fields such as AI. Research demonstrates that GenAI can substantially reduce the time required to prototype teaching resources. For instance, it was found that LLMs can prototype elements of a data‑science curriculum roughly 50% faster than traditional methods [@jeon2023beyond].
+
+LLMs also excel at generating step‑by‑step and line‑by‑line explanations of code—supporting novice programmers through annotated examples and alternative metaphors. Students frequently report these explanations to be clearer than peer‑generated ones [@macneil2022generating] [@denny2023conversing]. Additionally, GenAI can generate **interactive worked examples** that reduce cognitive load and allow learners to explore follow‑up questions, as demonstrated by [@jury2024evaluating].
+
+Finally, GenAI offers strong capabilities for **personalisation**, producing examples relevant to learners' professional backgrounds, adjusting complexity, and creating diverse analogies [@ding2023enhancing]. These affordances help instructors build inclusive and adaptive learning materials with far less manual labour.
+
+The following examples illustrate how these documented capabilities manifest in our own teaching practice.
+
+::: {.callout-tip icon="false"}
+#### Example: Differentiated Instruction for Apprentices
+
+In my teaching, I use GenAI for instructional planning and differentiated delivery, particularly to address the diverse professional backgrounds of my apprentices. Moving beyond one‑size‑fits‑all examples, I use LLMs to curate contextually relevant materials that bridge the gap between abstract coding concepts and industry‑specific applications.
+
+I also leverage GenAI to generate multiple metaphors and alternative explanations for a single topic. This enables me to present the same underlying logic through different lenses, supporting varied cognitive styles and ensuring that if one explanation does not resonate, a secondary AI‑informed perspective is readily available.
+
+In the *Introduction to Data Science* course, specifically in Exploratory Data Analysis (EDA), dataset relevance is crucial for engagement. My cohort spans sectors such as healthcare, finance, and manufacturing; a single dataset rarely suits everyone. Therefore, I use GenAI to rapidly prototype modular code exercises tailored to different fields. For instance, I can generate an exercise on *identifying and describing data types* using a retail inventory dataset for one group and a clinical‑trial dataset for another. This automated differentiation maintains high engagement and learner‑content resonance without the prohibitive time cost of manually sourcing and cleaning diverse datasets.
+
+By delegating the initial generation of coding scenarios to GenAI, I significantly reduce the administrative burden of material creation. This efficiency gain transforms the LLM from a simple answer engine into a tool for inclusive pedagogy, helping the curriculum reflect the diversity of learners' professional landscapes.
+:::
+
+::: {.callout-tip icon="false"}
+#### Example: Enhancing Materials for Novice Programmers
+
+In my teaching, I have adapted and enhanced existing course materials using GenAI. For example, in a data‑visualisation course for non‑technical learners, previously written coding examples were expanded with line‑by‑line explanatory comments to better support novices. When developing exercises based on the same core content, GenAI enabled me to create multiple styles of mini‑exercises for a large cohort, efficiently scaling formative practice.
+
+To further support conceptual understanding, I also used GenAI‑empowered tools to create interactive web applications using Shiny framework, allowing students to explore parameters dynamically during lectures, moving beyond static slides to a more immersive learning experience.
+:::
+
+::: {.callout-tip icon="false"}
+#### Example: Context‑Aware Lecture Generation
+
+In another course, an LLM Agent was provided with existing lectures, covering introductory computational social science, machine learning, and research methodology, and asked to produce a new lecture on large language models that matched the course's style and pedagogical approach. The resulting lecture adopted the course's shared research framework, integrated visual diagrams, inserted question breaks, and included worked case studies. Notably, the agent reproduced all of these conventions without explicit instruction.
+
+This demonstrates one of GenAI's most powerful educational capabilities: contextual pattern extraction and synthesis. Given sufficient examples, the model does not simply retrieve information about large language models, it adapts that information to the appropriate pedagogical register, audience, and institutional style, offering a powerful tool for educators developing materials for shared or evolving courses.
+:::
+
+::: {.callout-tip icon="false"}
+#### Example: GenAI Assistant / Agent As Execution Engine
+
+In my teaching, I use GenAI not just as a content generator but as an execution engine. Rather than manually building slides or formatting materials, I describe what I need in natural language and let the AI handle the production work. For example, I can generate LaTeX‑based lecture slides from scratch or from a template by specifying the topic, structure, and key concepts. I can update or adjust existing materials with new constraints or student feedback. This workflow extends to mobile use. I can work directly from my phone or connect remotely to my computer. I can simply speak to the AI agent (through voice dictation) to make changes and refine course materials without being at my desk.\
+At the time of writing, Powerpoint has GenAI support which helps creating or refining slides although it is immature for polished materials that require extensive effort. Images are frequently replaced by generic icons, and there are no robust connections to stock image databases or generative image models. As a result, code-based methods such as LaTeX currently produce more polished output, though this may change as the field evolves rapidly.
+:::
+
+### 2.2. Support: Teaching Assistance & Troubleshooting
+
+Students require timely assistance and troubleshooting to learn effectively, yet support is often limited by teaching‑assistant availability, especially in large classes [@smith2009peer]. GenAI tools can help address this gap by offering **always‑available support** and enabling more scalable, personalised help [@johnson2019impact].
+
+Tutorials and lab sessions, supervised by teaching assistants, are a crucial element of student support. During these sessions, students are expected to engage in self-study, independently tackling exercises and learning concepts. As a practical approach, assistance should only be sought after a genuine attempt has been made [@biwer2020fostering]. This approach is often necessitated by the limited availability of assistants, particularly in large classes, which is its main downside [@smith2009peer].
+
+Since GenAI tools do not have such limitations, they should have constraints, typically named **guardrails**, that prevent giving away solutions straightaway. Tools such as CodeHelp [@liffiton2023codehelp] instruct the LLM to guide students through hints and questions rather than providing direct answers. [@bastani2024generative] demonstrated that GenAI tutors with guardrails significantly improved students' learning outcomes, whereas unrestricted GenAI access could actually harm the learning process.
+
+One key capability relevant to instructional support is the use of **Retrieval‑Augmented Generation (RAG)** to ensure LLM responses are grounded in course material. Research shows that RAG‑enabled tutors can provide context‑aware answers, reducing hallucinations and improving correctness [@mitra2024elevating]. Similarly, tutors should retrieve information from an authoritative course repository to maintain accuracy and relevance.
+
+LLMs have also been shown to enhance **student discussion forums** by classifying questions and drafting targeted responses. Zhang et al. (2023) demonstrated that LLMs can effectively categorise student questions, such as logistics, homework, or conceptual queries, and identify those not suitable for LLM answers, reducing the risk of incorrect responses. Likewise, Liu and M'Hiri (2024) found that LLMs can generate accurate, detailed draft replies for forum posts, supporting instructors in providing consistent and scalable assistance.
+
+### 2.3. Assessment: Exercises & Assignments
+
+Exercises and assignments are central to evaluating and reinforcing learning, and recent research shows that **GenAI can meaningfully transform these tasks into more adaptive, personalised, and cognitively rich learning opportunities**. GenAI can generate and adapt a wide range of exercise formats—from problem‑solving tasks and code explanations to debugging and code‑completion activities—supporting both conceptual understanding and applied programming skills.
+
+A particularly relevant strand of work focuses on **prompting LLMs with analytical specifications or natural‑language descriptions** of a problem. This approach makes students' reasoning explicit and allows instructors to validate solutions by generating code directly from written descriptions and executing it [@smith2024code]. Such workflows help students compare their reasoning against an AI model's interpretation and better understand discrepancies.
+
+Research on **probeable problems** is also directly linked to reflective problem‑solving practices. These tasks intentionally omit key information to force students to ask clarifying questions and articulate assumptions. A study [@pawagi2024probeable] shows that this approach discourages blind reliance on GenAI and strengthens critical thinking—precisely the kind of reflective behaviour demonstrated in guided analytical sessions.
+
+Finally, GenAI enables **dynamic, personalised exercise generation**, allowing tasks to be adapted at test time or modified to include additional analytical steps based on learner needs. This supports the redesign of quizzes and assignments to maintain rigour and authenticity in settings where GenAI is available to students.
+
+The following examples illustrate how these capabilities informed our own assessment practices and how GenAI was used to support student learning while preserving academic integrity and critical engagement.
+
+::: {.callout-tip icon="false"}
+#### Example: Guided Use of GenAI in Analytical Problem Solving
+
+In a fourth‑year optimisation course for graduate apprentices, students are required to solve optimisation problems analytically and then verify their results numerically using Python. Because the cohort varies considerably in mathematical confidence, I introduced the option to use GenAI for the analytical component of the tasks. Students were not permitted to use GenAI for the numerical elements, as they were already provided with working code. The purpose of the numerical work was not to assess programming ability but to support students in validating their analytical solutions, increasing confidence in their results, and enabling visualisation through plotting relevant functions.
+
+To establish clear boundaries for appropriate use, a tutorial session was dedicated to demonstrating an acceptable workflow. We selected a sample tutorial question, supplied it directly as a prompt to a GenAI tool, and then collectively analysed the output. Students were encouraged to interrogate any parts of the explanation they found unclear by generating more targeted prompts, and to critically evaluate the quality, correctness, and reasoning of the AI-generated solution. This activity also highlighted the variation in detail and clarity across different GenAI platforms (including ChatGPT, Gemini, Copilot, etc.) when solving the same problem).
+
+This guided practice helped students understand both the affordances and limitations of GenAI, and clarified what forms of assistance were permissible before they began their assessed work. During the coursework assessment, students were given the same opportunity to use GenAI for the analytical component. Interestingly, approximately 83% chose to rely primarily on lecture notes and traditional methods, while only around 17% opted to use GenAI as a supplementary tool.
+
+Further analysis suggested that students with stronger mathematical confidence were less inclined to trust GenAI's capability to support their problem solving [@mitra2024elevating]). Concerns about academic integrity, particularly the risk of misunderstanding the guidelines or incorrectly referencing AI-generated content, also appeared to influence their decisions.
+
+Among the students who did use GenAI, most were those who felt less secure in their mathematical skills. These students tended to accept the AI's solutions as correct, especially when the numerical verification produced similar results. However, feedback emphasised the need to critically challenge and interrogate GenAI outputs rather than assume accuracy. This reflection reinforced an essential learning principle: GenAI can be a valuable assistant, but its solutions must be verified, questioned, and understood rather than adopted uncritically.
+:::
+
+::: {.callout-tip icon="false"}
+#### Example: Co‑Authoring a Final Exam with GenAI
+
+For a multi‑instructor course, we used an AI Agent as a **co‑authoring assistant** to generate a first draft of the final exam. Initial attempts produced generic, AI‑sounding questions, but an iterative workflow proved more effective: humans retained control over conceptual design while the agent handled labour‑intensive tasks such as drafting options, maintaining consistency, formatting, reorganising questions, computing topics distributions, creating answer sheets and rubrics.
+
+The agent was given access to lecture slides, labs, and tutorials, along with explicit constraints: three exam sections, no vague open‑ended questions that are not feasible to answer or mark, two options per question for the exam setter to choose, diversified visualisations. While the agent could identify testable concepts across materials, which is a challenge in multi‑lecturer courses, it often produced questions with **pedagogical flaws**, requiring several rounds of human revision. Ad‑hoc AI modifications to individual questions sometimes introduced overlapping content across items, requiring the exam to be reviewed afresh after each iteration. The most intellectually interesting questions were either fully human‑written or heavily shaped by specific instructor guidance. Ultimately, **53% of exam marks came from human‑written or heavily human‑revised questions**, while only 32% of GenAI‑generated items were accepted largely as‑is (mostly short factual‑recall questions).
+
+Additionally, the agent did not account for the overall feasibility of the exam: the generated questions were collectively too long for students to complete within the two‑hour time limit, requiring further human intervention to trim and prioritise.
+
+Meanwhile, the agent could fully handle easy but work intensive tasks such as: creating synthetic data and their visualizations, generating the answer key, rubric, topic distribution and ensuring mark consistency. Our experience supports the view that GenAI is most effective in **iterative co‑authorship**, provided that at least one author collaborates with the AI to design and at least one human vetter reviews the final exam to ensure clarity, fairness, feasibility, and pedagogical integrity.
+:::
+
+### 2.4. Evaluation: Tracking & Feedback
+
+**Tracking and feedback are central to effective learning.** Tracking monitors a student's progress and errors, while feedback turns this information into guidance for improvement. In coding education, these processes help identify misconceptions early and support the development of accurate mental models.
+
+**GenAI enhances these mechanisms** by automating elements of tracking and providing immediate, personalised, and interactive feedback. Effective feedback is specific, timely, and goal‑aligned [@hattie2007power] and helps learners recognise gaps between current and desired performance [@opitz2011timing]. Students also benefit from clarification and reassurance at different stages of learning [@brooks2019matrix].
+
+GenAI tools can analyse student code, flag errors, and surface conceptual misunderstandings. Because feedback is conversational, students can ask follow‑up questions and request alternative explanations, enabling multi‑level support—from corrections to strategic guidance.
+
+These capabilities directly underpin the following example.
+
+::: {.callout-tip icon="false"}
+#### Example: AI‑Generated Feedback for Student Code Submissions
+
+In our programming labs, we use a GenAI tool that allows students to paste their code and receive **immediate, structured feedback**. The system highlights syntax and logic errors, explains why the code fails, and reminds students of the underlying concepts, helping them understand mistakes as they occur. Students often use the tool iteratively such as asking follow‑up questions or exploring alternative approaches. This supports deeper conceptual understanding and mirrors the interactive, multi‑level feedback described in the literature.
+
+From an instructional perspective, this approach **reduces the feedback bottleneck** in large cohorts. Teaching assistants no longer need to address repetitive, low‑level errors, allowing more time for higher‑order questions. Aggregated AI‑generated feedback also reveals common misconceptions across the cohort, informing adjustments to future tutorials or lectures. In this way, the tool enhances both individual learning and broader pedagogical planning while keeping instructors responsible for oversight and accuracy.
+:::
+
+## 3. Challenges for LLMs in Coding Education
+
+Although GenAI offers significant capabilities for enhancing coding education, its integration also introduces challenges that require thoughtful mitigation. These challenges span issues of accuracy and reliability, plagiarism and academic integrity, over-reliance and critical thinking, and ethical considerations. Understanding these risks is essential for designing learning environments that support diverse learners and uphold educational quality. Each subsection below presents a key challenge supported by literature and teaching examples, with Table 2 providing a consolidated overview of the core challenges and their possible mitigations for educators.
+
+Table 2. Summary of Challenges and Possible Mitigations
+
+| Challenge Area | Core Challenge | Possible Mitigation |
+|:----------------------:|:-----------------------|:-----------------------|
+| **Accuracy & Reliability** | LLMs may produce plausible but incorrect code or explanations, and often prioritise agreeable responses over accuracy. | Educators carefully verify AI‑generated code, explanations, or feedback before use, testing logic and correcting inaccuracies to ensure GenAI serves as support rather than substitute. |
+| **Plagiarism & Academic Integrity** | AI‑generated work bypasses traditional similarity checks and destabilises existing assessment formats. | Emphasise process‑based assessment, oral defence, and transparency around acceptable AI use. |
+| **Over‑Reliance & Critical Thinking** | Excessive dependence on GenAI reduces critical thinking and masks conceptual gaps. | Clearly explain when and why GenAI may or may not be used; design tasks requiring manual reasoning before AI assistance. |
+| **Ethical Considerations** | Risks include bias, privacy issues, stylistic homogenisation, and opaque authorship. | Provide guidance on responsible AI use, highlight privacy settings, and disclose AI involvement in assessment design. |
+
+### 3.1. Accuracy and Reliability
+
+Research shows that LLMs often generate outputs that look correct but contain subtle errors. A study [@huang2025survey]demonstrates that models frequently hallucinate (producing confident but incorrect explanations) while another study [@steinbach2025llms] notes that this confidence can easily mislead learners. These tendencies apply not only to code but also to educational materials such as exam questions, where flaws may be difficult to detect.
+
+LLMs also behave inconsistently. It is highlighted that models can generate flawed or unstable solutions even with similar prompts, making them unreliable for producing assessment items [@pirzado2024navigating]. Compounding this, users often trust AI outputs without verification; it was shown that novices rarely challenge AI‑generated content [@gomez2025correctness].
+
+A further limitation is LLMs' difficulty with deeper reasoning. It was found that models perform well on medium‑complexity tasks but struggle with the advanced conceptual reasoning often required for exam design [@gomez2025correctness]. This helps explain why AI‑generated questions can appear coherent while embedding unintended cues or logical gaps.
+
+An emerging concern is **sycophancy**. It is the tendency of LLMs to produce outputs that align with users’ preferences rather than the truth or the safety [@sharma2023towards] [@malmqvist2025sycophancy]. Sycophancy is detrimental to education. A student seeking confirmation of a flawed solution may receive validation instead of correction from an LLM and have their misconceptions reinforced. A learner asking whether they are on the right track may be affirmed by an LLM instead of being pointed out the genuine learning gaps [@sun2025large]. This implies that GenAI feedback must be treated as inherently agreeable rather than objectively accurate and reviewed with caution.
+
+Finally, LLMs lack awareness of how a course unfolds in practice. It was emphasised that AI cannot account for the pacing, misconceptions, or emphasis that emerge during teaching unless explicitly prompted, leading to *context collapse*, materials aligned with the syllabus but misaligned with the lived learning experience [@kasneci2023chatgpt].
+
+The following examples show how these limitations appeared in practice during our assessment design process.
+
+::: {.callout-tip icon="false"}
+#### Example: Assessment Validity Erosion and Context Collapse
+
+During our experience with drafting a final exam using an AI Agent, we observed that AI-generated questions were often too revealing or too unrevealing. In the former case, the questions had unintended clues that simplified the problem. We asked the agent to remove these clues to make the questions trickier while keeping their precision. In the latter case, the agent used teaching materials such as labs to create the content. However, it did not elaborate on the material in the exam. So a student who did not go through such optional material could have completely missed the context. For instance, the agent drafted a visualization interpretation question which contains a bar chart depicting the frequency of “climate change news” from different newspapers. To the setter who was reviewing AI questions, the question was clear, however a human vetter quickly pointed out that the term “climate change news” ambiguous as it did not clarify whether the news were classified as relevant to climate change or simply mentioned the phrase “climate change”. This distinction was central to the problem so should have been clarified extensively in the question text, but was missed by the agent.
+
+This highlights a key limitation of LLM‑generated assessments: because the model draws solely from documents rather than the lived teaching experience, it cannot account for which topics were rushed, which exercises caused confusion, or where learners needed additional support. Without human intervention, such misalignments risk producing assessments that are technically aligned with course materials but pedagogically out of step with the realities of student learning.
+:::
+
+### 3.2. Plagiarism and Academic Integrity
+
+Research on academic integrity in coding education shows that LLMs complicate traditional approaches to ensuring fairness. Similarity‑based plagiarism detectors such as MOSS are increasingly ineffective because AI‑generated code is highly variable [@biderman2022fooling] [@khalil2023will]. Newer detection models show promise but still produce false positives [@dickey2025failure], making them unreliable in high‑stakes settings. Scholars therefore argue that maintaining fairness increasingly depends on assessment design rather than detection tools [@grassini2023shaping], especially as students can use the same GenAI systems that educators may rely on to create assignments or exam questions.
+
+Practical alternatives include shifting toward **in‑person assessments** and **oral examinations**, which allow educators to evaluate students’ understanding through real‑time conversation and unanticipated follow‑up questions. Additionally, **process‑based detection** offers a complementary approach: rather than inspecting the final submission, educators can analyse behavioural data such as code commit histories [@reid2005learning] or keystroke patterns during live coding sessions [@hart2023plagiarism] to verify that work reflects genuine student effort.
+
+The next example illustrates how this "symmetry problem" can cause unintentional inequities.
+
+::: {.callout-tip icon="false"}
+#### Example: The Feedback Loop / Symmetry Problem
+
+When designing an exam, we tested GenAI to draft initial question structures. We quickly noticed that the students had access *to the same GenAI tool* to study for the exam and they could inadvertently reproduce the same exam questions if they knew or figured out the setter’s methodology, i.e., feeding the tool with the course material. This rewards AI familiarity and memorizing the questions created by AI rather than true learning. Thus, we recommend instructors to not be influenced by GenAI tools in creating questions and always add elements of surprise.
+:::
+
+### 3.3. Over-reliance and Critical Thinking
+
+Research on GenAI use in education highlights a growing concern about over‑reliance on LLMs and its impact on the development of deeper reasoning skills. It wasfound that students often turn to LLMs for quick solutions rather than engaging with underlying concepts, a pattern that reduces opportunities to practise the critical thinking required for long‑term mastery [@sheese2024patterns]. Similarly, it was shown that learners increasingly delegate entire programming tasks to AI tools without understanding the logic of the solutions, leading to shallow learning and reduced problem‑solving ability [@kazemitabaar2023studying].
+
+Studies also suggest that reliance on AI can diminish cognitive effort. It was report that frequent AI use reduces the neural engagement associated with problem‑solving [@zhai2024effects], while it waslinked heavy AI use to declines in critical thinking performance [@gerlich2025ai]. This cognitive offloading can also create an illusion of competence: learners may assume they understand material simply because the AI produces correct answers [@prather2024widening]. Together, these findings point to long‑term risks for independent intellectual development when individuals rely excessively on AI tools.
+
+Although this research focuses primarily on students, the same mechanisms apply to educators. When instructors depend on LLMs to generate explanations, examples, or assessment questions, they may gradually lose opportunities to practise the pedagogical reasoning that underpins effective assessment design. The reduction in cognitive effort and increasing reliance on AI‑produced structure mirrors the patterns observed in learners.
+
+The next example illustrates the "illusion of competence" issue for the assessment design.
+
+::: {.callout-tip icon="false"}
+#### Example: Illusion of Competence in Assessment Design
+
+In our final exam case study, we experienced the illusion of competence first hand. The exam setter produced a first draft using AI and then carefully reviewed and modified the exam. Despite the extensive revision, the vetter spotted many flaws that the setter overlooked. Although the setter did not simply generate the exam and use it unchanged, they still delegated part of the question design process to AI. As a result, they were unable to identify issues they might have caught had they developed the exam entirely on their own. This mirrors precisely the illusion of competence experienced by learners: just as a student may believe they understand a concept because they read the correct result produced by AI, an instructor may believe they have designed a rigorous question because the AI produced a plausible one. In both cases, the surface validity of GenAI output masks the absence of the underlying reasoning process.
+:::
+
+### 3.4. Ethical Considerations
+
+Ethical concerns surrounding GenAI use in education extend beyond privacy and bias to include questions of fairness, transparency, and the broader impact of AI on assessment practices. A growing body of work shows that LLMs reproduce patterns present in their training data, often generating content that is stylistically consistent but lacking in diversity [@mvondo2025exploring]. In assessment design, this can lead to a narrowing of question formats, as models tend to favour well‑structured, predictable item types that mirror the dominant styles in their training corpora. Such homogenisation risks privileging certain ways of demonstrating understanding while marginalising students who perform better under alternative assessment formats.
+
+Transparency is another central concern. Research highlights that many GenAI systems retain user inputs unless explicitly configured otherwise, raising questions about how student or educator content is stored and reused. Within assessment contexts, the lack of clear norms or disclosure practices makes it difficult for students, external examiners, and accrediting bodies to evaluate the extent to which AI contributed to the creation of exam materials. This absence of transparency undermines accountability and complicates efforts to maintain trust in assessment processes.
+
+#### Institutional Responses: The Case of ChatGPT EDU
+
+Institutional responses to these ethical concerns are beginning to emerge. OpenAI's ChatGPT EDU edition, designed specifically for university use, offers enterprise‑grade data privacy guarantees (conversations are not used for model training), institutional administrative controls, and higher usage limits . This partially addresses the privacy concerns and provides a more controlled environment for educational use.and higher usage limits. However, ChatGPT EDU is a proprietary, paid solution, which risks widening the gap between well‑funded and under‑resourced institutions. It also does not resolve the broader ethical issues such as bias in responses and the need for transparency in AI‑assisted assessment. Institutions should therefore evaluate such solutions as one component of a broader AI governance strategy rather than as a complete answer to the ethical challenges of Gen
+
+## 4. Conclusion
+
+GenAI is changing the landscape of coding education in ways that are both exciting and complex. As we have seen throughout this chapter, tools built on LLMs can help us create materials more efficiently, offer students timely support, enrich assessment design, and provide personalised feedback at a scale that was previously impossible. Used thoughtfully, these tools can make coding more accessible and help learners build confidence as they tackle challenging concepts.
+
+At the same time, GenAI introduces new responsibilities for educators. The accuracy issues, integrity concerns, and risks of over‑reliance highlighted in this chapter remind us that these tools cannot replace our professional judgment or the deeper pedagogical thinking that underpins effective coding instruction. GenAI is powerful, but it still needs us to guide, verify, and contextualise its outputs.
+
+A key question going forward is how early and how deeply we should invite GenAI into students' learning processes. Some educators prefer to wait until learners have foundational programming skills, while others argue that working with AI from the beginning can itself be an important literacy for the modern computing curriculum. Across these perspectives, a shared theme emerges: students need clear guidance on when GenAI can support their learning and when independent reasoning is essential.
+
+As we adopt these tools more widely, we will also need practical heuristics that help educators decide when to rely on AI and when to retain full control. AI‑enhanced tools should *strengthen* teacher agency, not diminish it.
+
+Ultimately, the promise of GenAI in coding education lies in partnership. When used with care, GenAI can extend what educators are able to do, provide students with richer learning experiences, and free up time for the kinds of activities (discussion, design, debugging, reflection) that foster genuine understanding. Our task is not to resist these tools, nor to adopt them uncritically, but to integrate them in ways that help learners grow into thoughtful, independent, and adaptable coders.
 
 ::: {.content-visible when-format="html" unless-format="epub"}
-
 ## References {.unnumbered}
-
 :::
