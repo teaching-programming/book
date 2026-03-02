@@ -47,7 +47,7 @@ To understand these capabilities and challenges in context, we now turn to a bri
 
 Large language models (LLMs) generate text in response to prompts and are built through two stages: **pretraining**, where they learn general language patterns by predicting the next word, and **fine tuning**, which adapts them to tasks such as answering questions, summarising, or conversation. Finetuning can also be extended by users for domain‑specific needs.
 
-![Figure 1: (Top) LLMs development through a two-step process: pretraining & finetuning (Bottom) Enhancement of LLMs through RAG & Reasoning.](images/LLMs_development.png){fig-align="center"}
+![Figure 1: (Top) LLMs development through a two-step process: pretraining & finetuning (Bottom) Enhancement of LLMs through RAG & Reasoning.](images/C19_LLMs_development.png){fig-align="center"}
 
 LLMs can also be improved **without further training**. **Prompt engineering** shapes model behavior through role instructions or system prompts, while **Retrieval Augment Generation (RAG)** enhances prompts with relevant data from external sources. **Reasoning** further improves output quality by allowing the model to tackle user queries step by step and utilize more time and resources to answer. Many top-performing LLMs now adopt this paradigm.
 
