@@ -3,15 +3,15 @@ title: "Anarchists and Dungeon Crawlers: co-designing programming teaching exper
 bibliography: references.bib
 author:
   - name: Francisco Queiroz
+    email: f.queiroz@leeds.ac.uk
+    affiliations: University of Leeds
+  - name: Maeve Murphy Quinlan
     email: TODO
-    affiliations: TODO
-  - name: Maeve Murphy Quinn
-    email: TODO
-    affiliations: TODO
+    affiliations: University of Leeds
 
 keywords:
-  - TODO
-  - TODO
+  - pedagogical frameworks
+  - teaching material
 ---
 
 ## Introduction
