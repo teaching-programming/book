@@ -9,8 +9,8 @@ author:
     email: ychalil@ed.ac.uk
     affiliations: Reid School of Music, Edinburgh College of Art, University of Edinburgh
   - name: Matthew Hamilton
-    email: matthew.hamilton2@unibo.it
-    affiliations: TODO
+    email: s0674653@ed.ac.uk
+    affiliations: Reid School of Music, Edinburgh College of Art, University of Edinburgh
   - name: Charlotte Desvages
     email: charlotte.desvages@ed.ac.uk
     affiliations: School of Mathematics and Maxwell Institute for the Mathematical Sciences, University of Edinburgh
