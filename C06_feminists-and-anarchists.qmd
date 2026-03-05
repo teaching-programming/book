@@ -4,10 +4,10 @@ bibliography: references.bib
 author:
   - name: Francisco Queiroz
     email: f.queiroz@leeds.ac.uk
-    affiliations: University of Leeds
+    affiliations: School of Design, University of Leeds
   - name: Maeve Murphy Quinlan
     email: TODO
-    affiliations: University of Leeds
+    affiliations: Research Computing, University of Leeds
 
 keywords:
   - pedagogical frameworks
@@ -20,9 +20,19 @@ You find yourself in a large room with no windows; the air is still, and nothing
 
 Students.
 
-Fear not, though. You are about to learn how to deal with this kind of situation. Dealing with students’ expectations (and your own) can be hard, but we believe that by working together, you will be able to deliver the learning experience that gets everyone to the next level. In this chapter, inspired in equal parts by tabletop role-playing and anarchist pedagogies, we present steps you can take during an initial or preliminary learning activity for a course.
+Fear not, though. You are about to learn how to deal with this kind of situation. Dealing with students’ expectations (and your own) can be hard, but we believe that by working together, you will be able to deliver the learning experience that gets everyone to the next level. 
 
-This system is inspired by variations of Role-Playing games that do not require a Dungeon Master as mediator, such as various ones from [Tomkin Press](https://tomkinpress.com/). On a very literal level, it follows the anarchist maxim of 'No gods, no masters' which, in its turn, can be reflected in horizontal approaches to higher education, where students and educators operate side-by-side [@wilkinson2025fragments].
+This chapter is inspired in equal parts by tabletop role-playing and anarchist pedagogies. It was created to help you structuring the learning experience for your course. More specifically, we present steps you can take during an initial or preliminary learning activity for a course, preparing material that will help you:
+
+- get to know your students, their expectations and shortcomings
+- organise teams for collaborative group work
+- relate learning sessions and activities to the course's learning outcomes
+- structure the sequence of learning activities
+- share resources
+
+This system is inspired by variations of Role-Playing games that do not require a Dungeon Master as mediator, such as various ones from [Tomkin Press](https://tomkinpress.com/), which reflects horizontal approaches from anarchist pedgagodies in higher education, in which students and educators operate side-by-side [@wilkinson2025fragments].
+
+We do acknowldge, however, the tensions between anarchism and the realities of the higher education systems to which we belong, and the risk of coming across as having an inauthentic, opportunistic take on anarchist ideas and practices. Admitedly, we operate (and, arguably, succeed) within a system that is not as flexible, self-governing, or non-hierarchical as the one we are taking inspiration from. Still, we believe incremental, practical changes are a possible way of moving towards more inclusive and democratic realities.   
 
 ::: {.callout-note icon="false"}
 # Disclaimer
