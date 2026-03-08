@@ -65,7 +65,7 @@ Here we list the core code elements and Python functionalities fundamental to th
 * **Pedagogical value**: Introducing summary statistics measures provides students with the language to describe data precisely. The concept of correlation offers an early opportunity to explore potential associations between variables, before modeling.  
 * **Essential functions**: Measurements of center and spread of data from `numpy` after importing it. The important functions are, `np.mean()`,  `np.median()`,  `np.mode()`, `np.std()`,  `np.var()`,  `np.quantile()`. Calculating Pearson linear correlation between two variables using `corr(method="pearson")`.  
 * **Real data suggestion**: Sleep in Mammals [@allison1976sleep] and Animals Life Expectancy [@che2019sex] are interesting datasets about animals with various features in different types that can be used to encourage students to explore the pattern of how long these animals sleep and live.  
-* **Common pitfalls:** Applying numeric-only summary functions to non-numeric variables, ignoring or not checking for missing values, not inspecting the shape and possible skewness of the distributions.
+* **Common pitfalls**: Applying numeric-only summary functions to non-numeric variables, ignoring or not checking for missing values, not inspecting the shape and possible skewness of the distributions.
 
 ### Element 5 - Normal Linear Regression with statsmodels: Explain and Predict Relationships
 
