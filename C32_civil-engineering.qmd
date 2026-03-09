@@ -1,5 +1,5 @@
 ---
-title: "Change in mindset of civil engineering students toward programming"
+title: "Changing civil engineering students’ mindset toward programming"
 format: html
 bibliography: references.bib
 toc: true
@@ -9,16 +9,12 @@ toc: true
 
 ## Introduction
 
-Recent advances in computing allow engineers to use programming more efficiently in their routine tasks. 
-Specifically, students in civil engineering branch (CivEng) have rather firm concept of domain problem 
-and considerable skills in problem solving with the capability of computing. However, the reality 
-is far from job done: translating their manual-solving skill to computer code is non-trivial. 
-In order to do so, they have to change their mindset to produce code that they can reuse and benefit others as well.
+It is high time that students from civil engineering (CivEng) specialisation to get on with serious programming. Civil engineering, as underlined by Muir Wood (2012), involves creating solutions to real-world problem. As such, each solution tends to be unique, which associates with particular environmental and societal circumstances pertaining to the local community. It is no surprise that computing had early been adopted in CivEng, and programming classes been arranged, as reported in a survey in the United States (Hoffbeck et al. 2016). After all, CivEng students cannot just sit there and look at their friends in the university doing all kinds of interesting stuff with AI/ML, etc. But what are the difficulties behind the scene? 
 
-This article presents some of my experience in guiding two classes: one with Python and one with Julia. 
-In both classes I focused on the practical aspect of solving a typical engineering problem — 
-calculating the flux of sediment in natural waterbodies (e.g. lakes, rivers) — rather than 
-delving into merits of the two languages nor making any comparison between them.
+And why do we choose such a narrow engineering discipline? Civil engineers have good logical ability; especially deduction, transforming and applying math equations, dealing with real dimension, approximation and optimisation. They have firm belief on deterministic: an expected system for this input must yield that output. 
+Until they start to realise that the computer system [or the compiler, anyway the students don't care about this] tends to play trick on them. Code snippet copied from the online tutorial doesn't work. Merging two innocent-looking code chunks throws an error. By then, they will need a good approach to programming. The class instructor, too, will need to dedicate time for good code examples as teaching materials. Perhaps examples that illustrate some key principles in programming but merge seamlessly with the domain knowledge in concern.
+
+This chapter presents some of my experience in tutoring two classes, one for final-year undergraduates and one MSc class,  with the use of Python and Julia programming languages. In both classes, instead of delving into merits of the two languages nor making any comparison between them, I focused on the practical aspect of solving a typical civil engineering problem — sediment transport. For this problem, we are interested in the amount of sand moving in natural waterbodies (e.g. lakes, rivers) and how the bed elevation of such lakes/rivers changes in time, which find vast applications in real development projects. There are some math and physics involved, but I will provide some simple explanations. Hopefully, by the end of the chapter we can pinpoint some "good practices" to engineering students who start to write their own code. The chapter may also benefit CivEng class instructors who are aiming toward more effective lectures.
 
 ## Code Implementation
 
@@ -43,18 +39,35 @@ The CivEng student surely does not confuse with units:
 |-------|----------------------------------|
 | $$ U_{cr} =\left\lbrace  \begin{array}{ll} {0.19} D_{50}^{0.1} \log(4h/D_{90}) & \text{for }  D_{50} < {0.5} \text{  mm}; \\ {8.5} D_{50}^{0.6} \log(4h/D_{90}) & \text{for } {0.5} \text{ mm}  < D_{50} < 2 \text{ mm}; \end{array} \right. $$ | <pre>if d50 < 0.5E-3: #mm <br/> &nbsp; Ucr=0.19*(d50 ** 0.1) * math.log10(4 * h/d90)<br/> else: <br/>  &nbsp; Ucr=8.5*(d50 ** 0.6) * math.log10(4*h/d90)  </pre> |
 
-The implementation of a mass-conservation equation should not cause too much problem. Here the naive implementation 
-of using a nested list to emulate a 2-D array, which doesn’t seem much performant. But that’s enough for the CivEng 
-who wants to get the job done.
+### Dimension and units in civil engineering
 
-| Math  |  Code   |
-|-------|----------------------------------|
-| $$\frac{\partial z_b}{\partial t} = -(1-n) \left( \frac{\partial q_x}{\partial x} + \frac{\partial q_y}{\partial y}  \right)$$ | <pre>for i in range(1,nrows):<br/> &nbsp; for j in range(1,ncols):<br/> &nbsp; &nbsp; dzbdt[i][j] = -(1-n) * \ <br/>  &nbsp; &nbsp;  &nbsp; &nbsp; ((qx[i][j]-qx[i-1][j])/dx + \ <br/>  &nbsp; &nbsp;  &nbsp; &nbsp; (qy[i][j]-qy[i][j-1])/dy) </pre> |
+A particular strength of the CivEng student is having keen eyes on physical quantities. The branching statement 
+presented above show that the student was aware of units and apply corresponding coefficients. The ability 
+to tell the meaning from numbers allow them to check intermediate results and correct potential errors 
+during computation. Another advantage is that by adhering to the rules of dimensions in physics, the student 
+naturally familiarise themselves with the type system and therefore will not have much difficulties dealing 
+with languages like C#, Java, Scala, or to go forward and write type annotations in their Python code. 
+
+### Matrix manipulation
+
+In many circumstances, the CivEng student has to deal with matrices, such as when solving partial differential equations (PDEs). One of such typical equation is the mass balance, where the (time-) change in “stock” is related to the spatial changes (gradients) of “flows”. It is not too difficult for the CivEng student to understand the finite difference technique and implement a naive version to solve PDEs. As an example, in the problem of sediment transport in rivers or seas, we consider solving the equation for _z_<sub>b</sub> (the underwater bed elevation), which changes in time, given the two fluxes of sediment, represented as two components (_q_<sub>_x_</sub> and _q_<sub>_y_</sub>) in the two horizontal directions, _x_ and _y_. It is helpful to visualise the river bed or seabed as a “tiled” surface where each cell has its own elevation _z_<sub>b</sub>. See the diagram below for a simplified representation of the quantities involved.
+
+It should be noted here, that the CivEng student is equipped with numerical analysis skill, that can approximate the differential in terms of finite difference. 
+
+| Differential equation  |  Numerical approximation   |
+|------------------------|----------------------------|
+| $$\frac{\partial z_b}{\partial t} = -(1-n) \left( \frac{\partial q_x}{\partial x} + \frac{\partial q_y}{\partial y}  \right)$$ <br /> where _z_<sub>b</sub>, _q_<sub>_x_</sub>, and _q_<sub>_y_</sub> are functions of _x_ and _y_. Therefore, we will also make d_z_<sub>b</sub>/d_t_ a function of _x_ and _y_.
+| $$ \left( \frac{\partial q_x}{\partial x} \right) = \frac{q_{i,j} - q_{i-1,j}}{dx} $$ <br/>  Here the numerical approximation for one flux gradient term is illustrated. |
+
+The naive approach is to use a nested list to emulate a 2-D array, which doesn’t seem much performant. But that’s enough for the CivEng who wants to get the job done. This way, the code is more transparent when using an index system with (_i_±1).  Notably, there is similarity in operators and operands between Python and Julia (thus I will leave the ellipses in the Julia part). The differences are in for-loop syntax and the 1-based indexing system in Julia as opposed to Python’s 0-based. A notebook implementation can be found at <https://nbviewer.org/url/coastal-study.uk/sed.trans/SedTrans.ipynb>.
+
+| Python           |  Julia              |
+|------------------|----------------------------------|
+| $$\frac{\partial z_b}{\partial t} = -(1-n) \left( \frac{\partial q_x}{\partial x} + \frac{\partial q_y}{\partial y}  \right)$$ <br /> where zb, qx, and qy are functions of x and y. Therefore, we will also make dzb/dt a function of x and y.
+| <pre>for i in range(1,nrows):<br/> &nbsp; for j in range(1,ncols):<br/> &nbsp; &nbsp; dzbdt[i][j] = -(1-n) * \ <br/>  &nbsp; &nbsp;  &nbsp; &nbsp; ((qx[i][j]-qx[i-1][j])/dx + \ <br/>  &nbsp; &nbsp;  &nbsp; &nbsp; (qy[i][j]-qy[i][j-1])/dy) </pre> |
 
 The use of matrix operations would involve broadcasting and but with gain in performance, usually quoted as 
-some 10 times [@langtangen2006python]. Fortunately, the disadvantage can be overcome with Julia programming. 
-Really, if you were to consider the stencil involved (figure below, where the arrows denote subtraction), 
-the code is more transparent when using an index system with (i±1). When using matrix manipulation, the bounds 
+some 10 times [@langtangen2006python]. On the downside, the matrix notation obscures the indices `i` and `j` commonly found in numerical methods (see the figure below, where part of a stencil[^stencil] is shown. In this part, where arrows represent subtraction, we are finding “local” difference in the same `qx` array). When using matrix manipulation, the bounds 
 must be specified correctly in all matrix subscripts. 
 
 | Index-based implementation             | Matrix-based implementation               |
@@ -68,14 +81,7 @@ to the students, but every such issue can add up and discourage the learners. Th
 might be made beforehand, that the matrix `qx` here is calculated once and cannot be modified thereafter. 
 Or else, you have to switch to another programming language, e.g. MATLAB.
 
-### Dimension and units in civil engineering
 
-A particular strength of the CivEng student is having keen eyes on physical quantities. The branching statement 
-presented above show that the student was aware of units and apply corresponding coefficients. The ability 
-to tell the meaning from numbers allow them to check intermediate results and correct potential errors 
-during computation. Another advantage is that by adhering to the rules of dimensions in physics, the student 
-naturally familiarise themselves with the type system and therefore will not have much difficulties dealing 
-with languages like C#, Java, Scala, or to go forward and write type annotations in their Python code. 
 
 ## Code reuse
 
@@ -150,3 +156,5 @@ and implementing a finite difference numerical solution.
 ## References {.unnumbered}
 
 :::
+
+[^stencil]: A stencil is a diagram showing a group of computational nodes where numerical approximation takes place.
