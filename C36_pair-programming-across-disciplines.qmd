@@ -4,12 +4,16 @@ bibliography: references.bib
 author:
   - name: Charlotte Desvages
     email: charlotte.desvages@ed.ac.uk
+    affiliations: School of Mathematics and Maxwell Institute for the Mathematical Sciences, University of Edinburgh
   - name: Pawel Orzechowski
     email: TODO include?
+    affiliations: Edinburgh Medical School, University of Edinburgh
   - name: Brittany Blankinship
     email: TODO include?
+    affiliations: Edinburgh Medical School, University of Edinburgh
   - name: Umberto Noè
     email: TODO include?
+    affiliations: School of Philosophy, Psychology, and Language Sciences, University of Edinburgh
 keywords:
   - pair programming
   - group work
@@ -17,7 +21,11 @@ keywords:
   - community
 ---
 
-In this chapter we will share our experiences with a structured group work format that we believe fosters student engagement, well-being, and transferable skills.
+## Introduction
+
+TODO: keep this as introduction, or ditch it?
+
+In this chapter, we share our experiences with pair programming as a structured group work format that we believe fosters student engagement, well-being, and transferable skills. We argue that the same pedagogical benefits can also be realised when used for non-programming tasks.
 
 ## What is "pair programming"? (and why should you care?)
 
@@ -99,9 +107,9 @@ Although the strategies discussed above can minimise this, there is no single co
 
 We have come together as a community of practice for mutual support. We have found it incredibly valuable as educators to discuss experiences, tackle challenges, and share examples of good practice.
 
-## This blog post was pair-programmed
+## This chapter was pair-programmed
 
-Pair programming has worked in our programming classes, but we very much see the value of this kind of structured group work outwith a programming context. For instance, we "pair-programmed" the writing and editing of this very blog post over two sunny afternoons. We took turns being the driver typing on a laptop, while everyone else navigated, contributing their ideas and wording. We believe that the principles we have discussed are widely applicable across disciplines, and we look forward to finding out how colleagues adapt it in their classrooms.
+Pair programming has worked in our programming classes, but we very much see the value of this kind of structured group work outwith a programming context. For instance, we "pair-programmed" the writing and editing of this very chapter over two sunny afternoons. We took turns being the driver typing on a laptop, while everyone else navigated, contributing their ideas and wording. We believe that the principles we have discussed are widely applicable across disciplines, and we look forward to finding out how colleagues adapt it in their classrooms.
 
 ::: {.content-visible when-format="html" unless-format="epub"}
 ## References {.unnumbered}
