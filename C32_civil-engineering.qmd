@@ -24,8 +24,7 @@ This chapter presents some of my experience in tutoring two classes, one for fin
 CivEng students generally do not encounter any difficulty in implementing a series of formulae in order, as well as translating a formula to code. For example, in the Python snippet below, the drag coefficient is readily calculated according to the math equation
 
 **Math**
-
-$ C_D = \left[ \frac{0.4}{1 + \ln(z_0 / h)} \right]\^2\$
+$$ C_D = \left[ \frac{0.4}{1 + \ln(z_0 / h)} \right]^2\ $$
 
 **Code**
 
