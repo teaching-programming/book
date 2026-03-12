@@ -1,5 +1,5 @@
 ---
-title: "Title of Example Chapter (as will appear on top h1 header and in table of contents)"
+title: "Case study from Scotland’s Rural College: The wild(life) side of pair programming"
 bibliography: references.bib
 author:
   - name: Author One
