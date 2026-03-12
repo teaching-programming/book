@@ -4,7 +4,7 @@ format: html
 bibliography: references.bib
 author:
   - name: Nguyen Q. Chien
-    affiliations: TODO. Nanyang Technological University, IHE-Delft?
+    affiliations: School of Engineering, the University of Edinburgh
 ---
 
 ## Introduction
@@ -114,7 +114,7 @@ The use of matrix operations has an advantage in performance compared to the "na
 dqxdx[i][j] = (qx[i][j]-qx[i-1][j])/dx
 ```
 ```{{julia}}
-TODO?
+dqxdx[i,j] = (qx[i,j]-qx[i-1,j])/dx
 ```
 
 **Matrix-based computation**
@@ -125,7 +125,7 @@ TODO?
 dqxdx[0:-1,:] = ((qx[1:,:] - qx[0:-1,:])/dx
 ```
 ```{{julia}}
-TODO?
+dqxdx[1:nx-1,:] = (qx[2:nx,:]-qx[1:nx-1,:])/dx
 ```
 
 
