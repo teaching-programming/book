@@ -15,7 +15,7 @@ Civil engineers have good logical ability, especially deduction, transforming an
 
 Until they start to realise that the computer system (or the compiler, but anyway the students don't care about this) tends to play tricks on them. For example, a code snippet copied from the online tutorial doesn't work or merging two innocent-looking code chunks throws an error. That's when they realise that they will need a good approach to programming. The class instructor, too, will need to dedicate time to create good code examples as teaching materials. Perhaps examples that illustrate some key principles in programming but merge seamlessly with domain knowledge.
 
-This chapter presents some of my experience in tutoring two classes, one for final-year undergraduates and one for an MSc class, with use of the Python and Julia programming languages. In both cases, instead of delving into the merits of each language or making any comparison between them, I focus on the practical aspect of solving a typical civil engineering problem — sediment transport. For this problem, we are interested in the amount of sand moving in natural waterbodies (e.g. lakes, rivers) and how the bed elevation of such lakes/rivers changes over time, which has vast applications in real development projects. There is some maths and physics involved, but I will provide simple explanations. Hopefully, by the end of the chapter we can pinpoint some "good practices" for engineering students starting to write their own code. The chapter may also benefit CivEng class instructors who are aiming toward more effective lectures.
+This chapter presents some of my experience in tutoring two classes in Thuyloi University (Vietnam), one for final-year undergraduates and one for an MSc class, with use of the Python and Julia programming languages. In both cases, instead of delving into the merits of each language or making any comparison between them, I focus on the practical aspect of solving a typical civil engineering problem — sediment transport. For this problem, we are interested in the amount of sand moving in natural waterbodies (e.g. lakes, rivers) and how the bed elevation of such lakes/rivers changes over time, which has vast applications in real development projects. There is some maths and physics involved, but I will provide simple explanations. Hopefully, by the end of the chapter we can pinpoint some "good practices" for engineering students starting to write their own code. The chapter may also benefit CivEng class instructors who are aiming toward more effective lectures.
 
 ## Code Implementation
 
@@ -32,12 +32,14 @@ $$ C_D = \left[ \frac{0.4}{1 + \ln(z_0 / h)} \right]^2\ $$
 CD = (0.4/(math.log(h/zo)-1))**2
 ```
 
-CivEng students are well aware of complex engineering formulas and would be willing to write lengthy statements for mathematical expressions. Furthermore, they have adopted the style of naming variables according to the symbolic representation which is widely agreed in the literature. [TODO from Ziska: I am not sure I completely understand this sentence - perhaps an example (e.g. CD) after "symbolic representation"? Also, we need a reference to the literature]
+CivEng students are well aware of complex engineering formulas and would be willing to write lengthy statements for mathematical expressions. Furthermore, they have adopted the style of naming variables according to the symbolic representation which is widely agreed in the literature. For example, here the name `CD` is used instead of choosing a more explicit name like `drag_coefficient`.
 
 Even a branching construction would not cause much difficulty, for example to calculate the critical flow velocity using Python. The CivEng student surely would not get confused with units during computation, as they can handily type in conversion factors along with the code:
 
 **Math**
-$$ U_{cr} =\left\lbrace  \begin{array}{ll} {0.19} D_{50}^{0.1} \log(4h/D_{90}) & \text{for }  D_{50} < {0.5} \text{  mm}; \\ {8.5} D_{50}^{0.6} \log(4h/D_{90}) & \text{for } {0.5} \text{ mm}  < D_{50} < 2 \text{ mm}; \end{array} \right. $$ 
+
+$ U_{cr} =\left\{  \begin{array}{ll} {0.19} D_{50}^{0.1} \log(4h/D_{90}) & \text{for }  D_{50} < {0.5} \text{  mm}; \\ {8.5} D_{50}^{0.6} \log(4h/D_{90}) & \text{for } {0.5} \text{ mm}  < D_{50} < 2 \text{ mm}; \end{array} \right. $ 
+
 **Code**
 
 ```{{python}}
@@ -63,9 +65,9 @@ It should be noted here that the CivEng student is equipped with numerical analy
 
 **Differential equation**
 
-$$\frac{\partial z_b}{\partial t} = -(1-n) \left( \frac{\partial q_x}{\partial x} + \frac{\partial q_y}{\partial y}  \right)$$ <br /> where *z*<sub>b</sub>, *q*<sub>*x*</sub>, and *q*<sub>*y*</sub> are functions of *x* and *y*. Therefore, we will also make d_z\_<sub>b</sub>/d_t\_ a function of *x* and *y*.
+$ \frac{\partial z_b}{\partial t} = -(1-n) \left( \frac{\partial q_x}{\partial x} + \frac{\partial q_y}{\partial y}  \right) $
 
-[TODO: Do we want text belonging to formulae to be in italics? This would make it clearer that they belong to the formula rather than the main text]
+where *z*<sub>b</sub>, *q*<sub>*x*</sub>, and *q*<sub>*y*</sub> are functions of *x* and *y*. Therefore, we will also make ∂*z*<sub>b</sub>/∂*t* a function of *x* and *y*.
 
 **Numerical approximation**
 
@@ -82,9 +84,8 @@ else:
   print('Warning: d50 out of range to apply formula for Ucr.')
 ```
 
-The naive approach is to use a nested list to emulate a 2-D array, which doesn't seem very performant. But that's enough for the CivEng who wants to get the job done. This way, the code is more transparent when using an index system with (*i*±1). Notably, there is similarity in operators and operands between Python and Julia (thus I will place ellipses in the Julia code). The differences are in for-loop syntax and the 1-based indexing system in Julia as opposed to Python's 0-based. A notebook implementation can be found [here](https://nbviewer.org/url/coastal-study.uk/sed.trans/SedTrans.ipynb).
+The naive approach is to use a nested list to emulate a 2-D array, which doesn't seem very efficient. But that's enough for the CivEng who wants to get the job done. This way, the code is more transparent when using an index system with (*i*±1). Notably, there is similarity in operators and operands between Python and Julia (thus I will place ellipses in the Julia code). The differences are in for-loop syntax and the 1-based indexing system in Julia as opposed to Python's 0-based. A notebook implementation can be found [here](https://nbviewer.org/url/coastal-study.uk/sed.trans/SedTrans.ipynb).
 
-[TODO: Is "performant" a technical term? Perhaps it means "efficient" in this context?]
 
 **Code Snippet 1 - For Loop in Python**
 ```{{python}}
@@ -106,9 +107,7 @@ for i = 1:nx
 end
 ```
 
-The use of matrix operations has an advantage in performance compared to the "naive" version above, usually quoted as 10 times [@langtangen2006python]. On the downside, the matrix notation obscures the indices `i` and `j` commonly found in numerical methods (see Figure 2, where part of a stencil[^c32_civil-engineering-1] is shown. In this part, where arrows represent subtraction, we are finding "local" difference in the same `qx` array). When using matrix manipulation, the bounds must be specified correctly in all matrix subscripts (see Figure 3 and the code below). So, there should be a consideration in choosing either approach.
-
-[TODO: 10 times what? speed? efficiency? (but maybe this is my ignorance!)]
+The use of matrix operations is faster compared to the "naive" version above, usually quoted as 10 times [@langtangen2006python]. On the downside, the matrix notation obscures the indices `i` and `j` commonly found in numerical methods (see Figure 2, where part of a stencil[^c32_civil-engineering-1] is shown. In this part, where arrows represent subtraction, we are finding "local" difference in the same `qx` array). When using matrix manipulation, the bounds must be specified correctly in all matrix subscripts (see Figure 3 and the code below). So, there should be a consideration in choosing either approach.
 
 [^c32_civil-engineering-1]: A stencil is a diagram showing a group of computational nodes where numerical approximation takes place.
 
@@ -117,9 +116,11 @@ The use of matrix operations has an advantage in performance compared to the "na
 ![Figure 2. Lattice 1](./chapters/images/ch32/Lattice1.PNG)
 
 ```{{python}}
+# Python
 dqxdx[i][j] = (qx[i][j]-qx[i-1][j])/dx
 ```
 ```{{julia}}
+# Both Python and Julia
 dqxdx[i,j] = (qx[i,j]-qx[i-1,j])/dx
 ```
 
@@ -128,9 +129,11 @@ dqxdx[i,j] = (qx[i,j]-qx[i-1,j])/dx
 ![Figure 3. Lattice 2](./chapters/images/ch32/Lattice2.PNG)
 
 ```{{python}}
-dqxdx[0:-1,:] = ((qx[1:,:] - qx[0:-1,:])/dx
+# Python
+dqxdx[0:-1,:] = (qx[1:,:] - qx[0:-1,:])/dx
 ```
 ```{{julia}}
+# Julia
 dqxdx[1:nx-1,:] = (qx[2:nx,:]-qx[1:nx-1,:])/dx
 ```
 
@@ -194,7 +197,7 @@ Unfortunately, the common situation for CivEng is that many handbooks and guidel
 
 ## Generalisation
 
-CivEng students understand the use of functions and are adept in translating formulation of various calculation routines into functions. So that should be enough for generalising code, shouldn't it? During a practice session, after having students estimate the derivative *f* '(*x*0) for the specific functions *f*(*x*) = *x*<sup>2</sup> and *f*(*x*) = cos *x*, I required them to generalise their `deriv_*` function to accept any math function. Well, how can we do that? – they doubted, until I showed that we can just incorporate the function under investigation into the function `deriv` (see the Julia code below). A first step toward functional programming.
+CivEng students understand the use of functions and are adept in translating formulation of various calculation routines into functions. So that should be enough for generalising code, shouldn't it? During a practice session, after having students estimate the derivative *f* '(*x*<sub>0</sub>) for the specific functions *f*(*x*) = *x*<sup>2</sup> and *f*(*x*) = cos *x*, I required them to generalise their `deriv_*` function to accept any math function. Well, how can we do that? – they doubted, until I showed that we can just incorporate the function under investigation into the function `deriv` (see the Julia code below). A first step toward functional programming.
 
 **Code Snippet 4 - Student's version**
 ```{{julia}}
@@ -218,12 +221,12 @@ deriv = function(f, o, h)
 end
 
 deriv(x -> x^2, 0, 1E-3)
-deriv(x -> cos(x), 0, 1E-3
+deriv(x -> cos(x), 0, 1E-3)
 ```
 
 ## Tooling
 
-The students are happy with Jupyter notebooks during class. Syntax highlighting, code auto-completion, and embedded plot outputs are features that are highly appreciated. Nevertheless, a dedicated environment like VS Code is needed for students who want to develop larger programs with debugging and version control (e.g. Git). In Chapter 29 of this book, @TeachProgAcross_C29 mention the use of a Python debugger (`pdb`) in the Jupyter Notebook environment, yet the more recent Jupyter Lab features a more convenient visual debugger so that students can track the changes of variables during the flow of the program.
+The students are happy with Jupyter notebooks during class. Syntax highlighting, code auto-completion, and embedded plot outputs are features that are highly appreciated. Nevertheless, a dedicated environment like VS Code is needed for students who want to develop larger programs with debugging and version control (e.g. Git). In Chapter 29 of this book, [@TeachProgAcross_C29] mention the use of a Python debugger (`pdb`) in the Jupyter Notebook environment, yet the more recent Jupyter Lab features a more convenient visual debugger so that students can track the changes of variables during the flow of the program.
 
 There is a tendency of using AI in coding. While AI tools are a great boon for syntax checks and documentation, it would be unbeneficial to have AI chatbots generate the code skeleton and logic, as this part requires the ingenuity of civil engineers who possess the domain knowledge.
 
@@ -232,7 +235,7 @@ There is a tendency of using AI in coding. While AI tools are a great boon for s
 This list is non-exhaustive yet would be useful for CivEng students starting to develop their code:
 
 -   Variable names should follow the widely adopted **notations** in civil engineering. When possible, use the Unicode characters for Greek letters, e.g., using α instead of `alpha` (subject to the language’s feature – this is favourable for Julia with keyboard shortcuts for such characters/symbols).
--   Extensive and meaningful **documentation** is needed since there are many empirical formulae used in CivEng and the choice of a formula should be justified based on the context.\
+-   Extensive and meaningful **documentation** is needed since there are many empirical formulae used in CivEng and the choice of a formula should be justified based on the context.
 -   Whenever the names are cluttered, consider using **namespaces** (Knowledge of the engineering specialisation is required.)
 -   If facilitated by the language (in the case of Julia), prefer using **loops with index variables** (`[i±1]`) rather than implicit array position index (`[:]`).
 -   Generalise code with **functions**, so that you can reuse it later. This is particularly useful in CivEng, which heavily relies on various recipes. Each recipe can be implemented as a function.
