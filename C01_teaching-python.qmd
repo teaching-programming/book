@@ -83,7 +83,7 @@ Here we list the core code elements and Python functionalities fundamental to th
 * **Real data**: Pima Indian Diabetes dataset [@smith1988using] includes various health indicators to use in modelling to predict whether participants would develop diabetes. Behavioral Risk Factor Surveillance System [@brfss] data is available from several years and includes many health indicators and records of presence of many health conditions to use in different classification problems.    
 * **Common pitfalls**: Not applying the train/test split or mishandling its output; difficulty in choosing and applying the appropriate evaluation methods.  
 
-Depending on the course level and learning objectives, Element 6 may be included only if an introduction to machine learning falls within the scope of the course. Here, we presented *“classification”* as an example of a supervised learning method, although an unsupervised method such as *“clustering”* could also be introduced following a similar structure.
+Depending on the course level and learning objectives, Element 6 may be included only if an introduction to machine learning falls within the scope of the course. Here, we presented classification as an example of a supervised learning method, although an unsupervised method such as clustering could also be introduced following a similar structure.
 
 
 ## What Can Students Take Away?
