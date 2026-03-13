@@ -38,7 +38,7 @@ Even a branching construction would not cause much difficulty, for example to ca
 
 **Math**
 
-$ U_{cr} =\left\{  \begin{array}{ll} {0.19} D_{50}^{0.1} \log(4h/D_{90}) & \text{for }  D_{50} < {0.5} \text{  mm}; \\ {8.5} D_{50}^{0.6} \log(4h/D_{90}) & \text{for } {0.5} \text{ mm}  < D_{50} < 2 \text{ mm}; \end{array} \right. $ 
+$$ U_{cr} =\left\{  \begin{array}{ll} {0.19} \, (d_{50})^{0.1} \log_{10}\left(\frac{4h}{d_{90}}\right) & \text{for } \;  0.1 \le d_{50} \le 0.5 \text{  mm}; \\ {8.5} \, (d_{50})^{0.6} \log_{10} \left(\frac{4h}{d_{90}} \right) & \text{for } \; {0.5} \le d_{50} \le 2 \text{ mm}; \end{array} \right. $$
 
 **Code**
 
@@ -65,7 +65,7 @@ It should be noted here that the CivEng student is equipped with numerical analy
 
 **Differential equation**
 
-$ \frac{\partial z_b}{\partial t} = -(1-n) \left( \frac{\partial q_x}{\partial x} + \frac{\partial q_y}{\partial y}  \right) $
+$$ \frac{\partial z_b}{\partial t} = -\frac{1}{1-n} \left( \frac{\partial q_x}{\partial x} + \frac{\partial q_y}{\partial y}  \right) $$
 
 where *z*<sub>b</sub>, *q*<sub>*x*</sub>, and *q*<sub>*y*</sub> are functions of *x* and *y*. Therefore, we will also make ∂*z*<sub>b</sub>/∂*t* a function of *x* and *y*.
 
@@ -93,7 +93,7 @@ for i in range(1,nx):
   for j in range(1,ny):
     dqxdx[i][j] = (qx[i][j]-qx[i-1][j])/dx
     dqydy[i][j] = (qy[i][j]-qy[i][j-1])/dy
-    dzbdt[i][j] = -(1-n) * (dqxdx[i][j] + dqydy[i][j])
+    dzbdt[i][j] = -(1/(1-n)) * (dqxdx[i][j] + dqydy[i][j])
 ```
 
 **Code Snippet 2 - For Loop in Julia**
