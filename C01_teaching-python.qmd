@@ -7,7 +7,7 @@ author:
     corresponding: true
     affiliations: School of Mathematics and Maxwell Institute for Mathematical Sciences, University of Edinburgh
   - name: Ruini Qu
-    email: rqu@ed.ac.uk
+    email: R.Qu@ed.ac.uk
     affiliations: Edinburgh Business School, University of Edinburgh
   - name: Stuart King
     email: S.King@ed.ac.uk
