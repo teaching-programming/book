@@ -1,74 +1,279 @@
 ---
-title: "Title of Example Chapter (as will appear on top h1 header and in table of contents)"
+title: "The case for skills-based assessment in introductory programming courses"
 bibliography: references.bib
 author:
-  - name: Author One
-    email: author@one.com
+  - name: Elizabeth Pankratz
+    email: elizabeth.pankratz@ed.ac.uk
     corresponding: true
-    affiliations: Edinburgh Medical School, University of Edinburgh
-  - name: Author Two
-    email: author@two.com
-    affiliations: Edinburgh Medical School, University of Edinburgh
-  - name: Author Three
-    email: author@three.com
-    affiliations: School of Mathematics and Maxwell Institute for the Mathematical Sciences, University of Edinburgh
+    affiliations: School of Philosophy, Psychology, and Language Sciences, University of Edinburgh
 
 keywords:
-  - markdown
-  - example
+  - alternative assessment
+  - skills-based grading
+  - case study
 ---
 
-## Your first top-level section
+## In this chapter
 
-### A subsection
-
-This is an example subsection, starting with `###`.
-
-## Quarto Markdown quick examples
-
-### Citations
-
-An example citation [@williams2010pair]. You can also cite @williams2010pair in the text, without the brackets.
-
-This is a reference to a chapter of a book [@TeachProgAcross_C01]. You can find it in `references.bib`; it uses the `@inbook` type.
-
-The "References" section will be populated automatically at the bottom.
-
-### Footnotes
-
-This is some text with a footnote[^C00-myfootnote].
-
-[^C00-myfootnote]: Write the content of your footnote here.
-
-    If you need a multiline footnote, indent the following lines with 4 spaces...
-
-    ...like this. Everything indented will be part of the footnote.
-
-### URL links
-
-Use [link text](https://quarto.org) to include URL links; please refer to the accessibility guidance in the book submission guidelines.
-
-If it is absolutely necessary to display the full URL in the text, use `<...>`: <https://quarto.org>
-
-### Images
+To learn to program is to develop a new set of skills.
+In this chapter, I'll discuss an approach to course design and assessment that brings skill development to the fore: the skills-based assessment framework.
+I'll explore what makes this framework particularly good for teaching programming to new programmers, especially ones facing cultural, structural, and institutional disadvantages.
+And I'll share a case study from my own context: I work as a Lecturer in Psychology at the University of Edinburgh, teaching undergraduate Psychology students how to do statistics using R.
+With my colleagues, I have developed an introductory course for these students using the skills-based framework, and our experience will be the focus of the final part of this chapter.
 
 
-![This is the caption for an image, sized to take 70% of the screen width.](/chapters/images/C36_pair-programming-across-disciplines_online_ideas.png "Some Title, appears on mouse hover"){fig-alt="Some alt text for accessibility." width=70%}
+## What is skills-based assessment?
+
+A course built for skills-based assessment comes with an inventory of skills that the course developer wants their students to learn.
+For example, in our intro statistics course, skills include "I can represent binary predictors using treatment coding" and "I can transform a variable into z-scores"; in a more coding-focused course, skills might be something like "I can explain the difference between while loops and for loops" or "I can use pseudocode to write basic sorting algorithms".
 
 
-[![This is the caption for an image with a clickable link.](/chapters/images/C36_pair-programming-across-disciplines_online_ideas.png "Some Title, appears on mouse hover"){fig-alt="Some alt text for accessibility." width=70%}](https://quarto.org)
+The basic idea behind one possible variant of skills-based assessment, the one my team and I are using, goes as follows.
+As the course progresses, students work on developing each skill.
+They get multiple opportunities to show that they've gained each one.
+The only firm deadline is the very end of the course; until then, students can try to demonstrate a skill as many times as they need to or want to, and they won't be penalised at all for making multiple attempts.
+They get feedback on every attempt—why it succeeded or where it fell short.
+Once a student has successfully demonstrated a skill, then in the course's record-keeping, they have earned that skill permanently and cannot un-earn it.
+Each student's course outcome (whether number grade, letter grade, pass/fail, or something else) is some function of how many skills they earned.
+
+This basic idea is known in different circles under different names.
+For example, @ClarkTalbert2023 and @BuckmillerEtAl2017 call it "standards-based grading"; @OLearyStockwell2021, -@OLearyStockwell2022, and @ZurawEtAl2019 call it "skills-based grading"; and it's also similar to a cousin framework called "specifications-based grading" [@Nilson2014; @ClarkTalbert2023].
+
+I like the "skills-based" part of the name because it centres the skills, but I steer away from the "grading" part for a couple reasons.
+First, the skills-based course that my colleagues and I are developing will culminate in a pass/fail outcome, not a number/letter grade.
+I don't want the term "skills-based grading" to mislead students about how they'll be assessed.
+Second, I consider grades on the whole to be an unnecessary evil [see, e.g., @Kohn1993; @Stommel2023; @Blum2020], but "assessment" can be about assessing how a student is doing, about checking in and giving feedback on their learning journey—an approach which better encourages genuine learning [see, e.g., @AmbroseEtAl2010; @SambellEtAl2012].
 
 
-### Putting some content in a box
 
-:::{.callout-tip icon="false"}
-# Title of your box
+## Why is the skills-based framework well-suited for teaching new programmers?
 
-You can put some content in a box like this, called a [callout](https://quarto.org/docs/authoring/callouts.html), if you want it to be visually distinct from the rest of your chapter. This could be e.g. if you write an example or a short case study.
+In this section, I'll highlight three features of skills-based assessment that, in my view, make it much better than traditional weighted-averages grading for teaching programming to new programmers.
+Skills-based assessment:
 
-:::
+1. reduces students' academic anxiety and stress;
+1. lets students learn at their own pace; and
+1. helps students facing structural disadvantages to succeed.
 
 
+
+### 1. Reduces students' academic anxiety and stress
+
+Many students, especially those from non-STEM disciplines, are anxious about learning to program [an observation to which a whole chapter in this volume is dedicated: @TeachProgAcross_C33].
+And learning to program in a traditionally-graded course is like adding salt to the wound.
+Learning is messy, and mistakes are normal—arguably essential—along the way.
+But in traditionally-graded courses, mistakes are punished by lowering marks.
+
+On the other hand, the skills-based framework acknowledges and encourages the messy process of learning.
+For example, allowing students the chance to demonstrate a skill repeatedly, with no penalty for re-attempts, fosters in them a sense that it's okay to make a mistake and worthwhile to try again [@OLearyStockwell2021].
+And students also gain a sense of self-efficacy as they realise they can accomplish something that they couldn't do before [@ZurawEtAl2019].
+This leniency is a major reason why skills-based assessment has repeatedly been shown to lessen students' academic stress [e.g., @OLearyStockwell2021; @BuckmillerEtAl2017; @ZurawEtAl2019; @Lewis2022].
+
+In an ongoing research study, my colleagues and I are gathering data about how our skills-based course redesign impacts how our students feel about learning statistics and R programming.
+Based on the literature mentioned here, we hypothesise (and very much hope!) that our redesign will help ease our students' anxiety and stress.
+
+
+### 2. Lets students learn at their own pace
+
+Programming can be hard to learn.
+And while some people will take to it straight away, others need more time to develop this new way of thinking [@CaspersenBennedsen2007; @OffuttEtAl2017].
+But students in traditionally-graded courses don't always have the time they need.
+Students typically lose marks if they haven't grasped a concept by the time the course developer thinks they should have—even if they do figure it out later.
+
+In skills-based courses, learners are not held to the course developer's timeline.
+Students can demonstrate skills at any point during the course, so learners who benefit from a bit more time to learn can still succeed.
+@OffuttEtAl2017 report that letting students pace their own learning in an introductory computer science course has led to great results: students learn better and are reportedly disinclined toward academic dishonesty, because the time pressure that had motivated them to cheat has been lifted.
+
+
+### 3. Helps students facing structural disadvantages to succeed
+
+The culturally ideal programmer is an able-bodied white man.
+Anyone who diverges from this ideal, along whichever dimension or dimensions, has extra cultural and emotional work to do when learning to code.
+
+For example, @CarterJenkins1999 observed a "growing perception that female students are weaker at programming than their male counterparts" (p. 3), noting that female students tend to be less confident than male students and to underestimate their own ability more.
+In my earlier experience as a young female programmer, and now as a female teacher with many young female students, not much has changed about these views in the nearly three decades since.
+
+And adding in the intersectional experience of race, @Rea2022 recounts the striking words of Olivia, who organises coding bootcamps for marginalised and minoritised people:
+
+> I'm teaching women how to code.
+But it's bigger than that.
+What I'm really teaching them to do is how to unlearn what they've been taught.
+A lot of women of color, or women in general, have not been taught that science, math, coding, you name it, is for them.
+You're unlearning a thing, and you're learning a new skill.
+
+Further dimensions compound the challenge of belonging in traditional academic spaces, no matter what's being taught: physical disability, mental disability, care responsibilities, work duties, a different first language than the language of education.
+All of these disadvantages can present a serious barrier in traditionally graded courses, in which students are commonly graded on things that go beyond the course's content-related learning objectives, such as regular attendance, active verbal in-class participation, and (as mentioned above) the timeliness of their understanding.
+
+But in the skills-based framework, barriers like these are softened.
+Where clear expectations and goals are provided, less background knowledge is required, making the space more inclusive to people with different backgrounds [@Parker2018].[^1]
+As such, skills-based courses have been shown to achieve more equitable outcomes for a wider range of learners [e.g., by @OLearyStockwell2021; @OLearyStockwell2022].
+I really hope that the more flexible structure of skills-based assessment will help our intersectionally disadvantaged students build their skills as well as their sense of self-efficacy in a more compassionate space.
+
+[^1]: A well-formulated rubric may accomplish a similar goal, but rubrics tend to have two issues that skills do not. 
+  For one, by their nature, rubrics focus on the work's deficits until the very highest levels of achievement.
+  Here is an example from one of our earlier report-based assessments: "Results are mostly clear and logically presented.
+  Interpretation is mostly accurate but may lack depth in linkage to analysis strategy".
+  A rubric targets all the ways the student's product falls short from the ideal.
+  And for a student who already feels like they don't belong, deficit-focused approaches like this will not make them feel more welcome.
+  And for another, imagine being a student and receiving the feedback: "to get a higher mark, you need to add more depth in the linkage to analysis strategy".
+  What does it *mean* to "add depth"? 
+  And how will you know if you've successfully done it? 
+  Rubrics tend not to be as explicitly actionable as skills, and they tend to require background academic knowledge to successfully interpret—knowledge which educators take for granted but which not all students will have.
+ 
+
+Finally, a note for even the culturally ideal student of programming: any person at any time could experience sickness, injury, or grief, or may just need time away to, say, bring their cat to the vet.
+Everybody benefits from inclusive pedagogy.
+
+For further discussion of inclusion and accessibility in teaching programming, see @TeachProgAcross_C14 in this volume.
+
+
+## Case study: Developing a skills-based course introducing statistics using R
+
+For all the reasons discussed above and more, my team and I in Psychology at the University of Edinburgh are using the skills-based framework to redesign our undergraduate statistics curriculum.
+The [redesigned first-year course (link to the University of Edinburgh course catalogue DRPS)](https://www.drps.ed.ac.uk/26-27/dpt/cxpsyl08013.htm) will launch in September 2026, so as of this writing, no students have experienced it yet.
+In this section, I'll describe the path we took [largely guided by @ClarkTalbert2023, Chapter 11] and some key decisions we made along the way.
+
+
+### Our development process
+
+We began by dreaming up, in very broad strokes, what topics and methods we wanted to cover in our ideal version of the course.
+Our early notes included, for example, "intro tidyverse", "descriptive stats", and "simple linear model".
+Once we all agreed on a set of topics and a rough order in which they'd appear, we dove into the weeds to develop a finer-grained list of things we want students to be able to do, such as:
+
+- Install packages in R.
+- Create new columns in a dataframe.
+- Summarise numeric variables using the mean.
+
+We ended up with a list of skills numbering between 80 and 100.
+This list grew and shrunk and changed over time as our ideas kept flowing.
+These are far from the set of skills we'll actually assess, but this early representative list of skills was absolutely good enough for the steps that would follow.
+
+At the same time, we also considered the course's submission and feedback systems.
+How and when can students evidence skills?
+What kind of feedback will they receive?
+
+We observed that many skills could be automatically checked (for example, identifying the code that would accomplish a given task), while a handful would require human review (for example, writing up a description of a given data set).
+
+We decided to check most skills automatically using quizzes on our learning management system Blackboard Learn.
+These quizzes pull from a pre-built question pool for each skill.
+If students answer a question correctly, then that counts as evidencing the given skill.
+After submitting their answer, students will see automated feedback about how to solve the question and common misconceptions.
+
+We decided to check the remaining skills that required human review at two points, one at the end of each semester.
+Students would be able to submit their responses (also on Learn) at any time, but to keep marking overhead reasonable, we only review their responses and give feedback twice a year.
+The feedback will be uniform across all students and simple, something like "successful", "almost", or "not yet" [@ClarkTalbert2023].
+For more specific guidance, students will be able to talk to us during the weekly coding workshops and our office hours.
+
+Once these basic structures were in place, we began properly consulting with stakeholders [@Sackstein2015].
+From the beginning, we had support from the head of our subject area, which made every other consultation much simpler.
+We asked for input from the following groups of people:
+
+- Students (but don't expect a huge turn-out—we hosted an in-person drop-in feedback session, to which two of our approximately 400 students came, and we also sent out an online feedback form, to which four students responded).
+- Academic staff (we hosted a staff-focused drop-in session and sent out an online feedback form, which altogether yielded a handful more responses from staff than from students).
+- Professional services staff (especially the very knowledgeable people who deal with the back-end of inputting student grades into the institution's software system; they helped us identify and solve problems we had never considered).
+
+After integrating the very useful input we got from all these people (examples of which I'll mention below), we submitted the proposal to the committee that processes course changes.
+
+At that point, with the administrative overhead off our desks for a while, we started to fine-tune the skills that the first iteration of the course will actually assess.
+
+
+### Top tips for writing assessment skills
+
+Designing the skills themselves is a creative logistical challenge with many degrees of freedom.
+In this section, I'll walk through how we resolved two major questions that came up repeatedly along the way: how specific vs. how high-level should each skill be? 
+And what level of cognitive engagement should each skill call for?
+
+
+#### Granularity of assessment skills
+
+In our early list of topics, we wrote, for example, that we want students to learn to summarise data using the mean, the median, and the mode.
+How many skills should we use to assess this learning?
+
+One option is to use one skill per measure:
+
+- I can summarise numeric variables using the mean.
+- I can summarise numeric variables using the median.
+- I can summarise categorical variables using the mode.
+
+Another option is to consolidate both numeric summary measures into a single skill:
+
+- I can summarise numeric variables using appropriate measure(s) of central tendency.
+- I can summarise categorical variables using appropriate measure(s) of central tendency.
+
+A third option is to consolidate again:
+
+- I can summarise variables using appropriate measure(s) of central tendency.
+
+In principle, one could consolidate arbitrarily far, depending on the focus of the course: from "I can conduct an exploratory data analysis" up to "I can analyse data", or even beyond. 
+Here, for the purposes of illustration, I will focus on the lowest three levels, since they are the most pertinent ones for our specific aims.
+
+The relationship between these different levels of skills is shown in Figure 1, along with some useful vocabulary offered by @ClarkTalbert2023[p. 159].
+
+
+![Figure 1. An example hierarchy of data summary skills, annotated with the levels described by @ClarkTalbert2023: course-level objectives, assessment-level objectives (a subset of which are the skills we want to assess), and lesson-level objectives.](chapters/images/C38_skills-based-assessment_levels.png "Hierarchy of skills, from course-level (most general), through assessment-level (medium-specific), to lesson-level (most specific)."){fig-alt="A tree diagram with four tiers of nodes, labelled with three levels of outcomes. The first tier contains a node captioned 'summarise data', which is a course-level objective. This node has two child nodes, 'compute measures of central tendency' and 'compute measures of dispersion', which are assessment-level objectives. The 'central tendency' node itself has two child nodes, which are also assessment-level objectives, labelled 'summarise numeric data' and 'summarise categorical data'. The 'numeric data' node has two children, labelled 'summarise data using the mean' and 'summarise data using the median'. The 'categorical data' node has one child, labelled 'summarise data using the mode'. All of these last three nodes are lesson-level objectives." width=70%}
+
+At the very top of this hierarchy, in darkest blue, are what Clark and Talbert call the "course-level objectives": the broad, encompassing learning objectives for the entire course.
+Our running example belongs to a course-level objective like "I can summarise data", an objective which involves measures not just of central tendency but also of dispersion, for example.
+
+Jumping to the very bottom of this hierarchy, in lightest blue, we see the "lesson-level objectives": what we want students to learn from individual lessons.
+Lesson-level objectives map fairly cleanly to the fine-grained list of learning objectives that we drafted early on.
+
+In between these two extremes, in medium blues, we see the "assessment-level objectives".
+Somewhere in this middle ground are the skills that we will assess.
+
+Do we want to make absolutely sure that students can summarise numeric and categorical variables individually?
+If we do, then a larger quantity of lower-level skills may be the way to go.
+Or do we assume that if a student can correctly find a sample's mean, say, they can probably also find the median and mode?
+If that assumption seems reasonable, then the higher-level skill might suffice.
+
+In a coding course, an analogue to this quandary might be the following:
+Will students be assessed on appropriate use of control structures, broadly speaking?
+Or separately on being able to appropriately use if/then/else statements and various kinds of loops?
+Or, finer-grained, on specific structures like if/then, if/else, for loops, while loops, and so on?
+
+In our case, for the data summary example, it is reasonable enough to assume that a student who can find the mean can probably also find the median and the mode.
+And further, we are also trying to keep the sheer number of skills in check (the current list, as of this writing, contains about 40).
+We therefore chose to assess the most consolidated, broadest, highest-level version of skills wherever we could.
+
+
+
+#### Cognitive level of assessment skills
+
+Each skill should call for an action that a student can easily understand and that an assessor can easily observe [@ClarkTalbert2023].
+But for a given skill, we found that often, several different actions will all seem reasonable.
+For example, after students learn about t-tests, do we want them to be able to *conduct* a t-test, or to *explain* the logic behind a t-test?
+
+Choosing the action verb is a weighty decision.
+Different verbs, like "conduct" vs. "explain", invoke different levels of cognitive engagement, as we know from frameworks like Bloom's taxonomy [@BloomEtAl1956; @AndersonKrathwohl2001] and the SOLO (Structure of the Observed Learning Outcome) taxonomy [@BiggsCollis1982].
+
+In an early version of the course design, we had imagined that students could achieve one of three possible course outcomes: Merit, Pass, or Fail.
+This design allowed us two sets of skills: a "core" set of skills, which would cover simply conducting statistical tests, as well as an "advanced" set of skills, which would add on the deeper conceptual understanding.
+If students demonstrated both core and advanced skills, they would receive a "Merit" outcome; if they demonstrated only core skills, they would receive a "Pass".
+[I note that pedagogically, dangling the "Merit" carrot may have many of the same demotivating effects as traditional grading—see, e.g., @Kohn1993.]
+We discovered, though, that a categorical three-level course outcome is impossible within the strictures of our institution's software system—one example of many to illustrate why consulting with professional services colleagues is absolutely key.
+
+In the later version of the course, we narrowed the outcomes down to Pass and Fail (an option welcomed by several students we talked to, who liked that it frees them from the stress of "chasing an A").
+With no "Merit" category, we set aside the core vs. advanced sets of skills.
+Again, we faced a choice between "conduct" and "explain"—but again, @ClarkTalbert2023 offer guidance.
+They comment (p. 165) that hands-on, skills-building courses tend to use vocabulary from the more fundamental, less abstract levels of Bloom's taxonomy, whereas more conceptually-focused courses tend to use the more abstract, higher-level verbs.
+We want our students to focus on building skills, so we opted for the more hands-on "conduct a t-test" variant throughout.
+
+
+## The big skills-based picture
+
+To conclude, let's zoom back out: what makes skills-based assessment well-suited for helping students learn to program?
+The picture I hope to have painted in this chapter shows a different way of checking in on how people learn, one that genuinely recognises students as the learners they are, not just as faulty repositories for the information we bestow [@Freire1996].
+Because skills-based assessment mitigates common causes of anxiety and softens many structural barriers that students face, it is our framework of choice for helping new programmers start their learning journey.
+
+
+
+## Acknowledgements
+
+This chapter would not exist without:
+
+- Franziska McManus, who first suggested I share these ideas in this book.
+- Itamar Kastner, who introduced me to skills-based assessment and who continues to inspire the best parts of my practice.
+- Emma Waterston, Josiah King, and Umberto Noè, my colleagues on the Psychology stats team, who are all incredibly caring educators and fun, thoughtful, and thought-provoking collaborators.
 
 
 ::: {.content-visible when-format="html" unless-format="epub"}
