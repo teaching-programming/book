@@ -1,0 +1,1253 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.27">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Nguyen Q. Chien">
+
+<title>Changing civil engineering students’ mindset toward programming – Teaching Programming across Disciplines</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./C33_coding-anxiety.html" rel="next">
+<link href="./C23_pair-programming-fusion.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-67525df380fad31e868e2dec58263318.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="_theme/styles.css">
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./C32_civil-engineering.html"><span class="chapter-title">Changing civil engineering students’ mindset toward programming</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Teaching Programming across Disciplines</a> 
+        <div class="sidebar-tools-main">
+    <div class="dropdown">
+      <a href="" title="Download" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Download"><i class="bi bi-download"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="./teaching_programming_across_disciplines.pdf">
+              <i class="bi bi-file-pdf pe-1"></i>
+            Download PDF
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="./teaching_programming_across_disciplines.epub">
+              <i class="bi bi-journal pe-1"></i>
+            Download ePub
+            </a>
+          </li>
+      </ul>
+    </div>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Teaching Programming across Disciplines</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./00-chapter-template.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Title of Example Chapter (as will appear on top h1 header and in table of contents)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C07_teaching-C-to-novices.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Second Languages: Teaching C to Python+Jupyter Novices</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C11_sequential-vs-simultaneous.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Sequential vs.&nbsp;Simultaneous: Approaches to Learning Programming and Statistics</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C12_pair-programming-overview.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Where do I even start with Pair Programming in my classroom? Conversation with seasoned practitioners.</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C15_programming-without-computers.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Removing Barriers by Programming Without Computers</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C23_pair-programming-fusion.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Learning Together Across Modes: Online and On-site Pair Programming in a Fusion Course</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C32_civil-engineering.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Changing civil engineering students’ mindset toward programming</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C33_coding-anxiety.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Overcoming coding anxiety: reflections and strategies</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C36_pair-programming-across-disciplines.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Structured group work with assigned asymmetrical roles and switching - Lessons from Pair Programming across disciplines</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./99-bibliography.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bibliography</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar"><div class="quarto-margin-header"><div class="margin-header-item">
+<details id="accessibility-controls">
+    <summary>Display options</summary>
+  
+    <div class="control-group">
+        <label for="fontSizeSlider">Font size</label>
+        <input type="range" id="fontSizeSlider" min="8" max="32" value="16">
+        <span id="fontSizeValue">16</span>px
+    </div>
+  
+    <div class="control-group">
+        <label for="eyeStrainSlider">Eye strain</label>
+        <input type="range" id="eyeStrainSlider" min="0" max="50" value="0">
+        <span id="eyeStrainValue">0</span>%
+    </div>
+  
+    <div class="control-group">
+        <label for="hueRotateSlider">Hue</label>
+        <input type="range" id="hueRotateSlider" min="0" max="360" value="0">
+        <span id="hueRotateValue">0</span>
+    </div>
+  
+    <div class="control-group">
+        <label for="paddingSlider">Padding</label>
+        <input type="range" id="paddingSlider" min="0" max="12" value="3">
+        <span id="paddingValue">0</span>
+    </div>
+  
+    <div class="control-group">
+        <label for="lineSpacingSlider">Spacing</label>
+        <input type="range" id="lineSpacingSlider" min="80" max="250" value="150">
+        <span id="lineSpacingValue">150</span>%
+    </div>
+  
+    <div class="control-group">
+        <label for="fontFamily">Font</label>
+        <select id="fontFamily">
+            <option value="'Atkinson Hyperlegible', sans-serif">Atkinson Hyperlegible</option>
+            <option value="Arial, Helvetica, sans-serif">Sans-serif</option>
+            <option value="Georgia, 'Bitstream Charter', Times, serif">Serif</option>
+        </select>
+    </div>
+  
+    <div class="control-group">
+        <button id="resetDefaults">Reset to Defaults</button>
+    </div>
+
+</details>
+</div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#code-implementation" id="toc-code-implementation" class="nav-link" data-scroll-target="#code-implementation">Code Implementation</a>
+  <ul class="collapse">
+  <li><a href="#logic-of-calculation" id="toc-logic-of-calculation" class="nav-link" data-scroll-target="#logic-of-calculation">Logic of calculation</a></li>
+  <li><a href="#dimensions-and-units-in-civil-engineering" id="toc-dimensions-and-units-in-civil-engineering" class="nav-link" data-scroll-target="#dimensions-and-units-in-civil-engineering">Dimensions and units in civil engineering</a></li>
+  <li><a href="#matrix-manipulation" id="toc-matrix-manipulation" class="nav-link" data-scroll-target="#matrix-manipulation">Matrix manipulation</a></li>
+  </ul></li>
+  <li><a href="#code-reuse" id="toc-code-reuse" class="nav-link" data-scroll-target="#code-reuse">Code reuse</a></li>
+  <li><a href="#code-development" id="toc-code-development" class="nav-link" data-scroll-target="#code-development">Code development</a>
+  <ul class="collapse">
+  <li><a href="#mental-orientation" id="toc-mental-orientation" class="nav-link" data-scroll-target="#mental-orientation">Mental orientation</a></li>
+  </ul></li>
+  <li><a href="#generalisation" id="toc-generalisation" class="nav-link" data-scroll-target="#generalisation">Generalisation</a></li>
+  <li><a href="#tooling" id="toc-tooling" class="nav-link" data-scroll-target="#tooling">Tooling</a></li>
+  <li><a href="#good-practices" id="toc-good-practices" class="nav-link" data-scroll-target="#good-practices">Good practices</a></li>
+  <li><a href="#final-thoughts" id="toc-final-thoughts" class="nav-link" data-scroll-target="#final-thoughts">Final thoughts</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const fontSizeSlider = document.getElementById('fontSizeSlider');
+        const fontSizeValue = document.getElementById('fontSizeValue');
+
+        const hueRotateSlider = document.getElementById('hueRotateSlider');
+        const hueRotateValue = document.getElementById('hueRotateValue');
+
+        const eyeStrainSlider = document.getElementById('eyeStrainSlider');
+        const eyeStrainValue = document.getElementById('eyeStrainValue');
+
+        const paddingSlider = document.getElementById('paddingSlider');
+        const paddingValue = document.getElementById('paddingValue');
+
+        const lineSpacingSlider = document.getElementById('lineSpacingSlider');
+        const lineSpacingValue = document.getElementById('lineSpacingValue');
+
+        const fontFamilySelect = document.getElementById('fontFamily');
+
+        const html = document.documentElement;
+        const resetButton = document.getElementById('resetDefaults');
+
+        // Define default values
+        const defaults = {
+            fontSize: 16,
+            hueRotate: 0,
+            eyeStrain: 0,
+            padding: 0,
+            lineSpacing: 150,
+            fontFamily: "'Atkinson Hyperlegible', Arial, Helvetica, sans-serif"
+        };
+
+        function updateStyles() {
+            html.style.setProperty('--bs-root-font-size', fontSizeSlider.value + 'px');
+            html.style.setProperty('--hue-rotate', hueRotateSlider.value + 'deg');
+            html.style.setProperty('--eye-strain', eyeStrainSlider.value + '%');
+            html.style.setProperty('--padding', paddingSlider.value + 'em');
+            html.style.setProperty('--line-spacing', lineSpacingSlider.value + '%');
+            html.style.setProperty('--bs-body-font-family', fontFamilySelect.value);
+
+            fontSizeValue.textContent = fontSizeSlider.value;
+            hueRotateValue.textContent = hueRotateSlider.value;
+            eyeStrainValue.textContent = eyeStrainSlider.value;
+            paddingValue.textContent = paddingSlider.value;
+            lineSpacingValue.textContent = lineSpacingSlider.value;
+
+            saveSettings();
+        }
+
+        // Function to save settings to localStorage
+        function saveSettings() {
+            const settings = {
+                fontSize: fontSizeSlider.value,
+                hueRotate: hueRotateSlider.value,
+                eyeStrain: eyeStrainSlider.value,
+                padding: paddingSlider.value,
+                lineSpacing: lineSpacingSlider.value,
+                fontFamily: fontFamilySelect.value
+            };
+            localStorage.setItem('accessibilitySettings', JSON.stringify(settings));
+        }
+
+        // Function to load settings from localStorage
+        function loadSettings() {
+            const savedSettings = localStorage.getItem('accessibilitySettings');
+            if (savedSettings) {
+                const settings = JSON.parse(savedSettings);
+                fontSizeSlider.value = settings.fontSize;
+                hueRotateSlider.value = settings.hueRotate;
+                eyeStrainSlider.value = settings.eyeStrain;
+                paddingSlider.value = settings.padding;
+                lineSpacingSlider.value = settings.lineSpacing;
+                fontFamilySelect.value = settings.fontFamily;
+                updateStyles();
+            }
+        }
+
+        function resetToDefaults() {
+            fontSizeSlider.value = defaults.fontSize;
+            hueRotateSlider.value = defaults.hueRotate;
+            eyeStrainSlider.value = defaults.eyeStrain;
+            paddingSlider.value = defaults.padding;
+            lineSpacingSlider.value = defaults.lineSpacing;
+            fontFamilySelect.value = defaults.fontFamily;
+            updateStyles();
+            localStorage.removeItem('accessibilitySettings');
+        }
+
+        fontSizeSlider.oninput = updateStyles;
+        hueRotateSlider.oninput = updateStyles;
+        eyeStrainSlider.oninput = updateStyles;
+        paddingSlider.oninput = updateStyles;
+        lineSpacingSlider.oninput = updateStyles;
+        fontFamilySelect.onchange = updateStyles;
+        resetButton.onclick = resetToDefaults;
+
+        loadSettings();
+
+    });
+</script>
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-title">Changing civil engineering students’ mindset toward programming</span></h1>
+</div>
+
+
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Author</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Nguyen Q. Chien </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            School of Engineering, University of Edinburgh
+          </p>
+      </div>
+  </div>
+
+<div class="quarto-title-meta">
+
+      
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>It is high time that students from civil engineering (CivEng) get on with some serious programming. Civil engineering involves creating solutions to real-world problems <span class="citation" data-cites="wood2012civil">(<a href="#ref-wood2012civil" role="doc-biblioref">Wood 2012</a>)</span>. As such, each solution tends to be unique and associated with the particular environmental and societal circumstances pertaining to the local community. It is no surprise that computing had early been adopted in CivEng, with programming classes added to the curriculum, as reported in a US survey <span class="citation" data-cites="hoffbeck2016teaching">(<a href="#ref-hoffbeck2016teaching" role="doc-biblioref">Hoffbeck et al. 2016</a>)</span>. After all, CivEng students cannot just sit there and look at their university friends doing all kinds of interesting stuff with code or AI/machine learning. But what are the difficulties behind the scenes? And why do I focus here on such a narrow engineering discipline?</p>
+<p>Civil engineers have good logical ability, especially deduction, using and manipulating mathematical expressions, dealing with real dimensions, approximation and optimisation. They have a firm belief in the deterministic: an expected system for this input must yield that output.</p>
+<p>Until they start to realise that the computer system (or the compiler, but anyway the students don’t care about this) tends to play tricks on them. For example, a code snippet copied from the online tutorial doesn’t work, or merging two innocent-looking code chunks throws an error. That’s when they realise that they will need a good approach to programming. The class instructor, too, will need to dedicate time to create good code examples as teaching materials — perhaps examples that illustrate some key principles in programming but merge seamlessly with domain knowledge.</p>
+<p>This chapter presents some of my experience in tutoring two classes in Thuyloi University (Vietnam), one for final-year undergraduates and one for an MSc class, with use of the Python and Julia programming languages. In both cases, instead of delving into the merits of each language or making any comparison between them, I focus on the practical aspects of solving a typical civil engineering problem — sediment transport. For this problem, we are interested in the amount of sand moving in natural bodies of water (e.g.&nbsp;lakes, rivers) and how the bed elevation of such lakes/rivers changes over time, which has vast applications in real development projects. There is some maths and physics involved, but I will provide simple explanations. Hopefully, by the end of the chapter we can pinpoint some “good practices” for engineering students starting to write their own code. The chapter may also benefit CivEng class instructors who are aiming toward more effective lectures.</p>
+</section>
+<section id="code-implementation" class="level2">
+<h2 class="anchored" data-anchor-id="code-implementation">Code Implementation</h2>
+<section id="logic-of-calculation" class="level3">
+<h3 class="anchored" data-anchor-id="logic-of-calculation">Logic of calculation</h3>
+<p>CivEng students generally do not encounter any difficulty in implementing a series of formulae in order, as well as translating a formula to code. For example, in the Python snippet below, the drag coefficient is readily calculated according to the math equation:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Math</th>
+<th>Code</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math display">\[ C_D = \left[ \frac{0.4}{1 + \ln(z_0 / h)} \right]^2\ \]</span></td>
+<td><div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>CD <span class="op">=</span> (<span class="fl">0.4</span><span class="op">/</span>(math.log(h<span class="op">/</span>zo)<span class="op">-</span><span class="dv">1</span>))<span class="op">**</span><span class="dv">2</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></td>
+</tr>
+</tbody>
+</table>
+<p>CivEng students are well aware of complex engineering formulas and would be willing to write lengthy statements for mathematical expressions. Furthermore, they have adopted the style of naming variables according to the symbolic representation which is widely agreed in the literature. For example, here the name <code>CD</code> is used instead of choosing a more explicit name like <code>drag_coefficient</code>.</p>
+<p>Even a branching construction would not cause much difficulty, for example to calculate the critical flow velocity using Python. The CivEng student surely would not get confused with units during computation, as they can handily type in conversion factors along with the code:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 51%">
+<col style="width: 48%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Math</th>
+<th>Code</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math display">\[
+U_{cr} = \left\{
+\begin{array}{ll}
+{0.19} \, (d_{50})^{0.1} \log_{10}\left(\frac{4h}{d_{90}}\right) &amp;
+\text{for } \;  0.1 \le d_{50} \le 0.5 \text{  mm}; \\
+{8.5} \, (d_{50})^{0.6} \log_{10} \left(\frac{4h}{d_{90}} \right) &amp;
+\text{for } \; {0.5} \le d_{50} \le 2 \text{ mm};
+\end{array}
+\right.
+\]</span></td>
+<td><div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="fl">0.1E-3</span> <span class="op">&lt;=</span> d50 <span class="op">&lt;=</span> <span class="fl">0.5E-3</span>: <span class="co"># mm</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  Ucr <span class="op">=</span> <span class="fl">0.19</span><span class="op">*</span>(d50<span class="op">**</span><span class="fl">0.1</span>)<span class="op">*</span>math.log10(<span class="dv">4</span><span class="op">*</span>h<span class="op">/</span>d90)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="cf">elif</span> <span class="fl">0.5E-3</span> <span class="op">&lt;</span> d50 <span class="op">&lt;=</span> <span class="fl">2E-3</span>: <span class="co"># mm</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  Ucr <span class="op">=</span> <span class="fl">8.5</span><span class="op">*</span>(d50<span class="op">**</span><span class="fl">0.6</span>)<span class="op">*</span>math.log10(<span class="dv">4</span><span class="op">*</span>h<span class="op">/</span>d90)</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(<span class="st">'Warning: d50 out of range to apply formula for Ucr.'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="dimensions-and-units-in-civil-engineering" class="level3">
+<h3 class="anchored" data-anchor-id="dimensions-and-units-in-civil-engineering">Dimensions and units in civil engineering</h3>
+<p>A particular strength of the CivEng student is having keen eyes on physical quantities. The branching statement presented above shows that the student was aware of units and applied corresponding coefficients. The ability to tell meaning from numbers allows them to check intermediate results and correct potential errors during computation. Another advantage is that by adhering to the rules of dimensions in physics, students naturally familiarise themselves with the type system and therefore will not have much difficulty with languages like C#, Java, or Scala, or writing type annotations in their Python code.</p>
+</section>
+<section id="matrix-manipulation" class="level3">
+<h3 class="anchored" data-anchor-id="matrix-manipulation">Matrix manipulation</h3>
+<p>In many circumstances, the CivEng student has to deal with matrices, such as when solving partial differential equations (PDEs). One of such typical equations is the mass balance equation, where the (time) change in “stock” is related to the spatial changes (gradients) of “flows”. It is not too difficult for the CivEng student to understand the finite difference technique and implement a naive version to solve PDEs. As an example, in the problem of sediment transport in rivers or seas, we consider solving the equation for <span class="math inline">\(z_b\)</span> (the underwater bed elevation), which changes in time, given the two fluxes of sediment, represented as two components (<span class="math inline">\(q_x\)</span> and <span class="math inline">\(q_y\)</span>) in the two horizontal directions, <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span>. It is helpful to visualise the river bed or seabed as a “tiled” surface where each cell has its own elevation <span class="math inline">\(z_b\)</span>. See the diagram (<a href="#fig-sediment" class="quarto-xref">Figure&nbsp;<span>8.1</span></a>) for a simplified representation of the quantities involved.</p>
+<div id="fig-sediment" class="quarto-float quarto-figure quarto-figure-center anchored" alt="A diagram in 3D, showing a surface split into four tiles of different elevations.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-sediment-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./chapters/images/ch32/SedTrans.PNG" class="img-fluid figure-img" alt="A diagram in 3D, showing a surface split into four tiles of different elevations.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-sediment-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8.1: Sediment transport
+</figcaption>
+</figure>
+</div>
+<p>It should be noted here that the CivEng student is equipped with numerical analysis skills and can approximate the differential in terms of finite differences.</p>
+<p><strong>Differential equation</strong></p>
+<p><span class="math display">\[ \frac{\partial z_b}{\partial t} = -\frac{1}{1-n} \left( \frac{\partial q_x}{\partial x} + \frac{\partial q_y}{\partial y}  \right) \]</span></p>
+<p>where <span class="math inline">\(z_b\)</span>, <span class="math inline">\(q_x\)</span>, and <span class="math inline">\(q_y\)</span> are functions of <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span>. Therefore, we will also make <span class="math inline">\(\frac{\partial z_b}{\partial t}\)</span> a function of <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span>.</p>
+<p><strong>Numerical approximation</strong></p>
+<p><span class="math display">\[ \left( \frac{\partial q_x}{\partial x} \right) = \frac{q_{i,j} - q_{i-1,j}}{dx} \]</span></p>
+<p>Here the numerical approximation for one flux gradient term is illustrated.</p>
+<p>The naive approach is to use a nested list to emulate a 2-D array, which doesn’t seem very efficient. But that’s enough for the CivEng who wants to get the job done. This way, the code is more transparent when using an index system with (<span class="math inline">\(i \pm 1\)</span>). Notably, there is similarity in operators and operands between Python and Julia (thus I will place ellipses in the Julia code). The differences are in for-loop syntax and the 1-based indexing system in Julia as opposed to Python’s 0-based. A <a href="https://nbviewer.org/url/coastal-study.uk/sed.trans/SedTrans.ipynb">notebook implementation</a> is provided online.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Python</th>
+<th>Julia</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>,nx):</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> j <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>,ny):</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    dqxdx[i][j] <span class="op">=</span> (qx[i][j]<span class="op">-</span>qx[i<span class="op">-</span><span class="dv">1</span>][j])<span class="op">/</span>dx</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    dqydy[i][j] <span class="op">=</span> (qy[i][j]<span class="op">-</span>qy[i][j<span class="op">-</span><span class="dv">1</span>])<span class="op">/</span>dy</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    dzbdt[i][j] <span class="op">=</span> <span class="op">-</span>(<span class="dv">1</span><span class="op">/</span>(<span class="dv">1</span><span class="op">-</span>n)) <span class="op">*</span> (dqxdx[i][j] <span class="op">+</span> dqydy[i][j])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></td>
+<td><div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="op">=</span> <span class="fl">1</span><span class="op">:</span>nx</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> j <span class="op">=</span> <span class="fl">1</span><span class="op">:</span>ny</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    dqxdx[i,j] <span class="op">=</span> <span class="op">...</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>    dqydy[i,j] <span class="op">=</span> <span class="op">...</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>    dzbdt[i,j] <span class="op">=</span> <span class="op">...</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>  <span class="cf">end</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="cf">end</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></td>
+</tr>
+</tbody>
+</table>
+<p>The use of matrix operations (e.g.&nbsp;using <a href="https://numpy.org/">NumPy</a> arrays in Python) is faster compared to the “naive” version above, usually quoted as 10 times <span class="citation" data-cites="langtangen2006python">(<a href="#ref-langtangen2006python" role="doc-biblioref">Langtangen 2006</a>)</span>. On the downside, the matrix notation obscures the indices <code>i</code> and <code>j</code> commonly found in numerical methods (see <a href="#fig-lattice1" class="quarto-xref">Figure&nbsp;<span>8.2</span></a>, where part of a stencil<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> is shown. In this part, where arrows represent subtraction, we are finding “local” difference in the same <code>qx</code> array). When using matrix manipulation, the bounds must be specified correctly in all matrix subscripts (see <a href="#fig-lattice2" class="quarto-xref">Figure&nbsp;<span>8.3</span></a> and the code below). So, there should be a consideration in choosing either approach.</p>
+<p><strong>Looping through index</strong></p>
+<div id="fig-lattice1" class="quarto-float quarto-figure quarto-figure-center anchored" alt="A lattice with dots organised in 2 rows and 4 columns.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-lattice1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./chapters/images/ch32/Lattice1.PNG" class="img-fluid figure-img" alt="A lattice with dots organised in 2 rows and 4 columns.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-lattice1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8.2: Lattice 1
+</figcaption>
+</figure>
+</div>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 49%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Python</th>
+<th>Julia</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Python</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>dqxdx[i][j] <span class="op">=</span> (qx[i][j]<span class="op">-</span>qx[i<span class="op">-</span><span class="dv">1</span>][j])<span class="op">/</span>dx</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></td>
+<td><div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Both Python and Julia</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>dqxdx[i,j] <span class="op">=</span> (qx[i,j]<span class="op">-</span>qx[i<span class="op">-</span><span class="fl">1</span>,j])<span class="op">/</span>dx</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Matrix-based computation</strong></p>
+<div id="fig-lattice2" class="quarto-float quarto-figure quarto-figure-center anchored" alt="A lattice with dots organised in 2 rows and 4 columns, with the 2 left dots, the 4 central dots, and the 2 right dots grouped together.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-lattice2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./chapters/images/ch32/Lattice2.PNG" class="img-fluid figure-img" alt="A lattice with dots organised in 2 rows and 4 columns, with the 2 left dots, the 4 central dots, and the 2 right dots grouped together.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-lattice2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8.3: Lattice 2
+</figcaption>
+</figure>
+</div>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Python</th>
+<th>Julia</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>dqxdx[<span class="dv">0</span>:<span class="op">-</span><span class="dv">1</span>,:] <span class="op">=</span> (qx[<span class="dv">1</span>:,:] <span class="op">-</span> qx[<span class="dv">0</span>:<span class="op">-</span><span class="dv">1</span>,:])<span class="op">/</span>dx</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></td>
+<td><div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>dqxdx[<span class="fl">1</span><span class="op">:</span>nx<span class="op">-</span><span class="fl">1</span>,<span class="op">:</span>] <span class="op">=</span> (qx[<span class="fl">2</span><span class="op">:</span>nx,<span class="op">:</span>]<span class="op">-</span>qx[<span class="fl">1</span><span class="op">:</span>nx<span class="op">-</span><span class="fl">1</span>,<span class="op">:</span>])<span class="op">/</span>dx</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></td>
+</tr>
+</tbody>
+</table>
+<p>Another source of confusion is due to the concept of <a href="https://numpy.org/doc/stable/user/basics.copies.html">“views” in NumPy</a>, for which the submatrix, e.g.&nbsp;<code>dqxdx[0:-1,:]</code> in the code snippet above, is a <em>view</em> and not quite a <em>copy</em> of the array <code>dqxdx</code>. In essence, NumPy “views” will behave in unexpected ways. Sure, this can be explained to the students, but every such issue can add up and discourage the learners. Therefore, an “agreement” might be made beforehand, that the matrix <code>qx</code> here is calculated once and cannot be modified thereafter. Otherwise, you must switch to another programming language, e.g.&nbsp;MATLAB, although this comes with its own issues.</p>
+</section>
+</section>
+<section id="code-reuse" class="level2">
+<h2 class="anchored" data-anchor-id="code-reuse">Code reuse</h2>
+<p>To CivEng students, reusing code is actually more difficult than writing new code! While the students can implement the code quite well in terms of logic and calculation (see the previous section), they somehow feel embarrassed when having to perform the calculation again with a slightly different input data, or in the CivEng’s language, another “scenario”. Given the intuitive layout of code blocks in a notebook, the students tend to just copy-and-paste code and make minor edits, which leads to code with excessive repetition. Other related “gotchas” are discussed in other chapters of this book <span class="citation" data-cites="TeachProgAcross_C29 TeachProgAcross_C07">(<a href="#ref-TeachProgAcross_C29" role="doc-biblioref">Gemayel, Budiarto, and Bell 2026</a>; <a href="#ref-TeachProgAcross_C07" role="doc-biblioref">Skipsey et al. 2026</a>)</span>.</p>
+<p>During my tutorials in the past, students were exposed to a limited amount of pre-written code in the form of Jupyter notebooks only. By reading these Jupyter notebooks, the students were able to pick out relevant code cells and run them. They would know which chunks of code should be executed and in what order, so that no errors emerge showing undefined variables. But when students copy chunks of code from the sample file to their <em>own</em> notebook, renaming variables is often required.</p>
+<p>Another issue is lexical scoping. Being more acquainted to “physical” objects rather than information “pieces”, CivEng students would insist on using different names for variables appearing in both the inner and outer scopes despite the fact that these names would not conflict. This is reasonable for array data types, as in the case below, where the CivEng student creates a <code>zb_init</code> variable to store the initial state of the system (and the use of <code>copy()</code> to avoid the potential issues with using matrix views mentioned above). However, the situation is different for single numbers (scalars). Consider a variable for the characteristic “near-bed” flow velocity, <code>Uf</code>, which is created outside and being updated inside the function body, without affecting its original value.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9" data-lst-cap="Lexical scoping-aware example"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1"></a>zb <span class="op">=</span> np.zeros((nx,ny))</span>
+<span id="cb9-2"><a href="#cb9-2"></a>zb_init <span class="op">=</span> np.copy(zb)  <span class="co"># initial value</span></span>
+<span id="cb9-3"><a href="#cb9-3"></a>dt <span class="op">=</span> <span class="fl">2.0</span>  <span class="co"># const param</span></span>
+<span id="cb9-4"><a href="#cb9-4"></a>S <span class="op">=</span> <span class="fl">1E-4</span>  <span class="co"># const param</span></span>
+<span id="cb9-5"><a href="#cb9-5"></a>zs <span class="op">=</span> <span class="fl">1.0</span>  <span class="co"># const state variable</span></span>
+<span id="cb9-6"><a href="#cb9-6"></a>Uf <span class="op">=</span> np.sqrt(<span class="fl">9.81</span> <span class="op">*</span> zs <span class="op">*</span> S)</span>
+<span id="cb9-7"><a href="#cb9-7"></a></span>
+<span id="cb9-8"><a href="#cb9-8"></a></span>
+<span id="cb9-9"><a href="#cb9-9"></a><span class="kw">def</span> evolve():</span>
+<span id="cb9-10"><a href="#cb9-10"></a>  <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>,nx): </span>
+<span id="cb9-11"><a href="#cb9-11"></a>    <span class="cf">for</span> j <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>,ny):</span>
+<span id="cb9-12"><a href="#cb9-12"></a>      zb[i][j] <span class="op">+=</span> dzbdt[i][j] <span class="op">*</span> dt</span>
+<span id="cb9-13"><a href="#cb9-13"></a>  </span>
+<span id="cb9-14"><a href="#cb9-14"></a>  Uf <span class="op">=</span> np.sqrt(<span class="fl">9.81</span> <span class="op">*</span> (zs <span class="op">-</span> zb.mean()) <span class="op">*</span> S)</span>
+<span id="cb9-15"><a href="#cb9-15"></a></span>
+<span id="cb9-16"><a href="#cb9-16"></a></span>
+<span id="cb9-17"><a href="#cb9-17"></a><span class="cf">for</span> _ <span class="kw">in</span> <span class="bu">range</span>(nt):</span>
+<span id="cb9-18"><a href="#cb9-18"></a>  evolve()</span>
+<span id="cb9-19"><a href="#cb9-19"></a></span>
+<span id="cb9-20"><a href="#cb9-20"></a></span>
+<span id="cb9-21"><a href="#cb9-21"></a><span class="bu">print</span>(<span class="st">'Initial zb:'</span>, zb_init)</span>
+<span id="cb9-22"><a href="#cb9-22"></a><span class="bu">print</span>(<span class="st">'Initial Uf:'</span>, Uf)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="code-development" class="level2">
+<h2 class="anchored" data-anchor-id="code-development">Code development</h2>
+<section id="mental-orientation" class="level3">
+<h3 class="anchored" data-anchor-id="mental-orientation">Mental orientation</h3>
+<p>An important aspect of moving from a CivEng to a programmer is to re-imagine the conceptual model for the system. Compare:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 40%">
+<col style="width: 40%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>CivEng</th>
+<th>CompSci</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Paradigms:</strong></td>
+<td>imperative, procedural</td>
+<td>object-oriented</td>
+</tr>
+<tr class="even">
+<td><strong>Object type:</strong></td>
+<td>concrete, physically meaningful</td>
+<td>abstract, blueprint to generate instances</td>
+</tr>
+<tr class="odd">
+<td><strong>Action:</strong></td>
+<td>math and logic operations applied to parameters of the object</td>
+<td>objects’ methods invoked on instances</td>
+</tr>
+</tbody>
+</table>
+<p>Admittedly, it is not easy to persuade the student to adopt an OOP (Object Oriented Programming) style of programming to benefit future use. While for certain disciplines, e.g.&nbsp;Chemistry, the notion of class is inherent (e.g.&nbsp;class of elements), the CivEng is more inclined to think about real-world entities: a particular building, canal, etc. to be modelled.</p>
+<p>Unfortunately, the common situation for CivEng is that many handbooks and guidelines adopt the procedural approach which can be summarised as follows:</p>
+<ol type="1">
+<li>Check the set of inputs against some predefined criteria.</li>
+<li>Follow an established method step-by-step (such as the one in the <a href="https://nbviewer.org/url/coastal-study.uk/sed.trans/SedTrans.ipynb">SedTrans notebook</a> mentioned earlier) to arrive at some output (such as the vertical change in seabed level, <code>dzbdt</code>).</li>
+<li>Evaluate the result, <code>dzbdt</code> — is it in a reasonable range? Is it realistic, and how does it compare to similar studies in the past (“literature”)? Furthermore, is the computational routine <em>stable</em>, i.e.&nbsp;the numerical error does not grow up unbounded, through many iterations.</li>
+</ol>
+<p>Apparently, most of the computational workload here lends itself to imperative programming. We could think of OOP aspects in organising a class of problems presented in step (1), or a class of test cases in step (3), but that is all. CivEng still relies on researchers in physics whose perspectives clearly align to the model: data in → transformation → data out.</p>
+</section>
+</section>
+<section id="generalisation" class="level2">
+<h2 class="anchored" data-anchor-id="generalisation">Generalisation</h2>
+<p>CivEng students understand the use of functions and are adept in translating formulation of various calculation routines into functions. So that should be enough for generalising code, shouldn’t it? During a practice session, after having students estimate the derivative <span class="math inline">\(f'(x_0)\)</span> for the specific functions <span class="math inline">\(f(x) = x^2\)</span> and <span class="math inline">\(f(x) = \cos(x)\)</span> with finite differences, I required them to generalise their <code>deriv_*</code> function to accept any mathematical function. Well, how can we do that? — they doubted, until I showed that we can just pass the function under investigation as one of the inputs of the function <code>deriv</code> (see the Julia code below) — a first step toward functional programming.</p>
+<div id="lst-student-func" class="julia listing quarto-float quarto-figure quarto-figure-left anchored">
+<figure class="quarto-float quarto-float-lst figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-lst" id="lst-student-func-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Listing&nbsp;8.1: Student’s version
+</figcaption>
+<div aria-describedby="lst-student-func-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode numberSource julia number-lines code-with-copy"><code class="sourceCode julia"><span id="cb10-1"><a href="#cb10-1"></a>deriv_sq <span class="op">=</span> <span class="kw">function</span>(o, h)</span>
+<span id="cb10-2"><a href="#cb10-2"></a>  ((o <span class="op">+</span> h)<span class="op">^</span><span class="fl">2</span> <span class="op">-</span> (o <span class="op">-</span> h)<span class="op">^</span><span class="fl">2</span>) <span class="op">/</span> <span class="fl">2</span>h</span>
+<span id="cb10-3"><a href="#cb10-3"></a><span class="kw">end</span></span>
+<span id="cb10-4"><a href="#cb10-4"></a></span>
+<span id="cb10-5"><a href="#cb10-5"></a>deriv_cos <span class="op">=</span> <span class="kw">function</span>(o, h)</span>
+<span id="cb10-6"><a href="#cb10-6"></a>  (<span class="fu">cos</span>(o <span class="op">+</span> h) <span class="op">-</span> <span class="fu">cos</span>(o <span class="op">-</span> h)) <span class="op">/</span> <span class="fl">2</span>h</span>
+<span id="cb10-7"><a href="#cb10-7"></a><span class="kw">end</span></span>
+<span id="cb10-8"><a href="#cb10-8"></a></span>
+<span id="cb10-9"><a href="#cb10-9"></a><span class="fu">deriv_sq</span>(<span class="fl">0</span>, <span class="fl">1E-3</span>)</span>
+<span id="cb10-10"><a href="#cb10-10"></a><span class="fu">deriv_cos</span>(<span class="fl">0</span>, <span class="fl">1E-3</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</figure>
+</div>
+<div id="lst-recommended-func" class="julia listing quarto-float quarto-figure quarto-figure-left anchored">
+<figure class="quarto-float quarto-float-lst figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-lst" id="lst-recommended-func-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Listing&nbsp;8.2: Recommended version
+</figcaption>
+<div aria-describedby="lst-recommended-func-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode numberSource julia number-lines code-with-copy"><code class="sourceCode julia"><span id="cb11-1"><a href="#cb11-1"></a><span class="co"># A generic central-difference approximation</span></span>
+<span id="cb11-2"><a href="#cb11-2"></a>deriv <span class="op">=</span> <span class="kw">function</span>(f, o, h)</span>
+<span id="cb11-3"><a href="#cb11-3"></a>  (<span class="fu">f</span>(o <span class="op">+</span> h) <span class="op">-</span> <span class="fu">f</span>(o <span class="op">-</span> h)) <span class="op">/</span> <span class="fl">2</span>h</span>
+<span id="cb11-4"><a href="#cb11-4"></a><span class="kw">end</span></span>
+<span id="cb11-5"><a href="#cb11-5"></a></span>
+<span id="cb11-6"><a href="#cb11-6"></a><span class="fu">deriv</span>(x <span class="op">-&gt;</span> x<span class="op">^</span><span class="fl">2</span>, <span class="fl">0</span>, <span class="fl">1E-3</span>)</span>
+<span id="cb11-7"><a href="#cb11-7"></a><span class="fu">deriv</span>(x <span class="op">-&gt;</span> <span class="fu">cos</span>(x), <span class="fl">0</span>, <span class="fl">1E-3</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</figure>
+</div>
+</section>
+<section id="tooling" class="level2">
+<h2 class="anchored" data-anchor-id="tooling">Tooling</h2>
+<p>The students are happy with Jupyter notebooks during class. Syntax highlighting, code auto-completion, and embedded plot outputs are features that are highly appreciated. Nevertheless, a dedicated environment like VS Code is needed for students who want to develop larger programs with debugging and version control (e.g.&nbsp;using git). In another chapter of this book, <span class="citation" data-cites="TeachProgAcross_C29">Gemayel, Budiarto, and Bell (<a href="#ref-TeachProgAcross_C29" role="doc-biblioref">2026</a>)</span> mention the use of a Python debugger (<code>pdb</code>) in the Jupyter Notebook environment, yet the more recent Jupyter Lab features a more convenient visual debugger so that students can track the changes of variables during the flow of the program.</p>
+<p>Recently, there has been an increasing tendency to use AI in coding. While AI tools are a great boon for syntax checks and documentation, it would be detrimental to have AI chatbots generate the code skeleton and logic, as this part requires the ingenuity of civil engineers who possess the domain knowledge.</p>
+</section>
+<section id="good-practices" class="level2">
+<h2 class="anchored" data-anchor-id="good-practices">Good practices</h2>
+<p>This list is non-exhaustive yet would be useful for CivEng students starting to develop their code:</p>
+<ul>
+<li>Variable names should follow the widely adopted <strong>notations</strong> in civil engineering. When possible, use the Unicode characters for Greek letters, e.g., using α instead of <code>alpha</code> (subject to the language’s feature — this is favourable for Julia with keyboard shortcuts for such characters/symbols).</li>
+<li>Extensive and meaningful <strong>documentation</strong> is needed since there are many empirical formulae used in CivEng and the choice of a formula should be justified based on the context.</li>
+<li>Whenever the names are cluttered, consider using <strong>namespaces</strong> (knowledge of the engineering specialisation is required.)</li>
+<li>If facilitated by the language (in the case of Julia), prefer using <strong>loops with index variables</strong> (<code>[i±1]</code>) rather than implicit array position index (<code>[:]</code>).</li>
+<li>Generalise code with <strong>functions</strong>, so that you can reuse it later. This is particularly useful in CivEng, which heavily relies on various recipes. Each recipe can be implemented as a function.</li>
+<li>Using <strong>advanced features</strong> in Jupyter Lab or an IDE to organise and debug code (first step), and then aim toward collaboration, version control and testing.</li>
+</ul>
+</section>
+<section id="final-thoughts" class="level2">
+<h2 class="anchored" data-anchor-id="final-thoughts">Final thoughts</h2>
+<p>In summary, although there is not much material available for CivEng students’ code development, there are patterns they may adopt to boost their performance at work. In this chapter, I present some such common patterns. Due to the varied nature of the disciplines that a CivEng may be involved in, it by no means presents a single context that they can build programs upon. Rather, I present a case of water/hydraulic engineering and sediment transport, showcasing field variables, spatial derivatives and implementing a finite difference numerical solution.</p>
+<p>Given the ubiquity of materials and tools to learn and practice programming nowadays, CivEng students can leverage their skills to solve specific problems in their field. However, unlike data science where standardised software libraries have been developed, CivEng students may often find themselves coding from the ground up. In such situations, being able to design their program is crucial; and this can be accomplished through extensive practice with good programming patterns and continually learning to shift the mindset from “computing with numbers” to dealing with data organised on your computer. This is not easy, though, and I would refer to Mindstorms <span class="citation" data-cites="papert2020mindstorms">(<a href="#ref-papert2020mindstorms" role="doc-biblioref">Papert 2020</a>)</span>, where the author used Turtle’s geometry to dispel the “mathophobia” among schoolchildren.</p>
+<p>These days, with programming a mandatory part of CivEng students’ skill set, it is best for them to appreciate programming as a way to represent their own workflow and reach a solution to their engineering problems, which can then be evaluated and improved.</p>
+</section>
+<section id="references" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="references">References</h2>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-TeachProgAcross_C29" class="csl-entry" role="listitem">
+Gemayel, Joseph El, Arif Budiarto, and William Bell. 2026. <span>“Teaching Programming Across Disciplines.”</span> In.
+</div>
+<div id="ref-hoffbeck2016teaching" class="csl-entry" role="listitem">
+Hoffbeck, Joseph P, Heather E Dillon, Robert J Albright, Wayne Lu, and Timothy A Doughty. 2016. <span>“Teaching Programming in the Context of Solving Engineering Problems.”</span> In <em>2016 IEEE Frontiers in Education Conference (FIE)</em>, 1–7. IEEE.
+</div>
+<div id="ref-langtangen2006python" class="csl-entry" role="listitem">
+Langtangen, Hans Petter. 2006. <em>Python Scripting for Computational Science</em>. Springer.
+</div>
+<div id="ref-papert2020mindstorms" class="csl-entry" role="listitem">
+Papert, Seymour A. 2020. <em>Mindstorms: Children, Computers, and Powerful Ideas</em>. Basic books.
+</div>
+<div id="ref-TeachProgAcross_C07" class="csl-entry" role="listitem">
+Skipsey, Sam, Gordon Stewart, Jeremy Singer, and David Cutting. 2026. <span>“Teaching Programming Across Disciplines.”</span> In.
+</div>
+<div id="ref-wood2012civil" class="csl-entry" role="listitem">
+Wood, David Muir. 2012. <em>Civil Engineering: A Very Short Introduction</em>. Vol. 331. Oxford University Press.
+</div>
+</div>
+</section>
+<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn1"><p>A stencil is a diagram showing a group of computational nodes where numerical approximation takes place.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./C23_pair-programming-fusion.html" class="pagination-link" aria-label="Learning Together Across Modes: Online and On-site Pair Programming in a Fusion Course">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Learning Together Across Modes: Online and On-site Pair Programming in a Fusion Course</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./C33_coding-anxiety.html" class="pagination-link" aria-label="Overcoming coding anxiety: reflections and strategies">
+        <span class="nav-page-text"><span class="chapter-title">Overcoming coding anxiety: reflections and strategies</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
