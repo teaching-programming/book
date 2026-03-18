@@ -104,3 +104,10 @@ Possible links to other chapters, which we might need to articulate with (this m
 2.  A Practical Guide to Teaching Python as a Computational Tool for Introductory Data Analysis
 
 3.  A guide to empowering students to develop a coding mindset
+
+
+::: {.content-visible when-format="html" unless-format="epub"}
+
+## References {.unnumbered}
+
+:::
