@@ -81,7 +81,7 @@ book:
 #        - C29_notebooks-for-novices.qmd
 #        - C30_project-based-teaching.qmd
 #        - C31_leveraging-the-heterogeneity.qmd
-#        - C32_civil-engineering.qmd
+        - C32_civil-engineering.qmd
         - C33_coding-anxiety.qmd
 #        - C34_three-stars-one-wish.qmd
 #        - C35_action-feedback-plan.qmd
