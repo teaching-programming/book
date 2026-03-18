@@ -4,10 +4,10 @@ bibliography: references.bib
 author:
   - name: Tiago A. Marques
     email: TODO
-    affiliations: TODO
+    affiliation: School of Mathematics, University of St Andrews
   - name: William P. Kay
     email: TODO
-    affiliations: TODO
+    affiliation: School of Biosciences, Cardiff University
     equal-contributor: true
   - name: Chris Oldnall
     email: TODO
@@ -19,7 +19,7 @@ author:
     equal-contributor: true
   - name: Robert S. Young
     email: TODO
-    affiliations: TODO
+    affiliation: Edinburgh Medical School, University of Edinburgh and Zhejiang University - University of Edinburgh (ZJE) Institute
     equal-contributor: true
 
 keywords:
