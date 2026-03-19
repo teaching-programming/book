@@ -518,7 +518,7 @@ window.Quarto = {
 <tbody>
 <tr class="odd">
 <td><span class="math display">\[ C_D = \left[ \frac{0.4}{1 + \ln(z_0 / h)} \right]^2\ \]</span></td>
-<td><div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>CD <span class="op">=</span> (<span class="fl">0.4</span><span class="op">/</span>(math.log(h<span class="op">/</span>zo)<span class="op">-</span><span class="dv">1</span>))<span class="op">**</span><span class="dv">2</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></td>
+<td><div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>CD <span class="op">=</span> (<span class="fl">0.4</span><span class="op">/</span>(<span class="dv">1</span> <span class="op">+</span> math.log(zo<span class="op">/</span>h)))<span class="op">**</span><span class="dv">2</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></td>
 </tr>
 </tbody>
 </table>
@@ -630,15 +630,13 @@ Figure&nbsp;10.2: Lattice 1
 <thead>
 <tr class="header">
 <th>Python</th>
-<th>Julia</th>
+<th>Julia/Python</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Python</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>dqxdx[i][j] <span class="op">=</span> (qx[i][j]<span class="op">-</span>qx[i<span class="op">-</span><span class="dv">1</span>][j])<span class="op">/</span>dx</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></td>
-<td><div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Both Python and Julia</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>dqxdx[i,j] <span class="op">=</span> (qx[i,j]<span class="op">-</span>qx[i<span class="op">-</span><span class="fl">1</span>,j])<span class="op">/</span>dx</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></td>
+<td><div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>dqxdx[i][j] <span class="op">=</span> (qx[i][j]<span class="op">-</span>qx[i<span class="op">-</span><span class="dv">1</span>][j])<span class="op">/</span>dx</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></td>
+<td><div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>dqxdx[i,j] <span class="op">=</span> (qx[i,j]<span class="op">-</span>qx[i<span class="op">-</span><span class="fl">1</span>,j])<span class="op">/</span>dx</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></td>
 </tr>
 </tbody>
 </table>
