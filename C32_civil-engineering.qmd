@@ -27,7 +27,7 @@ CivEng students generally do not encounter any difficulty in implementing a seri
 | Math                                                       | Code                                                       |
 +============================================================+============================================================+
 | $$ C_D = \left[ \frac{0.4}{1 + \ln(z_0 / h)} \right]^2\ $$ | ```{.python code-line-numbers="false"}                     |
-|                                                            | CD = (0.4/(math.log(h/zo)-1))**2                           |
+|                                                            | CD = (0.4/(1 + math.log(zo/h)))**2
 |                                                            | ```                                                        |
 +------------------------------------------------------------+------------------------------------------------------------+
 
@@ -99,10 +99,9 @@ The use of matrix operations (e.g. using [NumPy](https://numpy.org/) arrays in P
 ![Lattice 1](/chapters/images/ch32/Lattice1.PNG){#fig-lattice1 fig-alt="A lattice with dots organised in 2 rows and 4 columns."}
 
 +--------------------------------------------+-------------------------------------------+
-| Python                                     | Julia                                     |
+| Python                                     | Julia/Python                              |
 +============================================+===========================================+
 | ```{.python code-line-numbers="false"}     | ```{.julia code-line-numbers="false"}     |
-| # Python                                   | # Both Python and Julia                   |
 | dqxdx[i][j] = (qx[i][j]-qx[i-1][j])/dx     | dqxdx[i,j] = (qx[i,j]-qx[i-1,j])/dx       |
 | ```                                        | ```                                       |
 +--------------------------------------------+-------------------------------------------+
