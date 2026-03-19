@@ -6,8 +6,12 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Serveh Sharifi Far">
+<meta name="author" content="Ruini Qu">
+<meta name="author" content="Stuart King">
+<meta name="keywords" content="data analysis, machine learning, Python, statistics">
 
-<title>Teaching Programming across Disciplines</title>
+<title>A Practical Guide to Teaching Python as a Computational Tool in an Introductory Data Analysis Course – Teaching Programming across Disciplines</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,7 +24,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -30,7 +54,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./00-chapter-template.html" rel="next">
+<link href="./C06_feminists-and-anarchists.html" rel="next">
+<link href="./00-chapter-template.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -83,7 +108,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html"><span class="chapter-title">Teaching Programming across Disciplines</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./C01_teaching-python.html"><span class="chapter-title">A Practical Guide to Teaching Python as a Computational Tool in an Introductory Data Analysis Course</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -129,7 +154,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Teaching Programming across Disciplines</span></a>
+  <a href="./index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Teaching Programming across Disciplines</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -139,7 +164,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./C01_teaching-python.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">A Practical Guide to Teaching Python as a Computational Tool in an Introductory Data Analysis Course</span></a>
+  <a href="./C01_teaching-python.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">A Practical Guide to Teaching Python as a Computational Tool in an Introductory Data Analysis Course</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -247,7 +272,25 @@ ul.task-list li input[type="checkbox"] {
 
 </details>
 </div></div>
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#teaching-data-analysis-and-programming-does-one-need-to-come-first" id="toc-teaching-data-analysis-and-programming-does-one-need-to-come-first" class="nav-link active" data-scroll-target="#teaching-data-analysis-and-programming-does-one-need-to-come-first">Teaching Data Analysis and Programming: Does One Need to Come First?</a></li>
+  <li><a href="#overview-of-such-a-course" id="toc-overview-of-such-a-course" class="nav-link" data-scroll-target="#overview-of-such-a-course">Overview of Such a Course</a></li>
+  <li><a href="#core-code-elements" id="toc-core-code-elements" class="nav-link" data-scroll-target="#core-code-elements">Core Code Elements</a>
+  <ul class="collapse">
+  <li><a href="#element-1---foundational-coding-expressions-variables-and-basic-calculations" id="toc-element-1---foundational-coding-expressions-variables-and-basic-calculations" class="nav-link" data-scroll-target="#element-1---foundational-coding-expressions-variables-and-basic-calculations">Element 1 - Foundational Coding: Expressions, Variables, and Basic Calculations</a></li>
+  <li><a href="#element-2---handling-data-with-pandas-reading-and-cleaning" id="toc-element-2---handling-data-with-pandas-reading-and-cleaning" class="nav-link" data-scroll-target="#element-2---handling-data-with-pandas-reading-and-cleaning">Element 2 - Handling Data with <code>pandas</code>: Reading and Cleaning</a></li>
+  <li><a href="#element-3---visualising-data-with-matplotlib-and-seaborn-explore-compare-and-communicate" id="toc-element-3---visualising-data-with-matplotlib-and-seaborn-explore-compare-and-communicate" class="nav-link" data-scroll-target="#element-3---visualising-data-with-matplotlib-and-seaborn-explore-compare-and-communicate">Element 3 - Visualising Data with <code>matplotlib</code> and <code>seaborn</code>: Explore, Compare, and Communicate</a></li>
+  <li><a href="#element-4---summary-statistics-describing-data" id="toc-element-4---summary-statistics-describing-data" class="nav-link" data-scroll-target="#element-4---summary-statistics-describing-data">Element 4 - Summary Statistics: Describing Data</a></li>
+  <li><a href="#element-5---normal-linear-regression-with-statsmodels-explain-and-predict-relationships" id="toc-element-5---normal-linear-regression-with-statsmodels-explain-and-predict-relationships" class="nav-link" data-scroll-target="#element-5---normal-linear-regression-with-statsmodels-explain-and-predict-relationships">Element 5 - Normal Linear Regression with statsmodels: Explain and Predict Relationships</a></li>
+  <li><a href="#element-6---machine-learning-with-scikit-learn-classification" id="toc-element-6---machine-learning-with-scikit-learn-classification" class="nav-link" data-scroll-target="#element-6---machine-learning-with-scikit-learn-classification">Element 6 - Machine Learning with <code>scikit-learn</code>: Classification</a></li>
+  </ul></li>
+  <li><a href="#what-can-students-take-away" id="toc-what-can-students-take-away" class="nav-link" data-scroll-target="#what-can-students-take-away">What Can Students Take Away?</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -354,32 +397,209 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Teaching Programming across Disciplines</h1>
+<h1 class="title"><span class="chapter-title">A Practical Guide to Teaching Python as a Computational Tool in an Introductory Data Analysis Course</span></h1>
 </div>
 
 
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Authors</div>
+  <div class="quarto-title-meta-heading">Affiliations</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Serveh Sharifi Far <a href="mailto:Serveh.Sharifi@ed.ac.uk" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            School of Mathematics and Maxwell Institute for Mathematical Sciences, University of Edinburgh
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Ruini Qu <a href="mailto:R.Qu@ed.ac.uk" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Edinburgh Business School, University of Edinburgh
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Stuart King <a href="mailto:S.King@ed.ac.uk" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            School of Mathematics and Maxwell Institute for Mathematical Sciences, University of Edinburgh
+          </p>
+      </div>
+  </div>
 
 <div class="quarto-title-meta">
 
-    
+      
   
     
   </div>
   
 
+<div>
+  <div class="keywords">
+    <div class="block-title">Keywords</div>
+    <p>data analysis, machine learning, Python, statistics</p>
+  </div>
+</div>
 
 </header>
 
 
-<p>Welcome to our book!</p>
-<p>We are a community of teachers and educators of computer programming outside of traditional computer science settings. Our 300+ members around the world meet every year for a <a href="https://pairprogramming.ed.ac.uk/category/winter-school/">Winter School</a> and co-author a <a href="https://pairprogramming.ed.ac.uk/join-book/">book called Teaching Programming across Disciplines</a> (this very book).</p>
-<p>Our book is an edited, open-access volume comprised of many short chapters written by groups of authors.</p>
-<p>We will be launching the <strong>first edition of Teaching Programming Across Disciplines</strong> at the “Summer-time Winter School” on <strong>22 June 2026</strong>! 🌈</p>
-<p>The <strong>hard deadline for chapter submissions</strong> is <strong>1 April 2026</strong> – meaning your chapter should be edited, polished, and on the GitHub Repository (watch <a href="https://media.ed.ac.uk/media//1_7nk68kt4">Pawel’s video</a> for instructions on how to do this). The book will be growing from now until 1 April 2026 as chapters are added. 📖 There will be a print copy available (eventually… stay tuned).</p>
-<p>We hold monthly writing retreats, which authors or anyone interested in having dedicated writing time with a group of lovely people are welcome to join. We also have a newsletter with book updates and (interesting) events. ➡️ If you would like to join our mailing list, email <a href="mailto:pairprogramming@ed.ac.uk">pairprogramming@ed.ac.uk</a></p>
-<p>🖋️ The Book Team (Brittany Blankinship, Franziska McManus, Pawel Orzechowski, Kasia Banas, Charlotte Desvages, Beatrice Alex, Umberto Noé, Ozan Evkaya, Serveh Sharifi Far, Clare Llewellyn)</p>
+<section id="teaching-data-analysis-and-programming-does-one-need-to-come-first" class="level2">
+<h2 class="anchored" data-anchor-id="teaching-data-analysis-and-programming-does-one-need-to-come-first">Teaching Data Analysis and Programming: Does One Need to Come First?</h2>
+<p>Some introductory data science courses must teach both programming and statistics to students with no prior experience in either. Students may first take an introductory programming course; however, this is not always possible, and often programming must be integrated alongside data science concepts <span class="citation" data-cites="TeachProgAcross_C11">(<a href="#ref-TeachProgAcross_C11" role="doc-biblioref">Colquhoun et al. 2026</a>)</span>. Teaching a data science or statistics course without a computational tool is not possible due to the amount of computations required in working with even small datasets. On the other hand, syntax-heavy programming courses may not immediately show relevance to data science and often struggle to engage students, who find it difficult to invest in abstract concepts without a clear sense of their practical application.</p>
+<p>This chapter presents a structured, stepwise practical guide to introducing Python as a computational tool in an introductory data science course, allowing students to balance learning both technical skills (coding) with conceptual skills (statistical and data science thinking). The emphasis is on six fundamental elements to teach students to complement their data analysis learning in a process that supports a gradual transition from simple scripts to structured analysis. Each element introduces just enough Python to support statistical thinking, promote motivation, and empower inexperienced learners to use this tool for producing meaningful data analysis results.</p>
+</section>
+<section id="overview-of-such-a-course" class="level2">
+<h2 class="anchored" data-anchor-id="overview-of-such-a-course">Overview of Such a Course</h2>
+<p>This approach has been implemented by the authors in an introductory data science course for diverse learners at the MSc level in an eleven-week semester <span class="citation" data-cites="king2025teaching">(<a href="#ref-king2025teaching" role="doc-biblioref">King and Sharifi Far 2025</a>)</span>. We suggest structuring such a course so that statistical concepts and methods are taught in lectures, while computer workshop sessions focus on applying the methods using Python. In the workshops, Jupyter notebooks that combine explanatory text and executable code can be used as a common and effective tool to practice coding <span class="citation" data-cites="TeachProgAcross_C29">(<a href="#ref-TeachProgAcross_C29" role="doc-biblioref">Gemayel, Budiarto, and Bell 2026</a>)</span>. This benefits beginners by keeping instructional material and code side by side and reducing the cognitive load that can come with more complex development environments. Furthermore, working on notebooks in the workshops can then be done in the pair-programming format to stimulate student discussion and peer learning <span class="citation" data-cites="TeachProgAcross_C12">(<a href="#ref-TeachProgAcross_C12" role="doc-biblioref">Orzechowski, Blankinship, and Banas 2026</a>)</span>. To support learning, we also recommend integrating continuous assessment throughout the course. Using automated marking tools for coding tasks can provide timely, objective feedback and help students identify specific areas for improvement, which reinforces understanding and encourages regular engagement with the material.</p>
+</section>
+<section id="core-code-elements" class="level2">
+<h2 class="anchored" data-anchor-id="core-code-elements">Core Code Elements</h2>
+<p>Here we list the core code elements and Python functionalities fundamental to them, and the minimum set of inbuilt or module-specific functions needed to teach them. For each element, we describe its pedagogical goal and value, highlight common coding pitfalls observed in student learning, of which it can be helpful for instructors to be aware, and suggest real-world datasets to use that provide meaningful opportunities for practical application.</p>
+<section id="element-1---foundational-coding-expressions-variables-and-basic-calculations" class="level3">
+<h3 class="anchored" data-anchor-id="element-1---foundational-coding-expressions-variables-and-basic-calculations">Element 1 - Foundational Coding: Expressions, Variables, and Basic Calculations</h3>
+<ul>
+<li><strong>Goal</strong>: Introducing students to how Python solves simple mathematical problems and handles expressions, assigns variables, outputs results, and applies simple built-in functions.<br>
+</li>
+<li><strong>Pedagogical value</strong>: This stage invites students to become comfortable with the Python syntax and environment. It allows them to store and reuse results to make their code more readable and flexible. Combining variables with simple functions introduces the core logic of programming. This stage builds confidence by showing how basic Python code can mimic a calculator while adding structure and repeatability.<br>
+</li>
+<li><strong>Essential functions</strong>: Creating lists of data using <code>[]</code>, assignment operator (<code>=</code>), arithmetic operators (<code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, <code>**</code>), printing results with <code>print()</code>, checking type of variables with <code>type()</code>. Some built-in mathematical functions, for example, <code>round()</code>, <code>sum()</code>, <code>len()</code>, <code>min()</code>, <code>max()</code>, <code>abs().</code><br>
+</li>
+<li><strong>Data suggestion</strong>: Using minimal lists and arrays of numbers and characters is helpful at this stage. Students can be invited to make a small list of their favorite fruits, colors, or a short series of numeric values (e.g., prices, scores).<br>
+</li>
+<li><strong>Common pitfalls</strong>: Misspelling variables or functions names; reusing variable names unintentionally; calling an unassigned variable (e.g., the notebook has defined some variables in a cell and students call these variables without executing the cell); forgetting to assign results of calculations to variables; misunderstanding variable type changes (e.g., overwriting a numeric/integer variable with a text/string).</li>
+</ul>
+</section>
+<section id="element-2---handling-data-with-pandas-reading-and-cleaning" class="level3">
+<h3 class="anchored" data-anchor-id="element-2---handling-data-with-pandas-reading-and-cleaning">Element 2 - Handling Data with <code>pandas</code>: Reading and Cleaning</h3>
+<ul>
+<li><strong>Goal</strong>: Equip students with the essential skills to load, explore, and clean datasets.<br>
+</li>
+<li><strong>Pedagogical value</strong>: It is essential for students to learn to work with structured data in the form of data frames. Introducing them to how to load datasets, explore their structure, and select or clean rows and columns is needed for visualisation, modeling, and interpretation.<br>
+</li>
+<li><strong>Essential functions</strong>: Importing <code>pandas</code>, functions such as <code>pd.DataFrame</code>, <code>pd.read_csv()</code>, <code>pd.read_excel()</code>, <code>head()</code>, <code>info()</code>, <code>describe()</code>, <code>loc[]</code>, <code>iloc[]</code>, selection of rows and columns with <code>[]</code> and operations on them (e.g., <code>df['col'].mean()</code>), handling missing data (<code>np.nan</code>, <code>dropna()</code>, <code>fillna()</code>, <code>replace()</code>), extra useful functions such as <code>groupby()</code>, <code>filter()</code>, <code>apply()</code>, <code>value_counts()</code>, <code>sort_values()</code>.<br>
+</li>
+<li><strong>Real data suggestion</strong>: Turtle Size dataset <span class="citation" data-cites="phillips2021long">(<a href="#ref-phillips2021long" role="doc-biblioref">Phillips et al. 2021</a>)</span> is a simply structured and helpful dataset which includes numerical and categorical variables. Penguins dataset <span class="citation" data-cites="gorman2014ecological">(<a href="#ref-gorman2014ecological" role="doc-biblioref">Gorman, Williams, and Fraser 2014</a>)</span> is another interesting and manageable dataset with some missing values for students to explore.<br>
+</li>
+<li><strong>Common pitfalls</strong>: Confusing <code>loc[]</code> with <code>iloc[]</code>; forgetting to save cleaned data in a variable; misunderstanding how <code>[]</code> behaves differently with rows and columns; forgetting that column names are strings when selecting them (e.g., <code>df["ColumnName"]</code>); forgetting to use a list when selecting multiple columns/rows (e.g., <code>dataframe.iloc[[5,1]]</code> vs <code>dataframe.iloc[5,1]</code>).</li>
+</ul>
+</section>
+<section id="element-3---visualising-data-with-matplotlib-and-seaborn-explore-compare-and-communicate" class="level3">
+<h3 class="anchored" data-anchor-id="element-3---visualising-data-with-matplotlib-and-seaborn-explore-compare-and-communicate">Element 3 - Visualising Data with <code>matplotlib</code> and <code>seaborn</code>: Explore, Compare, and Communicate</h3>
+<ul>
+<li><strong>Goal</strong>: Use visual tools to describe the data, explore distributions, trends, and relationships among variables.<br>
+</li>
+<li><strong>Pedagogical value</strong>: Visualisation helps students in conducting exploratory analysis of the data, identifying outliers, checking distributions, and spotting potential relationships between variables, and reinforces the connection between statistical concepts and their visual representations.<br>
+</li>
+<li><strong>Essential functions</strong>: Importing <code>matplotlib.pyplot</code>, then <code>plt.plot()</code> and <code>plt.show()</code> with <code>plt.xlabel()</code>, <code>plt.ylabel()</code>, <code>plt.title()</code>. Importing <code>seaborn</code> and using the general format of <code>sns.---plot(data=---, x=---, y=---, kind=---, ...)</code> for different <code>kind</code> of plots.<br>
+</li>
+<li><strong>Real data suggestion</strong>: House Sales in King County <span class="citation" data-cites="kaggle">(<a href="#ref-kaggle" role="doc-biblioref">Harlfoxem 2016</a>)</span> data is a manageable dataset for students to explore many ways of visualising house prices based on various numerical and categorical features. The Hotel Booking Demand dataset <span class="citation" data-cites="antonio2019hotel">(<a href="#ref-antonio2019hotel" role="doc-biblioref">Antonio, Almeida, and Nunes 2019</a>)</span> also provides a chance to visualise a hotel room prices and availabilities in Portugal based on several factors.<br>
+</li>
+<li><strong>Common pitfalls</strong>: Forgetting to label axes or add titles; confusing <code>kind</code> options in plots; overcomplicating plots by including many variables; difficulties with data restructuring if required for a plot; difficulty in understanding the connection between <code>seaborn</code> and <code>matplotlib</code> for beginners.</li>
+</ul>
+</section>
+<section id="element-4---summary-statistics-describing-data" class="level3">
+<h3 class="anchored" data-anchor-id="element-4---summary-statistics-describing-data">Element 4 - Summary Statistics: Describing Data</h3>
+<ul>
+<li><strong>Goal</strong>: Enable students to summarise variables and distributions and examine relationships between variables using descriptive statistics and correlation.<br>
+</li>
+<li><strong>Pedagogical value</strong>: Introducing summary statistics measures provides students with the language to describe data precisely. The concept of correlation offers an early opportunity to explore potential associations between variables, before modeling.<br>
+</li>
+<li><strong>Essential functions</strong>: Measurements of center and spread of data from <code>numpy</code> after importing it. The important functions are, <code>np.mean()</code>, <code>np.median()</code>, <code>np.mode()</code>, <code>np.std()</code>, <code>np.var()</code>, <code>np.quantile()</code>. Calculating Pearson linear correlation between two variables using <code>corr(method="pearson")</code>.<br>
+</li>
+<li><strong>Real data suggestion</strong>: Sleep in Mammals <span class="citation" data-cites="allison1976sleep">(<a href="#ref-allison1976sleep" role="doc-biblioref">Allison and Cicchetti 1976</a>)</span> and Animals Life Expectancy <span class="citation" data-cites="che2019sex">(<a href="#ref-che2019sex" role="doc-biblioref">Che-Castaldo et al. 2019</a>)</span> are interesting datasets about animals with various features in different types that can be used to encourage students to explore the pattern of how long these animals sleep and live.<br>
+</li>
+<li><strong>Common pitfalls</strong>: Applying numeric-only summary functions to non-numeric variables; ignoring or not checking for missing values; not inspecting the shape and possible skewness of the distributions.</li>
+</ul>
+</section>
+<section id="element-5---normal-linear-regression-with-statsmodels-explain-and-predict-relationships" class="level3">
+<h3 class="anchored" data-anchor-id="element-5---normal-linear-regression-with-statsmodels-explain-and-predict-relationships">Element 5 - Normal Linear Regression with statsmodels: Explain and Predict Relationships</h3>
+<ul>
+<li><strong>Goal</strong>: Provide students with tools to build linear regression models to explain relationships between variables and make predictions, using syntax that mirrors traditional statistical notation.<br>
+</li>
+<li><strong>Pedagogical value</strong>: Linear models are simple yet foundational, offering students a strong basis for deeper study of statistical modelling. Introducing the normal linear model, along with the binary linear model (logistic regression) if time permits, could be sufficient at this stage. Attention should be given to checking the model assumptions and its goodness-of-fit.<br>
+</li>
+<li><strong>Essential functions</strong>: Importing the library <code>statsmodels.formula.api</code>, using the <code>ols</code> function in the form of <code>model = smf.ols("y ~ x_1 + x_2", data=df).fit()</code> and the corresponding required functions, <code>model.summary()</code>, <code>model.predict()</code>, <code>model.resid</code>. Some Useful plots are <code>sns.lmplot()</code>, and <code>sns.residplot()and qqplot()</code> for visualisation and checking the model assumptions.<br>
+</li>
+<li><strong>Real data suggestion</strong>: World Happiness Report <span class="citation" data-cites="Happiness">(<a href="#ref-Happiness" role="doc-biblioref"><span>“The World Happiness Report,”</span> n.d.</a>)</span> data from most countries around the world and different years can be used to aim to model the countries level of happiness based on various measured social elements. Programme for International Student Assessment <span class="citation" data-cites="pisa">(<a href="#ref-pisa" role="doc-biblioref">Organisation for Economic Co-operation and Development, n.d.</a>)</span> data provides standardised exam scores for a large sample of students in different countries along with many social and educational indicators.<br>
+</li>
+<li><strong>Common pitfalls</strong>: Difficulty in coding categorical variables; in extending the model formula to variable names including spaces; and in inputting new data in the <code>predict</code> function or passing in wrong data types.</li>
+</ul>
+</section>
+<section id="element-6---machine-learning-with-scikit-learn-classification" class="level3">
+<h3 class="anchored" data-anchor-id="element-6---machine-learning-with-scikit-learn-classification">Element 6 - Machine Learning with <code>scikit-learn</code>: Classification</h3>
+<ul>
+<li><strong>Goal</strong>: Introduce students to basic supervised machine learning for classification problems, using intuitive models like k-Nearest Neighbors, decision trees, and ensemble methods, and reinforcing best practices in model evaluation.<br>
+</li>
+<li><strong>Pedagogical value</strong>: Introducing classification methods shows students how algorithms can learn patterns from labelled data to make predictions.<br>
+</li>
+<li><strong>Essential functions</strong>: From <code>scikit-learn</code> use <code>train_test_split</code> to prepare data for training and assessing models. Then apply different classification methods, using <code>KNeighborsClassifier</code>, <code>DecisionTreeClassifier</code>, <code>RandomForestClassifier</code>, <code>BaggingClassifier</code>, and <code>HistGradientBoostingClassifier</code>, which all need <code>fit()</code> and <code>predict()</code>. Evaluation of the classification can be done using <code>classification_report</code>, <code>confusion_matrix</code>, and a simple scatter plot like <code>sns.scatterplot()</code> is useful in visualisation.<br>
+</li>
+<li><strong>Real data</strong>: Pima Indian Diabetes dataset <span class="citation" data-cites="smith1988using">(<a href="#ref-smith1988using" role="doc-biblioref">Smith et al. 1988</a>)</span> includes various health indicators to use in modelling to predict whether participants would develop diabetes. Behavioral Risk Factor Surveillance System <span class="citation" data-cites="brfss">(<a href="#ref-brfss" role="doc-biblioref">Centers for Disease Control and Prevention, n.d.</a>)</span> data is available from several years and includes many health indicators and records of presence of many health conditions to use in different classification problems.<br>
+</li>
+<li><strong>Common pitfalls</strong>: Not applying the train/test split or mishandling its output; difficulty in choosing and applying the appropriate evaluation methods.</li>
+</ul>
+<p>Depending on the course level and learning objectives, Element 6 may be included only if an introduction to machine learning falls within the scope of the course. Here, we presented classification as an example of a supervised learning method, although an unsupervised method such as clustering could also be introduced following a similar structure.</p>
+</section>
+</section>
+<section id="what-can-students-take-away" class="level2">
+<h2 class="anchored" data-anchor-id="what-can-students-take-away">What Can Students Take Away?</h2>
+<p>By working through these core elements, students gain a practical foundation in both Python programming and data analysis. This progression helps students move from simple code scripts to structured analytical workflows, equipping them with the confidence and technical ability to engage with real-world datasets. By the end of this material, students should be able to implement core Python functions for data analysis independently and recognise how coding supports statistical thinking. The common pitfalls noted throughout are not mere technical errors, but can be important learning opportunities.</p>
+</section>
+<section id="references" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="references">References</h2>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-allison1976sleep" class="csl-entry" role="listitem">
+Allison, Truett, and Domenic V Cicchetti. 1976. <span>“Sleep in Mammals: Ecological and Constitutional Correlates.”</span> <em>Science</em> 194 (4266): 732–34.
+</div>
+<div id="ref-antonio2019hotel" class="csl-entry" role="listitem">
+Antonio, Nuno, Ana de Almeida, and Luis Nunes. 2019. <span>“Hotel Booking Demand Datasets.”</span> <em>Data in Brief</em> 22: 41–49.
+</div>
+<div id="ref-brfss" class="csl-entry" role="listitem">
+Centers for Disease Control and Prevention. n.d. <span>“Behavioral Risk Factor Surveillance System (<span>BRFSS</span>) Data.”</span> <a href="https://www.cdc.gov/brfss/annual_data/annual_data.htm">https://www.cdc.gov/brfss/annual_data/annual_data.htm</a>.
+</div>
+<div id="ref-che2019sex" class="csl-entry" role="listitem">
+Che-Castaldo, Judy P, Amy Byrne, Kaitlyn Perišin, and Lisa J Faust. 2019. <span>“Sex-Specific Median Life Expectancies from Ex Situ Populations for 330 Animal Species.”</span> <em>Scientific Data</em> 6 (1): 190019.
+</div>
+<div id="ref-TeachProgAcross_C11" class="csl-entry" role="listitem">
+Colquhoun, Rebecca, Tiago A. Marques, Brittany Blankinship, William Kay, Rob Young, and Ozan Evkaya. 2026. <span>“Teaching Programming Across Disciplines.”</span> In.
+</div>
+<div id="ref-TeachProgAcross_C29" class="csl-entry" role="listitem">
+Gemayel, Joseph El, Arif Budiarto, and William Bell. 2026. <span>“Teaching Programming Across Disciplines.”</span> In.
+</div>
+<div id="ref-gorman2014ecological" class="csl-entry" role="listitem">
+Gorman, Kristen B, Tony D Williams, and William R Fraser. 2014. <span>“Ecological Sexual Dimorphism and Environmental Variability Within a Community of Antarctic Penguins (Genus Pygoscelis).”</span> <em>PloS One</em> 9 (3): e90081.
+</div>
+<div id="ref-kaggle" class="csl-entry" role="listitem">
+Harlfoxem. 2016. <span>“House Sales in King County, USA.”</span> Kaggle dataset. <a href="https://www.kaggle.com/datasets/harlfoxem/housesalesprediction">https://www.kaggle.com/datasets/harlfoxem/housesalesprediction</a>.
+</div>
+<div id="ref-king2025teaching" class="csl-entry" role="listitem">
+King, Stuart, and Serveh Sharifi Far. 2025. <span>“Teaching Data Science to Diverse Learners: A Hybrid and Interdisciplinary Approach.”</span> <em>Teaching Statistics</em>.
+</div>
+<div id="ref-pisa" class="csl-entry" role="listitem">
+Organisation for Economic Co-operation and Development. n.d. <span>“<span>PISA</span> Dataset.”</span> <a href="https://www.oecd.org/en/about/programmes/pisa/pisa-data.html">https://www.oecd.org/en/about/programmes/pisa/pisa-data.html</a>.
+</div>
+<div id="ref-TeachProgAcross_C12" class="csl-entry" role="listitem">
+Orzechowski, Pawel, Brittany Blankinship, and Kasia Banas. 2026. <span>“Teaching Programming Across Disciplines.”</span> In.
+</div>
+<div id="ref-phillips2021long" class="csl-entry" role="listitem">
+Phillips, Katrina F, Gustavo D Stahelin, Ryan M Chabot, and Katherine L Mansfield. 2021. <span>“Long-Term Trends in Marine Turtle Size at Maturity at an Important Atlantic Rookery.”</span> <em>Ecosphere</em> 12 (7): e03631.
+</div>
+<div id="ref-smith1988using" class="csl-entry" role="listitem">
+Smith, Jack W, James E Everhart, William C Dickson, William C Knowler, and Robert Scott Johannes. 1988. <span>“Using the ADAP Learning Algorithm to Forecast the Onset of Diabetes Mellitus.”</span> In <em>Proceedings of the Annual Symposium on Computer Application in Medical Care</em>, 261.
+</div>
+<div id="ref-Happiness" class="csl-entry" role="listitem">
+<span>“The World Happiness Report.”</span> n.d. <a href="https://worldhappiness.report/" class="uri">https://worldhappiness.report/</a>.
+</div>
+</div>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -784,10 +1004,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./00-chapter-template.html" class="pagination-link" aria-label="Title of Example Chapter (as will appear on top h1 header and in table of contents)">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Title of Example Chapter (as will appear on top h1 header and in table of contents)</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./00-chapter-template.html" class="pagination-link" aria-label="Title of Example Chapter (as will appear on top h1 header and in table of contents)">
-        <span class="nav-page-text"><span class="chapter-title">Title of Example Chapter (as will appear on top h1 header and in table of contents)</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./C06_feminists-and-anarchists.html" class="pagination-link" aria-label="Anarchists and Dungeon Crawlers: co-designing programming teaching experiences">
+        <span class="nav-page-text"><span class="chapter-title">Anarchists and Dungeon Crawlers: co-designing programming teaching experiences</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
