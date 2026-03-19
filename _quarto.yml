@@ -52,7 +52,7 @@ book:
         - 00-chapter-template.qmd
         - C01_teaching-python.qmd
 #        - C02_genai-before-during-after.qmd
-#        - C03_online-teaching-reflections.qmd
+        - C03_online-teaching-reflections.qmd
 #        - C04_computer-says-no.qmd
 #        - C05_coding-mindset.qmd
         - C06_feminists-and-anarchists.qmd
