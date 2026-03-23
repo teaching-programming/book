@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.27">
+<meta name="generator" content="quarto-1.9.36">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -15,6 +15,9 @@
 
 <title>Sequential vs.&nbsp;Simultaneous: Approaches to Learning Programming and Statistics – Teaching Programming across Disciplines</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -30,7 +33,6 @@ ul.task-list li input[type="checkbox"] {
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
-  margin-bottom: 0em;
 }
 .hanging-indent div.csl-entry {
   margin-left:2em;
@@ -60,15 +62,14 @@ div.csl-indent {
 <link href="./C07_teaching-C-to-novices.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-67525df380fad31e868e2dec58263318.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-f7e8c99a8f53c7de2add436ee4bcc4ff.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -192,6 +193,11 @@ div.csl-indent {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./C15_programming-without-computers.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Removing Barriers by Programming Without Computers</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C22_interdisciplinary-by-design.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Interdisciplinary by Design: The Centre for Data, Culture, &amp; Society Training Programme</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -467,7 +473,7 @@ div.csl-indent {
 <section id="introduction" class="level2">
 <h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
 <p>We live in a data driven world. Much research in STEM departments requires skills in data description, prediction and inference which are often developed through statistics modules but, increasingly, non-trivial statistical analysis requires computer programming. Therefore, for many undergraduate degree programmes, two closely interrelated but technically distinct disciplines - programming and statistics - must often both be taught. There are different possible approaches to teaching these subjects, most notably whether to deliver them simultaneously or sequentially. In this chapter, we focus on undergraduate level teaching in subject areas that are not primarily programming or statistics. We discuss the advantages and disadvantages to three different approaches and provide guidance on best practice in instructional technique and curriculum design. Case-study examples based on our own teaching experiences are provided throughout to illustrate these strategies.</p>
-<p>The topic of teaching statistics to non-specialists has been discussed at length <span class="citation" data-cites="kelly1992teaching mustafa1996challenge metz2008teaching gimenez2013can o2016teaching bromage2022teaching">(<a href="#ref-kelly1992teaching" role="doc-biblioref">Kelly 1992</a>; <a href="#ref-mustafa1996challenge" role="doc-biblioref">Mustafa 1996</a>; <a href="#ref-metz2008teaching" role="doc-biblioref">Metz 2008</a>; <a href="#ref-gimenez2013can" role="doc-biblioref">Gimenez et al. 2013</a>; <a href="#ref-o2016teaching" role="doc-biblioref">O’Hara 2016</a>; <a href="#ref-bromage2022teaching" role="doc-biblioref">Bromage et al. 2022</a>)</span>. How to do so while acknowledging that programming is an important and related skill has received less focus, which we address here. In all scenarios teachers should be mindful of their own educational context, and, inter alia, what knowledge and skills they want their students to obtain from learning both programming and statistics.</p>
+<p>The topic of teaching statistics to non-specialists has been discussed at length <span class="citation" data-cites="kelly1992teaching mustafa1996challenge metz2008teaching gimenez2013can o2016teaching bromage2022teaching">(<a href="#ref-kelly1992teaching" role="doc-biblioref">Kelly 1992</a>; <a href="#ref-mustafa1996challenge" role="doc-biblioref">Mustafa 1996</a>; <a href="#ref-metz2008teaching" role="doc-biblioref">Metz 2008</a>; <a href="#ref-gimenez2013can" role="doc-biblioref"><span class="nocase">Gimenez et al.</span> 2013</a>; <a href="#ref-o2016teaching" role="doc-biblioref">O’Hara 2016</a>; <a href="#ref-bromage2022teaching" role="doc-biblioref">Bromage et al. 2022</a>)</span>. How to do so while acknowledging that programming is an important and related skill has received less focus, which we address here. In all scenarios teachers should be mindful of their own educational context, and, inter alia, what knowledge and skills they want their students to obtain from learning both programming and statistics.</p>
 </section>
 <section id="teaching-statistics-before-programming" class="level2">
 <h2 class="anchored" data-anchor-id="teaching-statistics-before-programming">Teaching statistics before programming</h2>
@@ -534,7 +540,7 @@ div.csl-indent {
 <p>First, we have learnt that embedding the teaching of these topics into the subject matter of the overarching course is critical for student engagement, particularly when programming or statistics are not the principal focus of the degree programme. This embedding may take multiple forms, such as creating appealing visualisations, using authentic datasets, or discussing the conclusions that can be obtained in the students’ particular research field. In our experience, this contextualisation helps students understand not only how to perform relevant analyses, but why they are important for their discipline.</p>
 <p>Second, statistical methodologies are most effectively taught when also described clearly using a computational approach. For example, while it is helpful to describe the formal mathematical derivation for generating a test statistic, we recommend that this is routinely followed up with the programming approach required to generate the same result. Demonstrating the same concept from both perspectives helps students to consolidate the underlying statistical concepts and to see how statistics are applied in practice, highlighting&nbsp; the close connection between the two approaches.</p>
 <p>A third strategy that has emerged from our teaching is to foster a “programming or coding mindset”. We found it important to foreground programming as an important transferable skill in its own right, rather than solely being a tool to perform statistical analysis. This involved teaching students how to interact with data programmatically rather than relying on graphical user interfaces or apps alone. In practice, this included providing explicit instruction in code annotation, file paths, naming conventions, and being able to discriminate between characters, numbers, and special symbols. We also found that dedicating time to debugging code — particularly through live programming in lectures — helps to demystify programming and normalise common programming errors.</p>
-<p>Finally, our experience strongly suggests that motivating and enthusing students about both statistics and programming is critical. For example, framing computational statistics as a means to increase reproducibility, transparency, and confidence in scientific discoveries helps students appreciate its broader value. We have also found that highlighting the fact that these skills are universally applicable, lucrative, and in high demand in the job market, including beyond academia, is useful for motivating engagement. As an illustrative example, note that the gap in data-driven technical skills reported in 2023 in the UK includes specialist data skills (including statistics), alongside programming and software engineering skills required to manage and analyse datasets <span class="citation" data-cites="fearns2023data">(<a href="#ref-fearns2023data" role="doc-biblioref">Fearns, Harriss, and Lally 2023</a>)</span>.</p>
+<p>Finally, our experience strongly suggests that motivating and enthusing students about both statistics and programming is critical. For example, framing computational statistics as a means to increase reproducibility, transparency, and confidence in scientific discoveries helps students appreciate its broader value. We have also found that highlighting the fact that these skills are universally applicable, lucrative, and in high demand in the job market, including beyond academia, is useful for motivating engagement. As an illustrative example, note that the gap in data-driven technical skills reported in 2023 in the UK includes specialist data skills (including statistics), alongside programming and software engineering skills required to manage and analyse datasets <span class="citation" data-cites="fearns2023data">(<a href="#ref-fearns2023data" role="doc-biblioref">Fearns et al. 2023</a>)</span>.</p>
 <div class="callout callout-style-default callout-tip no-icon callout-titled" title="Example">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -567,7 +573,7 @@ div.csl-indent {
 <h2 class="unnumbered anchored" data-anchor-id="references">References</h2>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
 <div id="ref-auker2020teaching" class="csl-entry" role="listitem">
 Auker, Linda A., and Erika L. Barthelmess. 2020. <span>“Teaching r in the Undergraduate Ecology Classroom: Approaches, Lessons Learned, and Recommendations.”</span> <em>Ecosphere</em> 11 (4): e03060. https://doi.org/<a href="https://doi.org/10.1002/ecs2.3060">https://doi.org/10.1002/ecs2.3060</a>.
 </div>
@@ -575,10 +581,10 @@ Auker, Linda A., and Erika L. Barthelmess. 2020. <span>“Teaching r in the Unde
 Bromage, Adrian, Sarah Pierce, Tom Reader, and Lindsey Compton. 2022. <span>“Teaching Statistics to Non-Specialists: Challenges and Strategies for Success.”</span> <em>Journal of Further and Higher Education</em> 46 (1): 46–61.
 </div>
 <div id="ref-fearns2023data" class="csl-entry" role="listitem">
-Fearns, Josh, Lydia Harriss, and Clare Lally. 2023. <span>“Data Science Skills in the UK Workforce.”</span>
+Fearns, Josh, Lydia Harriss, and Clare Lally. 2023. <em>Data Science Skills in the UK Workforce</em>.
 </div>
 <div id="ref-gimenez2013can" class="csl-entry" role="listitem">
-Gimenez, Olivier, Fitsum Abadi, Jean-Yves Barnagaud, Laetitia Blanc, Mathieu Buoro, Sarah Cubaynes, Marine Desprez, et al. 2013. <span>“How Can Quantitative Ecology Be Attractive to Young Scientists? Balancing Computer/Desk Work with Fieldwork.”</span> <em>Animal Conservation</em> 16 (2): 134–36.
+<span class="nocase">Gimenez, Olivier, Fitsum Abadi, Jean-Yves Barnagaud, et al.</span> 2013. <span>“How Can Quantitative Ecology Be Attractive to Young Scientists? Balancing Computer/Desk Work with Fieldwork.”</span> <em>Animal Conservation</em> 16 (2): 134–36.
 </div>
 <div id="ref-kelly1992teaching" class="csl-entry" role="listitem">
 Kelly, Martyn. 1992. <span>“Teaching Statistics to Biologists.”</span> <em>Journal of Biological Education</em> 26 (3): 200–203.
@@ -590,7 +596,7 @@ Metz, Anneke M. 2008. <span>“Teaching Statistics in Biology: Using Inquiry-Bas
 Mustafa, R Yilmaz. 1996. <span>“The Challenge of Teaching Statistics to Non-Specialists.”</span> <em>Journal of Statistics Education</em> 4 (1).
 </div>
 <div id="ref-o2016teaching" class="csl-entry" role="listitem">
-O’Hara, Robert B. 2016. <span>“On Teaching Ecologists Contemporary Methods in Statistics.”</span> Wiley Online Library.
+O’Hara, Robert B. 2016. <em>On Teaching Ecologists Contemporary Methods in Statistics</em>. Wiley Online Library.
 </div>
 <div id="ref-pletzer2010predictors" class="csl-entry" role="listitem">
 Pletzer, Belinda, Guilherme Wood, Korbinian Moeller, Hans-Christoph Nuerk, and Hubert H Kerschbaum. 2010. <span>“Predictors of Performance in a Real-Life Statistics Examination Depend on the Individual Cortisol Profile.”</span> <em>Biological Psychology</em> 85 (3): 410–16.
@@ -599,7 +605,7 @@ Pletzer, Belinda, Guilherme Wood, Korbinian Moeller, Hans-Christoph Nuerk, and H
 Sarvary, Mark. 2014. <span>“Biostatistics in the Classroom: Teaching Introductory Biology Students How to Use the Statistical Software <span>‘r’</span> Effectively.”</span> <em>Tested Studies for Laboratory Teaching Proceedings of the Association for Biology Laboratory Education</em> 35 (January): 405–7.
 </div>
 <div id="ref-sweller2018instructional" class="csl-entry" role="listitem">
-Sweller, John. 2018. <span>“Instructional Design.”</span> In <em>Encyclopedia of Evolutionary Psychological Science</em>, 1–5. Springer.
+Sweller, John. 2018. <span>“Instructional Design.”</span> In <em>Encyclopedia of Evolutionary Psychological Science</em>. Springer.
 </div>
 </div>
 </section>

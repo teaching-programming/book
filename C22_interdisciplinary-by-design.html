@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.36">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Lucia Michielin">
+<meta name="author" content="Lisa Otty">
+<meta name="keywords" content="TODO, TODO">
+
+<title>Interdisciplinary by Design: The Centre for Data, Culture, &amp; Society Training Programme – Teaching Programming across Disciplines</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./C23_pair-programming-fusion.html" rel="next">
+<link href="./C15_programming-without-computers.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-f7e8c99a8f53c7de2add436ee4bcc4ff.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="_theme/styles.css">
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./C22_interdisciplinary-by-design.html"><span class="chapter-title">Interdisciplinary by Design: The Centre for Data, Culture, &amp; Society Training Programme</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Teaching Programming across Disciplines</a> 
+        <div class="sidebar-tools-main">
+    <div class="dropdown">
+      <a href="" title="Download" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Download"><i class="bi bi-download"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="./teaching_programming_across_disciplines.pdf">
+              <i class="bi bi-file-pdf pe-1"></i>
+            Download PDF
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="./teaching_programming_across_disciplines.epub">
+              <i class="bi bi-journal pe-1"></i>
+            Download ePub
+            </a>
+          </li>
+      </ul>
+    </div>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Teaching Programming across Disciplines</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./00-chapter-template.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Title of Example Chapter (as will appear on top h1 header and in table of contents)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C01_teaching-python.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">A Practical Guide to Teaching Python as a Computational Tool in an Introductory Data Analysis Course</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C06_feminists-and-anarchists.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Anarchists and Dungeon Crawlers: co-designing programming teaching experiences</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C07_teaching-C-to-novices.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Second Languages: Teaching C to Python+Jupyter Novices</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C11_sequential-vs-simultaneous.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Sequential vs.&nbsp;Simultaneous: Approaches to Learning Programming and Statistics</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C12_pair-programming-overview.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Where do I even start with Pair Programming in my classroom? Conversation with seasoned practitioners.</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C15_programming-without-computers.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Removing Barriers by Programming Without Computers</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C22_interdisciplinary-by-design.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Interdisciplinary by Design: The Centre for Data, Culture, &amp; Society Training Programme</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C23_pair-programming-fusion.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Learning Together Across Modes: Online and On-site Pair Programming in a Fusion Course</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C32_civil-engineering.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Changing civil engineering students’ mindset toward programming</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C33_coding-anxiety.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Overcoming coding anxiety: reflections and strategies</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C36_pair-programming-across-disciplines.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Structured group work with assigned asymmetrical roles and switching - Lessons from Pair Programming across disciplines</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./99-bibliography.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bibliography</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar"><div class="quarto-margin-header"><div class="margin-header-item">
+<details id="accessibility-controls">
+    <summary>Display options</summary>
+  
+    <div class="control-group">
+        <label for="fontSizeSlider">Font size</label>
+        <input type="range" id="fontSizeSlider" min="8" max="32" value="16">
+        <span id="fontSizeValue">16</span>px
+    </div>
+  
+    <div class="control-group">
+        <label for="eyeStrainSlider">Eye strain</label>
+        <input type="range" id="eyeStrainSlider" min="0" max="50" value="0">
+        <span id="eyeStrainValue">0</span>%
+    </div>
+  
+    <div class="control-group">
+        <label for="hueRotateSlider">Hue</label>
+        <input type="range" id="hueRotateSlider" min="0" max="360" value="0">
+        <span id="hueRotateValue">0</span>
+    </div>
+  
+    <div class="control-group">
+        <label for="paddingSlider">Padding</label>
+        <input type="range" id="paddingSlider" min="0" max="12" value="3">
+        <span id="paddingValue">0</span>
+    </div>
+  
+    <div class="control-group">
+        <label for="lineSpacingSlider">Spacing</label>
+        <input type="range" id="lineSpacingSlider" min="80" max="250" value="150">
+        <span id="lineSpacingValue">150</span>%
+    </div>
+  
+    <div class="control-group">
+        <label for="fontFamily">Font</label>
+        <select id="fontFamily">
+            <option value="'Atkinson Hyperlegible', sans-serif">Atkinson Hyperlegible</option>
+            <option value="Arial, Helvetica, sans-serif">Sans-serif</option>
+            <option value="Georgia, 'Bitstream Charter', Times, serif">Serif</option>
+        </select>
+    </div>
+  
+    <div class="control-group">
+        <button id="resetDefaults">Reset to Defaults</button>
+    </div>
+
+</details>
+</div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#the-centre-for-data-culture-society-cdcs" id="toc-the-centre-for-data-culture-society-cdcs" class="nav-link" data-scroll-target="#the-centre-for-data-culture-society-cdcs">The Centre for Data, Culture &amp; Society (CDCS)</a></li>
+  <li><a href="#the-cdcs-training-programme" id="toc-the-cdcs-training-programme" class="nav-link" data-scroll-target="#the-cdcs-training-programme">The CDCS training programme</a></li>
+  <li><a href="#open-training-materials" id="toc-open-training-materials" class="nav-link" data-scroll-target="#open-training-materials">Open training materials</a></li>
+  <li><a href="#our-impact" id="toc-our-impact" class="nav-link" data-scroll-target="#our-impact">Our impact</a></li>
+  <li><a href="#appendix-1-digital-method-of-the-month-dmm-session-in-detail" id="toc-appendix-1-digital-method-of-the-month-dmm-session-in-detail" class="nav-link" data-scroll-target="#appendix-1-digital-method-of-the-month-dmm-session-in-detail"><em>Appendix 1: Digital Method of the Month (DMM) session in detail</em></a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const fontSizeSlider = document.getElementById('fontSizeSlider');
+        const fontSizeValue = document.getElementById('fontSizeValue');
+
+        const hueRotateSlider = document.getElementById('hueRotateSlider');
+        const hueRotateValue = document.getElementById('hueRotateValue');
+
+        const eyeStrainSlider = document.getElementById('eyeStrainSlider');
+        const eyeStrainValue = document.getElementById('eyeStrainValue');
+
+        const paddingSlider = document.getElementById('paddingSlider');
+        const paddingValue = document.getElementById('paddingValue');
+
+        const lineSpacingSlider = document.getElementById('lineSpacingSlider');
+        const lineSpacingValue = document.getElementById('lineSpacingValue');
+
+        const fontFamilySelect = document.getElementById('fontFamily');
+
+        const html = document.documentElement;
+        const resetButton = document.getElementById('resetDefaults');
+
+        // Define default values
+        const defaults = {
+            fontSize: 16,
+            hueRotate: 0,
+            eyeStrain: 0,
+            padding: 0,
+            lineSpacing: 150,
+            fontFamily: "'Atkinson Hyperlegible', Arial, Helvetica, sans-serif"
+        };
+
+        function updateStyles() {
+            html.style.setProperty('--bs-root-font-size', fontSizeSlider.value + 'px');
+            html.style.setProperty('--hue-rotate', hueRotateSlider.value + 'deg');
+            html.style.setProperty('--eye-strain', eyeStrainSlider.value + '%');
+            html.style.setProperty('--padding', paddingSlider.value + 'em');
+            html.style.setProperty('--line-spacing', lineSpacingSlider.value + '%');
+            html.style.setProperty('--bs-body-font-family', fontFamilySelect.value);
+
+            fontSizeValue.textContent = fontSizeSlider.value;
+            hueRotateValue.textContent = hueRotateSlider.value;
+            eyeStrainValue.textContent = eyeStrainSlider.value;
+            paddingValue.textContent = paddingSlider.value;
+            lineSpacingValue.textContent = lineSpacingSlider.value;
+
+            saveSettings();
+        }
+
+        // Function to save settings to localStorage
+        function saveSettings() {
+            const settings = {
+                fontSize: fontSizeSlider.value,
+                hueRotate: hueRotateSlider.value,
+                eyeStrain: eyeStrainSlider.value,
+                padding: paddingSlider.value,
+                lineSpacing: lineSpacingSlider.value,
+                fontFamily: fontFamilySelect.value
+            };
+            localStorage.setItem('accessibilitySettings', JSON.stringify(settings));
+        }
+
+        // Function to load settings from localStorage
+        function loadSettings() {
+            const savedSettings = localStorage.getItem('accessibilitySettings');
+            if (savedSettings) {
+                const settings = JSON.parse(savedSettings);
+                fontSizeSlider.value = settings.fontSize;
+                hueRotateSlider.value = settings.hueRotate;
+                eyeStrainSlider.value = settings.eyeStrain;
+                paddingSlider.value = settings.padding;
+                lineSpacingSlider.value = settings.lineSpacing;
+                fontFamilySelect.value = settings.fontFamily;
+                updateStyles();
+            }
+        }
+
+        function resetToDefaults() {
+            fontSizeSlider.value = defaults.fontSize;
+            hueRotateSlider.value = defaults.hueRotate;
+            eyeStrainSlider.value = defaults.eyeStrain;
+            paddingSlider.value = defaults.padding;
+            lineSpacingSlider.value = defaults.lineSpacing;
+            fontFamilySelect.value = defaults.fontFamily;
+            updateStyles();
+            localStorage.removeItem('accessibilitySettings');
+        }
+
+        fontSizeSlider.oninput = updateStyles;
+        hueRotateSlider.oninput = updateStyles;
+        eyeStrainSlider.oninput = updateStyles;
+        paddingSlider.oninput = updateStyles;
+        lineSpacingSlider.oninput = updateStyles;
+        fontFamilySelect.onchange = updateStyles;
+        resetButton.onclick = resetToDefaults;
+
+        loadSettings();
+
+    });
+</script>
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-title">Interdisciplinary by Design: The Centre for Data, Culture, &amp; Society Training Programme</span></h1>
+</div>
+
+
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Authors</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Lucia Michielin <a href="mailto:TODO" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            TODO
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Lisa Otty <a href="mailto:TODO [can omit]" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            TODO
+          </p>
+      </div>
+  </div>
+
+<div class="quarto-title-meta">
+
+      
+  
+    
+  </div>
+  
+
+<div>
+  <div class="keywords">
+    <div class="block-title">Keywords</div>
+    <p>TODO, TODO</p>
+  </div>
+</div>
+
+</header>
+
+
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>This chapter discusses the Centre for Data, Culture &amp; Society’s (CDCS) training initiative, which aims to integrate computational methods into humanities research. CDCS is committed to fostering methodological innovation and advancing digital research skills within the academic community. It provides targeted support and expertise to both individual researchers and groups, enhancing their capacity to employ digital techniques in the arts, humanities, and social sciences. Importantly, the initiative bridges the gap between technology and traditional research methods, preparing scholars to adeptly incorporate digital tools into their work. The CDCS training programme is distinguished by its interdisciplinary and peer-led educational model, which serves researchers at different stages of their career and with very heterogenous levels of digital literacy. The programme fosters a shared language across disciplines, enabling scholars from non-technical backgrounds to embrace coding-based methods confidently. A natural outcome of this approach is that it enables us to observe how the newly acquired shared language facilitates collaboration and interdisciplinary work, effectively breaking down traditional disciplinary barriers. This aspect is particularly crucial in enabling researchers trained in non-technical disciplines to confidently navigate and employ complex digital tools in their work.</p>
+</section>
+<section id="the-centre-for-data-culture-society-cdcs" class="level2">
+<h2 class="anchored" data-anchor-id="the-centre-for-data-culture-society-cdcs">The Centre for Data, Culture &amp; Society (CDCS)</h2>
+<p>Today’s researchers work in a rapidly changing technological environment, tackling complex global challenges: the ability to work across disciplines, scales, and sectors is increasingly important. In this context many researchers are embracing data-led approaches and there is an increase in demand for training in the kinds of applied methods that would traditionally have been taught only in computer science and STEM disciplines through coding-based approaches. Scholars in the arts and humanities, who bring invaluable critical, creative and ethical perspectives to interdisciplinary projects, face specific challenges in acquiring these technical skills: barriers include confidence, grounding assumptions, language and a lack of tailored skills development opportunities. The inherent complexity of computational methodologies, along with unfamiliar technical language and processes, can prove a significant stumbling block to researchers whose time and resource is limited. Empowering such researchers to engage and explore the value of these approaches supports not only more effective collaboration, but also more nuanced, reflective and ground-breaking interdisciplinary projects.</p>
+<p><a href="https://www.cdcs.ed.ac.uk/">The Centre for Data, Culture &amp; Society (CDCS)</a> at the University of Edinburgh<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> was founded with a mission to inspire and support scholars across the arts, humanities and social sciences to explore, navigate and utilize the potential of data-led and computational methods. To build capacity and support for interdisciplinary digital research projects, and to support the sharing of relevant knowledge, methods and resources between subject areas and schools, it was deliberately positioned outside of academic departments: support from a cross-school academic advisory board ensures that all of the research communities within the College of Arts, Humanities and Social Sciences can feed into planning and prioritization. Through a range of technical services, CDCS offers a space for experimentation and tries to catalyze innovation, fostering a culture of peer-collaboration and knowledge sharing. It provides tailored and flexible support including bespoke technical support and advice, prototyping sandpits, data clinics and opportunities to develop communities of practice. This collaborative ecosystem is further enriched by regular networking events and workshops that provide flexible opportunities for professional development and interdisciplinary engagement. The Centre is staffed by a professional services team that includes a director, training manager, and events coordinator as well as training fellows and research software engineers.</p>
+</section>
+<section id="the-cdcs-training-programme" class="level2">
+<h2 class="anchored" data-anchor-id="the-cdcs-training-programme">The CDCS training programme</h2>
+<p>The CDCS training programme is a key part of the Centre’s offer and has been developed over the last six years to provide participants with practical support in applying computational methods to their projects. It is designed to be inclusive, accessible, and practical, and offers a variety of formats to accommodate diverse learning preferences, ranging from workshops and seminars to intensive boot camps, self-paced learning materials and online courses. ‘Digital Method of the Month’ sessions, for example, provide beginner-friendly introductions into a specific approach or technique.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> These hour-long sessions are designed to give researchers a practical sense of what each method involves before committing significant time to it. They create a welcoming, entry-level space for exploring new approaches, with frank discussion of tools, challenges, and the realities of applying methods in practice.</p>
+<p>A foundational principle of the training programme is that it is ‘by researchers, for researchers’ and delivered by a cohort of Training Fellows (TFs), leveraging peer-led instruction to build competencies within a supportive community. The fellowship program recruits doctoral candidates and early-career researchers who use computational methods in their projects.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> It offers them an opportunity to deliver courses, teach and mentor their peers, thus fostering an environment of reciprocal learning and reinforcing their own understanding of the subject matter. This peer-led structure serves to nurture networks of support and collaboration. A key example is the Centre’s Bring Your Own Data (BYOD) sessions, which enable students to bring their work into the learning environment, discuss their processes and problems and troubleshoot together. This allows participants to get hands-on experience and supports learners in translating their new skills to their own research environments, thus reducing barriers to implementation and encouraging ongoing usage of computational methods.</p>
+<p>One of the main challenges in teaching computational methods to researchers in the Humanities and Social Sciences is the technological language barrier. Many participants enter workshops without a shared vocabulary for describing what they are trying to achieve through the application of code-based tools. The Centre tackles this by intentionally focusing on building a shared terminology that helps attendees build up their understanding while mapping their research needs against specific computational methods. Instructors provide clear definitions of key terms, introduce foundational structures, and carefully explain the “grammar” and syntax of computational processes. This approach equips participants with language that they can use to continue learning independently – as we always tell learners, half of the battle is knowing what words to google!</p>
+<p>Concepts are made more accessible through metaphors and examples drawn from the humanities and social sciences. For instance, the CDCS Training Manager Lucia Michielin, often introduces the process of building working code chunks by way of a comparison to translating dead languages such as Ancient Greek or Latin. This analogy is grounded in real learning experiences as it relates to her experience as a Classics PhD, trying to find a way to connect unfamiliar computational methods to research tasks she already understood. Training Fellows are encouraged to foreground their own learning experiences and the analogies they have found helpful, which gives trainees insight not only into the method at hand but also into others’ learning processes and how they can be adapted to different contexts.</p>
+<p>Lessons pay close attention to vocabulary, avoid unnecessary jargon, and focus on core principles, ensuring that no prior computational knowledge is assumed. Participants are encouraged to discuss, consolidate, and actively apply new terminology, reinforcing understanding and enabling them to articulate complex ideas in computational terms. The learning process is framed as analogous to acquiring a new language: mastering basic structures first, then building fluency through repeated practice and application.</p>
+<p>Given the international dimension of researchers at the University of Edinburgh, this language barrier can sometimes extend to natural language itself. International students and researchers may struggle to find the right terminology to articulate their needs, particularly when confronted with frustratingly obscure error messages. A helpful strategy is to encourage them to set their coding interface to their native language. This forces them to interpret and translate the error into English when explaining it to the instructor. This mental process of navigating between languages not only clarifies the issue for the instructor but also helps the learner develop a deeper understanding of the underlying computational problem and strengthens their ability to articulate technical challenges in a second language.</p>
+<p>By establishing a shared language, the Centre also promotes interdisciplinary collaboration. Researchers from different backgrounds gain confidence in approaching computational problems, bridging gaps between disciplinary cultures. This not only enhances the immediate learning experience but fosters sustained engagement with computational methods: Participants are more likely to translate their new skills into their own work, reducing barriers to implementation, and encouraging ongoing use their learning. As a shared language is developed, it also provides a common framework for exploring questions and problems. A good example of this is the success of the “Data Surgeries” sessions, which provide one-to-one meetings where researchers receive tailored advice on applying digital and data-driven methods to their projects. These hour-long consultations are led by our Training Fellows, who often come from different disciplinary backgrounds than the researchers they are assisting. Fellows help with data processing, troubleshooting, and guide participants toward additional resources or further training.</p>
+</section>
+<section id="open-training-materials" class="level2">
+<h2 class="anchored" data-anchor-id="open-training-materials">Open training materials</h2>
+<p>Alongside the Training Fellow-led programme of courses and workshops, the Centre focuses on reinforcing an interdisciplinary and peer-led approach through a range of formats and materials. &nbsp;Since July 2020, the Centre for Data, Culture and Society has been a member of the <a href="https://programminghistorian.org/en/"><em>Programming Historian</em></a> Institutional Partner Programme, a partnership that reflects our sustained commitment to open, peer-reviewed, and sustainable training resources. &nbsp;In practice, many <em>Programming Historian</em> tutorials have been incorporated into CDCS activities: they are used in <em>Masterclasses</em> (ad hoc deep dives into innovative computational methods for research) and in <em>Silent Discos</em> (asynchronous online workshops; see <span class="citation" data-cites="TeachProgAcross_C03"><span class="nocase">Cooling et al.</span> (<a href="#ref-TeachProgAcross_C03" role="doc-biblioref">2026</a>)</span> in this volume).</p>
+<p>The tutorials also underpin the “further reading” sections of the Centre’s structured <a href="https://www.cdcs.ed.ac.uk/training/training-pathways"><em>Training Pathways</em></a>, guiding learners towards high-quality, freely accessible materials that extend beyond the workshops themselves. Covering diverse topics such as data visualisation, statistical analysis, text analysis, sentiment analysis, and working with 3D Data, these Training Pathways are designed to provide structured, accessible guidance through a wide range of digital research methods. They are aimed at beginners and offer a scaffolded approach that helps learners identify which skills to acquire first and how to progress: each pathway highlights essential steps, tools, and concepts, while providing guidance on potential challenges and pointers to areas for further exploration. Rather than presenting methods in isolation, the pathways emphasize the connection between methods and underlying skills, highlighting often overlooked but crucial practices. For example, they make clear that even the most polished data visualisation is meaningless if the underlying dataset has not been rigorously collected and carefully cleaned. By drawing attention to these foundational steps, the pathways reveal the “hidden” work that underpins robust and reliable research outcomes, and, by combining practical instructions with curated “further reading,” they give learners confidence and direction, enabling them to approach computational methods incrementally rather than feeling overwhelmed.</p>
+<p>Since its launch, the Centre has produced a substantial body of training materials designed to be open, adaptable, and widely accessible to any discipline. These resources are collaboratively developed by a network of researchers from diverse research backgrounds, ensuring that all materials are proofed and checked to ensure they are jargon-free and speak effectively to a general scholarly audience. All materials are shared openly via <a href="https://github.com/DCS-training">GitHub repositories</a> under a CC-BY 4.0 license, ranging from markdown help pages to PowerPoint presentations and notebooks (mostly R or Python based). This open model not only ensures that the resources can be freely accessed and reused but also encourages continuous refinement and improvement based on user feedback and emerging research needs.</p>
+</section>
+<section id="our-impact" class="level2">
+<h2 class="anchored" data-anchor-id="our-impact">Our impact</h2>
+<p>Overall, CDCS plays a pivotal role in removing barriers that have traditionally hindered the use of computational methods in various disciplines. This flexible approach has proven successful, with around 600 to 700 researchers per year benefiting from the Centre’s work. By emphasizing interdisciplinarity, peer-support, flexible formats, and explicitly showing learning processes, the Centre is effectively transforming how researchers in the arts, humanities and social sciences engage with digital and computational technologies. This approach not only enhances individual research capacity but also contributes to the broader academic and societal understanding of data, culture, and society, leading to innovative solutions to complex global challenges. As computational methods continue to weave into the fabric of research across disciplines, initiatives like those at CDCS will be indispensable in preparing researchers to navigate and lead in this new digital era.</p>
+<hr>
+</section>
+<section id="appendix-1-digital-method-of-the-month-dmm-session-in-detail" class="level2">
+<h2 class="anchored" data-anchor-id="appendix-1-digital-method-of-the-month-dmm-session-in-detail"><em>Appendix 1: Digital Method of the Month (DMM) session in detail</em></h2>
+<p>DMM sessions are informal meetings to create a safe space to freely discuss the practicalities of learning and implementing a new digital skill in research. Each month a method is selected, and the meeting itself is a 1-hour practical discussion on what it takes to learn and master the method. During the meeting, we try to answer the following questions:</p>
+<ul>
+<li>What this method is really about?</li>
+<li>How much time will it take to get the basics?</li>
+<li>What are the software options available?</li>
+<li>What are the most common pitfalls?</li>
+<li>Where can you find more info on the subject?</li>
+</ul>
+<p>A typical schedule is as follows:</p>
+<ul>
+<li>00:00-00:10 Housekeeping and intro</li>
+<li>00:10-00:25 Round of Presentation of the attendees (to collect specific interest and hurdles of the attendees)</li>
+<li>00:25 –00:50 Discussion using a Markdown document</li>
+<li>00:50-01:00 Discussion on available resources for learning, way forwards and wrapping up</li>
+</ul>
+<div class="callout callout-style-default callout-tip no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Example: Digital Method of the Month on Working with GIS and Geographical Datasets
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Learning objectives:</strong></p>
+<ul>
+<li>Become familiar with the main concepts of Geospatial Data and GIS</li>
+<li>Understand the easiest pitfalls new practitioners can run into when starting working with these tools</li>
+</ul>
+<p><strong>Materials provided:</strong></p>
+<ul>
+<li>Housekeeping slides with rules of the DMM</li>
+<li>Markdown file with major points of discussion written out with hyperlinks to further resources (all previously run DMM Markdown files are <a href="https://github.com/DCS-training/Digital-Method-of-the-Month/tree/main/DMM%20Docs">available online</a>)</li>
+</ul>
+<p><strong>Main discussion points:</strong></p>
+<ul>
+<li>Concepts and jargon that practitioners need to familiarize with — e.g.&nbsp;difference between vectors and raster, and practical aspects of working with different data sources, standards of data (like shapefiles, GeoPackages, GeoTiff, etc.), downloading data vs.&nbsp;connecting to OSM and WMS services, etc.</li>
+<li>Time frame for learning and important theoretical topics — e.g.&nbsp;the importance to fully understand how reference systems work and what are the consequences of picking the wrong reference system</li>
+<li>Easy pitfalls for newbies — e.g.&nbsp;propriety vs open source extensions, information tree organization, etc.</li>
+<li>Future possible issues — thorny issues that learners will encounter down the lines once they will move to more intermediate and advanced techniques (e.g.&nbsp;implementation with coding environments, working collaboratively, managing 3D data)</li>
+<li>Main software available, with pros and cons of the main options</li>
+<li>List of helpful websites/blogs on where to ask for help</li>
+<li>Resources to learn GIS, both as self-learner and within the Centre and the University in general</li>
+</ul>
+</div>
+</div>
+<!-- footnotes below -->
+</section>
+<section id="references" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="references">References</h2>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-TeachProgAcross_C03" class="csl-entry" role="listitem">
+<span class="nocase">Cooling, Chris, Nick Jayanth, Samantha Alvarez-Madrazo, Leila S. shafti, Joseph El Gemayel, and Lucia Michielin</span>. 2026. <em>Teaching Programming Across Disciplines</em>.
+</div>
+</div>
+</section>
+<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn1"><p>Founded in 2019, CDCS is a strategic initiative of the College of Arts, Humanities and Social Sciences at the University of Edinburgh.&nbsp; Since 2021 it has been part of the <a href="https://www.efi.ed.ac.uk">Edinburgh Futures Institute</a>, one of five innovation hubs established through the <a href="https://ddi.ac.uk/">Data-Driven&nbsp; Innovation Programme</a> funded by the <a href="https://esescityregiondeal.org.uk/">Edinburgh and South East Scotland City Region Deal</a>.&nbsp; Alongside its training programme, CDCS offers events, technical services and infrastructure for data-led research.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>For each meeting, we also prepare a <a href="https://github.com/DCS-training/Digital-Method-of-the-Month">Markdown file</a> that provides attendees with starting notes to support their work on a specific method.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>The Training Fellows are recruited annually (with the possibility of extending their contract) through an open call to current PhDs and ECRs, and through a standard interview panel. Once appointed, they are offered a Guaranteed Hours contract.</p>
+<p>This provides flexibility, assuring them sufficient hours to design and deliver one training course and leaving open the possibility of taking on more work, if they have capacity and interest. How many hours each TF works every year can vary considerably and is dependent on programming, availability, skills, and budget. Once they start their contract, they receive a general induction covering our aims and delivery methods, past training courses and available materials. After that they work with the Training Manager to design the programme.</p>
+<p>Each year there is a combination of returning and new Training Fellows, and during the first semester the new TFs normally start as helpers in courses led by more experienced Training Fellows or by running courses where the material has already been consolidated and just needs a simple refresh and update. During this phase, they learn how to provide feedback on material delivered by others, and they familiarise themselves with different methods of delivery. Thereafter, more often in the second semester, they are invited to submit ideas for new training material or more consistent revisions of existing training material. At each stage, they receive and give feedback on materials and delivery methods, both from their peers and from the Training Manager (we use GitHub for our materials as it supports this constant review process).</p>
+<p>The pedagogical progress of the Training Fellows — from helping in a class led by someone else to producing brand new training material—is usually dependent on their previous experience and capacity, but by the end of their contract, they will all have experience in developing new or extensively revised training material.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./C15_programming-without-computers.html" class="pagination-link" aria-label="Removing Barriers by Programming Without Computers">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Removing Barriers by Programming Without Computers</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./C23_pair-programming-fusion.html" class="pagination-link" aria-label="Learning Together Across Modes: Online and On-site Pair Programming in a Fusion Course">
+        <span class="nav-page-text"><span class="chapter-title">Learning Together Across Modes: Online and On-site Pair Programming in a Fusion Course</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

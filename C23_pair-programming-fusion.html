@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.27">
+<meta name="generator" content="quarto-1.9.36">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -14,6 +14,9 @@
 
 <title>Learning Together Across Modes: Online and On-site Pair Programming in a Fusion Course – Teaching Programming across Disciplines</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -29,7 +32,6 @@ ul.task-list li input[type="checkbox"] {
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
-  margin-bottom: 0em;
 }
 .hanging-indent div.csl-entry {
   margin-left:2em;
@@ -56,18 +58,17 @@ div.csl-indent {
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
 <link href="./C32_civil-engineering.html" rel="next">
-<link href="./C15_programming-without-computers.html" rel="prev">
+<link href="./C22_interdisciplinary-by-design.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-67525df380fad31e868e2dec58263318.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-f7e8c99a8f53c7de2add436ee4bcc4ff.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -191,6 +192,11 @@ div.csl-indent {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./C15_programming-without-computers.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Removing Barriers by Programming Without Computers</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C22_interdisciplinary-by-design.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Interdisciplinary by Design: The Centre for Data, Culture, &amp; Society Training Programme</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -461,7 +467,7 @@ div.csl-indent {
 <h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
 <p><em>“Sarah, can you scroll down a bit?”</em> The voice appeared suddenly in Sophie’s headphones, causing her to jump slightly in her chair. Just moments before, she’d been chatting face-to-face with Dr Llewellyn about Python syntax errors. Now her disembodied voice was helping her online partner navigate their shared code, while she remained physically present in the classroom just three feet away. Welcome to fusion teaching, where instructors become friendly ghosts and the boundaries between digital and physical learning dissolve in unexpectedly delightful ways.</p>
 <p>In this chapter, we want to share our experience of developing and teaching an experimental and innovative pair programming course. This course is non-traditional; we teach text mining to master’s level students in fusion mode (both online and on-site students at the same time) in a two-day intensive session. We knew this would be challenging, but we also knew that this would be a great learning experience and a chance to do things differently. We present here an honest reflection of the trials, tribulations, and wins in what was ultimately a rewarding and satisfying experience. We didn’t do everything perfectly, but we learned a lot, and we believe the students did too. Please read on and hopefully enjoy hearing about our experience.</p>
-<p>Pair programming <span class="citation" data-cites="TeachProgAcross_C12 TeachProgAcross_C36">(<a href="#ref-TeachProgAcross_C12" role="doc-biblioref">Orzechowski, Blankinship, and Banas 2026</a>; <a href="#ref-TeachProgAcross_C36" role="doc-biblioref">Desvages et al. 2026</a>)</span> is central to our course, but pairing students effectively in a fusion setting presents its challenges. It was important to us for our entire cohort to feel a sense of parity; this could not be an in-person course with people watching online. We wanted to develop fluidity between the modes. We worked hard at this and broke down the barrier between the room and online. We created a classroom in which both teachers and students can be vulnerable and open, so that we can grow from each other’s mistakes, and communicate with respect.</p>
+<p>Pair programming <span class="citation" data-cites="TeachProgAcross_C12 TeachProgAcross_C36">(<a href="#ref-TeachProgAcross_C12" role="doc-biblioref">Orzechowski et al. 2026</a>; <a href="#ref-TeachProgAcross_C36" role="doc-biblioref">Desvages et al. 2026</a>)</span> is central to our course, but pairing students effectively in a fusion setting presents its challenges. It was important to us for our entire cohort to feel a sense of parity; this could not be an in-person course with people watching online. We wanted to develop fluidity between the modes. We worked hard at this and broke down the barrier between the room and online. We created a classroom in which both teachers and students can be vulnerable and open, so that we can grow from each other’s mistakes, and communicate with respect.</p>
 <p>When we first designed and ran <em>Text Mining for Social Research</em><a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>, the Edinburgh Futures Institute’s first fusion course at the University of Edinburgh, we knew we were stepping into uncharted territory <span class="citation" data-cites="alex2021online">(<a href="#ref-alex2021online" role="doc-biblioref">Alex et al. 2021</a>)</span>. Fusion courses integrate both in-person and online students, requiring thoughtful interaction strategies to create a cohesive learning experience. While hybrid teaching models have been explored extensively <span class="citation" data-cites="beatty2019hybrid raes2020systematic">(<a href="#ref-beatty2019hybrid" role="doc-biblioref">Beatty 2019</a>; <a href="#ref-raes2020systematic" role="doc-biblioref">Raes et al. 2020</a>)</span> and so has the value of peer instruction <span class="citation" data-cites="porter2011experience">(<a href="#ref-porter2011experience" role="doc-biblioref">Porter et al. 2011</a>)</span>, our fusion approach to intensive pair programming represents a novel application of these principles to collaborative coding education. With a team of four (three lecturers and one teaching assistant), we had the flexibility to experiment with innovative teaching strategies that bridged the gap between online and on-site students. This chapter presents our experiences and lessons learned when experimenting with three key interaction methods: <em>Negotiating Fusion-Pairs</em>, <em>the Ghost Helper Effect</em> and <em>Micro-interactions</em>.</p>
 </section>
 <section id="making-fusion-pairs-work" class="level2">
@@ -533,7 +539,7 @@ div.csl-indent {
 <section id="chat-blast-and-other-micro-contributions" class="level3">
 <h3 class="anchored" data-anchor-id="chat-blast-and-other-micro-contributions">2) Chat Blast and Other Micro-contributions</h3>
 <p>Following the same philosophy as in the feedback above, we wanted to give students opportunities to check in with their own learning and the group and provide constructive feedback to the teaching team. Throughout the course, there were moments where we asked them to contribute questions that we would then discuss in the session after each pair programming exercise. This enabled the entire cohort to benefit from the discussion and answers provided. We also ensured that all student questions were repeated aloud during debrief sessions, while also encouraging students to share their own solutions via the chat.</p>
-<p>At specific points in the course, we also asked all students to type a quick, micro contribution into the chat all at the same time, i.e.&nbsp;a Chat Blast (see Figure 6), to encourage engagement and shared participation. We took the Three Stars and A Wish approach, which is used by teachers in primary schools to help pupils focus on what is working and what needs improving <span class="citation" data-cites="larson2008continuous">(<a href="#ref-larson2008continuous" role="doc-biblioref">Larson, Trees, and Weaver 2008</a>)</span>. In our case, we flipped this around and asked students to provide us with “Three stars and a wish” about the course in the chat of the video call. This enabled them to share their thoughts not only on what they liked about the course but also gave them permission to point out things that could be improved or things they struggled with.</p>
+<p>At specific points in the course, we also asked all students to type a quick, micro contribution into the chat all at the same time, i.e.&nbsp;a Chat Blast (see Figure 6), to encourage engagement and shared participation. We took the Three Stars and A Wish approach, which is used by teachers in primary schools to help pupils focus on what is working and what needs improving <span class="citation" data-cites="larson2008continuous">(<a href="#ref-larson2008continuous" role="doc-biblioref">Larson et al. 2008</a>)</span>. In our case, we flipped this around and asked students to provide us with “Three stars and a wish” about the course in the chat of the video call. This enabled them to share their thoughts not only on what they liked about the course but also gave them permission to point out things that could be improved or things they struggled with.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="./chapters/images/C23_pair-programming-fusion-chat-blast.png" title="Chat blast." class="img-fluid figure-img" style="width:70.0%" alt="Chat blast with feedback using the “Three stars and a wish” method."></p>
@@ -582,18 +588,18 @@ div.csl-indent {
 <p>When logistical constraints made mixed-mode pairing difficult to sustain, our experience still provided valuable insights into preparing students for the increasingly common reality of distributed software development teams. Our lessons learned and practical insights are timely and valuable for educators designing hybrid programming courses, particularly in the post-pandemic education landscape, where graduates from various disciplines increasingly need coding and remote collaboration skills in their professional work.</p>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
 <div id="ref-alex2021online" class="csl-entry" role="listitem">
-Alex, B., C. Llewellyn, P. M. Orzechowski, and M. Boutchkova. 2021. <span>“The Online Pivot: Lessons Learned from Teaching a Text and Data Mining Course in Lockdown, Enhancing Online Teaching with Pair Programming and Digital Badges.”</span> In <em>NAACL-HLT 2021</em>, 138.
+Alex, B., C. Llewellyn, P. M. Orzechowski, and M. Boutchkova. 2021. <span>“The Online Pivot: Lessons Learned from Teaching a Text and Data Mining Course in Lockdown, Enhancing Online Teaching with Pair Programming and Digital Badges.”</span> <em>NAACL-HLT 2021</em>, 138.
 </div>
 <div id="ref-bailenson2021nonverbal" class="csl-entry" role="listitem">
 Bailenson, J. N. 2021. <em>Nonverbal Overload: A Theoretical Argument for the Causes of Zoom Fatigue, Technology, Mind, and Behavior</em>. American Psychological Association.
 </div>
 <div id="ref-beatty2019hybrid" class="csl-entry" role="listitem">
-Beatty, B. 2019. <em>Hybrid-Flexible Course Design</em>. London, UK: EdTech Books.
+Beatty, B. 2019. <em>Hybrid-Flexible Course Design</em>. EdTech Books.
 </div>
 <div id="ref-TeachProgAcross_C36" class="csl-entry" role="listitem">
-Desvages, Charlotte, Brittany Blankinship, Umberto Noè, and Pawel Orzechowski. 2026. <span>“Teaching Programming Across Disciplines.”</span> In.
+Desvages, Charlotte, Brittany Blankinship, Umberto Noè, and Pawel Orzechowski. 2026. <em>Teaching Programming Across Disciplines</em>.
 </div>
 <div id="ref-hanks2011pair" class="csl-entry" role="listitem">
 Hanks, Brian, Sue Fitzgerald, Renée McCauley, Laurie Murphy, and Carol Zander. 2011. <span>“Pair Programming in Education: A Literature Review.”</span> <em>Computer Science Education</em> 21 (2): 135–73.
@@ -602,13 +608,13 @@ Hanks, Brian, Sue Fitzgerald, Renée McCauley, Laurie Murphy, and Carol Zander. 
 Hannay, J. E., T. Dybå, E. Arisholm, and D. I. Sjøberg. 2009. <span>“The Effectiveness of Pair Programming: A Meta-Analysis.”</span> <em>Information and Software Technology</em> 51 (7): 1110–22.
 </div>
 <div id="ref-larson2008continuous" class="csl-entry" role="listitem">
-Larson, K. A., F. P. Trees, and D. S. Weaver. 2008. <span>“Continuous Feedback Pedagogical Patterns.”</span> In <em>Proceedings of the 15th Conference on Pattern Languages of Programs</em>, 1–14.
+Larson, K. A., F. P. Trees, and D. S. Weaver. 2008. <span>“Continuous Feedback Pedagogical Patterns.”</span> <em>Proceedings of the 15th Conference on Pattern Languages of Programs</em>, 1–14.
 </div>
 <div id="ref-TeachProgAcross_C12" class="csl-entry" role="listitem">
-Orzechowski, Pawel, Brittany Blankinship, and Kasia Banas. 2026. <span>“Teaching Programming Across Disciplines.”</span> In.
+Orzechowski, Pawel, Brittany Blankinship, and Kasia Banas. 2026. <em>Teaching Programming Across Disciplines</em>.
 </div>
 <div id="ref-porter2011experience" class="csl-entry" role="listitem">
-Porter, L., C. Bailey Lee, B. Simon, Q. Cutts, and D. Zingaro. 2011. <span>“Experience Report: A Multi-Classroom Report on the Value of Peer Instruction.”</span> In <em>Proceedings of the 16th Annual Joint Conference on Innovation and Technology in Computer Science Education</em>, 138–42.
+Porter, L., C. Bailey Lee, B. Simon, Q. Cutts, and D. Zingaro. 2011. <span>“Experience Report: A Multi-Classroom Report on the Value of Peer Instruction.”</span> <em>Proceedings of the 16th Annual Joint Conference on Innovation and Technology in Computer Science Education</em>, 138–42.
 </div>
 <div id="ref-raes2020systematic" class="csl-entry" role="listitem">
 Raes, A., L. Detienne, I. Windey, and F. Depaepe. 2020. <span>“A Systematic Literature Review on Synchronous Hybrid Learning: Gaps Identified.”</span> <em>Learning Environments Research</em> 23 (3): 269–90.
@@ -1028,8 +1034,8 @@ Williams, L., R. R. Kessler, W. Cunningham, and R. Jeffries. 2000. <span>“Stre
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./C15_programming-without-computers.html" class="pagination-link" aria-label="Removing Barriers by Programming Without Computers">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Removing Barriers by Programming Without Computers</span></span>
+      <a href="./C22_interdisciplinary-by-design.html" class="pagination-link" aria-label="Interdisciplinary by Design: The Centre for Data, Culture, &amp; Society Training Programme">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Interdisciplinary by Design: The Centre for Data, Culture, &amp; Society Training Programme</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">

@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.27">
+<meta name="generator" content="quarto-1.9.36">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -10,6 +10,9 @@
 
 <title>Changing civil engineering students’ mindset toward programming – Teaching Programming across Disciplines</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -60,7 +63,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
-  margin-bottom: 0em;
 }
 .hanging-indent div.csl-entry {
   margin-left:2em;
@@ -90,15 +92,14 @@ div.csl-indent {
 <link href="./C23_pair-programming-fusion.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-67525df380fad31e868e2dec58263318.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-f7e8c99a8f53c7de2add436ee4bcc4ff.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -128,7 +129,7 @@ div.csl-indent {
 }</script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -251,6 +252,11 @@ window.Quarto = {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./C15_programming-without-computers.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Removing Barriers by Programming Without Computers</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C22_interdisciplinary-by-design.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Interdisciplinary by Design: The Centre for Data, Culture, &amp; Society Training Programme</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -563,14 +569,14 @@ U_{cr} = \left\{
 </section>
 <section id="matrix-manipulation" class="level3">
 <h3 class="anchored" data-anchor-id="matrix-manipulation">Matrix manipulation</h3>
-<p>In many circumstances, the CivEng student has to deal with matrices, such as when solving partial differential equations (PDEs). One of such typical equations is the mass balance equation, where the (time) change in “stock” is related to the spatial changes (gradients) of “flows”. It is not too difficult for the CivEng student to understand the finite difference technique and implement a naive version to solve PDEs. As an example, in the problem of sediment transport in rivers or seas, we consider solving the equation for <span class="math inline">\(z_b\)</span> (the underwater bed elevation), which changes in time, given the two fluxes of sediment, represented as two components (<span class="math inline">\(q_x\)</span> and <span class="math inline">\(q_y\)</span>) in the two horizontal directions, <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span>. It is helpful to visualise the river bed or seabed as a “tiled” surface where each cell has its own elevation <span class="math inline">\(z_b\)</span>. See the diagram (<a href="#fig-sediment" class="quarto-xref">Figure&nbsp;<span>10.1</span></a>) for a simplified representation of the quantities involved.</p>
+<p>In many circumstances, the CivEng student has to deal with matrices, such as when solving partial differential equations (PDEs). One of such typical equations is the mass balance equation, where the (time) change in “stock” is related to the spatial changes (gradients) of “flows”. It is not too difficult for the CivEng student to understand the finite difference technique and implement a naive version to solve PDEs. As an example, in the problem of sediment transport in rivers or seas, we consider solving the equation for <span class="math inline">\(z_b\)</span> (the underwater bed elevation), which changes in time, given the two fluxes of sediment, represented as two components (<span class="math inline">\(q_x\)</span> and <span class="math inline">\(q_y\)</span>) in the two horizontal directions, <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span>. It is helpful to visualise the river bed or seabed as a “tiled” surface where each cell has its own elevation <span class="math inline">\(z_b\)</span>. See the diagram (<a href="#fig-sediment" class="quarto-xref">Figure&nbsp;<span>11.1</span></a>) for a simplified representation of the quantities involved.</p>
 <div id="fig-sediment" class="quarto-float quarto-figure quarto-figure-center anchored" alt="A diagram in 3D, showing a surface split into four tiles of different elevations.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-sediment-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="./chapters/images/ch32/SedTrans.PNG" class="img-fluid figure-img" alt="A diagram in 3D, showing a surface split into four tiles of different elevations.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-sediment-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;10.1: Sediment transport
+Figure&nbsp;11.1: Sediment transport
 </figcaption>
 </figure>
 </div>
@@ -610,7 +616,7 @@ Figure&nbsp;10.1: Sediment transport
 </tr>
 </tbody>
 </table>
-<p>The use of matrix operations (e.g.&nbsp;using <a href="https://numpy.org/">NumPy</a> arrays in Python) is faster compared to the “naive” version above, usually quoted as 10 times <span class="citation" data-cites="langtangen2006python">(<a href="#ref-langtangen2006python" role="doc-biblioref">Langtangen 2006</a>)</span>. On the downside, the matrix notation obscures the indices <code>i</code> and <code>j</code> commonly found in numerical methods (see <a href="#fig-lattice1" class="quarto-xref">Figure&nbsp;<span>10.2</span></a>, where part of a stencil<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> is shown. In this part, where arrows represent subtraction, we are finding “local” difference in the same <code>qx</code> array). When using matrix manipulation, the bounds must be specified correctly in all matrix subscripts (see <a href="#fig-lattice2" class="quarto-xref">Figure&nbsp;<span>10.3</span></a> and the code below). So, there should be a consideration in choosing either approach.</p>
+<p>The use of matrix operations (e.g.&nbsp;using <a href="https://numpy.org/">NumPy</a> arrays in Python) is faster compared to the “naive” version above, usually quoted as 10 times <span class="citation" data-cites="langtangen2006python">(<a href="#ref-langtangen2006python" role="doc-biblioref">Langtangen 2006</a>)</span>. On the downside, the matrix notation obscures the indices <code>i</code> and <code>j</code> commonly found in numerical methods (see <a href="#fig-lattice1" class="quarto-xref">Figure&nbsp;<span>11.2</span></a>, where part of a stencil<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> is shown. In this part, where arrows represent subtraction, we are finding “local” difference in the same <code>qx</code> array). When using matrix manipulation, the bounds must be specified correctly in all matrix subscripts (see <a href="#fig-lattice2" class="quarto-xref">Figure&nbsp;<span>11.3</span></a> and the code below). So, there should be a consideration in choosing either approach.</p>
 <p><strong>Looping through index</strong></p>
 <div id="fig-lattice1" class="quarto-float quarto-figure quarto-figure-center anchored" alt="A lattice with dots organised in 2 rows and 4 columns.">
 <figure class="quarto-float quarto-float-fig figure">
@@ -618,7 +624,7 @@ Figure&nbsp;10.1: Sediment transport
 <img src="./chapters/images/ch32/Lattice1.PNG" class="img-fluid figure-img" alt="A lattice with dots organised in 2 rows and 4 columns.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-lattice1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;10.2: Lattice 1
+Figure&nbsp;11.2: Lattice 1
 </figcaption>
 </figure>
 </div>
@@ -647,7 +653,7 @@ Figure&nbsp;10.2: Lattice 1
 <img src="./chapters/images/ch32/Lattice2.PNG" class="img-fluid figure-img" alt="A lattice with dots organised in 2 rows and 4 columns, with the 2 left dots, the 4 central dots, and the 2 right dots grouped together.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-lattice2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;10.3: Lattice 2
+Figure&nbsp;11.3: Lattice 2
 </figcaption>
 </figure>
 </div>
@@ -674,7 +680,7 @@ Figure&nbsp;10.3: Lattice 2
 </section>
 <section id="code-reuse" class="level2">
 <h2 class="anchored" data-anchor-id="code-reuse">Code reuse</h2>
-<p>To CivEng students, reusing code is actually more difficult than writing new code! While the students can implement the code quite well in terms of logic and calculation (see the previous section), they somehow feel embarrassed when having to perform the calculation again with a slightly different input data, or in the CivEng’s language, another “scenario”. Given the intuitive layout of code blocks in a notebook, the students tend to just copy-and-paste code and make minor edits, which leads to code with excessive repetition. Other related “gotchas” are discussed in other chapters of this book <span class="citation" data-cites="TeachProgAcross_C29 TeachProgAcross_C07">(<a href="#ref-TeachProgAcross_C29" role="doc-biblioref">Gemayel, Budiarto, and Bell 2026</a>; <a href="#ref-TeachProgAcross_C07" role="doc-biblioref">Skipsey et al. 2026</a>)</span>.</p>
+<p>To CivEng students, reusing code is actually more difficult than writing new code! While the students can implement the code quite well in terms of logic and calculation (see the previous section), they somehow feel embarrassed when having to perform the calculation again with a slightly different input data, or in the CivEng’s language, another “scenario”. Given the intuitive layout of code blocks in a notebook, the students tend to just copy-and-paste code and make minor edits, which leads to code with excessive repetition. Other related “gotchas” are discussed in other chapters of this book <span class="citation" data-cites="TeachProgAcross_C29 TeachProgAcross_C07">(<a href="#ref-TeachProgAcross_C29" role="doc-biblioref">Gemayel et al. 2026</a>; <a href="#ref-TeachProgAcross_C07" role="doc-biblioref">Skipsey et al. 2026</a>)</span>.</p>
 <p>During my tutorials in the past, students were exposed to a limited amount of pre-written code in the form of Jupyter notebooks only. By reading these Jupyter notebooks, the students were able to pick out relevant code cells and run them. They would know which chunks of code should be executed and in what order, so that no errors emerge showing undefined variables. But when students copy chunks of code from the sample file to their <em>own</em> notebook, renaming variables is often required.</p>
 <p>Another issue is lexical scoping. Being more acquainted to “physical” objects rather than information “pieces”, CivEng students would insist on using different names for variables appearing in both the inner and outer scopes despite the fact that these names would not conflict. This is reasonable for array data types, as in the case below, where the CivEng student creates a <code>zb_init</code> variable to store the initial state of the system (and the use of <code>copy()</code> to avoid the potential issues with using matrix views mentioned above). However, the situation is different for single numbers (scalars). Consider a variable for the characteristic “near-bed” flow velocity, <code>Uf</code>, which is created outside and being updated inside the function body, without affecting its original value.</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9" data-lst-cap="Lexical scoping-aware example"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1"></a>zb <span class="op">=</span> np.zeros((nx,ny))</span>
@@ -752,7 +758,7 @@ Figure&nbsp;10.3: Lattice 2
 <div id="lst-student-func" class="julia listing quarto-float quarto-figure quarto-figure-left anchored">
 <figure class="quarto-float quarto-float-lst figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-lst" id="lst-student-func-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Listing&nbsp;10.1: Student’s version
+Listing&nbsp;11.1: Student’s version
 </figcaption>
 <div aria-describedby="lst-student-func-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode numberSource julia number-lines code-with-copy"><code class="sourceCode julia"><span id="cb10-1"><a href="#cb10-1"></a>deriv_sq <span class="op">=</span> <span class="kw">function</span>(o, h)</span>
@@ -771,7 +777,7 @@ Listing&nbsp;10.1: Student’s version
 <div id="lst-recommended-func" class="julia listing quarto-float quarto-figure quarto-figure-left anchored">
 <figure class="quarto-float quarto-float-lst figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-lst" id="lst-recommended-func-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Listing&nbsp;10.2: Recommended version
+Listing&nbsp;11.2: Recommended version
 </figcaption>
 <div aria-describedby="lst-recommended-func-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode numberSource julia number-lines code-with-copy"><code class="sourceCode julia"><span id="cb11-1"><a href="#cb11-1"></a><span class="co"># A generic central-difference approximation</span></span>
@@ -787,7 +793,7 @@ Listing&nbsp;10.2: Recommended version
 </section>
 <section id="tooling" class="level2">
 <h2 class="anchored" data-anchor-id="tooling">Tooling</h2>
-<p>The students are happy with Jupyter notebooks during class. Syntax highlighting, code auto-completion, and embedded plot outputs are features that are highly appreciated. Nevertheless, a dedicated environment like VS Code is needed for students who want to develop larger programs with debugging and version control (e.g.&nbsp;using git). In another chapter of this book, <span class="citation" data-cites="TeachProgAcross_C29">Gemayel, Budiarto, and Bell (<a href="#ref-TeachProgAcross_C29" role="doc-biblioref">2026</a>)</span> mention the use of a Python debugger (<code>pdb</code>) in the Jupyter Notebook environment, yet the more recent Jupyter Lab features a more convenient visual debugger so that students can track the changes of variables during the flow of the program.</p>
+<p>The students are happy with Jupyter notebooks during class. Syntax highlighting, code auto-completion, and embedded plot outputs are features that are highly appreciated. Nevertheless, a dedicated environment like VS Code is needed for students who want to develop larger programs with debugging and version control (e.g.&nbsp;using git). In another chapter of this book, <span class="citation" data-cites="TeachProgAcross_C29">Gemayel et al. (<a href="#ref-TeachProgAcross_C29" role="doc-biblioref">2026</a>)</span> mention the use of a Python debugger (<code>pdb</code>) in the Jupyter Notebook environment, yet the more recent Jupyter Lab features a more convenient visual debugger so that students can track the changes of variables during the flow of the program.</p>
 <p>Recently, there has been an increasing tendency to use AI in coding. While AI tools are a great boon for syntax checks and documentation, it would be detrimental to have AI chatbots generate the code skeleton and logic, as this part requires the ingenuity of civil engineers who possess the domain knowledge.</p>
 </section>
 <section id="good-practices" class="level2">
@@ -812,12 +818,12 @@ Listing&nbsp;10.2: Recommended version
 <h2 class="unnumbered anchored" data-anchor-id="references">References</h2>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
 <div id="ref-TeachProgAcross_C29" class="csl-entry" role="listitem">
-Gemayel, Joseph El, Arif Budiarto, and William Bell. 2026. <span>“Teaching Programming Across Disciplines.”</span> In.
+Gemayel, Joseph El, Arif Budiarto, and William Bell. 2026. <em>Teaching Programming Across Disciplines</em>.
 </div>
 <div id="ref-hoffbeck2016teaching" class="csl-entry" role="listitem">
-Hoffbeck, Joseph P, Heather E Dillon, Robert J Albright, Wayne Lu, and Timothy A Doughty. 2016. <span>“Teaching Programming in the Context of Solving Engineering Problems.”</span> In <em>2016 IEEE Frontiers in Education Conference (FIE)</em>, 1–7. IEEE.
+Hoffbeck, Joseph P, Heather E Dillon, Robert J Albright, Wayne Lu, and Timothy A Doughty. 2016. <span>“Teaching Programming in the Context of Solving Engineering Problems.”</span> <em>2016 IEEE Frontiers in Education Conference (FIE)</em>, 1–7.
 </div>
 <div id="ref-langtangen2006python" class="csl-entry" role="listitem">
 Langtangen, Hans Petter. 2006. <em>Python Scripting for Computational Science</em>. Springer.
@@ -826,7 +832,7 @@ Langtangen, Hans Petter. 2006. <em>Python Scripting for Computational Science</e
 Papert, Seymour A. 2020. <em>Mindstorms: Children, Computers, and Powerful Ideas</em>. Basic books.
 </div>
 <div id="ref-TeachProgAcross_C07" class="csl-entry" role="listitem">
-Skipsey, Sam, Gordon Stewart, Jeremy Singer, and David Cutting. 2026. <span>“Teaching Programming Across Disciplines.”</span> In.
+Skipsey, Sam, Gordon Stewart, Jeremy Singer, and David Cutting. 2026. <em>Teaching Programming Across Disciplines</em>.
 </div>
 <div id="ref-wood2012civil" class="csl-entry" role="listitem">
 Wood, David Muir. 2012. <em>Civil Engineering: A Very Short Introduction</em>. Vol. 331. Oxford University Press.

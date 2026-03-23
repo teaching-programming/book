@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.27">
+<meta name="generator" content="quarto-1.9.36">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -13,6 +13,9 @@
 
 <title>A Practical Guide to Teaching Python as a Computational Tool in an Introductory Data Analysis Course – Teaching Programming across Disciplines</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -28,7 +31,6 @@ ul.task-list li input[type="checkbox"] {
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
-  margin-bottom: 0em;
 }
 .hanging-indent div.csl-entry {
   margin-left:2em;
@@ -58,15 +60,14 @@ div.csl-indent {
 <link href="./00-chapter-template.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-67525df380fad31e868e2dec58263318.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-f7e8c99a8f53c7de2add436ee4bcc4ff.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -190,6 +191,11 @@ div.csl-indent {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./C15_programming-without-computers.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Removing Barriers by Programming Without Computers</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C22_interdisciplinary-by-design.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Interdisciplinary by Design: The Centre for Data, Culture, &amp; Society Training Programme</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -456,7 +462,7 @@ div.csl-indent {
 </section>
 <section id="overview-of-such-a-course" class="level2">
 <h2 class="anchored" data-anchor-id="overview-of-such-a-course">Overview of Such a Course</h2>
-<p>This approach has been implemented by the authors in an introductory data science course for diverse learners at the MSc level in an eleven-week semester <span class="citation" data-cites="king2025teaching">(<a href="#ref-king2025teaching" role="doc-biblioref">King and Sharifi Far 2025</a>)</span>. We suggest structuring such a course so that statistical concepts and methods are taught in lectures, while computer workshop sessions focus on applying the methods using Python. In the workshops, Jupyter notebooks that combine explanatory text and executable code can be used as a common and effective tool to practice coding <span class="citation" data-cites="TeachProgAcross_C29">(<a href="#ref-TeachProgAcross_C29" role="doc-biblioref">Gemayel, Budiarto, and Bell 2026</a>)</span>. This benefits beginners by keeping instructional material and code side by side and reducing the cognitive load that can come with more complex development environments. Furthermore, working on notebooks in the workshops can then be done in the pair-programming format to stimulate student discussion and peer learning <span class="citation" data-cites="TeachProgAcross_C12">(<a href="#ref-TeachProgAcross_C12" role="doc-biblioref">Orzechowski, Blankinship, and Banas 2026</a>)</span>. To support learning, we also recommend integrating continuous assessment throughout the course. Using automated marking tools for coding tasks can provide timely, objective feedback and help students identify specific areas for improvement, which reinforces understanding and encourages regular engagement with the material.</p>
+<p>This approach has been implemented by the authors in an introductory data science course for diverse learners at the MSc level in an eleven-week semester <span class="citation" data-cites="king2025teaching">(<a href="#ref-king2025teaching" role="doc-biblioref">King and Sharifi Far 2025</a>)</span>. We suggest structuring such a course so that statistical concepts and methods are taught in lectures, while computer workshop sessions focus on applying the methods using Python. In the workshops, Jupyter notebooks that combine explanatory text and executable code can be used as a common and effective tool to practice coding <span class="citation" data-cites="TeachProgAcross_C29">(<a href="#ref-TeachProgAcross_C29" role="doc-biblioref">Gemayel et al. 2026</a>)</span>. This benefits beginners by keeping instructional material and code side by side and reducing the cognitive load that can come with more complex development environments. Furthermore, working on notebooks in the workshops can then be done in the pair-programming format to stimulate student discussion and peer learning <span class="citation" data-cites="TeachProgAcross_C12">(<a href="#ref-TeachProgAcross_C12" role="doc-biblioref">Orzechowski et al. 2026</a>)</span>. To support learning, we also recommend integrating continuous assessment throughout the course. Using automated marking tools for coding tasks can provide timely, objective feedback and help students identify specific areas for improvement, which reinforces understanding and encourages regular engagement with the material.</p>
 </section>
 <section id="core-code-elements" class="level2">
 <h2 class="anchored" data-anchor-id="core-code-elements">Core Code Elements</h2>
@@ -484,7 +490,7 @@ div.csl-indent {
 </li>
 <li><strong>Essential functions</strong>: Importing <code>pandas</code>, functions such as <code>pd.DataFrame</code>, <code>pd.read_csv()</code>, <code>pd.read_excel()</code>, <code>head()</code>, <code>info()</code>, <code>describe()</code>, <code>loc[]</code>, <code>iloc[]</code>, selection of rows and columns with <code>[]</code> and operations on them (e.g., <code>df['col'].mean()</code>), handling missing data (<code>np.nan</code>, <code>dropna()</code>, <code>fillna()</code>, <code>replace()</code>), extra useful functions such as <code>groupby()</code>, <code>filter()</code>, <code>apply()</code>, <code>value_counts()</code>, <code>sort_values()</code>.<br>
 </li>
-<li><strong>Real data suggestion</strong>: Turtle Size dataset <span class="citation" data-cites="phillips2021long">(<a href="#ref-phillips2021long" role="doc-biblioref">Phillips et al. 2021</a>)</span> is a simply structured and helpful dataset which includes numerical and categorical variables. Penguins dataset <span class="citation" data-cites="gorman2014ecological">(<a href="#ref-gorman2014ecological" role="doc-biblioref">Gorman, Williams, and Fraser 2014</a>)</span> is another interesting and manageable dataset with some missing values for students to explore.<br>
+<li><strong>Real data suggestion</strong>: Turtle Size dataset <span class="citation" data-cites="phillips2021long">(<a href="#ref-phillips2021long" role="doc-biblioref">Phillips et al. 2021</a>)</span> is a simply structured and helpful dataset which includes numerical and categorical variables. Penguins dataset <span class="citation" data-cites="gorman2014ecological">(<a href="#ref-gorman2014ecological" role="doc-biblioref">Gorman et al. 2014</a>)</span> is another interesting and manageable dataset with some missing values for students to explore.<br>
 </li>
 <li><strong>Common pitfalls</strong>: Confusing <code>loc[]</code> with <code>iloc[]</code>; forgetting to save cleaned data in a variable; misunderstanding how <code>[]</code> behaves differently with rows and columns; forgetting that column names are strings when selecting them (e.g., <code>df["ColumnName"]</code>); forgetting to use a list when selecting multiple columns/rows (e.g., <code>dataframe.iloc[[5,1]]</code> vs <code>dataframe.iloc[5,1]</code>).</li>
 </ul>
@@ -498,7 +504,7 @@ div.csl-indent {
 </li>
 <li><strong>Essential functions</strong>: Importing <code>matplotlib.pyplot</code>, then <code>plt.plot()</code> and <code>plt.show()</code> with <code>plt.xlabel()</code>, <code>plt.ylabel()</code>, <code>plt.title()</code>. Importing <code>seaborn</code> and using the general format of <code>sns.---plot(data=---, x=---, y=---, kind=---, ...)</code> for different <code>kind</code> of plots.<br>
 </li>
-<li><strong>Real data suggestion</strong>: House Sales in King County <span class="citation" data-cites="kaggle">(<a href="#ref-kaggle" role="doc-biblioref">Harlfoxem 2016</a>)</span> data is a manageable dataset for students to explore many ways of visualising house prices based on various numerical and categorical features. The Hotel Booking Demand dataset <span class="citation" data-cites="antonio2019hotel">(<a href="#ref-antonio2019hotel" role="doc-biblioref">Antonio, Almeida, and Nunes 2019</a>)</span> also provides a chance to visualise a hotel room prices and availabilities in Portugal based on several factors.<br>
+<li><strong>Real data suggestion</strong>: House Sales in King County <span class="citation" data-cites="kaggle">(<a href="#ref-kaggle" role="doc-biblioref">Harlfoxem 2016</a>)</span> data is a manageable dataset for students to explore many ways of visualising house prices based on various numerical and categorical features. The Hotel Booking Demand dataset <span class="citation" data-cites="antonio2019hotel">(<a href="#ref-antonio2019hotel" role="doc-biblioref">Antonio et al. 2019</a>)</span> also provides a chance to visualise a hotel room prices and availabilities in Portugal based on several factors.<br>
 </li>
 <li><strong>Common pitfalls</strong>: Forgetting to label axes or add titles; confusing <code>kind</code> options in plots; overcomplicating plots by including many variables; difficulties with data restructuring if required for a plot; difficulty in understanding the connection between <code>seaborn</code> and <code>matplotlib</code> for beginners.</li>
 </ul>
@@ -526,7 +532,7 @@ div.csl-indent {
 </li>
 <li><strong>Essential functions</strong>: Importing the library <code>statsmodels.formula.api</code>, using the <code>ols</code> function in the form of <code>model = smf.ols("y ~ x_1 + x_2", data=df).fit()</code> and the corresponding required functions, <code>model.summary()</code>, <code>model.predict()</code>, <code>model.resid</code>. Some Useful plots are <code>sns.lmplot()</code>, and <code>sns.residplot()and qqplot()</code> for visualisation and checking the model assumptions.<br>
 </li>
-<li><strong>Real data suggestion</strong>: World Happiness Report <span class="citation" data-cites="Happiness">(<a href="#ref-Happiness" role="doc-biblioref"><span>“The World Happiness Report,”</span> n.d.</a>)</span> data from most countries around the world and different years can be used to aim to model the countries level of happiness based on various measured social elements. Programme for International Student Assessment <span class="citation" data-cites="pisa">(<a href="#ref-pisa" role="doc-biblioref">Organisation for Economic Co-operation and Development, n.d.</a>)</span> data provides standardised exam scores for a large sample of students in different countries along with many social and educational indicators.<br>
+<li><strong>Real data suggestion</strong>: World Happiness Report <span class="citation" data-cites="Happiness">(<a href="#ref-Happiness" role="doc-biblioref"><em>The World Happiness Report</em>, n.d.</a>)</span> data from most countries around the world and different years can be used to aim to model the countries level of happiness based on various measured social elements. Programme for International Student Assessment <span class="citation" data-cites="pisa">(<a href="#ref-pisa" role="doc-biblioref">Organisation for Economic Co-operation and Development, n.d.</a>)</span> data provides standardised exam scores for a large sample of students in different countries along with many social and educational indicators.<br>
 </li>
 <li><strong>Common pitfalls</strong>: Difficulty in coding categorical variables; in extending the model formula to variable names including spaces; and in inputting new data in the <code>predict</code> function or passing in wrong data types.</li>
 </ul>
@@ -555,7 +561,7 @@ div.csl-indent {
 <h2 class="unnumbered anchored" data-anchor-id="references">References</h2>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
 <div id="ref-allison1976sleep" class="csl-entry" role="listitem">
 Allison, Truett, and Domenic V Cicchetti. 1976. <span>“Sleep in Mammals: Ecological and Constitutional Correlates.”</span> <em>Science</em> 194 (4266): 732–34.
 </div>
@@ -563,40 +569,40 @@ Allison, Truett, and Domenic V Cicchetti. 1976. <span>“Sleep in Mammals: Ecolo
 Antonio, Nuno, Ana de Almeida, and Luis Nunes. 2019. <span>“Hotel Booking Demand Datasets.”</span> <em>Data in Brief</em> 22: 41–49.
 </div>
 <div id="ref-brfss" class="csl-entry" role="listitem">
-Centers for Disease Control and Prevention. n.d. <span>“Behavioral Risk Factor Surveillance System (<span>BRFSS</span>) Data.”</span> <a href="https://www.cdc.gov/brfss/annual_data/annual_data.htm">https://www.cdc.gov/brfss/annual_data/annual_data.htm</a>.
+Centers for Disease Control and Prevention. n.d. <em>Behavioral Risk Factor Surveillance System (<span>BRFSS</span>) Data</em>. <a href="https://www.cdc.gov/brfss/annual_data/annual_data.htm">https://www.cdc.gov/brfss/annual_data/annual_data.htm</a>.
 </div>
 <div id="ref-che2019sex" class="csl-entry" role="listitem">
 Che-Castaldo, Judy P, Amy Byrne, Kaitlyn Perišin, and Lisa J Faust. 2019. <span>“Sex-Specific Median Life Expectancies from Ex Situ Populations for 330 Animal Species.”</span> <em>Scientific Data</em> 6 (1): 190019.
 </div>
 <div id="ref-TeachProgAcross_C11" class="csl-entry" role="listitem">
-Colquhoun, Rebecca, Tiago A. Marques, Brittany Blankinship, William Kay, Rob Young, and Ozan Evkaya. 2026. <span>“Teaching Programming Across Disciplines.”</span> In.
+Colquhoun, Rebecca, Tiago A. Marques, Brittany Blankinship, William Kay, Rob Young, and Ozan Evkaya. 2026. <em>Teaching Programming Across Disciplines</em>.
 </div>
 <div id="ref-TeachProgAcross_C29" class="csl-entry" role="listitem">
-Gemayel, Joseph El, Arif Budiarto, and William Bell. 2026. <span>“Teaching Programming Across Disciplines.”</span> In.
+Gemayel, Joseph El, Arif Budiarto, and William Bell. 2026. <em>Teaching Programming Across Disciplines</em>.
 </div>
 <div id="ref-gorman2014ecological" class="csl-entry" role="listitem">
 Gorman, Kristen B, Tony D Williams, and William R Fraser. 2014. <span>“Ecological Sexual Dimorphism and Environmental Variability Within a Community of Antarctic Penguins (Genus Pygoscelis).”</span> <em>PloS One</em> 9 (3): e90081.
 </div>
 <div id="ref-kaggle" class="csl-entry" role="listitem">
-Harlfoxem. 2016. <span>“House Sales in King County, USA.”</span> Kaggle dataset. <a href="https://www.kaggle.com/datasets/harlfoxem/housesalesprediction">https://www.kaggle.com/datasets/harlfoxem/housesalesprediction</a>.
+Harlfoxem. 2016. <em>House Sales in King County, USA</em>. Kaggle dataset. <a href="https://www.kaggle.com/datasets/harlfoxem/housesalesprediction">https://www.kaggle.com/datasets/harlfoxem/housesalesprediction</a>.
 </div>
 <div id="ref-king2025teaching" class="csl-entry" role="listitem">
 King, Stuart, and Serveh Sharifi Far. 2025. <span>“Teaching Data Science to Diverse Learners: A Hybrid and Interdisciplinary Approach.”</span> <em>Teaching Statistics</em>.
 </div>
 <div id="ref-pisa" class="csl-entry" role="listitem">
-Organisation for Economic Co-operation and Development. n.d. <span>“<span>PISA</span> Dataset.”</span> <a href="https://www.oecd.org/en/about/programmes/pisa/pisa-data.html">https://www.oecd.org/en/about/programmes/pisa/pisa-data.html</a>.
+Organisation for Economic Co-operation and Development. n.d. <em><span>PISA</span> Dataset</em>. <a href="https://www.oecd.org/en/about/programmes/pisa/pisa-data.html">https://www.oecd.org/en/about/programmes/pisa/pisa-data.html</a>.
 </div>
 <div id="ref-TeachProgAcross_C12" class="csl-entry" role="listitem">
-Orzechowski, Pawel, Brittany Blankinship, and Kasia Banas. 2026. <span>“Teaching Programming Across Disciplines.”</span> In.
+Orzechowski, Pawel, Brittany Blankinship, and Kasia Banas. 2026. <em>Teaching Programming Across Disciplines</em>.
 </div>
 <div id="ref-phillips2021long" class="csl-entry" role="listitem">
 Phillips, Katrina F, Gustavo D Stahelin, Ryan M Chabot, and Katherine L Mansfield. 2021. <span>“Long-Term Trends in Marine Turtle Size at Maturity at an Important Atlantic Rookery.”</span> <em>Ecosphere</em> 12 (7): e03631.
 </div>
 <div id="ref-smith1988using" class="csl-entry" role="listitem">
-Smith, Jack W, James E Everhart, William C Dickson, William C Knowler, and Robert Scott Johannes. 1988. <span>“Using the ADAP Learning Algorithm to Forecast the Onset of Diabetes Mellitus.”</span> In <em>Proceedings of the Annual Symposium on Computer Application in Medical Care</em>, 261.
+Smith, Jack W, James E Everhart, William C Dickson, William C Knowler, and Robert Scott Johannes. 1988. <span>“Using the ADAP Learning Algorithm to Forecast the Onset of Diabetes Mellitus.”</span> <em>Proceedings of the Annual Symposium on Computer Application in Medical Care</em>, 261.
 </div>
 <div id="ref-Happiness" class="csl-entry" role="listitem">
-<span>“The World Happiness Report.”</span> n.d. <a href="https://worldhappiness.report/" class="uri">https://worldhappiness.report/</a>.
+<em>The World Happiness Report</em>. n.d. <a href="https://worldhappiness.report/" class="uri">Https://worldhappiness.report/</a>.
 </div>
 </div>
 </section>
