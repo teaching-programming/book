@@ -12,7 +12,7 @@
 <meta name="author" content="Luke Stephens">
 <meta name="keywords" content="course innovation, pair programming, teaching programming, text mining, stories">
 
-<title>Learning Together Across Modes: Online and On-site Pair Programming in a Fusion Course – Teaching Programming across Disciplines</title>
+<title>Learning Together Across Modes: Online and On-site Pair Programming in a Hybrid / Fusion Course – Teaching Programming across Disciplines</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -110,7 +110,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./C23_pair-programming-fusion.html"><span class="chapter-title">Learning Together Across Modes: Online and On-site Pair Programming in a Fusion Course</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./C23_pair-programming-fusion.html"><span class="chapter-title">Learning Together Across Modes: Online and On-site Pair Programming in a Hybrid / Fusion Course</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -201,7 +201,7 @@ div.csl-indent {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./C23_pair-programming-fusion.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Learning Together Across Modes: Online and On-site Pair Programming in a Fusion Course</span></a>
+  <a href="./C23_pair-programming-fusion.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Learning Together Across Modes: Online and On-site Pair Programming in a Hybrid / Fusion Course</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -295,11 +295,12 @@ div.csl-indent {
   </ul></li>
   <li><a href="#micro-interactions" id="toc-micro-interactions" class="nav-link" data-scroll-target="#micro-interactions">Micro-interactions</a>
   <ul class="collapse">
-  <li><a href="#relentless-feedback" id="toc-relentless-feedback" class="nav-link" data-scroll-target="#relentless-feedback">1) Relentless Feedback</a></li>
-  <li><a href="#chat-blast-and-other-micro-contributions" id="toc-chat-blast-and-other-micro-contributions" class="nav-link" data-scroll-target="#chat-blast-and-other-micro-contributions">2) Chat Blast and Other Micro-contributions</a></li>
+  <li><a href="#relentless-feedback" id="toc-relentless-feedback" class="nav-link" data-scroll-target="#relentless-feedback">Relentless Feedback</a></li>
+  <li><a href="#chat-blast-and-other-micro-contributions" id="toc-chat-blast-and-other-micro-contributions" class="nav-link" data-scroll-target="#chat-blast-and-other-micro-contributions">Chat Blast and Other Micro-contributions</a></li>
   </ul></li>
   <li><a href="#a-practical-guide-for-fusion-educators" id="toc-a-practical-guide-for-fusion-educators" class="nav-link" data-scroll-target="#a-practical-guide-for-fusion-educators">A Practical Guide for Fusion Educators</a></li>
   <li><a href="#conclusions" id="toc-conclusions" class="nav-link" data-scroll-target="#conclusions">Conclusions</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
   </ul>
 </nav>
     </div>
@@ -408,7 +409,7 @@ div.csl-indent {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-title">Learning Together Across Modes: Online and On-site Pair Programming in a Fusion Course</span></h1>
+<h1 class="title"><span class="chapter-title">Learning Together Across Modes: Online and On-site Pair Programming in a Hybrid / Fusion Course</span></h1>
 </div>
 
 
@@ -471,26 +472,34 @@ div.csl-indent {
 <section id="introduction" class="level2">
 <h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
 <p><em>“Sarah, can you scroll down a bit?”</em> The voice appeared suddenly in Sophie’s headphones, causing her to jump slightly in her chair. Just moments before, she’d been chatting face-to-face with Dr Llewellyn about Python syntax errors. Now her disembodied voice was helping her online partner navigate their shared code, while she remained physically present in the classroom just three feet away. Welcome to fusion teaching, where instructors become friendly ghosts and the boundaries between digital and physical learning dissolve in unexpectedly delightful ways.</p>
-<p>In this chapter, we want to share our experience of developing and teaching an experimental and innovative pair programming course. This course is non-traditional; we teach text mining to master’s level students in fusion mode (both online and on-site students at the same time) in a two-day intensive session. We knew this would be challenging, but we also knew that this would be a great learning experience and a chance to do things differently. We present here an honest reflection of the trials, tribulations, and wins in what was ultimately a rewarding and satisfying experience. We didn’t do everything perfectly, but we learned a lot, and we believe the students did too. Please read on and hopefully enjoy hearing about our experience.</p>
+<p>In this chapter, we want to share our experience of developing and teaching an experimental and innovative pair programming course.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> This course is non-traditional; we teach text mining to master’s level students in fusion mode (occurring in a highly technologised classroom designed for teaching online and on-site students as a single cohort to involve all students as fully as possible)<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> in a two-day intensive session. We knew this would be challenging, but we also knew that this would be a great learning experience and a chance to do things differently. We present here an honest reflection of the trials, tribulations, and wins in what was ultimately a rewarding and satisfying experience. We didn’t do everything perfectly, but we learned a lot, and we believe the students did too. Please read on and hopefully enjoy hearing about our experience.</p>
 <p>Pair programming <span class="citation" data-cites="TeachProgAcross_C12 TeachProgAcross_C36">(<a href="#ref-TeachProgAcross_C12" role="doc-biblioref">Orzechowski et al. 2026</a>; <a href="#ref-TeachProgAcross_C36" role="doc-biblioref">Desvages et al. 2026</a>)</span> is central to our course, but pairing students effectively in a fusion setting presents its challenges. It was important to us for our entire cohort to feel a sense of parity; this could not be an in-person course with people watching online. We wanted to develop fluidity between the modes. We worked hard at this and broke down the barrier between the room and online. We created a classroom in which both teachers and students can be vulnerable and open, so that we can grow from each other’s mistakes, and communicate with respect.</p>
-<p>When we first designed and ran <em>Text Mining for Social Research</em><a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>, the Edinburgh Futures Institute’s first fusion course at the University of Edinburgh, we knew we were stepping into uncharted territory <span class="citation" data-cites="alex2021online">(<a href="#ref-alex2021online" role="doc-biblioref">Alex et al. 2021</a>)</span>. Fusion courses integrate both in-person and online students, requiring thoughtful interaction strategies to create a cohesive learning experience. While hybrid teaching models have been explored extensively <span class="citation" data-cites="beatty2019hybrid raes2020systematic">(<a href="#ref-beatty2019hybrid" role="doc-biblioref">Beatty 2019</a>; <a href="#ref-raes2020systematic" role="doc-biblioref">Raes et al. 2020</a>)</span> and so has the value of peer instruction <span class="citation" data-cites="porter2011experience">(<a href="#ref-porter2011experience" role="doc-biblioref">Porter et al. 2011</a>)</span>, our fusion approach to intensive pair programming represents a novel application of these principles to collaborative coding education. With a team of four (three lecturers and one teaching assistant), we had the flexibility to experiment with innovative teaching strategies that bridged the gap between online and on-site students. This chapter presents our experiences and lessons learned when experimenting with three key interaction methods: <em>Negotiating Fusion-Pairs</em>, <em>the Ghost Helper Effect</em> and <em>Micro-interactions</em>.</p>
+<p>When we first designed and ran <em>Text Mining for Social Research</em><a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>, the Edinburgh Futures Institute’s first fusion course at the University of Edinburgh, we knew we were stepping into uncharted territory <span class="citation" data-cites="alex2021online">(<a href="#ref-alex2021online" role="doc-biblioref">Alex et al. 2021</a>)</span>. Fusion courses integrate both in-person and online students, requiring thoughtful interaction strategies to create a cohesive learning experience. While hybrid teaching models have been explored extensively <span class="citation" data-cites="beatty2019hybrid raes2020systematic">(<a href="#ref-beatty2019hybrid" role="doc-biblioref">Beatty 2019</a>; <a href="#ref-raes2020systematic" role="doc-biblioref">Raes et al. 2020</a>)</span> and so has the value of peer instruction <span class="citation" data-cites="porter2011experience">(<a href="#ref-porter2011experience" role="doc-biblioref">Porter et al. 2011</a>)</span>, our fusion approach to intensive pair programming represents a novel application of these principles to collaborative coding education. With a team of four (three lecturers and one teaching assistant), we had the flexibility to experiment with innovative teaching strategies that bridged the gap between online and on-site students. This chapter presents our experiences and lessons learned when experimenting with three key interaction methods: <em>Negotiating Fusion-Pairs</em>, <em>the Ghost Helper Effect</em> and <em>Micro-interactions</em>.</p>
 </section>
 <section id="making-fusion-pairs-work" class="level2">
 <h2 class="anchored" data-anchor-id="making-fusion-pairs-work">Making Fusion Pairs Work</h2>
 <p><em>A reflection on what needs to be considered when pair programming in a fusion classroom</em></p>
 <p>Pair programming is central to our course <span class="citation" data-cites="williams2000strengthening hannay2009effectiveness hanks2011pair">(<a href="#ref-williams2000strengthening" role="doc-biblioref">Williams et al. 2000</a>; <a href="#ref-hannay2009effectiveness" role="doc-biblioref">Hannay et al. 2009</a>; <a href="#ref-hanks2011pair" role="doc-biblioref">Hanks et al. 2011</a>)</span>, but pairing students effectively in a fusion setting presented its challenges. We experimented with assigning students in same-mode pairs (on-site-on-site or online-online) and mixed-mode pairs (on-site-online), adjusting pairs every hour to help students feel part of a single, integrated cohort. Each new pairing required students to renegotiate key aspects of their collaboration: how they worked together, who took the lead, and how they interacted with instructors. This constant reshuffling reinforced the sense of a shared learning experience across both modes.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="./chapters/images/C23_pair-programming-fusion-modes.png" title="Modes" class="img-fluid figure-img" style="width:70.0%" alt="Different modes of paired students working together on programming exercises."></p>
-<figcaption>Figure 1: Different modes of paired students working together on programming exercises.</figcaption>
+<div id="fig-fusion-modes" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Different modes of paired students working together on programming exercises.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-fusion-modes-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./chapters/images/C23_pair-programming-fusion-modes.png" title="Modes" class="img-fluid figure-img" style="width:70.0%" alt="Different modes of paired students working together on programming exercises.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-fusion-modes-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;10.1: Different modes of paired students working together on programming exercises.
+</figcaption>
 </figure>
 </div>
 <p>We encountered several challenges in this type of paired learning approach (audio issues, cognitive load, context switching). This could especially affect students when accessibility issues or other special circumstances are compounded or clash with the learning environment.</p>
-<p>While students generally preferred mixed-mode pairs (see Figure 2) and reported feeling more connected to the broader cohort, this arrangement proved exhausting to both online and on-site participants. The background noise in the classroom, combined with the additional cognitive load students experienced as a result of this noise, can leave them feeling drained by the end of a session.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="./chapters/images/C23_pair-programming-fusion-noisy-background.png" title="Mixed mode pairs" class="img-fluid figure-img" style="width:70.0%" alt="Mixed mode pair programming in action with noise in the background."></p>
-<figcaption>Figure 2: Mixed-mode pair programming in action with noise in background.</figcaption>
+<p>While students generally preferred mixed-mode pairs (see <a href="#fig-noisy" class="quarto-xref">Figure&nbsp;<span>10.2</span></a>) and reported feeling more connected to the broader cohort, this arrangement proved exhausting to both online and on-site participants. The background noise in the classroom, combined with the additional cognitive load students experienced as a result of this noise, can leave them feeling drained by the end of a session.</p>
+<div id="fig-noisy" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Mixed mode pair programming in action with noise in the background.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-noisy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./chapters/images/C23_pair-programming-fusion-noisy-background.png" title="Mixed mode pairs" class="img-fluid figure-img" style="width:70.0%" alt="Mixed mode pair programming in action with noise in the background.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-noisy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;10.2: Mixed-mode pair programming in action with noise in background.
+</figcaption>
 </figure>
 </div>
 <p>The size and acoustics of the classroom are key factors to consider when using pair programming in teaching. Background noise not only causes “Zoom fatigue” for online students <span class="citation" data-cites="bailenson2021nonverbal">(<a href="#ref-bailenson2021nonverbal" role="doc-biblioref">Bailenson 2021</a>)</span>, especially in longer events like ours, but also affects the on-site students who wear headphones to connect to their mixed-mode buddy. Such overload issues disproportionately affect neurodiverse learners who may struggle with auditory processing or filtering competing stimuli. In our case, additional room facilities or even a quiet area outside of the classroom proved handy for such interactions. As a teaching team, we hadn’t originally anticipated this need. We are known to improvise and have once used a “broom cupboard” as an overflow space to support mixed-mode pairs.</p>
@@ -503,11 +512,15 @@ div.csl-indent {
 <h3 class="anchored" data-anchor-id="ghost-helper-effect-and-the-fluid-divide">Ghost Helper Effect and the Fluid Divide</h3>
 <p><em>A discussion on a fluid divide and not siloing students into two groups</em></p>
 <p>In a traditional classroom, students can simply raise a hand and ask the teacher for help. However, in a fusion course environment, mixed-mode pairs introduced a new dynamic. We quickly learned that if online students needed help, support also had to come online. Otherwise, teachers ended up only communicating with people in the room. To address this, all teaching staff were online during pair programming sessions, creating what we called the “ghost helper effect”. This allowed us to speak to students in both modes simultaneously, whether through direct conversation in the room or via webcams and headsets to ensure an equal experience.</p>
-<p>This led to a surprising phenomenon for on-site students in mixed-mode pairs, suddenly hearing a voice in their headphones from one of the teaching team they had just interacted with in person a few minutes earlier, like a friendly ghost. At first, this unexpected presence was disorientating, diverting attention and requiring a cognitive shift (see Figure 3). To normalise the experience, we consciously used online helpers for all mixed-mode pair work. While initially some students were spooked by the fluidity of the “ghost” seeming to be everywhere at once, they quickly found this both friendly and helpful.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="./chapters/images/C23_pair-programming-fusion-ghost-helper.png" title="Ghost helper effect" class="img-fluid figure-img" style="width:70.0%" alt="The ghost helper effect."></p>
-<figcaption>Figure 3: The ghost helper effect.</figcaption>
+<p>This led to a surprising phenomenon for on-site students in mixed-mode pairs, suddenly hearing a voice in their headphones from one of the teaching team they had just interacted with in person a few minutes earlier, like a friendly ghost. At first, this unexpected presence was disorientating, diverting attention and requiring a cognitive shift (see <a href="#fig-ghost-helper" class="quarto-xref">Figure&nbsp;<span>10.3</span></a>). To normalise the experience, we consciously used online helpers for all mixed-mode pair work. While initially some students were spooked by the fluidity of the “ghost” seeming to be everywhere at once, they quickly found this both friendly and helpful.</p>
+<div id="fig-ghost-helper" class="quarto-float quarto-figure quarto-figure-center anchored" alt="The ghost helper effect.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ghost-helper-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./chapters/images/C23_pair-programming-fusion-ghost-helper.png" title="Ghost helper effect" class="img-fluid figure-img" style="width:70.0%" alt="The ghost helper effect.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ghost-helper-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;10.3: The ghost helper effect.
+</figcaption>
 </figure>
 </div>
 <p>In taking this approach, it was important for students to feel a sense of parity in how the course was being delivered and to develop a fluidity between online and on-site. With staff being online and visible through their own cameras, they could speak to both groups directly through the same method. Rather than speaking to an online student through an on-site partner’s webcam or relaying information to be passed on, this ensured that all information was delivered simultaneously and created a sense of fluidity between students and staff.</p>
@@ -521,34 +534,46 @@ div.csl-indent {
 <p>When you teach a course in an intensive mode, you are all together for two very busy days. This helps with a feeling of connection and that we are all in this together. It exacerbates feelings of joy but also of frustration. Learning happens in the midst of these feelings, and we know we need to connect the course with those small moments of joy and frustration and allow them to be voiced. We wanted to encourage, celebrate, and capture these moments of learning and cohort camaraderie, and quickly fix mistakes we were making and habits that were annoying.</p>
 <p>Below we will explain strategies we employed to make the classroom a place of sharing, exchange and growing together. Feedback was gathered not only for quality control, as with the typical “How did you like the course?” questions, but rather to continuously synchronise with the energy and mood of all the students on the course; we call this ‘relentless feedback’. It has to be quick and fun and not distract the class from the core learning. We gamified these small moments of interaction, with methods for ensuring everyone has an equal and anonymous voice, avoiding some common techniques which can be quite exclusionary, such as when a teacher picks the student who raised their hand first, it is often the same student. We asked students to put crosses on a whiteboard of questions to show where their mood was, and we asked them to fire answers to verbal questions in the chat function of the online room; we call this a ‘Chat Blast’. If a student picked up a mistake in the code, we asked them to circulate it to the room. If they had a good comment or insight during their learning, we asked them to bring it back up in the discussion sessions when we came back together as a whole group after pair programming. We adapted sessions when people were frustrated or tired, we voiced that these feelings were valid and uncomfortable but can be part of learning, and we upped our energy when the energy in the room started to fade. We created a classroom in which both teachers and students can be vulnerable and open, so that we can grow from each other’s mistakes, and communicate with respect (amplification of learning).</p>
 <section id="relentless-feedback" class="level3">
-<h3 class="anchored" data-anchor-id="relentless-feedback">1) Relentless Feedback</h3>
+<h3 class="anchored" data-anchor-id="relentless-feedback">Relentless Feedback</h3>
 <p>We wanted to gather feedback as we went to have a quick and real-time reading on how the course is going and to be able to adjust our approach if needed. There is a trade-off between asking feedback on the spot or later: asking during the learning process can be quite disruptive, while if we ask later, students might not take the time to provide the feedback in the first place or might not remember how they felt earlier. This is especially important if we care about granularity and would like to know if, for example, a particular part of the course needs to be improved.</p>
 <p>We envisaged a two-way feedback channel, where students say how they are feeling, but they also see how everyone else in the room is doing. We were also aware that anonymity will lead to more honest and useful answers. Another part was that we wanted it to be playful and not very constrained by the digital tool, where the little artefacts like handwriting, colour choice or exact position on the screen can convey personality and individuality.</p>
 <p>We needed a quick and unobtrusive way to gather feedback, which meant that we could use it multiple times during the day. We also wanted to ask meaningful questions, which will help us guide the course delivery (not just “Do you like it”) since we were aware of the complex interaction between whether a course is ‘hard’ and ‘useful’ (where ‘hard’ is fine, as long as it is ‘useful’).</p>
 <p>We wondered whether we could create a feedback mechanism which is easier to complete than to dismiss/avoid, sort of like ‘accept cookies’ popups on websites make it easier to accept than to customise. So, we created a multiple-slider feedback mechanism, where students grade on a Likert scale multiple aspects of their learning experience, and all results are fully open but anonymous.</p>
-<p>For our fusion course, we could not find a tool which would deliver exactly what we needed at the time, so we used a shared digital whiteboard. The whiteboard would always start with several empty scales, and each student would be invited to type the letter X in the appropriate place on the whiteboard (see Figure 4). Since we gathered this feedback every 1-2 hours of the course (after each badge), we had very granular data about the two days of our course. In the animation below, you can see the way the mood in the room changed as the course progressed, which was very useful for us to see and respond to.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="./chapters/images/C23_pair-programming-fusion-relentless-feedback-gif.gif" title="Final feedback" class="img-fluid figure-img" style="width:70.0%" alt="Drawing with a number of axis on which students give feedback. Feedback for about 10 students is annotated. Categories include 'was it hard' and 'did you learn a lot'"></p>
-<figcaption>Figure 4: Feedback collected at the end of each badge.</figcaption>
+<p>For our fusion course, we could not find a tool which would deliver exactly what we needed at the time, so we used a shared digital whiteboard. The whiteboard would always start with several empty scales, and each student would be invited to type the letter X in the appropriate place on the whiteboard (see <a href="#fig-feedback" class="quarto-xref">Figure&nbsp;<span>10.4</span></a>). Since we gathered this feedback every 1-2 hours of the course (after each badge), we had very granular data about the two days of our course. In the animation below, you can see the way the mood in the room changed as the course progressed, which was very useful for us to see and respond to.</p>
+<div id="fig-feedback" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Drawing with a number of axis on which students give feedback. Feedback for about 10 students is annotated. Categories include 'was it hard' and 'did you learn a lot'">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-feedback-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./chapters/images/C23_pair-programming-fusion-relentless-feedback-gif.gif" title="Final feedback" class="img-fluid figure-img" style="width:70.0%" alt="Drawing with a number of axis on which students give feedback. Feedback for about 10 students is annotated. Categories include 'was it hard' and 'did you learn a lot'">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-feedback-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;10.4: Feedback collected at the end of each badge.
+</figcaption>
 </figure>
 </div>
-<p>For completeness, this technique is not limited only to online or hybrid environments, as we also tried it on in-person bootcamp courses as a means of gathering and sharing feedback in the room (Figure 5).</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="./chapters/images/C23_pair-programming-fusion-relentless-feedback-sharpie.png" title="Example feedback" class="img-fluid figure-img" style="width:70.0%" alt="Feedback collected during a one-day intensive course on Hands-on Data Visualisation within Edinburgh Medical School at the University of Edinburgh."></p>
-<figcaption>Figure 5: Feedback collected during a one-day intensive course on Hands-on Data Visualisation within Edinburgh Medical School at the University of Edinburgh.</figcaption>
+<p>For completeness, this technique is not limited only to online or hybrid environments, as we also tried it on in-person bootcamp courses as a means of gathering and sharing feedback in the room (<a href="#fig-example-feedback" class="quarto-xref">Figure&nbsp;<span>10.5</span></a>).</p>
+<div id="fig-example-feedback" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Feedback collected during a one-day intensive course on Hands-on Data Visualisation within Edinburgh Medical School at the University of Edinburgh.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-example-feedback-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./chapters/images/C23_pair-programming-fusion-relentless-feedback-sharpie.png" title="Example feedback" class="img-fluid figure-img" style="width:70.0%" alt="Feedback collected during a one-day intensive course on Hands-on Data Visualisation within Edinburgh Medical School at the University of Edinburgh.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-example-feedback-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;10.5: Feedback collected during a one-day intensive course on Hands-on Data Visualisation within Edinburgh Medical School at the University of Edinburgh.
+</figcaption>
 </figure>
 </div>
 </section>
 <section id="chat-blast-and-other-micro-contributions" class="level3">
-<h3 class="anchored" data-anchor-id="chat-blast-and-other-micro-contributions">2) Chat Blast and Other Micro-contributions</h3>
+<h3 class="anchored" data-anchor-id="chat-blast-and-other-micro-contributions">Chat Blast and Other Micro-contributions</h3>
 <p>Following the same philosophy as in the feedback above, we wanted to give students opportunities to check in with their own learning and the group and provide constructive feedback to the teaching team. Throughout the course, there were moments where we asked them to contribute questions that we would then discuss in the session after each pair programming exercise. This enabled the entire cohort to benefit from the discussion and answers provided. We also ensured that all student questions were repeated aloud during debrief sessions, while also encouraging students to share their own solutions via the chat.</p>
-<p>At specific points in the course, we also asked all students to type a quick, micro contribution into the chat all at the same time, i.e.&nbsp;a Chat Blast (see Figure 6), to encourage engagement and shared participation. We took the Three Stars and A Wish approach, which is used by teachers in primary schools to help pupils focus on what is working and what needs improving <span class="citation" data-cites="larson2008continuous">(<a href="#ref-larson2008continuous" role="doc-biblioref">Larson et al. 2008</a>)</span>. In our case, we flipped this around and asked students to provide us with “Three stars and a wish” about the course in the chat of the video call. This enabled them to share their thoughts not only on what they liked about the course but also gave them permission to point out things that could be improved or things they struggled with.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="./chapters/images/C23_pair-programming-fusion-chat-blast.png" title="Chat blast." class="img-fluid figure-img" style="width:70.0%" alt="Chat blast with feedback using the “Three stars and a wish” method."></p>
-<figcaption>Figure 6: Chat blast with feedback using the “Three stars and a wish” method.</figcaption>
+<p>At specific points in the course, we also asked all students to type a quick, micro contribution into the chat all at the same time, i.e.&nbsp;a Chat Blast (see <a href="#fig-chat-blast" class="quarto-xref">Figure&nbsp;<span>10.6</span></a>), to encourage engagement and shared participation. We took the Three Stars and A Wish approach, which is used by teachers in primary schools to help pupils focus on what is working and what needs improving <span class="citation" data-cites="larson2008continuous">(<a href="#ref-larson2008continuous" role="doc-biblioref">Larson et al. 2008</a>)</span>. In our case, we flipped this around and asked students to provide us with “Three stars and a wish” about the course in the chat of the video call. This enabled them to share their thoughts not only on what they liked about the course but also gave them permission to point out things that could be improved or things they struggled with.</p>
+<div id="fig-chat-blast" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Chat blast with feedback using the “Three stars and a wish” method.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-chat-blast-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./chapters/images/C23_pair-programming-fusion-chat-blast.png" title="Chat blast." class="img-fluid figure-img" style="width:70.0%" alt="Chat blast with feedback using the “Three stars and a wish” method.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-chat-blast-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;10.6: Chat blast with feedback using the “Three stars and a wish” method.
+</figcaption>
 </figure>
 </div>
 <p>Using the Chat Blast method, we exposed the fact that we were learning from the students as well. We were constantly adjusting the course in an agile way according to the feedback received from students when possible. We also exposed the fact that not everything goes right all the time, that we are human beings who can make mistakes and are learning how to adapt to each new group of students in a fusion teaching environment.</p>
@@ -591,6 +616,9 @@ div.csl-indent {
 <p>Fusion teaching challenges traditional classroom dynamics, but with thoughtful design, it can create an engaging and collaborative learning experience. By experimenting with different interaction strategies, we found ways to bridge the physical and digital divide between online and in-person students, creating an interactive and integrated cohort. Our lessons learned and practical insights are timely and valuable for educators designing hybrid courses, particularly in the post-pandemic education landscape.</p>
 <p>Fusion teaching challenges traditional classroom dynamics, but with thoughtful design, it can create an engaging and collaborative learning experience. By experimenting with different interaction strategies, we found ways to bridge the physical and digital divide between online and in-person students, enabling effective pair programming partnerships across both modalities. The mixed-mode pairing approach, while challenging to implement in typical classroom environments due to background noise and cognitive load issues, demonstrated the potential for bridging physical and digital collaboration in programming education.</p>
 <p>When logistical constraints made mixed-mode pairing difficult to sustain, our experience still provided valuable insights into preparing students for the increasingly common reality of distributed software development teams. Our lessons learned and practical insights are timely and valuable for educators designing hybrid programming courses, particularly in the post-pandemic education landscape, where graduates from various disciplines increasingly need coding and remote collaboration skills in their professional work.</p>
+</section>
+<section id="references" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="references">References</h2>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" role="list">
@@ -632,7 +660,9 @@ Williams, L., R. R. Kessler, W. Cunningham, and R. Jeffries. 2000. <span>“Stre
 <section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
 <hr>
 <ol>
-<li id="fn1"><p>This was a two-day intensive bootcamp course for 30 postgraduate students (15 on-site, 15 online). Each day consisted of four 1.5-hour-long sessions, with each session starting with a 15-minute introduction, an hour of coding in pairs and a 15-minute Q&amp;A session.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn1"><p>At the University of Edinburgh a “course” is usually a block of teaching (5-10 weeks) on a subject with assessment at the end, which awards academic credits. In your institution this might be called differently, e.g.&nbsp;class, subject, module or topic.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>See <a href="https://www.qaa.ac.uk/scotland/development-projects/planning-and-delivery-active-blended-learning/section-five-examples-of-good-practice">QAA Scotland - Examples of good practice</a><a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>This was a two-day intensive bootcamp course for 30 postgraduate students (15 on-site, 15 online). Each day consisted of four 1.5-hour-long sessions, with each session starting with a 15-minute introduction, an hour of coding in pairs and a 15-minute Q&amp;A session.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section>
 
