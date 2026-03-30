@@ -1,22 +1,208 @@
 ---
-title: "your chapter title"
+title: "Reflections on Online Teaching"
 bibliography: references.bib
 author:
-  - name: Author One
-    email: author@one.com
-    affiliations: institution or company
+  - name: Samantha Alvarez Madrazo
+    email: s.alvarez-madrazo@imperial.ac.uk
+    affiliations: Imperial College London
+  - name: Chris Cooling
+    email: c.cooling10@imperial.ac.uk
+    affiliations: Imperial College London
+  - name: Joseph El Gemayel
+    email: joseph.el-gemayel@strath.ac.uk
+    affiliations: University of Strathclyde
+  - name: Nick Jayanth
+    email: nick.jayanth19@imperial.ac.uk
+    affiliations: Imperial College London
+  - name: Lucia Michielin
+    email: lucia.michielin@ed.ac.uk
+    affiliations: University of Edinburgh
+  - name: Leila S. Shafti
+    email: leila.shafti@strath.ac.uk
+    affiliations: University of Strathclyde
 
 keywords:
-  - your
-  - chapter
-  - keywords
+  - online
+  - asynchronous
+  - mooc
+  - assessment
+  - blended
 ---
 
 
+## Introduction
 
-[DELETE THIS LINE AND REPLACE IT WITH YOUR MANUSCRIPT]
+In this chapter, educators with a background in teaching online will share some of their experiences. These reflections are intended to be informative and to provide insight, inspiration, and advice to other educators who are undertaking similar teaching. Specifically, the chapter discusses:
+
+* A “Silent Disco” at The University of Edinburgh, where students work through material at their own pace with tutors available to facilitate,
+* An introductory Python course developed on Coursera for early-career researchers at Imperial College London,
+* Four Massive Open Online Courses (MOOCs) integrated into a Masters of Public Health at Imperial College London, including discussions of assessment and interaction between the learners and staff,
+* A selection of blended work-based modules delivered at the University of Strathclyde, designed to be taken by learners while they are in employment.
+
+## Silent Disco
+
+_In this section, Lucia describes her experience in developing “Silent Disco” training activities within the context of the [Centre for Data, Culture, & Society (CDCS)](https://www.cdcs.ed.ac.uk/) at The University of Edinburgh._
+
+One of the notable online teaching innovations developed during the pandemic as part of the Training Programme was the “Silent Disco.” Conceived as a response to widespread “Zoom fatigue” [@sklar_zoom_fatigue], this format deliberately moved away from the standard model of extended video calls. Instead, it sought to create a learning environment that recognised the variety of ways in which participants approach technical training.
+
+At its core, the Silent Disco is a facilitated, partially asynchronous workshop. Participants join a shared Microsoft Teams chat at a scheduled time, and they work through structured materials at their own pace, rather than listening to a live lecture. These may include coding notebooks, short tutorials, or step-by-step guides. Throughout the session, which normally ranges between two to three hours, instructors are present in the chat to provide support, answer questions, offer clarifications and point to further learning material. The absence of video and audio calls reduces the cognitive load of constant online presence, while the live facilitation ensures that learners are never left entirely on their own [@park_2025_zooming].  The possibility of concentrating the focus solely on individual learning experiences was recognised as a particular point of strength by the attendees, as testified by the feedback we received:
+
+> “Silent disco is just an awesome format for learning digital methods, better than live/synchronous webinars because a lot of digital method steps require the learner grappling with the code/steps ourselves. which is better done when alone (in silence)”. --- Learner feedback
+
+To further support the students, the chat remains open for the duration of the semester following the event. This extended access allows participants to revisit the workshop materials at their own convenience and attempt to apply the tutorials to their own datasets. Moreover, attendees are encouraged to use this platform to share relevant updates, insights, or interesting findings with their peers, fostering a continuing community of learning and collaboration. This ongoing engagement ensures that the Silent Disco remains a dynamic resource beyond the initial workshop session.
+
+The Silent Disco format is particularly well-suited to audiences who may not see themselves as “coders” and have limited time for learning new methods. Based on feedback, mostly from staff, they appreciated the format because they couldn't commit to a full course, but also found complete self-learning challenging. For students and researchers in the arts, humanities, and social sciences, technical content can often feel intimidating, especially when delivered at the pace of a conventional lecture. The Silent Disco allows participants to pause, reread, and experiment without the pressure of keeping up with a live demonstration. At the same time, it provides an immediate channel for assistance, which is often crucial when encountering coding errors or unfamiliar interfaces.
+
+CDCS has applied the Silent Disco approach across a diverse set of workshops. Some have focused on foundational skills, such as database design and SQL querying. Others have introduced intermediate methods for text analysis, sentiment detection, and data visualisation. More creative sessions have included work on explorations of large language models and the usage of regular expressions to correct OCR[^C03-ftn-OCR] errors. This range illustrates the flexibility of the Silent Disco model: it accommodates both the practical skills that underpin reproducible research and more experimental engagements with data.
+
+[^C03-ftn-OCR]: Optical Character Recognition (OCR) is a technology used to extract machine-readable text or characters from raster images or scanned documents.
+
+While the Silent Disco format offers a dynamic and flexible approach to learning, it does have certain limitations. For participants who prefer direct, real-time interaction, the absence of live video guidance can make it difficult to deal with complex errors, which could be more efficiently resolved in person or through screen sharing. Additionally, managing multiple asynchronous queries can be challenging for facilitators, potentially leading to delays in addressing individual issues.
+
+What the Silent Disco demonstrates, though, is that online teaching can be both efficient and versatile. By shifting the emphasis away from continuous video interaction, it reduces fatigue while also validating different learning styles. For non-coders in particular, it creates a safe space to approach computational methods incrementally, supported but not overwhelmed. Although born of the pandemic, the model continues to offer a valuable pedagogical alternative, reminding us that inclusive design often begins with the recognition that there is no single “right” way to learn.
+
+## "Introduction to Python for Researchers", a Coursera MOOC
+
+_In this section, Chris describes his experience developing an introductory Python course on Coursera for the Early Career Researcher Institute (ECRI) at Imperial College London._
+
+Between Summer 2023 and Winter 2024, I developed a course named “Introduction to Python for Researchers” in conjunction with the [Interdisciplinary EdTech Lab (IETL)](https://www.imperial.ac.uk/interdisciplinary-ed-tech-lab/) at Imperial College. This course was hosted on Coursera and was based on a previous course I had developed in Blackboard. The course is intended to take 10-15 hours to complete and covers the basics of Python programming. The course is primarily aimed at early career researchers (such as PhD students and postdocs) and is designed to be taken on-demand by learners when they feel it benefits their professional development.
+
+We aimed to distinguish the course from other introductory Python courses by focusing the examples on simplified scientific problems, and best-practice and tools and techniques that would be useful in the real world. In formulating the course, we chose to minimise the number of videos, using images, gifs and embedded runnable code cells in the course pages as much as possible. This is because the time investment to create and maintain videos is much greater than these other media.
+
+The development process took around 18 months where it made up around half of my full-time workload. I developed the content and my colleagues at the IETL formatted it on Coursera, and advised on the pedagogy of online courses. At the time of writing, the course has been live for around 8 months and has had around 1300 enrolments, with 145 completions. We were able to configure the course so that accessing the full version of the course as a member of the public required a paid Coursera subscription, generating some income for us. For students at our university, however, they were able to access an identical duplicate of the course for free using their institution's email address.
+
+Developing this course was hard and time-consuming. The course has 110 pages and contains around 60,000 words. Although the subject was very well-known to me and I had previously produced similar courses to draw inspiration from, creating the content took a long time. There were normal pedagogical considerations relating to what to cover, how to order it, and what examples and exercises to include. There were also issues relating to Coursera and producing a MOOC specifically --- how to render and format the content on the site, how to direct students to forums with questions, and how to use the technology of Coursera to facilitate examples and exercises. Resolving these questions also required the most intensive collaboration with the IETL. In all, developing the content probably took around half the effort, with the other half spent on issues relating to Coursera.
+
+Coursera offered some useful tools for creating the course --- one of the most useful being the Coursera Lab. This is a configurable containerised environment with a Visual Studio Code interface. We used this for all of the exercises and some of the examples. For the exercises, we were able to define a suite of unit tests that could check the learner’s code to see if it behaved properly. By anticipating some common mistakes a student might make, we were able to include specific feedback messages to help learners correct common mistakes. Coursera also allowed for passing these tests to be required for progress of completion of the course; however, we chose not to do this, and to make only passing the multiple-choice exam at the end of the course a requirement.
+
+One ongoing cost of this course is monitoring. As the main tutor, I check the course’s forums once a week for questions and problems. At the current modest user base of the course, questions are relatively rare, but if the course got more popular, this would eventually create a significant workload. On one occasion, the way Coursera implemented the Labs behind the scenes unexpectedly changed and this broke the grading in all of our labs. This led to many questions and lots of feedback from struggling learners. I was grateful that my colleagues at the IETL were able to quickly identify and fix the problem, but this was an unexpected and significant amount of work. It seems possible this could occur again.
+
+Overall, internal and external students both seem happy with the course. For our internal students I think there is a slight improvement in experience compared to our old Blackboard course that this course replaced. A downside is that developing the Coursera course did take more time and effort as the interface is more fully-featured and complex. Commercially, this course has not been a significant success. The area of “introductory Python course” is very saturated, making it difficult to become very successful.
+
+If I were developing a Coursera course again, one thing I would do is learn how to do more of the formatting myself. I drafted the content in one place, the IETL formatted it on Coursera, and then I checked it and we iterated if necessary. Whilst my IETL colleagues were very competent and helpful, this process introduced significant extra work. If I had produced most of the content directly on Coursera, leaving only the more complex bits for my more experienced colleagues, it would have significantly reduced the overall amount of work.
+
+Overall, I’m pleased to have developed the Coursera course. It provides a great asynchronous resource for learners to study the basics of Python. As this is one of our most popular topics, it supports a large number of students and frees up a lot of teaching time, helping to justify the large time and effort outlay of creating the course. Careful consideration of the content, sequencing, problems users might encounter, formatting and which examples and exercises would be most useful help make it a useful resource for learners.
+
+## Comparing MOOCs and online degree content
+
+_In this section, Samantha and Nick compare how content was created and is currently delivered in four MOOCs for Statistics for Public Health and the corresponding Statistics for Public Health core module (previously known as specialisation),  which is part of the Master of Public Health online (MPHO) degree at Imperial College London._
+
+Massive Online Open Courses (MOOCs) are online courses, not often associated with any formal qualifications. There is no cap on the number of students who can take these courses. Although the content could be developed by highly qualified tutors in the field, they would have little to no interaction with the students who are enrolled, and the students would need to rely more on the course content. In comparison, online degree content is content associated with a formal high-level qualification such as a certificate, diploma, or a degree. There would be similar structures to in-person degrees in place, such as an admissions process, a cap of student numbers, and two-way interactions between students and tutors. [@EDHEC_diplomas_vs_moocs].
+
+Four MOOCs for Statistics in Public Health were developed in Coursera by Prof. Alex Bottle, Prof. Victoria Cornelius, and Dr. Lisa Danquah from the academic team, and Dr. Argita Zalli and Helen McKenna from what was at that time the Digital Learning Hub at Imperial College London. Each MOOC consisted of four weeks with videos and readings, some which focused on statistical concepts and others on coding in R. There were also quizzes included to reinforce concepts being learned. Each MOOC has a specific dataset, which allows students to learn statistical concepts and the corresponding R code. The MOOCs were launched in Coursera between November and December 2018. Samantha started taking care of the delivery in 2020 and Nick joined in 2023.
+
+The MOOCs were developed for several purposes. Two important ones were to be aligned to Imperial’s strategy of creating worldwide collaboration to meet global grand challenges, as the MOOCs are aimed at anyone who has an interest in learning Statistics for Public Health, and to give the learners a taste of the content in our MPHO programme. If they liked the MOOCs, they have the option to enrol and obtain a Postgraduate Certificate (1 year part-time), Diploma (2 year part-time) or the Master’s degree (2 or 3 years part-time). This is well captured by several five-star reviews in Coursera. Here is an example from January 2021:
+
+> “This is a comprehensive and well-made overview of statistical principles and techniques (1) in the context of public health and (2) that will be useful in the subsequent courses in the Coursera Specialization where it belongs. While there are a lot of similar MOOC offerings around, the public health examples and the unique approach this course provides make it worth taking especially if you are the type of person who wants to "cover all bases." This is highly recommended for those aiming to have a career in public health-related research or even those casual learners who want to make sense of the data that they see and hear from the news” --- Coursera review
+
+To access the MOOCs, there were originally two options. The first option is to obtain a certificate when paying for full access; this option is still available. This is more suitable for those students who are interested in accessing all the content asynchronously. Each MOOC was designed with four weeks of content. However, Coursera allows other timeframes to complete them. From our understanding, it is not necessary to complete MOOC 1 to move to MOOC 2 and so on.
+
+The second option to access the MOOCs, which is the one we were suggesting to our students holding an offer for the MPHO, was to audit the whole MOOC 1 for free. In that way they could start to get familiar with the statistical concepts, follow instructions to install R/RStudio and start practising in R. However, in August 2025, Coursera replaced the auditing by a ‘preview mode’ which currently only allows full access to the first week of some of the MOOCs. 
+
+@tbl-mooc-enrolment below shows a summary of the number of students enrolled and the completion rate up to August 2025 for the four MOOCs.
 
 
+| **MOOC No** |                          **Title**                          | **Enrolled** | **Completed (%)** |
+|:-----------:|:-----------------------------------------------------------:|:------------:|:-----------------:|
+|      1      | Introduction to Statistics & Data Analysis in Public Health |    60,185    |    10,962 (18%)   |
+|      2      |           Linear Regression in R for Public Health          |    17,223    |    4,572 (27%)    |
+|      3      |          Logistic Regression in R for Public Health         |    14,308    |    3,167 (22%)    |
+|      4      |           Survival Analysis in R for Public Health          |    16,007    |    3,096 (19%)    |
+
+: Summary of Students Enrolled on the Four MOOCs and the Completion Rate. Source: Coursera {#tbl-mooc-enrolment}
+
+For the degree students, there have been several additions to the content. We will provide here three pivotal ones: the different options to increase student-faculty interactions, the mock assessment, and the summative assessments.
+
+### Interactions between students/learners and faculty in MOOCs and degree content
+
+There is currently no consensus on the meaning of ‘engagement’. However, it has been proposed that one key engagement dimension from the National Survey of Student Engagement is student and faculty interaction [@robinson_2008_benchmarks]. This dimension is clearly different between the MOOC learners and the degree students. The MOOC learners have required over the years minimal interactions with staff, and have mainly contacted us when there is an issue to be awarded a certificate. Prof. Bottle monitored the course for a brief period after the MOOCs were launched, but there has not been any reason to continue doing it. Therefore, we have minimal monitoring and modifications to the content. The higher numbers of students have also posed challenges for one-on-one engagement. 
+
+In contrast, the degree students have more frequent interactions with staff. These interactions include two induction sessions to support installation of R/RStudio (60 min each), then, during term time, 15 weekly office hours to solve statistical questions (60 min each), 12 weekly R drop-in sessions to solve coding questions (60 min each), forums to post questions related to statistical or coding questions, 13 weekly live sessions to reinforce the online learning (60 min each) and communication via e-mail. The number of degree students enrolled in the Statistics for Public Health module has varied between 2019 and 2025 from 60 to 110. As students are studying part-time and are based worldwide, it is their choice to interact with faculty members or not. Therefore, usually 10-20% have at least one student-faculty interaction. Several of these interactions have been useful to update the degree content (e.g. providing alternative commands to displaying R output in the format provided by newer versions).
+
+### Mock assessment
+
+Compared to the MOOCs, MPHO students have the Statistics module with 12 weeks of compulsory content. This is the standard length of modules in the online degree to allow students time to prepare for their summative assessments. The content from the degree had modifications from the four MOOCs to cover all the essential concepts in 12 weeks. In week 13, MPHO students are provided with an optional formative mock assessment, which is not accessible to the students enrolled on the MOOCs. This is because the mock assessment, which has its own dataset, is directly linked to the summative assessment that MPHO students have to successfully complete in order to pass the module and obtain their high-level qualification. With access to the mock assessment, students can practise the skills acquired throughout the module and write an abstract with the results obtained. From the abstracts submitted each year, two of them are selected as examples and feedback is provided by staff and peers in the last online live session of the module. This allows the students to have a better understanding of how to put together their abstract for the final summative assessment. For the students whose mock assessment abstracts are chosen for the online live session, their abstracts are anonymised and the students receive detailed feedback, which is an incentive to take part.
+
+### Summative assessments
+
+As mentioned earlier, in the paid version in Coursera, a certificate can be obtained from each of the four MOOCs, and to do so, different assessments have to be completed:
+
+- For MOOC 1, seven short quizzes have to be completed (each 10%, with 3 to 6 autograded questions) and then an end-of-course quiz (30%, with 15 autograded questions).
+- For MOOC 2, there are two autograded quizzes, both with 7 questions each.
+- For MOOC 3, there are 5 autograded quizzes, having between 4 and 10 questions each.
+- For MOOC 4, there are 4 autograded quizzes, having between 1 and 10 questions each.
+
+The content of the assessments has remained the same since 2018. However, the content of summative assessments in the MPHO has evolved over the years. This usually takes several days to create. The first cohort had 3 autograded summative multiple-choice questions plus the main assessment, consisting of coding the best model in R to answer a research question with the dataset provided, and writing the corresponding 350-word abstract. The variety of models generated for the abstract created a challenge in terms of marking all the assessments in a standardised manner. Further, despite requiring the students to upload a data flow diagram, it was sometimes hard and time-consuming to work out what they had done, and where they had gone wrong.
+
+Therefore, since the second cohort, the faculty team decided to generate the R code and output themselves. Students have to select, from the R output, the most appropriate model to answer the research question, write an abstract, answer 10 autograded yes/no questions on whether various parts of the output are useful, and finally answer five or six free-text questions, which mainly look at interpreting various outputs.
+
+Recently, owing to Imperial’s initiative of reducing assessment load across the University, and the rising risk of AI usage on summative assessments, we amended the summative assessment on the module. From the academic year 2025/2026, there is one summative assessment, which includes one autograded summative multiple choice questions related to the all learned content, plus interpreting and selecting the most appropriate model from the R code to answer a research question, write an abstract and answer five to six free-text questions. Currently the use of AI is not allowed in the summative assessment, hence we have followed Imperial’s guidances whilst creating the assessment, to try to make it as AI-proof as possible by including some reflective free-text questions and/or questions to interpret graphs.
+
+These changes in summative assessment have also required over the years updating a few items in the degree content, to ensure we are providing good scaffolding for students, not only to learn statistical concepts and coding in R, but also to prepare them for their summative assessments, specifically their research project where they will employ the skills learnt on the Statistics module to effectively write an abstract. The specific changes to degree content have included providing mock multiple choice questions and two readings, one with FAQs and another one describing in detail what is required in each section in the abstract, with a couple of examples of abstracts from the literature with feedback on how each can be improved according to the marking rubric.
+
+Overall, the use of shared high quality content for both MOOC and degree learners based worldwide proved to be a successful approach. It allows flexible, accessible education to equip learners with basic statistical methods used in the public health field. Those who are interested in specific topics with minimal faculty interactions can take the MOOCs; future work will focus on increasing the amount of free content available and ensuring there are opportunities to keep the MOOCs content up to date. Those who are interested in obtaining a high-level qualification from the School of Public Health at Imperial College London have access to continuously updated content, with increased student-faculty interaction, and scaffolding for the summative assessment which at the same time empowers them to write their own abstracts.
+
+## Blended work-based learning
+
+_In this section, Joseph and Leila describe their experiences of developing and delivering online modules for the Graduate Apprenticeship and Degree Apprenticeship (GADA) BSc (Hons) programmes in the Department of Computer and Information Sciences at the University of Strathclyde._
+
+Graduate Apprenticeship and Degree Apprenticeship (GADA) programmes are delivered over 4 years with three terms each year. They are blended work-based learning programmes, designed in partnership with industry, to allow the learners to gain a degree while in employment. GADA programmes combine largely asynchronous online learning with one day every 4 weeks of mandatory on-campus activities and one day per week of non-mandatory on-campus activities.
+
+Since 2019, we have taught various modules in these programmes. Our blended model consists of short video lectures, screen-captures of worked examples, directed readings from textbooks, quizzes to self-evaluate learning, hands-on programming exercises, moderated online discussion forums, and on-campus activities. Both authors have contributed to the development of online materials as well as the delivery of the modules.
+
+Before preparing online materials, staff members are offered training by the university to gain skills and experience with recording and editing. During the recording phase, each 10-minute video took approximately one hour to prepare and produce. Each week of a 20-credit module typically includes 10 to 15 videos, and the module runs over 12 weeks. Support from the university team helped with video editing, managing the Moodle page, and handling administrative tasks.
+
+Based on our experiences of teaching these blended modules, we observed that different learning resources play complementary roles in supporting students’ learning. Short videos and worked examples provide concise, targeted explanations of specific techniques or programming concepts, while textbooks offer deeper theoretical context. Practical exercises and formative quizzes enable students to test and consolidate their understanding. Online discussion forums further support learning by facilitating peer interaction, which is particularly valuable for GADA students who are balancing academic study with professional responsibilities.
+
+The asynchronous nature of the learning materials is particularly beneficial for apprentices. Students frequently revisit video lectures and worked examples, especially in preparation for assessments. The ability to pause, reflect, and re-watch explanations allows learners to study at their own pace and accommodate the constraints of full-time employment.
+
+Our experience also suggests that participation in online discussion forums increases when activities are clearly structured and linked to specific exercises or tasks. When prompts are broad or loosely defined, students may be unsure how to contribute, and engagement tends to remain limited. Providing clear instructions or discussion prompts helps to establish expectations and encourages more meaningful interaction.
+
+Another important consideration is the maintenance of online content. While the creation of digital materials is initially resource-intensive, ongoing revision is equally important. In some cases, videos must be re-recorded to maintain clarity or reflect changes in software tools and programming environments. This need for regular updates is particularly relevant in computer science, where technologies evolve rapidly.
+
+Ultimately, effective teaching depends on the ability to engage students and foster their enjoyment of learning. When learners are actively engaged, they tend to become more independent and motivated in their studies. Creating such engagement, however, remains one of the key challenges of online and blended learning environments.
+
+Drawing on our experiences of designing and delivering these modules, we offer several practical recommendations for educators developing similar programmes.
+
+### Designing coherent learning pathways
+
+Students benefit when the relationships between videos, readings, exercises, and discussion forums are made explicit. When these elements are clearly connected, learners can better understand how each activity contributes to their development. Structuring materials in smaller units is particularly helpful. Dividing longer lectures into short videos focused on individual topics enables a more balanced learning experience, allowing students to alternate between watching videos, reading supporting materials, and completing exercises.
+
+### Keeping video content concise and interactive
+
+Video lectures are most effective when they remain brief and focused. Unlike traditional face-to-face lectures, online videos do not need to repeat explanations in multiple ways within a single session. Students can pause, replay segments, or consult additional resources as needed. Incorporating interactive elements within videos can further enhance engagement, particularly when introducing complex programming concepts. For example, instructors can present a short exercise during the video and encourage students to pause and attempt a solution before reviewing the worked example. Tools such as [H5P](https://h5p.org/) allow such interactions to be embedded directly into the video environment.
+
+### Supporting discussion and collaboration
+
+Online discussion forums can play an important role in supporting peer learning, but they require careful design to function effectively. Broad instructions often lead to minimal engagement, as students may not know how to begin contributing. More focused prompts or discussion tasks linked to exercises or assessments tend to generate more meaningful participation. In addition, learners frequently expect instructors to remain visible in these discussions, even when the primary aim is to encourage peer-to-peer interaction.
+
+Collaborative activities conducted outside the classroom can also enhance engagement. Off-campus group work allows students to share perspectives and experiences from their workplaces, enriching the learning process while maintaining the flexibility required by work-based learners.
+
+### Encouraging practice and self-assessment
+
+Programming modules require frequent opportunities for practice. However, too many summative assessments can place considerable pressure on students who are already managing professional responsibilities. For this reason, formative exercises are particularly valuable, allowing students to experiment, make mistakes, and develop their skills without the pressure of grading.
+
+Self-assessment activities also support learning by enabling students to evaluate their own work independently. This process helps build confidence and encourages learners to take greater responsibility for monitoring their own progress.
+
+### Providing timely feedback
+
+Immediate feedback is an important motivator for learners. When students receive rapid responses to their submissions, they are more likely to correct mistakes and refine their understanding. Automated assessment tools such as Coderunner [@lobb_2016_coderunner] are particularly effective in programming modules, as they allow students to receive instant feedback on their code while reducing the marking workload for instructors. @TeachProgAcross_C20 in this volume address the topic of automated marking in more detail.
+
+### Maintaining and improving learning materials
+
+Finally, online learning materials should be reviewed and updated regularly, ideally on an annual basis. Designing content in a modular format helps make this process manageable. Short videos focusing on individual topics are easier to revise or replace without requiring the re-recording of entire lectures. Monitoring which resources students revisit most frequently can also provide valuable insights into where students encounter difficulties or require additional clarification. These insights can guide improvements to explanations, examples, and exercises in subsequent iterations of the module.
+
+Overall, our blended-learning approach has proven highly effective for working professionals. Thoughtfully designed, developed, and maintained, it delivers both flexibility and depth, supporting sustained learning over time. 
+
+Our work with the GADA programme was acknowledged internally in 2022 when the Strathclyde GADA teaching team received the Teaching Excellence Awards Team Award, reflecting the collaborative effort and effectiveness of our blended learning approach.
+
+## Conclusion
+
+In this chapter, we have presented several examples of online teaching. We have had different experiences, which we hope you have found useful and informative, but have also agreed on a few key points. 
+
+Online teaching excels at providing learners the ability to learn asynchronously and at their own pace. It is also the only practical way to reach large numbers of learners. However, initially creating the required materials is a big commitment, and a course requires constant monitoring and frequent updates. Videos are particularly resource-intensive and using approaches such as minimising the number of videos, or making more, shorter videos can reduce the workload in creating and maintaining content. Student engagement is encouraged through frequent exercises and tools such as automated feedback help, to make the exercises as useful and engaging as possible. For courses with more learners, automated feedback quickly becomes the only practical method of feedback.
+
+Overall, once an online course has been created, students often find them an effective way to learn. For educators, it can provide a time-efficient way to teach, especially if the course lasts for many years.
 
 ::: {.content-visible when-format="html" unless-format="epub"}
 
