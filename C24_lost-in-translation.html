@@ -1,0 +1,1099 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.36">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Olexandr Konovalov">
+<meta name="author" content="Lucia Michielin">
+<meta name="author" content="Yanina Bellini Saibene">
+<meta name="keywords" content="Translation platforms, Internationalisation/Localisation, Coding-based teaching materials, Multilingual education">
+
+<title>Lost in Translation: Complexities and Good Practices of Translating Coding-based Teaching Materials Across Multiple Languages – Teaching Programming across Disciplines</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./C32_civil-engineering.html" rel="next">
+<link href="./C23_pair-programming-fusion.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-97392e210869a125f4d2a11381cf51ed.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="_theme/styles.css">
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./C24_lost-in-translation.html"><span class="chapter-title">Lost in Translation: Complexities and Good Practices of Translating Coding-based Teaching Materials Across Multiple Languages</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Teaching Programming across Disciplines</a> 
+        <div class="sidebar-tools-main">
+    <div class="dropdown">
+      <a href="" title="Download" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Download"><i class="bi bi-download"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="./teaching_programming_across_disciplines.pdf">
+              <i class="bi bi-file-pdf pe-1"></i>
+            Download PDF
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="./teaching_programming_across_disciplines.epub">
+              <i class="bi bi-journal pe-1"></i>
+            Download ePub
+            </a>
+          </li>
+      </ul>
+    </div>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Teaching Programming across Disciplines</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./00-chapter-template.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Title of Example Chapter (as will appear on top h1 header and in table of contents)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C01_teaching-python.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">A Practical Guide to Teaching Python as a Computational Tool in an Introductory Data Analysis Course</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C03_online-teaching-reflections.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Reflections on Online Teaching</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C06_feminists-and-anarchists.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Dungeon Crawlers and Anarchists: co-designing programming teaching experiences</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C07_teaching-C-to-novices.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Second Languages: Teaching C to Python+Jupyter Novices</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C11_sequential-vs-simultaneous.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Sequential vs.&nbsp;Simultaneous: Approaches to Learning Programming and Statistics</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C12_pair-programming-overview.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Where do I even start with Pair Programming in my classroom? Conversation with seasoned practitioners.</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C15_programming-without-computers.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Removing Barriers by Programming Without Computers</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C22_interdisciplinary-by-design.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Interdisciplinary by Design: The Centre for Data, Culture, &amp; Society Training Programme</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C23_pair-programming-fusion.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Learning Together Across Modes: Online and On-site Pair Programming in a Hybrid / Fusion Course</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C24_lost-in-translation.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Lost in Translation: Complexities and Good Practices of Translating Coding-based Teaching Materials Across Multiple Languages</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C32_civil-engineering.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Changing civil engineering students’ mindset toward programming</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C33_coding-anxiety.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Overcoming coding anxiety: reflections and strategies</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C36_pair-programming-across-disciplines.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Structured group work with assigned asymmetrical roles and switching - Lessons from Pair Programming across disciplines</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C38_skills-based-assessment.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">The case for skills-based assessment in introductory programming courses</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./99-bibliography.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bibliography</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar"><div class="quarto-margin-header"><div class="margin-header-item">
+<details id="accessibility-controls">
+    <summary>Display options</summary>
+  
+    <div class="control-group">
+        <label for="fontSizeSlider">Font size</label>
+        <input type="range" id="fontSizeSlider" min="8" max="32" value="16">
+        <span id="fontSizeValue">16</span>px
+    </div>
+  
+    <div class="control-group">
+        <label for="eyeStrainSlider">Eye strain</label>
+        <input type="range" id="eyeStrainSlider" min="0" max="50" value="0">
+        <span id="eyeStrainValue">0</span>%
+    </div>
+  
+    <div class="control-group">
+        <label for="hueRotateSlider">Hue</label>
+        <input type="range" id="hueRotateSlider" min="0" max="360" value="0">
+        <span id="hueRotateValue">0</span>
+    </div>
+  
+    <div class="control-group">
+        <label for="paddingSlider">Padding</label>
+        <input type="range" id="paddingSlider" min="0" max="12" value="3">
+        <span id="paddingValue">0</span>
+    </div>
+  
+    <div class="control-group">
+        <label for="lineSpacingSlider">Spacing</label>
+        <input type="range" id="lineSpacingSlider" min="80" max="250" value="150">
+        <span id="lineSpacingValue">150</span>%
+    </div>
+  
+    <div class="control-group">
+        <label for="fontFamily">Font</label>
+        <select id="fontFamily">
+            <option value="'Atkinson Hyperlegible', sans-serif">Atkinson Hyperlegible</option>
+            <option value="Arial, Helvetica, sans-serif">Sans-serif</option>
+            <option value="Georgia, 'Bitstream Charter', Times, serif">Serif</option>
+        </select>
+    </div>
+  
+    <div class="control-group">
+        <button id="resetDefaults">Reset to Defaults</button>
+    </div>
+
+</details>
+</div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#general-considerations" id="toc-general-considerations" class="nav-link" data-scroll-target="#general-considerations">General considerations</a></li>
+  <li><a href="#before-starting-the-design-stage" id="toc-before-starting-the-design-stage" class="nav-link" data-scroll-target="#before-starting-the-design-stage">Before starting: the design stage</a>
+  <ul class="collapse">
+  <li><a href="#internationalisation-vs.-localisation" id="toc-internationalisation-vs.-localisation" class="nav-link" data-scroll-target="#internationalisation-vs.-localisation">Internationalisation vs.&nbsp;localisation</a></li>
+  <li><a href="#technical-tools" id="toc-technical-tools" class="nav-link" data-scroll-target="#technical-tools">Technical tools</a></li>
+  </ul></li>
+  <li><a href="#the-implementation-stage-the-translation-workflow" id="toc-the-implementation-stage-the-translation-workflow" class="nav-link" data-scroll-target="#the-implementation-stage-the-translation-workflow">The implementation stage: the translation workflow</a>
+  <ul class="collapse">
+  <li><a href="#peer-review" id="toc-peer-review" class="nav-link" data-scroll-target="#peer-review">Peer review</a></li>
+  <li><a href="#onboarding-new-translators" id="toc-onboarding-new-translators" class="nav-link" data-scroll-target="#onboarding-new-translators">Onboarding new translators</a></li>
+  <li><a href="#glossary" id="toc-glossary" class="nav-link" data-scroll-target="#glossary">Glossary</a></li>
+  </ul></li>
+  <li><a href="#the-long-term-maintenance-general-good-practices" id="toc-the-long-term-maintenance-general-good-practices" class="nav-link" data-scroll-target="#the-long-term-maintenance-general-good-practices">The long-term maintenance: general good practices</a></li>
+  <li><a href="#final-remarks" id="toc-final-remarks" class="nav-link" data-scroll-target="#final-remarks">Final remarks</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const fontSizeSlider = document.getElementById('fontSizeSlider');
+        const fontSizeValue = document.getElementById('fontSizeValue');
+
+        const hueRotateSlider = document.getElementById('hueRotateSlider');
+        const hueRotateValue = document.getElementById('hueRotateValue');
+
+        const eyeStrainSlider = document.getElementById('eyeStrainSlider');
+        const eyeStrainValue = document.getElementById('eyeStrainValue');
+
+        const paddingSlider = document.getElementById('paddingSlider');
+        const paddingValue = document.getElementById('paddingValue');
+
+        const lineSpacingSlider = document.getElementById('lineSpacingSlider');
+        const lineSpacingValue = document.getElementById('lineSpacingValue');
+
+        const fontFamilySelect = document.getElementById('fontFamily');
+
+        const html = document.documentElement;
+        const resetButton = document.getElementById('resetDefaults');
+
+        // Define default values
+        const defaults = {
+            fontSize: 16,
+            hueRotate: 0,
+            eyeStrain: 0,
+            padding: 0,
+            lineSpacing: 150,
+            fontFamily: "'Atkinson Hyperlegible', Arial, Helvetica, sans-serif"
+        };
+
+        function updateStyles() {
+            html.style.setProperty('--bs-root-font-size', fontSizeSlider.value + 'px');
+            html.style.setProperty('--hue-rotate', hueRotateSlider.value + 'deg');
+            html.style.setProperty('--eye-strain', eyeStrainSlider.value + '%');
+            html.style.setProperty('--padding', paddingSlider.value + 'em');
+            html.style.setProperty('--line-spacing', lineSpacingSlider.value + '%');
+            html.style.setProperty('--bs-body-font-family', fontFamilySelect.value);
+
+            fontSizeValue.textContent = fontSizeSlider.value;
+            hueRotateValue.textContent = hueRotateSlider.value;
+            eyeStrainValue.textContent = eyeStrainSlider.value;
+            paddingValue.textContent = paddingSlider.value;
+            lineSpacingValue.textContent = lineSpacingSlider.value;
+
+            saveSettings();
+        }
+
+        // Function to save settings to localStorage
+        function saveSettings() {
+            const settings = {
+                fontSize: fontSizeSlider.value,
+                hueRotate: hueRotateSlider.value,
+                eyeStrain: eyeStrainSlider.value,
+                padding: paddingSlider.value,
+                lineSpacing: lineSpacingSlider.value,
+                fontFamily: fontFamilySelect.value
+            };
+            localStorage.setItem('accessibilitySettings', JSON.stringify(settings));
+        }
+
+        // Function to load settings from localStorage
+        function loadSettings() {
+            const savedSettings = localStorage.getItem('accessibilitySettings');
+            if (savedSettings) {
+                const settings = JSON.parse(savedSettings);
+                fontSizeSlider.value = settings.fontSize;
+                hueRotateSlider.value = settings.hueRotate;
+                eyeStrainSlider.value = settings.eyeStrain;
+                paddingSlider.value = settings.padding;
+                lineSpacingSlider.value = settings.lineSpacing;
+                fontFamilySelect.value = settings.fontFamily;
+                updateStyles();
+            }
+        }
+
+        function resetToDefaults() {
+            fontSizeSlider.value = defaults.fontSize;
+            hueRotateSlider.value = defaults.hueRotate;
+            eyeStrainSlider.value = defaults.eyeStrain;
+            paddingSlider.value = defaults.padding;
+            lineSpacingSlider.value = defaults.lineSpacing;
+            fontFamilySelect.value = defaults.fontFamily;
+            updateStyles();
+            localStorage.removeItem('accessibilitySettings');
+        }
+
+        fontSizeSlider.oninput = updateStyles;
+        hueRotateSlider.oninput = updateStyles;
+        eyeStrainSlider.oninput = updateStyles;
+        paddingSlider.oninput = updateStyles;
+        lineSpacingSlider.oninput = updateStyles;
+        fontFamilySelect.onchange = updateStyles;
+        resetButton.onclick = resetToDefaults;
+
+        loadSettings();
+
+    });
+</script>
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-title">Lost in Translation: Complexities and Good Practices of Translating Coding-based Teaching Materials Across Multiple Languages</span></h1>
+</div>
+
+
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Authors</div>
+  <div class="quarto-title-meta-heading">Affiliations</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Olexandr Konovalov <a href="mailto:obk1@st-andrews.ac.uk" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            School of Computer Science, University of St Andrews
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Lucia Michielin <a href="mailto:lucia.michielin@ed.ac.uk" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Edinburgh Futures Institute, University of Edinburgh
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Yanina Bellini Saibene <a href="mailto:yabellini@gmail.com" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            rOpenSci, Universidad Austral, R-Ladies, The Carpentries
+          </p>
+      </div>
+  </div>
+
+<div class="quarto-title-meta">
+
+      
+  
+    
+  </div>
+  
+
+<div>
+  <div class="keywords">
+    <div class="block-title">Keywords</div>
+    <p>Translation platforms, Internationalisation/Localisation, Coding-based teaching materials, Multilingual education</p>
+  </div>
+</div>
+
+</header>
+
+
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>Translating coding-based teaching material may look like a straightforward practice, especially if you are translating from English to your native language. However, this process is often undertaken in contexts where learners are already navigating coding concepts through a second language, which adds an additional layer of difficulty. If you are directly involved in teaching such students, or participate in international educational projects like <a href="https://carpentries.org/">The Carpentries</a> or <a href="https://programminghistorian.org/">Programming Historian</a>, you may have considered translating teaching materials to make them more accessible.</p>
+<p>Based on our experience in translations and localisation projects, we decided to write this short contribution to help others navigate similar situations and avoid common pitfalls.</p>
+<p>This contribution is a collection of personal reflections and good enough practices we learned through the years, with the caveat that any translating project will have its own peculiarities and needs. While many of our reflections stem from medium to larger, collaborative efforts, some of these practices may also be adapted to smaller-scale projects, although this is not the primary focus of this chapter.</p>
+</section>
+<section id="general-considerations" class="level2">
+<h2 class="anchored" data-anchor-id="general-considerations">General considerations</h2>
+<p>Before moving into the practical side of this contribution (organised around the different project stages: designing, deploying, and maintaining), we wanted to outline a few general considerations.</p>
+<p>As mentioned earlier, it is often the case that translation occurs from English into another language that is the translator’s native language (at least this was our shared experience), reflecting the dominant role of English in coding and academia. While this chapter focuses primarily on that direction, other forms of translation may be required in different contexts.</p>
+<p>Translating from another language into English follows essentially the same processes and can rely on the same tooling as translation from English into other languages. It also requires establishing shared agreements within the community, just as in any other translation effort. For example, the <a href="https://translationguide.ropensci.org/">rOpenSci translation guidelines</a> include language-specific chapters that document community decisions on how to approach translation into each language, highlighting that these agreements are integral to the workflow regardless of the direction of translation.</p>
+<p>Moving from a language into one’s native language may create a misleading sense of reassurance: if one was able to design and teach material in a language that is not their primary one, it might seem reasonable to assume that doing so in their mother tongue would be considerably easier. This is not always the case.</p>
+<p>First of all, if you have studied a subject in a certain language (e.g.&nbsp;English), it is harder to then convey the core topic in a different one. Few situations are more frustrating than knowing how to refer to a concept in a second language but being unable to recall the equivalent term in one’s native language, and this experience is likely to recur frequently throughout the process.</p>
+<p>Because English has been the vernacular language for programming languages, their official documentation and most of the coding-based teaching material available on the internet, the word you are searching for may not actually have a clear translation into the other language. This brings us to another fundamental issue: how much should you actually translate? Where do you stop? The aim is to create material that is understandable for your audience, while also providing them with enough background to refine and progress their knowledge beyond your course.</p>
+<p>If you fully translate everything and introduce many neologisms, you risk preventing learners from efficiently searching for further information online. On the other hand, if you do not translate and explain key concepts and jargon sufficiently, students may struggle to fully comprehend the content. It is a fine line to navigate, made even more complex when dealing with non-Latin alphabet languages, where transliteration also becomes a concern.</p>
+<p>No single solution fits all, and much will depend on the language in question. In collaborative projects, community discussion is often central to these decisions, making the process more collective and sustainable over time. As a rule of thumb, it is helpful to translate terms that can become established jargon in the target language, while leaving others in English. This can be supported through “double-barrelling” keywords, where both the original English term and a more accessible translation are retained.</p>
+<p>More generally, any translation project benefits from two key approaches: a collaborative approach, involving people with diverse linguistic and subject expertise, and an iterative approach that allows materials to improve over time. The more the material is used, the more it can be refined. The wider uptake of the material is also a good indicator of a successful translation project, because the main aim of any translation programme is to reach a wider audience and increase overall literacy.</p>
+<p>Having discussed these general approaches and issues, we now move into more targeted advice based on the different stages of the project. Although it may seem more applicable to a large and medium-sized translation workflows, you may find it useful to consider even when starting a small personal project, since it may be helpful to set up things in a scalable and reproducible manner from the start (in the same way like setting up a Git repository for a personal task).</p>
+</section>
+<section id="before-starting-the-design-stage" class="level2">
+<h2 class="anchored" data-anchor-id="before-starting-the-design-stage">Before starting: the design stage</h2>
+<p>Approaching a translation project, it’s important to have a clear idea about its organisation. You are going to face a substantial task. Choosing the wrong tools and process may cause substantial delays later or impose very restrictive limitations.</p>
+<section id="internationalisation-vs.-localisation" class="level3">
+<h3 class="anchored" data-anchor-id="internationalisation-vs.-localisation">Internationalisation vs.&nbsp;localisation</h3>
+<p>A common view is to separate internationalisation (commonly denoted as “i18n”) and localisation (“l10n”) steps<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>. Internationalisation is focussed on creating multi-language versions of the product (e.g.&nbsp;book, website, software, etc.), while localisation is usually a separate step which happens later.</p>
+<p>In the context of training materials, for example, translation would use the same examples and datasets, as in the original version; an exception to this general rule is the usage of specific units of measure, currency and date format that may not make sense in a translated version. A localised version of the training materials would use variables names, examples and datasets that are more relevant to the language target audience. Separating these two stages makes the first one more achievable.</p>
+<p>You also need to decide whether there is a real need in the localisation of examples balancing on student understanding and engagement and maintenance of the translation — if the English source is frequently updated, it will make it harder to keep the languages synchronised. Focusing on internationalisation (meaning translating the main text only) is often a more realistic goal than localisation (which includes translating and adapting more than the main text). Working through this process can help clarify your next steps.</p>
+</section>
+<section id="technical-tools" class="level3">
+<h3 class="anchored" data-anchor-id="technical-tools">Technical tools</h3>
+<p>Next, you need to consider the technical infrastructure for your translation project. There are some aspects to keep in mind for ad hoc approaches without using any of the specialised platforms.</p>
+<p>Several translation projects have used tools and roles that are already well known in the world of software development: the project takes place on GitHub or a similar version control platform, organized by GitHub projects where you can track the status of each task and who is responsible for it, where an initial machine translation is performed and presented as a Pull Request, which is then reviewed by usually 2 different people to correct common errors made by machine translators and ensure consistency in the translation in accordance with the agreements of the team. This flow replicates other processes with familiar roles (editors, reviewers) and tools (Markdown, version control), enabling more people to use it more quickly. In addition, those who are unfamiliar with the tool can be trained, which has the added benefit of teaching them a tool that will be very useful beyond the translation project.</p>
+<p>A straightforward idea might be to use, for example, a web-based editor such as Google Docs, or, if the source is in Markdown format, a collaborative editor like HackMD, or, if you want to translate a website, just edit raw HTML files. Indeed, this seems to be a viable approach — the first two allow real-time collaboration and leaving comments; the latter two can be used with version control. Not that it is impossible — but it needs to be well thought through.</p>
+<p>A potential problem is that it does not scale well, especially if the source is not static, and it is necessary to periodically update the translation to keep it in sync with the original. Another challenge is to maintain consistency of translation — when multiple translators are working on different parts of the document, they may translate the same terminology in different ways. Finally, you want to track the progress and easily see which parts of the translated document are already finalised and which need discussion. All these tasks are typical for collaborative translation projects, and are helped by specialised purpose-built systems. Thus, from such a system you can expect a customisable workflow in which each fragment of text can be independently translated, proofread, updated and approved, possibly by different persons involved at each step. In addition, there should be some semi-automated procedures (so you may have additional quality control steps) to export translations from the platform (i.e.&nbsp;to make them live on a website) and to pull new versions from the original source, indicating which portions of the text have been updated and need to be translated again. The latter operation may be assisted by suggested translations, based on the previous versions — this is what is called “Translation memory”, often abbreviated as TM.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./chapters/images/C24_Fig_1.png" title="Different approaches to translating teaching materials" class="img-fluid figure-img" alt="Different approaches to translating teaching materials depending on the output that needs to be generated and the aims of the translation project. Three main approaches are outlined: professional translators, translation management platforms, and tailored solutions, with examples given for each."></p>
+<figcaption>Different approaches to translating teaching materials: from professional services to platforms and customized workflows.</figcaption>
+</figure>
+</div>
+<p>In the following table, we describe several existing platforms for collaborative distributed translation: <a href="https://crowdin.com/">Crowdin</a>, <a href="https://www.transifex.com/">Transifex</a>, and <a href="https://weblate.org">Weblate</a>. It is not feasible to make a single recommendation because so much depends on the specificity of your project, but we tried to collect as much information as possible in order to make your choice easier.</p>
+<div class="callout callout-style-default callout-tip no-icon callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Table: Comparing platforms for collaborative translation
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Feature / Platform</th>
+<th>Crowdin</th>
+<th>Transifex</th>
+<th>Weblate</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Type</strong></td>
+<td>Cloud, SaaS</td>
+<td>Cloud, SaaS</td>
+<td>Self-hosted, SaaS</td>
+</tr>
+<tr class="even">
+<td><strong>Open source</strong></td>
+<td>No</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr class="odd">
+<td><strong>Key integrations</strong></td>
+<td>GitHub, GitLab, Bitbucket, Figma, Slack, Jira, API</td>
+<td>GitHub, GitLab, Bitbucket, API, Slack, Jira</td>
+<td>GitHub, GitLab, Bitbucket, API, REST hooks, custom scripts</td>
+</tr>
+<tr class="even">
+<td><strong>Supported content formats</strong></td>
+<td>60+ (PO, XLIFF, JSON, YAML, etc.)</td>
+<td>50+ (PO, XLIFF, JSON, YAML, etc.)</td>
+<td>60+ (PO, XLIFF, JSON, YAML, etc.)</td>
+</tr>
+<tr class="odd">
+<td><strong>Collaboration</strong></td>
+<td>Web UI, comments, tasks, roles</td>
+<td>Web UI, comments, tasks, roles</td>
+<td>Web UI, comments, review queue</td>
+</tr>
+<tr class="even">
+<td><strong>Glossary &amp; Translation Memory</strong></td>
+<td>Yes (Advanced)</td>
+<td>Yes (Advanced)</td>
+<td>Yes (Basic, extensible)</td>
+</tr>
+<tr class="odd">
+<td><strong>Machine translation</strong></td>
+<td>Google, DeepL, Microsoft, custom</td>
+<td>Google, DeepL, Microsoft</td>
+<td>Google, DeepL, Microsoft, others</td>
+</tr>
+<tr class="even">
+<td><strong>Pricing</strong></td>
+<td>Subscription, custom plans. Limited free tier (open source projects: free)</td>
+<td>Subscription, custom plans. Limited free tier (open source projects: free)</td>
+<td>Free (self-hosted, free), SaaS plans (free tier for open source projects)</td>
+</tr>
+<tr class="odd">
+<td><strong>API/CLI</strong></td>
+<td>REST API, CLI</td>
+<td>REST API, CLI</td>
+<td>REST API, CLI</td>
+</tr>
+<tr class="even">
+<td><strong>Mobile SDK</strong></td>
+<td>Yes (iOS/Android)</td>
+<td>Yes (iOS/Android)</td>
+<td>No</td>
+</tr>
+<tr class="odd">
+<td><strong>Quality checks</strong></td>
+<td>Yes (customisable)</td>
+<td>Yes (customisable)</td>
+<td>Yes (customisable, scriptable)</td>
+</tr>
+<tr class="even">
+<td><strong>Workflow Automation</strong></td>
+<td>Advanced</td>
+<td>Advanced</td>
+<td>Highly customisable</td>
+</tr>
+<tr class="odd">
+<td><strong>Community Projects</strong></td>
+<td>Supported (OSS discounts)</td>
+<td>Supported (OSS discounts)</td>
+<td>Native support</td>
+</tr>
+<tr class="even">
+<td><strong>Used by</strong></td>
+<td>The Carpentries, The Turing Way</td>
+<td>Localization Lab, Open edX</td>
+<td>The R-Dev Group</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="the-implementation-stage-the-translation-workflow" class="level2">
+<h2 class="anchored" data-anchor-id="the-implementation-stage-the-translation-workflow">The implementation stage: the translation workflow</h2>
+<p>When it comes to the deployment stage, much will depend on the specific tools and setup you choose to use. However, we have gathered a series of good practices and common pitfalls that should help streamline the deployment phase, whatever your workflow. The following tips are designed to support a smoother, more efficient translation workflow as you bring your teaching materials into multiple languages.</p>
+<section id="peer-review" class="level3">
+<h3 class="anchored" data-anchor-id="peer-review">Peer review</h3>
+<p>Whenever the translations are made in a specialised platform like one from the table above, submitted via GitHub or GitLab pull requests, or contributed in some other way, it is crucial to have them reviewed. This helps to ensure consistency of translation across the project and to propagate the knowledge within the translation team. Make sure that you provide feedback to the translators, instead of quietly correcting their errors. Timely feedback is especially important when new translators join the team: delayed feedback may result in them repeatedly making the same errors, causing more work to fix them in the future.</p>
+<p>Reviewing collaboratively-made translations imposes the need for an approval stage (for example, a button in the web interface). With some reasonable exceptions (e.g.&nbsp;a code example that needs no translation), we recommend following the rule that one should never approve one’s own translations or corrections. Instead, consider a ping-pong-like exchange between the translators. When one of them makes a pass over a section of a document, the other approves it or makes corrections and returns it for approval or revision by the original translator. The tools should help you organise such a workflow in a distributed setting.</p>
+<p>For languages spoken in multiple countries, revisions should ideally involve reviewers from different regions. For example, in Spanish, it is beneficial to include reviewers from several countries to ensure that the chosen words and expressions are widely understood. Don’t underestimate that asynchronous communication will take more time. Sometimes getting together in an online meeting helps to traverse and finalise the remaining fragments of the text much faster and get the next portion of the document ready for publication.</p>
+</section>
+<section id="onboarding-new-translators" class="level3">
+<h3 class="anchored" data-anchor-id="onboarding-new-translators">Onboarding new translators</h3>
+<p>Onboarding new translators is a regular task in community-driven projects. It is important to prepare guidance and provide training for new contributors. Here, there are a few things that need to be explained:</p>
+<ul>
+<li><strong>Is it important for your project to provide the exact word-by-word translation, or can one rephrase the text freely to convey the meaning?</strong> When translating a coding-based teaching material, it might be sensible to use a completely different phrase or definition that will be more understandable to the target audience. Doing this, one should find the right balance — diverting too much from the original may lead to inconsistencies with other parts of the material, and may be harder to maintain in the future if the original text changes.</li>
+<li><strong>Are there any parts of the text that should not be translated?</strong> The source may have a specific format and may include parts used to build the resulting document or website, and these should remain intact. New translators might be unfamiliar with this format and accidentally translate too much. Prevent unnecessary effort by explaining things like specific markup constructions that should not be translated, hyperlinks, cross-references, etc. Explain also whether it is important to preserve formatting and try to approximate line breaks.</li>
+<li><strong>How to communicate efficiently?</strong> For example, how to reach a user within the collaboration platform (e.g.&nbsp;referring to their username), and how to set up your notifications to avoid missing them. Setting up communication channels efficiently would allow to keep the discussions closed to the translations (e.g.&nbsp;as comments on the pull request or in the translation management system). In addition, consider having a live channel for interactive discussions and technical support (e.g.&nbsp;Zulip or Slack).</li>
+<li><strong>Which parts of the document are prioritised for translation?</strong> If someone joins in the middle of the project, are there any parts already translated which are recommended to read first? Also, consider a workflow which allows publishing partial translation, for example, the first few sections of the teaching materials. This may allow you to run pilot trainings, and may attract more translators to your project.</li>
+<li><strong>How to submit improvements to already-made, and possibly even approved translations?</strong></li>
+</ul>
+</section>
+<section id="glossary" class="level3">
+<h3 class="anchored" data-anchor-id="glossary">Glossary</h3>
+<p>Finally, if the glossary is not a part of the translated document, we recommend establishing it. It could at least be used by the translators; even better, you might consider adding it as an appendix to the translated version. Another useful tip is to add English terms in parentheses when a notion is introduced in the text for the first time.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./chapters/images/C24_Fig_2.png" title="Translation workflow for training materials" class="img-fluid figure-img" alt="Translation workflow that highlight the iterative process across the different phases"></p>
+<figcaption>Translation workflow for training materials, showing how translation, review, and feedback interact with supporting resources like translation guides and glossaries, and style conventions.</figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="the-long-term-maintenance-general-good-practices" class="level2">
+<h2 class="anchored" data-anchor-id="the-long-term-maintenance-general-good-practices">The long-term maintenance: general good practices</h2>
+<p>While the creation and deployment of multilingual teaching materials are critical steps, it is equally important to recognise that the process does not end there. Digital and web-based resources are inherently dynamic — they need periodic updates as the software changes, educational needs evolve, or the content becomes outdated. Over time, links may break, interfaces may change, and new technologies might require updates to ensure continued accessibility and functionality.</p>
+<p>Long-term maintenance, therefore, must be part of your project planning from the very beginning. This means allocating both financial resources and sufficient staff time for ongoing review, updating, and technical support. Consider who will be responsible for regularly checking the content, responding to user feedback, and implementing updates across all language versions. Budget not only for immediate project costs, but for the recurrent, perhaps less visible, work required to keep your materials accurate and effective.</p>
+<p>A proactive approach to maintenance prevents issues from accumulating unnoticed, minimises disruption to users, and helps ensure that your investment in high-quality, inclusive teaching resources continues to deliver value over time. With this in mind, we have collected some general good practice advice to help establish sustainable maintenance practices for your multilingual materials.</p>
+<p>Use version control! If your workflow is based on contributing translations via GitHub or GitLab pull requests, you are already there. This gives you reviewer functionality and access to other tools from their ecosystem, such as publishing static websites or uploading releases on Zenodo. If you use a specialised translation management platform, the best approach is to use version control anyway. The input and output text may be stored in the repositories outside the platform, and the platform’s integration with the repository hosting service would allow a semi-automated import of the original version and exporting the translation. Using the external repository would reduce the dependency on any particular platform. Remember to keep a record of who worked on the project as translator and reviewer to give them credit — this information will be automatically recorded if you are using GitHub or GitLab, but otherwise you may need to take note of it manually.</p>
+<p>It may also happen that while you are working on the translation, a new version of the original text is released. Importing updates into your project may set you back. It might be useful to think of versions of the documents, first publish a full translation of some version, and then import and work on the new one, instead of trying to sync two moving targets, and at no single point having a full translation. This, however, very much depends on the particular project. If it is more important that the document is up-to-date than fully translated, using the specialised platform, you may set up a workflow that renders a document with translated and approved fragments in the target language, and the rest in the original.</p>
+<p>Finally, translating code-based teaching materials is a challenge: one should be fluent in the terminology and subtleties in both languages and understand the technical content. Welcoming contributors who do not necessarily possess all three skills, but just one, and are willing to learn through collaboration and feedback, would make your community more inclusive and diverse.</p>
+</section>
+<section id="final-remarks" class="level2">
+<h2 class="anchored" data-anchor-id="final-remarks">Final remarks</h2>
+<p>Language shapes who can access knowledge, participate, and contribute in communities. When most resources are available only in English, a large portion of the global community faces structural barriers that cannot be overcome by individual effort alone. Addressing these barriers is essential not only for being fair but also for the sustainability and global relevance of scientific and open-source initiatives and projects.</p>
+<p>We wrote this text based on the experience and/or recommendations from <a href="https://carpentries.org/">The Carpentries</a> and the <a href="https://ukrainian-carpentries.github.io/">Ukrainian Carpentries Subcommunity</a>, <a href="https://book.the-turing-way.org/">The Turing Way</a>, <a href="https://teachtogether.tech/es/">“Teaching Tech Together” (Enseñar tecnología en comunidad)</a>, <a href="https://ropensci.org/multilingual-publishing/">rOpenSci Multilingual Publishing Project</a>, and <a href="https://es.r4ds.hadley.nz/">“R for Data Science” (R Para Ciencia de Datos)</a>.</p>
+<p>If you wish to explore more hands-on examples of translation projects, you can have a look at the following:</p>
+<ul>
+<li><a href="https://datasciencebydesign.org/blog/multilingual-data-science">Multilingual Data Science</a> is a blog by Yanina Bellini Saibene, where she explores her own experience in creating multilingual data science teaching material.</li>
+<li>The <a href="https://github.com/TWTranslation/translation_workflow">documentation for The Turing Way translation workflow</a>.</li>
+<li>The <a href="https://github.com/joelnitta/carp-i18n-guide">documentation for the internationalisation of The Carpentries lessons</a>.</li>
+<li>An example of <a href="https://github.com/ukrainian-carpentries/translation-guide">guidance for translators</a> from the Ukrainian Carpentries subcommunity.</li>
+<li>A <a href="https://github.com/carpentries/glosario">multi-lingual glossary</a> for computing and data science terms with a GitHub-based contributing workflow.</li>
+<li>The <a href="https://translationguide.ropensci.org/">rOpenSci Localisation and Translation Guidelines</a> explain why and how they localize and translate their resources.</li>
+<li>The <a href="https://programminghistorian.org/en/translator-guidelines">guidelines for translations of Programming Historian material</a>.</li>
+</ul>
+<p>Through translation initiatives, we can help lower these barriers by expanding access to knowledge and participation. By creating technical and social infrastructure for multilingual resources and recognising translation as a meaningful form of contribution, we can foster more inclusive and diverse communities and enable more people to engage, contribute, and shape open source projects.</p>
+
+
+</section>
+<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn1"><p>See <a href="https://en.wikipedia.org/wiki/Internationalization_and_localization">Wikipedia - Internationalization and localization</a><a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./C23_pair-programming-fusion.html" class="pagination-link" aria-label="Learning Together Across Modes: Online and On-site Pair Programming in a Hybrid / Fusion Course">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Learning Together Across Modes: Online and On-site Pair Programming in a Hybrid / Fusion Course</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./C32_civil-engineering.html" class="pagination-link" aria-label="Changing civil engineering students' mindset toward programming">
+        <span class="nav-page-text"><span class="chapter-title">Changing civil engineering students’ mindset toward programming</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
