@@ -1,0 +1,1081 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.36">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Pawel Orzechowski">
+<meta name="keywords" content="bootcamp, social-science, summer-school">
+
+<title>A gentle introduction to coding: narratives from a programming summer school for social sciences and humanities – Teaching Programming across Disciplines</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./C41_pair-programming-tutor-reflections.html" rel="next">
+<link href="./C38_skills-based-assessment.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-97392e210869a125f4d2a11381cf51ed.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="_theme/styles.css">
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./C39_gentle-introduction-summer-school.html"><span class="chapter-title">A gentle introduction to coding: narratives from a programming summer school for social sciences and humanities</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Teaching Programming across Disciplines</a> 
+        <div class="sidebar-tools-main">
+    <div class="dropdown">
+      <a href="" title="Download" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Download"><i class="bi bi-download"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="./teaching_programming_across_disciplines.pdf">
+              <i class="bi bi-file-pdf pe-1"></i>
+            Download PDF
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="./teaching_programming_across_disciplines.epub">
+              <i class="bi bi-journal pe-1"></i>
+            Download ePub
+            </a>
+          </li>
+      </ul>
+    </div>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Teaching Programming across Disciplines</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./00-chapter-template.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Title of Example Chapter (as will appear on top h1 header and in table of contents)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C01_teaching-python.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">A Practical Guide to Teaching Python as a Computational Tool in an Introductory Data Analysis Course</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C03_online-teaching-reflections.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Reflections on Online Teaching</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C06_feminists-and-anarchists.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Dungeon Crawlers and Anarchists: co-designing programming teaching experiences</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C07_teaching-C-to-novices.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Second Languages: Teaching C to Python+Jupyter Novices</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C11_sequential-vs-simultaneous.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Sequential vs.&nbsp;Simultaneous: Approaches to Learning Programming and Statistics</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C12_pair-programming-overview.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Where do I even start with Pair Programming in my classroom? Conversation with seasoned practitioners.</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C15_programming-without-computers.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Removing Barriers by Programming Without Computers</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C22_interdisciplinary-by-design.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Interdisciplinary by Design: The Centre for Data, Culture, &amp; Society Training Programme</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C23_pair-programming-fusion.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Learning Together Across Modes: Online and On-site Pair Programming in a Hybrid / Fusion Course</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C24_lost-in-translation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Lost in Translation: Complexities and Good Practices of Translating Coding-based Teaching Materials Across Multiple Languages</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C32_civil-engineering.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Changing civil engineering students’ mindset toward programming</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C33_coding-anxiety.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Overcoming coding anxiety: reflections and strategies</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C35_action-feedback-plan.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Managing the Rubik’s Cube of Assessment: The Action Feedback Protocol</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C36_pair-programming-across-disciplines.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Structured group work with assigned asymmetrical roles and switching - Lessons from Pair Programming across disciplines</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C38_skills-based-assessment.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">The case for skills-based assessment in introductory programming courses</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C39_gentle-introduction-summer-school.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">A gentle introduction to coding: narratives from a programming summer school for social sciences and humanities</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C41_pair-programming-tutor-reflections.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Pair Programming in Practice: A PhD Tutor’s Reflections</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./99-bibliography.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bibliography</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar"><div class="quarto-margin-header"><div class="margin-header-item">
+<details id="accessibility-controls">
+    <summary>Display options</summary>
+  
+    <div class="control-group">
+        <label for="fontSizeSlider">Font size</label>
+        <input type="range" id="fontSizeSlider" min="8" max="32" value="16">
+        <span id="fontSizeValue">16</span>px
+    </div>
+  
+    <div class="control-group">
+        <label for="eyeStrainSlider">Eye strain</label>
+        <input type="range" id="eyeStrainSlider" min="0" max="50" value="0">
+        <span id="eyeStrainValue">0</span>%
+    </div>
+  
+    <div class="control-group">
+        <label for="hueRotateSlider">Hue</label>
+        <input type="range" id="hueRotateSlider" min="0" max="360" value="0">
+        <span id="hueRotateValue">0</span>
+    </div>
+  
+    <div class="control-group">
+        <label for="paddingSlider">Padding</label>
+        <input type="range" id="paddingSlider" min="0" max="12" value="3">
+        <span id="paddingValue">0</span>
+    </div>
+  
+    <div class="control-group">
+        <label for="lineSpacingSlider">Spacing</label>
+        <input type="range" id="lineSpacingSlider" min="80" max="250" value="150">
+        <span id="lineSpacingValue">150</span>%
+    </div>
+  
+    <div class="control-group">
+        <label for="fontFamily">Font</label>
+        <select id="fontFamily">
+            <option value="'Atkinson Hyperlegible', sans-serif">Atkinson Hyperlegible</option>
+            <option value="Arial, Helvetica, sans-serif">Sans-serif</option>
+            <option value="Georgia, 'Bitstream Charter', Times, serif">Serif</option>
+        </select>
+    </div>
+  
+    <div class="control-group">
+        <button id="resetDefaults">Reset to Defaults</button>
+    </div>
+
+</details>
+</div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#poetic-intro" id="toc-poetic-intro" class="nav-link active" data-scroll-target="#poetic-intro">Coding is like dancing, right?</a></li>
+  <li><a href="#solving-sudoku-is-coding.-guessing-wordle-is-coding.-putting-plates-in-a-dishwasher-is-coding." id="toc-solving-sudoku-is-coding.-guessing-wordle-is-coding.-putting-plates-in-a-dishwasher-is-coding." class="nav-link" data-scroll-target="#solving-sudoku-is-coding.-guessing-wordle-is-coding.-putting-plates-in-a-dishwasher-is-coding.">Solving sudoku is coding. Guessing Wordle is coding. Putting plates in a dishwasher is coding.</a></li>
+  <li><a href="#as-you-learn-programming-you-will-use-skills-and-thinking-patterns-from-other-parts-of-your-life." id="toc-as-you-learn-programming-you-will-use-skills-and-thinking-patterns-from-other-parts-of-your-life." class="nav-link" data-scroll-target="#as-you-learn-programming-you-will-use-skills-and-thinking-patterns-from-other-parts-of-your-life.">As you learn programming, you will use skills and thinking patterns from other parts of your life.</a></li>
+  <li><a href="#how-to-apply-this-practically-in-learning" id="toc-how-to-apply-this-practically-in-learning" class="nav-link" data-scroll-target="#how-to-apply-this-practically-in-learning">How to apply this practically in learning?</a></li>
+  <li><a href="#summer-school-details" id="toc-summer-school-details" class="nav-link" data-scroll-target="#summer-school-details">CDCS Summer School: 5 days of intense-yet-gentle coding</a></li>
+  <li><a href="#pair-programming-is-a-collaboration-technique-where-two-people-share-one-computer-and-take-turns-typing-on-it." id="toc-pair-programming-is-a-collaboration-technique-where-two-people-share-one-computer-and-take-turns-typing-on-it." class="nav-link" data-scroll-target="#pair-programming-is-a-collaboration-technique-where-two-people-share-one-computer-and-take-turns-typing-on-it.">“Pair Programming” is a collaboration technique, where two people share one computer and take turns typing on it.</a></li>
+  <li><a href="#badges-collect-skills-like-pokemon" id="toc-badges-collect-skills-like-pokemon" class="nav-link" data-scroll-target="#badges-collect-skills-like-pokemon">Badges: Collect skills like Pokemon!</a></li>
+  <li><a href="#practical-tips" id="toc-practical-tips" class="nav-link" data-scroll-target="#practical-tips">As promised: some practical top tips for running similar courses</a></li>
+  <li><a href="#this-is-the-beginning-of-a-beautiful-friendship" id="toc-this-is-the-beginning-of-a-beautiful-friendship" class="nav-link" data-scroll-target="#this-is-the-beginning-of-a-beautiful-friendship">This is the beginning of a beautiful friendship</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const fontSizeSlider = document.getElementById('fontSizeSlider');
+        const fontSizeValue = document.getElementById('fontSizeValue');
+
+        const hueRotateSlider = document.getElementById('hueRotateSlider');
+        const hueRotateValue = document.getElementById('hueRotateValue');
+
+        const eyeStrainSlider = document.getElementById('eyeStrainSlider');
+        const eyeStrainValue = document.getElementById('eyeStrainValue');
+
+        const paddingSlider = document.getElementById('paddingSlider');
+        const paddingValue = document.getElementById('paddingValue');
+
+        const lineSpacingSlider = document.getElementById('lineSpacingSlider');
+        const lineSpacingValue = document.getElementById('lineSpacingValue');
+
+        const fontFamilySelect = document.getElementById('fontFamily');
+
+        const html = document.documentElement;
+        const resetButton = document.getElementById('resetDefaults');
+
+        // Define default values
+        const defaults = {
+            fontSize: 16,
+            hueRotate: 0,
+            eyeStrain: 0,
+            padding: 0,
+            lineSpacing: 150,
+            fontFamily: "'Atkinson Hyperlegible', Arial, Helvetica, sans-serif"
+        };
+
+        function updateStyles() {
+            html.style.setProperty('--bs-root-font-size', fontSizeSlider.value + 'px');
+            html.style.setProperty('--hue-rotate', hueRotateSlider.value + 'deg');
+            html.style.setProperty('--eye-strain', eyeStrainSlider.value + '%');
+            html.style.setProperty('--padding', paddingSlider.value + 'em');
+            html.style.setProperty('--line-spacing', lineSpacingSlider.value + '%');
+            html.style.setProperty('--bs-body-font-family', fontFamilySelect.value);
+
+            fontSizeValue.textContent = fontSizeSlider.value;
+            hueRotateValue.textContent = hueRotateSlider.value;
+            eyeStrainValue.textContent = eyeStrainSlider.value;
+            paddingValue.textContent = paddingSlider.value;
+            lineSpacingValue.textContent = lineSpacingSlider.value;
+
+            saveSettings();
+        }
+
+        // Function to save settings to localStorage
+        function saveSettings() {
+            const settings = {
+                fontSize: fontSizeSlider.value,
+                hueRotate: hueRotateSlider.value,
+                eyeStrain: eyeStrainSlider.value,
+                padding: paddingSlider.value,
+                lineSpacing: lineSpacingSlider.value,
+                fontFamily: fontFamilySelect.value
+            };
+            localStorage.setItem('accessibilitySettings', JSON.stringify(settings));
+        }
+
+        // Function to load settings from localStorage
+        function loadSettings() {
+            const savedSettings = localStorage.getItem('accessibilitySettings');
+            if (savedSettings) {
+                const settings = JSON.parse(savedSettings);
+                fontSizeSlider.value = settings.fontSize;
+                hueRotateSlider.value = settings.hueRotate;
+                eyeStrainSlider.value = settings.eyeStrain;
+                paddingSlider.value = settings.padding;
+                lineSpacingSlider.value = settings.lineSpacing;
+                fontFamilySelect.value = settings.fontFamily;
+                updateStyles();
+            }
+        }
+
+        function resetToDefaults() {
+            fontSizeSlider.value = defaults.fontSize;
+            hueRotateSlider.value = defaults.hueRotate;
+            eyeStrainSlider.value = defaults.eyeStrain;
+            paddingSlider.value = defaults.padding;
+            lineSpacingSlider.value = defaults.lineSpacing;
+            fontFamilySelect.value = defaults.fontFamily;
+            updateStyles();
+            localStorage.removeItem('accessibilitySettings');
+        }
+
+        fontSizeSlider.oninput = updateStyles;
+        hueRotateSlider.oninput = updateStyles;
+        eyeStrainSlider.oninput = updateStyles;
+        paddingSlider.oninput = updateStyles;
+        lineSpacingSlider.oninput = updateStyles;
+        fontFamilySelect.onchange = updateStyles;
+        resetButton.onclick = resetToDefaults;
+
+        loadSettings();
+
+    });
+</script>
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-title">A gentle introduction to coding: narratives from a programming summer school for social sciences and humanities</span></h1>
+</div>
+
+
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Author</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Pawel Orzechowski </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Edinburgh Medical School, University of Edinburgh
+          </p>
+      </div>
+  </div>
+
+<div class="quarto-title-meta">
+
+      
+  
+    
+  </div>
+  
+
+<div>
+  <div class="keywords">
+    <div class="block-title">Keywords</div>
+    <p>bootcamp, social-science, summer-school</p>
+  </div>
+</div>
+
+</header>
+
+
+<p>When people from humanities/social science start learning to code, they might feel alone in the dark end of the woods. But they are not, and you are not. As soon as you see programming as a storytelling exercise, your metaphors and narratives become breadcrumbs which will guide you on this transformative journey.</p>
+<div class="callout callout-style-simple callout-note callout-titled" title="Disclaimer: this chapter is written like an annoying food blog">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Disclaimer: this chapter is written like an annoying food blog
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>It starts with a <a href="#poetic-intro">wishy-washy poetic blurb</a> which you will probably scroll past anyway;</li>
+<li>followed by <a href="#summer-school-details">the actual recipe, details and process</a>;</li>
+<li>just to finish with some <a href="#practical-tips">practical recommendations</a> the author may or may not have been paid to include…</li>
+</ul>
+<p>(Also I will overuse punctuation (coders do that)). Enjoy!</p>
+</div>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./chapters/images/C39_gentle-introduction-summer-school-laptop-sticker.jpg" class="img-fluid figure-img" alt="photo of stickers on a laptop. One sticker says 'Text and Data Analysis DCS Summer School'."></p>
+<figcaption>Laptop stickers from the summer school, including the pair-programming proficiency badge</figcaption>
+</figure>
+</div>
+<section id="poetic-intro" class="level2">
+<h2 class="anchored" data-anchor-id="poetic-intro">Coding is like dancing, right?</h2>
+<p>Everyone can dance, even if a little clumsily, even if we were never officially taught how to. And sure, we probably won’t all star in a KPop music video, or dance a tango milonga with a partner. But we can definitely wiggle to the Barbie Girl tune, or to our inner music, and it will feel natural and fun. Dancing taps into everything we’ve ever learned to do with our bodies (like walking, jumping) and puts it in some context. It weaves a functional chain of input (music) and output (wiggling). It benefits from our strengths, and works with/around our challenges. Indeed, much of learning to dance is not learning new things from scratch (like juggling), but rather it builds on the things you already know how to do. Skills and thinking patterns needed for dancing (or coding) are just ‘sleeping’ in you, and you can combine them into this new ability.</p>
+<p>What a wild metaphor, eh? It really holds its ground when you realise what Coding is. Coding IS NOT using a keyboard to type computer programmes in any particular programming language (python, R, javascript). Coding IS using your brain to understand a problem, split it into many smaller tasks and processes, and finally communicate it to another human and to a computer. Coding happens on a piece of paper, coding happens in your head.</p>
+<blockquote class="blockquote">
+<p>“I am such a huge fan of your teaching philosophy and skills. I really appreciated how inclusive your language and examples were, as well as your emphasis on kindness – I could really feel it in how you ran the course!” - Student feedback</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>“At the end of it, I ended up being as excited about Python as about teaching.” - Student feedback</p>
+</blockquote>
+</section>
+<section id="solving-sudoku-is-coding.-guessing-wordle-is-coding.-putting-plates-in-a-dishwasher-is-coding." class="level2">
+<h2 class="anchored" data-anchor-id="solving-sudoku-is-coding.-guessing-wordle-is-coding.-putting-plates-in-a-dishwasher-is-coding.">Solving sudoku is coding. Guessing Wordle is coding. Putting plates in a dishwasher is coding.</h2>
+<p>When you’re problem-solving, you work around constraints and build a toolkit of mental skills and models. You chisel away at the problem in small chunks; you find small transferable mini-skills and patterns, that then you combine into bigger skills and patterns. We all do it all the time. The core component of this type of coding is that you do not solve one problem only once – you also learn to solve it better next time. And quickly you graduate to a higher level of abstraction – you see a bigger picture.</p>
+<p>Like with learning to read, first we learn and read single letters (d-o-i-n-g), then we perceive letter clusters (do-ing), and finally words (doing). When I inhale the word “banana”, I still understand it consists of letters, syllables, but I already ascended to a higher level of perception – the word feels yellow and sweet. It’s the same with solving sudoku or wordle – you start seeing bigger patterns and rules. Similarly, when you solve puzzles using a computer as your sidekick (aka. you’re coding), you first see small pieces (letters, brackets), then larger patterns (loops, functions), and finally you think in concepts and solutions.</p>
+<p>That process of abstraction is familiar to most of us. Any learning, any sport, any skill works a bit like that. And the really magical thing is:</p>
+<p>1. as we do things we get better at them (skill)</p>
+<p>2. we also get better at getting better at other things (transferable meta-skill)</p>
+<p>Imagine this: as you learn to play your first ever boardgame (e.g.&nbsp;chess, Scrabble, poker, or Settlers of Catan), you get better at that game. But as you learn to play your 10th boardgame type, you’re also getting really good at the skill of learning boardgames. You start noticing common storytelling patterns in them, e.g.&nbsp;turns, points, odds or resources. You start snowballing skills of following any instructions or abstracting mechanics.</p>
+<p>And before you notice, you get better at assembling IKEA furniture, or fixing your bike with a YouTube tutorial. You gain the meta-skill of learning to learn, and a scaffolding of patterns which will support your next lesson. A very similar thing happens with programming: you are NOT starting from scratch, and you get better at learning!</p>
+</section>
+<section id="as-you-learn-programming-you-will-use-skills-and-thinking-patterns-from-other-parts-of-your-life." class="level2">
+<h2 class="anchored" data-anchor-id="as-you-learn-programming-you-will-use-skills-and-thinking-patterns-from-other-parts-of-your-life.">As you learn programming, you will use skills and thinking patterns from other parts of your life.</h2>
+<p>When you learn coding, just like any other skill, you anchor it in your skills, memories, metaphors and ways of thinking <span class="citation" data-cites="ambrose2010learning">(<a href="#ref-ambrose2010learning" role="doc-biblioref">Ambrose et al. 2010</a>)</span>. You keep drawing on old patterns and constantly creating new ones. You solve more intricate puzzles and express those solutions in a very specific language. And as you master that new language you learn new nouns, verbs, acronyms and proverb-like shortcuts to achieve your goal quicker and more elegantly. You can imagine that this process gets easier as you do it more, right?</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./chapters/images/C39_gentle-introduction-summer-school-attendees.jpg" class="img-fluid figure-img" alt="Photo of summer school participants taken on a summer day in a park in front of a university building in Edinburgh"></p>
+<figcaption>Instructors and some of the attendees of the CDCS summer school Gentle Introduction to Coding</figcaption>
+</figure>
+</div>
+</section>
+<section id="how-to-apply-this-practically-in-learning" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-apply-this-practically-in-learning">How to apply this practically in learning?</h2>
+<p>Over the last 6 years I’ve taught thousands of people to code at the bootcamp and at the university. For each of my students this has been a journey of building on things that they already knew, their previous life experience and careers. But what skills do we all have which are relevant for coding?</p>
+<p>I’ve seen students with experiences of hospitality or parenthood be great at pipelining, prioritising, just-on-time preparation, hundreds of small puzzles and numerous optimizations. Those who worked as book illustrators or language interpreters excelled at understanding someone else’s vision and representing it in another format, managing process and dependencies, and doing it all within given time and quality constraints. I’ve seen my students combine tens of skills from different parts of their human experience, into how they UNDERSTAND coding. Everyone’s journey to “getting” coding was different.</p>
+</section>
+<section id="summer-school-details" class="level2">
+<h2 class="anchored" data-anchor-id="summer-school-details">CDCS Summer School: 5 days of intense-yet-gentle coding</h2>
+<p>“Gentle Introduction to Coding” was the week-long summer school for 25 brave students who joined me in June 2023. What connected most of them were two things: they came from social science and humanities; and they never learned to program before. For me this was my first time running a 5-day summer school, and I was anticipatory (aka anxious) of how it would combine my previous experiences of teaching (4-month intense coding bootcamps; semester-long university courses). This summer school was organised by the amazing team of <a href="https://www.cdcs.ed.ac.uk/">Center for Data, Culture and Society</a> who also ran a more advanced summer school in the building next door. For all slides and coding exercises I used <a href="https://www.codestorytelling.com/">my teaching materials</a> from other courses. Below I will share with you some novel teaching methods I tried and how it went.</p>
+<p>As well as seeing your peers’ learning process, it is good to visualise your goals. Over the course of the week we were joined by people who use code at different stages of their careers in social sciences so that students see how diverse and impactful knowing how to code can be. Our keynote speaker Melissa Terras spoke about how coding ecosystems change in research; our guest speakers Alessia Calafiore, Bea Alex and Clare Llewellyn shared how they use coding in politics, literature and geography; while our teaching assistants Karim Rivera Lares and Chris Oldnall brought new perspectives from their work in psychology, maths and medicine.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./chapters/images/C39_gentle-introduction-summer-school-pair-programming.png" class="img-fluid figure-img" alt="Drawing of two students pair programming together on one computer. On the left one of them is holding keyboard, then on the right the other one is holding the keyboard."></p>
+<figcaption>When two students use pair-programming: ‘the driver’ (left) is a person who types, ‘the navigator’ (right) is their companion, as they solve a problem together.</figcaption>
+</figure>
+</div>
+<p>Throughout the summer school, students submitted frequent ‘relentless’ feedback (also described by <span class="citation" data-cites="TeachProgAcross_C23">Alex et al. (<a href="#ref-TeachProgAcross_C23" role="doc-biblioref">2026</a>)</span>) in the form of short bullet points about what resonated with them<!--#\[TODO link to 3s1w chapter - once in the book\]-->.</p>
+<p>Here are some of student comments combined:</p>
+<blockquote class="blockquote">
+<p>⭐️ I really liked the ‘badges’ approach – it allowed me to see the learning progress and easily identify the new blocks of knowledge acquired. They provide a bit of ‘instant gratification’ that a new level of knowledge was reached and that’s a very motivating approach to teaching :) I helped to make big leaps I’d never have imagined possible over the five days.]</p>
+<p>⭐️ Careful guiding through the translation between common-sense and programmatic thinking in an approachable, easily understood manner (loads of storytelling, examples, metaphors, images, drawings, etc) helped me to absorb the new information a lot easier.</p>
+<p>⭐️ Effective pair format provided a supportive and collaborative atmosphere of learning together (and sharing skills across various professional and age stages). It was lovely to meet like-minded people and programming in pairs definitely helped overcome any previous obstacles I had when trying to learn code earlier by myself. It also helped to have support from the teaching assistants – Karim and Chris.</p>
+<p>❓ I only wished to have a lot more time to practise the new skills, ideally over a longer period of time with the support from the teaching assistants/teacher. Maybe there is a scope for a follow-up course or meetup via CDCS?</p>
+</blockquote>
+</section>
+<section id="pair-programming-is-a-collaboration-technique-where-two-people-share-one-computer-and-take-turns-typing-on-it." class="level2">
+<h2 class="anchored" data-anchor-id="pair-programming-is-a-collaboration-technique-where-two-people-share-one-computer-and-take-turns-typing-on-it.">“Pair Programming” is a collaboration technique, where two people share one computer and take turns typing on it.</h2>
+<p>While the ‘Driver’ (person who types) talks out loud about what they are doing, the ‘Navigator’ (person who accompanies) is looking out for mistakes and asks clarifying questions. This allows the driver to focus on the challenge at hand, knowing that another set of eyes is checking what they are doing. At the same time the navigator supports and questions them. (I like to conjure an image of a little angel and devil duo sitting on the shoulders of a cartoon character). Every 15 minutes they swap roles, giving both participants the opportunity to practise both skills. This usually is repeated a number of times over a 2 hour session <span class="citation" data-cites="hawlitschek2023empirical">(<a href="#ref-hawlitschek2023empirical" role="doc-biblioref">Hawlitschek et al. 2023</a>)</span>.</p>
+<p>Did you ever notice that in the process of explaining your problem to someone you often find a solution by yourself? For example you cannot find something, and as soon as you ask your flatmate you find it (“oh, never-mind, I found that folder / wrench / salt. It was in front of my eyes all along”). Verbalising/spelling-out a problem (to someone, or to yourself) often facilitates solving it by yourself. Such structured ‘talking to yourself’ is very common in programming and we call it “rubber-ducking”. That’s because if there is no one there to listen to your problem, just find a rubber duck (a floating bath-toy type) and talk to it. And as you talk, your problem becomes clearer. In pair programming we have something even better – a partner who can not only listen, but also asks questions. Often they are at a different level than you, so questions can be unexpected and enlightening. Through this practice students learn transferable skills of how to talk, listen and negotiate in a collaborative environment.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./chapters/images/C39_gentle-introduction-summer-school-feedback-days.png" class="img-fluid figure-img" alt="Graph showing student feedback over 5 days of the course. Answers to 5 questions are shown. Visible trend is that over time things were getting more difficult, but students keep finding it useful, learn a lot and enjoy working in pairs."></p>
+<figcaption>Graph showing student attitudes over first 4 days of the summer school.</figcaption>
+</figure>
+</div>
+<p>Cross-pollinating ideas in pair programming works surprisingly well in diverse groups<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>. Each partner brings their own background, metaphors and ways of understanding, while also experiencing someone else’s ways. All learning during the summer school happened with partners, who we changed every 2 hours. That meant that the diversity of skills and backgrounds worked to our advantage, as it led to spreading of good practice and also allowed people to meet with each other.</p>
+<p>If you’d like to know more about Pair programming, join our <a href="https://pairprogramming.ed.ac.uk/">special interest group</a> or read more about how to introduce it into your classroom in other chapters of this book <span class="citation" data-cites="TeachProgAcross_C12 TeachProgAcross_C36">(<a href="#ref-TeachProgAcross_C12" role="doc-biblioref">Orzechowski et al. 2026</a>; <a href="#ref-TeachProgAcross_C36" role="doc-biblioref">Desvages et al. 2026</a>)</span>.</p>
+</section>
+<section id="badges-collect-skills-like-pokemon" class="level2">
+<h2 class="anchored" data-anchor-id="badges-collect-skills-like-pokemon">Badges: Collect skills like Pokemon!</h2>
+<p>I find it easier to learn something new when it is separated into manageable chunks, especially when I understand how each chunk fits into a bigger picture. I also love it when assembling all the pieces feels personal, fun and challenges how I see things. That’s why I resonated so deeply with Threshold Concepts <span class="citation" data-cites="meyer2003threshold">(<a href="#ref-meyer2003threshold" role="doc-biblioref">Meyer and Land 2003</a>)</span> (thank you <a href="https://institute-academic-development.ed.ac.uk/learning-teaching/cpd/postgraduate-certificate">PgCAP</a>!) – a theory that some knowledge cannot be unlearned and is transformative (like crossing a door threshold). That’s why all of the summer school content was separated into 15 Badges (achievements, blocks, sections). Each badge was a 1.5-hour-long chunk of knowledge/skill and each built on top of all previous achievements. To collect a badge students participated in a 20 minute interactive presentation from the teaching team, followed by an hour of pair-programming, and a few minutes of self-reflection.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./chapters/images/C39_gentle-introduction-summer-school-badges-list.png" class="img-fluid figure-img" alt="Picture with small stickers badges showing a number of topics of the course, like 'writing code, running code, for loops repeat things'"></p>
+<figcaption>Examples of badges that students could achieve during the summer school.</figcaption>
+</figure>
+</div>
+<p>Have you ever tried writing a “gratitude journal” at the end of the day, by listing things that you are grateful for? It consolidates experiences you had, frames them in positive ways and enables incorporating them into our fabric of experience <span class="citation" data-cites="bono2020new">(<a href="#ref-bono2020new" role="doc-biblioref">Bono et al. 2020</a>)</span>. To reflect on the personal and transformative component of learning, students ended each badge by writing a 4-sentence-long self reflection. We used the “3 stars and 1 wish” method from primary schools, where everyone lists 3 things that spoke to them personally, and 1 thing they wish they understood better <span class="citation" data-cites="llewellyn2020teaching">(<a href="#ref-llewellyn2020teaching" role="doc-biblioref">Llewellyn et al. 2020</a>)</span>. Every 2 hours, every student wrote that mini-reflection. Externalising thoughts is designed to help everyone to remember and encode what they learned, but also allows the instructor team to identify parts of content which need revisiting.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./chapters/images/C39_gentle-introduction-summer-school-badges-structure.png" class="img-fluid figure-img" alt="Drawing showing the structure of each badge. It shows an equation with a badge made of lecture video, coding exercises with tasks, and a short student reflection."></p>
+<figcaption>Components of each badge are: slides, coding exercises and self-reflection mini-diary.</figcaption>
+</figure>
+</div>
+<p>We leaned into our inner children not just during the reflective mini-diary, but also during the interactive parts of the presentation. Did you notice that it can be surprisingly challenging but also joyful to wonder “How would you explain this to a very smart 8 year old?”. It was great to see how kind and clear people’s descriptions are when they imagine talking to a child. We also played “I’m not a native speaker, what does this word mean?” which was particularly joyful since me and many students did not grow up speaking English. It is very surprising how technical words have their roots in everyday language, and exploring those roots does make it easier to integrate the jargon. For example “index” points at things, (just like an index finger) and “key” unlocks one value (just like door key).</p>
+<blockquote class="blockquote">
+<p>“I would recommend this course to anybody with even the tiniest inkling of interest in coding, even if (or maybe especially if) they can’t quite imagine how it could help them in their work or research.” - Student feedback</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>“I had been looking for a course like this for a while, but found the tutorials and online courses too complicated, and self-learning too overwhelming starting from zero. […] I had been 100% dreading getting to the social media analysis part of my PhD – after this course, I’m really looking forward to getting to it!!” - Student feedback</p>
+</blockquote>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./chapters/images/C39_gentle-introduction-summer-school-skills.png" class="img-fluid figure-img" alt="Graph showing results of student questionnaire about their confidence before and after the course. Trends show improved confidence (on average 2-3 points on a 0 to 5 scale). Skills include 'reading code', 'discussing code' and 'coding concepts'"></p>
+<figcaption>Graph showing students’ self-perceived improvement in terms of skills before and after the summer-school, on scale from 0 to 5</figcaption>
+</figure>
+</div>
+</section>
+<section id="practical-tips" class="level2">
+<h2 class="anchored" data-anchor-id="practical-tips">As promised: some practical top tips for running similar courses</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./chapters/images/C39_gentle-introduction-summer-school-timer.jpg" class="img-fluid figure-img" style="width:70.0%" alt="Picture of a classroom setup where projector shows a clock counting down to 15 minutes. Image on a projector comes from a physical clock with a document camera pointed at it."></p>
+<figcaption>‘Time Timer’ is a large clock designed for primary schools which we used to indicate when driver and navigator should switch roles.</figcaption>
+</figure>
+</div>
+<ol type="1">
+<li><p>Use “Time-timer” for visually indicating 15 minute periods between switching seats in pair programming (I used a big one and a small one).</p></li>
+<li><p>Use 10 meter power extension cords with 5 plugs each to not daisy chain cables – lay them out in front of the rows of tables and tape down to the floor with lengths of gaffa tape. Insist people plug-in in front of their table, not behind, so that you don’t trip while walking between desks.</p></li>
+<li><p>Find a room with rows of tables (not a ‘lecture theatre’ style), so that you can comfortably reach each student’s computer when helping with their practicals.</p></li>
+<li><p>For presentations big screens are brighter than projectors, but much smaller, and also tend to be mounted lower on the wall. A big projector usually projects higher so it will make it easier for people at the back to see the slides. If you’re in the room with a low-mounted big screen, you might have to edit your slides to have nothing important at the bottom of the slide (bottom section of each slide was invisible to students sitting at the back).</p></li>
+<li><p>Go to your lecture room on the day before to check projectors, chairs, cables. In our room the previous room users unplugged all AV equipment for some reason, but luckily we noticed in the morning and called the wonderful tech-support team who fixed it on time.</p></li>
+<li><p>For quick questionnaires and feedback use Microsoft Forms available to all staff and students (not the ones where you need to be logged-in). They also present results in a quick nice set of graphs.</p></li>
+<li><p>Chrome browser has the ability to share the currently displayed page as a QR code (next to the star on top right), which is useful when telling people to look at something on their phones, e.g.&nbsp;quick feedback forms.</p></li>
+<li><p>Use a cloud computing platform if possible. <a href="https://noteable.edina.ac.uk/">Noteable</a> is a fantastic online coding environment free for our students, built by the Edina team at the University of Edinburgh. With it you can start coding in Python/R in minutes, and it works great with GitHub.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p></li>
+</ol>
+<ol start="9" type="1">
+<li><p>Sharing notes on GitHub is quick and convenient. Instructors can add new notes, and the class ‘pulls them’ into their computers in seconds.</p></li>
+<li><p>Try to have at least 2 teachers in the room, so that the team can take breaks without abandoning students.</p></li>
+</ol>
+</section>
+<section id="this-is-the-beginning-of-a-beautiful-friendship" class="level2">
+<h2 class="anchored" data-anchor-id="this-is-the-beginning-of-a-beautiful-friendship">This is the beginning of a beautiful friendship</h2>
+<p>To sum it all up, our summer school combined a number of teaching methods, which did resonate with the participants. Splitting content into Badges enabled us to scaffold learning, and be very agile about which parts to skip, and which to expand, following what the group wanted. Practical exercises all involved pair-programming and constant peer-feedback for cross-pollination of skills. Frequent reflections with 3 stars &amp; 1 wish and classroom discussions created a feedback loop between the students and the teaching team (shout out to Karim and Chris, my amazing teaching assistants). Additionally, since most participants were early career academics/students, their feedback often mentioned not just learning to code, but learning how to run a well-designed, modern and interactive course.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./chapters/images/C39_gentle-introduction-summer-school-feedback-course.png" class="img-fluid figure-img" alt="Graph showing student setisfaction with the event. Most measures show average scores of 4 or more on a scale 1 to 5."></p>
+<figcaption>Feedback from students about components of the course on a scale 1-5.</figcaption>
+</figure>
+</div>
+</section>
+<section id="references" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="references">References</h2>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-TeachProgAcross_C23" class="csl-entry" role="listitem">
+Alex, Beatrice, Clare Llewellyn, and Pawel Orzechowski. 2026. <em>Teaching Programming Across Disciplines</em>.
+</div>
+<div id="ref-ambrose2010learning" class="csl-entry" role="listitem">
+Ambrose, Susan A, Michael W Bridges, Michele DiPietro, Marsha C Lovett, and Marie K Norman. 2010. <em>How Learning Works: Seven Research-Based Principles for Smart Teaching</em>. John Wiley &amp; Sons.
+</div>
+<div id="ref-bono2020new" class="csl-entry" role="listitem">
+Bono, Giacomo, Susan Mangan, Michael Fauteux, and Jason Sender. 2020. <span>“A New Approach to Gratitude Interventions in High Schools That Supports Student Wellbeing.”</span> <em>The Journal of Positive Psychology</em> 15 (5): 657–65.
+</div>
+<div id="ref-TeachProgAcross_C36" class="csl-entry" role="listitem">
+Desvages, Charlotte, Brittany Blankinship, Umberto Noè, and Pawel Orzechowski. 2026. <em>Teaching Programming Across Disciplines</em>.
+</div>
+<div id="ref-hawlitschek2023empirical" class="csl-entry" role="listitem">
+Hawlitschek, Anja, Sarah Berndt, and Sandra Schulz. 2023. <span>“Empirical Research on Pair Programming in Higher Education: A Literature Review.”</span> <em>Computer Science Education</em> 33 (3): 400–428.
+</div>
+<div id="ref-llewellyn2020teaching" class="csl-entry" role="listitem">
+Llewellyn, Clare, Pawel Orzechowski, and Beatrice Alex. 2020. <em>Teaching a Text Mining Bootcamp in Lockdown</em>.
+</div>
+<div id="ref-meyer2003threshold" class="csl-entry" role="listitem">
+Meyer, Jan, and Ray Land. 2003. <span>“Threshold Concepts and Troublesome Knowledge: Linkages to Ways of Thinking And.”</span> <em>Princeton: Citeseer</em>.
+</div>
+<div id="ref-TeachProgAcross_C12" class="csl-entry" role="listitem">
+Orzechowski, Pawel, Brittany Blankinship, and Kasia Banas. 2026. <em>Teaching Programming Across Disciplines</em>.
+</div>
+</div>
+</section>
+<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn1"><p>By the way, ‘pear’ is spelled differently than ‘pair’, but did you know that if two pear trees exchange pollen they will have more and healthier fruit?<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>If you ever had to troubleshoot why Python or R does not work in a classroom of 150 students using 3 operating systems in 6 foreign languages… you understand why it is precious to be able to skip this step and code immediately with no setup (‘out of the box’). Especially for online or large classrooms.</p>
+<p>We’ve seen two solutions to this challenge: at codeclan we bought all students the same model of a MacBook (super expensive, but very fancy); at the University of Edinburgh all students have access to an identical and powerful ‘virtual computer’ via their web browser (cheaper and scalable).<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./C38_skills-based-assessment.html" class="pagination-link" aria-label="The case for skills-based assessment in introductory programming courses">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">The case for skills-based assessment in introductory programming courses</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./C41_pair-programming-tutor-reflections.html" class="pagination-link" aria-label="Pair Programming in Practice: A PhD Tutor's Reflections">
+        <span class="nav-page-text"><span class="chapter-title">Pair Programming in Practice: A PhD Tutor’s Reflections</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
