@@ -1,0 +1,1182 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.37">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Rebecca L. Colquhoun">
+<meta name="author" content="Samantha Ahern">
+<meta name="author" content="Gule Saman">
+<meta name="author" content="Brittany Blankinship">
+<meta name="author" content="Patrica Loto">
+
+<title>Reflections on Practices to Foster Inclusion and Accessibility in Programming Teaching – Teaching Programming across Disciplines</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./C15_programming-without-computers.html" rel="next">
+<link href="./C12_pair-programming-overview.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-97392e210869a125f4d2a11381cf51ed.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="_theme/styles.css">
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./C14_foster-inclusion-and-accessibility.html"><span class="chapter-title">Reflections on Practices to Foster Inclusion and Accessibility in Programming Teaching</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Teaching Programming across Disciplines</a> 
+        <div class="sidebar-tools-main">
+    <div class="dropdown">
+      <a href="" title="Download" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Download"><i class="bi bi-download"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="./teaching_programming_across_disciplines.pdf">
+              <i class="bi bi-file-pdf pe-1"></i>
+            Download PDF
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="./teaching_programming_across_disciplines.epub">
+              <i class="bi bi-journal pe-1"></i>
+            Download ePub
+            </a>
+          </li>
+      </ul>
+    </div>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Teaching Programming across Disciplines</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./00-chapter-template.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Title of Example Chapter (as will appear on top h1 header and in table of contents)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C01_teaching-python.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">A Practical Guide to Teaching Python as a Computational Tool in an Introductory Data Analysis Course</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C03_online-teaching-reflections.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Reflections on Online Teaching</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C06_feminists-and-anarchists.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Dungeon Crawlers and Anarchists: co-designing programming teaching experiences</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C07_teaching-C-to-novices.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Second Languages: Teaching C to Python+Jupyter Novices</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C10_teaching-with-genai.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">An optimistic outlook on Teaching, Learning and Assessment for coding with the emergence of generative AI</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C11_sequential-vs-simultaneous.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Sequential vs.&nbsp;Simultaneous: Approaches to Learning Programming and Statistics</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C12_pair-programming-overview.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Where do I even start with Pair Programming in my classroom? Conversation with seasoned practitioners.</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C14_foster-inclusion-and-accessibility.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Reflections on Practices to Foster Inclusion and Accessibility in Programming Teaching</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C15_programming-without-computers.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Removing Barriers by Programming Without Computers</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C22_interdisciplinary-by-design.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Interdisciplinary by Design: The Centre for Data, Culture, &amp; Society Training Programme</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C23_pair-programming-fusion.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Learning Together Across Modes: Online and On-site Pair Programming in a Hybrid / Fusion Course</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C24_lost-in-translation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Lost in Translation: Complexities and Good Practices of Translating Coding-based Teaching Materials Across Multiple Languages</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C32_civil-engineering.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Changing civil engineering students’ mindset toward programming</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C33_coding-anxiety.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Overcoming coding anxiety: reflections and strategies</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C35_action-feedback-plan.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Managing the Rubik’s Cube of Assessment: The Action Feedback Protocol</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C36_pair-programming-across-disciplines.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Structured group work with assigned asymmetrical roles and switching - Lessons from Pair Programming across disciplines</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C38_skills-based-assessment.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">The case for skills-based assessment in introductory programming courses</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C39_gentle-introduction-summer-school.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">A gentle introduction to coding: narratives from a programming summer school for social sciences and humanities</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C41_pair-programming-tutor-reflections.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Pair Programming in Practice: A PhD Tutor’s Reflections</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./99-bibliography.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bibliography</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar"><div class="quarto-margin-header"><div class="margin-header-item">
+<details id="accessibility-controls">
+    <summary>Display options</summary>
+  
+    <div class="control-group">
+        <label for="fontSizeSlider">Font size</label>
+        <input type="range" id="fontSizeSlider" min="8" max="32" value="16">
+        <span id="fontSizeValue">16</span>px
+    </div>
+  
+    <div class="control-group">
+        <label for="eyeStrainSlider">Eye strain</label>
+        <input type="range" id="eyeStrainSlider" min="0" max="50" value="0">
+        <span id="eyeStrainValue">0</span>%
+    </div>
+  
+    <div class="control-group">
+        <label for="hueRotateSlider">Hue</label>
+        <input type="range" id="hueRotateSlider" min="0" max="360" value="0">
+        <span id="hueRotateValue">0</span>
+    </div>
+  
+    <div class="control-group">
+        <label for="paddingSlider">Padding</label>
+        <input type="range" id="paddingSlider" min="0" max="12" value="3">
+        <span id="paddingValue">0</span>
+    </div>
+  
+    <div class="control-group">
+        <label for="lineSpacingSlider">Spacing</label>
+        <input type="range" id="lineSpacingSlider" min="80" max="250" value="150">
+        <span id="lineSpacingValue">150</span>%
+    </div>
+  
+    <div class="control-group">
+        <label for="fontFamily">Font</label>
+        <select id="fontFamily">
+            <option value="'Atkinson Hyperlegible', sans-serif">Atkinson Hyperlegible</option>
+            <option value="Arial, Helvetica, sans-serif">Sans-serif</option>
+            <option value="Georgia, 'Bitstream Charter', Times, serif">Serif</option>
+        </select>
+    </div>
+  
+    <div class="control-group">
+        <button id="resetDefaults">Reset to Defaults</button>
+    </div>
+
+</details>
+</div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#ordering-of-material" id="toc-ordering-of-material" class="nav-link" data-scroll-target="#ordering-of-material">Ordering of material</a></li>
+  <li><a href="#classroom-models" id="toc-classroom-models" class="nav-link" data-scroll-target="#classroom-models">Classroom models</a>
+  <ul class="collapse">
+  <li><a href="#participatory-live-coding" id="toc-participatory-live-coding" class="nav-link" data-scroll-target="#participatory-live-coding">Participatory live coding</a></li>
+  <li><a href="#pair-programming" id="toc-pair-programming" class="nav-link" data-scroll-target="#pair-programming">Pair programming</a></li>
+  <li><a href="#explicitly-modelling-problem-solving" id="toc-explicitly-modelling-problem-solving" class="nav-link" data-scroll-target="#explicitly-modelling-problem-solving">Explicitly modelling problem solving</a></li>
+  <li><a href="#discovery-based-learning" id="toc-discovery-based-learning" class="nav-link" data-scroll-target="#discovery-based-learning">Discovery based learning</a></li>
+  <li><a href="#traditional-lecture-and-lab-sessions" id="toc-traditional-lecture-and-lab-sessions" class="nav-link" data-scroll-target="#traditional-lecture-and-lab-sessions">‘Traditional’ lecture and lab sessions</a></li>
+  <li><a href="#flipped-classroom" id="toc-flipped-classroom" class="nav-link" data-scroll-target="#flipped-classroom">Flipped classroom</a></li>
+  </ul></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const fontSizeSlider = document.getElementById('fontSizeSlider');
+        const fontSizeValue = document.getElementById('fontSizeValue');
+
+        const hueRotateSlider = document.getElementById('hueRotateSlider');
+        const hueRotateValue = document.getElementById('hueRotateValue');
+
+        const eyeStrainSlider = document.getElementById('eyeStrainSlider');
+        const eyeStrainValue = document.getElementById('eyeStrainValue');
+
+        const paddingSlider = document.getElementById('paddingSlider');
+        const paddingValue = document.getElementById('paddingValue');
+
+        const lineSpacingSlider = document.getElementById('lineSpacingSlider');
+        const lineSpacingValue = document.getElementById('lineSpacingValue');
+
+        const fontFamilySelect = document.getElementById('fontFamily');
+
+        const html = document.documentElement;
+        const resetButton = document.getElementById('resetDefaults');
+
+        // Define default values
+        const defaults = {
+            fontSize: 16,
+            hueRotate: 0,
+            eyeStrain: 0,
+            padding: 0,
+            lineSpacing: 150,
+            fontFamily: "'Atkinson Hyperlegible', Arial, Helvetica, sans-serif"
+        };
+
+        function updateStyles() {
+            html.style.setProperty('--bs-root-font-size', fontSizeSlider.value + 'px');
+            html.style.setProperty('--hue-rotate', hueRotateSlider.value + 'deg');
+            html.style.setProperty('--eye-strain', eyeStrainSlider.value + '%');
+            html.style.setProperty('--padding', paddingSlider.value + 'em');
+            html.style.setProperty('--line-spacing', lineSpacingSlider.value + '%');
+            html.style.setProperty('--bs-body-font-family', fontFamilySelect.value);
+
+            fontSizeValue.textContent = fontSizeSlider.value;
+            hueRotateValue.textContent = hueRotateSlider.value;
+            eyeStrainValue.textContent = eyeStrainSlider.value;
+            paddingValue.textContent = paddingSlider.value;
+            lineSpacingValue.textContent = lineSpacingSlider.value;
+
+            saveSettings();
+        }
+
+        // Function to save settings to localStorage
+        function saveSettings() {
+            const settings = {
+                fontSize: fontSizeSlider.value,
+                hueRotate: hueRotateSlider.value,
+                eyeStrain: eyeStrainSlider.value,
+                padding: paddingSlider.value,
+                lineSpacing: lineSpacingSlider.value,
+                fontFamily: fontFamilySelect.value
+            };
+            localStorage.setItem('accessibilitySettings', JSON.stringify(settings));
+        }
+
+        // Function to load settings from localStorage
+        function loadSettings() {
+            const savedSettings = localStorage.getItem('accessibilitySettings');
+            if (savedSettings) {
+                const settings = JSON.parse(savedSettings);
+                fontSizeSlider.value = settings.fontSize;
+                hueRotateSlider.value = settings.hueRotate;
+                eyeStrainSlider.value = settings.eyeStrain;
+                paddingSlider.value = settings.padding;
+                lineSpacingSlider.value = settings.lineSpacing;
+                fontFamilySelect.value = settings.fontFamily;
+                updateStyles();
+            }
+        }
+
+        function resetToDefaults() {
+            fontSizeSlider.value = defaults.fontSize;
+            hueRotateSlider.value = defaults.hueRotate;
+            eyeStrainSlider.value = defaults.eyeStrain;
+            paddingSlider.value = defaults.padding;
+            lineSpacingSlider.value = defaults.lineSpacing;
+            fontFamilySelect.value = defaults.fontFamily;
+            updateStyles();
+            localStorage.removeItem('accessibilitySettings');
+        }
+
+        fontSizeSlider.oninput = updateStyles;
+        hueRotateSlider.oninput = updateStyles;
+        eyeStrainSlider.oninput = updateStyles;
+        paddingSlider.oninput = updateStyles;
+        lineSpacingSlider.oninput = updateStyles;
+        fontFamilySelect.onchange = updateStyles;
+        resetButton.onclick = resetToDefaults;
+
+        loadSettings();
+
+    });
+</script>
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-title">Reflections on Practices to Foster Inclusion and Accessibility in Programming Teaching</span></h1>
+</div>
+
+
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Authors</div>
+  <div class="quarto-title-meta-heading">Affiliations</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Rebecca L. Colquhoun <a href="mailto:r.colquhoun23@imperial.ac.uk" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Department of Earth Science and Engineering, Imperial College London
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Samantha Ahern <a href="mailto:s.ahern@ucl.ac.uk" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Centre for Advanced Research Computing, UCL
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Gule Saman <a href="mailto:s.gule@hw.ac.uk" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            School of Engineering &amp; Physical Sciences, Heriott-Watt University
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Brittany Blankinship <a href="mailto:b.blankinship@ed.ac.uk" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Edinburgh Medical School, University of Edinburgh
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Patrica Loto <a href="mailto:patricialoto@comunidad.unne.edu.ar" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            FACENA, Universidad Nacional del Nordeste (UNNE)
+          </p>
+      </div>
+  </div>
+
+<div class="quarto-title-meta">
+
+      
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>We believe that learning programming should be a truly equitable and inclusive process, in which all students are able to take part and succeed. In order to achieve this, we — as programming educators — must continually and critically assess the fundamentals of our teaching techniques. In this chapter, we will first briefly discuss what makes teaching accessible or inaccessible for different groups of students (including but not limited to disabled students and students learning in an additional language), before reviewing different pedagogical approaches often used in teaching programming in light of these principles. These reflections are intended to empower educators to adapt and innovate rather than to act as a prescriptive guidebook.</p>
+<p>There are three main aspects to consider when making programming teaching accessible: 1. making the workspace accessible, 2. making the instruction accessible, and 3. considering the implications of the method of delivery. Most universities have a student disability office, who can provide advice on making course materials accessible and will often help students to gain access to assistive technology software. Advice might include making sure to use tagged PDFs or Markdown, or whichever typeface, size and colour combinations are best for use on a presentation. However, these offices may be less familiar with helping students to access programming environments. For some students, simply changing the editor theme will be sufficient. Others may need to experiment with different editors to find one which works with their assistive technology (see e.g. <span class="citation" data-cites="kramer_10_2024">Kramer (<a href="#ref-kramer_10_2024" role="doc-biblioref">2024</a>)</span>). We will not discuss this any further here, but instead refer readers to resources such as <span class="citation" data-cites="hadwen-bennett_making_2018">(<a href="#ref-hadwen-bennett_making_2018" role="doc-biblioref">Hadwen-Bennett et al. 2018</a>)</span>.</p>
+<p>In this chapter, we focus on the implications of methods of delivery to the accessibility of programming teaching. Along the way, we identify where adaptations to a particular method might make it more suitable or accessible for a certain group of learners. The pedagogical framework that we use (knowingly or unknowingly) to organise our teaching sessions can impact the accessibility of our teaching: we can consider a continuum from transmissive learning (in which knowledge is “transmitted” to students by instructors e.g.&nbsp;through direct instruction) to student-led, discovery based learning (often based on a constructivist model). Programming is a subject which could lend itself well to authentic problem based learning wherein students construct their own knowledge. However, this can present additional barriers to neurodivergent students, who often experience a higher cognitive burden whilst completing discovery-based learning tasks compared to tasks where they were explicitly directed on what to focus on, and compared to their neurotypical peers <span class="citation" data-cites="gabay_computational_2025">(<a href="#ref-gabay_computational_2025" role="doc-biblioref">Gabay et al. 2025</a>)</span>. Problem solving, which is inherent in discovery based learning, places a large burden on working memory <span class="citation" data-cites="sweller_cognitive_1988">(<a href="#ref-sweller_cognitive_1988" role="doc-biblioref">Sweller 1988</a>)</span> which neurodivergent individuals may have weaknesses in <span class="citation" data-cites="maehler_working_2016">(<a href="#ref-maehler_working_2016" role="doc-biblioref">Maehler and Schuchardt 2016</a>)</span>. Discovery based learning may also be more suited to expert learners, who have a bank of pre-existing knowledge to work from, than to novices <span class="citation" data-cites="kirschner_why_2006">(<a href="#ref-kirschner_why_2006" role="doc-biblioref">Kirschner et al. 2006</a>)</span>. This illustrates how teaching using a different pedagogic framework can be accessible for different groups of learners.</p>
+<p>Some students may find it hard to generalise, or to engage when examples are not relevant to their chosen domain. Consider gathering feedback on student interests, learning preferences, and backgrounds through a pre-course survey, in order to curate relevant examples and case studies that resonate with student experiences <span class="citation" data-cites="kahu_student_2017">(<a href="#ref-kahu_student_2017" role="doc-biblioref">Kahu et al. 2017</a>)</span>. Engaging students in building course content signals that their opinions shape the course content, fostering a sense of community and ownership. Pre-course surveys also give another opportunity for students to disclose any disabilities or access needs. Some students may not have access to a suitable device either for in class or out of class activities. Asking about device access in a pre-course survey can help to find solutions (e.g.&nbsp;a loaner laptop or finding a combination of software which works with any assistive technology) before classes begin.</p>
+<p>A key aspect of making content accessible is considering cognitive load. In this, the cognitive engagement a task requires can be divided into ‘intrinsic load’ (the inherent difficulty of the task), ‘germane load’ (the work put into creating a permanent store of knowledge) and ‘extraneous load’ (the way information is presented) <span class="citation" data-cites="sweller_cognitive_1988 paas_cognitive_2003">(<a href="#ref-sweller_cognitive_1988" role="doc-biblioref">Sweller 1988</a>; <a href="#ref-paas_cognitive_2003" role="doc-biblioref">Paas et al. 2003</a>)</span>. Everyone has a limit to their working memory, and when the total cognitive load exceeds this, learning is impacted. The germane and extraneous load of a task can vary between learners (for example due to neurodivergence <span class="citation" data-cites="le_cunff_neurodiversity_2024">(<a href="#ref-le_cunff_neurodiversity_2024" role="doc-biblioref">Le Cunff et al. 2024</a>)</span> or due to learning in an additional language) and is also influenced by how material is presented. In the chapter, we discuss some ways that educators can manage the extraneous load in their classrooms, to ensure that students have capacity to engage in the germane load of building long-term mental schemas of programming logic <span class="citation" data-cites="sweller_cognitive_1994">(<a href="#ref-sweller_cognitive_1994" role="doc-biblioref">Sweller 1994</a>)</span>.</p>
+<p>Generally, designing teaching sessions and materials around Universal Design for Learning (UDL) principles helps maximise accessibility. UDL centers on students having agency and designing materials to have multiple options for representation, engagement and action <span class="citation" data-cites="cast_universal_2024">(<a href="#ref-cast_universal_2024" role="doc-biblioref">CAST 2024</a>)</span>.</p>
+</section>
+<section id="ordering-of-material" class="level2">
+<h2 class="anchored" data-anchor-id="ordering-of-material">Ordering of material</h2>
+<p>In teaching programming there are different approaches to how material is presented. For example, Selby identifies four approaches: 1. code analysis, 2. building blocks, 3. simple units and 4. full systems <span class="citation" data-cites="selby_four_2011">(<a href="#ref-selby_four_2011" role="doc-biblioref">Selby 2011</a>)</span>. Code analysis begins with students analysing and understanding existing code before going onto writing pseudocode. Only later do students write full programs. This approach provides a structured way for students to first focus on programming logic before having to worry about syntax, which may reduce cognitive load. However some students may struggle with knowledge transfer between writing pseudocode and writing compilable code <span class="citation" data-cites="glaser_programming_2000">(<a href="#ref-glaser_programming_2000" role="doc-biblioref">Glaser et al. 2000</a>)</span>.</p>
+<p>In other approaches (building blocks and simple units), students learn small units of code (individual constructs or set coding “phrases” respectively) and gradually build up to writing longer programs. These can lead to fragmented understanding, where students are not sure how to combine the components introduced together, and the early focus on syntax may be overwhelming for some <span class="citation" data-cites="selby_four_2011">(<a href="#ref-selby_four_2011" role="doc-biblioref">Selby 2011</a>)</span>. However, it does allow students to build up a toolbox of reusable code, which they can then apply in other scenarios, reducing the amount of recall and typing of precise syntax which is required which may pose a challenge for some students. The final approach that Selby <span class="citation" data-cites="selby_four_2011">(<a href="#ref-selby_four_2011" role="doc-biblioref">Selby 2011</a>)</span> outlines is full systems, where students are immersed in a real-life problem and programming concepts are introduced as needed. This is close to the discovery-led learning discussed previously.</p>
+</section>
+<section id="classroom-models" class="level2">
+<h2 class="anchored" data-anchor-id="classroom-models">Classroom models</h2>
+<p>These different approaches to teaching programming can be delivered in different ways. We have identified six different classroom models, though there is significant overlap and they are not mutually exclusive. We will now discuss each approach in turn, identifying what makes them accessible, and where they may present an accessibility barrier. Where possible, we identify possible modifications to the model to increase accessibility.</p>
+<section id="participatory-live-coding" class="level3">
+<h3 class="anchored" data-anchor-id="participatory-live-coding">Participatory live coding</h3>
+<p>Live coding involves an instructor writing code live at the front of the classroom, whilst narrating what they are doing. It becomes participatory by students following along, writing and executing code at the same time <span class="citation" data-cites="nederbragt_ten_2020">(<a href="#ref-nederbragt_ten_2020" role="doc-biblioref">Nederbragt et al. 2020</a>)</span>. Participatory live coding has many advantages, hence why it forms a key tenet of the Carpentries approach to teaching coding <span class="citation" data-cites="the_carpentries_live_2025">(<a href="#ref-the_carpentries_live_2025" role="doc-biblioref">The Carpentries 2025</a>)</span>. For many students, watching someone code and following along is far more engaging than watching someone present a slide deck. In particular, it allows students the chance to ask questions and for the instructor to respond and adapt the teaching accordingly.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./chapters/images/c14-inclusion-codealong.png" title="Participatory live coding" class="img-fluid figure-img" style="width:80.0%" alt="A cartoon image of a teacher and a student side-by-side, each holding a keyboard. The teacher (left) has a name tag and is 'speaking' complex code snippets labeled 'A'. The student (right) follows along, holding their own keyboard and produces matching code snippet 'A'. This process is then repeated for code snippet 'B'."></p>
+<figcaption>I code it. Then you code it. Repeat.</figcaption>
+</figure>
+</div>
+<p>The instructor needing to type out code also reduces the pace of instruction: it is all too easy to quickly flash up some code on a slide, and have moved onto the next slide before the student has been able to write it down, which is a problem if slide decks are not provided in advance. Equally, it helps keep students on track. The lesson progresses at a set pace reducing the opportunity for students to take exit ramps or get lost on an unrelated tangent. However, the set pace can be an accessibility barrier for some, as it still depends on the instructor being able to judge an appropriate pace that will not leave students behind. Some students may require a slower pace than others, for example dyslexic students may struggle to accurately copy down material from the screen and so will need more time to do this <span class="citation" data-cites="blampain_copying_2021">(<a href="#ref-blampain_copying_2021" role="doc-biblioref">Blampain et al. 2021</a>)</span>.</p>
+<p>As well as students requiring different amounts of time to copy down information from the board, some may find this difficult or impossible to do. The participatory live coding approach is particularly challenging for students who use a screen-reader, since they would have to balance auditory input from their computer with the instructor talking. To modify the approach for students who cannot see the board or accurately transcribe material, the instructor could provide code snippets or help people follow along using a git repository and tags <span class="citation" data-cites="bostian_using_2019 sutton_live_2018">(<a href="#ref-bostian_using_2019" role="doc-biblioref">Bostian 2019</a>; <a href="#ref-sutton_live_2018" role="doc-biblioref">Sutton 2018</a>)</span>. A collaborative notes document may be another approach. These ideas reduce the need for students to copy from the board, instead following along with small code chunks at a time. Students are also aided by the instructor making sure they verbally describe the actions and perhaps even dictating each word they type. This helps students follow along without needing to look up for each word typed.</p>
+<p>In a participatory live coding approach, students also benefit from watching how the instructor codes: they are able to model the approach to a problem and the making and solving of mistakes. Explicitly modelling problem solving is particularly helpful for neurodivergent or anxious students for whom arriving at an error, mistake or block may become a barrier for learning rather than an opportunity.</p>
+<p>Some students may benefit from switching to a flipped classroom approach where the instructor is pre-recorded doing a small chunk of coding (see <span class="citation" data-cites="nederbragt_video_2021">(<a href="#ref-nederbragt_video_2021" role="doc-biblioref"><em>A Video Introduction to Live Coding Part 2</em> 2021</a>)</span> for an example of a single chunk), and students can follow along. This could either be done in the classroom, with instructors on hand to help students as needed, or be done at home and the classroom time be dedicated to longer problems. This approach also allows for students to turn on captions if needed. Alternatively, the session could be live streamed, so students can see the projected screen more easily on their own computers, adjust the volume and can turn on captions if they wish, whilst still being able to ask questions.</p>
+</section>
+<section id="pair-programming" class="level3">
+<h3 class="anchored" data-anchor-id="pair-programming">Pair programming</h3>
+<p>Instructors may want to include time where students independently solve programming problems, either as part of a broader lesson, or as part of inquiry based learning. One way to do this is through pair-programming, where students work in pairs to solve a problem, each taking turns to be the ‘driver’ and the ‘navigator’. This concept is discussed in more detail in another chapter in this book <span class="citation" data-cites="desvages_structured_nodate">(<a href="#ref-desvages_structured_nodate" role="doc-biblioref">Desvages et al., n.d.</a>)</span>. Pair programming has been found to lead to better outcomes in introductory programming courses compared to courses where students program alone <span class="citation" data-cites="hanks_pair_2011 faja_evaluating_2014">(<a href="#ref-hanks_pair_2011" role="doc-biblioref">Hanks et al. 2011</a>; <a href="#ref-faja_evaluating_2014" role="doc-biblioref">Faja 2014</a>)</span>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./chapters/images/c14-inclusion-pair-prog.png" title="Pair programming" class="img-fluid figure-img" style="width:70.0%" alt="Top Panel: Two students work together. One holds the keyboard (the driver) and produces code 'A', while both engage in a verbal dialogue about 'A'. Middle: An arrow shows the keyboard being passed from one student to the other. Bottom Panel: The roles have swapped. The second student now holds the keyboard and produces code 'B' while they continue their verbal discussion."></p>
+<figcaption>I drive, you navigate. Now let’s switch who’s driving.</figcaption>
+</figure>
+</div>
+<p>A key advantage of pair programming is that it allows students to see different approaches to solving the same problem. For weaker or less confident students, this can help them build confidence and can model how to break down a problem. However, for others, students may compare themselves negatively to one another. One way to alleviate this is to switch partners around, which allows students to see different strengths and weaknesses in coding. For students who struggle to keep focussed, pair programming can be helpful, since both students are required to maintain active engagement with the task, frequently switching roles. It can also help keep students on task and working at the right pace, if the pairs are chosen carefully.</p>
+<p>Pair programming can also serve to reduce the cognitive burden on students <span class="citation" data-cites="tsai_cognitive_2015">(<a href="#ref-tsai_cognitive_2015" role="doc-biblioref">Tsai et al. 2015</a>)</span> by allowing students to distribute tasks of high and low cognitive burden amongst themselves <span class="citation" data-cites="sands_addressing_2019 winkler_cognitive_2023">(<a href="#ref-sands_addressing_2019" role="doc-biblioref">Sands 2019</a>; <a href="#ref-winkler_cognitive_2023" role="doc-biblioref">Winkler and Flatscher 2023</a>)</span>. In classrooms where students have varying levels of experience with programming, pairs could consist of an expert and a novice where the expert (who would ordinarily experience lower extraneous load due to familiarity e.g.&nbsp;with the programming environment) can take on more of the extraneous tasks, allowing the novice to have more capacity for germane cognitive load.</p>
+<p>A 2023 study from the University of Toronto Scarborough <span class="citation" data-cites="ali_social_2023">(<a href="#ref-ali_social_2023" role="doc-biblioref">Ali and Joordens 2023</a>)</span> found that there has been an increase in social anxiety amongst both higher education students and adolescents since the Covid pandemic. Socially anxious students can experience anticipatory anxiety, impacting their abilities to communicate effectively with others and negatively impacting on their cognitive and emotional engagement. This could be reduced through the use of small-group icebreakers in sessions prior to the introduction of pair programming. These activities help build a sense of familiarity and community within the learning environment, potentially reducing levels of anxiety <span class="citation" data-cites="archbell_too_2022">(<a href="#ref-archbell_too_2022" role="doc-biblioref">Archbell and Coplan 2022</a>)</span>.</p>
+<p>Whilst pair programming can reduce some of the cognitive load of programming, it can also introduce new sources of extraneous cognitive load since students now need to manage the social interaction associated with group work. It is therefore important to scaffold the task and provide a framework for how students should give feedback or interact during the exercise. This could look like modelling pair programming as part of the ‘lecture’ or by clearly explaining what will happen during the task. It should also include clearly signposting when switches in role and task will happen. Students may also try to impose one way of solving a problem as the ‘correct’ way, making it difficult for (neurodivergent) students who think differently, and expectations around this should be set during the task introduction.</p>
+<p>Pair programming is often thought of as two people using one computer, switching over who is physically typing on the keyboard. However, students may find it difficult to use a computer with someone else’s accessibility settings. It can therefore be helpful to use a shared workspace but on separate computers, so long as it is clear who is ‘driving’ at any given time. Students may need to balance working on the screen with auditory input which may be difficult for D/deaf or hard of hearing students or those who use a screen-reader. Some students may need their pair to work in a separate room to reduce background noise, which may be easier if pair-programming is being done virtually (through the use of breakout rooms).</p>
+</section>
+<section id="explicitly-modelling-problem-solving" class="level3">
+<h3 class="anchored" data-anchor-id="explicitly-modelling-problem-solving">Explicitly modelling problem solving</h3>
+<p>When learning to program, whether in a classroom setting or independently, it is essential to recognise that programming is fundamentally about problem-solving and critical thinking as discussed by Govender <span class="citation" data-cites="govender_experiences_2007">(<a href="#ref-govender_experiences_2007" role="doc-biblioref">Govender 2007</a>)</span>. The syntax of a programming language varies between languages, but what truly matters is developing the ability to think systematically about a problem and design an effective solution. Explicit modelling of the different stages in problem solving can be helpful for many students.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./chapters/images/c14-inclusion-modelling-line.png" title="Modelling problem solving" class="img-fluid figure-img" alt="A horizontal flowchart-style diagram depicts the process of solving a problem. It moves from a question mark through several stages: a checklist being written by a pencil, a categorized list, a logic flowchart, and a code snippet, finally resulting in a completed block labeled 'A'."></p>
+<figcaption>These are the steps I would take to solve this problem.</figcaption>
+</figure>
+</div>
+<p>A helpful analogy is preparing a cup of tea. There are countless variations: some people prefer milk, others like sugar; some want herbal, others like it strong. The method you use depends on the preferences of the person you are making it for and any constraints involved (available ingredients, desired strength, etc.). You begin by understanding the requirements, clarifying constraints, and considering expectations, then decide on the steps to achieve the desired result. Programming is similar: syntax is just the final step in communicating a solution, but the real issue is clear thinking and structured planning.</p>
+<p>The process of problem solving can be broken down into several steps. Some students will automatically do this, whilst others (particularly those who struggle with executive dysfunction) will benefit from modelling of the different stages and being provided with a checklist to follow:</p>
+<ul>
+<li>Understanding the problem</li>
+<li>Identifying constraints</li>
+<li>Identifying the expected inputs</li>
+<li>Considering the target audience or users</li>
+<li>Clarifying expectations</li>
+<li>Knowing about the desired outcomes (outputs)</li>
+<li>Designing the solution</li>
+<li>Testing possible solutions</li>
+<li>Troubleshooting and refining the approach</li>
+</ul>
+<p>By foregrounding problem-solving instead of syntax, students can focus on creative and strategic thinking, which lowers barriers for those who might lack confidence with coding rules. However, not all learners will find abstract planning easy; some thrive by diving straight into code. For these learners, scaffolding the design stage can be helpful. Progressing from checklist to pseudocode, flowchart, and code supports learners with diverse preferences and reinforces both problem solving and implementation skills.</p>
+<p>Accessible and inclusive programming education goes far beyond teaching language syntax. Focusing on a structured problem-solving process supports learners in developing analytical thinking, creativity, and confidence. By integrating scaffolding tools such as flowcharts, pseudocode, and concrete examples, educators can create a classroom environment where all students feel equipped to participate and succeed. Encouraging learners to think critically about problems, consider target audience and constraints, and work systematically before coding is important.</p>
+</section>
+<section id="discovery-based-learning" class="level3">
+<h3 class="anchored" data-anchor-id="discovery-based-learning">Discovery based learning</h3>
+<p>As we discussed in the introduction, instructors may prefer to use a discovery-based learning approach rather than the more direct-instruction that could lend itself well to participatory live coding. We previously discussed the cognitive load inherent in discovery based learning, but here consider other aspects of accessibility for this method of teaching.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./chapters/images/c14-inclusion-discovery.png" title="Discovery based learning" class="img-fluid figure-img" style="width:80.0%" alt="Two students stand before a large, glowing square containing a question mark. They are surrounded by scattered square fragments, which look like post-it notes. Both students are engaged in discussion; with 'A' and 'B' speech bubbles."></p>
+<figcaption>We learn new things when needed as part of a bigger project.</figcaption>
+</figure>
+</div>
+<p>The advantage of discovery based learning is that students have a reason for everything they learn. When students arrive at a problem, or need a new tool, they discover what is most suitable and this can be more motivating to some students. However, some students may be overwhelmed by the scale of the task and struggle to break down a problem into manageable chunks. Part of the solution to this is making sure students are comfortable asking questions, rather than feeling like they have been ‘abandoned’ to teach themselves. This can be aided by having enough instructors and offering less obtrusive ways to ask questions, for example using a webchat or post-it note flag system. It may also be helpful to combine discovery based learning with some modelling of problem solving in a larger group. Another approach is to combine discovery based learning with pair-programming, with the inherent advantages and disadvantages we previously discussed. Finally, some students may struggle with the generalisation required and transfer to long-term memory: they may successfully identify a tool as suitable for this problem, but when it comes to the next problem they may start from scratch rather than being able to apply their existing knowledge. Part of this is developed with repeated exposure to different problems, but pertinent prompts from instructors may also help students realise this.</p>
+</section>
+<section id="traditional-lecture-and-lab-sessions" class="level3">
+<h3 class="anchored" data-anchor-id="traditional-lecture-and-lab-sessions">‘Traditional’ lecture and lab sessions</h3>
+<p>The ‘traditional’ model of a lecture with a lab/practical session <span class="citation" data-cites="prather_lecturelaboratory_1978">(e.g. <a href="#ref-prather_lecturelaboratory_1978" role="doc-biblioref">Prather and Schlesinger 1978</a>)</span> combines instructor-led teaching with an opportunity to partake in practice of the material and/or discovery based learning. However, in the lecture session concepts or ideas may be introduced at a pace where some students become anxious about trying to process large amounts of content in real-time. This can be exacerbated by the use of dismissive language such as “just” or “even a monkey can do…”. In addition, neurodivergent students can struggle to retain focus when there is a lot of information or lack of interaction.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./chapters/images/c14-inclusion-lecture-lab.png" title="Lecture-lab" class="img-fluid figure-img" style="width:70.0%" alt="Top Panel (Lecture): A teacher stands at a board displaying 'ABC' while a group of students watches passively. Bottom Panel (Lab): After time has passed (indicated by a clock), two students sit at keyboards looking stressed and confused. Thought bubbles above them contain 'A?' and 'B?', while the teacher stands nearby with an empty, silent speech bubble."></p>
+<figcaption>I talk, you listen. Then you do, I help.</figcaption>
+</figure>
+</div>
+<p>The accessibility of lecture sessions can be improved by providing the session materials in advance. This enables students to engage with them at their own pace and identify any questions they may have for the lecture session. In addition, the inclusion of interactive components in the lecture session such as anonymous quizzes or discussions, enables reinforcement of learning without potentially causing discomfort amongst neurodivergent learners. However, it is important to be mindful that too much interaction may lead to cognitive overload. The regular use of lecture capture can make recordings available to students to review content as and when needed, reducing the risk of anxiety from a fear of not being able to keep up.</p>
+<p>When done well, the combination of lecture and lab sessions can help facilitate the navigation of the liminal space between a threshold concept being introduced and it being understood. Our learners, may not navigate this linearly, but will go through the stages of developing:</p>
+<ul>
+<li>an abstract (or theoretical) understanding of a concept;</li>
+<li>a concrete (or applied) understanding — the ability to write a computer program, for instance;</li>
+<li>the ability to go from an understanding of the abstract concept to software design or concrete implementation;</li>
+<li>an understanding of the rationale for learning and using the concept; and</li>
+<li>an understanding of how to apply the concept to new problems — problems beyond those given as homework or lab exercises <span class="citation" data-cites="mccartney_liminal_2009">(<a href="#ref-mccartney_liminal_2009" role="doc-biblioref">McCartney et al. 2009</a>)</span>.</li>
+</ul>
+<p>Knuth <span class="citation" data-cites="knuth_theory_1991">(<a href="#ref-knuth_theory_1991" role="doc-biblioref">Knuth 1991</a>)</span> spoke about the close relationship between theory and practice as follows:</p>
+<blockquote class="blockquote">
+<p>“The main point I want to emphasize […] is that both theory and practice can and should be present simultaneously. Theory and practice are not mutually exclusive; they are intimately connected. They live together and support each other.” <span class="citation" data-cites="knuth_theory_1991">(<a href="#ref-knuth_theory_1991" role="doc-biblioref">Knuth 1991, 3</a>)</span></p>
+</blockquote>
+<p>The interaction between practice-oriented and theory-oriented actions can occur through considered educator design of the written lab instructions so that they expose dimensions of variation that they want students to become aware of during the lab.</p>
+<p>Some students may come to misconceptions in lab sessions, or be applying misconceptions in their attempt to solve the problem set. They might make a sequence of unsuccessful attempts to modify the program by practice-oriented trial and error, or they get stuck in theory-oriented discussions and give up without having tried any of their ideas in practice.</p>
+<p>To alleviate this risk and to reinforce the interaction between theory and practice, the educator may include interspersing references to guidance materials within the challenge outline, and for novice learners ensure that these are linked to the current task and easy to understand. Instructors can also include interspersed reminders that the students should compile and run their code, even if it does not work as intended <span class="citation" data-cites="eckerdal_learning_2024">(<a href="#ref-eckerdal_learning_2024" role="doc-biblioref">Eckerdal et al. 2024</a>)</span>.</p>
+</section>
+<section id="flipped-classroom" class="level3">
+<h3 class="anchored" data-anchor-id="flipped-classroom">Flipped classroom</h3>
+<p>An alternative approach to structuring learning is the flipped classroom model, wherein students engage with learning materials before class, and classroom time is used to engage in problem solving activities <span class="citation" data-cites="bergmann_flip_2012 advance_he_flipped_nodate">(<a href="#ref-bergmann_flip_2012" role="doc-biblioref">Bergmann and Sams 2012</a>; <a href="#ref-advance_he_flipped_nodate" role="doc-biblioref">Advance HE, n.d.</a>)</span>. By providing learning materials in advance (most commonly through pre-recorded videos, although this may also be in the form of text or audio), students can engage at their own pace. For some students, removing any time pressure enables them to better engage with the material, since they can pause to take notes, take a break or consult other materials during the course of the ‘lecture’. However, effective use of the flipped classroom requires students to engage with the material before class <span class="citation" data-cites="moraros_flipping_2015 gross_increased_2015 forsey_flipping_2013">(<a href="#ref-moraros_flipping_2015" role="doc-biblioref">Moraros et al. 2015</a>; <a href="#ref-gross_increased_2015" role="doc-biblioref">Gross et al. 2015</a>; <a href="#ref-forsey_flipping_2013" role="doc-biblioref">Forsey et al. 2013</a>)</span> and some students may struggle with the lack of direction, either not engaging with the material or becoming distracted by tangents. In a flipped classroom model, it is particularly important to ensure that the structure and signposting of materials is clear, as this can easily become a source of confusion for students.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./chapters/images/c14-inclusion-flipped.png" title="Flipped classroom" class="img-fluid figure-img" style="width:70.0%" alt="Top Panel: Three students are shown in separate frames, learning independently at their own pace. One uses headphones with a monitor, one uses a tablet in a wheelchair, and one uses a laptop with captions/text displayed. Bottom Panel: The group is shown together with the teacher. Now that they have reviewed the material, they are actively practicing. One student types code 'A', while another discusses questions and answers ('B?' and 'B!') with the teacher."></p>
+<figcaption>You watch and read at home. Later, we do and discuss in class.</figcaption>
+</figure>
+</div>
+<p>Having time between engaging with the flipped classroom materials and the in-person session enables students to identify any questions they have in advance, and it is important that materials are released well in advance of synchronous sessions to allow for meaningful engagement. In order to further ensure that students feel comfortable to ask questions, an anonymous question box could be introduced, which is used to guide the in-person sessions. However, if a student misunderstands something early on in the asynchronous teaching, this may lead them to misunderstand the rest of the topic, whereas they may have normally been able to clarify their understanding more immediately.</p>
+<p>Students can engage with the asynchronous portion in a location they feel most comfortable. For some students with disabilities, traditional lecture theaters may not be accessible, for example because of the fluorescent lighting or seating options. However, whilst the lecture portion may be more accessible using a flipped classroom model, the practical portion may be less accessible, as they are often centered on working as a group. Group activities have been shown to not necessarily result in long-term learning for neurodivergent students, and they may prove overwhelming or impose an additional cognitive burden on some students <span class="citation" data-cites="durgungoz_interactive_2025">(<a href="#ref-durgungoz_interactive_2025" role="doc-biblioref">Durgungoz and Durgungoz 2025</a>)</span>. Some students, particularly those who are less confident in the course materials may also feel unprepared to engage in group discussions, if they have not fully understood the material for example.</p>
+<p>One way to support students in group activities is to center discussions around artefacts that students have prepared beforehand such as a solution to a coding challenge <span class="citation" data-cites="dusek_proactive_2018">(<a href="#ref-dusek_proactive_2018" role="doc-biblioref">Dusek et al. 2018</a>)</span>. This helps students prepare for likely topics of discussion beforehand, and could be a motivator for some students to engage more diligently in the asynchronous work. Even if it is not desirable for students to complete all the practical work beforehand, it can be advantageous to provide practice exercises to help students prepare for the interactive session to both help students prepare and let them know what to expect.</p>
+<p>Framing either in-class or preparatory practical exercises as Parson’s problems or as part of a series of ‘fading’ activities may also be beneficial. In some settings, students could have the opportunity to engage in the development of an artefact via coding challenges with the in-person session becomes the lab session, as described above. If these are designed well, they may incorporate components of pair programming, and stimulate deep learning through the integration of theory and practice with the support of the module staff. Providing material online and in advance provides an opportunity to ensure materials are accessible. For example, it is important to make sure that any recorded lectures or demonstrations have captions available, and that there are image descriptions and audio description of what is displayed on screen. Resources such as the STEMM baseline accessibility guidance are a good starting place <span class="citation" data-cites="tyson_accessible_2022">(<a href="#ref-tyson_accessible_2022" role="doc-biblioref">Tyson 2022</a>)</span>.</p>
+</section>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>There is no singular approach to teaching programming that will always be appropriate, regardless of whether you consider this from a pedagogical or accessibility standpoint. Here we have outlined six different approaches to teaching programming, and what attributes make them accessible, or not, to different groups of learners. The ideas presented are not meant to be exhaustive or prescriptive; indeed, some of the adaptations that we suggest for one method, may be precisely what you need to make a session accessible for a student even if you have made different pedagogical design choices. By outlining a range of approaches, we hope that this chapter will give educators the starting blocks they need to design sessions that give all their learners the best chance of success.</p>
+</section>
+<section id="references" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="references">References</h2>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-nederbragt_video_2021" class="csl-entry" role="listitem">
+<em>A Video Introduction to Live Coding Part 2</em>. 2021. <a href="https://www.youtube.com/watch?v=SkPmwe_WjeY">https://www.youtube.com/watch?v=SkPmwe_WjeY</a>.
+</div>
+<div id="ref-advance_he_flipped_nodate" class="csl-entry" role="listitem">
+Advance HE. n.d. <span>“Flipped Learning.”</span> <a href="https://www.advance-he.ac.uk/knowledge-hub/flipped-learning-0">https://www.advance-he.ac.uk/knowledge-hub/flipped-learning-0</a>.
+</div>
+<div id="ref-ali_social_2023" class="csl-entry" role="listitem">
+Ali, Hannah, and Steve Joordens. 2023. <span>“Social Anxiety in University Students: Towards an Intentional Life-Skills Based Prevention Model.”</span> <em>Journal of Mental Health &amp; Clinical Psychology</em> 7 (3): 19–36. <a href="https://doi.org/10.29245/2578-2959/2023/3.1282">https://doi.org/10.29245/2578-2959/2023/3.1282</a>.
+</div>
+<div id="ref-archbell_too_2022" class="csl-entry" role="listitem">
+Archbell, Kristen A., and Robert J. Coplan. 2022. <span>“Too Anxious to Talk: Social Anxiety, Academic Communication, and Students’ Experiences in Higher Education.”</span> <em>Journal of Emotional and Behavioral Disorders</em> 30 (4): 273–86. <a href="https://doi.org/10.1177/10634266211060079">https://doi.org/10.1177/10634266211060079</a>.
+</div>
+<div id="ref-bergmann_flip_2012" class="csl-entry" role="listitem">
+Bergmann, Jonathan, and Aaron Sams. 2012. <em>Flip Your Classroom: Reach Every Student in Every Class Every Day</em>. 1st ed. International Society for Technology in Education.
+</div>
+<div id="ref-blampain_copying_2021" class="csl-entry" role="listitem">
+Blampain, Elise, Claire Gosse, and Marie Van Reybroeck. 2021. <span>“Copying Skills in Children with and Without Dyslexia.”</span> <em>Reading and Writing</em> 34 (4): 859–85. <a href="https://doi.org/10.1007/s11145-020-10094-6">https://doi.org/10.1007/s11145-020-10094-6</a>.
+</div>
+<div id="ref-bostian_using_2019" class="csl-entry" role="listitem">
+Bostian, Emma. 2019. <span>“Using Git Tags to Version Coding Tutorials. Dev.to.”</span> March 16. <a href="https://dev.to/emmabostian/using-git-tags-to-version-coding-tutorials-39cc">https://dev.to/emmabostian/using-git-tags-to-version-coding-tutorials-39cc</a>.
+</div>
+<div id="ref-cast_universal_2024" class="csl-entry" role="listitem">
+CAST. 2024. <span>“Universal Design for Learning Guidelines Version 3.0. <span>CAST</span> <span>UDL</span> Guidelines.”</span> <a href="https://udlguidelines.cast.org">https://udlguidelines.cast.org</a>.
+</div>
+<div id="ref-desvages_structured_nodate" class="csl-entry" role="listitem">
+Desvages, Charlotte, Brittany Blankinship, Umberto Noè, and Pawel Orzechowski. n.d. <span>“Structured Group Work with Assigned Asymmetrical Roles and Switching – Lessons from Pair Programming Across Disciplines.”</span> In <em>Teaching Programming Across Disciplines</em>.
+</div>
+<div id="ref-durgungoz_interactive_2025" class="csl-entry" role="listitem">
+Durgungoz, Fatma Canan, and Ahmet Durgungoz. 2025. <span>“<span>‘Interactive Lessons Are Great, but Too Much Is Too Much’</span>: Hearing Out Neurodivergent Students, Universal Design for Learning and the Case for Integrating More Anonymous Technology in Higher Education.”</span> <em>Higher Education</em>, ahead of print, January 8. <a href="https://doi.org/10.1007/s10734-024-01389-6">https://doi.org/10.1007/s10734-024-01389-6</a>.
+</div>
+<div id="ref-dusek_proactive_2018" class="csl-entry" role="listitem">
+Dusek, Jeff, Daniela Faas, Emily Ferrier, et al. 2018. <span>“Proactive Inclusion of Neurodiverse Learning Styles in Project-Based Learning: A Call for Action.”</span> <em>2018 <span>ASEE</span> Annual Conference &amp; Exposition Proceedings</em> (Salt Lake City, Utah), June, 30891. <a href="https://doi.org/10.18260/1-2--30891">https://doi.org/10.18260/1-2--30891</a>.
+</div>
+<div id="ref-eckerdal_learning_2024" class="csl-entry" role="listitem">
+Eckerdal, Anna, Anders Berglund, and Michael Thuné. 2024. <span>“Learning Programming Practice and Programming Theory in the Computer Laboratory.”</span> <em>European Journal of Engineering Education</em> 49 (2): 330–47. <a href="https://doi.org/10.1080/03043797.2023.2294953">https://doi.org/10.1080/03043797.2023.2294953</a>.
+</div>
+<div id="ref-faja_evaluating_2014" class="csl-entry" role="listitem">
+Faja, Silvana. 2014. <span>“Evaluating Effectiveness of Pair Programming as a Teaching Tool in Programming Courses.”</span> <em>Information Systems Education Journal</em> 12 (6): 36–44.
+</div>
+<div id="ref-forsey_flipping_2013" class="csl-entry" role="listitem">
+Forsey, Martin, Mitchell Low, and David Glance. 2013. <span>“Flipping the Sociology Classroom: Towards a Practice of Online Pedagogy.”</span> <em>Journal of Sociology</em> 49 (4): 471–85. <a href="https://doi.org/10.1177/1440783313504059">https://doi.org/10.1177/1440783313504059</a>.
+</div>
+<div id="ref-gabay_computational_2025" class="csl-entry" role="listitem">
+Gabay, Yafit, Lana Jacob, Atil Mansour, and Uri Hertz. 2025. <span>“Computational Markers Show Specific Deficits for Dyslexia and <span>ADHD</span> in Complex Learning Settings.”</span> <em>Npj Science of Learning</em> 10 (1): 38. <a href="https://doi.org/10.1038/s41539-025-00323-4">https://doi.org/10.1038/s41539-025-00323-4</a>.
+</div>
+<div id="ref-glaser_programming_2000" class="csl-entry" role="listitem">
+Glaser, Hugh, Pieter H. Hartel, and Paul W. Garratt. 2000. <span>“Programming by Numbers: A Programming Method for Novices.”</span> <em>The Computer Journal</em> 43 (4): 252–65. <a href="https://doi.org/10.1093/comjnl/43.4.252">https://doi.org/10.1093/comjnl/43.4.252</a>.
+</div>
+<div id="ref-govender_experiences_2007" class="csl-entry" role="listitem">
+Govender, I. 2007. <span>“Experiences of Learning and Teaching: Problem Solving in Computer Programming.”</span> <em>African Journal of Research in Mathematics, Science and Technology Education</em> 11 (2): 39–50. <a href="https://doi.org/10.1080/10288457.2007.10740620">https://doi.org/10.1080/10288457.2007.10740620</a>.
+</div>
+<div id="ref-gross_increased_2015" class="csl-entry" role="listitem">
+Gross, David, Evava S. Pietri, Gordon Anderson, Karin Moyano-Camihort, and Mark J. Graham. 2015. <span>“Increased Preclass Preparation Underlies Student Outcome Improvement in the Flipped Classroom.”</span> <em><span>CBE</span>—Life Sciences Education</em> 14 (4): ar36. <a href="https://doi.org/10.1187/cbe.15-02-0040">https://doi.org/10.1187/cbe.15-02-0040</a>.
+</div>
+<div id="ref-hadwen-bennett_making_2018" class="csl-entry" role="listitem">
+Hadwen-Bennett, Alex, Sue Sentance, and Cecily Morrison. 2018. <span>“Making Programming Accessible to Learners with Visual Impairments: A Literature Review.”</span> <em>International Journal of Computer Science Education in Schools</em> 2 (2): 3–13. <a href="https://doi.org/10.21585/ijcses.v2i2.25">https://doi.org/10.21585/ijcses.v2i2.25</a>.
+</div>
+<div id="ref-hanks_pair_2011" class="csl-entry" role="listitem">
+Hanks, Brian, Sue Fitzgerald, Renée McCauley, Laurie Murphy, and Carol Zander. 2011. <span>“Pair Programming in Education: A Literature Review.”</span> <em>Computer Science Education</em> 21 (2): 135–73. <a href="https://doi.org/10.1080/08993408.2011.579808">https://doi.org/10.1080/08993408.2011.579808</a>.
+</div>
+<div id="ref-kahu_student_2017" class="csl-entry" role="listitem">
+Kahu, Ella, Karen Nelson, and Catherine Picton. 2017. <span>“Student Interest as a Key Driver of Engagement for First Year Students.”</span> <em>Student Success</em> 8 (2): 55–66. <a href="https://search.informit.org/doi/10.3316/informit.593404254286347">https://search.informit.org/doi/10.3316/informit.593404254286347</a>.
+</div>
+<div id="ref-kirschner_why_2006" class="csl-entry" role="listitem">
+Kirschner, Paul A., John Sweller, and Richard E. Clark. 2006. <span>“Why Minimal Guidance During Instruction Does Not Work: An Analysis of the Failure of Constructivist, Discovery, Problem-Based, Experiential, and Inquiry-Based Teaching.”</span> <em>Educational Psychologist</em> 41 (2): 75–86. <a href="https://doi.org/10.1207/s15326985ep4102_1">https://doi.org/10.1207/s15326985ep4102_1</a>.
+</div>
+<div id="ref-knuth_theory_1991" class="csl-entry" role="listitem">
+Knuth, Donald E. 1991. <span>“Theory and Practice.”</span> <em>Theoretical Computer Science</em> 90 (1): 1–15. <a href="https://doi.org/10.1016/0304-3975(91)90295-D">https://doi.org/10.1016/0304-3975(91)90295-D</a>.
+</div>
+<div id="ref-kramer_10_2024" class="csl-entry" role="listitem">
+Kramer, Nimrod. 2024. <span>“10 Best Code Editors with Accessibility Features. Daily.dev.”</span> May 16. <a href="https://daily.dev/blog/10-best-code-editors-with-accessibility-features">https://daily.dev/blog/10-best-code-editors-with-accessibility-features</a>.
+</div>
+<div id="ref-le_cunff_neurodiversity_2024" class="csl-entry" role="listitem">
+Le Cunff, Anne-Laure, Vincent Giampietro, and Eleanor Dommett. 2024. <span>“Neurodiversity Positively Predicts Perceived Extraneous Load in Online Learning: A Quantitative Research Study.”</span> <em>Education Sciences</em> 14 (5): 516. <a href="https://doi.org/10.3390/educsci14050516">https://doi.org/10.3390/educsci14050516</a>.
+</div>
+<div id="ref-maehler_working_2016" class="csl-entry" role="listitem">
+Maehler, Claudia, and Kirsten Schuchardt. 2016. <span>“Working Memory in Children with Specific Learning Disorders and/or Attention Deficits.”</span> <em>Learning and Individual Differences</em> 49 (July): 341–47. <a href="https://doi.org/10.1016/j.lindif.2016.05.007">https://doi.org/10.1016/j.lindif.2016.05.007</a>.
+</div>
+<div id="ref-mccartney_liminal_2009" class="csl-entry" role="listitem">
+McCartney, Robert, Jonas Boustedt, Anna Eckerdal, et al. 2009. <span>“Liminal Spaces and Learning Computing.”</span> <em>European Journal of Engineering Education</em> 34 (4): 383–91. <a href="https://doi.org/10.1080/03043790902989580">https://doi.org/10.1080/03043790902989580</a>.
+</div>
+<div id="ref-moraros_flipping_2015" class="csl-entry" role="listitem">
+Moraros, John, Adiba Islam, Stan Yu, Ryan Banow, and Barbara Schindelka. 2015. <span>“Flipping for Success: Evaluating the Effectiveness of a Novel Teaching Approach in a Graduate Level Setting.”</span> <em><span>BMC</span> Medical Education</em> 15 (1): 27. <a href="https://doi.org/10.1186/s12909-015-0317-2">https://doi.org/10.1186/s12909-015-0317-2</a>.
+</div>
+<div id="ref-nederbragt_ten_2020" class="csl-entry" role="listitem">
+Nederbragt, Alexander, Rayna Michelle Harris, Alison Presmanes Hill, and Greg Wilson. 2020. <span>“Ten Quick Tips for Teaching with Participatory Live Coding.”</span> <em><span>PLOS</span> Computational Biology</em> 16 (9): e1008090. <a href="https://doi.org/10.1371/journal.pcbi.1008090">https://doi.org/10.1371/journal.pcbi.1008090</a>.
+</div>
+<div id="ref-paas_cognitive_2003" class="csl-entry" role="listitem">
+Paas, Fred, Alexander Renkl, and John Sweller. 2003. <span>“Cognitive Load Theory and Instructional Design: Recent Developments.”</span> <em>Educational Psychologist</em> 38 (1): 1–4. <a href="https://doi.org/10.1207/S15326985EP3801_1">https://doi.org/10.1207/S15326985EP3801_1</a>.
+</div>
+<div id="ref-prather_lecturelaboratory_1978" class="csl-entry" role="listitem">
+Prather, Ronald E., and Judith D. Schlesinger. 1978. <span>“A Lecture/Laboratory Approach to the First Course in Programming.”</span> <em><span>ACM</span> <span>SIGCSE</span> Bulletin</em> 10 (1): 115–18. <a href="https://doi.org/10.1145/990654.990599">https://doi.org/10.1145/990654.990599</a>.
+</div>
+<div id="ref-sands_addressing_2019" class="csl-entry" role="listitem">
+Sands, Philip. 2019. <span>“Addressing Cognitive Load in the Computer Science Classroom.”</span> <em><span>ACM</span> Inroads</em> 10 (1): 44–51. <a href="https://doi.org/10.1145/3210577">https://doi.org/10.1145/3210577</a>.
+</div>
+<div id="ref-selby_four_2011" class="csl-entry" role="listitem">
+Selby, Cynthia. 2011. <span>“Four Approaches to Teaching Programming.”</span> July 4.
+</div>
+<div id="ref-sutton_live_2018" class="csl-entry" role="listitem">
+Sutton, Marcy. 2018. <span>“Live Coding Accessibility. Marcysutton.com.”</span> June 28. <a href="https://marcysutton.com/live-coding-accessibility">https://marcysutton.com/live-coding-accessibility</a>.
+</div>
+<div id="ref-sweller_cognitive_1988" class="csl-entry" role="listitem">
+Sweller, John. 1988. <span>“Cognitive Load During Problem Solving: Effects on Learning.”</span> <em>Cognitive Science</em> 12 (2): 257–85. <a href="https://doi.org/10.1207/s15516709cog1202_4">https://doi.org/10.1207/s15516709cog1202_4</a>.
+</div>
+<div id="ref-sweller_cognitive_1994" class="csl-entry" role="listitem">
+Sweller, John. 1994. <span>“Cognitive Load Theory, Learning Difficulty, and Instructional Design.”</span> <em>Learning and Instruction</em> 4 (4): 295–312. <a href="https://doi.org/10.1016/0959-4752(94)90003-5">https://doi.org/10.1016/0959-4752(94)90003-5</a>.
+</div>
+<div id="ref-the_carpentries_live_2025" class="csl-entry" role="listitem">
+The Carpentries. 2025. <span>“Live Coding Is a Skill. Instructor Training.”</span> June 4. <a href="https://carpentries.github.io/instructor-training/17-live.html">https://carpentries.github.io/instructor-training/17-live.html</a>.
+</div>
+<div id="ref-tsai_cognitive_2015" class="csl-entry" role="listitem">
+Tsai, Chia-Yin, Ya-Fei Yang, and Chih-Kai Chang. 2015. <span>“Cognitive Load Comparison of Traditional and Distributed Pair Programming on Visual Programming Language.”</span> <em>2015 International Conference of Educational Innovation Through Technology (<span>EITT</span>)</em> (Wuhan, China), October, 143–46. <a href="https://doi.org/10.1109/EITT.2015.37">https://doi.org/10.1109/EITT.2015.37</a>.
+</div>
+<div id="ref-tyson_accessible_2022" class="csl-entry" role="listitem">
+Tyson, Jim. 2022. <span>“Accessible <span>STEMM</span> Introduction. Make Things Accessible.”</span> October 21. <a href="https://www.makethingsaccessible.com/guides/accessible-stemm-introduction/">https://www.makethingsaccessible.com/guides/accessible-stemm-introduction/</a>.
+</div>
+<div id="ref-winkler_cognitive_2023" class="csl-entry" role="listitem">
+Winkler, Till, and Rony G Flatscher. 2023. <span>“Cognitive Load in Programming Education: Easing the Burden on Beginners with <span>REXX</span>.”</span> <em>Central European Conference on Information and Intelligent Systems</em>, 171–78.
+</div>
+</div>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./C12_pair-programming-overview.html" class="pagination-link" aria-label="Where do I even start with Pair Programming in my classroom? Conversation with seasoned practitioners.">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Where do I even start with Pair Programming in my classroom? Conversation with seasoned practitioners.</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./C15_programming-without-computers.html" class="pagination-link" aria-label="Removing Barriers by Programming Without Computers">
+        <span class="nav-page-text"><span class="chapter-title">Removing Barriers by Programming Without Computers</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
