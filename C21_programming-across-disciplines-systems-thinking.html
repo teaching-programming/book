@@ -1,0 +1,1085 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.37">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Leo Riviera">
+<meta name="author" content="Maeve Murphy Quinlan">
+<meta name="author" content="Rebecca L. Colquhoun">
+<meta name="author" content="Devanjan Bhattacharya">
+<meta name="keywords" content="systems thinking, computer programs, conceptual systems">
+
+<title>How Teaching Programming Across Disciplines Can Instil Systems Thinking – Teaching Programming across Disciplines</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./C22_interdisciplinary-by-design.html" rel="next">
+<link href="./C15_programming-without-computers.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-6cd8da66a1bdaffdec2ef34407fc6c1c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="_theme/styles.css">
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./C21_programming-across-disciplines-systems-thinking.html"><span class="chapter-title">How Teaching Programming Across Disciplines Can Instil Systems Thinking</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Teaching Programming across Disciplines</a> 
+        <div class="sidebar-tools-main">
+    <div class="dropdown">
+      <a href="" title="Download" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Download"><i class="bi bi-download"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="./teaching_programming_across_disciplines.pdf">
+              <i class="bi bi-file-pdf pe-1"></i>
+            Download PDF
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="./teaching_programming_across_disciplines.epub">
+              <i class="bi bi-journal pe-1"></i>
+            Download ePub
+            </a>
+          </li>
+      </ul>
+    </div>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Teaching Programming across Disciplines</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./00-chapter-template.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Title of Example Chapter (as will appear on top h1 header and in table of contents)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C01_teaching-python.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">A Practical Guide to Teaching Python as a Computational Tool in an Introductory Data Analysis Course</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C03_online-teaching-reflections.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Reflections on Online Teaching</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C06_feminists-and-anarchists.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Dungeon Crawlers and Anarchists: co-designing programming teaching experiences</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C07_teaching-C-to-novices.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Second Languages: Teaching C to Python+Jupyter Novices</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C10_teaching-with-genai.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">An optimistic outlook on Teaching, Learning and Assessment for coding with the emergence of generative AI</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C11_sequential-vs-simultaneous.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Sequential vs.&nbsp;Simultaneous: Approaches to Learning Programming and Statistics</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C12_pair-programming-overview.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Where do I even start with Pair Programming in my classroom? Conversation with seasoned practitioners.</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C14_foster-inclusion-and-accessibility.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Reflections on Practices to Foster Inclusion and Accessibility in Programming Teaching</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C15_programming-without-computers.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Removing Barriers by Programming Without Computers</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C21_programming-across-disciplines-systems-thinking.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">How Teaching Programming Across Disciplines Can Instil Systems Thinking</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C22_interdisciplinary-by-design.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Interdisciplinary by Design: The Centre for Data, Culture, &amp; Society Training Programme</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C23_pair-programming-fusion.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Learning Together Across Modes: Online and On-site Pair Programming in a Hybrid / Fusion Course</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C24_lost-in-translation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Lost in Translation: Complexities and Good Practices of Translating Coding-based Teaching Materials Across Multiple Languages</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C32_civil-engineering.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Changing civil engineering students’ mindset toward programming</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C33_coding-anxiety.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Overcoming coding anxiety: reflections and strategies</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C35_action-feedback-plan.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Managing the Rubik’s Cube of Assessment: The Action Feedback Protocol</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C36_pair-programming-across-disciplines.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Structured group work with assigned asymmetrical roles and switching - Lessons from Pair Programming across disciplines</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C38_skills-based-assessment.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">The case for skills-based assessment in introductory programming courses</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C39_gentle-introduction-summer-school.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">A gentle introduction to coding: narratives from a programming summer school for social sciences and humanities</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C41_pair-programming-tutor-reflections.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Pair Programming in Practice: A PhD Tutor’s Reflections</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./99-bibliography.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bibliography</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar"><div class="quarto-margin-header"><div class="margin-header-item">
+<details id="accessibility-controls">
+    <summary>Display options</summary>
+  
+    <div class="control-group">
+        <label for="fontSizeSlider">Font size</label>
+        <input type="range" id="fontSizeSlider" min="8" max="32" value="16">
+        <span id="fontSizeValue">16</span>px
+    </div>
+  
+    <div class="control-group">
+        <label for="eyeStrainSlider">Eye strain</label>
+        <input type="range" id="eyeStrainSlider" min="0" max="50" value="0">
+        <span id="eyeStrainValue">0</span>%
+    </div>
+  
+    <div class="control-group">
+        <label for="hueRotateSlider">Hue</label>
+        <input type="range" id="hueRotateSlider" min="0" max="360" value="0">
+        <span id="hueRotateValue">0</span>
+    </div>
+  
+    <div class="control-group">
+        <label for="paddingSlider">Padding</label>
+        <input type="range" id="paddingSlider" min="0" max="12" value="3">
+        <span id="paddingValue">0</span>
+    </div>
+  
+    <div class="control-group">
+        <label for="lineSpacingSlider">Spacing</label>
+        <input type="range" id="lineSpacingSlider" min="80" max="250" value="150">
+        <span id="lineSpacingValue">150</span>%
+    </div>
+  
+    <div class="control-group">
+        <label for="fontFamily">Font</label>
+        <select id="fontFamily">
+            <option value="'Atkinson Hyperlegible', sans-serif">Atkinson Hyperlegible</option>
+            <option value="Arial, Helvetica, sans-serif">Sans-serif</option>
+            <option value="Georgia, 'Bitstream Charter', Times, serif">Serif</option>
+        </select>
+    </div>
+  
+    <div class="control-group">
+        <button id="resetDefaults">Reset to Defaults</button>
+    </div>
+
+</details>
+</div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#teaching-computational-thinking-through-programming" id="toc-teaching-computational-thinking-through-programming" class="nav-link" data-scroll-target="#teaching-computational-thinking-through-programming">Teaching Computational Thinking Through Programming</a></li>
+  <li><a href="#a-leap-into-systems-thinking" id="toc-a-leap-into-systems-thinking" class="nav-link" data-scroll-target="#a-leap-into-systems-thinking">A Leap into Systems Thinking</a></li>
+  <li><a href="#computer-programs-as-systems" id="toc-computer-programs-as-systems" class="nav-link" data-scroll-target="#computer-programs-as-systems">Computer Programs as Systems</a></li>
+  <li><a href="#decomposing-conceptual-systems-with-computational-thinking" id="toc-decomposing-conceptual-systems-with-computational-thinking" class="nav-link" data-scroll-target="#decomposing-conceptual-systems-with-computational-thinking">Decomposing Conceptual Systems with Computational Thinking</a></li>
+  <li><a href="#rebuilding-the-world-in-our-image" id="toc-rebuilding-the-world-in-our-image" class="nav-link" data-scroll-target="#rebuilding-the-world-in-our-image">Rebuilding the World in Our Image</a></li>
+  <li><a href="#acknowledgements" id="toc-acknowledgements" class="nav-link" data-scroll-target="#acknowledgements">Acknowledgements</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const fontSizeSlider = document.getElementById('fontSizeSlider');
+        const fontSizeValue = document.getElementById('fontSizeValue');
+
+        const hueRotateSlider = document.getElementById('hueRotateSlider');
+        const hueRotateValue = document.getElementById('hueRotateValue');
+
+        const eyeStrainSlider = document.getElementById('eyeStrainSlider');
+        const eyeStrainValue = document.getElementById('eyeStrainValue');
+
+        const paddingSlider = document.getElementById('paddingSlider');
+        const paddingValue = document.getElementById('paddingValue');
+
+        const lineSpacingSlider = document.getElementById('lineSpacingSlider');
+        const lineSpacingValue = document.getElementById('lineSpacingValue');
+
+        const fontFamilySelect = document.getElementById('fontFamily');
+
+        const html = document.documentElement;
+        const resetButton = document.getElementById('resetDefaults');
+
+        // Define default values
+        const defaults = {
+            fontSize: 16,
+            hueRotate: 0,
+            eyeStrain: 0,
+            padding: 0,
+            lineSpacing: 150,
+            fontFamily: "'Atkinson Hyperlegible', Arial, Helvetica, sans-serif"
+        };
+
+        function updateStyles() {
+            html.style.setProperty('--bs-root-font-size', fontSizeSlider.value + 'px');
+            html.style.setProperty('--hue-rotate', hueRotateSlider.value + 'deg');
+            html.style.setProperty('--eye-strain', eyeStrainSlider.value + '%');
+            html.style.setProperty('--padding', paddingSlider.value + 'em');
+            html.style.setProperty('--line-spacing', lineSpacingSlider.value + '%');
+            html.style.setProperty('--bs-body-font-family', fontFamilySelect.value);
+
+            fontSizeValue.textContent = fontSizeSlider.value;
+            hueRotateValue.textContent = hueRotateSlider.value;
+            eyeStrainValue.textContent = eyeStrainSlider.value;
+            paddingValue.textContent = paddingSlider.value;
+            lineSpacingValue.textContent = lineSpacingSlider.value;
+
+            saveSettings();
+        }
+
+        // Function to save settings to localStorage
+        function saveSettings() {
+            const settings = {
+                fontSize: fontSizeSlider.value,
+                hueRotate: hueRotateSlider.value,
+                eyeStrain: eyeStrainSlider.value,
+                padding: paddingSlider.value,
+                lineSpacing: lineSpacingSlider.value,
+                fontFamily: fontFamilySelect.value
+            };
+            localStorage.setItem('accessibilitySettings', JSON.stringify(settings));
+        }
+
+        // Function to load settings from localStorage
+        function loadSettings() {
+            const savedSettings = localStorage.getItem('accessibilitySettings');
+            if (savedSettings) {
+                const settings = JSON.parse(savedSettings);
+                fontSizeSlider.value = settings.fontSize;
+                hueRotateSlider.value = settings.hueRotate;
+                eyeStrainSlider.value = settings.eyeStrain;
+                paddingSlider.value = settings.padding;
+                lineSpacingSlider.value = settings.lineSpacing;
+                fontFamilySelect.value = settings.fontFamily;
+                updateStyles();
+            }
+        }
+
+        function resetToDefaults() {
+            fontSizeSlider.value = defaults.fontSize;
+            hueRotateSlider.value = defaults.hueRotate;
+            eyeStrainSlider.value = defaults.eyeStrain;
+            paddingSlider.value = defaults.padding;
+            lineSpacingSlider.value = defaults.lineSpacing;
+            fontFamilySelect.value = defaults.fontFamily;
+            updateStyles();
+            localStorage.removeItem('accessibilitySettings');
+        }
+
+        fontSizeSlider.oninput = updateStyles;
+        hueRotateSlider.oninput = updateStyles;
+        eyeStrainSlider.oninput = updateStyles;
+        paddingSlider.oninput = updateStyles;
+        lineSpacingSlider.oninput = updateStyles;
+        fontFamilySelect.onchange = updateStyles;
+        resetButton.onclick = resetToDefaults;
+
+        loadSettings();
+
+    });
+</script>
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-title">How Teaching Programming Across Disciplines Can Instil Systems Thinking</span></h1>
+</div>
+
+
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Authors</div>
+  <div class="quarto-title-meta-heading">Affiliations</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Leo Riviera <a href="mailto:leo.riviera@voxa.dev" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> <a href="https://orcid.org/0009-0004-3316-1852" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Voxa
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Maeve Murphy Quinlan <a href="mailto:m.murphyquinlan@leeds.ac.uk" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Research Computing, University of Leeds
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Rebecca L. Colquhoun </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Department of Earth Science and Engineering, Imperial College London
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Devanjan Bhattacharya <a href="mailto:d.bhattacharya@ed.ac.uk" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Bayes Centre, University of Edinburgh
+          </p>
+      </div>
+  </div>
+
+<div class="quarto-title-meta">
+
+      
+  
+    
+  </div>
+  
+
+<div>
+  <div class="keywords">
+    <div class="block-title">Keywords</div>
+    <p>systems thinking, computer programs, conceptual systems</p>
+  </div>
+</div>
+
+</header>
+
+
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>The purpose of university has been the subject of much discussion <span class="citation" data-cites="c21_PurposeOfUniversity">(<a href="#ref-c21_PurposeOfUniversity" role="doc-biblioref">Gupta 2021</a>)</span>. Some see it as a focal point for the humanist tradition in the Renaissance fashion, where one goes to engage with and anchor themselves in the great work of man. Others see it as a site to acquire knowledge, skills, values, beliefs, and commitments; young people develop their mental faculties and define their world views, becoming more ready to integrate into society <span class="citation" data-cites="c21_ReconsideringHigherEducationPurpose">(<a href="#ref-c21_ReconsideringHigherEducationPurpose" role="doc-biblioref">McArthur 2011</a>)</span>.</p>
+<p>Some see it as a government-mandated institution crucial to the smooth function of certain specialist fields. A university ensures, through rigorous academic examination, that the doctor treating your illness, the solicitor defending your case, and the architect designing your home are all sufficiently competent <span class="citation" data-cites="c21_PracticumInHigherEducation">(<a href="#ref-c21_PracticumInHigherEducation" role="doc-biblioref">Ryan et al. 1996</a>)</span>.</p>
+<p>Universities function as hotbeds of cutting-edge research, funded by subsidies from the public purse and investment from industry. Given the market-oriented university system of the UK and its ruthless focus on “value for money” <span class="citation" data-cites="c21_UniversityValueForMoney c21_ReconsideringHigherEducationPurpose">(<a href="#ref-c21_UniversityValueForMoney" role="doc-biblioref">Wilkinson and Wilkinson 2020</a>; <a href="#ref-c21_ReconsideringHigherEducationPurpose" role="doc-biblioref">McArthur 2011</a>)</span>, some posit the core focus of higher education institutions to be to produce findings with some practical application. We, of course, cannot forget about the university as a modifier of social status.</p>
+<p>However, it is impossible to deny that one of the core functions of a university is to educate. Universities provide their students with the knowledge necessary to pursue their chosen career paths, and provide a space for individuals to develop and hone their chosen skill. When viewed in this light, the value of teaching programming across disciplines becomes apparent.</p>
+</section>
+<section id="teaching-computational-thinking-through-programming" class="level2">
+<h2 class="anchored" data-anchor-id="teaching-computational-thinking-through-programming">Teaching Computational Thinking Through Programming</h2>
+<p>We have long foreseen a world where computers are ubiquitous; today, they are undeniably present in almost every aspect of modern life <span class="citation" data-cites="c21_WeSawThisComing c21_ComputersAreUbiquitous">(<a href="#ref-c21_WeSawThisComing" role="doc-biblioref">Weiser 1999</a>; <a href="#ref-c21_ComputersAreUbiquitous" role="doc-biblioref">Stewart 2012</a>)</span>. Over the past few decades, they have become fundamental to the way we communicate, work, analyze data, and solve complex problems. Understanding how to use a computer is no longer a skill reserved for computer scientists, but serves as an invaluable tool for problem-solving across all disciplines. In fact, the skill is not only crucial to being a good worker, but also a good citizen who can affect change. With some of the opinion that computer literacy in decline among young people <span class="citation" data-cites="c21_ComputersAreUbiquitous">(<a href="#ref-c21_ComputersAreUbiquitous" role="doc-biblioref">Stewart 2012</a>)</span>, teaching programming across disciplines can provide students with the base knowledge they need to understand the computers they come across during their careers.</p>
+<p>Learning to code is associated with improved problem solving skills in some domains <span class="citation" data-cites="c21_CodingProblemSolvingSkills">(<a href="#ref-c21_CodingProblemSolvingSkills" role="doc-biblioref">Scherer et al. 2021</a>)</span>. When we teach students to program, we often start by introducing them to a language’s syntax. However, we also introduce them to resources for self-study, like online tutorials. We teach how to find useful resources and evaluate their quality. In their self-study, students discover reference documentation and language specifications. That, in turn, supports their discovery of capabilities of the programming language they were never formally taught. Students eventually learn not only how to write code but also how to teach themselves.</p>
+<p>In learning to code, students encounter computational thinking <span class="citation" data-cites="C15_r1">(<a href="#ref-C15_r1" role="doc-biblioref">Wing 2006</a>)</span>. Computational thinking involves taking a problem and developing solutions we can use a computer to execute. Although different models of computational thinking consist of different steps, <span class="citation" data-cites="c21_DemystifyingComputationalThinking">Shute et al. (<a href="#ref-c21_DemystifyingComputationalThinking" role="doc-biblioref">2017</a>)</span> describes it as a process which includes</p>
+<ul>
+<li>Problem reformulation, where we reframe a problem into a solvable and familiar one</li>
+<li>Recursion, where we incrementally construct a solution based on preceding information</li>
+<li>Decomposition, where we break a large problem down into more manageable sub-problems</li>
+<li>Abstraction, where we model the core aspects of a complex problem or system</li>
+<li>Systematic testing, where we take purposeful steps to derive solutions</li>
+</ul>
+<p>Computational thinking has applications beyond computing. It is seen as fundamental for analysing and solving all sorts of problems, because we can transfer techniques we use to make our solutions efficient for computers to other disciplines<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> <span class="citation" data-cites="c21_ComputationalThinkingWhatAndWhy c21_ComputationalThinkingTransferrable">(<a href="#ref-c21_ComputationalThinkingWhatAndWhy" role="doc-biblioref">Wing 2010</a>, <a href="#ref-c21_ComputationalThinkingTransferrable" role="doc-biblioref">2012</a>)</span>. Programming is a tool to teach computational thinking, but computational thinking can be applied to other problems. Even if one disagrees with the premise that computational thinking provides skills which are directly transferrable to other disciplines, learning to code is a good form of mental exercise and teaches us to solve problems. <span class="citation" data-cites="c21_ComputationalThinkingTransfersUnproven c21_CodingProblemSolvingSkills">(<a href="#ref-c21_ComputationalThinkingTransfersUnproven" role="doc-biblioref">Love 2019</a>; <a href="#ref-c21_CodingProblemSolvingSkills" role="doc-biblioref">Scherer et al. 2021</a>)</span></p>
+<p>However, teaching programming outside of computer science courses may have another, less obvious benefit: instilling systems thinking skills in students. To understand why this could have value, we need to take a brief foray into the world of systems.</p>
+</section>
+<section id="a-leap-into-systems-thinking" class="level2">
+<h2 class="anchored" data-anchor-id="a-leap-into-systems-thinking">A Leap into Systems Thinking</h2>
+<p>A system is a collection of entities which are connected to each other and work together for some purpose. As a result of interactions between entities, the system produces its own pattern of behaviour over time. The pattern of behaviour that emerges from a system can be quite different from the behaviour of its constituent parts <span class="citation" data-cites="c21_DanielKimSystemsThinking">(<a href="#ref-c21_DanielKimSystemsThinking" role="doc-biblioref">Kim 1999, 2–5</a>)</span>. The process of identifying, understanding, decomposing and rebuilding systems is called systems thinking. More formally, systems thinking can be defined as “…a set of synergistic analytic skills used to improve the capability of identifying and understanding systems, predicting their behaviors, and devising modifications to them in order to produce desired effects”<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> <span class="citation" data-cites="c21_SystemsThinkingDefinition">(<a href="#ref-c21_SystemsThinkingDefinition" role="doc-biblioref">Arnold and Wade 2015</a>)</span>. Systems thinking is, at its core, a tool for allowing us to see the world differently, ask different questions and get different (often unexpected, sometimes better) answers.</p>
+<p>What we colloquially refer to as a computer today was at one point called a computer system. The computer was the hardware used to perform calculations, while the computer system was the combination of hardware and software that could be programmed to perform a specific task <span class="citation" data-cites="c21_ComputerAndComputerSystem">(<a href="#ref-c21_ComputerAndComputerSystem" role="doc-biblioref"><em>An Introduction to Computers and Computer Systems</em> 2021</a>)</span>. As devices have become more capable and more compact, this differentiation has become a point of pedantry. However, for the purposes of our discussion, this distinction is helpful. The physical components of a computer (its CPU, memory, storage drives, peripherals and the like), are unable to achieve anything by themselves. Similarly, software is useless without a device to run it on. When both are combined, we have a useful system which can take in data, process it into useful information, and output it in some usable form. We have a computer system!</p>
+<p>By our definition of a system, computer programs are also systems. They are a collection of elements (most obviously input, source code, and stored data) connected together (in the body of a program and in a machine’s memory)<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> for the purpose of producing outputs over time. Let us explore this further.</p>
+</section>
+<section id="computer-programs-as-systems" class="level2">
+<h2 class="anchored" data-anchor-id="computer-programs-as-systems">Computer Programs as Systems</h2>
+<p>The obvious elements of a simple computer program include, among other things,</p>
+<ul>
+<li>its inputs,</li>
+<li>its outputs,</li>
+<li>its application code,</li>
+<li>the internal state it maintains and any stored data.</li>
+</ul>
+<p>Computer programs also feature many intangible elements, including</p>
+<ul>
+<li>accessibility for users of assistive technologies and users with disabilities,</li>
+<li>its availability and uptime,</li>
+<li>its maintainability, and the ease with which changes can be made,</li>
+<li>its correctness, where a given input produces an expected output. This can be assured with manual and automated system testing, and in some cases, can be formally verified,</li>
+<li>its stability, in its ability to handle large volumes of input and remain stable if those limits are exceeded,</li>
+<li>the aesthetics of its source code, often enforced by code review and code linters.</li>
+</ul>
+<p>These elements are inherently interconnected and dependent on each other. The application code transforms the input, considering and possibly updating its internal state in the process. Data can be stored for retrieval at another time, and can form a state which affects future outputs of the same program. The application code directly affects the correctness and stability of the program. A computer program produces output to fulfil its purpose, and that output can even be the input of another computer program. The general purpose of computer programs is to compute, to process some form of input into some form of output. The purpose of a particular piece of software can be deduced by how it processes data, looking at its inputs, outputs, and side effects. This makes a computer program a system which, in turn, runs on a computer system. It’s a system within a system!</p>
+<p>Not all elements matter equally when designing a program. It depends on the purpose. Scripts for calculating the answers to mathematical problems on <a href="https://projecteuler.net/">Project Euler</a><a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a> would emphasise correctness. However, a Government website designed to provide information to the public would emphasise accessibility and availability <span class="citation" data-cites="c21_GovernmentDesignServicePrinciples">(<a href="#ref-c21_GovernmentDesignServicePrinciples" role="doc-biblioref">Government Digital Service 2012</a>)</span>. An online multiplayer video game would likely focus on maintainability to roll out changes quickly, and stability to handle spikes in traffic from players. A computer program written to control a nuclear power plant looks very different from one used to track library books!</p>
+<p>Like any other system, a software program’s response to input is characteristic of itself<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a>. It depends on the way we have encoded instructions to process input and produce output. This is even more true for a program which holds state or uses randomness, given the same inputs may produce drastically different results based on some internal state. More complex programs can even change and adapt their behaviour in response to their environment and their input. For example, a rate-limiting system can restrict requests from a user to prevent overload. Programs can also be fault-tolerant, using circuit breakers to avoid repeatedly trying to run an operation which fails. These can be considered balancing feedback loops, intended to prevent failure and keep performance metrics within some desired threshold.</p>
+<p>In the real world, it is more likely that a computer program that is actually useful is doing more than one thing. Like many complex systems, computer programs can be composed of subsystems. Although most of a program’s behaviours are explicitly designed and defined in application code, many arise as a logical consequence of different elements interacting with one another. This emergent behaviour is another key characteristic of systems <span class="citation" data-cites="c21_BasicsOfSystems">(<a href="#ref-c21_BasicsOfSystems" role="doc-biblioref">Meadows 2015, 11–34</a>)</span>.</p>
+<p>Thinking one level up from a program, computer systems are made up of several programs that are constantly interacting with each other; a program itself forms a subsystem within a computer system. The Unix kernel schedules time for programs, background processes and system operations, each of which affects its environment and is affected by its environment <span class="citation" data-cites="c21_UnixPrograms">(<a href="#ref-c21_UnixPrograms" role="doc-biblioref">Alomari 2000</a>)</span>. A program can affect its execution environment (for example, by storing data on disk or holding it in memory), and the environment can affect the program (by interrupting its normal execution). Feedback loops like these are common in systems found in the real world.</p>
+<p>As people interact with the world, they intuitively build up an understanding of and appreciation for complex systems <span class="citation" data-cites="c21_PeopleAppreciateComplexSystems">(<a href="#ref-c21_PeopleAppreciateComplexSystems" role="doc-biblioref">Forrester 1971</a>)</span>. Teaching students programming merely provides them with the language to describe and interact with complex systems. This knowledge can then be used to understand other systems which make up the world. Of course, there are several concepts in systems thinking which have no obvious analogies when discussing computer programs. However, the way we build, use and debug computer programs provides a useful introduction to systems thinking.</p>
+<p>Much like any other system, a computer program’s purpose is what it does, regardless of the creator’s intent <span class="citation" data-cites="c21_BasicsOfSystems">(<a href="#ref-c21_BasicsOfSystems" role="doc-biblioref">Meadows 2015</a>)</span>. Depending on how a program behaves within and interacts with its execution environment, interesting (and sometimes dangerous) side effects may occur. To find and fix unexpected behaviours in our computer programs, we carefully examine the individual components and how they work together, in the context of the desired function. Similarly, complex systems have structures which contain latent behaviours. In fact, a big challenge of systems thinking is to arrange the structures and conditions of a system to encourage and amplify beneficial behaviours, and limit and reduce destructive behaviours <span class="citation" data-cites="c21_BasicsOfSystems">(<a href="#ref-c21_BasicsOfSystems" role="doc-biblioref">Meadows 2015, 72</a>)</span>.</p>
+<p>With a computer program, we may have access to logging, tracing, and observability tools which help us diagnose deviant behaviours. Eventually, we identify the element or interconnect which has caused our unexpected behaviours (colloquially known as a “bug”), and we make an adjustment to remediate it. The methodical troubleshooting approach can be applied to the systems which govern the behaviour of friend groups, companies, charities, universities, market economies, and other groups of interconnected entities.</p>
+</section>
+<section id="decomposing-conceptual-systems-with-computational-thinking" class="level2">
+<h2 class="anchored" data-anchor-id="decomposing-conceptual-systems-with-computational-thinking">Decomposing Conceptual Systems with Computational Thinking</h2>
+<p>We can decompose the systems which exist in our world using the same process we use to construct computer programs: computational thinking. As mentioned previously, the end result of the computational thinking process is algorithms that can solve a problem. Along with other components, the algorithms we define and the relationships between them form a system we call a computer program. Perhaps performing the steps of computational thinking in reverse could be useful for decomposing a system into its constituent parts?</p>
+<p>In his <em>Introduction to Systems Thinking</em>, <span class="citation" data-cites="c21_DanielKimSystemsThinking">Kim (<a href="#ref-c21_DanielKimSystemsThinking" role="doc-biblioref">1999, 17–18</a>)</span> details the different modes we can act in when dealing with a system. Thinking about these modes, particularly within the context of computational thinking, allows us to transcend from being acted on by a system to acting on a system.</p>
+<p>Our interactions with systems are normally restricted to reacting to what it does. After observing enough of its behaviour, we can notice patterns in those events we can adapt to. A system’s architecture, also referred to as a “systemic structure”, is the way a system’s components are organised. It is responsible for the events and patterns we observe <span class="citation" data-cites="c21_DanielKimSystemsThinking">(<a href="#ref-c21_DanielKimSystemsThinking" role="doc-biblioref">Kim 1999</a>)</span>.</p>
+<p>When examining a system’s architecture, we can start with systematic testing from computational thinking. We can ask ourselves: what steps could someone have taken to determine the elements that make up this system, and how they are connected to each other? Where could they have searched? Who could they have asked for a review?</p>
+<p>Next, considering its stated purpose, we can de-abstract the system. If we were designing a system to achieve a similar goal, what detail would I consider irrelevant? Putting myself in the shoes of the people who have built and maintained this system, what are their incentives? What are this system’s intended goals, versus its real impact? Is there any detail about the real world that, when abstracted, would cause the system to act in the way it does? Is there a way to improve this?</p>
+<p>Considering the system as a whole, we can recursively recompose it. Looking at its purpose and emergent behaviour, what individual components make up the system? How could those be linked to one another? Based on the model I’ve constructed, what about this system could be broken? What about it could be inefficient? What about its approach to problem solving is inelegant? Does it have any reason to be like that?</p>
+<p>Finally, we can ask ourselves: what is this system trying to do, and what was the intent? What output does it produce? What side effects can be directly attributed to it? How does its output affect other systems? What adjacent problems exist that this could be tweaked to solve? What is the real purpose of this system?</p>
+<p>A system is a useful abstraction for thinking about behaviour which emerges from the interactions between different components. However, as it is an abstraction, the systems we concoct using this method will never be complete. There will always be context we lack and so we will omit components and connections between them. However, interrogating a system in this way could prove useful depending on the problem we’re trying to solve.</p>
+<p>When picking apart a system in this way, we look at things it does and look at trends in the things it does. Eventually, we can consider the way the system and its structures are organised to produce patterns which then produce outcomes. We can then consider what components should make up a system, and how they ought to be organised. This is similar to how we’re able to make changes to a program’s implementation to improve it or change its behaviour once we understand what it does and how it does it.</p>
+<p>Computer programs differ greatly from systems found in the real world, because we can change and understand computer programs comparatively easily. They have defined execution environments and can be disabled if a feedback loop causes undesirable consequences. However, despite the fact computer programs are relatively simple systems, they are systems nevertheless. This means computational thinking is useful to identify systems, and develop our capacity to be more creative, reflective and generative when dealing with systems.</p>
+</section>
+<section id="rebuilding-the-world-in-our-image" class="level2">
+<h2 class="anchored" data-anchor-id="rebuilding-the-world-in-our-image">Rebuilding the World in Our Image</h2>
+<p>During the process of designing systems, we can consider our mental model of the world. Reflecting on how systems are designed, as well as how we would design them, exposes the assumptions we harbour about how the world works. We can then imagine new ways of organising a system’s components. Understanding and changing the way we model the world in our heads allows us to usher into existence entirely new systems. Systems thinking allows us to constantly question how the world works, and what is actually important. From there, it is not a large leap to think about the world we want<a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a>.</p>
+<p>Our thinking is bounded by our ability to describe the world. If we lack the language to discuss change, we will struggle to conceptualise it. Put more succinctly by Ludwig Wittgenstein, the limits of one’s language are the limits of their world <span class="citation" data-cites="c21_Wittgenstein">(<a href="#ref-c21_Wittgenstein" role="doc-biblioref">Wittgenstein 2001</a>)</span>. Teaching programming instils computational thinking, as a stepping stone to systems thinking. With systems thinking, we have a language to describe the way the world works and how we can change it. In fact, the two work in tandem. Computational thinking provides us the ability to solve complex problems by breaking them down into smaller parts; systems thinking gives us a way to model how those smaller parts fit together and interact with one another.</p>
+<p>What we teach speaks to the kind of people we want in the world. The type of work we do influences the type of people we are. We grow to fit the jobs we work based on the skills we use every day <span class="citation" data-cites="c21_WorkInfluencesUs">(<a href="#ref-c21_WorkInfluencesUs" role="doc-biblioref">Woods et al. 2020</a>)</span>. We should encourage our students to develop systems thinking skills through programming, and to use those skills as part of their problem-solving toolkit in the workplace. Equipping people with the ability to identify, decompose and eventually restructure the systems which govern our world will make them more effective, more independent and more capable agents of change. They will finally see the world for what it is: a collection of elements to be examined, interrogated, and reconstructed in the image of something more equitable and more sustainable.</p>
+</section>
+<section id="acknowledgements" class="level2">
+<h2 class="anchored" data-anchor-id="acknowledgements">Acknowledgements</h2>
+<p>Thank you to everyone who has offered feedback on this chapter, including Dr.&nbsp;Mark Stonehouse, Dr.&nbsp;Heather Allansdottir, Ole Thal, and other entities who wish to remain anonymous. Your input has been invaluable.</p>
+</section>
+<section id="references" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="references">References</h2>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-c21_UnixPrograms" class="csl-entry" role="listitem">
+Alomari, Ahmed. 2000. <em>Oracle 8i and <span>UNIX</span> Performance Tuning</em>. The Prentice Hall PTR Oracle Series. Prentice Hall.
+</div>
+<div id="ref-c21_ComputerAndComputerSystem" class="csl-entry" role="listitem">
+<em>An Introduction to Computers and Computer Systems: Session 2: 6</em>. 2021. The Open University. <a href="https://www.open.edu/openlearn/mod/oucontent/view.php?id=109019&amp;section=6">https://www.open.edu/openlearn/mod/oucontent/view.php?id=109019&amp;section=6</a>.
+</div>
+<div id="ref-c21_SystemsThinkingDefinition" class="csl-entry" role="listitem">
+Arnold, Ross D., and Jon P. Wade. 2015. <span>“A Definition of Systems Thinking: A Systems Approach.”</span> <em>Procedia Computer Science</em> 44: 669–78. <a href="https://doi.org/10.1016/j.procs.2015.03.050">https://doi.org/10.1016/j.procs.2015.03.050</a>.
+</div>
+<div id="ref-c21_PeopleAppreciateComplexSystems" class="csl-entry" role="listitem">
+Forrester, Jay W. 1971. <span>“Counterintuitive Behavior of Social Systems.”</span> <em>Technological Forecasting and Social Change</em> 3: 1–22. <a href="https://doi.org/10.1016/s0040-1625(71)80001-x">https://doi.org/10.1016/s0040-1625(71)80001-x</a>.
+</div>
+<div id="ref-c21_GovernmentDesignServicePrinciples" class="csl-entry" role="listitem">
+Government Digital Service. 2012. <em>Government Design Principles</em>. GOV.UK; <a href="https://www.gov.uk/guidance/government-design-principles#this-is-for-everyone" class="uri">https://www.gov.uk/guidance/government-design-principles#this-is-for-everyone</a>.
+</div>
+<div id="ref-c21_PurposeOfUniversity" class="csl-entry" role="listitem">
+Gupta, Achala. 2021. <em>What’s the Purpose of University? Your Answer May Depend on How Much It Costs You - LSE Impact</em>. London School of Economics; Political Science. <a href="https://blogs.lse.ac.uk/impactofsocialsciences/2021/01/21/whats-the-purpose-of-university-your-answer-may-depend-on-how-much-it-costs-you/">https://blogs.lse.ac.uk/impactofsocialsciences/2021/01/21/whats-the-purpose-of-university-your-answer-may-depend-on-how-much-it-costs-you/</a>.
+</div>
+<div id="ref-c21_DanielKimSystemsThinking" class="csl-entry" role="listitem">
+Kim, Daniel H. 1999. <em>Introduction to Systems Thinking</em>. Pegasus Communications.
+</div>
+<div id="ref-c21_ComputationalThinkingTransfersUnproven" class="csl-entry" role="listitem">
+Love, David. 2019. <em>Computational Thinking – a New Modality of Thought or Just What Coders Do?</em> <a href="https://digiteacher.wordpress.com/2019/09/20/computational-thinking-a-new-modality-of-thought-or-just-what-coders-do/" class="uri">Https://digiteacher.wordpress.com/2019/09/20/computational-thinking-a-new-modality-of-thought-or-just-what-coders-do/</a>.
+</div>
+<div id="ref-c21_ReconsideringHigherEducationPurpose" class="csl-entry" role="listitem">
+McArthur, Jan. 2011. <span>“Reconsidering the Social and Economic Purposes of Higher Education.”</span> <em>Higher Education Research &amp; Development</em> 30 (6): 737–49. <a href="https://doi.org/10.1080/07294360.2010.539596">https://doi.org/10.1080/07294360.2010.539596</a>.
+</div>
+<div id="ref-c21_BasicsOfSystems" class="csl-entry" role="listitem">
+Meadows, Donella H. 2015. <em>Thinking in Systems</em>. Chelsea Green Publishing.
+</div>
+<div id="ref-c21_PracticumInHigherEducation" class="csl-entry" role="listitem">
+Ryan, Greg, Susan Toohey, and Chris Hughes. 1996. <span>“The Purpose, Value and Structure of the Practicum in Higher Education: A Literature Review.”</span> <em>Higher Education</em> 31 (3): 355–77. <a href="https://doi.org/10.1007/bf00128437">https://doi.org/10.1007/bf00128437</a>.
+</div>
+<div id="ref-c21_CodingProblemSolvingSkills" class="csl-entry" role="listitem">
+Scherer, Ronny, Fazilat Siddiq, and Bárbara Sánchez-Scherer. 2021. <span>“Some Evidence on the Cognitive Benefits of Learning to Code.”</span> <em>Frontiers in Psychology</em> 12 (September). <a href="https://doi.org/10.3389/fpsyg.2021.559424">https://doi.org/10.3389/fpsyg.2021.559424</a>.
+</div>
+<div id="ref-c21_DemystifyingComputationalThinking" class="csl-entry" role="listitem">
+Shute, Valerie J., Chen Sun, and Jodi Asbell-Clarke. 2017. <span>“Demystifying Computational Thinking.”</span> <em>Educational Research Review</em> 22 (November): 142–58. <a href="https://doi.org/10.1016/j.edurev.2017.09.003">https://doi.org/10.1016/j.edurev.2017.09.003</a>.
+</div>
+<div id="ref-c21_ComputersAreUbiquitous" class="csl-entry" role="listitem">
+Stewart, Tom. 2012. <span>“Computers Are Everywhere.”</span> <em>Behaviour &amp; Information Technology</em> 31 (4): 325–27. <a href="https://doi.org/10.1080/0144929x.2012.675162">https://doi.org/10.1080/0144929x.2012.675162</a>.
+</div>
+<div id="ref-c21_WeSawThisComing" class="csl-entry" role="listitem">
+Weiser, Mark. 1999. <span>“The Computer for the 21st Century.”</span> <em>ACM SIGMOBILE Mobile Computing and Communications Review</em> 3 (3): 3–11. <a href="https://doi.org/10.1145/329124.329126">https://doi.org/10.1145/329124.329126</a>.
+</div>
+<div id="ref-c21_UniversityValueForMoney" class="csl-entry" role="listitem">
+Wilkinson, L. C., and M. D. Wilkinson. 2020. <span>“Value for Money and the Commodification of Higher Education: Front-Line Narratives.”</span> <em>Teaching in Higher Education</em> 28 (2): 406–22. <a href="https://doi.org/10.1080/13562517.2020.1819226">https://doi.org/10.1080/13562517.2020.1819226</a>.
+</div>
+<div id="ref-C15_r1" class="csl-entry" role="listitem">
+Wing, Jeannette M. 2006. <span>“Computational Thinking.”</span> <em>Communications of the ACM</em> 49 (3): 33–35.
+</div>
+<div id="ref-c21_ComputationalThinkingWhatAndWhy" class="csl-entry" role="listitem">
+Wing, Jeannette M. 2010. <em>Computational Thinking: What and Why?</em> <a href="https://www.cs.cmu.edu/~CompThink/resources/TheLinkWing.pdf">https://www.cs.cmu.edu/~CompThink/resources/TheLinkWing.pdf</a>.
+</div>
+<div id="ref-c21_ComputationalThinkingTransferrable" class="csl-entry" role="listitem">
+Wing, Jeannette M. 2012. <em>Computational Thinking</em>. <a href="https://www.microsoft.com/en-us/research/wp-content/uploads/2012/08/Jeannette_Wing.pdf">https://www.microsoft.com/en-us/research/wp-content/uploads/2012/08/Jeannette_Wing.pdf</a>.
+</div>
+<div id="ref-c21_Wittgenstein" class="csl-entry" role="listitem">
+Wittgenstein, Ludwig. 2001. <em>Tractatus <span>Logico-Philosophicus</span></em>. 2nd ed. Translated by D. F. Pears and B. F. McGuinness. Routledge Classics. Routledge.
+</div>
+<div id="ref-c21_WorkInfluencesUs" class="csl-entry" role="listitem">
+Woods, Stephen A., Grant W. Edmonds, Sarah E. Hampson, and Filip Lievens. 2020. <span>“How Our Work Influences Who We Are: Testing a Theory of Vocational and Personality Development over Fifty Years.”</span> <em>Journal of Research in Personality</em> 85: 103930. https://doi.org/<a href="https://doi.org/10.1016/j.jrp.2020.103930">https://doi.org/10.1016/j.jrp.2020.103930</a>.
+</div>
+</div>
+</section>
+<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn1"><p>The point we’re making here is quite nuanced. Analysis by <span class="citation" data-cites="c21_CodingProblemSolvingSkills">Scherer et al. (<a href="#ref-c21_CodingProblemSolvingSkills" role="doc-biblioref">2021</a>)</span> establishes that learning to code may be associated with <em>some</em> broader cognitive benefit, with any possible transfer of learning coming with an explicit cost in the form of sufficient teaching time, supportive educational environments, and teacher training. However, this chapter posits that computational thinking, often taught through computer programming, provides a cognitive framework that makes solving problems in other disciplines easier.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Interestingly, <span class="citation" data-cites="c21_SystemsThinkingDefinition">Arnold and Wade (<a href="#ref-c21_SystemsThinkingDefinition" role="doc-biblioref">2015</a>)</span> take a systems thinking approach to defining systems thinking. How meta!<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>The theoretical <a href="https://www.cl.cam.ac.uk/projects/raspberrypi/tutorials/turing-machine/one.html">Turing machine</a> springs to mind, here. Despite its simplicity, it forms the basis for how many computer scientists think about computation today.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>Project Euler is a collection of 981 (at time of writing) mathematical problems designed to be solved with computer programs. It allows users to discover and discuss solutions to these problems, and is quite a popular resource for learning programming.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5"><p>Deterministic programs always produce the same output for a given input. Non-deterministic programs can produce different outputs for the same input, depending on factors such as internal state, randomness, or concurrency. Regardless of whether a program is deterministic or non-deterministic, its behaviour can be understood and predicted based on its design and implementation.<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn6"><p>There are interesting parallels to be drawn with Derrida’s deconstruction, but this is left as an exercise to the reader.<a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./C15_programming-without-computers.html" class="pagination-link" aria-label="Removing Barriers by Programming Without Computers">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Removing Barriers by Programming Without Computers</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./C22_interdisciplinary-by-design.html" class="pagination-link" aria-label="Interdisciplinary by Design: The Centre for Data, Culture, &amp; Society Training Programme">
+        <span class="nav-page-text"><span class="chapter-title">Interdisciplinary by Design: The Centre for Data, Culture, &amp; Society Training Programme</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
