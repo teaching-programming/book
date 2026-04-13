@@ -1,74 +1,50 @@
 ---
-title: "Title of Example Chapter (as will appear on top h1 header and in table of contents)"
+title: "Pair Programming in Practice: A PhD Tutor's Reflections"
 bibliography: references.bib
 author:
-  - name: Author One
-    email: author@one.com
+  - name: Sarah Elliot
+    email: s.s.elliot@sms.ed.ac.uk
     corresponding: true
-    affiliations: Edinburgh Medical School, University of Edinburgh
-  - name: Author Two
-    email: author@two.com
-    affiliations: Edinburgh Medical School, University of Edinburgh
-  - name: Author Three
-    email: author@three.com
-    affiliations: School of Mathematics and Maxwell Institute for the Mathematical Sciences, University of Edinburgh
+    affiliations: Usher Institute, University of Edinburgh
 
 keywords:
-  - markdown
-  - example
+  - pair programming
+  - teaching support
+  - challenges
+  - reflections
 ---
 
-## Your first top-level section
+## From student to teacher
 
-### A subsection
+I am a PhD candidate in healthcare data science, having learnt R and Python programming at university. I vividly remember my own experiences as a beginner: persistently feeling lost or behind my peers due to my non-coding background, jargon-filled error messages, and overwhelming online solutions. Alongside these frustrations, I also recall the satisfaction of mastering a new skill and the sense of achievement that followed solving a difficult problem. These memories shaped my approach to tutoring during my PhD. I was motivated to support students in acquiring technical skills, and, importantly, build confidence while stepping into a new programming space that can often feel intimidating.
 
-This is an example subsection, starting with `###`.
+I worked as a tutor on an introductory R course designed for beginners. Students enrolled with a wide range of experience levels: those with no technical background, individuals transitioning to R from another programming language, and those with some self-taught experience seeking a more structured workflow. The course was delivered online on a part-time basis, with most students working full-time as well as studying. This course format increased the accessibility for learners who might otherwise be excluded from traditional full-time study, but it also presented pedagogical challenges. Students were geographically dispersed, had additional personal and professional commitments, and had different technical home set-ups. Learning primarily took place through scheduled online sessions, online discussion boards and independent work, and opportunities for informal peer interactions were more limited. Therefore, the course coordinators utilised learning activities that supported both technical development and social connection --- notably, pair programming.
 
-## Quarto Markdown quick examples
+## Pair programming builds confidence
 
-### Citations
+The emergence of generative artificial intelligence (AI) has reshaped how beginner programmers can approach coding tasks. Problems that previously required trial-and-error troubleshooting can be resolved within seconds of requesting an AI solution. These AI tools are valuable but can reduce the understanding of the resulting code. Learning to program involves more than obtaining functional code: it is important to understand core concepts such as data and its structure, functions, good coding practices, problem solving, and transparent interpretation and communication of results. The best way to develop these skills is through actively engaging with problems as opposed to passively receiving an answer [@bonwell_active_1991; @chattopadhyay_scaffolded_2022].
 
-An example citation [@williams2010pair]. You can also cite @williams2010pair in the text, without the brackets.
+**Pair programming is a strategy that prioritises learning the process of coding as opposed to just the end product.** It involves at least two individuals working together on the same task at the same time, with one ‘driver’ who types the code and thinks out loud and one ‘navigator’ who instructs the driver, reflects on the code, and looks out for mistakes [@bryant_pair_2008]. Working collaboratively, students articulate their reasoning, suggest alternative approaches and interpret challenges together.
 
-This is a reference to a chapter of a book [@TeachProgAcross_C01]. You can find it in `references.bib`; it uses the `@inbook` type.
+The confidence-building effects of this approach were evident across the students. More experienced students derived satisfaction from supporting their peers and consolidating their own understanding, while less experienced students gained practical experience in a low-risk setting. It is possible that students felt less anxious contributing ideas in small group settings as opposed to whole-class discussions [@mcdonough_learner-learner_2004]. Observing the learners’ engagement over time, the students were seen to become more confident undertaking both roles, with less hesitation in sharing screens and contributing ideas. Coding alongside peers who were also in the process of developing their skills was valuable as explanations were drawn from recently experienced challenges and solutions, as opposed to second-nature expertise from a formal teacher. Challenges were faced with collective resilience as opposed to feeling like an individual struggle. Pairs actively gave and received feedback, providing learning opportunities that are missed during individual tasks [@storch_writing_2006]. Content and skills learned collaboratively, and practised during pair programming, seemed to be retained for longer and utilised in future work and assessments [@shehadeh_effects_2011].
 
-The "References" section will be populated automatically at the bottom.
+Due to having a relatively small cohort and strong staff-to-student ratio, the progress of individual students was visible to the teaching team during this course. I observed students who regularly engaged with pair programming benefit from confident engagement with the course overall. The hands-on programming gave them more coding practice than teacher-fronted activities, and the growing confidence in their community and their abilities resulted in willingness to ask questions and share partial solutions on the online discussion boards. Collaboratively solving challenges, communicating throughout learning, and becoming confident with uncertainty emerged as valuable skills developed from pair programming.
 
-### Footnotes
+There was also a social benefit to pair programming. Due to running online, many students had few opportunities to interact with their peers outside of the scheduled sessions. Reflections from students highlighted that paired or grouped activities created opportunities for connection, helping students feel less isolated. Pair programming supported learning and community building, which can be difficult to achieve in a remote learning environment [@laal_benefits_2012].
 
-This is some text with a footnote[^C00-myfootnote].
+## Supporting each student to make mixed pairings work
 
-[^C00-myfootnote]: Write the content of your footnote here.
+Implementing pair programming was not without difficulties. Grouping students with widely varying experience levels required close consideration. **Mixed-ability pairings are productive, but it is important to monitor the contributions of each student.** The experience gap should support collaborative learning and skill development, particularly among those paired with a more-proficient peer, without the less-experienced participant becoming too intimidated to contribute or the more-experienced participant feeling insufficiently challenged [@shehadeh_effects_2011; @maguire_enhancing_2014].
 
-    If you need a multiline footnote, indent the following lines with 4 spaces...
+Technical constraints also impacted participation. Due to the remote delivery and global reach of this course, it was common for some learners to have unstable internet connectivity or other technical issues that limited their ability to share their screen and take on the ‘driver’ role. This influenced the roles that individuals could choose and the group dynamics. This was improved by using groups of three where needed, allowing more flexibility in chosen roles.
 
-    ...like this. Everything indented will be part of the footnote.
+Although collaborative learning is a valuable skill, it can be undermined if students see their classmates as competitors [@schinske_teaching_2014]. In this course, students are explicitly told that their final grades would not be in competition with their peers, and this framing helped encourage collaboration throughout pair programming. Throughout the pair coding tasks, students shared ideas, experiences, useful tools and innovative functions, which appeared to improve the quality of the learning and understanding of key concepts across the cohort.
 
-### URL links
+## A richer learning experience for both students and tutors
 
-Use [link text](https://quarto.org) to include URL links; please refer to the accessibility guidance in the book submission guidelines.
+While facilitating pair programming, a tutor’s role is to support students as they work through tasks and navigate challenges. This involves allowing students to attempt challenges before offering help and, when needed, providing helpful hints as opposed to full solutions, balancing guidance with autonomy. The nature of pair programming means students must verbalise their thought process, making it easier for tutors to assess the learners’ needs and identify any misunderstandings. While the class is working in pairs, tutors have the opportunity to assist individual learners or pairs [@soleimani_peer-mediated_2017]. As more experienced R programmers, tutors can share practical, real-world approaches for students to explore. Tutors are able to observe pair dynamics to learn which pairs work well and who needs more support, to inform future groupings. Tutors should lead by example to support student learning: this includes communicating ideas clearly, modelling good coding practices, maintaining approachability (such as keeping cameras on in remote sessions), and asking reflective questions.
 
-If it is absolutely necessary to display the full URL in the text, use `<...>`: <https://quarto.org>
-
-### Images
-
-
-![This is the caption for an image, sized to take 70% of the screen width.](/chapters/images/C36_pair-programming-across-disciplines_online_ideas.png "Some Title, appears on mouse hover"){fig-alt="Some alt text for accessibility." width=70%}
-
-
-[![This is the caption for an image with a clickable link.](/chapters/images/C36_pair-programming-across-disciplines_online_ideas.png "Some Title, appears on mouse hover"){fig-alt="Some alt text for accessibility." width=70%}](https://quarto.org)
-
-
-### Putting some content in a box
-
-:::{.callout-tip icon="false"}
-# Title of your box
-
-You can put some content in a box like this, called a [callout](https://quarto.org/docs/authoring/callouts.html), if you want it to be visually distinct from the rest of your chapter. This could be e.g. if you write an example or a short case study.
-
-:::
-
-
+Reflecting on this experience, using pair programming to teach non-programmers resulted in a way of both building confidence in technical skills and fostering community in a remote environment. In an era where AI can readily generate solutions, pair programming allowed students to gain hands-on coding experience and programmatic thinking, while also developing transferable skills such as problem solving, communication, and collaborative learning. As a PhD tutor, pair programming allowed me to share my own strategies during these sessions and also learn new approaches from the students, showing that learning is richest when multiple perspectives are shared at every level.
 
 
 ::: {.content-visible when-format="html" unless-format="epub"}
