@@ -1,5 +1,5 @@
 ---
-title: "Structured group work with assigned asymmetrical roles and switching - Lessons from Pair Programming across disciplines"
+title: "Structured Group Work With Assigned Asymmetrical Roles and Switching: Lessons From Pair Programming Across Disciplines"
 bibliography: references.bib
 author:
   - name: Charlotte Desvages
