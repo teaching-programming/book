@@ -6,13 +6,13 @@ author:
     email: charlotte.desvages@ed.ac.uk
     affiliations: School of Mathematics and Maxwell Institute for the Mathematical Sciences, University of Edinburgh
   - name: Pawel Orzechowski
-    email: TODO include?
+    email: pawel.orzechowski@ed.ac.uk
     affiliations: Edinburgh Medical School, University of Edinburgh
   - name: Brittany Blankinship
-    email: TODO include?
+    email: b.blankinship@ed.ac.uk
     affiliations: Edinburgh Medical School, University of Edinburgh
   - name: Umberto Noè
-    email: TODO include?
+    email: umberto.noe@ed.ac.uk 
     affiliations: School of Philosophy, Psychology, and Language Sciences, University of Edinburgh
 keywords:
   - pair programming
@@ -22,8 +22,6 @@ keywords:
 ---
 
 ## Introduction
-
-TODO: keep this as introduction, or ditch it?
 
 In this chapter, we share our experiences with pair programming as a structured group work format that we believe fosters student engagement, well-being, and transferable skills. We argue that the same pedagogical benefits can also be realised when used for non-programming tasks.
 
