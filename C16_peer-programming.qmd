@@ -1,5 +1,5 @@
 ---
-title: "Peer Programming in Action"
+title: "Peer Programming in Action: Pair Programming in Larger Groups"
 format:
   html:
     callout-appearance: minimal
@@ -35,7 +35,7 @@ keywords:
 UN: I am a lecturer in the Department of Psychology at the University of Edinburgh, where I have been teaching data analysis and programming skills for many years now. I am the course organiser of a large first-year course called [Data Analysis for Psychology in R1](https://www.drps.ed.ac.uk/25-26/dpt/cxpsyl08013.htm), or DAPR1 in short. This is typically taken by first-year Psychology undergraduate students, but the course also welcomes students from other disciplines.
 
 :::{.callout-warning}
-FM: I am a Teaching Assistant for the MSc "Data Science in Health and Social Care" at the University of Edinburgh, where I teach R and Python via pair programming. As a tutor, I also teach R and statistics to second-year medics and first-year psychology students. This is my first year tutoring in the DAPR1 course.
+FM: I am a Teaching Assistant for the MSc "Data Science for Health and Social Care" at the University of Edinburgh, where I teach R and Python via pair programming. As a tutor, I also teach R and statistics to second-year medics and first-year psychology students. This is my first year tutoring in the DAPR1 course.
 :::
 
 :::{.callout-tip}
@@ -108,13 +108,13 @@ Since the introduction of peer programming, the tutor preparation meetings have 
 :::{.callout-warning}
 FM: The tutor sessions are enjoyable and create time for tutors to build community and share teaching experiences. They also provide direct access to the course organiser, who can answer questions about the course. 
 
-For the programming itself, I sometimes feel like my time would be better spent preparing alone (something I’ve often heard from students on other courses). In the tutor sessions, we work through the tutorial exactly as the students will, but with little sense of what happens in other parts of the course. Left to my own devices, I would focus my efforts on aspects of the tutorial I understand least well. If I had time to spare, I would then look at other course content, either to improve my understanding (e.g. reviewing a lecture on statistical theory) or to get a better sense of the course context and student experience (e.g. checking the assessment structure). Of course, this self-study approach is only better if I actually do it. In a busy schedule, the tutor sessions create protected time to prepare each week. If a course organiser were concerned about their tutors preparing to a minimum standard each tutorial, these tutor sessions might be the better option.  
+In the tutor sessions, we work through the lab worksheet exactly as the students will, which gives a clear sense of what we are teaching in the upcoming lab. If I had time for independent study, I would go beyond the lab content to focus on aspects I understood less well and the wider context of the course. Of course, a self-study approach is only better if someone actually does it. In a busy schedule, the tutor sessions create protected time to prepare each week. If a course organiser were concerned about their tutors preparing to a minimum standard each tutorial, these tutor sessions might be the better option.  
    
 **Alternative approach:** In another course I teach on, tutors write a short reflection after each tutorial \- an alternative way to flag issues and for course organisers to keep track of how well the course is running. However, this can lead to course organisers fixing issues in retrospect, i.e. after the labs have run, while the tutor session approach is more pre-emptive, allowing for fixes before the labs start.
 
 When it comes to driving, we often take a mixed approach \- sometimes tutors pretend to be a novice student, other times we code using our own knowledge as tutors. This stems from the dual goals of the session: to get our coding up to speed and to expose us to questions students may have. At times, the friction created from struggling through each missing space, bad variable name and mistyped pipe can be frustrating (although I know that not all tutors share this view). One group member intentionally misunderstanding the other also hides one of the major positives of pair programming: working together as a team. For tutors who are experiencing pair programming for the first time, I feel it is important to model pair programming in its best light.
 
-The principal aim of the tutor sessions is to learn how to write the code we are about to teach. Although I am confident in my coding abilities, I often feel shy in the peer programming sessions, and am reluctant to volunteer as driver or to offer suggestions as navigator. This comes from a feeling that, as a tutor, I should be an expert on the content already \- it is what I was hired for, after all. There is also something about being in a group setting (course organiser included), which feels more vulnerable than it would with a partner. These feelings resonate with feedback I have received from students (on another course) that they are nervous of making mistakes \- in their case, discussion sessions and getting to know each other beforehand helped to create a community of vulnerability \[ref/other vocab?\]. For me, I wonder if a semester of teaching and getting to know my fellow tutors will provide the solution.
+The principal aim of the tutor sessions is to learn how to write the code we are about to teach. Although I am confident in my coding abilities, I often feel shy in the peer programming sessions, and am reluctant to volunteer as driver or to offer suggestions as navigator. This comes from a feeling that, as a tutor, I should be an expert on the content already \- it is what I was hired for, after all. There is also something about being in a group setting (course organiser included), which feels more vulnerable than it would with a partner.
 
 **Alternative approach:** I would be curious to try the tutor sessions without a course organiser at the helm (e.g. if they didn’t have time or wanted to let tutors work through the code themselves). We would lose the course organiser's insights of what students find difficult, but the experienced tutors would get a chance to fill the gap.
 :::
@@ -127,7 +127,7 @@ I find that modelling peer programming during these early preparation meetings i
 
 
 
-## Case Study 3: Programming Towards an End-product
+## Case Study 3: Programming Towards an End-Product
 
 To address the fact that lab worksheets with solutions could be completed from the comfort of home, the lab worksheets corresponding to the same block (each block comprises 5 weeks of teaching) are grouped in such a way that they together lead to the creation of a report. In other words, they are cumulative and each one builds on the context from the previous one.
 
@@ -167,7 +167,7 @@ Other cohorts may not share the same values. For example, in a course with a hig
 
 As educators, we may be concerned (and many students are) with the fact that any type of groupwork could have free riders, i.e. people who benefit from the work of others without meaningfully contributing to it. To help address this challenge I wanted to have in place a strategy to reward students who contributed to the end-product, where the “contribution amount” is based on ratings by their peers. With the help of the University’s learning technology team, I based the implementation on the [WebPA tool by Loughborough University](https://webpaproject.lboro.ac.uk).
 
-The assessed report created by each group receives a grade from the marker. 80% of the grade is fixed, while 20% of it is variable. Let me give an example: if a marker assigns a grade of 65 to the group report, 52 is the minimum grade that any group members can receive, and 13 points are distributed based on how much each person contributed as rated by their peers, using a Likert scale where 0 \= None, 1 \= Very poor, 2 \= Minimal, 3 \= Average, 4 \= Good, 5 \= Excellent. The rating is done within WebPA, where students use a form to anonymously rate their group members according to the following criteria:
+The assessed report created by each group receives a grade from the marker. 80% of the grade is fixed, while 20% of it is variable. Let me give an example: if a marker assigns a grade of 65 to the group report, 52 is the minimum grade that any group member can receive, and 13 points are distributed based on how much each person contributed as rated by their peers, using a Likert scale where 0 \= None, 1 \= Very poor, 2 \= Minimal, 3 \= Average, 4 \= Good, 5 \= Excellent. The rating is done within WebPA, where students use a form to anonymously rate their group members according to the following criteria:
 
 * Overall, rate the positive impact of each group member's contributions to the project  
 * Rate the extent to which each group member actively participated in group discussions/meetings  
