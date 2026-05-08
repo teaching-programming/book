@@ -32,17 +32,17 @@ keywords:
 
 ## Background
 
-UN: I am a lecturer in the Department of Psychology at the University of Edinburgh, where I have been teaching data analysis and programming skills for many years now. I am the course organiser of a large first-year course called [Data Analysis for Psychology in R1](https://www.drps.ed.ac.uk/25-26/dpt/cxpsyl08013.htm), or DAPR1 in short. This is typically taken by first-year Psychology undergraduate students, but the course also welcomes students from other disciplines.
+Umberto: I am a lecturer in the Department of Psychology at the University of Edinburgh, where I have been teaching data analysis and programming skills for many years now. I am the course organiser of a large first-year course called [Data Analysis for Psychology in R1](https://www.drps.ed.ac.uk/25-26/dpt/cxpsyl08013.htm), or DAPR1 in short. This is typically taken by first-year Psychology undergraduate students, but the course also welcomes students from other disciplines.
 
 :::{.callout-warning}
-FM: I am a Teaching Assistant for the MSc "Data Science for Health and Social Care" at the University of Edinburgh, where I teach R and Python via pair programming. As a tutor, I also teach R and statistics to second-year medics and first-year psychology students. This is my first year tutoring in the DAPR1 course.
+Franziska: I am a Teaching Assistant for the MSc "Data Science for Health and Social Care" at the University of Edinburgh, where I teach R and Python via pair programming. As a tutor, I also teach R and statistics to second-year medics and first-year psychology students. This is my first year tutoring in the DAPR1 course.
 :::
 
 :::{.callout-tip}
-EX: I am a PhD student based in the Division of Psychiatry at the University of Edinburgh. I have been a tutor since 2022, and have taught R and statistics on undergraduate and masters-level courses in Psychology. This is my third year as a tutor on DAPR1.
+Eileen: I am a PhD student based in the Division of Psychiatry at the University of Edinburgh. I have been a tutor since 2022, and have taught R and statistics on undergraduate and masters-level courses in Psychology. This is my third year as a tutor on DAPR1.
 :::
 
-"Peer programming" is what I (UN) like to call the extension of pair programming principles [@TeachProgAcross_C36] to groups of more than 2 students. The name highlights how this approach blends the benefits of peer support and pair programming. After multiple years of hands-on teaching experience using this approach, I believe its pros outweigh the cons. This chapter presents five case studies to illustrate peer programming in action, why it was implemented, which challenges it addressed, and the successes encountered.
+"Peer programming" is what I (Umberto) like to call the extension of pair programming principles [@TeachProgAcross_C36] to groups of more than 2 students. The name highlights how this approach blends the benefits of peer support and pair programming. After multiple years of hands-on teaching experience using this approach, I believe its pros outweigh the cons. This chapter presents five case studies to illustrate peer programming in action, why it was implemented, which challenges it addressed, and the successes encountered.
 
 DAPR1 is a 20-week long in-person course (10 weeks per semester) and a typical week on the course involves:
 
@@ -67,8 +67,6 @@ Third, students left feedback that, as part of their courses/degree, they wanted
 
 Taken together, the three elements above gave me a sense that it was key for students to work across multiple weeks to create an end-product, as a way to ensure that students engage through a sense of ownership of that product. Furthermore, working as part of a group introduces a sense of responsibility towards their group, so students show up to not let their team down. The steps I implemented, as discussed in this chapter, led to attendance at labs ranging roughly between 75% and 95% for four years in a row. Most importantly, they led to new friendships and support networks students could turn to for help.
 
-
-
 ## Case Study 1: From Pair to Peer Programming
 
 Peer programming was my response to applying pair programming to a large cohort, and it means pair programming in larger groups. DAPR1 has varied in size over the years, but it’s roughly been between 210 and 320 students. When planning the number of labs to run each week and the number of student groups to form the following constraints had to be taken into consideration:
@@ -86,14 +84,12 @@ The above constraints limit the number of labs we can schedule each week, as wel
 When students attend their first lab session, they self-select a table as their group, and that will be their group for a semester. As with the standard pair programming model, one person in each group acts as the driver during a given session and the others act as navigators. Here, the driver is the student responsible for writing the code with the keyboard, while the navigators read the task, consult documentation pages, suggest the strategy to follow and fix any typos. Therefore, the driver has the support of multiple peers rather than just one navigator. Typically students self-organise such that one navigator has the tasks to complete open, another focuses on the R documentation/help pages and others suggest code and/or spot typos. The driver rotates after each session, ensuring that everyone in the group has contributed in a coding capacity (as driver) and in a strategic thinking capacity on how to solve a task (as navigators).
 
 :::{.callout-warning}
-FM: As a tutor, I check in with students to make sure that they are switching driver each session. To navigators, I offer guidance on how to use the course page and (sometimes) how to access the R help documentation. One aspect of pair programming which usually disappears is the idea that the driver should narrate their experience to give navigators an insight into their aims and thought process. I know this can feel uncomfortable to students, so I only step in when there is a group sitting in silence and the navigators are clearly lost \- as sometimes happens when the driver is more confident than other members of the group.
+Franziska: As a tutor, I check in with students to make sure that they are switching driver each session. To navigators, I offer guidance on how to use the course page and (sometimes) how to access the R help documentation. One aspect of pair programming which usually disappears is the idea that the driver should narrate their experience to give navigators an insight into their aims and thought process. I know this can feel uncomfortable to students, so I only step in when there is a group sitting in silence and the navigators are clearly lost \- as sometimes happens when the driver is more confident than other members of the group.
 :::
 
 :::{.callout-tip}
-EX: As a tutor, I try to be conscious of which students do/don't contribute, and whether they might be having difficulty keeping up. It can be difficult to ask for help on topics you're having trouble understanding, especially in a group setting. As a tutor, I try to alleviate this when I explain things to a group, and make sure that individual students aren't "singled out" for not understanding something. I often start by asking questions about the week’s concept/code; group members with clearer understanding are usually the ones to answer, and I can prompt them to lay out their thought process, filling in any gaps. This 1\) allows students with clearer understanding to consolidate their knowledge and build confidence by explaining concepts to their peers, 2\) gives students who are having difficulties the option to ask for help or pose follow-up questions without singling them out, and 3\) facilitates discussion in quieter groups, as students can direct questions and suggestions to a tutor (one person) instead of the whole group. Everyone gets to reap the benefits, and over the semester I get to watch students turn to me less and less as they become more confident in their ability to problem-solve as a group.
+Eileen: As a tutor, I try to be conscious of which students do/don't contribute, and whether they might be having difficulty keeping up. It can be difficult to ask for help on topics you're having trouble understanding, especially in a group setting. As a tutor, I try to alleviate this when I explain things to a group, and make sure that individual students aren't "singled out" for not understanding something. I often start by asking questions about the week’s concept/code; group members with clearer understanding are usually the ones to answer, and I can prompt them to lay out their thought process, filling in any gaps. This 1\) allows students with clearer understanding to consolidate their knowledge and build confidence by explaining concepts to their peers, 2\) gives students who are having difficulties the option to ask for help or pose follow-up questions without singling them out, and 3\) facilitates discussion in quieter groups, as students can direct questions and suggestions to a tutor (one person) instead of the whole group. Everyone gets to reap the benefits, and over the semester I get to watch students turn to me less and less as they become more confident in their ability to problem-solve as a group.
 :::
-
-
 
 ## Case Study 2: Peer Programming as Scenario-based Tutor Training
 
@@ -106,7 +102,7 @@ Each week, I run a one-hour tutor preparation meeting where we all work through 
 Since the introduction of peer programming, the tutor preparation meetings have become an interesting discussion-based hour, where different perspectives are heard, new tutors strengthen their understanding, and it’s also a safe space to ask questions and seek clarifications as I act as navigator/driver when it’s my turn\! When I’m the driver I also tend to assume the persona of a novice programmer who needs more guidance.
 
 :::{.callout-warning}
-FM: The tutor sessions are enjoyable and create time for tutors to build community and share teaching experiences. They also provide direct access to the course organiser, who can answer questions about the course. 
+Franziska: The tutor sessions are enjoyable and create time for tutors to build community and share teaching experiences. They also provide direct access to the course organiser, who can answer questions about the course. 
 
 In the tutor sessions, we work through the lab worksheet exactly as the students will, which gives a clear sense of what we are teaching in the upcoming lab. If I had time for independent study, I would go beyond the lab content to focus on aspects I understood less well and the wider context of the course. Of course, a self-study approach is only better if someone actually does it. In a busy schedule, the tutor sessions create protected time to prepare each week. If a course organiser were concerned about their tutors preparing to a minimum standard each tutorial, these tutor sessions might be the better option.  
    
@@ -120,12 +116,10 @@ The principal aim of the tutor sessions is to learn how to write the code we are
 :::
 
 :::{.callout-tip}
-EX: As an experienced tutor on the course, I use these preparation meetings to highlight common errors that students might make when completing the week’s lab exercises. The majority of DAPR1 students begin the course with no coding or R experience, whereas we DAPR1 tutors enter with more experience. This difference in experience is reflected in the errors we make in R and our subsequent approach to troubleshooting \- it can be easy to miss the kinds of mistakes that novice programmers make (e.g. missing parentheses, commas, quotation marks) and jump straight to scouring Stack Overflow. As medics like to put it, “When you hear hoofbeats, think horses, not zebras” \- especially during the first few weeks of DAPR1. 
+Eileen: As an experienced tutor on the course, I use these preparation meetings to highlight common errors that students might make when completing the week’s lab exercises. The majority of DAPR1 students begin the course with no coding or R experience, whereas we DAPR1 tutors enter with more experience. This difference in experience is reflected in the errors we make in R and our subsequent approach to troubleshooting \- it can be easy to miss the kinds of mistakes that novice programmers make (e.g. missing parentheses, commas, quotation marks) and jump straight to scouring Stack Overflow. As medics like to put it, “When you hear hoofbeats, think horses, not zebras” \- especially during the first few weeks of DAPR1. 
 
 I find that modelling peer programming during these early preparation meetings is a useful way of practicing the kind of troubleshooting we will be doing. At the same time however, the dynamics within the tutor preparation meetings can be very different to the group dynamics seen during class \- though this is not unique to the peer programming approach. This can make it more challenging to implement peer programming methods in certain lab scenarios, such as in groups where there are significant language barriers.
 :::
-
-
 
 ## Case Study 3: Programming Towards an End-Product
 
@@ -134,8 +128,6 @@ To address the fact that lab worksheets with solutions could be completed from t
 The first three reports are formative, giving students the chance to obtain feedback when it matters most, i.e. while they are learning rather than at the end of the course. The fourth and last report is assessed. Students submit their work before they receive full solutions of each report and feedback on how to improve. Therefore, the lab worksheets only have tasks and hints available.
 
 Working across multiple weeks motivates students to show up, as the different weeks are intertwined, and there is a shared understanding that people need to turn up and help to avoid the group falling behind, so students are keen to participate. This gives the group a sense of ownership and they tend to care about their work. Asking students to submit their end-product is also key to their engagement and attendance in labs.
-
-
 
 ## Case Study 4: Peer Programming to Foster Belonging
 
@@ -152,16 +144,14 @@ Year 1 of an undergraduate or postgraduate degree is typically a year where stud
 The above feedback, combined with the much improved attendance at labs, highlights the positive effect of peer programming on the student experience. Furthermore, many DAPR1 groups also become “study groups” for other courses and they end up meeting outside of class time.
 
 :::{.callout-tip}
-EX: This is a real highlight of DAPR1 for me, as when peer programming works, it can work extremely well. It’s a privilege to watch groups of students who start as strangers (who are all understandably disgruntled at having to learn statistics and R) become fast friends by the end of the year, and I think peer programming facilitates this. Making mistakes and asking for help is often scary, but the shared responsibility of peer programming means that errors are never one person’s fault \- and successes can also be shared as a group. Students who stay in the same groups get to make progress together, and since tutors cover the same groups week-to-week, I also get to celebrate how far they have collectively come since week 1\. 
+Eileen: This is a real highlight of DAPR1 for me, as when peer programming works, it can work extremely well. It’s a privilege to watch groups of students who start as strangers (who are all understandably disgruntled at having to learn statistics and R) become fast friends by the end of the year, and I think peer programming facilitates this. Making mistakes and asking for help is often scary, but the shared responsibility of peer programming means that errors are never one person’s fault \- and successes can also be shared as a group. Students who stay in the same groups get to make progress together, and since tutors cover the same groups week-to-week, I also get to celebrate how far they have collectively come since week 1\. 
 :::
 
 :::{.callout-warning}
-FM: From my experience of tutoring different cohorts, it seems to me that psychology first-years are particularly amenable to peer programming as a concept. For the most part, they enjoy spending time together (groups often chat while settling in) and navigate social settings with ease \- greeting tutors and fellow students alike. Students patiently guide each other through difficulties, so even when the driver is lost, they have supportive navigators to show the way. 
+Franziska: From my experience of tutoring different cohorts, it seems to me that psychology first-years are particularly amenable to peer programming as a concept. For the most part, they enjoy spending time together (groups often chat while settling in) and navigate social settings with ease \- greeting tutors and fellow students alike. Students patiently guide each other through difficulties, so even when the driver is lost, they have supportive navigators to show the way. 
 
 Other cohorts may not share the same values. For example, in a course with a high workload, students may need to be highly strategic in their learning to keep up with the demands of the course. If pair (or peer) programming is seen to slow them down, it may be met with resistance. I have seen first-hand how this pressure influences how pair programming as a concept is received. Similarly, if students are interested in "getting the right answer" and don't expect to use programming again, they are less likely to see the value in exploring alternative approaches with other students. In contrast, the psychology students of DAPR1 have surprised me in how often they come willing to learn, even when other assessments loom. I think a large part of this is the welcoming atmosphere in labs and the reduced need for independent study outside of scheduled hours \- if you attend lectures and labs, you will learn statistical theory, see it performed in R, and apply it yourself in an assessed (or formative) report. For our first-year psychologists, there is also value in learning things well. They have two years of R courses to go, and a dissertation year after that. It is worth applying good practices and investing for the future.
 :::
-
-
 
 ## Case Study 5: Peer Assessment to Encourage Active Contribution and Sense of Ownership
 
@@ -181,13 +171,9 @@ The fact that students know that their grades can go up or down based on their c
 
 The 80-20 percentages were chosen keeping in mind that the tool is not foolproof. First, it can be played if everyone in the group agrees to rate someone in a specific direction. Second, it can happen that a submission which received a passing grade can become a fail after the peer adjustment. The 20% adjustment limits the occurrence of this issue, and a higher level can lead to more of such cases, which are often questioned during scrutiny or moderation.
 
-
-
 ## Discussion
 
 Peer programming has been a welcome addition to the DAPR1 course and, I believe, to the Psychology degree. Students have consistently given good ratings and feedback to the course, and the teaching is very interactive. It has been a pleasure to always enter into a lab room where there are active and lively discussions, and ideas bounce back and forth between students and tutors. Most importantly, students end up forming strong connections and leave the course having established a peer-support network they can turn to for help.
-
-
 
 ::: {.content-visible when-format="html" unless-format="epub"}
 
