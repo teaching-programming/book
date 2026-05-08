@@ -125,7 +125,7 @@ Finally, learning is a collaborative endeavour: it becomes more effective and mo
 
 Provide as many opportunities as you can to engage your students’ technical collaboration skills. A great way to do this is by encouraging pair programming as part of tackling coding challenges.
 
-Pair programming is an excellent practice for a myriad of reasons, and rightly deserves a book in itself\!, but for the scope of this chapter, its main advantage is that it develops the student’s ability to explain their thinking using technical language. Students will collaborate in their problem solving and get each other unstuck during the pair programming session, leading to higher understanding and higher morale.
+Pair programming is an excellent practice for a myriad of reasons, (and rightly deserves a book in itself!), but for the scope of this chapter, its main advantage is that it develops the student’s ability to explain their thinking using technical language. Students will collaborate in their problem solving and get each other unstuck during the pair programming session, leading to higher understanding and higher morale.
 :::
 
 ### BOSS: When to Escalate
@@ -141,12 +141,13 @@ A common first question is “how long do I wait?”, and the reply is that it d
 
 The hardest part of reaching out, can be the intimidation of knowing, ironically, that they’ve probably now waited longer than they should have. To encourage the students to reach out when appropriate and push through that feeling, it can be helpful to give them a framework of preparation they can use as a guide to feel more comfortable in escalating.
 
-- **Context** - What are they trying to do? What part of what they’re tacking is new to them? What specific error message or bug are they getting?  
-- **Brain** - What is their understanding of the problem? What hypotheses have they tested?  
-- **Book** - Where did they go to get more information? Was it helpful? Did it confuse them further? Do they have any similar sample code which they do understand?  
-- **Buddy** - Have they talked it through with a colleague? Did they discuss this problem with AI? Where in their explanations have they got lost?   
+- **Context** - What are you trying to do? What part of what you’re tacking is new to you? What specific error message or bug are you getting?  
+- **Brain** - What is your understanding of the problem? What hypotheses have you tested?  
+- **Book** - Where did you go to get more information? Was it helpful? Did it confuse you further? Do you have any similar sample code which you do understand?  
+- **Buddy** - Have you talked it through with a colleague? Did you discuss this problem with AI? Where in their explanations have you got lost?   
 - **Question** - What one specific question could your tutor answer you that would lead to the most significant unblocking?  
-  Ensure you treat a student’s escalation with utmost care, you are likely building a fragile muscle that’s taken a lot of ego to tackle. 
+
+  Ensure you treat a student’s escalation with utmost care, they are likely building a fragile muscle which will require tackling one's own ego and some old stubborn habits.
 :::
 
 ### BREAK: The Essential Reset
