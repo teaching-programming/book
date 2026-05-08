@@ -50,6 +50,7 @@ book:
     chapters:
         - index.qmd
         - 00-chapter-template.qmd
+        - CAB_Author-bio-placeholder.qmd
         - C01_teaching-python.qmd
 #        - C02_genai-before-during-after.qmd
         - C03_online-teaching-reflections.qmd

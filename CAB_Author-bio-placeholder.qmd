@@ -1,0 +1,76 @@
+---
+title: "Author Bios Placeholder"
+
+---
+
+# Author Bios Placeholder Draft (Not the final product)
+
+
+:::{.callout-tip icon="false"}
+### This is just a place holder
+
+This is not the final formatting or beautification of our author bios section. Charlotte and Pawel have yet to wave their magic wands!🪄🪄
+
+Use this page for guidelines on writing your own bios and to see some examples from the editing team.
+
+:::
+
+## Author Bio guidelines 
+
+* Written in 1st person 
+* 50 - 100 word maximum 
+* Describe your experience and what or why you are contributing to the book. This is NOT a space to repeat your affiliation as this is listed in the individual chapters. Rather use the bio to provide context beyond your job title 
+* Include a photo should you wish
+* Optionally include up to 2 links of your choice (e.g., GitHub, Personal website, University website, ORCID, social media, etc.)
+
+See the email from pairprogramming@ed.ac.uk for the MS Forms to submit your author bio to the editing team. Get in touch if you cannot find it!
+
+## Examples 
+
+---
+
+![](/chapters/authors/pawel-orzechowski.jpg ){fig-alt="Pawel Orzechowski Profile" width=50%}
+
+### Pawel Orzechowski (he/him)
+
+**Lecturer, Edinburgh Medical School, University of Edinburgh**
+
+[LinkedIn](https://www.linkedin.com/in/dr-pawel-orzechowski/) - 
+[Learning Materials](https://www.codestorytelling.com/)
+
+I’m a programmer who fell in love with teaching. I believe that coding is a social and creative activity – it can open up our heart and mind so that we communicate better with each other and computers. For me, coding happens in your head and on paper, as you discuss it with someone... typing it up is just something you do at the end. I’ve taught programming for over a decade in coding bootcamps and universities (in business, social science and medicine contexts). I've contributed time, technical skulls, words and illustrations towards this unique book. I believe in authentic learning and creativity (without LLM reliance) so every letter you read was typed by a human.
+
+---
+
+![](/chapters/authors/mar-doig.jpeg ){fig-alt="Pawel Orzechowski Profile" width=50%}
+
+### Mar Doig (they/them)
+
+**Engineering Education Lead at Perk (https://www.perk.com)**
+
+[Github](TODO) - [LinkedIn](TODO)
+
+
+I'm a software engineer and educator focused on the human side of technical literacy. As the Engineering Education Lead at Perk, I designed an in-house academy that turns curiosity into production-ready code, using my own career pivot as a roadmap. Away from the screen, I spend my time exploring high-fantasy worlds and rural Scotland alongside my husband and three children.
+
+---
+
+### Serveh Sharifi Far (she/her)
+
+**Lecturer, School of Mathematics, University of Edinburgh**
+ 
+[ORCID](https://orcid.org/0000-0001-8403-6286) - [Webpage](https://servehsharifi.github.io/personal_site/) 
+
+I am a Lecturer in Mathematical Data Science and a Fellow of the Higher Education Academy. My background is in Statistics, and my research focuses on statistical methodology and its applications in the social and health sciences. I teach undergraduate and postgraduate courses in statistics and data science, including programming in R and Python and working with learners from diverse backgrounds. I am interested in data science pedagogy and how it can support more inclusive and responsible uses of data, which motivates my contribution to this book as an editor and author. 
+
+---
+
+![](/chapters/authors/christopher-aldous-oldnall.jpg ){fig-alt="Christopher Aldous Oldnall Profile" width=50%}
+
+### Christopher Aldous Oldnall (he/him) 
+
+**Lecturer, Edinburgh Medical School, University of Edinburgh**
+
+[ORCID](https://orcid.org/0000-0003-0160-8109) - [Website](https://chrisoldnall.github.io/)
+
+I come from a statistics and mathematics background and now teach programming through applied statistics and machine learning in health and social care. Much of my teaching focuses on helping learners get past the fear of starting to code, using small, practical tasks to build confidence early on. I mostly work with students from non-technical backgrounds and place a strong emphasis on learning by doing, often through collaborative work that makes coding feel less isolating and more manageable -- an approach that underpins my contribution to this book. 
