@@ -58,7 +58,7 @@ book:
         - C06_feminists-and-anarchists.qmd
         - C07_teaching-C-to-novices.qmd
 #        - C08_ai-boom-or-bust.qmd
-#        - C09_debugging-beyond-the-debugger.qmd
+        - C09_debugging-beyond-the-debugger.qmd
         - C10_teaching-with-genai.qmd
         - C11_sequential-vs-simultaneous.qmd
         - C12_pair-programming-overview.qmd
