@@ -6,11 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Francisco Queiroz">
-<meta name="author" content="Maeve Murphy Quinlan">
-<meta name="keywords" content="pedagogical frameworks, teaching material">
+<meta name="author" content="Mar Doig">
+<meta name="keywords" content="debugging, problem-solving, learning-strategies, AI, studentr-esilience">
 
-<title>Dungeon Crawlers and Anarchists: co-designing programming teaching experiences – Teaching Programming across Disciplines</title>
+<title>Brain Book Buddy Boss Break: A Practical Debugging Framework for Learners – Teaching Programming across Disciplines</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -55,8 +54,8 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./C07_teaching-C-to-novices.html" rel="next">
-<link href="./C05_coding-mindset.html" rel="prev">
+<link href="./C10_teaching-with-genai.html" rel="next">
+<link href="./C07_teaching-C-to-novices.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -108,7 +107,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./C06_feminists-and-anarchists.html"><span class="chapter-title">Dungeon Crawlers and Anarchists: co-designing programming teaching experiences</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./C09_debugging-beyond-the-debugger.html"><span class="chapter-title">Brain Book Buddy Boss Break: A Practical Debugging Framework for Learners</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -184,7 +183,7 @@ div.csl-indent {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./C06_feminists-and-anarchists.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Dungeon Crawlers and Anarchists: co-designing programming teaching experiences</span></a>
+  <a href="./C06_feminists-and-anarchists.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Dungeon Crawlers and Anarchists: co-designing programming teaching experiences</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -194,7 +193,7 @@ div.csl-indent {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./C09_debugging-beyond-the-debugger.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Brain Book Buddy Boss Break: A Practical Debugging Framework for Learners</span></a>
+  <a href="./C09_debugging-beyond-the-debugger.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Brain Book Buddy Boss Break: A Practical Debugging Framework for Learners</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -346,16 +345,28 @@ div.csl-indent {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
-  <li><a href="#accessing-the-toolkit" id="toc-accessing-the-toolkit" class="nav-link" data-scroll-target="#accessing-the-toolkit">Accessing the toolkit</a></li>
-  <li><a href="#character-building-presenting-learners-and-educators-profiles" id="toc-character-building-presenting-learners-and-educators-profiles" class="nav-link" data-scroll-target="#character-building-presenting-learners-and-educators-profiles">Character building: presenting learners and educators’ profiles</a></li>
-  <li><a href="#challenges-ahead-establishing-learning-outcomes-and-syllabus" id="toc-challenges-ahead-establishing-learning-outcomes-and-syllabus" class="nav-link" data-scroll-target="#challenges-ahead-establishing-learning-outcomes-and-syllabus">Challenges ahead: establishing learning outcomes and syllabus</a></li>
-  <li><a href="#the-treasure-map-structuring-the-course-and-learning-activities" id="toc-the-treasure-map-structuring-the-course-and-learning-activities" class="nav-link" data-scroll-target="#the-treasure-map-structuring-the-course-and-learning-activities">The treasure map: structuring the course and learning activities</a></li>
-  <li><a href="#p.a.r.t.y-organising-groups-and-groupwork" id="toc-p.a.r.t.y-organising-groups-and-groupwork" class="nav-link" data-scroll-target="#p.a.r.t.y-organising-groups-and-groupwork">P.A.R.T.Y: organising groups and groupwork</a></li>
-  <li><a href="#a-kind-of-magic-distributing-learning-material" id="toc-a-kind-of-magic-distributing-learning-material" class="nav-link" data-scroll-target="#a-kind-of-magic-distributing-learning-material">A kind of magic: distributing learning material</a></li>
-  <li><a href="#equipment-list-providing-software-and-resources" id="toc-equipment-list-providing-software-and-resources" class="nav-link" data-scroll-target="#equipment-list-providing-software-and-resources">Equipment list: providing software and resources</a></li>
-  <li><a href="#setup-complete-happy-adventures" id="toc-setup-complete-happy-adventures" class="nav-link" data-scroll-target="#setup-complete-happy-adventures">Setup complete: happy adventures!</a></li>
-  <li><a href="#acknowledgement" id="toc-acknowledgement" class="nav-link" data-scroll-target="#acknowledgement">Acknowledgement</a></li>
+  <li><a href="#introduction-the-debugging-mountain-the-error-misconception" id="toc-introduction-the-debugging-mountain-the-error-misconception" class="nav-link active" data-scroll-target="#introduction-the-debugging-mountain-the-error-misconception">Introduction: The Debugging Mountain &amp; The Error Misconception</a>
+  <ul class="collapse">
+  <li><a href="#a-note-about-debugging-and-ai" id="toc-a-note-about-debugging-and-ai" class="nav-link" data-scroll-target="#a-note-about-debugging-and-ai">A Note about Debugging and AI</a></li>
+  </ul></li>
+  <li><a href="#brain-engage-your-mind-before-your-keyboard" id="toc-brain-engage-your-mind-before-your-keyboard" class="nav-link" data-scroll-target="#brain-engage-your-mind-before-your-keyboard">BRAIN: Engage Your Mind Before Your Keyboard</a></li>
+  <li><a href="#book-consult-your-knowledge-base" id="toc-book-consult-your-knowledge-base" class="nav-link" data-scroll-target="#book-consult-your-knowledge-base">BOOK: Consult Your Knowledge Base</a>
+  <ul class="collapse">
+  <li><a href="#own-materials" id="toc-own-materials" class="nav-link" data-scroll-target="#own-materials">Own materials</a></li>
+  <li><a href="#documentation" id="toc-documentation" class="nav-link" data-scroll-target="#documentation">Documentation</a></li>
+  <li><a href="#books" id="toc-books" class="nav-link" data-scroll-target="#books">Books</a></li>
+  <li><a href="#googling" id="toc-googling" class="nav-link" data-scroll-target="#googling">Googling</a></li>
+  <li><a href="#artificial-intelligence" id="toc-artificial-intelligence" class="nav-link" data-scroll-target="#artificial-intelligence">Artificial Intelligence</a></li>
+  </ul></li>
+  <li><a href="#buddy-the-power-of-collaboration" id="toc-buddy-the-power-of-collaboration" class="nav-link" data-scroll-target="#buddy-the-power-of-collaboration">BUDDY: The Power of Collaboration</a>
+  <ul class="collapse">
+  <li><a href="#rubber-ducking" id="toc-rubber-ducking" class="nav-link" data-scroll-target="#rubber-ducking">Rubber Ducking</a></li>
+  <li><a href="#artificial-intelligence-1" id="toc-artificial-intelligence-1" class="nav-link" data-scroll-target="#artificial-intelligence-1">Artificial Intelligence</a></li>
+  <li><a href="#fellow-humans" id="toc-fellow-humans" class="nav-link" data-scroll-target="#fellow-humans">Fellow humans</a></li>
+  </ul></li>
+  <li><a href="#boss-when-to-escalate" id="toc-boss-when-to-escalate" class="nav-link" data-scroll-target="#boss-when-to-escalate">BOSS: When to Escalate</a></li>
+  <li><a href="#break-the-essential-reset" id="toc-break-the-essential-reset" class="nav-link" data-scroll-target="#break-the-essential-reset">BREAK: The Essential Reset</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
   <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
   </ul>
 </nav>
@@ -465,28 +476,20 @@ div.csl-indent {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-title">Dungeon Crawlers and Anarchists: co-designing programming teaching experiences</span></h1>
+<h1 class="title"><span class="chapter-title">Brain Book Buddy Boss Break: A Practical Debugging Framework for Learners</span></h1>
 </div>
 
 
 <div class="quarto-title-meta-author">
-  <div class="quarto-title-meta-heading">Authors</div>
-  <div class="quarto-title-meta-heading">Affiliations</div>
+  <div class="quarto-title-meta-heading">Author</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
   
     <div class="quarto-title-meta-contents">
-    <p class="author">Francisco Queiroz <a href="mailto:f.queiroz@leeds.ac.uk" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+    <p class="author">Mar Doig </p>
   </div>
   <div class="quarto-title-meta-contents">
         <p class="affiliation">
-            School of Design, University of Leeds
-          </p>
-      </div>
-    <div class="quarto-title-meta-contents">
-    <p class="author">Maeve Murphy Quinlan <a href="mailto:TODO" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
-  </div>
-  <div class="quarto-title-meta-contents">
-        <p class="affiliation">
-            Research Computing, University of Leeds
+            Engineering Education Lead at Perk (https://www.perk.com)
           </p>
       </div>
   </div>
@@ -502,378 +505,207 @@ div.csl-indent {
 <div>
   <div class="keywords">
     <div class="block-title">Keywords</div>
-    <p>pedagogical frameworks, teaching material</p>
+    <p>debugging, problem-solving, learning-strategies, AI, studentr-esilience</p>
   </div>
 </div>
 
 </header>
 
 
-<section id="introduction" class="level2">
-<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
-<p>You find yourself in a large room with no windows; the air is still, and nothing suggests the passing of time. The door closes behind you, and it won’t open for another hour or two. As you stand in front of the room, you realise there is nothing between you and what seems to be a party of the most intimidating, unpredictable creatures.</p>
-<p>Students.</p>
-<p>Fear not, though. You are about to learn how to deal with this kind of situation. Dealing with students’ expectations (and your own) can be hard, but we believe that by working together, you will be able to deliver the learning experience that gets everyone to the next level.</p>
-<p>This chapter is inspired in equal parts by tabletop role-playing and anarchist pedagogies. It was created to help you structuring the learning experience for your course. More specifically, we present steps you can take during an initial or preliminary learning activity for a course, preparing material that will help you:</p>
+<section id="introduction-the-debugging-mountain-the-error-misconception" class="level2">
+<h2 class="anchored" data-anchor-id="introduction-the-debugging-mountain-the-error-misconception">Introduction: The Debugging Mountain &amp; The Error Misconception</h2>
+<p>Harken your memory back to your first error message, however many years ago that might be. You likely felt a small jolt of panic, a worry you’d irreparably <strong>broken something</strong>. Nowadays, you hopefully see errors as the lane bumpers of your programming journey. Errors help us understand flaws in our original design, consequences of code changes on original code, and limitations of our system.</p>
+<p>When teaching students at the beginning of their journey, it’s important to remember they will require psychological coaching to reframe these errors from failure, to progress. To them, proficient in their own field, they will not be accustomed to many errors in their work. In learning a new skill it’s key to foster the growth mindset that’s so fundamental in programming.</p>
+<p>This growth mindset muscle must be strong, so strong in fact that it can conquer the usual process of fixing one error only to find another one. An experienced programmer would see this as progress, the stepping stones that will lead to their desired end result. Whereas students often see it as compounding failure, eroding away at their frustration tolerance. This can be a huge blocker in their learning and lead to demotivation or the classic “programming is just not for me” mindset.</p>
+<p>This chapter will lay out the <strong>5Bs framework<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> - Brain, Book, Buddy, Boss, Break -</strong> a guide for students encountering debugging. This strategy codifies the organic path of problem solving that is cultivated in engineering. It will allow the student to develop a systematic approach to problem-solving that will keep them moving forward in their debugging, increasing their frustration tolerance as a result. Throughout this framework, we’ll also explore how learners can thoughtfully leverage modern AI assistants as powerful aids, while still ensuring they build deep conceptual understanding and robust problem-solving skills.</p>
+<section id="a-note-about-debugging-and-ai" class="level3">
+<h3 class="anchored" data-anchor-id="a-note-about-debugging-and-ai">A Note about Debugging and AI</h3>
+<p>However you feel about the broad usage of AI, their integration into learning environments demands our careful consideration. These powerful assistants can remarkably accelerate experienced developers and are invaluable for “getting the job done” efficiently. However, for the novice programmer focused on building foundational understanding and their own problem-solving abilities, they present a double-edged sword. If an AI consistently serves the perfectly cooked meal, the learner may miss the crucial sometimes messy process of learning to prepare it themselves, hindering the development of their core analytical and debugging muscles. With this in mind, the 5Bs framework presented in this chapter will explore how to thoughtfully integrate AI at each stage, aiming to strike a crucial balance: leveraging these incredible tools appropriately while always prioritizing and fostering deep, independent learning and critical thinking.</p>
+</section>
+</section>
+<section id="brain-engage-your-mind-before-your-keyboard" class="level2">
+<h2 class="anchored" data-anchor-id="brain-engage-your-mind-before-your-keyboard">BRAIN: Engage Your Mind Before Your Keyboard</h2>
+<p>This core step cannot be understated. Before engaging with any resource a student must build practice in thinking about their problem. They will likely be used to, from their current problem solving ability, creating a hypothesis and testing it to discover a result. It’s likely this is their approach when writing code too. The key is to remind them it’s the first port of call for an error message too.</p>
+<p>In this part of the process, no AI should be used. The thinking process is precisely where the learning happens, and frustration tolerance is built. The struggle between the student and the problem will exercise their problem-solving muscle thanks to the resistance put up by the code. AI could give them the information straightaway, but this is not the goal.</p>
+<p>Here are some practical techniques a student can engage:</p>
+<ol type="1">
+<li><strong>Read the error message:</strong> This is a skill in itself. Knowing how to spot which file and line are causing the offending problem will give us a first place to start the investigation, and may even reveal it was all down to a simple misspelling or syntax error.<br>
+</li>
+<li><strong>Reproduce the error:</strong> Does the bug happen if you run it again? The classic turn it off and on again still yields results.<br>
+</li>
+<li><strong>Identify the gap:</strong> Note what you are getting and compare against what you were expecting. Is there an interesting relationship between these two pieces of data? Is the answer “off by one”?<br>
+</li>
+<li><strong>Formulate a hypothesis:</strong> Turn the gap into a hypothesis, “I think X is happening because of Y.”</li>
+</ol>
+<p>At this point we are ready to test Y until we figure it out, or we find a new error and go back to the beginning.</p>
+<ol start="5" type="1">
+<li><strong>Simplify and isolate:</strong> Look at what changed since the code worked. Try to isolate the problem and see if it’s still reproducible. You can also comment out all code and uncomment it out slowly until the error reproduces, finding the source of your problems.<br>
+</li>
+<li><strong>Sample inputs and testing:</strong> Change or hardcode a variable to test your hypothesis. This is where print debugging enters the scene too. Print key variable states before and after suspected problem areas, and remember to label them!<br>
+</li>
+<li><strong>Debugging:</strong> Use debugging tools built-in to the IDE to set breakpoints, and step into functions.</li>
+</ol>
+<p>This process is designed to be done in loops, until one moves forward or has to use another step in the framework. Encourage students to keep checkpointed versions of their work, as undo commands only provide a limited safety net.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Tip for educators
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Encourage the student’s self-reflection during this process by prompting them with simple questions:</p>
 <ul>
-<li>get to know your students, their expectations and shortcomings</li>
-<li>organise teams for collaborative group work</li>
-<li>relate learning sessions and activities to the course’s learning outcomes</li>
-<li>structure the sequence of learning activities</li>
-<li>share resources</li>
+<li>What have you tried so far?<br>
+</li>
+<li>What does the error say?<br>
+</li>
+<li>What happens when you change this?</li>
 </ul>
-<p>This system is inspired by variations of Role-Playing games that do not require a Dungeon Master as mediator, such as various ones from <a href="https://tomkinpress.com/">Tomkin Press</a>, which reflects horizontal approaches from anarchist pedgagodies in higher education, in which students and educators operate side-by-side. <span class="citation" data-cites="wilkinson2025fragments">(<a href="#ref-wilkinson2025fragments" role="doc-biblioref">Wilkinson and Ashworth 2025</a>)</span>.</p>
-<p>We do acknowldge the tensions between anarchist practices and the realities of the higher education systems to which we belong, and the risk of coming across as having a somewhat inauthentic, opportunistic take on anarchism. Admitedly, we operate (and, arguably, succeed) within a system that is not as flexible, self-governing, or non-hierarchical as the one we are taking inspiration from. Still, we believe incremental, practical changes are a possible way of moving towards more inclusive and democratic realities.</p>
-<div class="callout callout-style-default callout-note no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Disclaimer
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>The collaborative, open-ended nature of some steps here described might suit workshops and short courses better than credit-bearing modules with strictly pre-defined learning outcomes. That said, syllabi are often flexible enough to allow for this ad-hoc, collaborative approach (or at least some tweaking).</p>
 </div>
 </div>
 </section>
-<section id="accessing-the-toolkit" class="level2">
-<h2 class="anchored" data-anchor-id="accessing-the-toolkit">Accessing the toolkit</h2>
-<p>Go to <a href="https://zenodo.org/records/17702161">this chapter’s companion repository</a>. There, you will find a toolkit for planning your teaching that includes templates for:</p>
+<section id="book-consult-your-knowledge-base" class="level2">
+<h2 class="anchored" data-anchor-id="book-consult-your-knowledge-base">BOOK: Consult Your Knowledge Base</h2>
+<p>Official sources of knowledge should be the core of a student’s debugging. These are presented in the order the student should consider consulting them.</p>
+<section id="own-materials" class="level3">
+<h3 class="anchored" data-anchor-id="own-materials">Own materials</h3>
+<p>A common first step is for the student to consult their learning materials, their notes or their code. This is usually a very useful resource, as they are deeply engaged with it and it’s likely to have similar examples to the problem they’re trying to solve. Students may be motivated to produce tidy, well-commented code in the course of their learning, when they know they’re likely to go back to it when they’re stuck.</p>
+</section>
+<section id="documentation" class="level3">
+<h3 class="anchored" data-anchor-id="documentation">Documentation</h3>
+<p>Despite it being a complex source to parse, I would always encourage the students to engage a primary source, the documentation. Getting comfortable reading technical documents is part of the learning process, and in most cases that’s where the most authoritative answers will be found. Finding answers to a problem via reading documentation is a hard skill to master, but it is extremely valuable.</p>
+</section>
+<section id="books" class="level3">
+<h3 class="anchored" data-anchor-id="books">Books</h3>
+<p>While it isn’t the quickest way to solve a bug, certainly many engineers’ favourite pathway into deeper understanding is reading published titles. Authors have taken much time and deliberation over every sentence in their book, and this leads to the highest quality explanations of concepts. Books are a form of linear learning, which contrast to the other options’ fragmented learning. While a google search might fix a bug, reading a book chapter will fix the misunderstanding that caused it in the first place.</p>
+<p>Reading around a topic when one is stuck can be a natural way to gain deep understanding without feeling like one must set aside time for learning &amp; development. By using these casual opportunities to learn, the student can create a lifelong habit of continuous learning.</p>
+</section>
+<section id="googling" class="level3">
+<h3 class="anchored" data-anchor-id="googling">Googling</h3>
+<p>Of course many students would straight-away google the error. This is appropriate in many situations, and often gets the student unstuck. However, it can lead to the copy paste trap where the student layers Stack Overflow answer upon answer, until their code works. Even if this leads to working code, it’s likely a messy approach, and it’s possible that the student doesn’t fully understand the why of their solution. It’s also likely that they cannot explain why this code is the most appropriate solution for their problem. A great standard to set for students is to set out the clear guidance that they must be able to explain the what and why of every line of code they submit.</p>
+</section>
+<section id="artificial-intelligence" class="level3">
+<h3 class="anchored" data-anchor-id="artificial-intelligence">Artificial Intelligence</h3>
+<p>Nowadays of course, it is more likely that a student will put their error or whole code into an AI chatbot. This can be a great option if handled appropriately, as the students can engage in conversation about the error, leading to deeper understanding. A curious and engaged student will enhance their learning through the conversation, but the pitfalls are obvious. A student who is looking to simply submit an assignment on time is likely to skim through the explanation and take the correct answer.</p>
+<p>A great way for students to leverage AI is by using it to demystify some of the harder-to-parse sources, like documentation. The student can paste the part of the documentation that they believe relates to their issue and ask the AI to clarify or simplify the language.</p>
+<p>As explained earlier as it relates to AI, the limitations of this technology should be made clear to students. It can, and indeed does, confidently hallucinate answers and provide references that do not exist. Students should verify the knowledge passed on by AI with external sources, especially if the AI’s suggestions start to sound implausible or make the code worse.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Tip for educators
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Provide your students with an AI prompt that they can put into their chatbot which asks the agent not to give the students any code, and instead act as a Socratic Teacher who will engage in conversation about the topics and guide the student towards their understanding. For example:</p>
+<p><code>I am a student learning Python. I am currently stuck on an error and I want to practice my debugging skills. Please act as a Socratic tutor. Do NOT give me the corrected code. Instead, ask me leading questions about my logic, point out specific lines where my mental model might be mismatched with the syntax, and help me arrive at the solution myself.</code></p>
+</div>
+</div>
+</section>
+</section>
+<section id="buddy-the-power-of-collaboration" class="level2">
+<h2 class="anchored" data-anchor-id="buddy-the-power-of-collaboration">BUDDY: The Power of Collaboration</h2>
+<p>The most incredible thing about the buddy step, is that it doesn’t require a buddy at all. Many programmers are extremely familiar with solving their own problem halfway through explaining it to a colleague! So, let’s help students embrace the power of articulating their problem.</p>
+<section id="rubber-ducking" class="level3">
+<h3 class="anchored" data-anchor-id="rubber-ducking">Rubber Ducking</h3>
+<p>A very common practice for software engineers is rubber ducking. This is when someone takes a rubber duck that is sitting on their desk for this express purpose, and one explains their code to them. In the process of performing this explanation, one usually sees the gap in the logic, or the misunderstood assumption, and has at least one new approach they can try to get themselves unstuck. While the rubber duck is a common talisman, this explanation can be done to anything: your cat, your favourite lego figure, or even out loud to yourself! My personal favourite that generates less public concern when you’re among colleagues is to write down the explanation of the logic on paper as if I were speaking it out loud.</p>
+</section>
+<section id="artificial-intelligence-1" class="level3">
+<h3 class="anchored" data-anchor-id="artificial-intelligence-1">Artificial Intelligence</h3>
+<p>Of course, as mentioned in the section above, if a student chooses to use AI they should primarily use them as a Socratic tutor who they can have a discussion with. For me, this places AI firmly in the category of Buddy. Using the prompt above, the student should be able to engage with the AI as they would a colleague, with the great advantage of its 24/7 availability.</p>
+</section>
+<section id="fellow-humans" class="level3">
+<h3 class="anchored" data-anchor-id="fellow-humans">Fellow humans</h3>
+<p>The two prior options described are great resources for the middle of the night questions. However, if there is an option to discuss with an actual person, I would recommend this option above all.</p>
+<p>Explaining your reasoning to someone else holds you to a higher standard of use of technical language. Whenever you describe your code to someone else, you organise your thoughts before you speak and you take cues from them to expand on explaining the parts that are most important. Their intuition collaborates with yours in real time to create better understanding. You’d be surprised how often discussing something with a colleague will also enhance their understanding of concepts too.</p>
+<p>Finally, learning is a collaborative endeavour: it becomes more effective and more enjoyable when shared.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Tip for educators
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Provide as many opportunities as you can to engage your students’ technical collaboration skills. A great way to do this is by encouraging pair programming as part of tackling coding challenges.</p>
+<p>Pair programming is an excellent practice for a myriad of reasons, (and rightly deserves a book in itself!), but for the scope of this chapter, its main advantage is that it develops the student’s ability to explain their thinking using technical language. Students will collaborate in their problem solving and get each other unstuck during the pair programming session, leading to higher understanding and higher morale.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="boss-when-to-escalate" class="level2">
+<h2 class="anchored" data-anchor-id="boss-when-to-escalate">BOSS: When to Escalate</h2>
+<p>In my experience, students will err on the side of waiting too long to reach out, much to their detriment. A student’s fear of seeming like they’ve not understood something they believe they should understand by now, or their pride in wanting to reach a solution by themselves, stops them from reaching out to their tutor. Time is a non-renewable learning resource and we must make this clear to our students.</p>
+<p>Helping them build out the skill of reaching out to a superior at this early stage of their career will prove invaluable in a professional environment too, when not reaching out won’t just be an impediment to their problem solving but possibly to their career advancement too.</p>
+<p>A common first question is “how long do I wait?”, and the reply is that it depends on the length of time you have to complete the task. If a student has been set a task in class that’s 30 minutes long, and 10 minutes in they’re still in the beginning stages, then it’s appropriate to reach out. If they’re working on an assignment that they have weeks to complete, they ought to try for longer than 10 minutes before reaching out.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Tip for educators
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The hardest part of reaching out can be the intimidation of knowing, ironically, that they’ve probably now waited longer than they should have. To encourage the students to reach out when appropriate and push through that feeling, it can be helpful to give them a framework of preparation they can use as a guide to feel more comfortable in escalating.</p>
 <ul>
-<li>Character Sheet</li>
-<li>Bestiary</li>
-<li>Adventure Map</li>
-<li>Party Guidelines</li>
-<li>Equipment List</li>
-<li>Skills and Spellbook</li>
+<li><p><strong>Context</strong> - What are you trying to do? What part of what you’re tacking is new to you? What specific error message or bug are you getting?<br>
+</p></li>
+<li><p><strong>Brain</strong> - What is your understanding of the problem? What hypotheses have you tested?<br>
+</p></li>
+<li><p><strong>Book</strong> - Where did you go to get more information? Was it helpful? Did it confuse you further? Do you have any similar sample code which you do understand?<br>
+</p></li>
+<li><p><strong>Buddy</strong> - Have you talked it through with a colleague? Did you discuss this problem with AI? Where in their explanations have you got lost?<br>
+</p></li>
+<li><p><strong>Question</strong> - What one specific question could your tutor answer you that would lead to the most significant unblocking?</p>
+<p>Ensure you treat a student’s escalation with utmost care, they are likely building a fragile muscle which will require tackling one’s own ego and some old stubborn habits.</p></li>
 </ul>
-<p>These are available as <code>.docx</code> and <code>.rtf</code> documents, but feel free to adapt them to whatever format or platform you want.</p>
+</div>
+</div>
 </section>
-<section id="character-building-presenting-learners-and-educators-profiles" class="level2">
-<h2 class="anchored" data-anchor-id="character-building-presenting-learners-and-educators-profiles">Character building: presenting learners and educators’ profiles</h2>
-<p>A good first step is to understand everyone’s aspirations and previous experiences. At this stage, invite all students and educators (including yourself) to complete a <strong>Character Sheet</strong><a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>. Once everyone has completed theirs, go through a round of introductions. Focus on understanding everyone’s strong points, ambitions, and fears.</p>
-<p>The Character Sheet could potentially help identify potential topics for class and barriers to be removed.</p>
-<div class="callout callout-style-default callout-tip no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>Example: Character Sheet
-</div>
-</div>
-<div class="callout-body-container callout-body">
+<section id="break-the-essential-reset" class="level2">
+<h2 class="anchored" data-anchor-id="break-the-essential-reset">BREAK: The Essential Reset</h2>
+<p>Much like the ego that gets in the way of escalating, a similar feeling can get in the way of the key step of taking a break. Switching from the focused mode of active problem solving to diffuse mode, where problems are processed in the background. A 5 minute break to drink a glass of water or stare into the distance out the window is often much more productive than insisting on going through 5 more minutes of debugging.</p>
+<p>The break step can, and arguably should, go in between any of the previous steps outlined. It should not be a last resource when the student has been at a problem uninterruptedly for an hour. Any time that the current step is making things less clear instead of more clear, Break should be utilised. As an instructor, I set out breaks during the lesson to model this approach.</p>
+<p>It’s also important to note that while short breaks should be part of their workflow, long breaks should be part of their life. It’s our responsibility as educators to give our students a holistic perspective on learning, which incorporates time away from screens entirely. In the specific context of software bootcamps for example, students put a lot of pressure on themselves to continuously code and improve their skills. It’s key to remind them that in order to learn well the next day, they will need some time in their day where they are doing something that refills their energy tank like eating well, exercising, and sleeping.</p>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>This framework codifies what is a natural, iterative loop for experienced problem solvers. By sharing the 5Bs mnemonic, we provide students with more than just a debugging checklist: we give them a toolkit for student resilience and a way to navigate debugging without falling into demotivation.</p>
+<p>As educators, our role is to consistently remind them of the core principles that underpin this framework:</p>
 <ul>
-<li><em>Creation: 15 min</em></li>
-<li><em>Discussion: 15 min</em></li>
+<li><strong>Errors are the Path to Progress</strong> - We must move students away from seeing errors as failure and toward seeing them as the lane bumpers of their journey.<br>
+</li>
+<li><strong>Time Management Practice</strong> - We must emphasize that time is a non-renewable learning resource. Students should be taught that escalating to a Boss is an act of professional efficiency, not a sign of weakness.<br>
+</li>
+<li><strong>The Power of the Reset</strong> - We must model the Break as a technical requirement. Stepping away allows the brain to defocus, which is often when the most elegant solutions surface.<br>
+</li>
+<li><strong>Thoughtful AI Integration</strong> - By using AI as a buddy or a documentation translator, students leverage modern tools without sacrificing their journey of understanding</li>
 </ul>
-<div class="line-block"><strong>Expectations:</strong><br>
-Learning how to manage and collaborate in bigger projects using git/GitHub<br>
-<br>
-<strong>Previous education and professional experiences:</strong><br>
-Self-taught web-development.<br>
-<br>
-<strong>(…)</strong><br>
-<br>
-<strong>Study Skills Weaknesses:</strong><br>
-Might have developed bad habits from self-teaching.</div>
-</div>
-</div>
-<div class="callout callout-style-default callout-important no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Important</span>The anarchist bit:
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Anarchist pedagogies support and are supported by the construction of subjectivities <span class="citation" data-cites="deleon2012anarchism">(<a href="#ref-deleon2012anarchism" role="doc-biblioref">DeLeon 2012</a>)</span>. Feel free to extrapolate the Character Sheet to an exploration of long-term goals, ideals, and a broader sense of identity, even if (perhaps <em>especially</em> if) they diverge from immediate, utilitarian aims of the course.</p>
-<p>In some cases, however, discourse around subjectivities and course objectives might intersect: students might want to discuss their preferences for sectors they’d wish to work with (for instance: non-profits insted of big tech), or their affinity with open-source initiatives as a matter of citizenship and participation.</p>
-</div>
-</div>
-</section>
-<section id="challenges-ahead-establishing-learning-outcomes-and-syllabus" class="level2">
-<h2 class="anchored" data-anchor-id="challenges-ahead-establishing-learning-outcomes-and-syllabus">Challenges ahead: establishing learning outcomes and syllabus</h2>
-<p>Use the <strong>Bestiary</strong> template to establish (or remind) learners of the course learning outcomes and syllabus. Discuss what they will learn, giving examples if necessary. Depending on your course’s flexibility, outcomes and topics can be decided on the spot. Usually, you will want to choose a set of learning outcomes and lessons beforehand<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>.</p>
-<div class="callout callout-style-default callout-tip no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>Example: Bestiary
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ul>
-<li><em>Discussion and adjustments: 15 min</em></li>
-</ul>
-<div class="line-block"><strong>Name:</strong><br>
-Create GitHub repository for your project<br>
-<strong>[x]</strong> Main Quest &nbsp;<strong>[ ]</strong> Side Quest<br>
-<br>
-<strong>Learning Outcomes:</strong><br>
-1. Apply best practices to source code management and versioning<br>
-<br>
-<strong>Challenge:</strong><br>
-Follow all steps from creating a GitHub account to creating a new (empty) repository.<br>
-<br>
-<strong>Relevant Equipment and Skills:</strong><br>
-GitHub website, GitHub Desktop, Online learning material on GitHub for beginners.</div>
-</div>
-</div>
-<div class="callout callout-style-default callout-important no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Important</span>The anarchist bit:
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Once again, there should be plenty of space for learners to express themselves by suggesting topics for co-creating their learning experience. Such a practice is present in many other progressive pedagogies <span class="citation" data-cites="Freire1996">(for instance, see <a href="#ref-Freire1996" role="doc-biblioref">Freire 1996</a>)</span>.</p>
-<p>In practical terms, that can be very beneficial to the course. It’s not uncommon that students are informed about emerging practices and tools that can enrich the course and learning experience for everyone. As educators might struggle with keeping up-to-date with professional practices, being attentive to students’ perspectives can be really helpful.</p>
-</div>
-</div>
-</section>
-<section id="the-treasure-map-structuring-the-course-and-learning-activities" class="level2">
-<h2 class="anchored" data-anchor-id="the-treasure-map-structuring-the-course-and-learning-activities">The treasure map: structuring the course and learning activities</h2>
-<p>Use the <strong>Adventure Map</strong><a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> to discuss the sequence of learning material and activities, assessment (beasts), and how they relate to learning outcomes. Keep the discussion open so that learners can suggest, based on their expertise, perceived needs or fears, how to best organise the learning trajectory. To structure their journey, place items from the <strong>Bestiary</strong> into the journey map, and associating them with the course’s learning outcomes.</p>
-<div class="callout callout-style-default callout-tip no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>Example: Adventure Map
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ul>
-<li><em>Discussion and adjustments: 30 min</em></li>
-</ul>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 20%">
-<col style="width: 20%">
-<col style="width: 20%">
-<col style="width: 20%">
-<col style="width: 20%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Session</th>
-<th>Topics</th>
-<th>Main Quest</th>
-<th>Sidequest(s)</th>
-<th>Learning Outcomes</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>1</td>
-<td>Source-code management</td>
-<td>Create GitHub repository for your project</td>
-<td>Follow another student’s repository</td>
-<td>1. Apply best practices to source code management and versioning</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<div class="callout callout-style-default callout-important no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Important</span>The anarchist bit:
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>The collective effort into creating a learning journey that does not follow a blueprint is characteristic of anarchist pedagogies <span class="citation" data-cites="deleon2012anarchism">(<a href="#ref-deleon2012anarchism" role="doc-biblioref">DeLeon 2012</a>)</span>. Still, students and educators might benefit from some structure, in which case it is advisable to outline a learning path. Feel free, however, to continuously discuss, review, and re-negotiate that path.</p>
-<p>That discussion could open opportunities for improving and streamlining teaching delivery. You might notice that students might need more (or less) sessions and materials on specific topics. Alternatively, you might consider making additional content available for students who need (or want) it for either keeping up with the group, or extending their knowledge.</p>
-</div>
-</div>
-</section>
-<section id="p.a.r.t.y-organising-groups-and-groupwork" class="level2">
-<h2 class="anchored" data-anchor-id="p.a.r.t.y-organising-groups-and-groupwork">P.A.R.T.Y: organising groups and groupwork</h2>
-<p>As a group (or groups, depending on the number of students), complete the <strong>Party Guidelines</strong> sheet<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a>, establishing ground rules on how to deal with each other and the group, as well as roles for each participant.</p>
-<p>Go over the <strong>Adventure Map</strong>, discussing how to best achieve the challenges (either individually or as pairs or teams). Discuss different strategies for group work; for instance, should everyone work on every aspect of the assignment, or should they focus on their own areas of expertise and interest?</p>
-<p>Party Guidelines should help teamwork run smoothly, including agreements for conflict resolution.</p>
-<div class="callout callout-style-default callout-tip no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>Example: Party Guidelines
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ul>
-<li><em>Discussion and adjustments: 15 min</em></li>
-</ul>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 50%">
-<col style="width: 50%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Topic</th>
-<th>Rule</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>What should someone do if they cannot attend a meeting or complete work on time?</td>
-<td>Group will redistribute work according to members’ strengths.</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<div class="callout callout-style-default callout-important no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Important</span>The anarchist bit:
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>When deciding rules for working groups, aiming for consensus would be ideal. A quick introduction and <a href="http://www.seedsforchange.org.uk/shortconsensus">effective guide on how to achieve consensus</a> in group meetings was created by workers’ co-op of campaigners Seeds for Change, and could be brought into discussion.</p>
-<p>Conducting group work can be challenging, particularly when assessment is involved, as students might question their lack of autonomy within a group. It’s worth noting, however, that: (a) individual autonomy and freedom is not necessarily the utmost important value in anarchism <span class="citation" data-cites="suissa2006anarchism">(see, for instance, <a href="#ref-suissa2006anarchism" role="doc-biblioref">Suissa 2006, 14</a>)</span>; (b) although the traditional role of group leaders might harder justify, certain groups of anarchist values operated under leaders stripped down of authoritarian coercive powers <span class="citation" data-cites="Graeber2024">(a good example being pirates as described by <a href="#ref-Graeber2024" role="doc-biblioref">Graeber 2024</a>)</span>.</p>
-<p>In practice, students might need to be reminded on how group work allows them to develop more complex outcomes; and even though we are advocates for self-governing, there might be the need for some mediation from educators in case conflicts arise within a group.</p>
-</div>
-</div>
-</section>
-<section id="a-kind-of-magic-distributing-learning-material" class="level2">
-<h2 class="anchored" data-anchor-id="a-kind-of-magic-distributing-learning-material">A kind of magic: distributing learning material</h2>
-<p>Whether you are using a textbook, slides, PDFs, online videos, or else, use the <strong>Skills and Spellbook</strong> to signpost where students can find learning material that is relevant to their learning journey. Those can be tailored to individual lessons and activities, or as a general compendium (Warhammer pun not intended), and they could be presented all at once or separately as the learning advances. Again, you could populate it with resources related to students’ aspirations.</p>
-<div class="callout callout-style-default callout-tip no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>Example: Skills and Spellbook
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<div class="line-block"><strong>Topic:</strong><br>
-Source code versioning<br>
-<br>
-<strong>Resource Name:</strong><br>
-Online learning material on GitHub for beginners<br>
-<br>
-<strong>What it is for:</strong><br>
-Learning the basics of GitHub for software versioning.<br>
-<br>
-<strong>Study Skills Weaknesses:</strong><br>
-Might have developed bad habits from self-teaching.<br>
-<br>
-<strong>Information and Instructions</strong>:<br>
-Accessible through <a href="http://www.youtube.com/playlist?list=PL0lo9MOBetEFcp4SCWinBdpml9B2U25-f">GitHub’s YouTube playlist</a></div>
-</div>
-</div>
-</section>
-<section id="equipment-list-providing-software-and-resources" class="level2">
-<h2 class="anchored" data-anchor-id="equipment-list-providing-software-and-resources">Equipment list: providing software and resources</h2>
-<p>To complete the setup, provide your group with an <strong>Equipment List</strong> of software and other resources they might need to use to advance the journey. You should have a preliminary list ready, but be open to suggestions from students. Below, an example that would support our student with his desire to learn source code management and versioning.</p>
-<div class="callout callout-style-default callout-tip no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>Example: Equipment List
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<div class="line-block"><strong>Websites:</strong><br>
-Name: GitHub<br>
-Purpose: Source code management and versioning<br>
-URL: <a href="https://www.github.com" class="uri">https://www.github.com</a><br>
-<br>
-<strong>Software:</strong><br>
-Name: GitHub Desktop<br>
-Purpose: Source code versioning<br>
-URL for download or installation instructions: <a href="https://desktop.github.com/download/" class="uri">https://desktop.github.com/download/</a></div>
-</div>
-</div>
-</section>
-<section id="setup-complete-happy-adventures" class="level2">
-<h2 class="anchored" data-anchor-id="setup-complete-happy-adventures">Setup complete: happy adventures!</h2>
-<p>Once you have completed the previous steps, you will have generated everything you and your students need to accomplish course objectives and keep track of your achievements. At the start of each learning session, use the <strong>Adventure Map</strong> to update students on their next steps, and on how far they have travelled so far.</p>
-<p>Throughout the semester, following the plan from the <strong>Adventure Map</strong>, present new tasks, resources, and skills, from the <strong>Bestiary</strong>, Equipment <strong>List</strong>, and <strong>Skills and Spellbook</strong>, respectively.</p>
-<p>Frequently remind students to keep their <strong>Character Sheet</strong> updated with the new skills they acquire.</p>
-<p>If conducting group work, remind them of the rules expressed in their <strong>Party Guidelines</strong> whenever there is conflict.</p>
-<p>At the end of the course, remind students of their journey, highlighting the learning outcomes achieved along the way. Hopefully, this collaborative approach to learning will have made your job (and of your students) easier and more enjoyable. We would love to hear from you about your experiences, so please feel free to get in touch!</p>
-<p>Happy teaching.</p>
-<div class="callout callout-style-default callout-important no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Important</span>The anarchist bit:
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Another characteristic of anarchist pedagogies, particularly in the arts (and programming is often seen as a liberal art), is how they embrace the fluidity that is necessary for making changes to the learning experience after reflection and evaluation <span class="citation" data-cites="wilkinson2025fragments">(<a href="#ref-wilkinson2025fragments" role="doc-biblioref">Wilkinson and Ashworth 2025</a>)</span>. After running you campaign, don’t be afraid of modifying, discarding, or adapting the system we just proposed according to your experience and that of your students.</p>
-</div>
-</div>
-</section>
-<section id="acknowledgement" class="level2">
-<h2 class="anchored" data-anchor-id="acknowledgement">Acknowledgement</h2>
-<p>The authors would like to thank Samantha Ahern and Lucia Michielin for their revision and feedback.</p>
+<p>The 5Bs are a useful way to remember the common steps in problem solving, but the goal is learning to live in the loop.</p>
 </section>
 <section id="references" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="references">References</h2>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" role="list">
-<div id="ref-deleon2012anarchism" class="csl-entry" role="listitem">
-DeLeon, Abraham P. 2012. <span>“<span>‘Anarchism… Is a Living Force Within Our Life…’</span> Anarchism, Education and Alternative Possibilities.”</span> <em>Educational Studies</em> 48 (1): 5–11. <a href="https://doi.org/10.1080/00131946.2012.641849">https://doi.org/10.1080/00131946.2012.641849</a>.
-</div>
-<div id="ref-Freire1996" class="csl-entry" role="listitem">
-Freire, Paulo. 1996. <em>Pedagogy of the Oppressed</em>. Translated by Myra Bergman Ramos. Penguin.
-</div>
-<div id="ref-Graeber2024" class="csl-entry" role="listitem">
-Graeber, David. 2024. <em>Pirate Enlightenment, or the Real Libertalia</em>. Penguin Books.
-</div>
-<div id="ref-LearnHigher_2012a" class="csl-entry" role="listitem">
-Learn Higher. 2012a. <em>Ground Rules for Group Work</em>. Association for Learning Development in Higher Education. <a href="https://aldinhe.ac.uk/product/learnhigher-resources/ground-rules-for-group-work/">https://aldinhe.ac.uk/product/learnhigher-resources/ground-rules-for-group-work/</a>.
-</div>
-<div id="ref-LearnHigher_2012b" class="csl-entry" role="listitem">
-Learn Higher. 2012b. <em>Group Work Booklet</em>. Association for Learning Development in Higher Education. <a href="https://aldinhe.ac.uk/product/learnhigher-resources/group-work-booklet/">https://aldinhe.ac.uk/product/learnhigher-resources/group-work-booklet/</a>.
-</div>
-<div id="ref-suissa2006anarchism" class="csl-entry" role="listitem">
-Suissa, Judith. 2006. <em>Anarchism and Education: A Philosophical Perspective</em>. Routledge.
-</div>
-<div id="ref-IADUniversityofEdinburgh_2024" class="csl-entry" role="listitem">
-University of Edinburgh. 2024. <span>“Group Working.”</span> In <em>Institute for Academic Development</em>. <a href="https://institute-academic-development.ed.ac.uk/study-hub/learning-resources/group-working">https://institute-academic-development.ed.ac.uk/study-hub/learning-resources/group-working</a>.
-</div>
-<div id="ref-wilkinson2025fragments" class="csl-entry" role="listitem">
-Wilkinson, Ryan Gerald, and Connor Ashworth. 2025. <span>“Fragments of Anarchism in Higher Education Critical Art Pedagogies.”</span> <em>Arts and Humanities in Higher Education</em>. <a href="https://doi.org/10.1177/14740222241313303">https://doi.org/10.1177/14740222241313303</a>.
+<div id="ref-claxton2018learning" class="csl-entry" role="listitem">
+Claxton, Guy. 2018. <em>The Learning Power Approach: Teaching Learners to Teach Themselves (the Learning Power Series)</em>. Crown House Publishing Ltd.
 </div>
 </div>
 </section>
 <section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
 <hr>
 <ol>
-<li id="fn1"><p>The Character Sheet document was designed to help learners understand and share their own experience, needs, expectations, skills, and challenges. It is informed by <a href="https://www.open.ac.uk/blogs/learning-design/?page_id=457">Student Persona templates provided by the Open University</a> under Creative Commons Attribution-Non-Commercial licenses.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn2"><p>Many programmes require educators to achieve specific learning outcomes. If you are the one in charge of keeping the programme or module specification form, a good practice would be keeping it flexible enough so that new, emerging topics can be brought into the syllabus.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn3"><p>The Adventure Map document was designed to help educators and students to set out learning outcomes, syllabi, and assessments. It is informed by <a href="https://sway.cloud.microsoft/C1YkluhNgPxGx5um?ref=Link">material created by the University of Leeds OD&amp;PL</a>.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn4"><p>The Party Guidelines document was designed to help learners manage their groupwork. They are informed by <a href="https://institute-academic-development.ed.ac.uk/study-hub/learning-resources/group-working">frameworks from the Institute for Academic Development</a> <span class="citation" data-cites="IADUniversityofEdinburgh_2024">(<a href="#ref-IADUniversityofEdinburgh_2024" role="doc-biblioref">University of Edinburgh 2024</a>)</span> and the Learn Higher CETL at the University of Bradford <span class="citation" data-cites="LearnHigher_2012a LearnHigher_2012b">(<a href="#ref-LearnHigher_2012a" role="doc-biblioref">Learn Higher 2012a</a>, <a href="#ref-LearnHigher_2012b" role="doc-biblioref">2012b</a>)</span> under Creative Commons Attribution-Non-Commercial licences.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn1"><p>We expand on the “Brain Book Buddy Boss” technique, which is used in classrooms, but seldom mentioned in teaching literature or books. We could not track down its exact origins, but in chapter 4 of <span class="citation" data-cites="claxton2018learning">(<a href="#ref-claxton2018learning" role="doc-biblioref">Claxton 2018</a>)</span> it is introduced as a variant of “Try Three Before Me”. “Try Three Before Me” guides pupils who got stuck to first try solving or troubleshooting their problem themselves in 3 different ways, before they escalate it to the teacher. “Brain Book Buddy Boss” is a more specific variant, which suggests specific stops on that troubleshooting journey.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section>
 
@@ -1280,13 +1112,13 @@ Wilkinson, Ryan Gerald, and Connor Ashworth. 2025. <span>“Fragments of Anarchi
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./C05_coding-mindset.html" class="pagination-link" aria-label="A Guide on Empowering Students to Develop a Coding Mindset">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">A Guide on Empowering Students to Develop a Coding Mindset</span></span>
+      <a href="./C07_teaching-C-to-novices.html" class="pagination-link" aria-label="Second Languages: Teaching C to Python+Jupyter Novices">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Second Languages: Teaching C to Python+Jupyter Novices</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./C07_teaching-C-to-novices.html" class="pagination-link" aria-label="Second Languages: Teaching C to Python+Jupyter Novices">
-        <span class="nav-page-text"><span class="chapter-title">Second Languages: Teaching C to Python+Jupyter Novices</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./C10_teaching-with-genai.html" class="pagination-link" aria-label="An optimistic outlook on Teaching, Learning and Assessment for coding with the emergence of generative AI">
+        <span class="nav-page-text"><span class="chapter-title">An optimistic outlook on Teaching, Learning and Assessment for coding with the emergence of generative AI</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
