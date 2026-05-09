@@ -1,0 +1,1275 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.37">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Lee Clift">
+<meta name="author" content="Olga Petrovska">
+<meta name="keywords" content="assessment, Generative AI, competency">
+
+<title>Assessments With Generative AI: Before, During, and After – Teaching Programming across Disciplines</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./C03_online-teaching-reflections.html" rel="next">
+<link href="./C01_teaching-python.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-6cd8da66a1bdaffdec2ef34407fc6c1c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="_theme/styles.css">
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./C02_genai-before-during-after.html"><span class="chapter-title">Assessments With Generative AI: Before, During, and After</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Teaching Programming across Disciplines</a> 
+        <div class="sidebar-tools-main">
+    <div class="dropdown">
+      <a href="" title="Download" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Download"><i class="bi bi-download"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="./teaching_programming_across_disciplines.pdf">
+              <i class="bi bi-file-pdf pe-1"></i>
+            Download PDF
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="./teaching_programming_across_disciplines.epub">
+              <i class="bi bi-journal pe-1"></i>
+            Download ePub
+            </a>
+          </li>
+      </ul>
+    </div>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Teaching Programming across Disciplines</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./00-chapter-template.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Title of Example Chapter (as will appear on top h1 header and in table of contents)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./CAB_Author-bio-placeholder.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Author Bios Placeholder</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C01_teaching-python.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">A Practical Guide to Teaching Python as a Computational Tool in an Introductory Data Analysis Course</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C02_genai-before-during-after.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Assessments With Generative AI: Before, During, and After</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C03_online-teaching-reflections.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Reflections on Online Teaching</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C05_coding-mindset.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">A Guide on Empowering Students to Develop a Coding Mindset</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C06_feminists-and-anarchists.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Dungeon Crawlers and Anarchists: co-designing programming teaching experiences</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C07_teaching-C-to-novices.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Second Languages: Teaching C to Python+Jupyter Novices</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C09_debugging-beyond-the-debugger.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Brain Book Buddy Boss Break: A Practical Debugging Framework for Learners</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C10_teaching-with-genai.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">An optimistic outlook on Teaching, Learning and Assessment for coding with the emergence of generative AI</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C11_sequential-vs-simultaneous.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Sequential vs.&nbsp;Simultaneous: Approaches to Learning Programming and Statistics</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C12_pair-programming-overview.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Where Do I Even Start With Pair Programming in My Classroom? A Conversation With Seasoned Practitioners.</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C14_foster-inclusion-and-accessibility.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Reflections on Practices to Foster Inclusion and Accessibility in Programming Teaching</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C15_programming-without-computers.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Removing Barriers by Programming Without Computers</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C16_peer-programming.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Peer Programming in Action: Pair Programming in Larger Groups</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C21_programming-across-disciplines-systems-thinking.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">How Teaching Programming Across Disciplines Can Instil Systems Thinking</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C22_interdisciplinary-by-design.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Interdisciplinary by Design: The Centre for Data, Culture, &amp; Society Training Programme</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C23_pair-programming-fusion.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Learning Together Across Modes: Online and On-site Pair Programming in a Hybrid / Fusion Course</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C24_lost-in-translation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Lost in Translation: Complexities and Good Practices of Translating Coding-based Teaching Materials Across Multiple Languages</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C32_civil-engineering.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Changing civil engineering students’ mindset toward programming</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C33_coding-anxiety.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Overcoming coding anxiety: reflections and strategies</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C35_action-feedback-plan.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Managing the Rubik’s Cube of Assessment: The Action Feedback Protocol</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C36_pair-programming-across-disciplines.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Structured Group Work With Assigned Asymmetrical Roles and Switching: Lessons From Pair Programming Across Disciplines</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C38_skills-based-assessment.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">The case for skills-based assessment in introductory programming courses</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C39_gentle-introduction-summer-school.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">A gentle introduction to coding: narratives from a programming summer school for social sciences and humanities</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C41_pair-programming-tutor-reflections.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Pair Programming in Practice: A PhD Tutor’s Reflections</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./99-bibliography.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bibliography</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar"><div class="quarto-margin-header"><div class="margin-header-item">
+<details id="accessibility-controls">
+    <summary>Display options</summary>
+  
+    <div class="control-group">
+        <label for="fontSizeSlider">Font size</label>
+        <input type="range" id="fontSizeSlider" min="8" max="32" value="16">
+        <span id="fontSizeValue">16</span>px
+    </div>
+  
+    <div class="control-group">
+        <label for="eyeStrainSlider">Eye strain</label>
+        <input type="range" id="eyeStrainSlider" min="0" max="50" value="0">
+        <span id="eyeStrainValue">0</span>%
+    </div>
+  
+    <div class="control-group">
+        <label for="hueRotateSlider">Hue</label>
+        <input type="range" id="hueRotateSlider" min="0" max="360" value="0">
+        <span id="hueRotateValue">0</span>
+    </div>
+  
+    <div class="control-group">
+        <label for="paddingSlider">Padding</label>
+        <input type="range" id="paddingSlider" min="0" max="12" value="3">
+        <span id="paddingValue">0</span>
+    </div>
+  
+    <div class="control-group">
+        <label for="lineSpacingSlider">Spacing</label>
+        <input type="range" id="lineSpacingSlider" min="80" max="250" value="150">
+        <span id="lineSpacingValue">150</span>%
+    </div>
+  
+    <div class="control-group">
+        <label for="fontFamily">Font</label>
+        <select id="fontFamily">
+            <option value="'Atkinson Hyperlegible', sans-serif">Atkinson Hyperlegible</option>
+            <option value="Arial, Helvetica, sans-serif">Sans-serif</option>
+            <option value="Georgia, 'Bitstream Charter', Times, serif">Serif</option>
+        </select>
+    </div>
+  
+    <div class="control-group">
+        <button id="resetDefaults">Reset to Defaults</button>
+    </div>
+
+</details>
+</div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a>
+  <ul class="collapse">
+  <li><a href="#genai-and-llm-basics" id="toc-genai-and-llm-basics" class="nav-link" data-scroll-target="#genai-and-llm-basics">GenAI and LLM Basics</a></li>
+  </ul></li>
+  <li><a href="#before-assessment" id="toc-before-assessment" class="nav-link" data-scroll-target="#before-assessment">Before assessment</a>
+  <ul class="collapse">
+  <li><a href="#using-llms-to-draft-multiple-choice-questions" id="toc-using-llms-to-draft-multiple-choice-questions" class="nav-link" data-scroll-target="#using-llms-to-draft-multiple-choice-questions">Using LLMs to draft multiple choice questions</a></li>
+  <li><a href="#using-genai-to-write-an-assessment-brief" id="toc-using-genai-to-write-an-assessment-brief" class="nav-link" data-scroll-target="#using-genai-to-write-an-assessment-brief">Using GenAI to write an assessment brief</a></li>
+  <li><a href="#using-genai-to-design-and-format-a-marking-rubric" id="toc-using-genai-to-design-and-format-a-marking-rubric" class="nav-link" data-scroll-target="#using-genai-to-design-and-format-a-marking-rubric">Using GenAI to design and format a marking rubric</a></li>
+  <li><a href="#using-genai-to-develop-a-model-solution" id="toc-using-genai-to-develop-a-model-solution" class="nav-link" data-scroll-target="#using-genai-to-develop-a-model-solution">Using GenAI to develop a model solution</a></li>
+  </ul></li>
+  <li><a href="#during-assessments" id="toc-during-assessments" class="nav-link" data-scroll-target="#during-assessments">During assessments</a>
+  <ul class="collapse">
+  <li><a href="#tasks-around-interaction-with-genai-and-critical-evaluation-of-its-output" id="toc-tasks-around-interaction-with-genai-and-critical-evaluation-of-its-output" class="nav-link" data-scroll-target="#tasks-around-interaction-with-genai-and-critical-evaluation-of-its-output">Tasks around interaction with GenAI and critical evaluation of its output</a></li>
+  <li><a href="#reflective-components-in-programming-assignments" id="toc-reflective-components-in-programming-assignments" class="nav-link" data-scroll-target="#reflective-components-in-programming-assignments">Reflective components in programming assignments</a></li>
+  <li><a href="#allowing-unlimited-but-documented-use-of-genai" id="toc-allowing-unlimited-but-documented-use-of-genai" class="nav-link" data-scroll-target="#allowing-unlimited-but-documented-use-of-genai">Allowing unlimited (but documented) use of GenAI</a></li>
+  <li><a href="#using-genai-as-an-instant-feedback-tool" id="toc-using-genai-as-an-instant-feedback-tool" class="nav-link" data-scroll-target="#using-genai-as-an-instant-feedback-tool">Using GenAI as an instant feedback tool</a></li>
+  </ul></li>
+  <li><a href="#after-assessments-writing-feedback" id="toc-after-assessments-writing-feedback" class="nav-link" data-scroll-target="#after-assessments-writing-feedback">After assessments: writing feedback</a>
+  <ul class="collapse">
+  <li><a href="#practical-tip-the-feedback-persona" id="toc-practical-tip-the-feedback-persona" class="nav-link" data-scroll-target="#practical-tip-the-feedback-persona">Practical tip: The “Feedback Persona”</a></li>
+  <li><a href="#reflection-ethics-and-the-human-in-the-loop" id="toc-reflection-ethics-and-the-human-in-the-loop" class="nav-link" data-scroll-target="#reflection-ethics-and-the-human-in-the-loop">Reflection: Ethics and the “human-in-the-loop”</a></li>
+  </ul></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const fontSizeSlider = document.getElementById('fontSizeSlider');
+        const fontSizeValue = document.getElementById('fontSizeValue');
+
+        const hueRotateSlider = document.getElementById('hueRotateSlider');
+        const hueRotateValue = document.getElementById('hueRotateValue');
+
+        const eyeStrainSlider = document.getElementById('eyeStrainSlider');
+        const eyeStrainValue = document.getElementById('eyeStrainValue');
+
+        const paddingSlider = document.getElementById('paddingSlider');
+        const paddingValue = document.getElementById('paddingValue');
+
+        const lineSpacingSlider = document.getElementById('lineSpacingSlider');
+        const lineSpacingValue = document.getElementById('lineSpacingValue');
+
+        const fontFamilySelect = document.getElementById('fontFamily');
+
+        const html = document.documentElement;
+        const resetButton = document.getElementById('resetDefaults');
+
+        // Define default values
+        const defaults = {
+            fontSize: 16,
+            hueRotate: 0,
+            eyeStrain: 0,
+            padding: 0,
+            lineSpacing: 150,
+            fontFamily: "'Atkinson Hyperlegible', Arial, Helvetica, sans-serif"
+        };
+
+        function updateStyles() {
+            html.style.setProperty('--bs-root-font-size', fontSizeSlider.value + 'px');
+            html.style.setProperty('--hue-rotate', hueRotateSlider.value + 'deg');
+            html.style.setProperty('--eye-strain', eyeStrainSlider.value + '%');
+            html.style.setProperty('--padding', paddingSlider.value + 'em');
+            html.style.setProperty('--line-spacing', lineSpacingSlider.value + '%');
+            html.style.setProperty('--bs-body-font-family', fontFamilySelect.value);
+
+            fontSizeValue.textContent = fontSizeSlider.value;
+            hueRotateValue.textContent = hueRotateSlider.value;
+            eyeStrainValue.textContent = eyeStrainSlider.value;
+            paddingValue.textContent = paddingSlider.value;
+            lineSpacingValue.textContent = lineSpacingSlider.value;
+
+            saveSettings();
+        }
+
+        // Function to save settings to localStorage
+        function saveSettings() {
+            const settings = {
+                fontSize: fontSizeSlider.value,
+                hueRotate: hueRotateSlider.value,
+                eyeStrain: eyeStrainSlider.value,
+                padding: paddingSlider.value,
+                lineSpacing: lineSpacingSlider.value,
+                fontFamily: fontFamilySelect.value
+            };
+            localStorage.setItem('accessibilitySettings', JSON.stringify(settings));
+        }
+
+        // Function to load settings from localStorage
+        function loadSettings() {
+            const savedSettings = localStorage.getItem('accessibilitySettings');
+            if (savedSettings) {
+                const settings = JSON.parse(savedSettings);
+                fontSizeSlider.value = settings.fontSize;
+                hueRotateSlider.value = settings.hueRotate;
+                eyeStrainSlider.value = settings.eyeStrain;
+                paddingSlider.value = settings.padding;
+                lineSpacingSlider.value = settings.lineSpacing;
+                fontFamilySelect.value = settings.fontFamily;
+                updateStyles();
+            }
+        }
+
+        function resetToDefaults() {
+            fontSizeSlider.value = defaults.fontSize;
+            hueRotateSlider.value = defaults.hueRotate;
+            eyeStrainSlider.value = defaults.eyeStrain;
+            paddingSlider.value = defaults.padding;
+            lineSpacingSlider.value = defaults.lineSpacing;
+            fontFamilySelect.value = defaults.fontFamily;
+            updateStyles();
+            localStorage.removeItem('accessibilitySettings');
+        }
+
+        fontSizeSlider.oninput = updateStyles;
+        hueRotateSlider.oninput = updateStyles;
+        eyeStrainSlider.oninput = updateStyles;
+        paddingSlider.oninput = updateStyles;
+        lineSpacingSlider.oninput = updateStyles;
+        fontFamilySelect.onchange = updateStyles;
+        resetButton.onclick = resetToDefaults;
+
+        loadSettings();
+
+    });
+</script>
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-title">Assessments With Generative AI: Before, During, and After</span></h1>
+</div>
+
+
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Authors</div>
+  <div class="quarto-title-meta-heading">Affiliations</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Lee Clift <a href="mailto:lee.clift@strath.ac.uk" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Department of Computer and Information Science, University of Strathclyde
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Olga Petrovska <a href="mailto:olga.petrovska@swansea.ac.uk" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            School of Mathematics and Computer Science, Swansea University
+          </p>
+      </div>
+  </div>
+
+<div class="quarto-title-meta">
+
+      
+  
+    
+  </div>
+  
+
+<div>
+  <div class="keywords">
+    <div class="block-title">Keywords</div>
+    <p>assessment, Generative AI, competency</p>
+  </div>
+</div>
+
+</header>
+
+
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>You have likely seen the impact of Generative AI (GenAI) on your career as an academic, whether through journals discussing GenAI authorship or students attempting to get away with using Large Language Models (LLMs) to write essays for them. This chapter discusses the way to harness the power of GenAI to make your life as an educator easier, particularly in the context of planning, conducting, and marking assignments. We will discuss how you can use GenAI to write and refine assignments and solutions, how it can be encouraged as an exploratory tool by students, and how you can use the tool to speed up marking large class sizes. All of the following tips are LLM-agnostic; you can use them with any model you prefer, such as <a href="https://chatgpt.com/">ChatGPT</a>, <a href="https://claude.ai/">Claude</a>, or <a href="https://copilot.microsoft.com/">Copilot</a>.</p>
+<section id="genai-and-llm-basics" class="level3">
+<h3 class="anchored" data-anchor-id="genai-and-llm-basics">GenAI and LLM Basics</h3>
+<p>Throughout this chapter, we will go into detail regarding the use of GenAI and LLMs. Put simply, GenAI refers to computer systems capable of creating new content, such as text, code, or images, based on patterns they have learned from vast amounts of existing data. This allows them to answer questions and make new content for us, based on what already exists (such as information on the internet). LLMs are a specific type of GenAI focused on understanding and generating human language. In this chapter we use the terms GenAI and LLM interchangeably as all our examples are referring only to text-based interactions with GenAI.</p>
+<p>It is important to highlight that our approach is LLM-agnostic. This means the techniques and prompts we discuss can be applied to whichever model you prefer, whether that is ChatGPT, <a href="https://gemini.google.com/">Google Gemini</a>, or <a href="https://www.apple.com/uk/apple-intelligence/">Apple Intelligence</a>. While different models often have specific strengths, we have found them all to be highly capable of performing the assessment-related tasks we outline in the following sections. If at any point during this chapter you feel overwhelmed or confused, we invite you to pause, open up your LLM of choice (such as ChatGPT or Gemini), and simply experiment with it. Explore its outputs and try a few small tasks yourself. As with many practical skills, the best way to learn is through immersion and exploration — not just by reading about it here!</p>
+</section>
+</section>
+<section id="before-assessment" class="level2">
+<h2 class="anchored" data-anchor-id="before-assessment">Before assessment</h2>
+<p>Imagine you need to design an assessment — whether it is a coursework, a lab task, or an exam. Depending on the level of involvement required, designing this assessment can be a time-consuming process. Between thinking of a fun task, writing it out, devising solutions, creating rubrics, and formatting, it quickly adds up. GenAI can help you streamline this process as it offers several time-savers. Let’s look at each of those in detail.</p>
+<section id="using-llms-to-draft-multiple-choice-questions" class="level3">
+<h3 class="anchored" data-anchor-id="using-llms-to-draft-multiple-choice-questions">Using LLMs to draft multiple choice questions</h3>
+<p>Multiple choice questions (MCQs) are convenient in a variety of situations: you may want to quickly check content comprehension during a lecture, create a revision resource, or design a scalable assessment for a large cohort, which is free of grading bias. The idea behind MCQs is attributed to Wood and Thorndike and dates back to the 1920s <span class="citation" data-cites="engelhard1988thorndike">(<a href="#ref-engelhard1988thorndike" role="doc-biblioref">Engelhard 1988</a>)</span>. One can design their own questions from scratch or refer to existing question banks. With the emergence of LLMs, educators have started exploring GenAI’s capabilities to brainstorm ideas and accelerate the creation of MCQs. Some companies even developed custom-made solutions for MCQ generation and other teaching-related tasks, e.g.&nbsp;<a href="https://teachermatic.com/generators-teaching/">TeacherMatic</a>. Yet, these systems often require additional licenses that your institution may not have. This, however, is not an issue and you still can generate MCQs using conventional general LLMs.</p>
+<p><span class="citation" data-cites="tran2023generating">Tran et al. (<a href="#ref-tran2023generating" role="doc-biblioref">2023</a>)</span> compared the capabilities of two OpenAI models to generate isomorphic MCQs, providing the <a href="https://web-cat.org/questionbank/">Canterbury Question Bank</a> as a reference. <span class="citation" data-cites="biancini2024multiple">Biancini et al. (<a href="#ref-biancini2024multiple" role="doc-biblioref">2024</a>)</span> experimented with creating MCQs with LLMs, providing a prompt that addresses three basic components of MCQs: <em>stem</em> (context for the question), <em>key</em> (correct answer), and <em>distractors</em> (incorrect options). While the prompt they provide is specifically designed for history-related questions, it can still be used as a starting point for other subjects.</p>
+<section id="practical-tip-grounding-your-questions" class="level4">
+<h4 class="anchored" data-anchor-id="practical-tip-grounding-your-questions">Practical tip: Grounding your questions</h4>
+<p>To get the most accurate results, do not ask the LLM to generate questions from its general knowledge. Instead, provide it with your specific teaching materials, such as a lecture PDF, a PowerPoint, or a book chapter. This ensures the questions align exactly with what you have taught.</p>
+<div class="callout callout-style-default callout-tip no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Example: MCQ generation
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<p><strong>Prompt example:</strong> Copy and paste the following prompt into your LLM after uploading your source material:</p>
+<blockquote class="blockquote">
+<p>You are an assistant who doesn’t make mistakes. If a reference model is presented to you, you follow it perfectly without making errors. Create a university-level quiz for [year x] students studying [subject] based on the provided file.</p>
+<p>You must strictly adhere to the following format without any errors:<br>
+[ Insert the question ]<br>
+a) [ Option A ]<br>
+b) [ Option B ]<br>
+c) [ Option C ]<br>
+d) [ Option D ]</p>
+<p>Correct Answer: [Insert the letter corresponding to the correct answer, for example: ‘a)’]</p>
+<p>Source: [Write the exact line or passage from the provided file where the information for this question can be found.].</p>
+<p>Note that you are allowed to modify only the parts within brackets ([…]) in the format provided.<br>
+Ensure that all four options are distinct.</p>
+</blockquote>
+<p><strong>Example output:</strong> Based on a lecture on Python programming, the LLM might produce:</p>
+<pre><code>Which keyword is used to create a function in Python?
+a) function
+b) method
+c) def
+d) create
+
+Correct Answer: c)
+Source: "To define a function in Python, we use the 'def' keyword followed by the function name." (Slide 14)</code></pre>
+</div>
+</div>
+</div>
+</section>
+<section id="reflection-the-importance-of-human-oversight" class="level4">
+<h4 class="anchored" data-anchor-id="reflection-the-importance-of-human-oversight">Reflection: The importance of human oversight</h4>
+<p>Crafting effective prompts that specify the desired format of GenAI output and refer to relevant subject content is crucial for drafting acceptable MCQs. Yet, human oversight is always recommended, especially if the MCQs refer to less common programming languages. Educators should be the final authority on the quality. Interestingly, though, a comparative study of human-crafted MCQs in programming versus those generated by AI has shown that the latter were actually more aligned to the learning objectives <span class="citation" data-cites="doughty2024comparative">(<a href="#ref-doughty2024comparative" role="doc-biblioref">Doughty et al. 2024</a>)</span>.</p>
+</section>
+</section>
+<section id="using-genai-to-write-an-assessment-brief" class="level3">
+<h3 class="anchored" data-anchor-id="using-genai-to-write-an-assessment-brief">Using GenAI to write an assessment brief</h3>
+<p>Courseworks are usually rather involved assignments and require a detailed brief. The prompt “recipe” is similar to that of MCQs: provide a <em>context</em> (specify the subject, the learning objectives, the audience, and the level at which this subject is assessed), and determine a <em>format</em> (by either manually describing it or providing a sample document for reference). You can also use LLMs to help refine your prompt by asking them to serve as your guide — something some LLM’s, e.g.&nbsp;<a href="https://openai.com/index/introducing-gpt-5/">GPT-5</a>, already offer. Once you’ve got the brief, review and refine it with your human insight.</p>
+<section id="practical-tip-providing-examples" class="level4">
+<h4 class="anchored" data-anchor-id="practical-tip-providing-examples">Practical tip: Providing examples</h4>
+<p>You can use GenAI to generate an assignment by following these steps:</p>
+<ol type="1">
+<li>Determine and define the key aspects: the assignment type, the concepts you wish to test, the level of study, and a potential theme. If you do not have a theme, you can ask an LLM for a suggestion.</li>
+<li>Provide some key teaching material you have used (either as PDFs, PPTs or code snippets) to help “ground” your assignment. When doing so, ensure that the LLM you are using does not use your content for training and does not make it publicly accessible. Educational institutions often have special licensing agreements with specific LLM providers to protect institutional data, so it is worth checking whether your university has such an agreement and which provider it covers.</li>
+<li>Provide a previous example (such as last year’s coursework) that an LLM can use to format your brief similarly to your previous assignments, so they all look uniform.</li>
+<li>Do not be afraid to ask for multiple suggestions or request changes. Review and refine the LLM output, and then follow institutional moderation guidelines.</li>
+</ol>
+<div class="callout callout-style-default callout-tip no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Example: Assessment brief
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<p><strong>Prompt example:</strong> Copy and paste the following prompt after uploading your materials:</p>
+<blockquote class="blockquote">
+<p>Acting as a university module leader, draft a coursework assessment brief for [Level of Study] students in [Subject].</p>
+<p>Use the provided [Teaching Materials] to ensure the task is relevant and use the [Previous Year’s Brief] as a reference for the structure and tone.</p>
+<p>The brief must include: A clear ‘Task Description’. Specific ‘Learning Outcomes’ being assessed. ‘Submission Requirements’ (e.g., file formats, word counts). A ‘Theme’ for the project (If I haven’t provided one, suggest three creative options).</p>
+</blockquote>
+<p><strong>Example output:</strong> Based on a Mobile App Development module, the LLM might produce:</p>
+<pre><code>Task Description: Develop a cross-platform mobile application using Flutter.
+Learning Outcomes: Demonstrate proficiency in asynchronous programming and UI/UX consistency.
+Suggested Theme: A "Campus Sustainability Tracker" where students map recycling points.
+Submission: A GitHub repository link and a 5-minute video demonstration.</code></pre>
+</div>
+</div>
+</div>
+</section>
+<section id="reflection-the-human-in-the-loop-workflow" class="level4">
+<h4 class="anchored" data-anchor-id="reflection-the-human-in-the-loop-workflow">Reflection: The “human-in-the-loop” workflow</h4>
+<p>While GenAI is excellent at formatting and brainstorming themes, it lacks the context of your specific cohort’s progress or institutional regulations. Some LLMs (such as <a href="https://openai.com/index/hello-gpt-4o/">GPT-4o</a> or <a href="https://www.anthropic.com/news/claude-3-5-sonnet">Claude 3.5</a>) can even act as a guide, asking you clarifying questions to refine the brief further. Once the output is generated, always review it against your institutional moderation guidelines to ensure it remains a valid and fair instrument of assessment. Feel free to ask it questions, or to make modifications against your own style or institutional policies, such as late work submission policy.</p>
+</section>
+</section>
+<section id="using-genai-to-design-and-format-a-marking-rubric" class="level3">
+<h3 class="anchored" data-anchor-id="using-genai-to-design-and-format-a-marking-rubric">Using GenAI to design and format a marking rubric</h3>
+<p>Once you have your brief written, you can get it to assist in writing a rubric. By stating the number of marks you want to award and some key learning objectives, you can quite easily create a marking rubric with discrimination between grades — you can even request this in various formats, such as a table or a standalone document.</p>
+<section id="practical-tip-building-step-by-step" class="level4">
+<h4 class="anchored" data-anchor-id="practical-tip-building-step-by-step">Practical tip: Building step by step</h4>
+<p>It is good practice to design your rubric in a step-by-step fashion. Here is a quick algorithm to do this:</p>
+<ol type="1">
+<li>Determine the key aspects that you want to evaluate — these will form the dimensions in your marking rubric. At this stage, you may prompt an LLM to provide suggestions based on specific learning objectives.</li>
+<li>For each dimension, decide on the number of points it should be worth, making sure that they add up to a full grade across all dimensions.</li>
+<li>For each dimension, prompt the LLM to break it down, depending on the number of points allocated for this dimension. Specify how fine-grained your rubric should be. Consider whether you want to base it on grade boundaries, the number of points, or work with ranges.</li>
+<li>Review and refine the LLM output, then add it to the marking rubric.</li>
+</ol>
+<div class="callout callout-style-default callout-tip no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Example: Marking rubric
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<p><strong>Prompt example:</strong> After uploading your Assessment Brief, use the following prompt:</p>
+<blockquote class="blockquote">
+<p>Based on the provided assessment brief, create a marking rubric in a table format.</p>
+<p>Use the following dimensions: [Insert Dimensions, e.g., ‘Technical Execution’ and ‘Critical Reflection’].</p>
+<p>Allocate [Insert Points] to each dimension. For each, provide detailed descriptors for the following grade boundaries: [Insert Boundaries, e.g., 70+, 60-69, 50-59, 40-49, and &lt;40]. Ensure the descriptors show clear progression and discrimination between the levels.</p>
+</blockquote>
+<p><strong>Example output:</strong> For a ‘Technical Execution’ dimension (100 points), the LLM might produce:</p>
+<pre><code>Grade
+Descriptor
+70+ (Distinction)
+Flawless execution. Code is optimized, fully commented, and follows all best practices.
+60-69 (Merit)
+High-quality execution with minor inefficiencies. Logic is sound and mostly commented.
+40-49 (Pass)
+Functional but unoptimized. Basic requirements are met with some structural errors.</code></pre>
+</div>
+</div>
+</div>
+</section>
+<section id="reflection-refining-the-rubric" class="level4">
+<h4 class="anchored" data-anchor-id="reflection-refining-the-rubric">Reflection: Refining the rubric</h4>
+<p>While an LLM is excellent at generating “scaffolded” text, it often relies on generic adjectives like “good” or “very good.” Review the output to ensure that a “70+” in your rubric specifically describes what a top-tier student in your field looks like. Additionally, you may not use terms like “good” and opt to use percentages or grade boundaries instead. Once refined, the LLM can also reformat this rubric into a standalone document or a table ready to be pasted into your Virtual Learning Environment (VLE).</p>
+</section>
+</section>
+<section id="using-genai-to-develop-a-model-solution" class="level3">
+<h3 class="anchored" data-anchor-id="using-genai-to-develop-a-model-solution">Using GenAI to develop a model solution</h3>
+<p>Finally, we can request a model solution that incorporates both of these components. This will vary significantly depending on the assignment type; it works best for tests and less well for essays. A typical rule of thumb is that the larger the assessment, the worse the model answer will be. Regardless, these model answers can be used to quickly estimate what a solution may look like — we can even request multiple solutions from different ability levels! This will help us understand the typical LLM style for solving the problem and provide a better idea of when students overrely on GenAI output.</p>
+<p>This can also serve an additional purpose — to test an LLM’s capability to solve your coursework. This can be a good way to see how “LLM-proof” your assignment is, especially if the use of GenAI is prohibited. This can aid in either redeveloping aspects of an assignment or in developing an understanding of how an LLM may assist students in completing this specific assignment.</p>
+<section id="practical-tip-combining-tools" class="level4">
+<h4 class="anchored" data-anchor-id="practical-tip-combining-tools">Practical tip: Combining tools</h4>
+<p>When asking for a model solution from an LLM, using both an assignment brief and a rubric can aid in getting better results. By using the rubric as a reference point, you can be specific about the model answer you are requesting, such as an answer that would receive 40% versus 60%, and quantify the differences.</p>
+<div class="callout callout-style-default callout-tip no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Example: Model solutions
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<p><strong>Example prompt:</strong> Input your Brief and Rubric first, then use this prompt:</p>
+<blockquote class="blockquote">
+<p>Act as a student attempting the provided assessment. Using the [Assessment Brief] and the [Marking Rubric] as your guide, generate two separate model solutions:</p>
+<p>A ‘High Distinction’ (80%+) response that follows every criterion perfectly.</p>
+<p>A ‘Pass’ (45-50%) response that meets the basic requirements but lacks depth in [Insert Specific Dimension, e.g., ‘Analysis’ or ‘Optimization’].</p>
+</blockquote>
+<p><strong>Example output:</strong> For a programming task, the LLM might produce:</p>
+<pre><code>High Distinction: [Code which includes full error handling, modular code, and a detailed README.]
+Pass: [Code which runs and completes the basic task, but lacks comments, uses "hard-coded" values, and has no error catching.]</code></pre>
+</div>
+</div>
+</div>
+</section>
+<section id="reflection-the-llm-proofing-test" class="level4">
+<h4 class="anchored" data-anchor-id="reflection-the-llm-proofing-test">Reflection: The “LLM-proofing” test</h4>
+<p>A general rule of thumb is that the larger and more open-ended the assessment, the more the model answer’s quality will degrade. However, by generating these solutions, you can determine if your assignment is too easily solved by a single prompt. If an LLM provides a perfect 80%+ answer instantly, you may want to redevelop certain aspects, such as adding a reflective component or a specific real-world constraint, to ensure the assignment remains a true test of student skill.</p>
+</section>
+</section>
+</section>
+<section id="during-assessments" class="level2">
+<h2 class="anchored" data-anchor-id="during-assessments">During assessments</h2>
+<p>While all the above uses of GenAI revolved around helping you to write an assignment, we should not forget that using LLMs effectively is becoming a desired skill <span class="citation" data-cites="petrovska2023generative">(<a href="#ref-petrovska2023generative" role="doc-biblioref">Petrovska et al. 2023</a>)</span>. Hence, we need to prepare students for the real-world challenges, where businesses are proactively integrating LLMs into their processes. How do we do this? By offering them more authentic assignments that encourage them to explore different aspects of LLMs, students can learn to use these tools as helpers and not all-knowing oracles.</p>
+<p>In our experience, students generally enjoy exploring GenAI as part of an assessment activity, provided it is not mandatory. Some students are ethically opposed to using GenAI; therefore, offering it as an optional assistive tool allows those who wish to engage with it to do so, without requiring participation from those who prefer not to use it. In cases where GenAI usage is required (such as reflective exercises — covered in the upcoming sections), providing examples for students to reflect without having to use the tool themselves can help mitigate any student concerns.</p>
+<section id="tasks-around-interaction-with-genai-and-critical-evaluation-of-its-output" class="level3">
+<h3 class="anchored" data-anchor-id="tasks-around-interaction-with-genai-and-critical-evaluation-of-its-output">Tasks around interaction with GenAI and critical evaluation of its output</h3>
+<p>This can be anything from asking students to compare their own code with GenAI output or asking GenAI to provide several versions of a problem solution and encouraging students to determine which one is the best <span class="citation" data-cites="petrovska2024incorporating">(<a href="#ref-petrovska2024incorporating" role="doc-biblioref">Petrovska et al. 2024</a>)</span>. Alternatively, students can be given a set of solutions — some human-written and some generated by GenAI — without being told their origin <span class="citation" data-cites="petrovska2025assessing">(<a href="#ref-petrovska2025assessing" role="doc-biblioref">Petrovska et al. 2025</a>)</span>, and asked to identify the best solution and explain the drawbacks of the others. Such hands-on experience and exposure to GenAI’s imperfections should, hopefully, build a more conscientious approach to using these tools.</p>
+</section>
+<section id="reflective-components-in-programming-assignments" class="level3">
+<h3 class="anchored" data-anchor-id="reflective-components-in-programming-assignments">Reflective components in programming assignments</h3>
+<p>Historically, programming assignments have been evaluated based on whether the software could pass test cases and whether the code quality met a certain standard. From our informal discussions with other academics who teach programming, many begin to reconsider this approach. Understanding the code and being able to explain it becomes a more accurate criterion for assessing skill acquisition. If this resonates with you, consider incorporating various reflective components into your assessments, outside of typical code comprehension and understanding. Ask yourself: are students aware of the ethical and social implications of using GenAI? Are they aware and concerned about copyright and other legal implications? Are they observant and conscious about the impact of GenAI on their learning? Programming assignments do not have to be purely about programming, so feel free to add some extra tasks in the form of a reflective log, a video, or any other format that you find appropriate.</p>
+</section>
+<section id="allowing-unlimited-but-documented-use-of-genai" class="level3">
+<h3 class="anchored" data-anchor-id="allowing-unlimited-but-documented-use-of-genai">Allowing unlimited (but documented) use of GenAI</h3>
+<p>In one of our experimental studies <span class="citation" data-cites="clift2025learning">(<a href="#ref-clift2025learning" role="doc-biblioref">Clift and Petrovska 2025</a>)</span>, we have allowed students to use GenAI without restriction for their mobile application development projects. A word of warning: this type of exposure is not recommended for novice programmers, as their metacognitive skills and self-efficacy may not be well developed. They may not have acquired the required fundamental skills to fully appreciate and understand the benefits GenAI can offer or recognise its pitfalls. When applied to experienced programmers (for example, final-year degree students), the inclusion of, and unlimited access to, these tools can provide a constructivist learning environment in which students explore how the tools work and how to integrate them effectively into their own development processes. Results show that allowing GenAI usage during assessments leads to larger, more ambitious solutions being attained, while also encouraging students to learn about GenAI tools and their capabilities <span class="citation" data-cites="clift2025learning">(<a href="#ref-clift2025learning" role="doc-biblioref">Clift and Petrovska 2025</a>)</span>.</p>
+</section>
+<section id="using-genai-as-an-instant-feedback-tool" class="level3">
+<h3 class="anchored" data-anchor-id="using-genai-as-an-instant-feedback-tool">Using GenAI as an instant feedback tool</h3>
+<p>Alongside the explicit use of GenAI during a summative assessment, there is also potential to integrate GenAI into a more freeform, formative assessment process. This would allow students to explore and utilise GenAI during activities such as lab sessions, which are lower-risk and more casual than a typical summative assessment. One key example of this is <a href="https://pll.harvard.edu/course/cs50-introduction-computer-science">CS50</a> — Harvard University’s Intro to Computer Science class. The class is run both in-person and remotely, and is currently the most popular Intro to CS class in the world. CS50 introduced a GenAI model trained off their own resources called <a href="https://marketplace.visualstudio.com/items?itemName=CS50.ddb50">CS50 Duck</a> <span class="citation" data-cites="liu2024teaching">(<a href="#ref-liu2024teaching" role="doc-biblioref">Liu et al. 2024</a>)</span>. CS50 Duck allows students, either remotely or in person, to seek instant help on problem sheets during formative assessments, while retaining the metacognitive benefits from reinforcing theory through problem sessions. This is achieved through the style of answers provided by CS50 Duck, including guards that prevent students getting a direct answer, instead helping them work towards the answer by asking questions, similar to those of a lab demonstrator or teacher.</p>
+<section id="practical-tip-prompting-for-an-ai-tutor" class="level4">
+<h4 class="anchored" data-anchor-id="practical-tip-prompting-for-an-ai-tutor">Practical tip: Prompting for an AI tutor</h4>
+<p>Naturally, not all of us have access to the resources of CS50 or Harvard, and therefore, it can not be expected that we can build a system like CS50 Duck. However, by utilising an existing LLM, we can create something similar, through clever uses of prompts and by providing our taught content. This would allow us to provide an LLM to our students, enabling them to use it to solve problems rather than have it solve them.</p>
+<div class="callout callout-style-default callout-tip no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Example prompt
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<blockquote class="blockquote">
+<p>Act as a Tutor for a computer science student.</p>
+<p>I am working on [Topic/Problem]. My current logic is: [Insert Student Logic/Code].</p>
+<p>Your Rules: Do NOT give me the correct code or the direct answer. Ask me a guiding question that helps me identify the flaw in my own logic. If I am stuck, give me a small hint related to [Insert Specific Concept or topic].</p>
+</blockquote>
+</div>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section id="after-assessments-writing-feedback" class="level2">
+<h2 class="anchored" data-anchor-id="after-assessments-writing-feedback">After assessments: writing feedback</h2>
+<p>Finally, we have received the students’ summative assignments, and one of the most dreaded tasks is now here: marking! We do not endorse using GenAI to mark for you, although some educators have explored such possibilities <span class="citation" data-cites="banihashem2024feedback">(<a href="#ref-banihashem2024feedback" role="doc-biblioref"><span class="nocase">Banihashem et al.</span> 2024</a>)</span> and several ed-tech companies are testing feedback generation capabilities of their GenAI solutions. One needs to understand that certain ethical and copyright concerns arise from submitting students’ work to an LLM. Hence, we encourage continuing to mark the usual way, but utilising GenAI to help you create feedback that is detailed and constructive. With larger classes, providing all students with well-written, detailed feedback is a significant challenge and a time-consuming task. Here is a way to speed up the process while still keeping your feedback customised for each student.</p>
+<section id="practical-tip-the-feedback-persona" class="level3">
+<h3 class="anchored" data-anchor-id="practical-tip-the-feedback-persona">Practical tip: The “Feedback Persona”</h3>
+<p>Using GenAI, you can create a “Feedback Persona” simply by “teaching” a standard LLM your personal style.</p>
+<p><strong>The Setup:</strong> Open a new chat session in your LLM of choice. Paste 3–5 examples of your own past, high-quality feedback.</p>
+<p><strong>The Instruction:</strong> Provide your LLM with a description and some examples of your feedback style.</p>
+<blockquote class="blockquote">
+<p>This is my feedback style. It is encouraging but rigorous. I will provide you with bulleted marking notes, and I want you to turn them into two coherent paragraphs of feedback addressed to the student.</p>
+</blockquote>
+<p><strong>The Workflow:</strong> For each student, simply paste your shorthand notes. This keeps the feedback customised to the student’s actual work while saving you the “blank page” fatigue of drafting 100+ individual paragraphs of feedback.</p>
+<div class="callout callout-style-default callout-tip no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Example: generating feedback
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-6" class="callout-6-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<p><strong>Example prompt:</strong> Once you have established your style in the chat, use this prompt for each submission:</p>
+<blockquote class="blockquote">
+<p>Using the feedback style I previously provided, transform these marking notes into a constructive feedback response for a student.</p>
+<p>Marking Notes:</p>
+<p>• [Note 1: e.g., Great use of Python libraries, very efficient.]</p>
+<p>• [Note 2: e.g., Missed the requirement for error handling on line 42.]</p>
+<p>• [Note 3: e.g., Next time, try to modularize the functions.] …</p>
+<p>Ensure the tone remains [Insert Tone, e.g., Professional and encouraging].</p>
+</blockquote>
+<p><strong>Example output:</strong> The LLM transforms your notes into:</p>
+<pre><code>You have demonstrated a strong grasp of Python libraries in this assignment; your implementation was notably efficient and well-structured. However, I noticed that the error-handling requirement was missing around line 42, which is critical for program stability. For your next project, I encourage you to focus on modularising your functions further to improve code reusability.</code></pre>
+</div>
+</div>
+</div>
+</section>
+<section id="reflection-ethics-and-the-human-in-the-loop" class="level3">
+<h3 class="anchored" data-anchor-id="reflection-ethics-and-the-human-in-the-loop">Reflection: Ethics and the “human-in-the-loop”</h3>
+<p>When using a “Feedback Persona”, data privacy is paramount. Never input a student’s full name, ID number, or sensitive personal details into a public LLM. As mentioned earlier, some institutions may provide you with a more secure, local version of an LLM for safer use. Please read your institution’s policy on GenAI and LLM usage before attempting this.</p>
+<p>It is also important to consider what staff-generated materials are shared with commercial LLMs. Uploading assignment briefs, marking schemes, or model solutions to public systems may result in this content being incorporated into future model training data, depending on the provider’s policies. This creates a risk that students could later access high-quality or even complete solutions via the same tools. Where possible, opt out of data sharing (sometimes referred to as incognito or private mode), use institutionally approved systems, or avoid uploading full solutions altogether.</p>
+<p>Treat the AI-generated text as a “first draft” — always review it to ensure it accurately reflects your marking notes before sending it to the student. Transparency is also key; informing students that you use GenAI to help synthesise your handwritten notes into formal feedback builds trust and models professional GenAI usage. In our experience, students have been okay with this, and when they have challenged it, we have provided them with the raw feedback notes to show that marking has been done manually.</p>
+</section>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>That’s it; using those tips, you can adapt your assessment process to integrate this new tool into your practice, regardless of assessment type or field. We expect to see this field change and evolve. Many of the tips and prompts we have suggested can also be used to design simple GenAI agents — small, task‑focused systems built on top of an LLM. In tools like Copilot these agents can be created in an accessible, streamlined form that effectively “pre‑trains” the model to understand the structure, style, and type of output you want, without you having to repeat detailed instructions each time. Once you feel comfortable with the basics of using GenAI, exploring these lightweight agents can be a powerful way to simplify your workflow.</p>
+</section>
+<section id="references" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="references">References</h2>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-banihashem2024feedback" class="csl-entry" role="listitem">
+<span class="nocase">Banihashem, S. K., N. T. Kerman, O. Noroozi, et al.</span> 2024. <span>“Feedback Sources in Essay Writing: Peer-Generated or AI-Generated Feedback?”</span> <em>International Journal of Educational Technology in Higher Education</em> 21: 23. <a href="https://doi.org/10.1186/s41239-024-00455-4">https://doi.org/10.1186/s41239-024-00455-4</a>.
+</div>
+<div id="ref-biancini2024multiple" class="csl-entry" role="listitem">
+Biancini, G., A. Ferrato, and C. Limongelli. 2024. <span>“Multiple-Choice Question Generation Using Large Language Models: Methodology and Educator Insights.”</span> <em>Adjunct Proceedings of the 32nd ACM Conference on User Modeling, Adaptation and Personalization (UMAP Adjunct’24)</em> (New York (NY)), 584–90. <a href="https://doi.org/10.1145/3631700.3665233">https://doi.org/10.1145/3631700.3665233</a>.
+</div>
+<div id="ref-clift2025learning" class="csl-entry" role="listitem">
+Clift, L., and O. Petrovska. 2025. <span>“Learning Without Limits: Analysing the Usage of Generative AI in a Summative Assessment.”</span> <em>Proceedings of the 9th Conference on Computing Education Practice (CEP’25)</em> (New York (NY)), 5–8. <a href="https://doi.org/10.1145/3702212.3702214">https://doi.org/10.1145/3702212.3702214</a>.
+</div>
+<div id="ref-doughty2024comparative" class="csl-entry" role="listitem">
+Doughty, J., Z. Wan, A. Bompelli, et al. 2024. <span>“A Comparative Study of AI-Generated (GPT-4) and Human-Crafted MCQs in Programming Education.”</span> <em>Proceedings of the 26th Australasian Computing Education Conference (ACE’24)</em> (New York (NY)), 114–23. <a href="https://doi.org/10.1145/3636243.3636256">https://doi.org/10.1145/3636243.3636256</a>.
+</div>
+<div id="ref-engelhard1988thorndike" class="csl-entry" role="listitem">
+Engelhard, G. 1988. <em>Thorndike’s and Wood’s Principles of Educational Measurement: A View from the 1980’s</em>. National Academy of Education. <a href="https://eric.gov/?id=ED295961">https://eric.gov/?id=ED295961</a>.
+</div>
+<div id="ref-liu2024teaching" class="csl-entry" role="listitem">
+Liu, R., C. Zenke, C. Liu, A. Holmes, P. Thornton, and D. J. Malan. 2024. <span>“Teaching CS50 with AI: Leveraging Generative Artificial Intelligence in Computer Science Education.”</span> <em>Proceedings of the 55th ACM Technical Symposium on Computer Science Education. Volume 1 (SIGCSE 2024)</em> (New York (NY)), 750–56. <a href="https://doi.org/10.1145/3626252.3630938">https://doi.org/10.1145/3626252.3630938</a>.
+</div>
+<div id="ref-petrovska2023generative" class="csl-entry" role="listitem">
+Petrovska, O., L. Clift, and F. Moller. 2023. <span>“Generative AI in Software Development Education: Insights from a Degree Apprenticeship Programme.”</span> <em>Proceedings of the 2023 Conference on United Kingdom &amp; Ireland Computing Education Research (UKICER’23)</em> (New York (NY)). <a href="https://doi.org/10.1145/3610969.3611132">https://doi.org/10.1145/3610969.3611132</a>.
+</div>
+<div id="ref-petrovska2024incorporating" class="csl-entry" role="listitem">
+Petrovska, O., L. Clift, F. Moller, and R. Pearsall. 2024. <span>“Incorporating Generative AI into Software Development Education.”</span> <em>Proceedings of the 8th Conference on Computing Education Practice (CEP’24)</em> (New York (NY)), 37–40. <a href="https://doi.org/10.1145/3633053.3633057">https://doi.org/10.1145/3633053.3633057</a>.
+</div>
+<div id="ref-petrovska2025assessing" class="csl-entry" role="listitem">
+Petrovska, O., R. Pearsall, and L. Clift. 2025. <span>“Assessing Software Engineering Students’ Analytical Skills in the Era of Generative AI.”</span> <em>Proceedings of the 9th Conference on Computing Education Practice (CEP’25)</em> (New York (NY)). <a href="https://doi.org/10.1145/3702212.3702223">https://doi.org/10.1145/3702212.3702223</a>.
+</div>
+<div id="ref-tran2023generating" class="csl-entry" role="listitem">
+Tran, A., K. Angelikas, E. Rama, C. Okechukwu, D. H. Smith, and S. MacNeil. 2023. <span>“Generating Multiple Choice Questions for Computing Courses Using Large Language Models.”</span> <em>2023 IEEE Frontiers in Education Conference (FIE)</em> (College Station, TX, USA), 1–8. <a href="https://doi.org/10.1109/FIE58773.2023.10342898">https://doi.org/10.1109/FIE58773.2023.10342898</a>.
+</div>
+</div>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./C01_teaching-python.html" class="pagination-link" aria-label="A Practical Guide to Teaching Python as a Computational Tool in an Introductory Data Analysis Course">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">A Practical Guide to Teaching Python as a Computational Tool in an Introductory Data Analysis Course</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./C03_online-teaching-reflections.html" class="pagination-link" aria-label="Reflections on Online Teaching">
+        <span class="nav-page-text"><span class="chapter-title">Reflections on Online Teaching</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
