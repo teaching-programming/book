@@ -4,19 +4,19 @@ bibliography: references.bib
 author:
   - name: Andrew MacLaren
     email: a.maclaren@hw.ac.uk
-    affiliations: Heriot-Watt University
+    affiliations: School of Social Sciences, Heriot-Watt University
 
   - name: Frederik Madsen
     email: f.d.madsen@sms.ed.ac.uk
-    affiliations: University of Edinburgh; British Geological Survey
+    affiliations: School of GeoSciences, University of Edinburgh; Lyell Centre, British Geological Survey
 
   - name: Antonia Voigt
     email: a.voigt@surrey.ac.uk
-    affiliations: University of Surrey
+    affiliations: Surrey Business School, University of Surrey
 
   - name: Alex Buckley
     email: Alex.Buckley@hw.ac.uk
-    affiliations: Heriot-Watt University
+    affiliations: Learning and Teaching Academy, Heriot-Watt University
 
   - name: Tom Farrington
     email: t.farrington@yahoo.com
@@ -32,7 +32,7 @@ keywords:
 
 ## A failing system or failure to recognise the system?
 
-A university’s approach to feedback is a representation of multiple elements of its relationship with its students. Therefore, our assessment policy decisions transcend the whole institutional landscape to include things such as admissions/retention, student experience, National Student Survey, safeguarding and transparency, workload models and student employment, as well as the academic progress of our students. Feedback is embedded within a system, and innovating in feedback benefits from acknowledging its multidimensional, interdependent features. However, conventional approaches to feedback tend to be limited because they are not framed within the broader institutional system. In this chapter, we introduce the Action Feedback Protocol (AFP), a systems-oriented approach to feedback that aligns student feedback literacy with a simple, efficient approach to producing feedback, all of which is directed towards encouraging the learner to take action. 
+A university's approach to feedback reflects multiple aspects of its relationship with students. Decisions about assessment policy affect the whole institutional landscape, including retention, student experience, National Student Survey results, transparency, staff workload and student employment, as well as students' academic progress. Feedback is embedded within a system, and innovating in feedback benefits from acknowledging its multidimensional, interdependent features. However, conventional approaches to feedback tend to be limited because they are not framed within the broader institutional system. In this chapter, we introduce the Action Feedback Protocol (AFP), a systems-oriented approach to feedback that aligns student feedback literacy with a simple, efficient approach to producing feedback, all of which is directed towards encouraging the learner to take action. 
 
 We, the authors of this chapter have been involved in the development of the AFP since it began in 2019. We represent the tricky and interdependent moving parts of the feedback Rubik’s cube, including: the students (Antonia was among the first student cohorts to use the AFP and has since completed her PhD in Education); the educators (Andrew and Tom are both Social Scientists, Frederik is a Geophysicist); and the institution (Alex is the assessment and feedback lead for Heriot-Watt’s Learning and Teaching Academy). And a bit like a Rubik’s cube, the AFP is also a 3x3 system: three dimensions that centre around three comments in written feedback.
  
@@ -50,9 +50,9 @@ This dimension involves focusing on improving learners’ feedback literacy, thr
 
 At the centre of the AFP system is the ‘three comments approach’. This involves providing feedback comments in a way that is concise, targeted and actionable by following a simple, evidence-based and efficient way of producing feedback comments. The comments are clearly signposted, are presented in a defined order, and use content that is Specific, Substantive, and Supportive (what we call the ‘three Ss’). 
 
-- Comment 1 Motivates: it identifies the main area (or areas) done well in the work and encourages the student to keep up that good practice in the future. 
-- Comment 2 Informs: it identifies the main area (or areas) not done so well that were specific to the assessment and explain how they could have been better. In written work, it may be helpful to quote an example from the submission and explain how it could be improved; in calculation-based work, suggesting an alternative formula or a more efficient approach to the calculations may be helpful. 
-- Comment 3 ‘Feeds forward’: it identifies a point of process that is generally applicable to assessed work on the programme (or later in a specific course), suggesting ways in which that could be improved for future work. For example, if several errors relate to a foundational principle or law in the subject, directing a student to revisit that will help them in future work. Or, it may be a specific technique that is applicable to multiple assessment types, such as referencing or notation. 
+- **Comment 1 Motivates:** it identifies the main area (or areas) done well in the work and encourages the student to keep up that good practice in the future. 
+- **Comment 2 Informs:** it identifies the main area (or areas) not done so well that were specific to the assessment and explain how they could have been better. In written work, it may be helpful to quote an example from the submission and explain how it could be improved; in calculation-based work, suggesting an alternative formula or a more efficient approach to the calculations may be helpful. 
+- **Comment 3 ‘Feeds forward’:** it identifies a point of process that is generally applicable to assessed work on the programme (or later in a specific course), suggesting ways in which that could be improved for future work. For example, if several errors relate to a foundational principle or law in the subject, directing a student to revisit that will help them in future work. Or, it may be a specific technique that is applicable to multiple assessment types, such as referencing or notation. 
 
 ### Encourage Action
 
@@ -74,7 +74,7 @@ Something that might help you in future work would be to consider report writing
 **Now Make an Action Plan For Your Feedback!**
 Now that you have read your feedback, it is important that you take action on it.
 
-Feedback not acted upon is not really feedback, so now it is up to you to make an action plan to ensure you make the most of this feedback and use it in your future work. You can make your action plan by simply hitting ‘add comment’ below, or even better you can DOWNLOAD THE FEEDBACK PORTFOLIO on the [‘Making the Most of Feedback’ site](https://sites.google.com/view/makingthemostoffeedback/home). This will help you make an action plan and track your progress across all your assessed work.
+Feedback not acted upon is not really feedback, so now it is up to you to make an action plan to ensure you make the most of this feedback and use it in your future work. You can make your action plan by simply hitting ‘add comment’ below, or even better you can **download the feedback portfolio** on the [‘Making the Most of Feedback’ site](https://sites.google.com/view/makingthemostoffeedback/home). This will help you make an action plan and track your progress across all your assessed work.
 
 :::
 
