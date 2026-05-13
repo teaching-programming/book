@@ -56,7 +56,7 @@ book:
         - 00-chapter-template.qmd
         - CAB_Author-bio-placeholder.qmd
         - C01_teaching-python.qmd
-#        - C02_genai-before-during-after.qmd
+        - C02_genai-before-during-after.qmd
         - C03_online-teaching-reflections.qmd
 #        - C04_computer-says-no.qmd
         - C05_coding-mindset.qmd
@@ -64,13 +64,15 @@ book:
         - C07_teaching-C-to-novices.qmd
         - C08_hype-need-responsible-compute.qmd
 #        - C09_debugging-beyond-the-debugger.qmd
+#        - C08_ai-boom-or-bust.qmd
+        - C09_debugging-beyond-the-debugger.qmd
         - C10_teaching-with-genai.qmd
         - C11_sequential-vs-simultaneous.qmd
         - C12_pair-programming-overview.qmd
 #        - C13_pair-programming-adventure.qmd
         - C14_foster-inclusion-and-accessibility.qmd
         - C15_programming-without-computers.qmd
-#        - C16_pair-programming-extensions.qmd
+        - C16_peer-programming.qmd
 #        - C17_coding-with-music.qmd
 #        - C18_social-learning-modelling.qmd
 #        - C19_genai-capabilities-and-challenges.qmd
