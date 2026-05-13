@@ -70,7 +70,7 @@ book:
 #        - C17_coding-with-music.qmd
 #        - C18_social-learning-modelling.qmd
 #        - C19_genai-capabilities-and-challenges.qmd
-#        - C20_automatic-marking.qmd
+        - C20_automatic-marking.qmd
         - C21_programming-across-disciplines-systems-thinking.qmd
         - C22_interdisciplinary-by-design.qmd
         - C23_pair-programming-fusion.qmd
@@ -79,7 +79,7 @@ book:
 #        - C26_assessment-and-feedback-overview.qmd
 #        - C27_curriculum-design-overview.qmd
 #        - C28_incorporating-reproducibility.qmd
-#        - C29_notebooks-for-novices.qmd
+        - C29_notebooks-for-novices.qmd
 #        - C30_project-based-teaching.qmd
 #        - C31_leveraging-the-heterogeneity.qmd
         - C32_civil-engineering.qmd

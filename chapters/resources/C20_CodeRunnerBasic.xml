@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 36661544  -->
+  <question type="coderunner">
+    <name>
+      <text>Basic input/output evaluation</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Write a C program that accepts the following input from the keyboard:</p>
+<ul>
+<li>Student’s first name</li>
+<li>Student's last name</li>
+<li>Student ID number</li>
+<li>Student's age</li>
+</ul>
+<p>The program should then ask for the student’s marks as <strong>integers</strong>. It should use a loop to read the marks. The user should be allowed to enter up to 10 marks, or stop early by entering -1 (see the example below).</p>
+<p>Your program should then use another loop to print the marks and calculate the average mark. If at least one mark is entered, the program should print the average mark to one decimal place</p>
+<p>The program must validate all inputs. For example, each mark must be in the range 0 to 100. If an invalid input is entered, the program should print "<code>Invalid input!</code>" and prompt the user again.</p>
+<p>An example of the output is shown below. Letters in <strong><span class="" style="color: #ee3224;">bold red</span></strong> represent user input; the rest should be printed by your program.</p>
+<pre>What is your first name? <strong><span class="" style="color: #ee3224;">John</span></strong><br>What is your last name? <strong><span class="" style="color: #ee3224;">Smith</span></strong><br>What is your ID number? <strong><span class="" style="color: #ee3224;">00987654</span></strong><br>What is your age? <strong><span class="" style="color: #ee3224;">23</span></strong><br>Enter mark 1 (or -1 to terminate): <strong><span class="" style="color: #ee3224;">30</span></strong><br>Enter mark 2 (or -1 to terminate): <strong><span class="" style="color: #ee3224;">67</span></strong><br>Enter mark 3 (or -1 to terminate): <strong><span class="" style="color: #ee3224;">544</span><br></strong>Invalid input!<strong><br></strong>Enter mark 3 (or -1 to terminate): <strong><span class="" style="color: #ee3224;">54</span></strong><br>Enter mark 4 (or -1 to terminate): <strong><span class="" style="color: #ee3224;">34</span></strong><br>Enter mark 5 (or -1 to terminate): <strong><span class="" style="color: #ee3224;">-1</span></strong><br>First name: John<br>Last name: Smith<br>ID: 00987654<br>Age: 23<br>Mark 1: 30<br>Mark 2: 67<br>Mark 3: 54<br>Mark 4: 34<br>Average: 46.3</pre>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>10</defaultgrade>
+    <penalty>0</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <coderunnertype>c_program</coderunnertype>
+    <prototypetype>0</prototypetype>
+    <allornothing>0</allornothing>
+    <penaltyregime>0</penaltyregime>
+    <precheck>2</precheck>
+    <hidecheck>1</hidecheck>
+    <showsource>0</showsource>
+    <answerboxlines>18</answerboxlines>
+    <answerboxcolumns>100</answerboxcolumns>
+    <answerpreload></answerpreload>
+    <globalextra></globalextra>
+    <useace></useace>
+    <resultcolumns></resultcolumns>
+    <template></template>
+    <iscombinatortemplate></iscombinatortemplate>
+    <allowmultiplestdins></allowmultiplestdins>
+    <answer><![CDATA[/* This program asks for student's info and 10 marks or until user enters -1
+   using loops, and prints all data and average mark
+   Author: Leila            V5.0 */
+#include <stdio.h>
+#define MAX 10
+#include <stdbool.h>
+int main(void)
+{
+    char fname[50];
+    char lname[50];
+    char studentID[10];
+	int age;
+	int mark[MAX];
+    int sum = 0;
+    int ret;
+    int num_marks = 0;
+    printf("What is your first name? ");
+    scanf("%s", fname);
+    printf("What is your last name? ");
+    scanf("%s", lname);
+    printf("What is your ID number? ");
+    scanf("%s", studentID);
+
+    while(true)
+    {
+        printf("What is your age? ");
+        ret = scanf(" %d", &age);
+        for ( int c; c = getchar(), c != '\n' && c != EOF; ); // To clear input
+        if (ret == 1 && age>0)
+            break;
+        else
+        {
+            printf("Invalid input!\n");
+        }
+    }
+
+    num_marks = MAX;
+
+    for (int i=0; i<MAX; i++)
+    {
+        while(true)
+        {
+
+            printf("Enter mark %d (or -1 to terminate): ", i + 1);
+            ret = scanf("%d", &mark[i]);
+            //setbuf(stdin,NULL);
+            for ( int c; c = getchar(), c != '\n' && c != EOF; ); // To clear input
+            if (ret != 1)
+            {
+                printf("Invalid input!\n");
+
+            }
+            else if(mark[i] < -1 || mark[i] > 100)
+                printf("Invalid input!\n");
+            else break;
+
+        }
+        if (mark[i] == -1){
+            num_marks = i;
+            break;
+        }
+    }
+
+
+
+	printf("First name: %s\n", fname);
+	printf("Last name: %s\n", lname);
+	printf("ID: %s\n", studentID);
+	printf("Age: %d\n", age);
+
+    for(int i=0; i<num_marks; i++)
+    {
+        printf("Mark %d: %d\n", i+1, mark[i]);
+        sum = sum + mark[i];
+    }
+
+    if (num_marks !=0) printf("Average: %.1f\n", (float)sum/num_marks);
+
+    return 0;
+}
+]]></answer>
+    <validateonsave>1</validateonsave>
+    <testsplitterre></testsplitterre>
+    <language></language>
+    <acelang></acelang>
+    <sandbox></sandbox>
+    <grader></grader>
+    <cputimelimitsecs></cputimelimitsecs>
+    <memlimitmb></memlimitmb>
+    <sandboxparams></sandboxparams>
+    <templateparams></templateparams>
+    <hoisttemplateparams>1</hoisttemplateparams>
+    <extractcodefromjson>1</extractcodefromjson>
+    <templateparamslang>None</templateparamslang>
+    <templateparamsevalpertry>0</templateparamsevalpertry>
+    <templateparamsevald>{}</templateparamsevald>
+    <twigall>0</twigall>
+    <uiplugin></uiplugin>
+    <uiparameters></uiparameters>
+    <attachments>0</attachments>
+    <attachmentsrequired>0</attachmentsrequired>
+    <maxfilesize>10240</maxfilesize>
+    <filenamesregex></filenamesregex>
+    <filenamesexplain></filenamesexplain>
+    <displayfeedback>0</displayfeedback>
+    <giveupallowed>0</giveupallowed>
+    <prototypeextra></prototypeextra>
+    <testcases>
+      <testcase testtype="0" useasexample="0" hiderestiffail="0" mark="1.0000000" >
+      <testcode>
+                <text>Test 1.1 - Basic input with 3 marks.</text>
+      </testcode>
+      <stdin>
+                <text>Mary
+Parade
+65437
+20
+80
+70
+60
+-1</text>
+      </stdin>
+      <expected>
+                <text>What is your first name? What is your last name? What is your ID number? What is your age? Enter mark 1 (or -1 to terminate): Enter mark 2 (or -1 to terminate): Enter mark 3 (or -1 to terminate): Enter mark 4 (or -1 to terminate): First name: Mary
+Last name: Parade
+ID: 65437
+Age: 20
+Mark 1: 80
+Mark 2: 70
+Mark 3: 60
+Average: 70.0
+</text>
+      </expected>
+      <extra>
+                <text></text>
+      </extra>
+      <display>
+                <text>SHOW</text>
+      </display>
+    </testcase>
+      <testcase testtype="0" useasexample="0" hiderestiffail="0" mark="1.0000000" >
+      <testcode>
+                <text>Test 1.2 - Basic input with 7 marks.</text>
+      </testcode>
+      <stdin>
+                <text>Linda
+Hamilton
+87654321
+35
+87
+67
+33
+65
+45
+54
+70
+-1</text>
+      </stdin>
+      <expected>
+                <text>What is your first name? What is your last name? What is your ID number? What is your age? Enter mark 1 (or -1 to terminate): Enter mark 2 (or -1 to terminate): Enter mark 3 (or -1 to terminate): Enter mark 4 (or -1 to terminate): Enter mark 5 (or -1 to terminate): Enter mark 6 (or -1 to terminate): Enter mark 7 (or -1 to terminate): Enter mark 8 (or -1 to terminate): First name: Linda
+Last name: Hamilton
+ID: 87654321
+Age: 35
+Mark 1: 87
+Mark 2: 67
+Mark 3: 33
+Mark 4: 65
+Mark 5: 45
+Mark 6: 54
+Mark 7: 70
+Average: 60.1
+</text>
+      </expected>
+      <extra>
+                <text></text>
+      </extra>
+      <display>
+                <text>SHOW</text>
+      </display>
+    </testcase>
+      <testcase testtype="0" useasexample="0" hiderestiffail="0" mark="1.0000000" >
+      <testcode>
+                <text>Test 1.3 - Basic input with 9 marks.</text>
+      </testcode>
+      <stdin>
+                <text>Linda
+Hamilton
+87654321
+35
+87
+67
+33
+65
+45
+54
+67
+86
+70
+-1</text>
+      </stdin>
+      <expected>
+                <text>What is your first name? What is your last name? What is your ID number? What is your age? Enter mark 1 (or -1 to terminate): Enter mark 2 (or -1 to terminate): Enter mark 3 (or -1 to terminate): Enter mark 4 (or -1 to terminate): Enter mark 5 (or -1 to terminate): Enter mark 6 (or -1 to terminate): Enter mark 7 (or -1 to terminate): Enter mark 8 (or -1 to terminate): Enter mark 9 (or -1 to terminate): Enter mark 10 (or -1 to terminate): First name: Linda
+Last name: Hamilton
+ID: 87654321
+Age: 35
+Mark 1: 87
+Mark 2: 67
+Mark 3: 33
+Mark 4: 65
+Mark 5: 45
+Mark 6: 54
+Mark 7: 67
+Mark 8: 86
+Mark 9: 70
+Average: 63.8
+</text>
+      </expected>
+      <extra>
+                <text></text>
+      </extra>
+      <display>
+                <text>SHOW</text>
+      </display>
+    </testcase>
+      <testcase testtype="1" useasexample="0" hiderestiffail="0" mark="1.0000000" >
+      <testcode>
+                <text>Test 2 - ID should be defined as a string</text>
+      </testcode>
+      <stdin>
+                <text>John
+Smith
+0000
+20
+20
+30
+-1</text>
+      </stdin>
+      <expected>
+                <text>What is your first name? What is your last name? What is your ID number? What is your age? Enter mark 1 (or -1 to terminate): Enter mark 2 (or -1 to terminate): Enter mark 3 (or -1 to terminate): First name: John
+Last name: Smith
+ID: 0000
+Age: 20
+Mark 1: 20
+Mark 2: 30
+Average: 25.0
+</text>
+      </expected>
+      <extra>
+                <text></text>
+      </extra>
+      <display>
+                <text>SHOW</text>
+      </display>
+    </testcase>
+      <testcase testtype="0" useasexample="0" hiderestiffail="0" mark="1.0000000" >
+      <testcode>
+                <text>Test 3 - Age cannot be negative</text>
+      </testcode>
+      <stdin>
+                <text>Cameron
+Thompson
+82648
+-5
+-7
+-3
+25
+56
+76
+34
+-1
+</text>
+      </stdin>
+      <expected>
+                <text>What is your first name? What is your last name? What is your ID number? What is your age? Invalid input!
+What is your age? Invalid input!
+What is your age? Invalid input!
+What is your age? Enter mark 1 (or -1 to terminate): Enter mark 2 (or -1 to terminate): Enter mark 3 (or -1 to terminate): Enter mark 4 (or -1 to terminate): First name: Cameron
+Last name: Thompson
+ID: 82648
+Age: 25
+Mark 1: 56
+Mark 2: 76
+Mark 3: 34
+Average: 55.3
+</text>
+      </expected>
+      <extra>
+                <text></text>
+      </extra>
+      <display>
+                <text>SHOW</text>
+      </display>
+    </testcase>
+      <testcase testtype="0" useasexample="0" hiderestiffail="0" mark="1.0000000" >
+      <testcode>
+                <text>Test 4 - Mark cannot be negative.</text>
+      </testcode>
+      <stdin>
+                <text>Michele
+Clark
+426
+43
+76
+45
+65
+-4
+94
+-6
+-4
+-6
+76
+5
+-1
+</text>
+      </stdin>
+      <expected>
+                <text>What is your first name? What is your last name? What is your ID number? What is your age? Enter mark 1 (or -1 to terminate): Enter mark 2 (or -1 to terminate): Enter mark 3 (or -1 to terminate): Enter mark 4 (or -1 to terminate): Invalid input!
+Enter mark 4 (or -1 to terminate): Enter mark 5 (or -1 to terminate): Invalid input!
+Enter mark 5 (or -1 to terminate): Invalid input!
+Enter mark 5 (or -1 to terminate): Invalid input!
+Enter mark 5 (or -1 to terminate): Enter mark 6 (or -1 to terminate): Enter mark 7 (or -1 to terminate): First name: Michele
+Last name: Clark
+ID: 426
+Age: 43
+Mark 1: 76
+Mark 2: 45
+Mark 3: 65
+Mark 4: 94
+Mark 5: 76
+Mark 6: 5
+Average: 60.2
+</text>
+      </expected>
+      <extra>
+                <text></text>
+      </extra>
+      <display>
+                <text>SHOW</text>
+      </display>
+    </testcase>
+      <testcase testtype="0" useasexample="0" hiderestiffail="0" mark="1.0000000" >
+      <testcode>
+                <text>Test 5 - Mark must be in range of 0 to 100.</text>
+      </testcode>
+      <stdin>
+                <text>Michele
+Clark
+426
+43
+76
+45
+65
+120
+140
+101
+100
+94
+0
+76
+-1</text>
+      </stdin>
+      <expected>
+                <text>What is your first name? What is your last name? What is your ID number? What is your age? Enter mark 1 (or -1 to terminate): Enter mark 2 (or -1 to terminate): Enter mark 3 (or -1 to terminate): Enter mark 4 (or -1 to terminate): Invalid input!
+Enter mark 4 (or -1 to terminate): Invalid input!
+Enter mark 4 (or -1 to terminate): Invalid input!
+Enter mark 4 (or -1 to terminate): Enter mark 5 (or -1 to terminate): Enter mark 6 (or -1 to terminate): Enter mark 7 (or -1 to terminate): Enter mark 8 (or -1 to terminate): First name: Michele
+Last name: Clark
+ID: 426
+Age: 43
+Mark 1: 76
+Mark 2: 45
+Mark 3: 65
+Mark 4: 100
+Mark 5: 94
+Mark 6: 0
+Mark 7: 76
+Average: 65.1
+</text>
+      </expected>
+      <extra>
+                <text></text>
+      </extra>
+      <display>
+                <text>SHOW</text>
+      </display>
+    </testcase>
+      <testcase testtype="0" useasexample="0" hiderestiffail="0" mark="1.0000000" >
+      <testcode>
+                <text>Test 6 - Maximum 10 marks are allowed.</text>
+      </testcode>
+      <stdin>
+                <text>Sara
+Orange
+9868
+34
+11
+22
+33
+44
+55
+66
+77
+88
+99
+10
+11
+</text>
+      </stdin>
+      <expected>
+                <text>What is your first name? What is your last name? What is your ID number? What is your age? Enter mark 1 (or -1 to terminate): Enter mark 2 (or -1 to terminate): Enter mark 3 (or -1 to terminate): Enter mark 4 (or -1 to terminate): Enter mark 5 (or -1 to terminate): Enter mark 6 (or -1 to terminate): Enter mark 7 (or -1 to terminate): Enter mark 8 (or -1 to terminate): Enter mark 9 (or -1 to terminate): Enter mark 10 (or -1 to terminate): First name: Sara
+Last name: Orange
+ID: 9868
+Age: 34
+Mark 1: 11
+Mark 2: 22
+Mark 3: 33
+Mark 4: 44
+Mark 5: 55
+Mark 6: 66
+Mark 7: 77
+Mark 8: 88
+Mark 9: 99
+Mark 10: 10
+Average: 50.5
+</text>
+      </expected>
+      <extra>
+                <text></text>
+      </extra>
+      <display>
+                <text>SHOW</text>
+      </display>
+    </testcase>
+      <testcase testtype="0" useasexample="0" hiderestiffail="0" mark="1.0000000" >
+      <testcode>
+                <text>Test 7 - The program should work with no mark entered</text>
+      </testcode>
+      <stdin>
+                <text>John
+Smith
+534
+34
+-1</text>
+      </stdin>
+      <expected>
+                <text>What is your first name? What is your last name? What is your ID number? What is your age? Enter mark 1 (or -1 to terminate): First name: John
+Last name: Smith
+ID: 534
+Age: 34
+</text>
+      </expected>
+      <extra>
+                <text></text>
+      </extra>
+      <display>
+                <text>SHOW</text>
+      </display>
+    </testcase>
+      <testcase testtype="0" useasexample="0" hiderestiffail="0" mark="1.0000000" >
+      <testcode>
+                <text>Test 8 - The program should continue working if a letter is entered instead of a number.</text>
+      </testcode>
+      <stdin>
+                <text>Sam
+Cobos
+543
+aaaa
+tbbb
+23
+rrrr
+trrrr
+67
+-1</text>
+      </stdin>
+      <expected>
+                <text>What is your first name? What is your last name? What is your ID number? What is your age? Invalid input!
+What is your age? Invalid input!
+What is your age? Enter mark 1 (or -1 to terminate): Invalid input!
+Enter mark 1 (or -1 to terminate): Invalid input!
+Enter mark 1 (or -1 to terminate): Enter mark 2 (or -1 to terminate): First name: Sam
+Last name: Cobos
+ID: 543
+Age: 23
+Mark 1: 67
+Average: 67.0
+</text>
+      </expected>
+      <extra>
+                <text></text>
+      </extra>
+      <display>
+                <text>SHOW</text>
+      </display>
+    </testcase>
+    </testcases>
+  </question>
+
+</quiz>
