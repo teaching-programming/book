@@ -18,7 +18,11 @@ format:
         code-line-numbers: true
         code-block-bg: true
         code-block-border-left: true
+
         repo-url: https://github.com/teaching-programming/book
+        site-url: https://teaching-programming.github.io/book
+        link-external-newwindow: true
+
         toc: true
         include-before-body:
             file: _theme/accessibility.html
@@ -58,6 +62,8 @@ book:
         - C05_coding-mindset.qmd
         - C06_feminists-and-anarchists.qmd
         - C07_teaching-C-to-novices.qmd
+        - C08_hype-need-responsible-compute.qmd
+#        - C09_debugging-beyond-the-debugger.qmd
 #        - C08_ai-boom-or-bust.qmd
         - C09_debugging-beyond-the-debugger.qmd
         - C10_teaching-with-genai.qmd
