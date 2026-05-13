@@ -89,7 +89,7 @@ div.csl-indent {
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
 <link href="./C33_coding-anxiety.html" rel="next">
-<link href="./C24_lost-in-translation.html" rel="prev">
+<link href="./C29_notebooks-for-novices.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -296,6 +296,11 @@ window.Quarto = {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./C20_automatic-marking.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Using automated marking in programming courses to enhance learning</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./C21_programming-across-disciplines-systems-thinking.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">How Teaching Programming Across Disciplines Can Instil Systems Thinking</span></a>
   </div>
 </li>
@@ -312,6 +317,11 @@ window.Quarto = {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./C24_lost-in-translation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Lost in Translation: Complexities and Good Practices of Translating Coding-based Teaching Materials Across Multiple Languages</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C29_notebooks-for-novices.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Notebook for novices? Pros and cons of Jupyter</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -639,14 +649,14 @@ U_{cr} = \left\{
 </section>
 <section id="matrix-manipulation" class="level3">
 <h3 class="anchored" data-anchor-id="matrix-manipulation">Matrix manipulation</h3>
-<p>In many circumstances, the CivEng student has to deal with matrices, such as when solving partial differential equations (PDEs). One of such typical equations is the mass balance equation, where the (time) change in “stock” is related to the spatial changes (gradients) of “flows”. It is not too difficult for the CivEng student to understand the finite difference technique and implement a naive version to solve PDEs. As an example, in the problem of sediment transport in rivers or seas, we consider solving the equation for <span class="math inline">\(z_b\)</span> (the underwater bed elevation), which changes in time, given the two fluxes of sediment, represented as two components (<span class="math inline">\(q_x\)</span> and <span class="math inline">\(q_y\)</span>) in the two horizontal directions, <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span>. It is helpful to visualise the river bed or seabed as a “tiled” surface where each cell has its own elevation <span class="math inline">\(z_b\)</span>. See the diagram (<a href="#fig-sediment" class="quarto-xref">Figure&nbsp;<span>21.1</span></a>) for a simplified representation of the quantities involved.</p>
+<p>In many circumstances, the CivEng student has to deal with matrices, such as when solving partial differential equations (PDEs). One of such typical equations is the mass balance equation, where the (time) change in “stock” is related to the spatial changes (gradients) of “flows”. It is not too difficult for the CivEng student to understand the finite difference technique and implement a naive version to solve PDEs. As an example, in the problem of sediment transport in rivers or seas, we consider solving the equation for <span class="math inline">\(z_b\)</span> (the underwater bed elevation), which changes in time, given the two fluxes of sediment, represented as two components (<span class="math inline">\(q_x\)</span> and <span class="math inline">\(q_y\)</span>) in the two horizontal directions, <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span>. It is helpful to visualise the river bed or seabed as a “tiled” surface where each cell has its own elevation <span class="math inline">\(z_b\)</span>. See the diagram (<a href="#fig-sediment" class="quarto-xref">Figure&nbsp;<span>23.1</span></a>) for a simplified representation of the quantities involved.</p>
 <div id="fig-sediment" class="quarto-float quarto-figure quarto-figure-center anchored" alt="A diagram in 3D, showing a surface split into four tiles of different elevations.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-sediment-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="./chapters/images/ch32/SedTrans.PNG" class="img-fluid figure-img" alt="A diagram in 3D, showing a surface split into four tiles of different elevations.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-sediment-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;21.1: Sediment transport
+Figure&nbsp;23.1: Sediment transport
 </figcaption>
 </figure>
 </div>
@@ -686,7 +696,7 @@ Figure&nbsp;21.1: Sediment transport
 </tr>
 </tbody>
 </table>
-<p>The use of matrix operations (e.g.&nbsp;using <a href="https://numpy.org/">NumPy</a> arrays in Python) is faster compared to the “naive” version above, usually quoted as 10 times <span class="citation" data-cites="langtangen2006python">(<a href="#ref-langtangen2006python" role="doc-biblioref">Langtangen 2006</a>)</span>. On the downside, the matrix notation obscures the indices <code>i</code> and <code>j</code> commonly found in numerical methods (see <a href="#fig-lattice1" class="quarto-xref">Figure&nbsp;<span>21.2</span></a>, where part of a stencil<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> is shown. In this part, where arrows represent subtraction, we are finding “local” difference in the same <code>qx</code> array). When using matrix manipulation, the bounds must be specified correctly in all matrix subscripts (see <a href="#fig-lattice2" class="quarto-xref">Figure&nbsp;<span>21.3</span></a> and the code below). So, there should be a consideration in choosing either approach.</p>
+<p>The use of matrix operations (e.g.&nbsp;using <a href="https://numpy.org/">NumPy</a> arrays in Python) is faster compared to the “naive” version above, usually quoted as 10 times <span class="citation" data-cites="langtangen2006python">(<a href="#ref-langtangen2006python" role="doc-biblioref">Langtangen 2006</a>)</span>. On the downside, the matrix notation obscures the indices <code>i</code> and <code>j</code> commonly found in numerical methods (see <a href="#fig-lattice1" class="quarto-xref">Figure&nbsp;<span>23.2</span></a>, where part of a stencil<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> is shown. In this part, where arrows represent subtraction, we are finding “local” difference in the same <code>qx</code> array). When using matrix manipulation, the bounds must be specified correctly in all matrix subscripts (see <a href="#fig-lattice2" class="quarto-xref">Figure&nbsp;<span>23.3</span></a> and the code below). So, there should be a consideration in choosing either approach.</p>
 <p><strong>Looping through index</strong></p>
 <div id="fig-lattice1" class="quarto-float quarto-figure quarto-figure-center anchored" alt="A lattice with dots organised in 2 rows and 4 columns.">
 <figure class="quarto-float quarto-float-fig figure">
@@ -694,7 +704,7 @@ Figure&nbsp;21.1: Sediment transport
 <img src="./chapters/images/ch32/Lattice1.PNG" class="img-fluid figure-img" alt="A lattice with dots organised in 2 rows and 4 columns.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-lattice1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;21.2: Lattice 1
+Figure&nbsp;23.2: Lattice 1
 </figcaption>
 </figure>
 </div>
@@ -723,7 +733,7 @@ Figure&nbsp;21.2: Lattice 1
 <img src="./chapters/images/ch32/Lattice2.PNG" class="img-fluid figure-img" alt="A lattice with dots organised in 2 rows and 4 columns, with the 2 left dots, the 4 central dots, and the 2 right dots grouped together.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-lattice2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;21.3: Lattice 2
+Figure&nbsp;23.3: Lattice 2
 </figcaption>
 </figure>
 </div>
@@ -828,7 +838,7 @@ Figure&nbsp;21.3: Lattice 2
 <div id="lst-student-func" class="julia listing quarto-float quarto-figure quarto-figure-left anchored">
 <figure class="quarto-float quarto-float-lst figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-lst" id="lst-student-func-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Listing&nbsp;21.1: Student’s version
+Listing&nbsp;23.1: Student’s version
 </figcaption>
 <div aria-describedby="lst-student-func-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode numberSource julia number-lines code-with-copy"><code class="sourceCode julia"><span id="cb10-1"><a href="#cb10-1"></a>deriv_sq <span class="op">=</span> <span class="kw">function</span>(o, h)</span>
@@ -847,7 +857,7 @@ Listing&nbsp;21.1: Student’s version
 <div id="lst-recommended-func" class="julia listing quarto-float quarto-figure quarto-figure-left anchored">
 <figure class="quarto-float quarto-float-lst figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-lst" id="lst-recommended-func-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Listing&nbsp;21.2: Recommended version
+Listing&nbsp;23.2: Recommended version
 </figcaption>
 <div aria-describedby="lst-recommended-func-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode numberSource julia number-lines code-with-copy"><code class="sourceCode julia"><span id="cb11-1"><a href="#cb11-1"></a><span class="co"># A generic central-difference approximation</span></span>
@@ -1319,8 +1329,8 @@ Wood, David Muir. 2012. <em>Civil Engineering: A Very Short Introduction</em>. V
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./C24_lost-in-translation.html" class="pagination-link" aria-label="Lost in Translation: Complexities and Good Practices of Translating Coding-based Teaching Materials Across Multiple Languages">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Lost in Translation: Complexities and Good Practices of Translating Coding-based Teaching Materials Across Multiple Languages</span></span>
+      <a href="./C29_notebooks-for-novices.html" class="pagination-link" aria-label="Notebook for novices? Pros and cons of Jupyter">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Notebook for novices? Pros and cons of Jupyter</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">

@@ -1,0 +1,1162 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.37">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Joseph El Gemayel">
+<meta name="author" content="Arif Budiarto">
+<meta name="author" content="William Bell">
+<meta name="keywords" content="Jupyter Notebook, Novice Programming, Collaborative Coding, Cell-Based Execution, Code Execution Visualisation">
+
+<title>Notebook for novices? Pros and cons of Jupyter – Teaching Programming across Disciplines</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./C32_civil-engineering.html" rel="next">
+<link href="./C24_lost-in-translation.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-6cd8da66a1bdaffdec2ef34407fc6c1c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="_theme/styles.css">
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./C29_notebooks-for-novices.html"><span class="chapter-title">Notebook for novices? Pros and cons of Jupyter</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Teaching Programming across Disciplines</a> 
+        <div class="sidebar-tools-main">
+    <div class="dropdown">
+      <a href="" title="Download" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Download"><i class="bi bi-download"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="./teaching_programming_across_disciplines.pdf">
+              <i class="bi bi-file-pdf pe-1"></i>
+            Download PDF
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="./teaching_programming_across_disciplines.epub">
+              <i class="bi bi-journal pe-1"></i>
+            Download ePub
+            </a>
+          </li>
+      </ul>
+    </div>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Teaching Programming across Disciplines</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./00-chapter-template.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Title of Example Chapter (as will appear on top h1 header and in table of contents)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./CAB_Author-bio-placeholder.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Author Bios Placeholder</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C01_teaching-python.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">A Practical Guide to Teaching Python as a Computational Tool in an Introductory Data Analysis Course</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C02_genai-before-during-after.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Assessments With Generative AI: Before, During, and After</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C03_online-teaching-reflections.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Reflections on Online Teaching</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C05_coding-mindset.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">A Guide on Empowering Students to Develop a Coding Mindset</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C06_feminists-and-anarchists.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Dungeon Crawlers and Anarchists: Co-Designing Programming Teaching Experiences</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C07_teaching-C-to-novices.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Second Languages: Teaching C to Python+Jupyter Novices</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C09_debugging-beyond-the-debugger.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Brain Book Buddy Boss Break: A Practical Debugging Framework for Learners</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C10_teaching-with-genai.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">An optimistic outlook on Teaching, Learning and Assessment for coding with the emergence of generative AI</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C11_sequential-vs-simultaneous.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Sequential vs.&nbsp;Simultaneous: Approaches to Learning Programming and Statistics</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C12_pair-programming-overview.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Where Do I Even Start With Pair Programming in My Classroom? A Conversation With Seasoned Practitioners.</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C14_foster-inclusion-and-accessibility.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Reflections on Practices to Foster Inclusion and Accessibility in Programming Teaching</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C15_programming-without-computers.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Removing Barriers by Programming Without Computers</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C16_peer-programming.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Peer Programming in Action: Pair Programming in Larger Groups</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C20_automatic-marking.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Using automated marking in programming courses to enhance learning</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C21_programming-across-disciplines-systems-thinking.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">How Teaching Programming Across Disciplines Can Instil Systems Thinking</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C22_interdisciplinary-by-design.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Interdisciplinary by Design: The Centre for Data, Culture, &amp; Society Training Programme</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C23_pair-programming-fusion.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Learning Together Across Modes: Online and On-Site Pair Programming in a Fusion Course</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C24_lost-in-translation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Lost in Translation: Complexities and Good Practices of Translating Coding-based Teaching Materials Across Multiple Languages</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C29_notebooks-for-novices.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Notebook for novices? Pros and cons of Jupyter</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C32_civil-engineering.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Changing civil engineering students’ mindset toward programming</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C33_coding-anxiety.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Overcoming coding anxiety: reflections and strategies</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C35_action-feedback-plan.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Managing the Rubik’s Cube of Assessment: The Action Feedback Protocol</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C36_pair-programming-across-disciplines.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Structured Group Work With Assigned Asymmetrical Roles and Switching: Lessons From Pair Programming Across Disciplines</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C38_skills-based-assessment.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">The case for skills-based assessment in introductory programming courses</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C39_gentle-introduction-summer-school.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">A gentle introduction to coding: narratives from a programming summer school for social sciences and humanities</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C41_pair-programming-tutor-reflections.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Pair Programming in Practice: A PhD Tutor’s Reflections</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./99-bibliography.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bibliography</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar"><div class="quarto-margin-header"><div class="margin-header-item">
+<details id="accessibility-controls">
+    <summary>Display options</summary>
+  
+    <div class="control-group">
+        <label for="fontSizeSlider">Font size</label>
+        <input type="range" id="fontSizeSlider" min="8" max="32" value="16">
+        <span id="fontSizeValue">16</span>px
+    </div>
+  
+    <div class="control-group">
+        <label for="eyeStrainSlider">Eye strain</label>
+        <input type="range" id="eyeStrainSlider" min="0" max="50" value="0">
+        <span id="eyeStrainValue">0</span>%
+    </div>
+  
+    <div class="control-group">
+        <label for="hueRotateSlider">Hue</label>
+        <input type="range" id="hueRotateSlider" min="0" max="360" value="0">
+        <span id="hueRotateValue">0</span>
+    </div>
+  
+    <div class="control-group">
+        <label for="paddingSlider">Padding</label>
+        <input type="range" id="paddingSlider" min="0" max="12" value="3">
+        <span id="paddingValue">0</span>
+    </div>
+  
+    <div class="control-group">
+        <label for="lineSpacingSlider">Spacing</label>
+        <input type="range" id="lineSpacingSlider" min="80" max="250" value="150">
+        <span id="lineSpacingValue">150</span>%
+    </div>
+  
+    <div class="control-group">
+        <label for="fontFamily">Font</label>
+        <select id="fontFamily">
+            <option value="'Atkinson Hyperlegible', sans-serif">Atkinson Hyperlegible</option>
+            <option value="Arial, Helvetica, sans-serif">Sans-serif</option>
+            <option value="Georgia, 'Bitstream Charter', Times, serif">Serif</option>
+        </select>
+    </div>
+  
+    <div class="control-group">
+        <button id="resetDefaults">Reset to Defaults</button>
+    </div>
+
+</details>
+</div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#what-makes-jupyter-notebook-appealing-to-beginners" id="toc-what-makes-jupyter-notebook-appealing-to-beginners" class="nav-link" data-scroll-target="#what-makes-jupyter-notebook-appealing-to-beginners">What makes Jupyter Notebook appealing to beginners?</a>
+  <ul class="collapse">
+  <li><a href="#an-easy-to-use-ide" id="toc-an-easy-to-use-ide" class="nav-link" data-scroll-target="#an-easy-to-use-ide">An easy-to-use IDE</a></li>
+  <li><a href="#working-with-code-in-pieces" id="toc-working-with-code-in-pieces" class="nav-link" data-scroll-target="#working-with-code-in-pieces">Working with code in pieces</a></li>
+  <li><a href="#collaboration-made-simple" id="toc-collaboration-made-simple" class="nav-link" data-scroll-target="#collaboration-made-simple">Collaboration made simple</a></li>
+  <li><a href="#using-libraries-with-ease" id="toc-using-libraries-with-ease" class="nav-link" data-scroll-target="#using-libraries-with-ease">Using libraries with ease</a></li>
+  </ul></li>
+  <li><a href="#common-pitfalls-and-challenges" id="toc-common-pitfalls-and-challenges" class="nav-link" data-scroll-target="#common-pitfalls-and-challenges">Common pitfalls and challenges</a>
+  <ul class="collapse">
+  <li><a href="#hidden-kernel-state-and-memory-persistence" id="toc-hidden-kernel-state-and-memory-persistence" class="nav-link" data-scroll-target="#hidden-kernel-state-and-memory-persistence">Hidden kernel state and memory persistence</a></li>
+  <li><a href="#markdown-vs.-misunderstanding-code-cells" id="toc-markdown-vs.-misunderstanding-code-cells" class="nav-link" data-scroll-target="#markdown-vs.-misunderstanding-code-cells">Markdown vs.&nbsp;misunderstanding code cells</a></li>
+  <li><a href="#package-installation-and-environment-conflicts" id="toc-package-installation-and-environment-conflicts" class="nav-link" data-scroll-target="#package-installation-and-environment-conflicts">Package installation and environment conflicts</a></li>
+  <li><a href="#limited-debugging-capabilities" id="toc-limited-debugging-capabilities" class="nav-link" data-scroll-target="#limited-debugging-capabilities">Limited debugging capabilities</a></li>
+  <li><a href="#misunderstanding-of-the-return-command" id="toc-misunderstanding-of-the-return-command" class="nav-link" data-scroll-target="#misunderstanding-of-the-return-command">Misunderstanding of the <code>return</code> command</a></li>
+  </ul></li>
+  <li><a href="#best-practices-for-using-jupyter-notebook-with-beginners" id="toc-best-practices-for-using-jupyter-notebook-with-beginners" class="nav-link" data-scroll-target="#best-practices-for-using-jupyter-notebook-with-beginners">Best practices for using Jupyter Notebook with beginners</a>
+  <ul class="collapse">
+  <li><a href="#package-installation" id="toc-package-installation" class="nav-link" data-scroll-target="#package-installation">Package installation</a></li>
+  <li><a href="#modular-construction" id="toc-modular-construction" class="nav-link" data-scroll-target="#modular-construction">Modular construction</a></li>
+  <li><a href="#debugging" id="toc-debugging" class="nav-link" data-scroll-target="#debugging">Debugging</a></li>
+  <li><a href="#markdown" id="toc-markdown" class="nav-link" data-scroll-target="#markdown">Markdown</a></li>
+  <li><a href="#restarting-the-kernel-and-running-cells-sequentially" id="toc-restarting-the-kernel-and-running-cells-sequentially" class="nav-link" data-scroll-target="#restarting-the-kernel-and-running-cells-sequentially">Restarting the kernel and running cells sequentially</a></li>
+  </ul></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const fontSizeSlider = document.getElementById('fontSizeSlider');
+        const fontSizeValue = document.getElementById('fontSizeValue');
+
+        const hueRotateSlider = document.getElementById('hueRotateSlider');
+        const hueRotateValue = document.getElementById('hueRotateValue');
+
+        const eyeStrainSlider = document.getElementById('eyeStrainSlider');
+        const eyeStrainValue = document.getElementById('eyeStrainValue');
+
+        const paddingSlider = document.getElementById('paddingSlider');
+        const paddingValue = document.getElementById('paddingValue');
+
+        const lineSpacingSlider = document.getElementById('lineSpacingSlider');
+        const lineSpacingValue = document.getElementById('lineSpacingValue');
+
+        const fontFamilySelect = document.getElementById('fontFamily');
+
+        const html = document.documentElement;
+        const resetButton = document.getElementById('resetDefaults');
+
+        // Define default values
+        const defaults = {
+            fontSize: 16,
+            hueRotate: 0,
+            eyeStrain: 0,
+            padding: 0,
+            lineSpacing: 150,
+            fontFamily: "'Atkinson Hyperlegible', Arial, Helvetica, sans-serif"
+        };
+
+        function updateStyles() {
+            html.style.setProperty('--bs-root-font-size', fontSizeSlider.value + 'px');
+            html.style.setProperty('--hue-rotate', hueRotateSlider.value + 'deg');
+            html.style.setProperty('--eye-strain', eyeStrainSlider.value + '%');
+            html.style.setProperty('--padding', paddingSlider.value + 'em');
+            html.style.setProperty('--line-spacing', lineSpacingSlider.value + '%');
+            html.style.setProperty('--bs-body-font-family', fontFamilySelect.value);
+
+            fontSizeValue.textContent = fontSizeSlider.value;
+            hueRotateValue.textContent = hueRotateSlider.value;
+            eyeStrainValue.textContent = eyeStrainSlider.value;
+            paddingValue.textContent = paddingSlider.value;
+            lineSpacingValue.textContent = lineSpacingSlider.value;
+
+            saveSettings();
+        }
+
+        // Function to save settings to localStorage
+        function saveSettings() {
+            const settings = {
+                fontSize: fontSizeSlider.value,
+                hueRotate: hueRotateSlider.value,
+                eyeStrain: eyeStrainSlider.value,
+                padding: paddingSlider.value,
+                lineSpacing: lineSpacingSlider.value,
+                fontFamily: fontFamilySelect.value
+            };
+            localStorage.setItem('accessibilitySettings', JSON.stringify(settings));
+        }
+
+        // Function to load settings from localStorage
+        function loadSettings() {
+            const savedSettings = localStorage.getItem('accessibilitySettings');
+            if (savedSettings) {
+                const settings = JSON.parse(savedSettings);
+                fontSizeSlider.value = settings.fontSize;
+                hueRotateSlider.value = settings.hueRotate;
+                eyeStrainSlider.value = settings.eyeStrain;
+                paddingSlider.value = settings.padding;
+                lineSpacingSlider.value = settings.lineSpacing;
+                fontFamilySelect.value = settings.fontFamily;
+                updateStyles();
+            }
+        }
+
+        function resetToDefaults() {
+            fontSizeSlider.value = defaults.fontSize;
+            hueRotateSlider.value = defaults.hueRotate;
+            eyeStrainSlider.value = defaults.eyeStrain;
+            paddingSlider.value = defaults.padding;
+            lineSpacingSlider.value = defaults.lineSpacing;
+            fontFamilySelect.value = defaults.fontFamily;
+            updateStyles();
+            localStorage.removeItem('accessibilitySettings');
+        }
+
+        fontSizeSlider.oninput = updateStyles;
+        hueRotateSlider.oninput = updateStyles;
+        eyeStrainSlider.oninput = updateStyles;
+        paddingSlider.oninput = updateStyles;
+        lineSpacingSlider.oninput = updateStyles;
+        fontFamilySelect.onchange = updateStyles;
+        resetButton.onclick = resetToDefaults;
+
+        loadSettings();
+
+    });
+</script>
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-title">Notebook for novices? Pros and cons of Jupyter</span></h1>
+</div>
+
+
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Authors</div>
+  <div class="quarto-title-meta-heading">Affiliations</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Joseph El Gemayel <a href="mailto:joseph.el-gemayel@strath.ac.uk" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            University of Strathclyde
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Arif Budiarto <a href="mailto:arif.budiarto@ed.ac.uk" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            The University of Edinburgh
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">William Bell <a href="mailto:william.bell@strath.ac.uk" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            University of Strathclyde
+          </p>
+      </div>
+  </div>
+
+<div class="quarto-title-meta">
+
+      
+  
+    
+  </div>
+  
+
+<div>
+  <div class="keywords">
+    <div class="block-title">Keywords</div>
+    <p>Jupyter Notebook, Novice Programming, Collaborative Coding, Cell-Based Execution, Code Execution Visualisation</p>
+  </div>
+</div>
+
+</header>
+
+
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>Computer programming has become a core skill for many disciplines, from biology to business, as well as computer science conversion degrees that are designed for students with no prior programming experience. In many contexts, programming is used to solve domain-specific problems. Students need to learn the core programming concepts, while avoiding distractions that are associated with the nuances of particular Integrated Development Environments (IDEs) or software installation issues.</p>
+<p>The demand for accessible programming education is particularly strong in programs that attract students from diverse backgrounds who may not have studied computer science yet need to acquire coding skills to solve practical problems in their fields. Some of these programs include aspects of Artificial Intelligence (AI) and Machine Learning (ML), which are rapidly evolving and highly valued by industry. These degrees attract students from diverse backgrounds, who may not have studied computer science, but are eager to explore AI &amp; ML and their applicability in their work. Most of these programmes rely heavily on the Python programming language, valued for its simplicity and extensive ecosystem of AI/ML libraries.</p>
+<p><a href="https://jupyter.org/">Jupyter Notebook</a> has emerged as a popular tool for teaching Python applied to data science and AI/ML applications. A Jupyter Notebook integrates text comments, Python, and visualisation of results from running the Python segments. The visualisation includes values that are returned, as well as graphical displays of selected data. A user is able to modify a Python segment, re-run it and instantly evaluate the result, encouraging experimentation. However, beginners may be confused by hidden execution states and develop poor debugging habits.</p>
+<p>This chapter explores Jupyter Notebook’s strengths and weaknesses as tool to teach computer programming to novice learners, highlighting how instructors and students can leverage its benefits while addressing its limitations. Although Python serves as the primary example in this chapter, Jupyter Notebook can be used with over 40 programming languages.</p>
+</section>
+<section id="what-makes-jupyter-notebook-appealing-to-beginners" class="level2">
+<h2 class="anchored" data-anchor-id="what-makes-jupyter-notebook-appealing-to-beginners">What makes Jupyter Notebook appealing to beginners?</h2>
+<p>The choice of a development environment can determine whether programming feels approachable or intimidating, especially for students encountering it for the first time. While professional IDEs are powerful, they may include features that distract a first-time programmer. In contrast, Jupyter Notebook provides a simple user-friendly interface, together with immediate feedback. This section explores some of the practical features that make Jupyter Notebook appealing to beginners, particularly in AI/ML education, from its ease of use as an IDE to its support for collaboration and visualisation and shows why it serves as an accessible and engaging starting point for learning programming.</p>
+<section id="an-easy-to-use-ide" class="level3">
+<h3 class="anchored" data-anchor-id="an-easy-to-use-ide">An easy-to-use IDE</h3>
+<p>In professional Python programming environments, the developer normally creates a virtual environment and installs packages, which is driven by command-line tools. Jupyter Notebook provides a simpler interface, allowing Python to be written directly into a cell and executed with a simple keystroke. An example Python segment is given in <a href="#fig-hello-world" class="quarto-xref">Figure&nbsp;<span>22.1</span></a>, where program execution is triggered by pressing <em>Shift+Enter</em> and the output is given below the <code>print</code> command.</p>
+<div id="fig-hello-world" class="quarto-float quarto-figure quarto-figure-center anchored" alt="A snippet of Python code using a print function to display the text 'Hello, world'.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-hello-world-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./chapters/images/C29_Figure1.png" title="Printing 'Hello, world' with a Jupyter Notebook." class="img-fluid figure-img" alt="A snippet of Python code using a print function to display the text 'Hello, world'.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-hello-world-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;22.1: Printing ‘Hello, world’ with a Jupyter Notebook.
+</figcaption>
+</figure>
+</div>
+<p>As shown in <a href="#fig-hello-world" class="quarto-xref">Figure&nbsp;<span>22.1</span></a>, there is no need to create a virtual environment, install packages or open a command-line interface during everyday use. Although Python, Jupyter Notebook, and relevant packages must be installed beforehand, the environment simplifies the workflow. The instant evaluation of Python code makes programming feel less abstract and more welcoming to novices.</p>
+</section>
+<section id="working-with-code-in-pieces" class="level3">
+<h3 class="anchored" data-anchor-id="working-with-code-in-pieces">Working with code in pieces</h3>
+<p>One of Jupyter Notebook’s defining features is its cell-based execution. Instead of writing and running an entire script at once, learners can break programs into smaller, manageable pieces. This modularity allows students to focus on one part of the code at a time and makes it easier to identify where errors occur.</p>
+<p>The code in <a href="#fig-cell" class="quarto-xref">Figure&nbsp;<span>22.2</span></a> creates a list, defines a function to square all the numbers in that list, and then prints the results. Rather than placing everything in a single large cell, the program is split into three separate cells. If an error appears in one step, the student can rerun only that cell without restarting the whole Notebook.</p>
+<div id="fig-cell" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Python notebook with three cells: the first creates a list called 'numbers', the second defines a function 'square_list' that returns the squares of the list elements, and the third prints the squared list.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-cell-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./chapters/images/C29_Figure2.png" title="An example of cell-based execution." class="img-fluid figure-img" alt="Python notebook with three cells: the first creates a list called 'numbers', the second defines a function 'square_list' that returns the squares of the list elements, and the third prints the squared list.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-cell-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;22.2: An example of cell-based execution.
+</figcaption>
+</figure>
+</div>
+<p>The cell-based workflow encourages experimentation, where learners modify input values, rerun a function, and immediately see how the output changes. This reduces frustration, supports trial-and-error learning, problem-solving, and generally encourages a novice programmer.</p>
+</section>
+<section id="collaboration-made-simple" class="level3">
+<h3 class="anchored" data-anchor-id="collaboration-made-simple">Collaboration made simple</h3>
+<p>Programming often requires teamwork. Jupyter Notebook supports collaboration seamlessly through platforms such as Google Colab. Students can share a link to a Jupyter Notebook, allowing others to edit or comment in real time, similar to working on a shared online document. For example, a group project for an AI/ML course can happen entirely within Colab, during which:</p>
+<ul>
+<li>one student writes the data pre-processing code,<br>
+</li>
+<li>another tests different models,<br>
+</li>
+<li>a third documents the process using Markdown cells.</li>
+</ul>
+<p>[Google Colaboratory (Colab)] (https://colab.research.google.com/) supports the development of Jupyter Notebooks within a cloud platform, such that software does not need to be installed on a local PC. Collaboration becomes natural, and the focus remains on the problem being solved rather than on technical barriers.</p>
+</section>
+<section id="using-libraries-with-ease" class="level3">
+<h3 class="anchored" data-anchor-id="using-libraries-with-ease">Using libraries with ease</h3>
+<p>One of the biggest challenges for beginner computer programmers is learning how to extend a language with external libraries. When using a Python installation on a local machine, packages can be installed using the <code>pip</code> or <code>conda</code> package manager. Python <code>pip</code> packages are installed into the system or often into a virtual environment to prevent conflicts from arising. Python can also be installed using Anaconda, which includes the Python interpreter, together with many data analysis <code>conda</code> packages, and Jupyter Notebook. Due to the more comprehensive nature of the standard Anaconda installation, it is unlikely that students will have to install additional libraries, except when working with more advanced or specialised packages. For example, the NumPy library is part of the standard Anaconda installation and is also present in the cloud installation of Jupyter Notebook, such as Google Colaboratory (Colab). This implies that a student can import NumPy, as shown in <a href="#fig-numpy" class="quarto-xref">Figure&nbsp;<span>22.3</span></a>.</p>
+<div id="fig-numpy" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Python script using NumPy: an array of numbers is created, each number is squared, the mean of the squared values is calculated, and the original array, squared array, and mean are printed.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-numpy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./chapters/images/C29_Figure3.png" title="Using the NumPy library." class="img-fluid figure-img" alt="Python script using NumPy: an array of numbers is created, each number is squared, the mean of the squared values is calculated, and the original array, squared array, and mean are printed.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-numpy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;22.3: Using the NumPy library.
+</figcaption>
+</figure>
+</div>
+<p>Other example libraries useful for AI/ML which are included in Anaconda are Pandas and Matplotlib, and further libraries are also available as <code>conda</code> packages that can be installed separately.</p>
+</section>
+</section>
+<section id="common-pitfalls-and-challenges" class="level2">
+<h2 class="anchored" data-anchor-id="common-pitfalls-and-challenges">Common pitfalls and challenges</h2>
+<p>While Jupyter Notebook has become a popular entry point into programming, especially in data science and education, it includes a variety of hidden complexities that can hinder the learning process for beginners. Its interactive design and flexibility are strengths, but they also introduce subtle challenges that may not be immediately apparent to new users. This section outlines key pitfalls that often disrupt the early coding experience and offers insight into why they occur.</p>
+<section id="hidden-kernel-state-and-memory-persistence" class="level3">
+<h3 class="anchored" data-anchor-id="hidden-kernel-state-and-memory-persistence">Hidden kernel state and memory persistence</h3>
+<p>The Jupyter Notebook’s kernel maintains an active memory state throughout a session, storing all variables until the kernel is restarted. This allows code cells to be executed in any order, where the order of execution defines the memory state rather than the order within the Notebook. Non-sequential execution implies that variables and functions may exist or vanish depending on the execution sequence. While the Jupyter Notebook persistent state can be convenient, it obscures the underlying logic of variable scope and memory management.</p>
+<p>If the Jupyter Notebook kernel crashes or is manually restarted, all stored variables are lost. Beginners often misinterpret the resulting errors as coding mistakes, which actually stem from changes in the kernel’s memory state. Students should be encouraged to run cells sequentially from top to bottom before saving or sharing a Jupyter Notebook to maintain a consistent state. Students should be reminded to restart the kernel and rerun all cells periodically to ensure that errors are not caused by leftover variables.</p>
+<p>Relying on linear execution alone can discourage students from defining functions or classes, which would otherwise simplify the implementation and associated debugging. Students should be prompted to encapsulate repeated or complex code into functions or classes to improve readability, reusability, and debugging.</p>
+</section>
+<section id="markdown-vs.-misunderstanding-code-cells" class="level3">
+<h3 class="anchored" data-anchor-id="markdown-vs.-misunderstanding-code-cells">Markdown vs.&nbsp;misunderstanding code cells</h3>
+<p>Jupyter Notebook’s integration of Markdown and code cells enables rich documentation alongside executable code. However, this dual format can be confusing for beginners who are unfamiliar with Markdown syntax. When working with Notebooks that are created by instructors or collaborators, users may struggle to distinguish between instructional text and executable code, leading to misinterpretation or accidental modification of non-code cells. Students should be reminded that cell types can be changed at any time using the toolbar or keyboard shortcuts, and that Markdown cells are for text only.</p>
+</section>
+<section id="package-installation-and-environment-conflicts" class="level3">
+<h3 class="anchored" data-anchor-id="package-installation-and-environment-conflicts">Package installation and environment conflicts</h3>
+<p>Installing external libraries is a common task in Jupyter Notebook, but the coexistence of multiple package managers, such as <code>pip</code> and <code>conda</code>, can create environment conflicts. Beginners may unknowingly install packages using one method while the Jupyter Notebook’s kernel is tied to another, resulting in “missing module” errors despite successful installation. These issues are not coding errors but arise due to environment mismatches that can be deeply frustrating without a clear understanding of dependency management. Students should be advised to check the active kernel’s environment and install packages consistently using the same package manager to avoid conflicts. It may be necessary to require that only one Python installation is present to prevent beginners from being confused.</p>
+</section>
+<section id="limited-debugging-capabilities" class="level3">
+<h3 class="anchored" data-anchor-id="limited-debugging-capabilities">Limited debugging capabilities</h3>
+<p>Unlike many full-featured IDEs, Jupyter Notebook provides limited tools for debugging programs. Error messages appear only in the cell where the code is executed, and there is no built-in support for features such as breakpoints (pausing execution at a specific line) or stepping through code line by line to observe how variables change. As a result, beginners often try to find errors by adding <code>print()</code> statements or by repeatedly modifying and re-running cells. While this can work for small examples, it becomes difficult to manage when errors involve multiple cells or more complex program logic. Encourage the use of small, isolated cells for testing code, where appropriate.</p>
+</section>
+<section id="misunderstanding-of-the-return-command" class="level3">
+<h3 class="anchored" data-anchor-id="misunderstanding-of-the-return-command">Misunderstanding of the <code>return</code> command</h3>
+<p>Jupyter Notebook prints values that are returned from functions. This can cause students who are learning Python using Jupyter Notebook to falsely assume that there is no difference between <code>return</code> and <code>print</code>, such that they use <code>print</code> within a function to try to return a value and are confused when it returns <code>None</code>. Tutors should explicitly demonstrate the distinction between <code>return</code> and <code>print</code> early on and encourage students to test function outputs by assigning them to variables rather than printing values inside functions.</p>
+</section>
+</section>
+<section id="best-practices-for-using-jupyter-notebook-with-beginners" class="level2">
+<h2 class="anchored" data-anchor-id="best-practices-for-using-jupyter-notebook-with-beginners">Best practices for using Jupyter Notebook with beginners</h2>
+<p>Based on our experience using Jupyter Notebook in teaching novice programmers, we have identified a set of practices that help maximize its benefits while avoiding common pitfalls. The following recommendations are intended to guide both instructors and students toward using Jupyter Notebook more effectively as a teaching and learning tool.</p>
+<section id="package-installation" class="level3">
+<h3 class="anchored" data-anchor-id="package-installation">Package installation</h3>
+<p>It is recommended to use Jupyter Notebook through Google Colab, or to install it locally either within a full Anaconda installation or using the <code>pip</code> package manager (where a full Anaconda installation is typically preferred). To simplify possible package conflict issues, only one version of Python should be installed on a local machine which is associated with Jupyter Notebook. Students should be explicitly instructed to either rely on preinstalled <code>conda</code> packages that are associated with an Anaconda installation, or use <code>pip</code> packages if <code>pip</code> has been used to install Jupyter Notebook.</p>
+</section>
+<section id="modular-construction" class="level3">
+<h3 class="anchored" data-anchor-id="modular-construction">Modular construction</h3>
+<p>Similar to regular Python programs that are constructed outside of Jupyter Notebook, Notebooks should be split into different files that are associated with different steps of a data analysis process. Each Jupyter Notebook should be short enough that it can be executed rapidly from the top of the file. Students can then avoid re-executing cells and being subsequently confused by the resulting output.</p>
+<p>If a section of Python is needed often within a Jupyter Notebook, it can be defined as a function or placed in a separate Python file and imported as a module. Defining functions or classes helps students focus on debugging the specific logic of their program rather than repeatedly rewriting common functionality.</p>
+</section>
+<section id="debugging" class="level3">
+<h3 class="anchored" data-anchor-id="debugging">Debugging</h3>
+<p>Students should be introduced to different debugging approaches with Jupyter Notebook, including the <code>print</code> command, <code>%whos</code>, <code>%debug</code>, <code>%pdb</code> and the front-end debugger.</p>
+<p>While <code>print</code> allows specified variable values to be printed, all variables that are within the current scope can be printed by executing <code>%whos</code> within a cell. This provides a user with the summary of the current kernel state, in terms of the defined variables and their values.</p>
+<p>If a cell fails to execute, the debugger can be started by typing <code>%debug</code> into the following cell which launches the <code>ipdb</code> command prompt. This allows a user to print the value of variables that are present in the kernel memory by typing <code>p</code> followed by the variable name. The available <code>ipdb</code> commands can be listed by typing <code>help</code>. The debugging session can be closed by typing <code>exit()</code>.</p>
+<p>If a section of a Jupyter Notebook crashes and needs to be investigated, the debugger can be automatically launched on an execution failure by including:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1"></a><span class="op">%</span>pdb on</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>before the cells under test, followed by</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1"></a><span class="op">%</span>pdb off</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>If the execution fails, the user will be provided with an <code>ipdb</code> command prompt automatically. The <code>pdb</code> commands are demonstrated in <a href="#fig-pdb" class="quarto-xref">Figure&nbsp;<span>22.4</span></a>.</p>
+<div id="fig-pdb" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Python notebook cell where an empty dictionary is accessed with a non-existent key, causing a KeyError, with automatic pdb debugging turned on and traceback displayed.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-pdb-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./chapters/images/C29_Figure4.png" title="Using the pdb command within Jupyter Notebook." class="img-fluid figure-img" alt="Python notebook cell where an empty dictionary is accessed with a non-existent key, causing a KeyError, with automatic pdb debugging turned on and traceback displayed.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-pdb-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;22.4: Using the pdb command within Jupyter Notebook.
+</figcaption>
+</figure>
+</div>
+<p>More advanced debugging is accessible in Jupyter Notebook by using one of the kernels that supports the front-end debugger interface, as documented in the <a href="https://jupyterlab.readthedocs.io/en/stable/user/debugger.html">JupyterLab Debugger online tutorial</a>. This provides users with an interface that is similar to Visual Studio Code. Breakpoints can be added by hovering over the line number within a code block. Once the program has paused, a user can then inspect the values that are contained in variables and view the callstack.</p>
+<p>The front-end debugger is not enabled by default. When Jupyter Notebook is started, if the kernel supports debugging a grey bug icon is shown to the left of the kernel name as illustrated in <a href="#fig-debugger" class="quarto-xref">Figure&nbsp;<span>22.5</span></a>.</p>
+<div id="fig-debugger" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Jupyter Notebook header showing the active kernel 'Python 3 (ipykernel)' with a grey bug icon next to it, illustrating that debugging is available for the kernel.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-debugger-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./chapters/images/C29_Figure5.png" title="A kernel that supports debugging, where debugging is not active." class="img-fluid figure-img" alt="Jupyter Notebook header showing the active kernel 'Python 3 (ipykernel)' with a grey bug icon next to it, illustrating that debugging is available for the kernel.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-debugger-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;22.5: A kernel that supports debugging, where debugging is not active.
+</figcaption>
+</figure>
+</div>
+<p>Debugging can be activated by clicking on the bug icon, which changes colour when activated. If the kernel is restarted, debugging becomes inactive again. When debugging is active, line numbers appear to the left each line of Python code. Using the mouse to hover to the left of a line number causes a dark red circle to be displayed. Clicking on this red circle cause a breakpoint to be set for the specific line. When the code segment is run, the execution pauses at the breakpoint. The properties of values in memory can be viewed by enabling the Debugging Panel within the View menu. Paused code and associated Debugging Panel values are shown in <a href="#fig-debug-panel" class="quarto-xref">Figure&nbsp;<span>22.6</span></a>.</p>
+<div id="fig-debug-panel" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Jupyter Notebook debugging view where code execution is paused inside a for-loop over a list, highlighting the current line and displaying variable values such as the current index and value in the sidebar.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-debug-panel-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./chapters/images/C29_Figure6.png" title="Paused execution and associated Debugging Panel values." class="img-fluid figure-img" alt="Jupyter Notebook debugging view where code execution is paused inside a for-loop over a list, highlighting the current line and displaying variable values such as the current index and value in the sidebar.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-debug-panel-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;22.6: Paused execution and associated Debugging Panel values.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="markdown" class="level3">
+<h3 class="anchored" data-anchor-id="markdown">Markdown</h3>
+<p>Students should be encouraged to use Markdown once they have learnt enough Python to realise that Markdown is not associated with the Python programming language. To avoid confusion, students can use Python comments that are exchanged with Markdown formatted documentation later in a programming course.</p>
+</section>
+<section id="restarting-the-kernel-and-running-cells-sequentially" class="level3">
+<h3 class="anchored" data-anchor-id="restarting-the-kernel-and-running-cells-sequentially">Restarting the kernel and running cells sequentially</h3>
+<p>One of the most common difficulties beginners encounter in Jupyter Notebook is the confusion caused by non-linear execution. Since cells can be run in any order, variables may hold unexpected values, or code may appear to work only because of hidden state carried over from earlier runs. The Jupyter Notebook Kernel menu options can be used to address this. For example:</p>
+<ul>
+<li>“Restart Kernel and Clear Outputs of All Cells” clears the Jupyter Notebook’s memory, ensuring no hidden variables remain, and removes all cell outputs for a fresh start,<br>
+</li>
+<li>“Restart Kernel and Run All Cells” forces the Jupyter Notebook to execute in a clean, linear order, making sure all cells run correctly with no issues.</li>
+</ul>
+<p>Encouraging students to restart and rerun the Jupyter Notebook periodically helps them avoid memory-related errors, reinforces the importance of execution order, and encourages good habits for reproducible coding.</p>
+</section>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>Jupyter Notebook has remained a dominant tool for performing data analysis and AI/ML modelling. It allows the instantaneous execution of commands, such that software developers can see the effects of implemented Python code. It is accessible within the Google Colab cloud platform and may be installed locally within Anaconda or as a <code>pip</code> package. It provides students with an interface that is similar to a <a href="https://docs.databricks.com/aws/en/notebooks/">Databricks Notebook</a>, which is used with large data samples.</p>
+<p>While care is needed to avoid package conflicts and students should be guided on execution order and debugging practices, Jupyter Notebook’s combination of code, visualisations, and text documentation offers a powerful platform for learning and experimentation. By leveraging these features thoughtfully, educators can make programming more accessible and engaging, opening the door for students from diverse fields to develop computational skills and confidence.</p>
+</section>
+<section id="references" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="references">References</h2>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./C24_lost-in-translation.html" class="pagination-link" aria-label="Lost in Translation: Complexities and Good Practices of Translating Coding-based Teaching Materials Across Multiple Languages">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Lost in Translation: Complexities and Good Practices of Translating Coding-based Teaching Materials Across Multiple Languages</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./C32_civil-engineering.html" class="pagination-link" aria-label="Changing civil engineering students' mindset toward programming">
+        <span class="nav-page-text"><span class="chapter-title">Changing civil engineering students’ mindset toward programming</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
