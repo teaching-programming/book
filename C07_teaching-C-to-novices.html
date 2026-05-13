@@ -92,7 +92,7 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./C09_debugging-beyond-the-debugger.html" rel="next">
+<link href="./C08_hype-need-responsible-compute.html" rel="next">
 <link href="./C06_feminists-and-anarchists.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -232,6 +232,11 @@ div.csl-indent {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./C07_teaching-C-to-novices.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Second Languages: Teaching C to Python+Jupyter Novices</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C08_hype-need-responsible-compute.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Hype and The Need for Responsible Compute</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -837,6 +842,11 @@ Tshukudu, Ethel, Quintin Cutts, and Mary Ellen Foster. 2021. <span>“Evaluating
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
         }
       }
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
@@ -1157,8 +1167,8 @@ Tshukudu, Ethel, Quintin Cutts, and Mary Ellen Foster. 2021. <span>“Evaluating
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./C09_debugging-beyond-the-debugger.html" class="pagination-link" aria-label="Brain Book Buddy Boss Break: A Practical Debugging Framework for Learners">
-        <span class="nav-page-text"><span class="chapter-title">Brain Book Buddy Boss Break: A Practical Debugging Framework for Learners</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./C08_hype-need-responsible-compute.html" class="pagination-link" aria-label="Hype and The Need for Responsible Compute">
+        <span class="nav-page-text"><span class="chapter-title">Hype and The Need for Responsible Compute</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

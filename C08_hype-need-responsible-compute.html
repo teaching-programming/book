@@ -1,0 +1,1314 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.37">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Samantha Ahern">
+<meta name="author" content="Sam Skipsey">
+<meta name="author" content="Leo Riviera">
+<meta name="author" content="Pawel Orzechowski">
+<meta name="keywords" content="ethics, AI, society, sustainability">
+
+<title>Hype and The Need for Responsible Compute – Teaching Programming across Disciplines</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./C09_debugging-beyond-the-debugger.html" rel="next">
+<link href="./C07_teaching-C-to-novices.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-6cd8da66a1bdaffdec2ef34407fc6c1c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="_theme/styles.css">
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./C08_hype-need-responsible-compute.html"><span class="chapter-title">Hype and The Need for Responsible Compute</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Teaching Programming across Disciplines</a> 
+        <div class="sidebar-tools-main">
+    <div class="dropdown">
+      <a href="" title="Download" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Download"><i class="bi bi-download"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="./teaching_programming_across_disciplines.pdf">
+              <i class="bi bi-file-pdf pe-1"></i>
+            Download PDF
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="./teaching_programming_across_disciplines.epub">
+              <i class="bi bi-journal pe-1"></i>
+            Download ePub
+            </a>
+          </li>
+      </ul>
+    </div>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Teaching Programming across Disciplines</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./00-chapter-template.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Title of Example Chapter (as will appear on top h1 header and in table of contents)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./CAB_Author-bio-placeholder.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Author Bios Placeholder</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C01_teaching-python.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">A Practical Guide to Teaching Python as a Computational Tool in an Introductory Data Analysis Course</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C02_genai-before-during-after.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Assessments With Generative AI: Before, During, and After</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C03_online-teaching-reflections.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Reflections on Online Teaching</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C05_coding-mindset.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">A Guide on Empowering Students to Develop a Coding Mindset</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C06_feminists-and-anarchists.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Dungeon Crawlers and Anarchists: Co-Designing Programming Teaching Experiences</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C07_teaching-C-to-novices.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Second Languages: Teaching C to Python+Jupyter Novices</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C08_hype-need-responsible-compute.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Hype and The Need for Responsible Compute</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C09_debugging-beyond-the-debugger.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Brain Book Buddy Boss Break: A Practical Debugging Framework for Learners</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C10_teaching-with-genai.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">An optimistic outlook on Teaching, Learning and Assessment for coding with the emergence of generative AI</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C11_sequential-vs-simultaneous.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Sequential vs.&nbsp;Simultaneous: Approaches to Learning Programming and Statistics</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C12_pair-programming-overview.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Where Do I Even Start With Pair Programming in My Classroom? A Conversation With Seasoned Practitioners.</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C14_foster-inclusion-and-accessibility.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Reflections on Practices to Foster Inclusion and Accessibility in Programming Teaching</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C15_programming-without-computers.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Removing Barriers by Programming Without Computers</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C16_peer-programming.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Peer Programming in Action: Pair Programming in Larger Groups</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C20_automatic-marking.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Using automated marking in programming courses to enhance learning</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C21_programming-across-disciplines-systems-thinking.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">How Teaching Programming Across Disciplines Can Instil Systems Thinking</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C22_interdisciplinary-by-design.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Interdisciplinary by Design: The Centre for Data, Culture, &amp; Society Training Programme</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C23_pair-programming-fusion.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Learning Together Across Modes: Online and On-Site Pair Programming in a Fusion Course</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C24_lost-in-translation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Lost in Translation: Complexities and Good Practices of Translating Coding-based Teaching Materials Across Multiple Languages</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C29_notebooks-for-novices.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Notebook for novices? Pros and cons of Jupyter</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C31_leveraging-the-heterogeneity.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Leveraging the heterogeneity: teaching computing skills to a multidisciplinary cohort with a variable skill level</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C32_civil-engineering.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Changing civil engineering students’ mindset toward programming</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C33_coding-anxiety.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Overcoming coding anxiety: reflections and strategies</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C35_action-feedback-plan.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Managing the Rubik’s Cube of Assessment: The Action Feedback Protocol</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C36_pair-programming-across-disciplines.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Structured Group Work With Assigned Asymmetrical Roles and Switching: Lessons From Pair Programming Across Disciplines</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C38_skills-based-assessment.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">The case for skills-based assessment in introductory programming courses</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C39_gentle-introduction-summer-school.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">A gentle introduction to coding: narratives from a programming summer school for social sciences and humanities</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C41_pair-programming-tutor-reflections.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Pair Programming in Practice: A PhD Tutor’s Reflections</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./99-bibliography.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bibliography</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar"><div class="quarto-margin-header"><div class="margin-header-item">
+<details id="accessibility-controls">
+    <summary>Display options</summary>
+  
+    <div class="control-group">
+        <label for="fontSizeSlider">Font size</label>
+        <input type="range" id="fontSizeSlider" min="8" max="32" value="16">
+        <span id="fontSizeValue">16</span>px
+    </div>
+  
+    <div class="control-group">
+        <label for="eyeStrainSlider">Eye strain</label>
+        <input type="range" id="eyeStrainSlider" min="0" max="50" value="0">
+        <span id="eyeStrainValue">0</span>%
+    </div>
+  
+    <div class="control-group">
+        <label for="hueRotateSlider">Hue</label>
+        <input type="range" id="hueRotateSlider" min="0" max="360" value="0">
+        <span id="hueRotateValue">0</span>
+    </div>
+  
+    <div class="control-group">
+        <label for="paddingSlider">Padding</label>
+        <input type="range" id="paddingSlider" min="0" max="12" value="3">
+        <span id="paddingValue">0</span>
+    </div>
+  
+    <div class="control-group">
+        <label for="lineSpacingSlider">Spacing</label>
+        <input type="range" id="lineSpacingSlider" min="80" max="250" value="150">
+        <span id="lineSpacingValue">150</span>%
+    </div>
+  
+    <div class="control-group">
+        <label for="fontFamily">Font</label>
+        <select id="fontFamily">
+            <option value="'Atkinson Hyperlegible', sans-serif">Atkinson Hyperlegible</option>
+            <option value="Arial, Helvetica, sans-serif">Sans-serif</option>
+            <option value="Georgia, 'Bitstream Charter', Times, serif">Serif</option>
+        </select>
+    </div>
+  
+    <div class="control-group">
+        <button id="resetDefaults">Reset to Defaults</button>
+    </div>
+
+</details>
+</div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#responsible-compute-and-the-un-sustainable-development-goals" id="toc-responsible-compute-and-the-un-sustainable-development-goals" class="nav-link" data-scroll-target="#responsible-compute-and-the-un-sustainable-development-goals">Responsible compute and the UN Sustainable Development Goals</a></li>
+  <li><a href="#sec-reading-list" id="toc-sec-reading-list" class="nav-link" data-scroll-target="#sec-reading-list">Summary</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const fontSizeSlider = document.getElementById('fontSizeSlider');
+        const fontSizeValue = document.getElementById('fontSizeValue');
+
+        const hueRotateSlider = document.getElementById('hueRotateSlider');
+        const hueRotateValue = document.getElementById('hueRotateValue');
+
+        const eyeStrainSlider = document.getElementById('eyeStrainSlider');
+        const eyeStrainValue = document.getElementById('eyeStrainValue');
+
+        const paddingSlider = document.getElementById('paddingSlider');
+        const paddingValue = document.getElementById('paddingValue');
+
+        const lineSpacingSlider = document.getElementById('lineSpacingSlider');
+        const lineSpacingValue = document.getElementById('lineSpacingValue');
+
+        const fontFamilySelect = document.getElementById('fontFamily');
+
+        const html = document.documentElement;
+        const resetButton = document.getElementById('resetDefaults');
+
+        // Define default values
+        const defaults = {
+            fontSize: 16,
+            hueRotate: 0,
+            eyeStrain: 0,
+            padding: 0,
+            lineSpacing: 150,
+            fontFamily: "'Atkinson Hyperlegible', Arial, Helvetica, sans-serif"
+        };
+
+        function updateStyles() {
+            html.style.setProperty('--bs-root-font-size', fontSizeSlider.value + 'px');
+            html.style.setProperty('--hue-rotate', hueRotateSlider.value + 'deg');
+            html.style.setProperty('--eye-strain', eyeStrainSlider.value + '%');
+            html.style.setProperty('--padding', paddingSlider.value + 'em');
+            html.style.setProperty('--line-spacing', lineSpacingSlider.value + '%');
+            html.style.setProperty('--bs-body-font-family', fontFamilySelect.value);
+
+            fontSizeValue.textContent = fontSizeSlider.value;
+            hueRotateValue.textContent = hueRotateSlider.value;
+            eyeStrainValue.textContent = eyeStrainSlider.value;
+            paddingValue.textContent = paddingSlider.value;
+            lineSpacingValue.textContent = lineSpacingSlider.value;
+
+            saveSettings();
+        }
+
+        // Function to save settings to localStorage
+        function saveSettings() {
+            const settings = {
+                fontSize: fontSizeSlider.value,
+                hueRotate: hueRotateSlider.value,
+                eyeStrain: eyeStrainSlider.value,
+                padding: paddingSlider.value,
+                lineSpacing: lineSpacingSlider.value,
+                fontFamily: fontFamilySelect.value
+            };
+            localStorage.setItem('accessibilitySettings', JSON.stringify(settings));
+        }
+
+        // Function to load settings from localStorage
+        function loadSettings() {
+            const savedSettings = localStorage.getItem('accessibilitySettings');
+            if (savedSettings) {
+                const settings = JSON.parse(savedSettings);
+                fontSizeSlider.value = settings.fontSize;
+                hueRotateSlider.value = settings.hueRotate;
+                eyeStrainSlider.value = settings.eyeStrain;
+                paddingSlider.value = settings.padding;
+                lineSpacingSlider.value = settings.lineSpacing;
+                fontFamilySelect.value = settings.fontFamily;
+                updateStyles();
+            }
+        }
+
+        function resetToDefaults() {
+            fontSizeSlider.value = defaults.fontSize;
+            hueRotateSlider.value = defaults.hueRotate;
+            eyeStrainSlider.value = defaults.eyeStrain;
+            paddingSlider.value = defaults.padding;
+            lineSpacingSlider.value = defaults.lineSpacing;
+            fontFamilySelect.value = defaults.fontFamily;
+            updateStyles();
+            localStorage.removeItem('accessibilitySettings');
+        }
+
+        fontSizeSlider.oninput = updateStyles;
+        hueRotateSlider.oninput = updateStyles;
+        eyeStrainSlider.oninput = updateStyles;
+        paddingSlider.oninput = updateStyles;
+        lineSpacingSlider.oninput = updateStyles;
+        fontFamilySelect.onchange = updateStyles;
+        resetButton.onclick = resetToDefaults;
+
+        loadSettings();
+
+    });
+</script>
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-title">Hype and The Need for Responsible Compute</span></h1>
+</div>
+
+
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Authors</div>
+  <div class="quarto-title-meta-heading">Affiliations</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Samantha Ahern <a href="mailto:s.ahern@ucl.ac.uk" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Centre for Advanced Research Computing, University College London
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Sam Skipsey <a href="mailto:Samuel.Skipsey@glasgow.ac.uk" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            School of Physics and Astronomy, University of Glasgow
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Leo Riviera <a href="mailto:leo.riviera@voxa.dev" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Voxa
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Pawel Orzechowski <a href="mailto:pawel.orzechowski@ed.ac.uk" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Edinburgh Medical School, University of Edinburgh
+          </p>
+      </div>
+  </div>
+
+<div class="quarto-title-meta">
+
+      
+  
+    
+  </div>
+  
+
+<div>
+  <div class="keywords">
+    <div class="block-title">Keywords</div>
+    <p>ethics, AI, society, sustainability</p>
+  </div>
+</div>
+
+</header>
+
+
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>Hypes come and go, and in their aftermath we are left with rubbish and confusion. We are aware of physical trash in landfills, but rapid technological change also leads to inequality, injustice, and unhelpful social patterns. It is like technical debt (the price we pay later for poor and short-sighted technological decisions now), but on a social level. It is something we can’t responsibly ignore as educators and humans.</p>
+<p>It’s very relevant now that we are in the midst of (another!) AI hype. And if history taught us anything, after summer will come winter, with its sloppy sludge of half-melted mess to deal with. Disturbingly, current narratives of this hype are written by tech bros with a strong (self-serving) agenda. The chorus of this song is ‘growth, growth, growth’, but growth where and why? We were sold on the dream of machines doing the dishes so that we can write poetry… but instead machines write poetry and we are left with a pile of dirty dishes. Can we afford for art and critical thinking to become on-demand paid subscriptions (‘brain as a service’) as we outsource our criticality like we delegate our driving to Uber? Is it good for society to replace human companionship with chatbot ‘partners’?</p>
+<blockquote class="blockquote">
+<p>“how do we guarantee that computers and other cultural products are not so pleasurable that they discourage us from engaging in absolutely necessary forms of social engagement?” <span class="citation" data-cites="golumbia_cultural_2009">(<a href="#ref-golumbia_cultural_2009" role="doc-biblioref">Golumbia 2009</a>)</span></p>
+</blockquote>
+<p>As educators, our responsibility is not to prepare students for the grim post-brain-apocalyptic future, but to inspire them to create a better, sustainable world.</p>
+<p>The worst that can happen, is that we educate another generation of self-serving tech bros, who will ruin the world and humanity further. It’s irresponsible to teach any skill without also teaching the ethical, social, economical or political context, especially when topics we teach have strong creative and destructive potential (martial arts, nuclear physics, programming). But how do we make these responsibility topics ‘not skippable’? In a university setting, ethics can’t just be an optional elective subject, or even just a week of content within a core compulsory subject. We need 5 mins of ethics in every hour of teaching, we need a thought about ethics in every sentence. We do not need ethical bits in our yoghurt, we need ethics-flavoured yoghurt.</p>
+<p>In this chapter, we look at a number of topics where sustainability, AI, and education (or even wider culture) overlap. We will structure our thoughts around the international framework suggested by the United Nations: the <a href="https://sdgs.un.org/goals">UN Sustainable Development Goals</a>. Join us on this exploration of what is possible, but also of what went terribly wrong in the past. We will look especially at purposefully forgotten (or swept under the carpet) aftermaths of previous technological hypes.</p>
+<p>At the end of this chapter, we will bring it back to education and share some practical resources you can use. You will find classroom activities that support responsible computing interspersed throughout, as well as a reading list (<a href="#sec-reading-list" class="quarto-xref"><span>Summary</span></a>) of our favourite articles and books. Feel free to pick some of them and plant them straight into your own curriculum. And weather-allowing, from these seeds we will watch the growth of a new, curious and slightly more sustainable generation of students and future teachers.</p>
+</section>
+<section id="responsible-compute-and-the-un-sustainable-development-goals" class="level2">
+<h2 class="anchored" data-anchor-id="responsible-compute-and-the-un-sustainable-development-goals">Responsible compute and the UN Sustainable Development Goals</h2>
+<p>In this section, we will introduce a number of the key issues relating to responsible compute through the lens of the UN Sustainable Development Goals, an outcome of the 2025 <a href="https://sdgs.un.org/2030agenda">UN 2030 Agenda for Sustainable Development</a>. These are a series of 17 goals that address a number of key international issues.</p>
+<div class="quarto-layout-panel" data-layout="[ 88, 12 ]">
+<div class="quarto-layout-row quarto-layout-valign-bottom">
+<div id="s1-col-1" class="quarto-layout-cell" style="flex-basis: 88.0%;justify-content: flex-start;">
+<section id="engineering-inequities" class="level3">
+<h3 class="anchored" data-anchor-id="engineering-inequities">Engineering Inequities</h3>
+</section>
+</div>
+<div id="s1-col-2" class="quarto-layout-cell" style="flex-basis: 12.0%;justify-content: center;">
+<p><a href="https://sdgs.un.org/goals/goal10"><img src="./chapters/images/C08_E-WEB-Goal-10.png" title="SDG 10: Reduced Inequalities" class="img-fluid" alt="SDG 10: Reduced Inequalities"></a></p>
+</div>
+</div>
+</div>
+<p>Failure to consider all members of society in the design and development of products can lead to technologies that privilege some but are not fit for purpose for others. Examples of this include near infra-red automatic soap dispensers, which do not “see” darker skin tones due to their lower reflectivity, and “Shirley” cards in photography, which were designed to help colour balance films but were entirely based on white models <span class="citation" data-cites="benjamin_race_2019">(<a href="#ref-benjamin_race_2019" role="doc-biblioref">Benjamin 2019</a>)</span>. Despite known issues with the film itself and how the printing machines were configured, a diverse “Shirley” card was not introduced until the mid-1990s.</p>
+<p>These inequities in film photography have been echoed in facial recognition technologies. For over 50 years, the standard reference image used in image processing papers was “Lena”, a cropped image from a November 1972 issue of Playboy. As a result, this image also appears in many course materials and textbooks on image recognition. Use of the image in academic articles has since been banned, due to ethical issues relating to its provenance. In 2015, an issue was reported with the Google Photos app labelling black people as gorillas. Google claimed that this is due to a lack of diverse images of people in its training set, and that the label “gorilla” would no longer be applied to groups of photos while an alternative solution was developed. In 2023, the New York Times reported that the issue was still yet to be resolved, and was also impacting Apple’s image recognition <span class="citation" data-cites="bandara_googles_2023">(<a href="#ref-bandara_googles_2023" role="doc-biblioref">Bandara 2023</a>)</span>.</p>
+<p>In 2018, Michael Rosen received a standing ovation at the last ever National Union of Teachers conference after reciting his poem <a href="https://michaelrosenblog.blogspot.com/2018/02/the-data-have-landed.html">The Data Have Landed</a>. The poem concludes with pupils becoming data, reflecting concerns over the datafication of compulsory education, reiterating sentiments in his previously published short story <a href="https://www.theguardian.com/education/2017/dec/19/alice-in-dataland-original-story-education-michael-rosen">Alice in Dataland</a>. Social inequities have long been highlighted in popular culture, for example the hip-hop classic White Lines and Bret Easton Ellis’ novel American Psycho. In the lyrics to White Lines a business man is treated more favourably than a young black man, despite being arrested for the possessionnof significantly more illegal drugs. In American Psycho, the wealth a power of the main protagonist leads to them literally getting away with murder. Some are repeated in the data driven decision making systems that influence all dimensions of our daily lives, multiple examples of which are highlighted in Virginia Eubanks’ 2018 book Automating Inequality <span class="citation" data-cites="eubanks_automating_2019">(<a href="#ref-eubanks_automating_2019" role="doc-biblioref">Eubanks 2019</a>)</span>.</p>
+<p>The free website <a href="https://inequalities.ai/"><code>inequalities.ai</code></a> provides maps that show how ChatGPT 4o-mini rates regions by comparative properties. The default map shows how it compares countries by “is smarter”, placing Europe, North America, China, India and Australasia as “smart”, and much of central and western Africa as “not smart” by comparison. This illustrates how bias continues to be an issue with modern, popular “AI” tools.</p>
+<div class="callout callout-style-default callout-tip no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Classroom activities: Facial Recognition workshop
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The Programming Historian lesson <a href="https://programminghistorian.org/en/lessons/facial-recognition-ai-python"><strong>Facial Recognition in Historical Photographs with Artificial Intelligence in Python</strong></a> introduces key concepts of facial recognition. This tutorial can be expanded to introduce key issues related to inequalities.</p>
+<ul>
+<li><strong>Example: Blackish, Series 5 Episode 10</strong>. In this episode Diane is “invisible” in her class photo. This can be a starting point to discuss engineered inequity.</li>
+<li><strong>Example: Lena and Google Photos</strong>. An opportunity to discuss the culture of the research labs where image recognition technologies were developed, how this became part of the “canon”, and issues with inadequate training data.</li>
+</ul>
+<p>For an example of how these resources can be included, see <span class="citation" data-cites="ahern_2026_image">Ahern (<a href="#ref-ahern_2026_image" role="doc-biblioref">2026</a>)</span>.</p>
+</div>
+</div>
+<div class="quarto-layout-panel" data-layout="[ 76, 12, 12 ]">
+<div class="quarto-layout-row quarto-layout-valign-bottom">
+<div id="s2-col-1" class="quarto-layout-cell" style="flex-basis: 76.0%;justify-content: flex-start;">
+<section id="hardware-and-the-environment" class="level3">
+<h3 class="anchored" data-anchor-id="hardware-and-the-environment">Hardware and the environment</h3>
+</section>
+</div>
+<div id="s2-col-2" class="quarto-layout-cell" style="flex-basis: 12.0%;justify-content: center;">
+<p><a href="https://sdgs.un.org/goals/goal8"><img src="./chapters/images/C08_E-WEB-Goal-08.png" title="SDG 8: Decent work and Economic Growth" class="img-fluid" alt="SDG 8: Decent work and Economic Growth"></a></p>
+</div>
+<div id="s2-col-3" class="quarto-layout-cell" style="flex-basis: 12.0%;justify-content: center;">
+<p><a href="https://sdgs.un.org/goals/goal12"><img src="./chapters/images/C08_E-WEB-Goal-12.png" title="SDG 12: Responsible Consumption and Production" class="img-fluid" alt="SDG 12: Responsible Consumption and Production"></a></p>
+</div>
+</div>
+</div>
+<p>Most environmental discussions relating to data-intensive computing are focused on the direct power costs of running increasingly large and dense collections of compute and storage, with increasing concerns relating to water use in cooling systems.</p>
+<p>However, the main environmental harms relate to the acquisition of the raw materials required and the embedded carbon in the manufacturing process. <strong>Tantalum, tin, gold</strong>, and other elements are all essential to the production of modern microelectronics. Their minerals are often located in regions with a history of conflict — most notably the Democratic Republic of Congo (DRC) — where demand results in neocolonial forces driving further instability on top of the existing legacies of colonial pasts <span class="citation" data-cites="batha_how_nodate">(<a href="#ref-batha_how_nodate" role="doc-biblioref">Batha, n.d.</a>)</span>. A rush for gold has led to deforestation in the Amazon and increasing concern about the safety of workers in artisanal mines <span class="citation" data-cites="noauthor_blood_2022">(<a href="#ref-noauthor_blood_2022" role="doc-biblioref"><span>“<span>BLOOD</span> <span>GOLD</span> — <span>Is</span> Your Cell Phone or Electric Car Stained with <span>Indigenous</span> Blood from the <span>Amazon</span>?”</span> 2022</a>)</span>. Blood gold, which is illegally mined, finds its way into legitimate supply chains with false documentation <span class="citation" data-cites="federl_investigating_2025">(<a href="#ref-federl_investigating_2025" role="doc-biblioref">Federl 2025</a>)</span>.</p>
+<p>The brine beneath Bolivia’s salt flats contain rich deposits of lithium, an essential component in electric batteries. As this is becoming industrialised, there are concerns about who really benefits — the local communities or the companies involved — and about the proposed process and the levels of water required which may impact on neighbouring settlements.</p>
+<p>Mining of <strong>coltan</strong>, the dominant source of tantalum (and niobium), is infamous for being deeply exploitative, with hard manual labour the dominant process used in the DRC. As the drive to build data centres has led to natural land being displaced in North America, China, and Europe, so has coltan mining led to deforestation, the near eradication of endangered species (gorillas, in particular, hunted for bushmeat to also feed the miners), and water pollution from dust spoil. There are significant health implications for the workers themselves, with elevated respiratory problems due to that same dust pollution <span class="citation" data-cites="leon-kabamba_respiratory_2018">(<a href="#ref-leon-kabamba_respiratory_2018" role="doc-biblioref">Leon-Kabamba et al. 2018</a>)</span>, and ionising radiation doses approaching the annual exposure limits for UK nuclear industry employees <span class="citation" data-cites="mustapha_occupational_2007 uk_health_security_agency_ionising_2011">(<a href="#ref-mustapha_occupational_2007" role="doc-biblioref">Mustapha et al. 2007</a>; <a href="#ref-uk_health_security_agency_ionising_2011" role="doc-biblioref">Agency 2011</a>)</span>.</p>
+<div class="callout callout-style-default callout-tip no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Classroom activities: Exploring the impact of mining
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Current business models are based upon planned obsolescence. This could lead to a discussion of the sustainability of this business model — why the hardware cannot just be manufactured and why computational hardware has a short supported lifespan compared to its actual usable lifespan.</p>
+<ul>
+<li><strong>Example: River of Gold</strong>.
+<ul>
+<li>Watch the documentary <a href="https://riverofgoldfilm.com/about-the-film/">River of Gold</a></li>
+<li>Explore how the <a href="https://amazonaid.org/be-a-better-consumer/">Amazon Aid Be a Better Guide</a> relates to the production of electronic hardware</li>
+</ul></li>
+<li><strong>Example: Simon Reeve’s South America, Episodes 3 &amp; 4</strong>. Episode 3 is in the Andes and features a high altitude gold mine and the working conditions of employees. Episode 4 features the salt flats and lithium extraction.</li>
+</ul>
+<p>These issues can also be discussed in workshops relating to code optimisation and green compute. Reasons for optimisation may be for decreasing time to result, or to optimise the amount of social good for the environmental harms.</p>
+</div>
+</div>
+<div class="quarto-layout-panel" data-layout="[ 76, 12, 12 ]">
+<div class="quarto-layout-row quarto-layout-valign-bottom">
+<div id="s3-col-1" class="quarto-layout-cell" style="flex-basis: 76.0%;justify-content: flex-start;">
+<section id="sec-data-acquisition" class="level3">
+<h3 class="anchored" data-anchor-id="sec-data-acquisition">Data acquisition and workforce exploitation</h3>
+</section>
+</div>
+<div id="s3-col-2" class="quarto-layout-cell" style="flex-basis: 12.0%;justify-content: center;">
+<p><a href="https://sdgs.un.org/goals/goal3"><img src="./chapters/images/C08_E-WEB-Goal-03.png" title="SDG 3: Good health and Well-being" class="img-fluid" alt="SDG 3: Good health and Well-being"></a></p>
+</div>
+<div id="s3-col-3" class="quarto-layout-cell" style="flex-basis: 12.0%;justify-content: center;">
+<p><a href="https://sdgs.un.org/goals/goal8"><img src="./chapters/images/C08_E-WEB-Goal-08.png" title="SDG 8: Decent work and Economic Growth" class="img-fluid" alt="SDG 8: Decent work and Economic Growth"></a></p>
+</div>
+</div>
+</div>
+<p>In 2019, the IBM corporation was criticised for using Flickr photos in a facial-recognition project without obtaining the consent of those who had created or were featured in the images <span class="citation" data-cites="solon_facial_2019">(<a href="#ref-solon_facial_2019" role="doc-biblioref">Solon 2019</a>)</span>.</p>
+<p>As most images used for machine learning are scraped from the internet and are not well tagged, a large workforce is needed to create this additional metadata. Similarly, tagging of content as illegal or otherwise problematic requires a large amount of initial training data which is manually tagged by humans. To do so at scale, at an affordable cost, AI companies employ outsourcing partners such as Sama, which pay workers in Kenya, Uganda and India a pittance (typically $2/hr) for this work <span class="citation" data-cites="perrigo_exclusive_2023">(<a href="#ref-perrigo_exclusive_2023" role="doc-biblioref">Perrigo 2023</a>)</span>. This is true even when the content being labelled is known to be obscene and/or deeply distressing — graphic descriptions of sexual assault, for example, or images depicting abuse. To their credit, eventually Sama cancelled some of their worst contracts with AI companies, but other outsourcing companies exist and still perform similar work.</p>
+<p>The recent AI boom and the <a href="https://data-workers.org/">Data Workers Inquiry</a> have highlighted these issues, but concerns regarding Amazon’s Mechanical Turk (MTurk) and its workers were being raised back in 2015, and again in 2024 <span class="citation" data-cites="dholakia_my_2015 klovig_skelton_amazon_2024">(<a href="#ref-dholakia_my_2015" role="doc-biblioref">Dholakia 2015</a>; <a href="#ref-klovig_skelton_amazon_2024" role="doc-biblioref">Klovig Skelton 2024</a>)</span>. Despite these concerns, MTurk is still used by many researchers across multiple domains.</p>
+<div class="callout callout-style-default callout-tip no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Classroom activities: Data sources for training models
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><strong>Example: Data Workers Inquiry</strong>. Explore <a href="https://data-workers.org/">“Data Workers in Europe Speak Out”</a>. Do these experiences align with notions of decent work? What are the harms?</li>
+<li><strong>Example: <a href="https://huggingface.co/blog/ngxson/make-your-own-rag">Hugging Face RAG tutorial</a></strong>. In this part of the tutorial, you could discuss the source of the file contents for the RAG training. This could then lead into discussions around access and licensing.</li>
+</ul>
+</div>
+</div>
+<div class="quarto-layout-panel" data-layout="[ 88, 12 ]">
+<div class="quarto-layout-row quarto-layout-valign-bottom">
+<div id="s4-col-1" class="quarto-layout-cell" style="flex-basis: 88.0%;justify-content: flex-start;">
+<section id="surveillance-sousveillance-and-civil-liberties" class="level3">
+<h3 class="anchored" data-anchor-id="surveillance-sousveillance-and-civil-liberties">Surveillance, sousveillance, and civil liberties</h3>
+</section>
+</div>
+<div id="s4-col-2" class="quarto-layout-cell" style="flex-basis: 12.0%;justify-content: center;">
+<p><a href="https://sdgs.un.org/goals/goal16"><img src="./chapters/images/C08_E-WEB-Goal-16.png" title="SDG 16: Peace, Justice and String institutions" class="img-fluid" alt="SDG 16: Peace, Justice and String institutions"></a></p>
+</div>
+</div>
+</div>
+<p>In 2018, the British Council published an article based on a letter by Tim Berners-Lee <span class="citation" data-cites="berners-lee_web_2013">(<a href="#ref-berners-lee_web_2013" role="doc-biblioref">Berners-Lee 2013</a>)</span>, where he raised concerns about the dark side of the web, alongside his hopes for the future. Specifically, he raised concerns around the concentration of power and the gatekeeping effect which enables a “handful of platforms to control which ideas and opinions are seen and shared”.</p>
+<p>These fears are now being realised. According to the Fortune 500 Global rankings <span class="citation" data-cites="fortunecom_fortune_2023">(<a href="#ref-fortunecom_fortune_2023" role="doc-biblioref">Fortune.com 2023</a>)</span>, Amazon is the second largest grossing organisation in 2025 and has been in the Fortune 500 Global rankings list for 17 years. Apple is 8th, Alphabet 13th, Microsoft 22nd and Meta Platforms 41st. These companies rely heavily on our data for their platforms and services, producing tools and platforms that shape our everyday lives.</p>
+<p>This sentiment is also echoed by contemporary academics. Take David Golumbia, who in the introductory chapter of The Cultural Logic of Computation, asks <span class="citation" data-cites="golumbia_cultural_2009">(<a href="#ref-golumbia_cultural_2009" role="doc-biblioref">Golumbia 2009</a>)</span> “what happens when powerful institutions — corporations, governments, schools — embrace computationalism as a working philosophy”. It entrenches power and enmeshes instrumental reason with neoliberalism, despite being framed in terms of distributed power and democratic participation.</p>
+<p>In surveillance and sousveillance, the same technologies are used by both those in positions of authority and those wishing to hold them to account. The majority of public spaces are fitted with cameras and other monitoring equipment, many of which have been introduced as public safety initiatives; the few watching the many. There have been concerns related to privacy associated with these technologies — most recently, an <a href="https://ico.org.uk/about-the-ico/media-centre/news-and-blogs/2025/08/ico-steps-up-scrutiny-of-police-use-of-facial-recognition-technology-with-audit-of-south-wales-police-and-gwent-police/">audit by the Information Commissioner’s Office</a> on the use of facial recognition technology by South Wales Police and Gwent Police. Sousveillance is a form of inverse surveillance, “watching the watchers”, facilitated by mobile digital camera technologies and high speed mobile data connections, which has steadily been growing. It can be used either for recording personal experiences, or for the monitoring of authority figures (hierarchical sousveillance) <span class="citation" data-cites="baker_sousveillance_2020">(<a href="#ref-baker_sousveillance_2020" role="doc-biblioref">Reilly 2020</a>)</span>, and can have both positive (e.g.&nbsp;the recording of the George Floyd incident) and negative impacts on individuals (e.g.&nbsp;cyber harassment) and organisations.</p>
+<div class="callout callout-style-default callout-tip no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Classroom activities: Responsible AI
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><p><strong>Example: <a href="https://datopolis.theodi.org/">Datopolis — The Open Data Board Game</a></strong>. This board game from the Open Data Initiative is available to play online. It introduces key ideas around why data may be open or closed, and longer versions of the game introduce different perspectives on how data can be used. This helps learners to understand that decisions around data use are political and opens up the idea that data itself may not be neutral.</p></li>
+<li><p><strong>Example: Explore whether AI smart glasses should be a consumer technology</strong>. In 2013, Google launched its Google Glass smart glasses. Due to resistance and concerns over use, these were withdrawn from the market in 2015. However, this technology has seen a resurgence. Meta launched AI enabled smart glasses in the autumn of 2025, and Google are considering re-entering the market. However, there are already rising concerns over how these devices are being used.</p>
+<p>A number of campuses in the USA have issued guidance to students over use on campus and threats to safety <span class="citation" data-cites="clack_university_2025">(<a href="#ref-clack_university_2025" role="doc-biblioref">Clack 2025</a>)</span>. Smart glasses also pose risks to their wearers: a recent expose revealed that all video recorded on Meta smart glasses is reviewed by data annotators employed by Sama (see <a href="#sec-data-acquisition" class="quarto-xref"><span>Data acquisition and workforce exploitation</span></a>). This is not made clear to users of the glasses, who often record intimate parts of their lives on their product. The Information Commissioner’s Office has written to Meta about concerns <span class="citation" data-cites="vallance_ico_2026">(<a href="#ref-vallance_ico_2026" role="doc-biblioref">Vallance 2026</a>)</span>.</p>
+<p>Students may discuss what the benefit is for Meta and Google in providing smart glasses. Should they be an industrial or a consumer product? This can lead into discussions about corporate responsibility and “surveillance capitalism”.</p></li>
+<li><p><strong>Example: <a href="https://incidentdatabase.ai/">Explore the AI Incidents Database</a></strong>. This website is a project of the Responsible AI Collective, an archive of actual harms or near harms of deployed AI systems. The taxonomies of <a href="https://incidentdatabase.ai/taxonomies/gmf/">Goals, Methods, and Failures (GMF)</a> and the <a href="https://incidentdatabase.ai/taxonomies/mit/">MIT AI Risk Repository</a> are particularly interesting and could be used when discussing a particular technology or potential for harm.</p></li>
+</ul>
+</div>
+</div>
+<div class="quarto-layout-panel" data-layout="[ 76, 12, 12 ]">
+<div class="quarto-layout-row quarto-layout-valign-bottom">
+<div id="s5-col-1" class="quarto-layout-cell" style="flex-basis: 76.0%;justify-content: flex-start;">
+<section id="cultural-colonialism" class="level3">
+<h3 class="anchored" data-anchor-id="cultural-colonialism">Cultural colonialism</h3>
+</section>
+</div>
+<div id="s5-col-2" class="quarto-layout-cell" style="flex-basis: 12.0%;justify-content: center;">
+<p><a href="https://sdgs.un.org/goals/goal4"><img src="./chapters/images/C08_E-WEB-Goal-04.png" title="SDG 4: Quality Education" class="img-fluid" alt="SDG 4: Quality Education"></a></p>
+</div>
+<div id="s5-col-3" class="quarto-layout-cell" style="flex-basis: 12.0%;justify-content: center;">
+<p><a href="https://sdgs.un.org/goals/goal10"><img src="./chapters/images/C08_E-WEB-Goal-10.png" title="SDG 10: Reduced Inequalities" class="img-fluid" alt="SDG 10: Reduced Inequalities"></a></p>
+</div>
+</div>
+</div>
+<p>A related problem to inequity in “AI model training” is inequity in generated content.</p>
+<p>Large Language Models generate “plausible” text based on the patterns found in the material they are trained on. However, this material is overwhelmingly English-language, and written by US or British citizens, introducing a cultural bias into the responses from the models themselves <span class="citation" data-cites="tao_cultural_2024 jakesch_co-writing_2023">(<a href="#ref-tao_cultural_2024" role="doc-biblioref">Tao et al. 2024</a>; <a href="#ref-jakesch_co-writing_2023" role="doc-biblioref">Jakesch et al. 2023</a>)</span>.</p>
+<p>As pressure is placed on educational institutions to include “AI” in teaching-related roles, this brings the risk that students learn homogeneous values, potentially those of foreign cultures. This extends not merely to values, but also styles of writing: the “distinctive” tone of an LLM-generated piece of text is a distillation of the dominant styles in its training set <span class="citation" data-cites="agarwal_ai_2025">(<a href="#ref-agarwal_ai_2025" role="doc-biblioref">Agarwal et al. 2025</a>)</span>. Writers relying on LLMs to “co-develop” essays tend to defer to the LLM’s style suggestions relative to their own, even when these stylistic differences are those of culture, not correctness. The effect begins with normative suggestions from spell- and grammar-checkers in text editing software since the 1980s — British English speakers often being “corrected” by default US English software — and also introducing unique cases of language drift when the software encountered words that were not in its dictionary <span class="citation" data-cites="zimmer_when_2007">(<a href="#ref-zimmer_when_2007" role="doc-biblioref">Zimmer 2007</a>)</span>.</p>
+<p>This inhibition of local culture in favour of a “preferred” culture is that of cultural colonisation. This pattern is seen historically in the behaviour of many empires. For example, the British occupation of Ireland during the 16th to early 20th centuries was associated with a suppression of Irish culture and language <span class="citation" data-cites="rodriguez_how_2024">(<a href="#ref-rodriguez_how_2024" role="doc-biblioref">Rodriguez and Sojan 2024</a>)</span>, something mirrored in the suppression of Scottish Gaelic and Lowland Scots in Scotland, Welsh in Wales, and the replacement of local languages by English across the British Empire <span class="citation" data-cites="lucas_how_2025">(<a href="#ref-lucas_how_2025" role="doc-biblioref">Lucas 2025</a>)</span>. Cultural homogenisation also occurs within countries (e.g.&nbsp;France <span class="citation" data-cites="gregory_rapport_2023">(<a href="#ref-gregory_rapport_2023" role="doc-biblioref">Grégoire 2023</a>)</span>, Japan <span class="citation" data-cites="nationcymru_japanese_2022">(<a href="#ref-nationcymru_japanese_2022" role="doc-biblioref">NationCymru 2022</a>)</span>, Turkey, Spain, and many others). Often, these processes are associated with an attempt to impose a dominant culture or politics via language substitution — consider Catalan independence movements in Spain, for example.</p>
+<p>With technological promotion, the increased danger is that suppression no longer needs to be forced; instead, the “modernity” and ease of use of the tool acts as a vector to cause adoption. Before LLMs, we saw, and continue to see, “social bubble” effects where online groups iterate themselves into extreme viewpoints <span class="citation" data-cites="noauthor_social_nodate">(<a href="#ref-noauthor_social_nodate" role="doc-biblioref"><em>Social <span>Bubble</span> - <span>ECPS</span></em>, n.d.</a>)</span>; LLMs worsen this by increasingly also homogenising those perspectives in other directions, and by producing content faster than a human can.</p>
+<p>Indeed, even before LLMs, the ease with which Internet-based technologies has allowed us to publish content to the entire world has allowed unwitting damage to minority cultures. An American teenager with no Scots knowledge single-handedly degraded much of the Scots language Wikipedia during the late 2010s, with knock-on effects in media representation of the language and culture worldwide <span class="citation" data-cites="brooks_shock_2020">(<a href="#ref-brooks_shock_2020" role="doc-biblioref">Brooks and Hern 2020</a>)</span>.</p>
+<div class="callout callout-style-default callout-tip no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Classroom activities: Generative AI and homogenisation
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><strong>Example: Volume of content generation</strong>. A Graphite study <span class="citation" data-cites="paredes_more_2025">(<a href="#ref-paredes_more_2025" role="doc-biblioref">Paredes et al. 2025</a>)</span> shows that LLMs now generate more content on the internet than humans. Students can discuss what this might mean about unique perspectives and the place for human voices and thought. Students may be prompted to consider the danger of conformity in general, and how much we can trust online content without provenance! Educators might discuss the Scots Wikipedia scandal mentioned above as an example of how, even without LLMs, technology amplifies the actions of individuals in potentially harmful ways.</li>
+<li><strong>Example: Essay “help”</strong>. Students almost certainly have used LLMs to generate or “help” with essay writing or editing. Discuss, with prompting an LLM in class, where individual style may be a matter of taste — and how the style biases of the LLM are themselves obvious. Compare to the diverse range of styles found in (English) literature — do the students think that an LLM would have allowed James Joyce to write Ulysses? Or William Shakespeare to write his plays, given his invention (or at least promotion) of many new words in the English language? (This can become a discussion about the need for critical thinking, creativity and analysis in any text.)</li>
+<li><strong>Example: Homogenisation beyond text</strong>. Image generation models, such as DALL-E, Stable Diffusion, etc., exhibit biases in the way they respond to prompts <span class="citation" data-cites="park_white_2024">(<a href="#ref-park_white_2024" role="doc-biblioref">Park 2024</a>)</span>. With reference to the images in the linked article, students can discuss the biases they see, or do not see, in the responses; and link them to their own self-image.</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="sec-reading-list" class="level2">
+<h2 class="anchored" data-anchor-id="sec-reading-list">Summary</h2>
+<p>In this chapter, we have raised a number of repeating socio-technical issues and linked these to the UN Sustainable Development Goals. We have also provided examples of how these topics could be introduced to learners. These examples are directly linked to the <a href="https://www.qaa.ac.uk/docs/qaa/sbs/sbs-computing-22.pdf?sfvrsn=ebb3dc81_4">QAA Computing Subject Benchmark</a> statement 1.17 regarding sustainability and 1.14 regarding equality, diversity and inclusion, specifically the consideration point: “demonstrating areas in software engineering and application development that require a professional and reflective approach to addressing bias and lack of diversity in data and design of computing solutions, systems and protocols.”</p>
+<p>We hope that these examples, alongside the <a href="https://www.advance-he.ac.uk/knowledge-hub/education-sustainable-development-guidance">QAA and AdvanceHE Education for Sustainable Development Guidance</a>, will help embed these key ideas throughout our curricula. In addition, we have provided a list of recommended further reading that will expand on the ideas introduced more fully, and provide inspiration for how we can introduce these key topics to our students and lead to a more sustainable, and ethical, future for all.</p>
+<div class="callout callout-style-default callout-tip no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Further reading
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><span class="citation" data-cites="eubanks_automating_2019">Eubanks (<a href="#ref-eubanks_automating_2019" role="doc-biblioref">2019</a>)</span>, <strong>Automating inequality: how high-tech tools profile, police, and punish the poor.</strong> This is a USA focused book. It discusses a range of issues related to algorithmic decision making that have negatively impacted on less privileged areas of society. The spur for writing the book was Eubanks’ partner falling foul of a health insurance algorithm and being denied funding for health care.</li>
+<li><span class="citation" data-cites="benjamin_race_2019">Benjamin (<a href="#ref-benjamin_race_2019" role="doc-biblioref">2019</a>)</span>, <strong>Race after technology: abolitionist tools for the New Jim Code.</strong> History is littered with technologies that “other”; in this book, Benjamin explores how technologies have the ability to entrench existing inequities whilst appearing at a surface level to be neutral.</li>
+<li><span class="citation" data-cites="mejias2024data">Mejias and Couldry (<a href="#ref-mejias2024data" role="doc-biblioref">2024</a>)</span>, <strong>Data grab: The new colonialism of big tech and how to fight back.</strong> This book explores data acquisition as a colonial act, comparing it to the land grabs during the age of Empire. It introduces and discusses key topics such as data ownership and individual data rights.</li>
+<li><span class="citation" data-cites="jasanoff2019dreamscapes">Jasanoff and Kim (<a href="#ref-jasanoff2019dreamscapes" role="doc-biblioref">2019</a>)</span>, <strong>Dreamscapes of modernity: Sociotechnical imaginaries and the fabrication of power.</strong> Sociotechnical imaginaries are transnational concepts, this was the first text to explore this concept in depth. It introduces the implicit ideas about public purposes, collective futures, and the common good in scientific and technology progress.</li>
+<li><span class="citation" data-cites="zuboff2023age">Zuboff (<a href="#ref-zuboff2023age" role="doc-biblioref">2023</a>)</span>, <strong>The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power.</strong> This book discusses the business models behind big tech, and how convenience has been traded for privacy. How we have gotten to where we are with data driven technologies and industries in the 21st century.</li>
+<li><span class="citation" data-cites="doctorow2025enshittification">Doctorow (<a href="#ref-doctorow2025enshittification" role="doc-biblioref">2025</a>)</span>, <strong>Enshittification: Why Everything Suddenly Got Worse and What to Do About It.</strong> This book more generally discusses the modern phenomenon of “Big Tech” and hypothesises a common pattern to unethical behaviour, whilst suggesting an anti-capitalist response. (Note: this book is available in electronic form, DRM-free, from <a href="https://shop.craphound.com">Doctorow’s own web-store</a>.)</li>
+<li><span class="citation" data-cites="black2012ibm">Black (<a href="#ref-black2012ibm" role="doc-biblioref">2012</a>)</span>, <strong>IBM and the Holocaust: The Strategic Alliance Between Nazi Germany and America’s Most Powerful Corporation – Expanded Edition.</strong> A meticulously researched piece covering the knowing involvement of IBM (and its German subsiduaries) in the actions of Nazi Germany. A good example of where prioritising profit over ethics once led us, and can lead us again.</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="references" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="references">References</h2>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-agarwal_ai_2025" class="csl-entry" role="listitem">
+Agarwal, Dhruv, Mor Naaman, and Aditya Vashistha. 2025. <span>“<span>AI</span> <span>Suggestions</span> <span>Homogenize</span> <span>Writing</span> <span>Toward</span> <span>Western</span> <span>Styles</span> and <span>Diminish</span> <span>Cultural</span> <span>Nuances</span>.”</span> <em>Proceedings of the 2025 <span>CHI</span> <span>Conference</span> on <span>Human</span> <span>Factors</span> in <span>Computing</span> <span>Systems</span></em> (Yokohama Japan), April, 1–21. <a href="https://doi.org/10.1145/3706598.3713564">https://doi.org/10.1145/3706598.3713564</a>.
+</div>
+<div id="ref-uk_health_security_agency_ionising_2011" class="csl-entry" role="listitem">
+Agency, UK Health Security. 2011. <span>“Ionising Radiation: Dose Comparisons.”</span> In <em>GOV.UK</em>. UK Government. <a href="https://www.gov.uk/government/publications/ionising-radiation-dose-comparisons/ionising-radiation-dose-comparisons">https://www.gov.uk/government/publications/ionising-radiation-dose-comparisons/ionising-radiation-dose-comparisons</a>.
+</div>
+<div id="ref-ahern_2026_image" class="csl-entry" role="listitem">
+Ahern, Samantha. 2026. <em>Image Recognition - History, Ethics and Moral Dilemmas. Workshop Session Plan.</em> Version 1.0. Zenodo. <a href="https://doi.org/10.5281/zenodo.19148713">https://doi.org/10.5281/zenodo.19148713</a>.
+</div>
+<div id="ref-bandara_googles_2023" class="csl-entry" role="listitem">
+Bandara, Pesala. 2023. <span>“Google’s <span>Photos</span> <span>App</span> Is <span>Still</span> <span>Unable</span> to <span>Find</span> <span>Gorillas</span>.”</span> In <em>PetaPixel</em>. <a href="https://petapixel.com/2023/05/22/googles-photos-app-is-still-unable-to-find-gorillas/">https://petapixel.com/2023/05/22/googles-photos-app-is-still-unable-to-find-gorillas/</a>.
+</div>
+<div id="ref-batha_how_nodate" class="csl-entry" role="listitem">
+Batha, Emma. n.d. <em>How Murky Gold Trade Fuels Wars, Gangs and Terror Attacks <span></span> <span>Context</span> by <span>TRF</span></em>. Accessed March 18, 2026. <a href="https://www.context.news/money-power-people/how-murky-gold-trade-fuels-wars-gangs-and-terror-attacks">https://www.context.news/money-power-people/how-murky-gold-trade-fuels-wars-gangs-and-terror-attacks</a>.
+</div>
+<div id="ref-benjamin_race_2019" class="csl-entry" role="listitem">
+Benjamin, Ruha. 2019. <em>Race After Technology: Abolitionist Tools for the <span>New</span> <span>Jim</span> <span>Code</span></em>. Polity.
+</div>
+<div id="ref-berners-lee_web_2013" class="csl-entry" role="listitem">
+Berners-Lee, Tim. 2013. <span>“’<span>The</span> Web Is Under Threat’: <span>Tim</span> <span>Berners</span>-<span>Lee</span> on Making the Web Work for Everyone.”</span> In <em>British Council</em>. British Council Worldwide. <a href="https://www.britishcouncil.org/anyone-anywhere/explore/dark-side-web/tim-berners-lee">https://www.britishcouncil.org/anyone-anywhere/explore/dark-side-web/tim-berners-lee</a>.
+</div>
+<div id="ref-black2012ibm" class="csl-entry" role="listitem">
+Black, Edwin. 2012. <em>IBM and the Holocaust: The Strategic Alliance Between Nazi Germany and America’s Most Powerful Corporation – Expanded Edition</em>. Dialog press.
+</div>
+<div id="ref-noauthor_blood_2022" class="csl-entry" role="listitem">
+<span>“<span>BLOOD</span> <span>GOLD</span> — <span>Is</span> Your Cell Phone or Electric Car Stained with <span>Indigenous</span> Blood from the <span>Amazon</span>?”</span> 2022. In <em>The People’s Forum</em>. <a href="https://peoplesforum.org/events/blood-gold/">https://peoplesforum.org/events/blood-gold/</a>.
+</div>
+<div id="ref-brooks_shock_2020" class="csl-entry" role="listitem">
+Brooks, Libby, and Alex Hern. 2020. <span>“Shock an Aw: <span>US</span> Teenager Wrote Huge Slice of <span>Scots</span> <span>Wikipedia</span>.”</span> <em>The Guardian</em>, August. <a href="https://www.theguardian.com/uk-news/2020/aug/26/shock-an-aw-us-teenager-wrote-huge-slice-of-scots-wikipedia">https://www.theguardian.com/uk-news/2020/aug/26/shock-an-aw-us-teenager-wrote-huge-slice-of-scots-wikipedia</a>.
+</div>
+<div id="ref-clack_university_2025" class="csl-entry" role="listitem">
+Clack, Erin. 2025. <span>“University <span>Issues</span> <span>Warning</span> <span>After</span> <span>Reports</span> of a <span>Man</span> <span>Using</span> <span>Ray</span>-<span>Ban</span> <span>Meta</span> <span>Sunglasses</span> to <span>Record</span> <span>Women</span> on <span>Campus</span>.”</span> In <em>People.com</em>. <a href="https://people.com/university-issues-warning-after-reports-of-man-using-ray-ban-meta-sunglasses-to-record-women-on-campus-11824196">https://people.com/university-issues-warning-after-reports-of-man-using-ray-ban-meta-sunglasses-to-record-women-on-campus-11824196</a>.
+</div>
+<div id="ref-dholakia_my_2015" class="csl-entry" role="listitem">
+Dholakia, Utpal. 2015. <em>My <span>Experience</span> as an <span>Amazon</span> <span>Mechanical</span> <span>Turk</span> (<span>MTurk</span>) <span>Worker</span> <span></span> <span>Psychology</span> <span>Today</span> <span>United</span> <span>Kingdom</span></em>. <a href="https://www.psychologytoday.com/gb/blog/the-science-behind-behavior/201507/my-experience-as-an-amazon-mechanical-turk-mturk-worker">https://www.psychologytoday.com/gb/blog/the-science-behind-behavior/201507/my-experience-as-an-amazon-mechanical-turk-mturk-worker</a>.
+</div>
+<div id="ref-doctorow2025enshittification" class="csl-entry" role="listitem">
+Doctorow, Cory. 2025. <em>Enshittification: Why Everything Suddenly Got Worse and What to Do about It</em>. Verso Books.
+</div>
+<div id="ref-eubanks_automating_2019" class="csl-entry" role="listitem">
+Eubanks, Virginia. 2019. <em>Automating Inequality: How High-Tech Tools Profile, Police, and Punish the Poor</em>. First Picador edition. Picador St. Martin’s Press.
+</div>
+<div id="ref-federl_investigating_2025" class="csl-entry" role="listitem">
+Federl, Fabian. 2025. <span>“Investigating <span>How</span> <span>Illegal</span> <span>Gold</span> <span>Gets</span> <span>Into</span> the <span>Legitimate</span> <span>Supply</span> <span>Chain</span>.”</span> In <em>Global Investigative Journalism Network</em>. <a href="https://gijn.org/stories/investigating-illegal-gold-mining-legitimate-supply-chain/">https://gijn.org/stories/investigating-illegal-gold-mining-legitimate-supply-chain/</a>.
+</div>
+<div id="ref-fortunecom_fortune_2023" class="csl-entry" role="listitem">
+Fortune.com. 2023. <span>“Fortune <span>Global</span> 500.”</span> In <em>Fortune</em>. <a href="https://fortune.com/ranking/global500/2023/">https://fortune.com/ranking/global500/2023/</a>.
+</div>
+<div id="ref-golumbia_cultural_2009" class="csl-entry" role="listitem">
+Golumbia, David. 2009. <em>The Cultural Logic of Computation</em>. Harvard University Press.
+</div>
+<div id="ref-gregory_rapport_2023" class="csl-entry" role="listitem">
+Grégoire, Henri. 2023. <span>“<span class="nocase">Rapport sur la nécessité et les moyens d’anéantir les patois et d’universaliser l’usage de la langue française — Convention nationale, 1794</span>.”</span> In <em>Wikisource</em>. <a href="https://w.wiki/KrJV">https://w.wiki/KrJV</a>.
+</div>
+<div id="ref-jakesch_co-writing_2023" class="csl-entry" role="listitem">
+Jakesch, Maurice, Advait Bhat, Daniel Buschek, Lior Zalmanson, and Mor Naaman. 2023. <span>“Co-<span>Writing</span> with <span>Opinionated</span> <span>Language</span> <span>Models</span> <span>Affects</span> <span>Users</span>’ <span>Views</span>.”</span> <em>Proceedings of the 2023 <span>CHI</span> <span>Conference</span> on <span>Human</span> <span>Factors</span> in <span>Computing</span> <span>Systems</span></em> (Hamburg Germany), April, 1–15. <a href="https://doi.org/10.1145/3544548.3581196">https://doi.org/10.1145/3544548.3581196</a>.
+</div>
+<div id="ref-jasanoff2019dreamscapes" class="csl-entry" role="listitem">
+Jasanoff, Sheila, and Sang-Hyun Kim. 2019. <em>Dreamscapes of Modernity: Sociotechnical Imaginaries and the Fabrication of Power</em>. University of Chicago Press.
+</div>
+<div id="ref-klovig_skelton_amazon_2024" class="csl-entry" role="listitem">
+Klovig Skelton, Sebastian. 2024. <span>“Amazon <span>Mechanical</span> <span>Turk</span> Workers Suspended Without Explanation <span></span> <span>Computer</span> <span>Weekly</span>.”</span> News. In <em>ComputerWeekly.com</em>. <a href="https://www.computerweekly.com/news/366612812/Amazon-Mechanical-Turk-workers-suspended-without-explanation">https://www.computerweekly.com/news/366612812/Amazon-Mechanical-Turk-workers-suspended-without-explanation</a>.
+</div>
+<div id="ref-leon-kabamba_respiratory_2018" class="csl-entry" role="listitem">
+Leon-Kabamba, Ngombe, Nlandu Roger Ngatu, Sakatolo Jean-Baptiste Kakoma, et al. 2018. <span>“Respiratory Health of Dust-Exposed <span>Congolese</span> Coltan Miners.”</span> <em>International Archives of Occupational and Environmental Health</em> 91 (7): 859–64. <a href="https://doi.org/10.1007/s00420-018-1329-0">https://doi.org/10.1007/s00420-018-1329-0</a>.
+</div>
+<div id="ref-lucas_how_2025" class="csl-entry" role="listitem">
+Lucas. 2025. <span>“How <span>Colonialism</span> <span>Spread</span> the <span>English</span> <span>Language</span>.”</span> In <em>English Project</em>. <a href="https://englishproject.org/how-colonialism-spread-the-english-language/">https://englishproject.org/how-colonialism-spread-the-english-language/</a>.
+</div>
+<div id="ref-mejias2024data" class="csl-entry" role="listitem">
+Mejias, Ulises A, and Nick Couldry. 2024. <span>“Data Grab: The New Colonialism of Big Tech and How to Fight Back.”</span> In <em>Data Grab</em>. University of Chicago Press.
+</div>
+<div id="ref-mustapha_occupational_2007" class="csl-entry" role="listitem">
+Mustapha, A O, P Mbuzukongira, and M J Mangala. 2007. <span>“Occupational Radiation Exposures of Artisans Mining Columbite–Tantalite in the Eastern <span>Democratic</span> <span>Republic</span> of <span>Congo</span>.”</span> <em>Journal of Radiological Protection</em> 27 (2): 187–95. <a href="https://doi.org/10.1088/0952-4746/27/2/005">https://doi.org/10.1088/0952-4746/27/2/005</a>.
+</div>
+<div id="ref-nationcymru_japanese_2022" class="csl-entry" role="listitem">
+NationCymru. 2022. <span>“Japanese Language Subjected to ’<span>Welsh</span> <span>Not</span>’-Style Punishment Takes Inspiration from <span>Cymraeg</span>.”</span> In <em>Nation.Cymru</em>. <a href="https://nation.cymru/culture/japanese-language-subjected-to-welsh-not-style-punishment-takes-inspiration-from-cymraeg/">https://nation.cymru/culture/japanese-language-subjected-to-welsh-not-style-punishment-takes-inspiration-from-cymraeg/</a>.
+</div>
+<div id="ref-paredes_more_2025" class="csl-entry" role="listitem">
+Paredes, Jose L., Ethan Smith, Gregory Druck, and Bevin Benson. 2025. <em>More <span>Articles</span> <span>Are</span> <span>Now</span> <span>Created</span> by <span>AI</span> <span>Than</span> <span>Humans</span></em>. <a href="https://graphite.io/five-percent/more-articles-are-now-created-by-ai-than-humans">https://graphite.io/five-percent/more-articles-are-now-created-by-ai-than-humans</a>.
+</div>
+<div id="ref-park_white_2024" class="csl-entry" role="listitem">
+Park, Ye Sul. 2024. <span>“White <span>Default</span>: <span>Examining</span> <span>Racialized</span> <span>Biases</span> <span>Behind</span> <span>AI</span>-<span>Generated</span> <span>Images</span>.”</span> <em>Art Education</em> 77 (4): 36–45. <a href="https://doi.org/10.1080/00043125.2024.2330340">https://doi.org/10.1080/00043125.2024.2330340</a>.
+</div>
+<div id="ref-perrigo_exclusive_2023" class="csl-entry" role="listitem">
+Perrigo, Billy. 2023. <span>“Exclusive: <span>The</span> $2 <span>Per</span> <span>Hour</span> <span>Workers</span> <span>Who</span> <span>Made</span> <span>ChatGPT</span> <span>Safer</span>.”</span> In <em>TIME</em>. <a href="https://time.com/6247678/openai-chatgpt-kenya-workers/">https://time.com/6247678/openai-chatgpt-kenya-workers/</a>.
+</div>
+<div id="ref-baker_sousveillance_2020" class="csl-entry" role="listitem">
+Reilly, Paul. 2020. <span>“Sousveillance.”</span> In <em>The <span>Routledge</span> <span>Encyclopedia</span> of <span>Citizen</span> <span>Media</span></em>, 1st ed. Routledge. <a href="https://doi.org/10.4324/9781315619811-65">https://doi.org/10.4324/9781315619811-65</a>.
+</div>
+<div id="ref-rodriguez_how_2024" class="csl-entry" role="listitem">
+Rodriguez, Pamela, and Kiran Sojan. 2024. <em>How the <span>English</span> Erased <span>Irish</span> <span></span> <span>Kairos</span> <span>Magazine</span></em>. <a href="https://kairosmagazine.rutgers.edu/killing-off-irish/">https://kairosmagazine.rutgers.edu/killing-off-irish/</a>.
+</div>
+<div id="ref-noauthor_social_nodate" class="csl-entry" role="listitem">
+<em>Social <span>Bubble</span> - <span>ECPS</span></em>. n.d. Accessed March 18, 2026. <a href="https://www.populismstudies.org/Vocabulary/social-bubble/">https://www.populismstudies.org/Vocabulary/social-bubble/</a>.
+</div>
+<div id="ref-solon_facial_2019" class="csl-entry" role="listitem">
+Solon, Olivia. 2019. <span>“Facial Recognition’s ’Dirty Little Secret’: <span>Social</span> Media Photos Used Without Consent.”</span> In <em>NBC News</em>. <a href="https://www.nbcnews.com/tech/internet/facial-recognition-s-dirty-little-secret-millions-online-photos-scraped-n981921">https://www.nbcnews.com/tech/internet/facial-recognition-s-dirty-little-secret-millions-online-photos-scraped-n981921</a>.
+</div>
+<div id="ref-tao_cultural_2024" class="csl-entry" role="listitem">
+Tao, Yan, Olga Viberg, Ryan S Baker, and René F Kizilcec. 2024. <span>“Cultural Bias and Cultural Alignment of Large Language Models.”</span> <em>PNAS Nexus</em> 3 (9): pgae346. <a href="https://doi.org/10.1093/pnasnexus/pgae346">https://doi.org/10.1093/pnasnexus/pgae346</a>.
+</div>
+<div id="ref-vallance_ico_2026" class="csl-entry" role="listitem">
+Vallance, Chris. 2026. <span>“<span>ICO</span> Writes to <span>Meta</span> over ’Concerning’ <span>AI</span> Smart Glasses Report.”</span> In <em>BBC News</em>. <a href="https://www.bbc.co.uk/news/articles/c0q33nvj0qpo">https://www.bbc.co.uk/news/articles/c0q33nvj0qpo</a>.
+</div>
+<div id="ref-zimmer_when_2007" class="csl-entry" role="listitem">
+Zimmer, Ben. 2007. <span>“When <span>Spellcheckers</span> <span>Attack</span>: <span>Perils</span> of the <span>Cupertino</span> <span>Effect</span>.”</span> In <em>OUPblog</em>. <a href="https://blog.oup.com/2007/11/spellchecker/">https://blog.oup.com/2007/11/spellchecker/</a>.
+</div>
+<div id="ref-zuboff2023age" class="csl-entry" role="listitem">
+Zuboff, Shoshana. 2023. <span>“The Age of Surveillance Capitalism.”</span> In <em>Social Theory Re-Wired</em>. Routledge.
+</div>
+</div>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./C07_teaching-C-to-novices.html" class="pagination-link" aria-label="Second Languages: Teaching C to Python+Jupyter Novices">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Second Languages: Teaching C to Python+Jupyter Novices</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./C09_debugging-beyond-the-debugger.html" class="pagination-link" aria-label="Brain Book Buddy Boss Break: A Practical Debugging Framework for Learners">
+        <span class="nav-page-text"><span class="chapter-title">Brain Book Buddy Boss Break: A Practical Debugging Framework for Learners</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
