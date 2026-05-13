@@ -117,7 +117,7 @@ Use the **Bestiary** template to establish (or remind) learners of the course le
 ::: {.callout-important icon="false"}
 # The anarchist bit:
 
-Once again, there should be plenty of space for learners to express themselves by suggesting topics for co-creating their learning experience. Such a practice is present in many other progressive pedagogies [for instance, see @Freire2017-nc].
+Once again, there should be plenty of space for learners to express themselves by suggesting topics for co-creating their learning experience. Such a practice is present in many other progressive pedagogies [for instance, see @Freire1996].
 
 In practical terms, that can be very beneficial to the course. It's not uncommon that students are informed about emerging practices and tools that can enrich the course and learning experience for everyone. As educators might struggle with keeping up-to-date with professional practices, being attentive to students' perspectives can be really helpful.
 
