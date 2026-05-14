@@ -50,9 +50,9 @@ This dimension involves focusing on improving learners’ feedback literacy, thr
 
 At the centre of the AFP system is the ‘three comments approach’. This involves providing feedback comments in a way that is concise, targeted and actionable by following a simple, evidence-based and efficient way of producing feedback comments. The comments are clearly signposted, are presented in a defined order, and use content that is Specific, Substantive, and Supportive (what we call the ‘three Ss’). 
 
-- Comment 1 Motivates: it identifies the main area (or areas) done well in the work and encourages the student to keep up that good practice in the future. 
-- Comment 2 Informs: it identifies the main area (or areas) not done so well that were specific to the assessment and explain how they could have been better. In written work, it may be helpful to quote an example from the submission and explain how it could be improved; in calculation-based work, suggesting an alternative formula or a more efficient approach to the calculations may be helpful. 
-- Comment 3 ‘Feeds forward’: it identifies a point of process that is generally applicable to assessed work on the programme (or later in a specific course), suggesting ways in which that could be improved for future work. For example, if several errors relate to a foundational principle or law in the subject, directing a student to revisit that will help them in future work. Or, it may be a specific technique that is applicable to multiple assessment types, such as referencing or notation. 
+- **Comment 1 Motivates:** it identifies the main area (or areas) done well in the work and encourages the student to keep up that good practice in the future. 
+- **Comment 2 Informs:** it identifies the main area (or areas) not done so well that were specific to the assessment and explain how they could have been better. In written work, it may be helpful to quote an example from the submission and explain how it could be improved; in calculation-based work, suggesting an alternative formula or a more efficient approach to the calculations may be helpful. 
+- **Comment 3 ‘Feeds forward’:** it identifies a point of process that is generally applicable to assessed work on the programme (or later in a specific course), suggesting ways in which that could be improved for future work. For example, if several errors relate to a foundational principle or law in the subject, directing a student to revisit that will help them in future work. Or, it may be a specific technique that is applicable to multiple assessment types, such as referencing or notation. 
 
 ### Encourage Action
 
@@ -74,7 +74,7 @@ Something that might help you in future work would be to consider report writing
 **Now Make an Action Plan For Your Feedback!**
 Now that you have read your feedback, it is important that you take action on it.
 
-Feedback not acted upon is not really feedback, so now it is up to you to make an action plan to ensure you make the most of this feedback and use it in your future work. You can make your action plan by simply hitting ‘add comment’ below, or even better you can DOWNLOAD THE FEEDBACK PORTFOLIO on the [‘Making the Most of Feedback’ site](https://sites.google.com/view/makingthemostoffeedback/home). This will help you make an action plan and track your progress across all your assessed work.
+Feedback not acted upon is not really feedback, so now it is up to you to make an action plan to ensure you make the most of this feedback and use it in your future work. You can make your action plan by simply hitting ‘add comment’ below, or even better you can **download the feedback portfolio** on the [‘Making the Most of Feedback’ site](https://sites.google.com/view/makingthemostoffeedback/home). This will help you make an action plan and track your progress across all your assessed work.
 
 :::
 
