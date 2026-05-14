@@ -27,7 +27,7 @@ They _literally_ make stuff up [@hicks2024chatgpt].
 E.g., relying too heavily on AI to write reports will have an impact on your own development of critical reasoning and writing skills.
 If your works are mostly written by AI, it will affect how you learn to structure arguments and use evidence to effectively support your narrative.
 As a marker, one of the things that really stands out about AI generated work is the "voice".
-By relying on AI, you not only remove your voice form the content, but lose the opportunity of ever even developing your own voice.
+By relying on AI, you not only remove your voice from the content, but lose the opportunity of ever even develop your own voice.
 As an example, after writing this, I asked an LLM to re-write one (and only one) of the following paragraphs.
 See if you can spot which one has a different voice.
 
@@ -62,7 +62,7 @@ AI tools can definitely be an efficient way to complete a task, but they might a
 In your academic work, you might miss out on the creative process of developing unique (think "novel") ideas and solutions.
 Yes, AI might sometimes suggest a promising idea, but it really does not have any clue about the topic.
 And with an over-reliance on AI for our work, neither do we.
-For example, using AI to brainstorm essay questions or projects can prevent you from broth conceiving and exploring your own interesting ideas.
+For example, using AI to brainstorm essay questions or projects can prevent you from both conceiving and exploring your own interesting ideas.
 Again, if it helps, think in terms of "novelty", often a requirement for publishing.
 
 ## Bias & lived experience
