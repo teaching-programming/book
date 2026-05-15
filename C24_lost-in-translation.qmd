@@ -1,5 +1,5 @@
 ---
-title: "Lost in Translation: Complexities and Good Practices of Translating Coding-based Teaching Materials Across Multiple Languages"
+title: "Lost in Translation: Complexities and Good Practices of Translating Coding-based Teaching Materials Across Multiple Human Languages"
 bibliography: references.bib
 author:
   - name: Olexandr Konovalov
