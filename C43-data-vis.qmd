@@ -1,5 +1,5 @@
 ---
-title: "Seeing Before Coding, Doodling Before Doing: How Teaching Data Visualisation Transforms the Way Students Think "
+title: "Seeing Before Coding, Doodling Before Doing: How Teaching Data Visualisation Transforms the Way Students Think"
 bibliography: references.bib
 author:
   - name: Suzanne Goopy
@@ -42,7 +42,7 @@ They annotate their sketches with notes about their intended audience, their nar
 
 ![The rawness of a hand-drawn sketch is not a deficiency; it is a feature.](/chapters/images/C43-data-vis_sheet1.jpg){#fig-data-vis-3 fig-alt="Hand drawn set of doodles." width=70%}
 
-![The rawness of a hand-drawn sketch is not a deficiency; it is a feature.](/chapters/images/C43-data-vis_ideas.png){#fig-data-vis-4 fig-alt="Hand drawn set of doodles." width=70%}
+![The rawness of a hand-drawn sketch is not a deficiency; it is a feature.](/chapters/images/C43-data-vis_ideas.jpg){#fig-data-vis-4 fig-alt="Hand drawn set of doodles." width=70%}
 
 Supporting students through this process requires care, especially for those who feel their drawing skills are inadequate. For this reason, it is important to emphasise early and often that this is not about artistic quality – the doodles, the drawings, the sketches themselves are not being judged. The goal is ideation, not illustration. A visualisation sketch can consist of boxes, arrows, and rough axes. It can include figures and symbols, whatever the student wants, whatever their creativity allows; it does not need to be beautiful. One practical strategy that works well is the ‘quick sketch challenge’ where students are given a dataset, asked to identify an audience and a goal, and given approximately ten minutes to produce as many different visual representations as they can, without overthinking or self-censoring. The time pressure liberates them from perfectionism and opens a space for unexpected ideas. 
 
@@ -50,7 +50,7 @@ Following this initial ‘quick sketch’, the sketches are critiqued through a 
 
 This engagement, sharing, and articulation are where deep learning happens, and for many students ‘pen and paper’ turns out to be transformative in a way they had not expected. Students have stated that this step has changed the way they approach problems more broadly, and by the end of the course many report that they now sketch before they code, think through the design before worrying about the implementation, and seek to consider every component and aspect of the visualisations they create or view (see @fig-data-vis-5, @fig-data-vis-6, @fig-data-vis-7). The pen, it happens, is not a step backwards but rather a step deeper. 
 
-![The time pressure liberates one from perfectionism and opens a space for unexpected ideas.](/chapters/images/C43-data-vis_corrections.png){#fig-data-vis-5 fig-alt="Table with pens and paper. Early sketches of the visualisation." width=70%}
+![The time pressure liberates one from perfectionism and opens a space for unexpected ideas.](/chapters/images/C43-data-vis_corrections.jpg){#fig-data-vis-5 fig-alt="Table with pens and paper. Early sketches of the visualisation." width=70%}
 
 ![The time pressure liberates one from perfectionism and opens a space for unexpected ideas.](/chapters/images/C43-data-vis_sketch.jpg){#fig-data-vis-6 fig-alt="Table with pens and paper. more advanced sketches of the visualisation." width=70%}
 
@@ -140,7 +140,7 @@ There is something quietly radical about a course that begins by asking postgrad
 
 ## Acknowledgements
 
-I would like to thank and acknowledge the work and inspiration of my friend and colleague Dr Shane Sheehan whose enthusiasm, knowledge and undying curiosity and belief in the visual inspired and realised the development and growth of the course that this chapter is based on. I would also like to thank Dr Pawel Orzechowski for his support with this course in its most recent iteration. His enthusiasm and playful approach to teaching and learning has added yet another exciting dimension to this course. Also, a very big thank you to all who have participated in this course over the years. It is your enthusiasm and the experiences that you bring to the have helped shape this course.  Finally, a very heartfelt thanks to the students who so willingly and generously have allowed me to include your work and reflections in this chapter. They bring the story of this course to life. Thank you! 
+I would like to thank and acknowledge the work and inspiration of my friend and colleague Dr Shane Sheehan whose enthusiasm, knowledge and undying curiosity and belief in the visual inspired and realised the development and growth of the course that this chapter is based on. I would also like to thank Dr Pawel Orzechowski for his support with this course in its most recent iteration. His enthusiasm and playful approach to teaching and learning has added yet another exciting dimension to this course. Also, a very big thank you to all who have participated in this course over the years. It is your enthusiasm together with your experiences that have helped shape this course and bring it to where it is today.  Finally, a very heartfelt thanks to the students who so willingly and generously allowed me to include their work and reflections in this chapter. They bring the story of this course to life. Thank you!
 
 ::: {.content-visible when-format="html" unless-format="epub"}
 
