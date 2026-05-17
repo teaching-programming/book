@@ -6,14 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Andrew MacLaren">
-<meta name="author" content="Frederik Madsen">
-<meta name="author" content="Antonia Voigt">
-<meta name="author" content="Alex Buckley">
-<meta name="author" content="Tom Farrington">
-<meta name="keywords" content="Systems, Feedback, Assessment">
+<meta name="author" content="Ben Waugh">
+<meta name="author" content="Rebecca Chislett">
+<meta name="author" content="Louise Dash">
 
-<title>Managing the Rubik’s Cube of Assessment: The Action Feedback Protocol – Teaching Programming across Disciplines</title>
+<title>Assessment and marking in an introductory programming course for physics students – Teaching Programming across Disciplines</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -58,8 +55,8 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./C36_pair-programming-across-disciplines.html" rel="next">
-<link href="./C33_coding-anxiety.html" rel="prev">
+<link href="./C29_notebooks-for-novices.html" rel="next">
+<link href="./C24_lost-in-translation.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -111,7 +108,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./C35_action-feedback-plan.html"><span class="chapter-title">Managing the Rubik’s Cube of Assessment: The Action Feedback Protocol</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./C26.1-assessment-case-study.html"><span class="chapter-title">Assessment and marking in an introductory programming course for physics students</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -267,7 +264,7 @@ div.csl-indent {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./C26.1-assessment-case-study.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Assessment and marking in an introductory programming course for physics students</span></a>
+  <a href="./C26.1-assessment-case-study.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Assessment and marking in an introductory programming course for physics students</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -292,7 +289,7 @@ div.csl-indent {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./C35_action-feedback-plan.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Managing the Rubik’s Cube of Assessment: The Action Feedback Protocol</span></a>
+  <a href="./C35_action-feedback-plan.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Managing the Rubik’s Cube of Assessment: The Action Feedback Protocol</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -384,21 +381,32 @@ div.csl-indent {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#a-failing-system-or-failure-to-recognise-the-system" id="toc-a-failing-system-or-failure-to-recognise-the-system" class="nav-link active" data-scroll-target="#a-failing-system-or-failure-to-recognise-the-system">A failing system or failure to recognise the system?</a></li>
-  <li><a href="#introducing-the-action-feedback-protocol" id="toc-introducing-the-action-feedback-protocol" class="nav-link" data-scroll-target="#introducing-the-action-feedback-protocol">Introducing the Action Feedback Protocol</a>
+  <li><a href="#syllabus-and-course-design" id="toc-syllabus-and-course-design" class="nav-link active" data-scroll-target="#syllabus-and-course-design">Syllabus and course design</a>
   <ul class="collapse">
-  <li><a href="#tune-the-ear" id="toc-tune-the-ear" class="nav-link" data-scroll-target="#tune-the-ear">Tune the Ear</a></li>
-  <li><a href="#simplify-the-message" id="toc-simplify-the-message" class="nav-link" data-scroll-target="#simplify-the-message">Simplify the Message</a></li>
-  <li><a href="#encourage-action" id="toc-encourage-action" class="nav-link" data-scroll-target="#encourage-action">Encourage Action</a></li>
+  <li><a href="#teaching-computing-alongside-practical-skills-and-data-analysis" id="toc-teaching-computing-alongside-practical-skills-and-data-analysis" class="nav-link" data-scroll-target="#teaching-computing-alongside-practical-skills-and-data-analysis">Teaching computing alongside practical skills and data analysis</a></li>
+  <li><a href="#computing-classes" id="toc-computing-classes" class="nav-link" data-scroll-target="#computing-classes">Computing classes</a></li>
+  <li><a href="#what-we-teach" id="toc-what-we-teach" class="nav-link" data-scroll-target="#what-we-teach">What we teach</a></li>
   </ul></li>
-  <li><a href="#implementation-and-impact" id="toc-implementation-and-impact" class="nav-link" data-scroll-target="#implementation-and-impact">Implementation and impact</a>
+  <li><a href="#assessment-framework-and-principles" id="toc-assessment-framework-and-principles" class="nav-link" data-scroll-target="#assessment-framework-and-principles">Assessment framework and principles</a></li>
+  <li><a href="#continuous-assessment" id="toc-continuous-assessment" class="nav-link" data-scroll-target="#continuous-assessment">Continuous assessment</a>
   <ul class="collapse">
-  <li><a href="#a-test-case-the-university-of-edinburghs-school-of-geosciences" id="toc-a-test-case-the-university-of-edinburghs-school-of-geosciences" class="nav-link" data-scroll-target="#a-test-case-the-university-of-edinburghs-school-of-geosciences">A test case: The University of Edinburgh’s School of GeoSciences</a></li>
-  <li><a href="#how-did-the-afp-work-across-diverse-courses" id="toc-how-did-the-afp-work-across-diverse-courses" class="nav-link" data-scroll-target="#how-did-the-afp-work-across-diverse-courses">How did the AFP work across diverse courses?</a></li>
-  <li><a href="#so-how-did-it-go" id="toc-so-how-did-it-go" class="nav-link" data-scroll-target="#so-how-did-it-go">So, how did it go?</a></li>
+  <li><a href="#integrating-assessment-with-learning-in-weekly-sessions" id="toc-integrating-assessment-with-learning-in-weekly-sessions" class="nav-link" data-scroll-target="#integrating-assessment-with-learning-in-weekly-sessions">Integrating assessment with learning in weekly sessions</a></li>
+  <li><a href="#automatic-marking-of-multiple-choice-questions-mcqs" id="toc-automatic-marking-of-multiple-choice-questions-mcqs" class="nav-link" data-scroll-target="#automatic-marking-of-multiple-choice-questions-mcqs">Automatic marking of multiple-choice questions (MCQs)</a></li>
+  <li><a href="#marking-programming-tasks-in-person" id="toc-marking-programming-tasks-in-person" class="nav-link" data-scroll-target="#marking-programming-tasks-in-person">Marking programming tasks in person</a></li>
   </ul></li>
-  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
+  <li><a href="#assessed-computational-notebooks" id="toc-assessed-computational-notebooks" class="nav-link" data-scroll-target="#assessed-computational-notebooks">Assessed computational notebooks</a>
+  <ul class="collapse">
+  <li><a href="#authentic-tasks" id="toc-authentic-tasks" class="nav-link" data-scroll-target="#authentic-tasks">Authentic tasks</a></li>
+  <li><a href="#rubric-design" id="toc-rubric-design" class="nav-link" data-scroll-target="#rubric-design">Rubric design</a></li>
+  <li><a href="#marking-fairly-and-consistently" id="toc-marking-fairly-and-consistently" class="nav-link" data-scroll-target="#marking-fairly-and-consistently">Marking fairly and consistently</a></li>
+  <li><a href="#training-and-calibration" id="toc-training-and-calibration" class="nav-link" data-scroll-target="#training-and-calibration">Training and calibration</a></li>
+  <li><a href="#a-structured-data-analysis-assignment" id="toc-a-structured-data-analysis-assignment" class="nav-link" data-scroll-target="#a-structured-data-analysis-assignment">A structured data analysis assignment</a></li>
+  <li><a href="#an-open-ended-computational-physics-assignment" id="toc-an-open-ended-computational-physics-assignment" class="nav-link" data-scroll-target="#an-open-ended-computational-physics-assignment">An open-ended computational physics assignment</a></li>
+  </ul></li>
+  <li><a href="#the-future" id="toc-the-future" class="nav-link" data-scroll-target="#the-future">The future</a>
+  <ul class="collapse">
   <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -507,52 +515,36 @@ div.csl-indent {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-title">Managing the Rubik’s Cube of Assessment: The Action Feedback Protocol</span></h1>
+<h1 class="title"><span class="chapter-title">Assessment and marking in an introductory programming course for physics students</span></h1>
 </div>
 
 
 <div class="quarto-title-meta-author">
   <div class="quarto-title-meta-heading">Authors</div>
-  <div class="quarto-title-meta-heading">Affiliations</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
   
     <div class="quarto-title-meta-contents">
-    <p class="author">Andrew MacLaren <a href="mailto:a.maclaren@hw.ac.uk" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+    <p class="author">Ben Waugh <a href="mailto:b.waugh@ucl.ac.uk" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
   </div>
   <div class="quarto-title-meta-contents">
         <p class="affiliation">
-            School of Social Sciences, Heriot-Watt University
+            Department of Physics and Astronomy, UCL
           </p>
       </div>
     <div class="quarto-title-meta-contents">
-    <p class="author">Frederik Madsen <a href="mailto:f.d.madsen@sms.ed.ac.uk" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+    <p class="author">Rebecca Chislett </p>
   </div>
   <div class="quarto-title-meta-contents">
         <p class="affiliation">
-            School of GeoSciences, University of Edinburgh; Lyell Centre, British Geological Survey
+            Department of Physics and Astronomy, UCL
           </p>
       </div>
     <div class="quarto-title-meta-contents">
-    <p class="author">Antonia Voigt <a href="mailto:a.voigt@surrey.ac.uk" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+    <p class="author">Louise Dash </p>
   </div>
   <div class="quarto-title-meta-contents">
         <p class="affiliation">
-            Surrey Business School, University of Surrey
-          </p>
-      </div>
-    <div class="quarto-title-meta-contents">
-    <p class="author">Alex Buckley <a href="mailto:Alex.Buckley@hw.ac.uk" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
-  </div>
-  <div class="quarto-title-meta-contents">
-        <p class="affiliation">
-            Learning and Teaching Academy, Heriot-Watt University
-          </p>
-      </div>
-    <div class="quarto-title-meta-contents">
-    <p class="author">Tom Farrington <a href="mailto:t.farrington@yahoo.com" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
-  </div>
-  <div class="quarto-title-meta-contents">
-        <p class="affiliation">
-            Storm ID
+            Department of Physics and Astronomy, UCL
           </p>
       </div>
   </div>
@@ -565,149 +557,141 @@ div.csl-indent {
   </div>
   
 
-<div>
-  <div class="keywords">
-    <div class="block-title">Keywords</div>
-    <p>Systems, Feedback, Assessment</p>
-  </div>
-</div>
 
 </header>
 
 
-<section id="a-failing-system-or-failure-to-recognise-the-system" class="level2">
-<h2 class="anchored" data-anchor-id="a-failing-system-or-failure-to-recognise-the-system">A failing system or failure to recognise the system?</h2>
-<p>A university’s approach to feedback reflects multiple aspects of its relationship with students. Decisions about assessment policy affect the whole institutional landscape, including retention, student experience, National Student Survey results, transparency, staff workload and student employment, as well as students’ academic progress. Feedback is embedded within a system, and innovating in feedback benefits from acknowledging its multidimensional, interdependent features. However, conventional approaches to feedback tend to be limited because they are not framed within the broader institutional system. In this chapter, we introduce the Action Feedback Protocol (AFP), a systems-oriented approach to feedback that aligns student feedback literacy with a simple, efficient approach to producing feedback, all of which is directed towards encouraging the learner to take action.</p>
-<p>We, the authors of this chapter have been involved in the development of the AFP since it began in 2019. We represent the tricky and interdependent moving parts of the feedback Rubik’s cube, including: the students (Antonia was among the first student cohorts to use the AFP and has since completed her PhD in Education); the educators (Andrew and Tom are both Social Scientists, Frederik is a Geophysicist); and the institution (Alex is the assessment and feedback lead for Heriot-Watt’s Learning and Teaching Academy). And a bit like a Rubik’s cube, the AFP is also a 3x3 system: three dimensions that centre around three comments in written feedback.</p>
-<p>Feedback is often considered an isolated event attached to the distribution of marks. <span class="citation" data-cites="higgins2001getting">Higgins et al. (<a href="#ref-higgins2001getting" role="doc-biblioref">2001</a>)</span>, among many other researchers, find that this event-type posture stops feedback from being used to its full potential. On the learner side, <span class="citation" data-cites="winstone2017supporting">Winstone, Nash, Parker, et al. (<a href="#ref-winstone2017supporting" role="doc-biblioref">2017</a>)</span> and <span class="citation" data-cites="winstone2017d">Winstone, Nash, Rowntree, et al. (<a href="#ref-winstone2017d" role="doc-biblioref">2017</a>)</span> highlight the under-emphasised area of learner responsibility in the feedback dynamic, something they describe as a lack of ‘proactive recipience’. The role of the learner is equally important in the ultimate effectiveness of the feedback they receive. <span class="citation" data-cites="orsmond2005biology">Orsmond et al. (<a href="#ref-orsmond2005biology" role="doc-biblioref">2005, 381</a>)</span> note that if feedback “is simply stored in memory and never used, it is not feedback”. This is particularly relevant in Science, Technology, Engineering and Mathematics (STEM) subjects, where reflective practice is not a part of the typical curriculum <span class="citation" data-cites="boswell2023investigating">(<a href="#ref-boswell2023investigating" role="doc-biblioref">Boswell 2023</a>)</span>. <span class="citation" data-cites="bevan2008seeing">Bevan et al. (<a href="#ref-bevan2008seeing" role="doc-biblioref">2008</a>)</span> and <span class="citation" data-cites="weaver2006students">Weaver (<a href="#ref-weaver2006students" role="doc-biblioref">2006</a>)</span> attribute these issues to the common absence or under-provision of training for learners in the role of feedback in their learning. These conditions create the prevailing sense that more could be done to ensure that learners are adequately prepared to meet the feedback they receive halfway.</p>
+<p>This informal case study describes how assessment is implemented in an introductory programming course for first-year undergraduates studying physics. It is not offered as a model to follow, but we hope someone developing a similar course (not necessarily in the same domain) will learn something from the approaches we have used, and how we have adapted them over time.</p>
+<section id="syllabus-and-course-design" class="level2">
+<h2 class="anchored" data-anchor-id="syllabus-and-course-design">Syllabus and course design</h2>
+<section id="teaching-computing-alongside-practical-skills-and-data-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="teaching-computing-alongside-practical-skills-and-data-analysis">Teaching computing alongside practical skills and data analysis</h3>
+<p><em>PHAS0007 Computing</em> is one of three components of a 15-credit module on <em>Practical Physics and Computing</em> taken by all undergraduates in the Department of Physics and Astronomy at UCL in the first term of their first year, the other components being <em>Experimental Laboratory</em>, and <em>Data Analysis and Statistics</em>. After this introductory module, students take different computing courses depending on whether they are registered for a degree in <em>Physics</em>, <em>Astrophysics</em>, or <em>Theoretical Physics</em>.</p>
+<p>The three components are taught separately, but the syllabus is aligned so that students can use computing to carry out data analysis, and apply both skill sets to the results of their laboratory experiments. However, the computing component is not just about statistical analysis: we also introduce basic computational physics, and teach students more general skills in building complex logic incrementally, structuring and commenting code clearly, and creating a scientific report in the form of a computational notebook.</p>
 </section>
-<section id="introducing-the-action-feedback-protocol" class="level2">
-<h2 class="anchored" data-anchor-id="introducing-the-action-feedback-protocol">Introducing the Action Feedback Protocol</h2>
-<p>Addressing this complexity therefore requires simultaneous attention on how students are informed on feedback literacy and how they are supported to act on the feedback they receive, as well as carefully considering how we, as educators, produce feedback in the first place. The AFP uses evidence-informed, simple and robust approaches to address feedback as part of a bigger complex system, rather than treating it as an isolated event. The approach therefore tackles head-on the need to foster proactive recipience among learners, couples the nature of feedback produced with students’ expectations of it, and creates structured alignment between staff across marking teams and student programmes. The AFP’s three dimensions are: (1) Tune the Ear, (2) Simplify the Message, and (3) Encourage Action.</p>
-<section id="tune-the-ear" class="level3">
-<h3 class="anchored" data-anchor-id="tune-the-ear">Tune the Ear</h3>
-<p>This dimension involves focusing on improving learners’ feedback literacy, through specific resources that help them understand the purpose and value of feedback. The resources include a professionally recorded podcast, a video, plus documents based on the Developing Engagement with Feedback Toolkit <span class="citation" data-cites="winstone2019building">(<a href="#ref-winstone2019building" role="doc-biblioref">Winstone et al. 2019</a>)</span>.</p>
+<section id="computing-classes" class="level3">
+<h3 class="anchored" data-anchor-id="computing-classes">Computing classes</h3>
+<p>In the academic year 2025-26 we had over 300 students, divided into five groups because of the limited laboratory space, with each group having one 3.5-hour experimental laboratory session and one 3.5-hour computing class in each of the ten teaching weeks in the term. All students also have a weekly lecture on data analysis and statistics. Computing sessions take place in one of our experimental laboratories, with an individual Windows PC available for each student, although some choose to use their own laptop computer instead.</p>
 </section>
-<section id="simplify-the-message" class="level3">
-<h3 class="anchored" data-anchor-id="simplify-the-message">Simplify the Message</h3>
-<p>At the centre of the AFP system is the ‘three comments approach’. This involves providing feedback comments in a way that is concise, targeted and actionable by following a simple, evidence-based and efficient way of producing feedback comments. The comments are clearly signposted, are presented in a defined order, and use content that is Specific, Substantive, and Supportive (what we call the ‘three Ss’).</p>
-<ul>
-<li><strong>Comment 1 Motivates:</strong> it identifies the main area (or areas) done well in the work and encourages the student to keep up that good practice in the future.</li>
-<li><strong>Comment 2 Informs:</strong> it identifies the main area (or areas) not done so well that were specific to the assessment and explain how they could have been better. In written work, it may be helpful to quote an example from the submission and explain how it could be improved; in calculation-based work, suggesting an alternative formula or a more efficient approach to the calculations may be helpful.</li>
-<li><strong>Comment 3 ‘Feeds forward’:</strong> it identifies a point of process that is generally applicable to assessed work on the programme (or later in a specific course), suggesting ways in which that could be improved for future work. For example, if several errors relate to a foundational principle or law in the subject, directing a student to revisit that will help them in future work. Or, it may be a specific technique that is applicable to multiple assessment types, such as referencing or notation.</li>
-</ul>
-</section>
-<section id="encourage-action" class="level3">
-<h3 class="anchored" data-anchor-id="encourage-action">Encourage Action</h3>
-<p>This involves signposting students to help them reflect on the feedback, and encouraging them to take meaningful action on it as part of learning and improving (e.g.&nbsp;giving them access to resources such as a feedback portfolio and development tracker).</p>
-<div class="callout callout-style-default callout-tip no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>A genuine example of the three comments from Engineering
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ul>
-<li><p><strong>Aspect(s) done particularly well:</strong> A feature of this work that was done well was the presentation of a very detailed report in terms of the experimental work and its results. It demonstrates a good understanding of thermal systems and subsystem integration. The relevance to sustainable energy practices in Malaysia is well contextualised.</p></li>
-<li><p><strong>Aspect(s) that could have been done better:</strong> An area in this work where there was room for further development was to expand on discrepancies between theoretical and experimental results. For example, the mismatch in sand heating times could be analysed in more depth, with specific proposals for reducing air gaps or improving pipeline design. Greater attention on the scalability of the system for real-world applications and how the economic feasibility would be addressed would be valuable things to include in the discussion.</p></li>
-<li><p><strong>A point of process that should be worked on for the future:</strong> Something that might help you in future work would be to consider report writing technique, this is very important for professional engineers. Part of the report’s job is to help the reader make sense of the meaning of results, not just report them. Working on this will improve your professional reporting practice. By continuing to improve your presentation (e.g.&nbsp;refer to all images and graphs from within the text, number equations, use a numbered (IEEE) system of standard referencing fully) you will develop skills that will stay with you throughout your engineering career.</p></li>
-</ul>
-<p><strong>Now Make an Action Plan For Your Feedback!</strong> Now that you have read your feedback, it is important that you take action on it.</p>
-<p>Feedback not acted upon is not really feedback, so now it is up to you to make an action plan to ensure you make the most of this feedback and use it in your future work. You can make your action plan by simply hitting ‘add comment’ below, or even better you can <strong>download the feedback portfolio</strong> on the <a href="https://sites.google.com/view/makingthemostoffeedback/home">‘Making the Most of Feedback’ site</a>. This will help you make an action plan and track your progress across all your assessed work.</p>
-</div>
-</div>
-<p>The AFP is designed to be as simple as possible for everyone: parsimonious and efficient for educators and, most importantly, clear and supportive to learners. It takes a ‘less is more approach’ to assessment and feedback. <span class="citation" data-cites="ackerman2010instructor">Ackerman and Gross (<a href="#ref-ackerman2010instructor" role="doc-biblioref">2010</a>)</span> tell us that students become overwhelmed with copious feedback that is hard to penetrate. This means they are less likely to act on their feedback, which makes it less useful. The AFP does significant heavy lifting on the part of markers and course leaders by increasing student feedback literacy and setting their expectations around what good feedback looks like. This in turn allows students to meet the system halfway, as engaged learners. It gives markers a template to follow which helps them manage their workload within a marking team, and it gives helpful and supportive signposting to students about where to go and what to do next when they receive their feedback.</p>
+<section id="what-we-teach" class="level3">
+<h3 class="anchored" data-anchor-id="what-we-teach">What we teach</h3>
+<p>Our aim is not to teach coding as a general skill, or computer science as a discipline, but to enable our students to apply computational techniques to their work as physicists. We assume no prior knowledge of programming: while 87% of the 190 respondents to our pre-course survey said they had some experience of Python, 38% had not been taught programming at all and a further 21% “very little”. We use the <a href="https://jupyter.org/">Jupyter</a> Notebook application throughout the course, rather than an integrated development environment (IDE) or the more sophisticated but complex JupyterLab interface. We limit the extent of the computing concepts we attempt to teach in the course, using only simple data structures (lists and NumPy arrays but not dictionaries) and teaching students to define functions but not classes. We start with arithmetic operations, data types and variables, and importing and using existing functions. In the second week we introduce lists, arrays, loops, and defining functions. Later units cover plotting data, linear regression, summing series, and basic computational physics.</p>
 </section>
 </section>
-<section id="implementation-and-impact" class="level2">
-<h2 class="anchored" data-anchor-id="implementation-and-impact">Implementation and impact</h2>
-<p>The AFP has been implemented at Heriot-Watt University across multiple disciplines such as Mathematics, Computer Science, Engineering, Physics, Languages, Economics, and Psychology across all its global campuses in Scotland, Dubai and Malaysia. It has received positive evaluations from both staff and students with surveys over multiple years indicating high levels of satisfaction with the clarity, helpfulness, and perceived fairness of feedback delivered using the AFP. Additionally, uptake beyond the institution, in contexts including STEM disciplines at other UK universities, suggests a degree of adaptability across subject and institutional boundaries. Importantly, the AFP is intended as an Open Educational Resource (OER), aiming to support learners and educators across all disciplines to engage with the feedback process. The idea is that the AFP creates a system through which there is a form of teamwork that aligns all sides of the feedback dynamic: learners, educators and institutions <span class="citation" data-cites="maclaren2026feedback">(<a href="#ref-maclaren2026feedback" role="doc-biblioref">MacLaren 2026</a>)</span>.</p>
-<section id="a-test-case-the-university-of-edinburghs-school-of-geosciences" class="level3">
-<h3 class="anchored" data-anchor-id="a-test-case-the-university-of-edinburghs-school-of-geosciences">A test case: The University of Edinburgh’s School of GeoSciences</h3>
-<p>The following describes the experience of using the AFP, in its accessible OER form, in two undergraduate courses at the University of Edinburgh’s School of GeoSciences, in the academic year 2024-2025: GeoSciences Outreach and Engagement (GO&amp;E) and Research Training for Geophysics (RTG). Neither course was restructured to incorporate the AFP, the protocol was adopted within the existing delivery structure. GO&amp;E is a final year course, which is open to all undergraduates, but typically taken by students from the Schools of GeoSciences and Physics. In this course, students are given at least two supervisors — one member of academic staff, and one postgraduate tutor — whom they meet regularly. As outlined by <span class="citation" data-cites="cross2022geoscience">Cross et al. (<a href="#ref-cross2022geoscience" role="doc-biblioref">2022</a>)</span>, this course stood out from ‘conventional’ courses in that the evaluation primarily focused on authentic assessment and student engagement. RTG, on the other hand, is a penultimate year course, mandatory in the Geophysics undergraduate degree. This course is more conventional in its assessment, as the students are assessed on two pieces of written work.</p>
+<section id="assessment-framework-and-principles" class="level2">
+<h2 class="anchored" data-anchor-id="assessment-framework-and-principles">Assessment framework and principles</h2>
+<p>The module has six summative assessment elements, a large number but one that reflects the wide range of skills that are covered in the three components. There are two assessments within the practical course (a formal report and a notebook assessment contributing 25% and 15% respectively to the module grade), one multiple-choice quiz on data analysis and statistics (contributing 15%), and three further elements within the computing component. Two of the computing assessments are extended “take-home” assignments: one mid-term data analysis assignment testing the concepts students learn in the statistics component as well as their programming skills, and a final computational physics task, contributing respectively 15% and 20% of the module grade. The remaining 10% comes from assessed weekly coursework exercises throughout the term.</p>
+<p>Our approach can be described as <em>assessment for learning</em> <span class="citation" data-cites="wiliam_afl_2011">(<a href="#ref-wiliam_afl_2011" role="doc-biblioref">Wiliam 2011</a>)</span> in that “<em>all</em> assessment, within the overall package, should contribute to helping students to learn and to succeed” <span class="citation" data-cites="SambellEtAl2012">(<a href="#ref-SambellEtAl2012" role="doc-biblioref">Sambell et al. 2012</a>)</span>. Rather than creating separate learning activities and subsequent assessed tasks to measure performance, we try to design exercises that are interesting and develop understanding while also forming the basis of students’ grades for the course.</p>
+<p>UCL’s regulations require the mark for each assessment component to be expressed as a percentage, and the overall module mark to be calculated as a weighted average of component marks. Within each component, module leaders can decide on how marks are decided, but all summative assessment must be <em>criterion-referenced</em>: marks are decided by checking submitted work against defined standards and not against the rest of the student cohort.</p>
 </section>
-<section id="how-did-the-afp-work-across-diverse-courses" class="level3">
-<h3 class="anchored" data-anchor-id="how-did-the-afp-work-across-diverse-courses">How did the AFP work across diverse courses?</h3>
-<p>The assessment design in both courses remained the same, and the only change we implemented in the courses was the format of the system of feedback in order to align with the AFP. This was a useful test of the ease with which the AFP could be retrofitted to an existing assessment structure. However, as these courses are very different, the way we fitted the AFP into each course was adjusted accordingly.</p>
-<p>In GO&amp;E, there were six assessments spread throughout the course. For the first assessment, which was formative, supervisors provided the feedback verbally, structuring their approach using the ‘Simplify the Message’ dimension. After each assessment that followed, the supervisory team was focused on helping students to produce individual action points, building on the ‘Encourage Action’ dimension from the AFP. This process was repeated individually for each student on each of the assessments, thus making it a continuous process. The nature of the regular dialogue and action planning also allowed the ‘Tune the Ear’ content to be reinforced.</p>
-<p>In RTG, there were two major assessments, both written: a literature review, and a group project report. The literature review, due in the final part of semester 1, was assessed as usual, according to four marking criteria (content; communication; presentation; and referencing) and comments were provided following the ‘Simplify the Message’ three comments structure. Here, the AFP was being rolled out in a more standard summative assessment sense, with dedicated class-time to ‘Tune the Ear’ and develop feedback literacy prior to the release of results. Once results and feedback were made available, we ran a further classroom session to guide the students on how to utilise their feedback through a set of reflective exercises, in line with the ‘Encourage Action’ steps of the AFP. This session gave them time to write action points from their literature review to use in their forthcoming group project reports (the second assessment on the course), which enabled the students to use the AFP to feed forward into the subsequent assessment.</p>
+<section id="continuous-assessment" class="level2">
+<h2 class="anchored" data-anchor-id="continuous-assessment">Continuous assessment</h2>
+<section id="integrating-assessment-with-learning-in-weekly-sessions" class="level3">
+<h3 class="anchored" data-anchor-id="integrating-assessment-with-learning-in-weekly-sessions">Integrating assessment with learning in weekly sessions</h3>
+<p>The core teaching materials are a series of Jupyter notebooks that explain and illustrate the concepts we want students to understand, include code examples, and culminate in a programming task that guides students through the application of the week’s material. Following consistent requests from students we also provide recorded screencasts talking through the content of the notes. In the class sessions, academics and postgraduate teaching assistants (PGTAs) offer individual help with understanding the examples and tackling the assignment. In 2025-26 each session was staffed by one of the two course leaders along with two further academics and two PGTAs. We try to guide students through the process of debugging their own problems rather than simply offering answers.</p>
+<p>There are nine weekly <em>units</em> in the course: after the first five comes the UCL reading week, during which students work on the mid-term data analysis assignment, as well as assessments for other modules, but have no lectures or practical sessions. Then come five more sessions, although the last of these is not a unit in its own right but an opportunity for students to get help on the first stages of the final assignment and to catch up on any missed work.</p>
+<p>The key aim of these tasks is formative: we explicitly encourage students to focus on the feedback they receive rather than on where they have “lost marks”. Each unit contributes only around 1.1% (one ninth of 10%) to the module grade, but we have noticed that activities without any summative aspect tend to be skipped or at least rushed through by students. Some level of extrinsic motivation can be productive <span class="citation" data-cites="lin_college_2003">(<a href="#ref-lin_college_2003" role="doc-biblioref">Lin et al. 2003</a>)</span> despite the risk of over-assessment and an “assessment arms race” <span class="citation" data-cites="harland_assessment_2015">(<a href="#ref-harland_assessment_2015" role="doc-biblioref">Harland et al. 2015</a>)</span>.</p>
 </section>
-<section id="so-how-did-it-go" class="level3">
-<h3 class="anchored" data-anchor-id="so-how-did-it-go">So, how did it go?</h3>
-<p>The AFP was well received in both courses. In GO&amp;E, the course organiser noted two distinct benefits to embracing the AFP as the feedback system; the first underscores the fact educators should not overlook the power of motivational and affirmational feedback, and the second is aligning across larger and more diverse marking teams, a common challenge in modern higher education.</p>
-<blockquote class="blockquote">
-<p>“There were two main advantages to this approach. Firstly, the staff were encouraging reflection on well-handled skills, not solely skills needing to be developed and this promoted a balanced and inclusive approach to upskilling students. Secondly, the student feedback became much more consistent between staff and between assessment items.” — Kay Douglas, Course Organiser of GO&amp;E</p>
-</blockquote>
-<p>Given the nature of assessment and supervision in GOE, it also felt natural to make the assessment feedback process more verbal and conversational, and empower the students to create action points based on both their strengths and weaknesses. It was also interesting to see that the system logic and structure of Tune the Ear, Simplify the Message, and Encourage Action could be translated to synchronous verbal communication as much as it could be used in asynchronous written feedback.</p>
-<p>In RTG, there was an opportunity to include the students in the decision on using the AFP, and noting their opinions on it. After running a session on reflective practice and engaging with assessment feedback, the students were anonymously polled on how they perceive feedback currently in their degree and if they preferred this new approach. A total of 90% of the cohort welcomed using the AFP in ‘most to all’ of their courses, and a similar proportion felt more inclined to use their feedback if presented in this format. This gave us encouraging evidence that implementing a feedback system like the AFP could benefit nearly all courses. It is easy to incorporate alongside pre-existing marking rubrics and can streamline marking processes. Most importantly, it empowers the student voice, turning the feedback experience around from unidirectional to dialogical.</p>
-<blockquote class="blockquote">
-<p>“Only improvement would be more! If you’d be able to run a session earlier in the year OR in an earlier year” — 3rd year Geophysics student, enrolled in RTG</p>
-</blockquote>
-<p>As suggested by one student in RTG, this could have even more impact if this approach to feedback was introduced from day one of the university experience. This could both empower the student voice in the assessment cycle, and standardise the student experience across multiple courses.</p>
+<section id="automatic-marking-of-multiple-choice-questions-mcqs" class="level3">
+<h3 class="anchored" data-anchor-id="automatic-marking-of-multiple-choice-questions-mcqs">Automatic marking of multiple-choice questions (MCQs)</h3>
+<p>It is not practical to cover all taught material in authentic assessed tasks because of the excessive workload this would put on both students and markers. Each unit therefore also includes an online multiple-choice quiz, marked automatically, to help students check their understanding of the material in the notes before applying it. In the past this score contributed to the grade for the unit, along with the weekly programming assignment. In order to encourage students to use the quiz as a source of rapid feedback, we allowed unlimited retakes, with the highest score achieved being used. This still added complexity without any clear benefit, so we no longer use the quiz score in calculating the unit grade, but each student has to achieve a pass mark (typically 7 out of 10 questions) before they are able to submit the main assignment for the week.</p>
+</section>
+<section id="marking-programming-tasks-in-person" class="level3">
+<h3 class="anchored" data-anchor-id="marking-programming-tasks-in-person">Marking programming tasks in person</h3>
+<section id="prompt-and-effective-feedback" class="level4">
+<h4 class="anchored" data-anchor-id="prompt-and-effective-feedback">Prompt and effective feedback</h4>
+<p>This work is graded in person in class, primarily because we find this an effective way to give feedback: what we say to each student can be tailored to their own work and forms a dialogue which the student steers by their own enquiries and their responses to our questions. In contrast, written feedback is a one-way communication channel that takes significant staff time to impart guidance that may not even be read by the student, let alone meet their individual needs. This feedback is also timely: we encourage students to submit their work at least 30 minutes before the end of the session so that they can get feedback and a grade before they leave the room. This is not always possible, and some flexibility is important for students who may for example miss a session due to illness, so we allow submission up to the day before the following session, and grade work in the following session or as soon as possible thereafter.</p>
+</section>
+<section id="integrity-and-ai-proof-assessment" class="level4">
+<h4 class="anchored" data-anchor-id="integrity-and-ai-proof-assessment">Integrity and “AI proof” assessment</h4>
+<p>An additional benefit of in-person marking is that we can check who we are talking to, and to some extent who has done the work. This is not the case for out-of-class marking of uploaded material. Integrity has always been a concern, but has become more of a talking point recently with the expansion of generative AI tools and the ensuing search for “AI proof” assessments. This year we have added an element to the rubric for each assignment that assesses the student’s ability to explain their work or to make changes to their code when asked. This has proved useful in diagnosing student misconceptions and identifying areas where more practice is needed, as well as deterring misconduct. It has, inevitably, increased the time taken to mark each piece of work, so one of our aims for next year is to reduce the time spent on the aspects of marking that are more mechanical and less interactive. This might involve the use of automatic marking, based on unit tests or the <a href="https://coderunner.org.nz/">Moodle CodeRunner</a> plug-in, or simply expanding the use of MCQs.</p>
+</section>
+<section id="organization" class="level4">
+<h4 class="anchored" data-anchor-id="organization">Organization</h4>
+<p>All course staff in the lab are responsible for both helping and marking students, with the balance shifting from the former to the latter over the course of the session. Staff move around the room and sit or stand next to the student whose work they are marking, using a tablet or laptop to assign marks in an online rubric in Moodle, our learning management system. We aim to mark students in the order that they have submitted, leaving them free to continue with further investigation or other work while they wait, and use a low-tech system to manage this: once they have submitted their completed notebook on Moodle, students are asked to write their name and desk number on a sign-up sheet at the front of the room. The marker crosses the next name off the list before going to the desk, checking the identity of the student, and then reviewing their work. Numerical marks are assigned by selecting a box for each criterion in the rubric, while feedback is given verbally. The process takes from around five minutes to fifteen or more, depending on how much discussion and explanation is needed. While this is time-consuming, we believe this is a productive way to use the limited contact time available and the expertise of the staff.</p>
 </section>
 </section>
-<section id="conclusion" class="level2">
-<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
-<p>The AFP offers a structured and pragmatic response to persistent challenges in feedback practice. By aligning student expectations with staff capabilities, and by foregrounding simplicity and student agency, the AFP presents a viable and robust model for enhancing the educational value of feedback in higher education. Its emphasis on parsimony, consistency, and actionability makes it a valuable contribution to contemporary assessment design. As an OER, the AFP’s resources are available and free to all. There are learner-facing resources and educator-facing resources. Feedback is a three-dimensional puzzle and our hope is the AFP helps manage that complexity. By taking a systems-level view, our intention is to create a sense of alignment between students’ expectations, our approach as marking teams, and institutional norms around assessment.</p>
-<div class="callout callout-style-default callout-note no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Resources
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ul>
-<li><a href="https://sites.google.com/view/theactionfeedbackprotocol/home">The Action Feedback Protocol (for educators)</a></li>
-<li><a href="https://sites.google.com/view/makingthemostoffeedback/home">Making the Most of Feedback (for learners)</a></li>
-</ul>
-</div>
-</div>
 </section>
+<section id="assessed-computational-notebooks" class="level2">
+<h2 class="anchored" data-anchor-id="assessed-computational-notebooks">Assessed computational notebooks</h2>
+<section id="authentic-tasks" class="level3">
+<h3 class="anchored" data-anchor-id="authentic-tasks">Authentic tasks</h3>
+<p>The two longer assignments are designed to be fairly authentic tasks in that they require the creation of a computational notebook including explanatory text and structured as a scientific report rather than simply a Python script. Students have more time to work on these, so the tasks are more ambitious.</p>
+</section>
+<section id="rubric-design" class="level3">
+<h3 class="anchored" data-anchor-id="rubric-design">Rubric design</h3>
+<p>In any but the most simplistic rubric, there is a need for detailed explanation of each criterion and how to decide on the appropriate level for a given student submission <span class="citation" data-cites="brookhart_rubrics_2018">(<a href="#ref-brookhart_rubrics_2018" role="doc-biblioref">Brookhart 2018</a>)</span>. It is often useful to illustrate commonly occurring responses or misconceptions, going beyond the level of detail that is useful for any given student, or fits into the rubric format used by Moodle. Hence we keep the criterion and level descriptions concise in the rubric itself, and provide markers with detailed marking notes explaining how they should be interpreted.</p>
+<p>One change that we believe has been helpful, and has been positively received by markers, was to reduce the granularity of marking each criterion. Instead of giving a mark out of ten, we now define levels from zero (for no or minimal work) to a maximum of three or four. The intention, albeit it not achieved everywhere, is to define criteria for each level that build on those for the level below, so only work that meets the requirements for level two is then eligible to be considered for level three. This is intended to escape the sort of ambiguity that is common in mark schemes that make use of the word <em>but</em>, as in <em>has a well written conclusion but inadequate references</em>, leaving the marker to decide how to deal with a report that has outstanding referencing but a mediocre conclusions. This does take away the freedom of markers to use intermediate marks to reflect this uncertainty, but we hope this is outweighed by the benefit of reducing the time spent agonizing over small distinctions that make little difference to the final grade.</p>
+<p>In practice each level is treated as a corresponding number of points, and the overall mark is calculated as the percentage of possible points awarded. A more sophisticated approach to weighting criteria and levels would be possible, but we see simplicity as a virtue, and additional complexity as unjustified in this case.</p>
+<p>The marking takes time, with typically around 300 lengthy notebooks submitted. These are divided across ten or so markers, but it can take on the order of 30 minutes to mark each one, with the first few for each marker taking substantially longer. Limiting this workload, and ensuring the marking is completed within the four-week institutional deadline, are areas where we are continuing to focus effort.</p>
+</section>
+<section id="marking-fairly-and-consistently" class="level3">
+<h3 class="anchored" data-anchor-id="marking-fairly-and-consistently">Marking fairly and consistently</h3>
+<p>Marking is not conducted in person and is done anonymously in line with UCL’s academic regulations, which does mean that there is no way to be sure whether a student has completed their own work, and what help (from other students, people outside the course, or AI software) they have received. We use JPlag<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> to look for signs of collusion, but any indications of misconduct are investigated by the course leaders and the few cases that we pursue are decided by us using our own judgement, not by any automated process. JPlag has been successful in identifying cases where two students have submitted identical or very similar sections of code or text, but is not capable of flagging AI-generated work, where even the same tool can generate different output when applied multiple times to the same input.</p>
+<p>While distributing the marking across a pool of markers limits the workload on any one staff member, it makes it challenging to ensure fairness <span class="citation" data-cites="mcconlogue_assessment_2020">(<a href="#ref-mcconlogue_assessment_2020" role="doc-biblioref">McConlogue 2020, chap. 6</a>)</span>. The course leaders are required to second-mark a representative sample of work and take measures if discrepancies are found. However, it is hard to resolve problems after the marking is complete, short of re-marking from scratch, so we have put a lot of work into supporting consistency early in the process. The design of the rubric has been adjusted each year, trying to find a balance between well-defined and “objective” criteria, which leave little space for flexibility and professional judgement, and broader, more holistic criteria. The former tend to lead to a rubric with a large number of marking decisions to be made, albeit with each being more mechanistic and faster to process, while the latter mean fewer decisions but leave a lot of scope for different interpretations to affect marks unevenly.</p>
+</section>
+<section id="training-and-calibration" class="level3">
+<h3 class="anchored" data-anchor-id="training-and-calibration">Training and calibration</h3>
+<p>No document can solve this problem and make marking <em>reliable</em> in the sense of giving consistent results across markers and students, except by making the assessment less <em>valid</em> by forcing us to use criteria that are artificially constructed and don’t reflect the learning we care about. We can create a better process by introducing <em>calibration</em> sessions <span class="citation" data-cites="mcconlogue_assessment_2020">(<a href="#ref-mcconlogue_assessment_2020" role="doc-biblioref">McConlogue 2020, chap. 6</a>)</span> where we discuss our approach and ideally specific examples with the pool of markers. In a university context this is difficult because our markers have other commitments and are not all available at the same time for such a session. Hence we need to arrange multiple sessions and individual discussions, limiting the extent to which each marker can learn from all the others. An approach we currently use is for one of the course leaders to mark one or more student submissions, talking through their thought process as they do so, and responding to questions from other markers. This is particularly productive when the other markers are able and willing to mark one of their own allocated submissions in parallel, and raise points for discussion.</p>
+</section>
+<section id="a-structured-data-analysis-assignment" class="level3">
+<h3 class="anchored" data-anchor-id="a-structured-data-analysis-assignment">A structured data analysis assignment</h3>
+<p>The mid-term assignment asks students to carry out a data analysis task on a physics data set. It requires them to apply the concepts they have been taught in the data analysis and statistics course, as well as using Python code, calling appropriate library functions, to fit a straight line to the data and to interpret their results. This involves creating a report in the form of a Jupyter notebook, discussing the techniques they use. The instructions for this task are quite prescriptive, specifying the tasks to be undertaken and in what order, and giving specific questions that should be discussed in the report, such as to what extent the data are well described by a linear model.</p>
+</section>
+<section id="an-open-ended-computational-physics-assignment" class="level3">
+<h3 class="anchored" data-anchor-id="an-open-ended-computational-physics-assignment">An open-ended computational physics assignment</h3>
+<p>The final assignment has a similar format to the mid-term assessment, albeit focussed on a computational physics problem rather than data analysis. Students are again required to investigate a problem and present their results and conclusions in the form of a Jupyter notebook. The most significant difference is that the final part of the task is fairly open-ended: students are led through the initial steps of an investigation, e.g.&nbsp;using Euler’s method to predict the motion of a planet around a star, but it is up to them how they extend this, e.g.&nbsp;by tracking multiple bodies, investigating more complex orbits, or applying alternative integration algorithms.</p>
+<p>The rubric is inevitably longer because the task is more extended and divided into multiple sections. Criteria like <em>correct code</em> are treated separately for each part of the task so that it is possible to deal consistently with cases where, for example, a student has successfully completed one section but not the rest of the assignment. As a compromise between explicitness and simplicity, we do apply some criteria (e.g.&nbsp;<em>code quality: comments</em>) to the notebook as a whole, and accept that in these cases a student can score well even with incomplete work.</p>
+<p>The open-ended final investigation cannot be broken down into well-defined specific criteria, so we use only two: <em>thorough investigation</em> reflecting the ambition of the work attempted, along with its correctness, and <em>demonstration and discussion</em>, assessing how well the conclusions are explained and backed up by appropriate presentation of plots or animations. These criteria are marked out of four, and specific examples are discussed among the markers in an online forum in order to build a shared understanding of how to judge these.</p>
+</section>
+</section>
+<section id="the-future" class="level1">
+<h1>The future</h1>
+<p>We continue to make minor adjustments to the course syllabus and assessment as issues arise, with an onoging focus on providing constructive feedback and fair marks to students while limiting the resulting staff workload. Possible future developments include more explicit use of frameworks such as standards-based grading <span class="citation" data-cites="TeachProgAcross_C38 ClarkTalbert2023">(<a href="#ref-TeachProgAcross_C38" role="doc-biblioref">Pankratz 2026</a>; <a href="#ref-ClarkTalbert2023" role="doc-biblioref">Clark and Talbert 2023, chap. 5</a>)</span> or specifications grading <span class="citation" data-cites="ClarkTalbert2023">(<a href="#ref-ClarkTalbert2023" role="doc-biblioref">Clark and Talbert 2023, chap. 6</a>)</span>.</p>
+<p>Larger changes are also in the offing, both locally and in the wider world. A UCL-wide <em>programme excellence project</em> offers an opportunity to merge the existing module with others to form a more coherent 30-credit module taught over the full academic year. The worlds of education, research, and software development are also seeing major changes as generative AI techniques and tools become more powerful and pervasive. This has implications for the teaching of programming across disciplines that go well beyond the scope of this article but are discussed elsewhere in this volume <span class="citation" data-cites="TeachProgAcross_C10">(<a href="#ref-TeachProgAcross_C10" role="doc-biblioref">Evkaya et al. 2026</a>)</span>.</p>
 <section id="references" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="references">References</h2>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" role="list">
-<div id="ref-ackerman2010instructor" class="csl-entry" role="listitem">
-Ackerman, David S, and Barbara L Gross. 2010. <span>“Instructor Feedback: How Much Do Students Really Want?”</span> <em>Journal of Marketing Education</em> 32 (2): 172–81.
+<div id="ref-brookhart_rubrics_2018" class="csl-entry" role="listitem">
+Brookhart, Susan M. 2018. <span>“Appropriate <span>Criteria</span>: <span>Key</span> to <span>Effective</span> <span>Rubrics</span>.”</span> <em>Frontiers in Education</em> 3 (April). <a href="https://doi.org/10.3389/feduc.2018.00022">https://doi.org/10.3389/feduc.2018.00022</a>.
 </div>
-<div id="ref-bevan2008seeing" class="csl-entry" role="listitem">
-Bevan, Ruth, Joanne Badge, Alan Cann, Chris Willmott, and Jon Scott. 2008. <span>“Seeing Eye-to-Eye? Staff and Student Views on Feedback.”</span> <em>Bioscience Education</em> 12 (1): 1–15.
+<div id="ref-ClarkTalbert2023" class="csl-entry" role="listitem">
+Clark, David, and Robert Talbert. 2023. <em>Grading for <span>Growth</span>: <span>A Guide</span> to <span>Alternative Grading Practices That Promote Authentic Student Learning</span> and <span>Student Engagement</span> in <span>Higher Education</span></em>. Routledge.
 </div>
-<div id="ref-boswell2023investigating" class="csl-entry" role="listitem">
-Boswell, Margaret. 2023. <span>“Investigating STEM Pathway Students’ Perceptions of Reflective Practice: A Case Study.”</span> <em>The Language Scholar</em> 7.
+<div id="ref-TeachProgAcross_C10" class="csl-entry" role="listitem">
+Evkaya, Ozan, Hebatallah Shoukry, TJ Elmas, Laila Dabab Nahas, and Steven Watterson. 2026. <em>Teaching Programming Across Disciplines</em>.
 </div>
-<div id="ref-cross2022geoscience" class="csl-entry" role="listitem">
-Cross, A., K. Douglas, Frederik D. Madsen, E. Zaja, C. Graham, and B. Auyeung. 2022. <span>“Geoscience Outreach: What We Do, How We Assess, and Client/Student Reflections.”</span> March 13. <a href="https://blogs.ed.ac.uk/teaching-matters/geoscience-outreach-what-we-do-how-we-assess-and-client-student-reflections/">https://blogs.ed.ac.uk/teaching-matters/geoscience-outreach-what-we-do-how-we-assess-and-client-student-reflections/</a>.
+<div id="ref-harland_assessment_2015" class="csl-entry" role="listitem">
+Harland, Tony, Angela McLean, Rob Wass, Ellen Miller, and Kwong Nui Sim. 2015. <span>“An Assessment Arms Race and Its Fallout: High-Stakes Grading and the Case for Slow Scholarship.”</span> <em>Assessment &amp; Evaluation in Higher Education</em> 40 (4): 528–41. <a href="https://doi.org/10.1080/02602938.2014.931927">https://doi.org/10.1080/02602938.2014.931927</a>.
 </div>
-<div id="ref-higgins2001getting" class="csl-entry" role="listitem">
-Higgins, Richard, Peter Hartley, and Alan Skelton. 2001. <span>“Getting the Message Across: The Problem of Communicating Assessment Feedback.”</span> <em>Teaching in Higher Education</em> 6 (2): 269–74.
+<div id="ref-lin_college_2003" class="csl-entry" role="listitem">
+Lin, Yi-Guang, Wilbert J. McKeachie, and Yung Che Kim. 2003. <span>“College Student Intrinsic and/or Extrinsic Motivation and Learning.”</span> <em>Learning and Individual Differences</em> 13 (3): 251–58. https://doi.org/<a href="https://doi.org/10.1016/S1041-6080(02)00092-4">https://doi.org/10.1016/S1041-6080(02)00092-4</a>.
 </div>
-<div id="ref-maclaren2026feedback" class="csl-entry" role="listitem">
-MacLaren, Andrew. 2026. <span>“Feedback as Teamwork: Restoring Agency &amp; Academic Quality Through the Action Feedback Protocol.”</span> <em>Research Intelligence</em>, no. 166: 16–17.
+<div id="ref-mcconlogue_assessment_2020" class="csl-entry" role="listitem">
+McConlogue, T. 2020. <em>Assessment and <span>Feedback</span> in <span>Higher</span> <span>Education</span>: <span>A</span> <span>Guide</span> for <span>Teachers</span></em>. UCL Press.
 </div>
-<div id="ref-orsmond2005biology" class="csl-entry" role="listitem">
-Orsmond, Paul, Stephen Merry, and Kevin Reiling. 2005. <span>“Biology Students’ Utilization of Tutors’ Formative Feedback: A Qualitative Interview Study.”</span> <em>Assessment &amp; Evaluation in Higher Education</em> 30 (4): 369–86.
+<div id="ref-TeachProgAcross_C38" class="csl-entry" role="listitem">
+Pankratz, Elizabeth. 2026. <em>Teaching Programming Across Disciplines</em>.
 </div>
-<div id="ref-weaver2006students" class="csl-entry" role="listitem">
-Weaver, Melanie R. 2006. <span>“Do Students Value Feedback? Student Perceptions of Tutors’ Written Responses.”</span> <em>Assessment &amp; Evaluation in Higher Education</em> 31 (3): 379–94.
+<div id="ref-jplag" class="csl-entry" role="listitem">
+Prechelt, Lutz, Guido Malpohl, and Michael Philippsen. 2000. <em>JPlag: Finding Plagiarisms Among a Set of Programs</em>. No. 1. Vol. 2000. Interner Bericht. Fakultät Für Informatik, Universität Karlsruhe. <a href="https://doi.org/10.5445/IR/542000">https://doi.org/10.5445/IR/542000</a>.
 </div>
-<div id="ref-winstone2019building" class="csl-entry" role="listitem">
-Winstone, Naomi E, Georgina Mathlin, and Robert A Nash. 2019. <em>Building Feedback Literacy: Students’ Perceptions of the Developing Engagement with Feedback Toolkit</em>. 4: 39.
+<div id="ref-SambellEtAl2012" class="csl-entry" role="listitem">
+Sambell, Kay, Liz McDowell, and Catherine Montgomery. 2012. <em>Assessment for Learning in Higher Education</em>. Routledge.
 </div>
-<div id="ref-winstone2017supporting" class="csl-entry" role="listitem">
-Winstone, Naomi E, Robert A Nash, Michael Parker, and James Rowntree. 2017. <span>“Supporting Learners’ Agentic Engagement with Feedback: A Systematic Review and a Taxonomy of Recipience Processes.”</span> <em>Educational Psychologist</em> 52 (1): 17–37.
-</div>
-<div id="ref-winstone2017d" class="csl-entry" role="listitem">
-Winstone, Naomi E, Robert A Nash, James Rowntree, and Michael Parker. 2017. <span>“<span>‘It’d Be Useful, but i Wouldn’t Use It’</span>: Barriers to University Students’ Feedback Seeking and Recipience.”</span> <em>Studies in Higher Education</em> 42 (11): 2026–41.
+<div id="ref-wiliam_afl_2011" class="csl-entry" role="listitem">
+Wiliam, Dylan. 2011. <span>“What Is Assessment for Learning?”</span> <em>Studies in Educational Evaluation</em>, Assessment for <span>Learning</span>, vol. 37 (1): 3–14. <a href="https://doi.org/10.1016/j.stueduc.2011.03.001">https://doi.org/10.1016/j.stueduc.2011.03.001</a>.
 </div>
 </div>
+</section>
+</section>
+<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn1"><p><a href="https://helmholtz.software/software/jplag">JPlag</a> is an open-source sytem for source code plagiarism detection <span class="citation" data-cites="jplag">(<a href="#ref-jplag" role="doc-biblioref">Prechelt et al. 2000</a>)</span>.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
 </section>
 
 </main> <!-- /main -->
@@ -1118,13 +1102,13 @@ Winstone, Naomi E, Robert A Nash, James Rowntree, and Michael Parker. 2017. <spa
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./C33_coding-anxiety.html" class="pagination-link" aria-label="Overcoming coding anxiety: reflections and strategies">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Overcoming coding anxiety: reflections and strategies</span></span>
+      <a href="./C24_lost-in-translation.html" class="pagination-link" aria-label="Lost in Translation: Complexities and Good Practices of Translating Coding-based Teaching Materials Across Multiple Human Languages">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Lost in Translation: Complexities and Good Practices of Translating Coding-based Teaching Materials Across Multiple Human Languages</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./C36_pair-programming-across-disciplines.html" class="pagination-link" aria-label="Structured Group Work With Assigned Asymmetrical Roles and Switching: Lessons From Pair Programming Across Disciplines">
-        <span class="nav-page-text"><span class="chapter-title">Structured Group Work With Assigned Asymmetrical Roles and Switching: Lessons From Pair Programming Across Disciplines</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./C29_notebooks-for-novices.html" class="pagination-link" aria-label="Notebook for novices? Pros and cons of Jupyter">
+        <span class="nav-page-text"><span class="chapter-title">Notebook for novices? Pros and cons of Jupyter</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
