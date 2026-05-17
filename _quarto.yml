@@ -83,6 +83,7 @@ book:
         - C24_lost-in-translation.qmd
 #        - C25_supporting-new-tutors.qmd
 #        - C26_assessment-and-feedback-overview.qmd
+        - C26.1-assessment-case-study.qmd
 #        - C27_curriculum-design-overview.qmd
 #        - C28_incorporating-reproducibility.qmd
         - C29_notebooks-for-novices.qmd
