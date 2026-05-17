@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.37">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="John Wilson">
+<meta name="keywords" content="example">
+
+<title>GenAI vs Academic Skills Development – Teaching Programming across Disciplines</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./99-bibliography.html" rel="next">
+<link href="./C41_pair-programming-tutor-reflections.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-09bdfa0cadd0acf47f0224edb92c5abb.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="_theme/styles.css">
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./C44_genai-vs-academic-development.html"><span class="chapter-title">GenAI vs Academic Skills Development</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Teaching Programming across Disciplines</a> 
+        <div class="sidebar-tools-main">
+    <div class="dropdown">
+      <a href="" title="Download" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Download"><i class="bi bi-download"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="./teaching_programming_across_disciplines.pdf">
+              <i class="bi bi-file-pdf pe-1"></i>
+            Download PDF
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="./teaching_programming_across_disciplines.epub">
+              <i class="bi bi-journal pe-1"></i>
+            Download ePub
+            </a>
+          </li>
+      </ul>
+    </div>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Teaching Programming across Disciplines</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./00-chapter-template.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Title of Example Chapter (as will appear on top h1 header and in table of contents)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./CAB_Author-bio-placeholder.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Author Bios Placeholder</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C01_teaching-python.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">A Practical Guide to Teaching Python as a Computational Tool in an Introductory Data Analysis Course</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C02_genai-before-during-after.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Assessments With Generative AI: Before, During, and After</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C03_online-teaching-reflections.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Reflections on Online Teaching</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C05_coding-mindset.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">A Guide on Empowering Students to Develop a Coding Mindset</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C06_feminists-and-anarchists.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Dungeon Crawlers and Anarchists: Co-Designing Programming Teaching Experiences</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C07_teaching-C-to-novices.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Second Languages: Teaching C to Python+Jupyter Novices</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C08_hype-need-responsible-compute.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Hype and The Need for Responsible Compute</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C09_debugging-beyond-the-debugger.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Brain Book Buddy Boss Break: A Practical Debugging Framework for Learners</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C10_teaching-with-genai.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">An optimistic outlook on Teaching, Learning and Assessment for coding with the emergence of generative AI</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C11_sequential-vs-simultaneous.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Sequential vs.&nbsp;Simultaneous: Approaches to Learning Programming and Statistics</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C12_pair-programming-overview.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Where Do I Even Start With Pair Programming in My Classroom? A Conversation With Seasoned Practitioners.</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C14_foster-inclusion-and-accessibility.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Reflections on Practices to Foster Inclusion and Accessibility in Programming Teaching</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C15_programming-without-computers.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Removing Barriers by Programming Without Computers</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C16_peer-programming.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Peer Programming in Action: Pair Programming in Larger Groups</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C20_automatic-marking.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Using automated marking in programming courses to enhance learning</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C21_programming-across-disciplines-systems-thinking.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">How Teaching Programming Across Disciplines Can Instil Systems Thinking</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C22_interdisciplinary-by-design.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Interdisciplinary by Design: The Centre for Data, Culture, &amp; Society Training Programme</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C23_pair-programming-fusion.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Learning Together Across Modes: Online and On-Site Pair Programming in a Fusion Course</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C24_lost-in-translation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Lost in Translation: Complexities and Good Practices of Translating Coding-based Teaching Materials Across Multiple Human Languages</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C29_notebooks-for-novices.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Notebook for novices? Pros and cons of Jupyter</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C31_leveraging-the-heterogeneity.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Leveraging the heterogeneity: teaching computing skills to a multidisciplinary cohort with a variable skill level</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C32_civil-engineering.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Changing civil engineering students’ mindset toward programming</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C33_coding-anxiety.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Overcoming coding anxiety: reflections and strategies</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C35_action-feedback-plan.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Managing the Rubik’s Cube of Assessment: The Action Feedback Protocol</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C36_pair-programming-across-disciplines.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Structured Group Work With Assigned Asymmetrical Roles and Switching: Lessons From Pair Programming Across Disciplines</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C38_skills-based-assessment.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">The case for skills-based assessment in introductory programming courses</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C39_gentle-introduction-summer-school.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">A gentle introduction to coding: narratives from a programming summer school for social sciences and humanities</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C41_pair-programming-tutor-reflections.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Pair Programming in Practice: A PhD Tutor’s Reflections</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C44_genai-vs-academic-development.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">GenAI vs Academic Skills Development</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./99-bibliography.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bibliography</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar"><div class="quarto-margin-header"><div class="margin-header-item">
+<details id="accessibility-controls">
+    <summary>Display options</summary>
+  
+    <div class="control-group">
+        <label for="fontSizeSlider">Font size</label>
+        <input type="range" id="fontSizeSlider" min="8" max="32" value="16">
+        <span id="fontSizeValue">16</span>px
+    </div>
+  
+    <div class="control-group">
+        <label for="eyeStrainSlider">Eye strain</label>
+        <input type="range" id="eyeStrainSlider" min="0" max="50" value="0">
+        <span id="eyeStrainValue">0</span>%
+    </div>
+  
+    <div class="control-group">
+        <label for="hueRotateSlider">Hue</label>
+        <input type="range" id="hueRotateSlider" min="0" max="360" value="0">
+        <span id="hueRotateValue">0</span>
+    </div>
+  
+    <div class="control-group">
+        <label for="paddingSlider">Padding</label>
+        <input type="range" id="paddingSlider" min="0" max="12" value="3">
+        <span id="paddingValue">0</span>
+    </div>
+  
+    <div class="control-group">
+        <label for="lineSpacingSlider">Spacing</label>
+        <input type="range" id="lineSpacingSlider" min="80" max="250" value="150">
+        <span id="lineSpacingValue">150</span>%
+    </div>
+  
+    <div class="control-group">
+        <label for="fontFamily">Font</label>
+        <select id="fontFamily">
+            <option value="'Atkinson Hyperlegible', sans-serif">Atkinson Hyperlegible</option>
+            <option value="Arial, Helvetica, sans-serif">Sans-serif</option>
+            <option value="Georgia, 'Bitstream Charter', Times, serif">Serif</option>
+        </select>
+    </div>
+  
+    <div class="control-group">
+        <button id="resetDefaults">Reset to Defaults</button>
+    </div>
+
+</details>
+</div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#erosion-of-academic-skills" id="toc-erosion-of-academic-skills" class="nav-link" data-scroll-target="#erosion-of-academic-skills">Erosion of Academic Skills</a></li>
+  <li><a href="#reduced-practical-learning" id="toc-reduced-practical-learning" class="nav-link" data-scroll-target="#reduced-practical-learning">Reduced Practical Learning</a></li>
+  <li><a href="#dependence-on-ai-for-solutions" id="toc-dependence-on-ai-for-solutions" class="nav-link" data-scroll-target="#dependence-on-ai-for-solutions">Dependence on AI for Solutions</a></li>
+  <li><a href="#narrowed-creative-thinking" id="toc-narrowed-creative-thinking" class="nav-link" data-scroll-target="#narrowed-creative-thinking">Narrowed Creative Thinking</a></li>
+  <li><a href="#bias-lived-experience" id="toc-bias-lived-experience" class="nav-link" data-scroll-target="#bias-lived-experience">Bias &amp; lived experience</a></li>
+  <li><a href="#balancing-ai-use" id="toc-balancing-ai-use" class="nav-link" data-scroll-target="#balancing-ai-use">Balancing AI Use</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const fontSizeSlider = document.getElementById('fontSizeSlider');
+        const fontSizeValue = document.getElementById('fontSizeValue');
+
+        const hueRotateSlider = document.getElementById('hueRotateSlider');
+        const hueRotateValue = document.getElementById('hueRotateValue');
+
+        const eyeStrainSlider = document.getElementById('eyeStrainSlider');
+        const eyeStrainValue = document.getElementById('eyeStrainValue');
+
+        const paddingSlider = document.getElementById('paddingSlider');
+        const paddingValue = document.getElementById('paddingValue');
+
+        const lineSpacingSlider = document.getElementById('lineSpacingSlider');
+        const lineSpacingValue = document.getElementById('lineSpacingValue');
+
+        const fontFamilySelect = document.getElementById('fontFamily');
+
+        const html = document.documentElement;
+        const resetButton = document.getElementById('resetDefaults');
+
+        // Define default values
+        const defaults = {
+            fontSize: 16,
+            hueRotate: 0,
+            eyeStrain: 0,
+            padding: 0,
+            lineSpacing: 150,
+            fontFamily: "'Atkinson Hyperlegible', Arial, Helvetica, sans-serif"
+        };
+
+        function updateStyles() {
+            html.style.setProperty('--bs-root-font-size', fontSizeSlider.value + 'px');
+            html.style.setProperty('--hue-rotate', hueRotateSlider.value + 'deg');
+            html.style.setProperty('--eye-strain', eyeStrainSlider.value + '%');
+            html.style.setProperty('--padding', paddingSlider.value + 'em');
+            html.style.setProperty('--line-spacing', lineSpacingSlider.value + '%');
+            html.style.setProperty('--bs-body-font-family', fontFamilySelect.value);
+
+            fontSizeValue.textContent = fontSizeSlider.value;
+            hueRotateValue.textContent = hueRotateSlider.value;
+            eyeStrainValue.textContent = eyeStrainSlider.value;
+            paddingValue.textContent = paddingSlider.value;
+            lineSpacingValue.textContent = lineSpacingSlider.value;
+
+            saveSettings();
+        }
+
+        // Function to save settings to localStorage
+        function saveSettings() {
+            const settings = {
+                fontSize: fontSizeSlider.value,
+                hueRotate: hueRotateSlider.value,
+                eyeStrain: eyeStrainSlider.value,
+                padding: paddingSlider.value,
+                lineSpacing: lineSpacingSlider.value,
+                fontFamily: fontFamilySelect.value
+            };
+            localStorage.setItem('accessibilitySettings', JSON.stringify(settings));
+        }
+
+        // Function to load settings from localStorage
+        function loadSettings() {
+            const savedSettings = localStorage.getItem('accessibilitySettings');
+            if (savedSettings) {
+                const settings = JSON.parse(savedSettings);
+                fontSizeSlider.value = settings.fontSize;
+                hueRotateSlider.value = settings.hueRotate;
+                eyeStrainSlider.value = settings.eyeStrain;
+                paddingSlider.value = settings.padding;
+                lineSpacingSlider.value = settings.lineSpacing;
+                fontFamilySelect.value = settings.fontFamily;
+                updateStyles();
+            }
+        }
+
+        function resetToDefaults() {
+            fontSizeSlider.value = defaults.fontSize;
+            hueRotateSlider.value = defaults.hueRotate;
+            eyeStrainSlider.value = defaults.eyeStrain;
+            paddingSlider.value = defaults.padding;
+            lineSpacingSlider.value = defaults.lineSpacing;
+            fontFamilySelect.value = defaults.fontFamily;
+            updateStyles();
+            localStorage.removeItem('accessibilitySettings');
+        }
+
+        fontSizeSlider.oninput = updateStyles;
+        hueRotateSlider.oninput = updateStyles;
+        eyeStrainSlider.oninput = updateStyles;
+        paddingSlider.oninput = updateStyles;
+        lineSpacingSlider.oninput = updateStyles;
+        fontFamilySelect.onchange = updateStyles;
+        resetButton.onclick = resetToDefaults;
+
+        loadSettings();
+
+    });
+</script>
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-title">GenAI vs Academic Skills Development</span></h1>
+</div>
+
+
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Author</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">John Wilson <a href="mailto:jwilso3@ed.ac.uk" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Edinburgh Medical School, University of Edinburgh
+          </p>
+      </div>
+  </div>
+
+<div class="quarto-title-meta">
+
+      
+  
+    
+  </div>
+  
+
+<div>
+  <div class="keywords">
+    <div class="block-title">Keywords</div>
+    <p>example</p>
+  </div>
+</div>
+
+</header>
+
+
+<p>This article originally appeared as a <a href="https://blogs.ed.ac.uk/teaching-matters/genai-vs-academic-skills-development/">post on the Unversity of Edinburgh blog Teaching Matters</a> in February 2025.</p>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>Back in September 2024, an “Angry Developer” posted their opinion on the effect of AI code tools (see <a href="https://www.darrenhorrocks.co.uk/why-copilot-making-programmers-worse-at-programming/">Why Copilot is making programmers worse at programming</a>).</p>
+<p>This got me thinking about the effect of AI LLM tools on <em>academic skills</em>. Hopefully in way the gives some useful perspective on why-or-when <em>not</em> to turn to AI, beyond the “because the uni said ‘No!’” rules, and that might resonate with our students on a more personal level.</p>
+</section>
+<section id="erosion-of-academic-skills" class="level2">
+<h2 class="anchored" data-anchor-id="erosion-of-academic-skills">Erosion of Academic Skills</h2>
+<p>Just as AI can cause programmers to lose their deep understanding of coding principles, it can also cause us to lose other essential academic skills. An important reason for this is that LLMs have <strong>no knowledge of their own!</strong>. They <em>literally</em> make stuff up <span class="citation" data-cites="hicks2024chatgpt">(<a href="#ref-hicks2024chatgpt" role="doc-biblioref">Hicks et al. 2024</a>)</span>. E.g., relying too heavily on AI to write reports will have an impact on your own development of critical reasoning and writing skills. If your works are mostly written by AI, it will affect how you learn to structure arguments and use evidence to effectively support your narrative. As a marker, one of the things that really stands out about AI generated work is the “voice”. By relying on AI, you not only remove your voice from the content, but lose the opportunity of ever even develop your own voice. As an example, after writing this, I asked an LLM to re-write one (and only one) of the following paragraphs. See if you can spot which one has a different voice.</p>
+</section>
+<section id="reduced-practical-learning" class="level2">
+<h2 class="anchored" data-anchor-id="reduced-practical-learning">Reduced Practical Learning</h2>
+<p>In programming, we never get our code right first time, and our feedback comes in the form of error messages. In our own studies, engaging directly with material is essential for “deep learning” (pun not <em>really</em> intended, but I’ll take it). For example, if you use routinely use AI to quickly summarize articles or generate lab reports, you will find it more difficult to develop a whole chain of skills.</p>
+<div id="fig-diagram" class="quarto-float quarto-figure quarto-figure-center anchored" alt="A sequence of academic skills pointing from 'Meaningful Engagement', 'Developing Critical Thinking', 'Extracting Personal Insights', 'Forming Hypotheses Independently', and then to 'Creating Original Conclusions'. An arrow loops back from 'Creating Original Conclusions' to 'Meaningful Engagement', labeled 'Reinforced weakening of academic skills'.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-diagram-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./chapters/images/C44_ai-vs-ac.png" class="img-fluid figure-img" alt="A sequence of academic skills pointing from 'Meaningful Engagement', 'Developing Critical Thinking', 'Extracting Personal Insights', 'Forming Hypotheses Independently', and then to 'Creating Original Conclusions'. An arrow loops back from 'Creating Original Conclusions' to 'Meaningful Engagement', labeled 'Reinforced weakening of academic skills'.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-diagram-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;32.1: Over-reliance on AI tools is ikely to weaken key academic skills, which once weakened, will lead to a cyle of continued skills impoverishment. (Totally based on opinion - I got no refs for this)
+</figcaption>
+</figure>
+</div>
+<p>And most importantly, if the work is mostly AI generated, the feedback you receive does not apply to you personally at all. So it’s worthless!</p>
+</section>
+<section id="dependence-on-ai-for-solutions" class="level2">
+<h2 class="anchored" data-anchor-id="dependence-on-ai-for-solutions">Dependence on AI for Solutions</h2>
+<p>AI generated code often results is code that is… just… a bit… <em>odd</em>! And that’s assuming the code even works. So, when programmers use AI to generate code, they might not fully understand the solutions provided. There is a parallel here in academic settings where you might use AI to complete assignments without fully engaging with the underlying concepts. I think it should be self-evident that copy-pasting a generated response does nothing to help you as an academic, but it filters beyond just the academic context. Imagine a situation where you were asked a question <em>identical</em> to a Uni exam… in a <em>job interview</em>…</p>
+</section>
+<section id="narrowed-creative-thinking" class="level2">
+<h2 class="anchored" data-anchor-id="narrowed-creative-thinking">Narrowed Creative Thinking</h2>
+<p>AI tools can definitely be an efficient way to complete a task, but they might also limit your own creative thinking. In your academic work, you might miss out on the creative process of developing unique (think “novel”) ideas and solutions. Yes, AI might sometimes suggest a promising idea, but it really does not have any clue about the topic. And with an over-reliance on AI for our work, neither do we. For example, using AI to brainstorm essay questions or projects can prevent you from both conceiving and exploring your own interesting ideas. Again, if it helps, think in terms of “novelty”, often a requirement for publishing.</p>
+</section>
+<section id="bias-lived-experience" class="level2">
+<h2 class="anchored" data-anchor-id="bias-lived-experience">Bias &amp; lived experience</h2>
+<p>AI models are trained on vast datasets from the internet, reflecting the “most common” values and perspectives, often dominated by only a few societal groups. This can lead to reinforcement of their viewpoints while under representing diverse experiences, especially those from minority groups.</p>
+<p>Relying heavily on AI for ideas might dilute your unique lived experience, regardless of your background. Remember, AI lacks personal insights and creativity. Ensure your voice is evident in your work, as this is what distinguishes it from the work of others. Critically assess AI-generated content, particularly when you have unique perspectives to share - these are the moments when your individuality really matters. AI is undoubtedly a useful tool, but let your individuality shine in your work to avoid creating yet another indistinguishable AI-generated piece.</p>
+</section>
+<section id="balancing-ai-use" class="level2">
+<h2 class="anchored" data-anchor-id="balancing-ai-use">Balancing AI Use</h2>
+<p>While AI can be a powerful tool to enhance learning and productivity, it’s important for you to use it as a supplement rather than a replacement for your own efforts. Encouraging a balanced approach can help maintain and even enhance your critical thinking skills. For example, you can use AI to check your work or, perhaps, generate ideas, but make sure to engage deeply with the material and develop your own understanding and solutions. If you need any further convincing, ask yourself if you have ever felt “imposter syndrome”. Then, ask if the confidence with which AI speaks actually increases your own confidence in your own knowledge…</p>
+<p>AI tools like Copilot certainly offer significant benefits, but what we need to impress upon students is that using these tools has a real effect on development of vital academic skills. Even using for the widely “accepted” use cases, e.g.&nbsp;“idea generation”, is problematic. If ideas-generation or direction-finding are delegated to AI, students risk becoming invisible in their own work, their work risks disappearing from the wider literature landscape, and, ultimately, they end up doing the bidding of our robot overlords.</p>
+</section>
+<section id="references" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="references">References</h2>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-hicks2024chatgpt" class="csl-entry" role="listitem">
+Hicks, Michael Townsen, James Humphries, and Joe Slater. 2024. <span>“ChatGPT Is Bullshit.”</span> <em>Ethics and Information Technology</em> 26 (2): 1–10.
+</div>
+</div>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./C41_pair-programming-tutor-reflections.html" class="pagination-link" aria-label="Pair Programming in Practice: A PhD Tutor's Reflections">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Pair Programming in Practice: A PhD Tutor’s Reflections</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./99-bibliography.html" class="pagination-link" aria-label="Bibliography">
+        <span class="nav-page-text">Bibliography</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

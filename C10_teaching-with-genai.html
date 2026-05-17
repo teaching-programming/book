@@ -104,7 +104,7 @@ div.csl-indent {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-6cd8da66a1bdaffdec2ef34407fc6c1c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-09bdfa0cadd0acf47f0224edb92c5abb.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -343,6 +343,11 @@ div.csl-indent {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./C41_pair-programming-tutor-reflections.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Pair Programming in Practice: A PhD Tutor’s Reflections</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C44_genai-vs-academic-development.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">GenAI vs Academic Skills Development</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -622,7 +627,7 @@ This chapter is for higher education educators who teach coding or programming a
 <p>GenAI takes a mathematical approach to describing language. Sentences can be broken up into words, partial words, and elements of punctuation. These components are known as tokens and the combination of tokens that make up a line of text is mapped to a data point on a set of axes (in a high number of dimensions). Some processing is applied when creating the data point that weights the relative importance and order of the tokens in the text. Similar text will be mapped to nearby data points, whereas very different text will be mapped to data points that lie far apart <span class="citation" data-cites="hua2024investigating">(<a href="#ref-hua2024investigating" role="doc-biblioref">Hua and Yao 2024</a>)</span>. The words, partial words, and punctuation that the genAI recognises as tokens are its vocabulary and the data point describing the text is fed into a neural network. Then calculates the probabilities of each token next following the text, where the neural network itself has been trained with <a href="https://hatchworks.com/blog/gen-ai/large-language-models-guide/">large volumes of literature</a> <span class="citation" data-cites="jiang2020can">(<a href="#ref-jiang2020can" role="doc-biblioref">Jiang et al. 2020</a>)</span>. The genAI algorithm doesn’t always pick the highest probability next token, but one of the most probable and how much it is allowed to deviate from the most probable choice is a model parameter that ensures some variability in the responses generated. Once the next token has been selected, it is added to the text, a new data point is calculated and this is fed into the neural network, with the process repeating until a suitable volume of text has been generated or a stop signal is reached <span class="citation" data-cites="ponmalar2025evaluation">(<a href="#ref-ponmalar2025evaluation" role="doc-biblioref"><span class="nocase">Ponmalar et al.</span> 2025</a>)</span>.</p>
 <p>It is worth emphasizing that the text generated is a statistical construction based on the training literature, not a series of quotes. This means that factually correct sentence structures cannot be guaranteed and are only likely to be generated when they are common in the training literature. Factually correct sentences about uncommon topics are harder to produce consistently <span class="citation" data-cites="jiang2020can">(<a href="#ref-jiang2020can" role="doc-biblioref">Jiang et al. 2020</a>)</span>.</p>
 <p>This system is known as a Large Language Model (LLM) and it forms the basis of most genAIs. One quirk of LLMs is that they are trained to consider the input text, which is formed from the prompt, as factual and to reference it with little statistical reinterpretation. Furthermore, prompts can be extremely lengthy <span class="citation" data-cites="gan2023sensitivity">(<a href="#ref-gan2023sensitivity" role="doc-biblioref">Gan and Mori 2023</a>)</span>. We can combine these two properties of LLMs to improve the factual accuracy of the generated text by including factual source materials as part of the prompt. This is usually done in a process called Retrieval Augmented Generation (RAG) and it is a way to dramatically improve the factual recall of the generated text. By using RAG, the LLM can be formulated so that it generates narrative text fluently based on its training data, but draws on factual details from source materials through RAG (see <a href="#fig-llm-development" class="quarto-xref">Figure&nbsp;<span>12.1</span></a>). It yields a system that can be both conversational and factually accurate <span class="citation" data-cites="miao2024integrating">(<a href="#ref-miao2024integrating" role="doc-biblioref">Miao et al. 2024</a>)</span>.</p>
-<div id="fig-llm-development" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center" alt="A comic showing a robot taking different steps of a knitting task.">
+<div id="fig-llm-development" class="quarto-float quarto-figure quarto-figure-center anchored" alt="A comic showing a robot taking different steps of a knitting task." data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-llm-development-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="./chapters/images/C19_LLMs_development.png" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="A comic showing a robot taking different steps of a knitting task.">
