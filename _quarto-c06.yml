@@ -1,0 +1,30 @@
+author:
+  - name: Francisco Queiroz
+    email: f.queiroz@leeds.ac.uk
+    affiliations: School of Design, University of Leeds
+  - name: Maeve Murphy Quinlan
+    email: TODO
+    affiliations: Research Computing, University of Leeds
+    
+format:
+    docx:
+        reference-doc: _theme/book-layout-test2.7-ref.docx
+        number-sections: false
+        bibliography: references.bib
+        eval: true
+        code-line-numbers: true
+        code-block-bg: true
+        code-block-border-left: true
+        repo-url: https://github.com/teaching-programming/book
+        toc: true
+        links-as-notes: true
+        fig-width: 2
+        fig-height: 2
+        width: 1
+        height: 1
+        papersize: a4
+        margin-left: 0cm
+        margin-right: 0cm
+        margin-top: 0cm
+        margin-bottom: 0cm
+        fig-align: center

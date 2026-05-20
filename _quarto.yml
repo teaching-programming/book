@@ -10,30 +10,56 @@ execute:
     freeze: auto
 
 format:
-    html:
+    # html:
+    #     number-sections: false
+    #     eval: true
+    #     theme: [cosmo, _theme/atkinson.scss]
+    #     css: _theme/styles.css
+    #     code-line-numbers: true
+    #     code-block-bg: true
+    #     code-block-border-left: true
+    #     repo-url: https://github.com/teaching-programming/book
+    #     toc: true
+    #     include-before-body:
+    #         file: _theme/accessibility.html
+    #     grid:
+    #         sidebar-width: 330px
+    #         body-width: 900px
+    #         margin-width: 330px
+    #         gutter-width: 30px
+    # pdf:
+    #     include-in-header: _theme/latex_preamble.tex
+    #     bibliography: references.bib
+    #     links-as-notes: true
+    docx:
+        reference-doc: _theme/book-layout-test2.7-ref.docx
         number-sections: false
+        bibliography: references.bib
         eval: true
-        theme: [cosmo, _theme/atkinson.scss]
-        css: _theme/styles.css
         code-line-numbers: true
         code-block-bg: true
         code-block-border-left: true
         repo-url: https://github.com/teaching-programming/book
         toc: true
-        include-before-body:
-            file: _theme/accessibility.html
-        grid:
-            sidebar-width: 330px
-            body-width: 900px
-            margin-width: 330px
-            gutter-width: 30px
-    pdf:
-        include-in-header: _theme/latex_preamble.tex
-        bibliography: references.bib
         links-as-notes: true
-    epub:
-        bibliography: references.bib
+        fig-width: 2
+        fig-height: 2
+        width: 1
+        height: 1
+        papersize: a4
+        margin-left: 0cm
+        margin-right: 0cm
+        margin-top: 0cm
+        margin-bottom: 0cm
+        fig-align: center
+        # filters:
+          # - _theme/filters/callout-for-docx.lua
 
+
+
+    # epub:
+    #     bibliography: references.bib
+    
 book:
     title: "Teaching Programming across Disciplines"
 
@@ -49,45 +75,45 @@ book:
 
     chapters:
         - index.qmd
-        - 00-chapter-template.qmd
-        - CAB_Author-bio-placeholder.qmd
-        - C01_teaching-python.qmd
-        - C02_genai-before-during-after.qmd
-        - C03_online-teaching-reflections.qmd
-#        - C04_computer-says-no.qmd
-        - C05_coding-mindset.qmd
+        # - 00-chapter-template.qmd
+#         - CAB_Author-bio-placeholder.qmd
+#         - C01_teaching-python.qmd
+#         - C02_genai-before-during-after.qmd
+#         - C03_online-teaching-reflections.qmd
+# #        - C04_computer-says-no.qmd
+#         - C05_coding-mindset.qmd
         - C06_feminists-and-anarchists.qmd
-        - C07_teaching-C-to-novices.qmd
-#        - C08_ai-boom-or-bust.qmd
-        - C09_debugging-beyond-the-debugger.qmd
-        - C10_teaching-with-genai.qmd
-        - C11_sequential-vs-simultaneous.qmd
-        - C12_pair-programming-overview.qmd
-#        - C13_pair-programming-adventure.qmd
-        - C14_foster-inclusion-and-accessibility.qmd
-        - C15_programming-without-computers.qmd
-        - C16_peer-programming.qmd
-#        - C17_coding-with-music.qmd
-#        - C18_social-learning-modelling.qmd
-#        - C19_genai-capabilities-and-challenges.qmd
-#        - C20_automatic-marking.qmd
-        - C21_programming-across-disciplines-systems-thinking.qmd
-        - C22_interdisciplinary-by-design.qmd
-        - C23_pair-programming-fusion.qmd
-        - C24_lost-in-translation.qmd
-#        - C25_supporting-new-tutors.qmd
-#        - C26_assessment-and-feedback-overview.qmd
-#        - C27_curriculum-design-overview.qmd
-#        - C28_incorporating-reproducibility.qmd
-#        - C29_notebooks-for-novices.qmd
-#        - C30_project-based-teaching.qmd
-#        - C31_leveraging-the-heterogeneity.qmd
-        - C32_civil-engineering.qmd
-        - C33_coding-anxiety.qmd
-#        - C34_three-stars-one-wish.qmd
-        - C35_action-feedback-plan.qmd
-        - C36_pair-programming-across-disciplines.qmd
-        - C38_skills-based-assessment.qmd
-        - C39_gentle-introduction-summer-school.qmd
-        - C41_pair-programming-tutor-reflections.qmd
-        - 99-bibliography.qmd
+#         - C07_teaching-C-to-novices.qmd
+# #        - C08_ai-boom-or-bust.qmd
+#         - C09_debugging-beyond-the-debugger.qmd
+#         - C10_teaching-with-genai.qmd
+#         - C11_sequential-vs-simultaneous.qmd
+#         - C12_pair-programming-overview.qmd
+# #        - C13_pair-programming-adventure.qmd
+#         - C14_foster-inclusion-and-accessibility.qmd
+#         - C15_programming-without-computers.qmd
+#         - C16_peer-programming.qmd
+# #        - C17_coding-with-music.qmd
+# #        - C18_social-learning-modelling.qmd
+# #        - C19_genai-capabilities-and-challenges.qmd
+# #        - C20_automatic-marking.qmd
+#         - C21_programming-across-disciplines-systems-thinking.qmd
+#         - C22_interdisciplinary-by-design.qmd
+#         - C23_pair-programming-fusion.qmd
+#         - C24_lost-in-translation.qmd
+# #        - C25_supporting-new-tutors.qmd
+# #        - C26_assessment-and-feedback-overview.qmd
+# #        - C27_curriculum-design-overview.qmd
+# #        - C28_incorporating-reproducibility.qmd
+# #        - C29_notebooks-for-novices.qmd
+# #        - C30_project-based-teaching.qmd
+# #        - C31_leveraging-the-heterogeneity.qmd
+#         - C32_civil-engineering.qmd
+#         - C33_coding-anxiety.qmd
+# #        - C34_three-stars-one-wish.qmd
+#         - C35_action-feedback-plan.qmd
+#         - C36_pair-programming-across-disciplines.qmd
+#         - C38_skills-based-assessment.qmd
+#         - C39_gentle-introduction-summer-school.qmd
+#         - C41_pair-programming-tutor-reflections.qmd
+#         - 99-bibliography.qmd
