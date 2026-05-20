@@ -34,15 +34,15 @@ When you doodle, draw, sketch, you are freed from the tyranny of precision for a
 
 In practice, the course builds ‘pen and paper’ work into every stage of the design process. Students are asked to sketch multiple candidate visualisations for a given dataset producing rough thumbnails of layouts, where they experiment with spatial arrangements, try out different encodings (position, size, colour, shape etc.), all with nothing more than their hands, a pen and a sheet of paper, or a whiteboard (see @fig-data-vis-1, @fig-data-vis-2).  
 
-![To think, to see, to question … and to doodle.](/chapters/images/C43-data-vis_table.jpg){#fig-data-vis-1 fig-alt="Table with pens and paper. On the table doodles of tables and graphs." width=70%}
+![To think, to see, to question…](/chapters/images/C43-data-vis_table.jpg){#fig-data-vis-1 fig-alt="Table with pens and paper. On the table doodles of tables and graphs." width=70%}
 
-![To think, to see, to question … and to doodle.](/chapters/images/C43-data-vis_hand.jpg){#fig-data-vis-2 fig-alt="Table with pens, paper and a mug. Human hand is drawing somethig with a marker." width=70%}
+![…and to doodle.](/chapters/images/C43-data-vis_hand.jpg){#fig-data-vis-2 fig-alt="Table with pens, paper and a mug. Human hand is drawing somethig with a marker." width=70%}
 
 They annotate their sketches with notes about their intended audience, their narrative goals, the emotions they want to evoke, and then they categorise and filter their sketches. As the course progresses so to does the depth of engagement and interrogation of these ideas (see @fig-data-vis-3, @fig-data-vis-4). 
 
 ![The rawness of a hand-drawn sketch is not a deficiency; it is a feature.](/chapters/images/C43-data-vis_sheet1.jpg){#fig-data-vis-3 fig-alt="Hand drawn set of doodles." width=70%}
 
-![The rawness of a hand-drawn sketch is not a deficiency; it is a feature.](/chapters/images/C43-data-vis_ideas.jpg){#fig-data-vis-4 fig-alt="Hand drawn set of doodles." width=70%}
+![The goal is ideation, not illustration.](/chapters/images/C43-data-vis_ideas.jpg){#fig-data-vis-4 fig-alt="Hand drawn set of doodles." width=70%}
 
 Supporting students through this process requires care, especially for those who feel their drawing skills are inadequate. For this reason, it is important to emphasise early and often that this is not about artistic quality – the doodles, the drawings, the sketches themselves are not being judged. The goal is ideation, not illustration. A visualisation sketch can consist of boxes, arrows, and rough axes. It can include figures and symbols, whatever the student wants, whatever their creativity allows; it does not need to be beautiful. One practical strategy that works well is the ‘quick sketch challenge’ where students are given a dataset, asked to identify an audience and a goal, and given approximately ten minutes to produce as many different visual representations as they can, without overthinking or self-censoring. The time pressure liberates them from perfectionism and opens a space for unexpected ideas. 
 
@@ -50,11 +50,11 @@ Following this initial ‘quick sketch’, the sketches are critiqued through a 
 
 This engagement, sharing, and articulation are where deep learning happens, and for many students ‘pen and paper’ turns out to be transformative in a way they had not expected. Students have stated that this step has changed the way they approach problems more broadly, and by the end of the course many report that they now sketch before they code, think through the design before worrying about the implementation, and seek to consider every component and aspect of the visualisations they create or view (see @fig-data-vis-5, @fig-data-vis-6, @fig-data-vis-7). The pen, it happens, is not a step backwards but rather a step deeper. 
 
-![The time pressure liberates one from perfectionism and opens a space for unexpected ideas.](/chapters/images/C43-data-vis_corrections.jpg){#fig-data-vis-5 fig-alt="Table with pens and paper. Early sketches of the visualisation." width=70%}
+![Normalising the rawness of the work.](/chapters/images/C43-data-vis_corrections.jpg){#fig-data-vis-5 fig-alt="Table with pens and paper. Early sketches of the visualisation." width=70%}
 
-![The time pressure liberates one from perfectionism and opens a space for unexpected ideas.](/chapters/images/C43-data-vis_sketch.jpg){#fig-data-vis-6 fig-alt="Table with pens and paper. more advanced sketches of the visualisation." width=70%}
+![The time pressure liberates one from perfectionism…](/chapters/images/C43-data-vis_sketch.jpg){#fig-data-vis-6 fig-alt="Table with pens and paper. more advanced sketches of the visualisation." width=70%}
 
-![The time pressure liberates one from perfectionism and opens a space for unexpected ideas.](/chapters/images/C43-data-vis_presentation.jpg){#fig-data-vis-7 fig-alt="Big screen in a room showing a hand-drawn visualisation." width=70%}
+![…and opens a space for unexpected ideas.](/chapters/images/C43-data-vis_presentation.jpg){#fig-data-vis-7 fig-alt="Big screen in a room showing a hand-drawn visualisation." width=70%}
 
 ## Theory as a Foundation: Bertin, Tufte, and Munzner 
 
@@ -75,9 +75,9 @@ If theory gives students the vocabulary and doodling and sketching gives them th
 Audience is one of the key concepts that the course begins with on day one and returns to again and again. Different audiences bring different prior knowledge, different expectations, different emotional responses, and different purposes. In the specific context of health and social care data these distinctions carry a great deal of weight. A visualisation designed for a room of clinical specialists or public health researchers needs to do completely different work from one designed for patients, carers, or a general public audience, even if both are communicating the same underlying data. The specialists can handle complexity, density, and technical annotation; the general audience needs clarity, guided narrative, and context (see @fig-data-vis-8, @fig-data-vis-9). Getting this wrong is not merely a stylistic failure. It is a communicative failure which, in health contexts, can contribute to genuine misunderstanding and poor outcomes. 
 
 
-![Transformative design thinking: Experts can handle complexity, density, and technical annotation; the general public needs clarity, guided narrative, and context.](/chapters/images/C43-data-vis_records.jpg){#fig-data-vis-8 fig-alt="Hand drawn sketches on paper." width=70%}
+![Theory gives the vocabulary; doodling gives freedom; storytelling gives purpose.](/chapters/images/C43-data-vis_records.jpg){#fig-data-vis-8 fig-alt="Hand drawn sketches on paper." width=70%}
 
-![Transformative design thinking: Experts can handle complexity, density, and technical annotation; the general public needs clarity, guided narrative, and context.](/chapters/images/C43-data-vis_map.jpg){#fig-data-vis-9 fig-alt="Hand drawn sketches on paper." width=70%}
+![Experts can handle complexity, density, and technical annotation; the general public needs clarity, guided narrative, and context.](/chapters/images/C43-data-vis_map.jpg){#fig-data-vis-9 fig-alt="Hand drawn sketches on paper." width=70%}
 
 
 This course, therefore, does not treat audience as a single spectrum from novice to expert, as to do so would run the risk of missing out vital elements. Instead, students are taught to approach audience with curiosity. Not only who are the audience, but also what is the audience doing? Are they exploring data freely, forming their own questions and following their own paths? Or are they being presented with a specific argument, guided through a specific narrative? These two modes, one exploratory, the other explanatory, require fundamentally different design approaches. An exploratory visualisation needs interactivity, flexibility, and rich detail while an explanatory one needs clarity, focus, and narrative momentum. Many students arrive never having made this distinction before, and making it opens up an entirely new dimension of design thinking, which for many is transformative. 
