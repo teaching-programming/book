@@ -1,5 +1,5 @@
 ---
-title: "The case for skills-based assessment in introductory programming courses"
+title: "Developing a Skills-Based Framework for Assessments in Programming Courses"
 bibliography: references.bib
 author:
   - name: Elizabeth Pankratz
