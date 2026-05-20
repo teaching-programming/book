@@ -1,5 +1,5 @@
 function Div(el)
-  if el.classes:includes("callout") then
+  if el.classes:includes("callout") and el.classes:includes("warning") then
     -- Replace with a simple paragraph with a custom style
     return pandoc.Para{
       -- todo, figure out how callouts hsould look and adjust this

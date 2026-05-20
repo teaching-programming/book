@@ -22,7 +22,7 @@ global_meta = nil
 
 function Meta(meta)
   io.write(" metametametametametameta ")
-  local ca = meta["author"]
+  local ca = meta["author"]['name']
   io.write(" meta!!! ")
   if ca then
     io.write(ca)
@@ -30,7 +30,6 @@ function Meta(meta)
     print("pandoc.utils.stringify(ca)")
     print(pandoc.utils.stringify(ca))
   end
-
   return meta
 end
 

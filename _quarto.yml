@@ -52,8 +52,8 @@ format:
         margin-top: 0cm
         margin-bottom: 0cm
         fig-align: center
-        # filters:
-          # - _theme/filters/callout-for-docx.lua
+        filters:
+        - _theme/filters/callout-for-docx.lua
 
 
 
