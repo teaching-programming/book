@@ -1,5 +1,5 @@
 ---
-title: "Computer Says No: Removing Technological Barriers in Coding"
+title: "Computer Says No: Reducing Technical Barriers to Help Novice Programmers"
 bibliography: references.bib
 author:
   - name: Chris Cooling
