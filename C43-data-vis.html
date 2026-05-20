@@ -1,0 +1,1174 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.37">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Suzanne Goopy">
+<meta name="keywords" content="critical-thinking, alternative-assessment">
+
+<title>Seeing Before Coding, Doodling Before Doing: How Teaching Data Visualisation Transforms the Way Students Think – Teaching Programming across Disciplines</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./C44_genai-vs-academic-development.html" rel="next">
+<link href="./C41_pair-programming-tutor-reflections.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-09bdfa0cadd0acf47f0224edb92c5abb.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="_theme/styles.css">
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./C43-data-vis.html"><span class="chapter-title">Seeing Before Coding, Doodling Before Doing: How Teaching Data Visualisation Transforms the Way Students Think</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Teaching Programming across Disciplines</a> 
+        <div class="sidebar-tools-main">
+    <div class="dropdown">
+      <a href="" title="Download" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Download"><i class="bi bi-download"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="./teaching_programming_across_disciplines.pdf">
+              <i class="bi bi-file-pdf pe-1"></i>
+            Download PDF
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="./teaching_programming_across_disciplines.epub">
+              <i class="bi bi-journal pe-1"></i>
+            Download ePub
+            </a>
+          </li>
+      </ul>
+    </div>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Teaching Programming across Disciplines</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./00-chapter-template.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Title of Example Chapter (as will appear on top h1 header and in table of contents)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./CAB_Author-bio-placeholder.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Author Bios Placeholder</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C01_teaching-python.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">A Practical Guide to Teaching Python as a Computational Tool in an Introductory Data Analysis Course</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C02_genai-before-during-after.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Assessments With Generative AI: Before, During, and After</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C03_online-teaching-reflections.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Reflections on Online Teaching</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C05_coding-mindset.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">A Guide on Empowering Students to Develop a Coding Mindset</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C06_feminists-and-anarchists.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Dungeon Crawlers and Anarchists: Co-Designing Programming Teaching Experiences</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C07_teaching-C-to-novices.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Second Languages: Teaching C to Python+Jupyter Novices</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C08_hype-need-responsible-compute.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Hype and The Need for Responsible Compute</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C09_debugging-beyond-the-debugger.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Brain Book Buddy Boss Break: A Practical Debugging Framework for Learners</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C10_teaching-with-genai.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">An optimistic outlook on Teaching, Learning and Assessment for coding with the emergence of generative AI</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C11_sequential-vs-simultaneous.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Sequential vs.&nbsp;Simultaneous: Approaches to Learning Programming and Statistics</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C12_pair-programming-overview.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Where Do I Even Start With Pair Programming in My Classroom? A Conversation With Seasoned Practitioners.</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C14_foster-inclusion-and-accessibility.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Reflections on Practices to Foster Inclusion and Accessibility in Programming Teaching</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C15_programming-without-computers.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Removing Barriers by Programming Without Computers</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C16_peer-programming.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Peer Programming in Action: Pair Programming in Larger Groups</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C20_automatic-marking.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Using automated marking in programming courses to enhance learning</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C21_programming-across-disciplines-systems-thinking.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">How Teaching Programming Across Disciplines Can Instil Systems Thinking</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C22_interdisciplinary-by-design.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Interdisciplinary by Design: The Centre for Data, Culture, &amp; Society Training Programme</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C23_pair-programming-fusion.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Learning Together Across Modes: Online and On-Site Pair Programming in a Fusion Course</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C24_lost-in-translation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Lost in Translation: Complexities and Good Practices of Translating Coding-based Teaching Materials Across Multiple Human Languages</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C26.1-assessment-case-study.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Assessment and marking in an introductory programming course for physics students</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C29_notebooks-for-novices.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Notebook for novices? Pros and cons of Jupyter</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C31_leveraging-the-heterogeneity.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Leveraging the heterogeneity: teaching computing skills to a multidisciplinary cohort with a variable skill level</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C32_civil-engineering.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Changing civil engineering students’ mindset toward programming</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C33_coding-anxiety.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Overcoming coding anxiety: reflections and strategies</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C35_action-feedback-plan.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Managing the Rubik’s Cube of Assessment: The Action Feedback Protocol</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C36_pair-programming-across-disciplines.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Structured Group Work With Assigned Asymmetrical Roles and Switching: Lessons From Pair Programming Across Disciplines</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C38_skills-based-assessment.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Developing a Skills-Based Framework for Assessments in Programming Courses</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C39_gentle-introduction-summer-school.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">A gentle introduction to coding: narratives from a programming summer school for social sciences and humanities</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C41_pair-programming-tutor-reflections.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Pair Programming in Practice: A PhD Tutor’s Reflections</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C43-data-vis.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Seeing Before Coding, Doodling Before Doing: How Teaching Data Visualisation Transforms the Way Students Think</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C44_genai-vs-academic-development.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">GenAI vs Academic Skills Development</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./99-bibliography.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bibliography</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar"><div class="quarto-margin-header"><div class="margin-header-item">
+<details id="accessibility-controls">
+    <summary>Display options</summary>
+  
+    <div class="control-group">
+        <label for="fontSizeSlider">Font size</label>
+        <input type="range" id="fontSizeSlider" min="8" max="32" value="16">
+        <span id="fontSizeValue">16</span>px
+    </div>
+  
+    <div class="control-group">
+        <label for="eyeStrainSlider">Eye strain</label>
+        <input type="range" id="eyeStrainSlider" min="0" max="50" value="0">
+        <span id="eyeStrainValue">0</span>%
+    </div>
+  
+    <div class="control-group">
+        <label for="hueRotateSlider">Hue</label>
+        <input type="range" id="hueRotateSlider" min="0" max="360" value="0">
+        <span id="hueRotateValue">0</span>
+    </div>
+  
+    <div class="control-group">
+        <label for="paddingSlider">Padding</label>
+        <input type="range" id="paddingSlider" min="0" max="12" value="3">
+        <span id="paddingValue">0</span>
+    </div>
+  
+    <div class="control-group">
+        <label for="lineSpacingSlider">Spacing</label>
+        <input type="range" id="lineSpacingSlider" min="80" max="250" value="150">
+        <span id="lineSpacingValue">150</span>%
+    </div>
+  
+    <div class="control-group">
+        <label for="fontFamily">Font</label>
+        <select id="fontFamily">
+            <option value="'Atkinson Hyperlegible', sans-serif">Atkinson Hyperlegible</option>
+            <option value="Arial, Helvetica, sans-serif">Sans-serif</option>
+            <option value="Georgia, 'Bitstream Charter', Times, serif">Serif</option>
+        </select>
+    </div>
+  
+    <div class="control-group">
+        <button id="resetDefaults">Reset to Defaults</button>
+    </div>
+
+</details>
+</div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#the-unexpected-course" id="toc-the-unexpected-course" class="nav-link active" data-scroll-target="#the-unexpected-course">The Unexpected Course</a></li>
+  <li><a href="#the-problem-with-jumping-straight-to-code" id="toc-the-problem-with-jumping-straight-to-code" class="nav-link" data-scroll-target="#the-problem-with-jumping-straight-to-code">The Problem with Jumping Straight to Code</a></li>
+  <li><a href="#the-power-of-pen-and-paper-doodling-and-sketching-as-cognitive-liberation" id="toc-the-power-of-pen-and-paper-doodling-and-sketching-as-cognitive-liberation" class="nav-link" data-scroll-target="#the-power-of-pen-and-paper-doodling-and-sketching-as-cognitive-liberation">The Power of Pen and Paper: Doodling and Sketching as Cognitive Liberation</a></li>
+  <li><a href="#theory-as-a-foundation-bertin-tufte-and-munzner" id="toc-theory-as-a-foundation-bertin-tufte-and-munzner" class="nav-link" data-scroll-target="#theory-as-a-foundation-bertin-tufte-and-munzner">Theory as a Foundation: Bertin, Tufte, and Munzner</a></li>
+  <li><a href="#storytelling-and-audience-the-communicative-imperative" id="toc-storytelling-and-audience-the-communicative-imperative" class="nav-link" data-scroll-target="#storytelling-and-audience-the-communicative-imperative">Storytelling and Audience: The Communicative Imperative</a></li>
+  <li><a href="#critical-thinking-as-a-superpower" id="toc-critical-thinking-as-a-superpower" class="nav-link" data-scroll-target="#critical-thinking-as-a-superpower">Critical Thinking as a Superpower</a></li>
+  <li><a href="#future-proofing-in-the-age-of-generative-ai" id="toc-future-proofing-in-the-age-of-generative-ai" class="nav-link" data-scroll-target="#future-proofing-in-the-age-of-generative-ai">Future-Proofing in the Age of Generative AI</a></li>
+  <li><a href="#seeing-differently-the-lasting-transformation" id="toc-seeing-differently-the-lasting-transformation" class="nav-link" data-scroll-target="#seeing-differently-the-lasting-transformation">Seeing Differently: The Lasting Transformation</a></li>
+  <li><a href="#conclusion-the-pen-as-portal" id="toc-conclusion-the-pen-as-portal" class="nav-link" data-scroll-target="#conclusion-the-pen-as-portal">Conclusion: The Pen as Portal</a></li>
+  <li><a href="#acknowledgements" id="toc-acknowledgements" class="nav-link" data-scroll-target="#acknowledgements">Acknowledgements</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const fontSizeSlider = document.getElementById('fontSizeSlider');
+        const fontSizeValue = document.getElementById('fontSizeValue');
+
+        const hueRotateSlider = document.getElementById('hueRotateSlider');
+        const hueRotateValue = document.getElementById('hueRotateValue');
+
+        const eyeStrainSlider = document.getElementById('eyeStrainSlider');
+        const eyeStrainValue = document.getElementById('eyeStrainValue');
+
+        const paddingSlider = document.getElementById('paddingSlider');
+        const paddingValue = document.getElementById('paddingValue');
+
+        const lineSpacingSlider = document.getElementById('lineSpacingSlider');
+        const lineSpacingValue = document.getElementById('lineSpacingValue');
+
+        const fontFamilySelect = document.getElementById('fontFamily');
+
+        const html = document.documentElement;
+        const resetButton = document.getElementById('resetDefaults');
+
+        // Define default values
+        const defaults = {
+            fontSize: 16,
+            hueRotate: 0,
+            eyeStrain: 0,
+            padding: 0,
+            lineSpacing: 150,
+            fontFamily: "'Atkinson Hyperlegible', Arial, Helvetica, sans-serif"
+        };
+
+        function updateStyles() {
+            html.style.setProperty('--bs-root-font-size', fontSizeSlider.value + 'px');
+            html.style.setProperty('--hue-rotate', hueRotateSlider.value + 'deg');
+            html.style.setProperty('--eye-strain', eyeStrainSlider.value + '%');
+            html.style.setProperty('--padding', paddingSlider.value + 'em');
+            html.style.setProperty('--line-spacing', lineSpacingSlider.value + '%');
+            html.style.setProperty('--bs-body-font-family', fontFamilySelect.value);
+
+            fontSizeValue.textContent = fontSizeSlider.value;
+            hueRotateValue.textContent = hueRotateSlider.value;
+            eyeStrainValue.textContent = eyeStrainSlider.value;
+            paddingValue.textContent = paddingSlider.value;
+            lineSpacingValue.textContent = lineSpacingSlider.value;
+
+            saveSettings();
+        }
+
+        // Function to save settings to localStorage
+        function saveSettings() {
+            const settings = {
+                fontSize: fontSizeSlider.value,
+                hueRotate: hueRotateSlider.value,
+                eyeStrain: eyeStrainSlider.value,
+                padding: paddingSlider.value,
+                lineSpacing: lineSpacingSlider.value,
+                fontFamily: fontFamilySelect.value
+            };
+            localStorage.setItem('accessibilitySettings', JSON.stringify(settings));
+        }
+
+        // Function to load settings from localStorage
+        function loadSettings() {
+            const savedSettings = localStorage.getItem('accessibilitySettings');
+            if (savedSettings) {
+                const settings = JSON.parse(savedSettings);
+                fontSizeSlider.value = settings.fontSize;
+                hueRotateSlider.value = settings.hueRotate;
+                eyeStrainSlider.value = settings.eyeStrain;
+                paddingSlider.value = settings.padding;
+                lineSpacingSlider.value = settings.lineSpacing;
+                fontFamilySelect.value = settings.fontFamily;
+                updateStyles();
+            }
+        }
+
+        function resetToDefaults() {
+            fontSizeSlider.value = defaults.fontSize;
+            hueRotateSlider.value = defaults.hueRotate;
+            eyeStrainSlider.value = defaults.eyeStrain;
+            paddingSlider.value = defaults.padding;
+            lineSpacingSlider.value = defaults.lineSpacing;
+            fontFamilySelect.value = defaults.fontFamily;
+            updateStyles();
+            localStorage.removeItem('accessibilitySettings');
+        }
+
+        fontSizeSlider.oninput = updateStyles;
+        hueRotateSlider.oninput = updateStyles;
+        eyeStrainSlider.oninput = updateStyles;
+        paddingSlider.oninput = updateStyles;
+        lineSpacingSlider.oninput = updateStyles;
+        fontFamilySelect.onchange = updateStyles;
+        resetButton.onclick = resetToDefaults;
+
+        loadSettings();
+
+    });
+</script>
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-title">Seeing Before Coding, Doodling Before Doing: How Teaching Data Visualisation Transforms the Way Students Think</span></h1>
+</div>
+
+
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Author</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Suzanne Goopy <a href="mailto:sgoopy@ed.ac.uk" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Edinburgh Medical School, University of Edinburgh
+          </p>
+      </div>
+  </div>
+
+<div class="quarto-title-meta">
+
+      
+  
+    
+  </div>
+  
+
+<div>
+  <div class="keywords">
+    <div class="block-title">Keywords</div>
+    <p>critical-thinking, alternative-assessment</p>
+  </div>
+</div>
+
+</header>
+
+
+<section id="the-unexpected-course" class="level2">
+<h2 class="anchored" data-anchor-id="the-unexpected-course">The Unexpected Course</h2>
+<p>The scene is set: In a dining room in China, at a kitchen table in Scotland, in a library in Canada, students boot up their laptops, turn on their devices, and come online. In a seminar room in Edinburgh, students file in and take their seats, computers at the ready. Most are postgraduate students — many of them coming from quantitative, scientific, or health backgrounds across the University of Edinburgh. They are individuals interested in and comfortable with numbers, analysis, and programming. They have signed up for a course called <em>Data Visualisation: Knowledge Transfer</em>: most have not read the fine print, and they come expecting to write code.</p>
+<p>More often than not our students arrive expecting to learn about new chart types, to take a deep dive into <em>Python</em> or <em>R</em> visualisation libraries, or to discover some other innovative programming activity involving dashboard design. To their surprise, and sometimes horror, they are presented with a pen, a pencil, a piece of paper, and a whiteboard (or the online equivalent). This is not an accident, a resource shortage, or a pedagogical quirk. It is the entire point. From the very first session, the course does something radical as it asks technically capable postgraduate students to put down their keyboards and pick up a pen. It asks them to slow down, to think, to doodle, to draw, to sketch. It asks them to become, possibly for the first time in their postgraduate careers, deliberately and productively uncomfortable and uncertain and, ultimately, it changes forever the way they see data.</p>
+<p>This chapter presents a story of transformation by offering some insights into what the course <em>Data Visualisation: Knowledge Transfer</em> does, how it does it, and why, at a moment in time when generative AI can produce a bar chart from a prompt in seconds, it matters more than ever that our students can see before coding and doodle before doing.</p>
+</section>
+<section id="the-problem-with-jumping-straight-to-code" class="level2">
+<h2 class="anchored" data-anchor-id="the-problem-with-jumping-straight-to-code">The Problem with Jumping Straight to Code</h2>
+<p>There is a seductive logic to the idea that learning data visualisation means learning to code visualisation. After all, programming tools are powerful, expressive, and fast. A student who knows how to use a <em>Python</em> or <em>R</em> visualisation package can produce a scatter plot in minutes; they can iterate, tweak, re-render, and they can handle thousands of data points with ease. So why do we not start here? Indeed, why do we not go here at all? The answer is that programming tools, for all their power, are also ‘cognitive cages’. From the moment a student opens a coding environment, they are limited. Constrained by the chart types the tool offers, the parameters it accepts, the defaults it imposes. The tool shapes their thought. A student reaching for a data visualisation tool will, almost instinctively, reach for a line chart or a bar chart not because these are the right choices for the data or the audience, but because these are what the tool offers first. With this, the creative space collapses before it has even had a chance to open.</p>
+<p>This is not the only problem, though, as beyond the constraints of the tools, there is a deeper issue at play. An assumption that visualisation is primarily a technical act rather than a creative and communicative one. When students think about making a chart, they are often thinking about rendering data correctly. They are not thinking about who will read it, what that reader already knows, what question is being answered, what knowledge they want to uncover, what information they want to impart and, least of all, what feeling might be evoked, or what story might be being told. These questions are not peripheral to data visualisation. Indeed, quite the contrary, they are its heart and as such, the course begins from the position that you cannot become a truly skilled data visualiser by learning programming alone; rather you must first learn to see and think … and doodle.</p>
+</section>
+<section id="the-power-of-pen-and-paper-doodling-and-sketching-as-cognitive-liberation" class="level2">
+<h2 class="anchored" data-anchor-id="the-power-of-pen-and-paper-doodling-and-sketching-as-cognitive-liberation">The Power of Pen and Paper: Doodling and Sketching as Cognitive Liberation</h2>
+<p>The introduction of ‘pen and paper’ as a core component of this course is its most distinctive and powerful feature. It comes as a genuine shock to many students. Sometimes there is even visible discomfort with students expressing that this is not quite what they signed up for, or that the analogue medium is not only unexpected but perhaps even somehow beneath the sophistication they have spent years developing. There is discomfort on display, the ‘niggle’ is at work … and growth is on the horizon.</p>
+<p>When you doodle, draw, sketch, you are freed from the tyranny of precision for a pencil line does not require you to specify axis labels, font sizes, or colour hex codes; it asks only that you think about shape, about relationship, about proportion and flow. It invites you to add embellishments, indeed, to add whatever you like. The rawness of a hand-drawn sketch is not a deficiency; it is a feature. It signals that this is an idea, not a product, and it invites iteration and critique in a way that a ‘polished’ visualisation does not.</p>
+<p>In practice, the course builds ‘pen and paper’ work into every stage of the design process. Students are asked to sketch multiple candidate visualisations for a given dataset producing rough thumbnails of layouts, where they experiment with spatial arrangements, try out different encodings (position, size, colour, shape etc.), all with nothing more than their hands, a pen and a sheet of paper, or a whiteboard (see <a href="#fig-data-vis-1" class="quarto-xref">Figure&nbsp;<span>33.1</span></a>, <a href="#fig-data-vis-2" class="quarto-xref">Figure&nbsp;<span>33.2</span></a>).</p>
+<div id="fig-data-vis-1" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Table with pens and paper. On the table doodles of tables and graphs.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-data-vis-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./chapters/images/C43-data-vis_table.jpg" class="img-fluid figure-img" style="width:70.0%" alt="Table with pens and paper. On the table doodles of tables and graphs.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-data-vis-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;33.1: To think, to see, to question…
+</figcaption>
+</figure>
+</div>
+<div id="fig-data-vis-2" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Table with pens, paper and a mug. Human hand is drawing somethig with a marker.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-data-vis-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./chapters/images/C43-data-vis_hand.jpg" class="img-fluid figure-img" style="width:70.0%" alt="Table with pens, paper and a mug. Human hand is drawing somethig with a marker.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-data-vis-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;33.2: …and to doodle.
+</figcaption>
+</figure>
+</div>
+<p>They annotate their sketches with notes about their intended audience, their narrative goals, the emotions they want to evoke, and then they categorise and filter their sketches. As the course progresses so to does the depth of engagement and interrogation of these ideas (see <a href="#fig-data-vis-3" class="quarto-xref">Figure&nbsp;<span>33.3</span></a>, <a href="#fig-data-vis-4" class="quarto-xref">Figure&nbsp;<span>33.4</span></a>).</p>
+<div id="fig-data-vis-3" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Hand drawn set of doodles.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-data-vis-3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./chapters/images/C43-data-vis_sheet1.jpg" class="img-fluid figure-img" style="width:70.0%" alt="Hand drawn set of doodles.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-data-vis-3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;33.3: The rawness of a hand-drawn sketch is not a deficiency; it is a feature.
+</figcaption>
+</figure>
+</div>
+<div id="fig-data-vis-4" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Hand drawn set of doodles.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-data-vis-4-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./chapters/images/C43-data-vis_ideas.jpg" class="img-fluid figure-img" style="width:70.0%" alt="Hand drawn set of doodles.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-data-vis-4-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;33.4: The goal is ideation, not illustration.
+</figcaption>
+</figure>
+</div>
+<p>Supporting students through this process requires care, especially for those who feel their drawing skills are inadequate. For this reason, it is important to emphasise early and often that this is not about artistic quality – the doodles, the drawings, the sketches themselves are not being judged. The goal is ideation, not illustration. A visualisation sketch can consist of boxes, arrows, and rough axes. It can include figures and symbols, whatever the student wants, whatever their creativity allows; it does not need to be beautiful. One practical strategy that works well is the ‘quick sketch challenge’ where students are given a dataset, asked to identify an audience and a goal, and given approximately ten minutes to produce as many different visual representations as they can, without overthinking or self-censoring. The time pressure liberates them from perfectionism and opens a space for unexpected ideas.</p>
+<p>Following this initial ‘quick sketch’, the sketches are critiqued through a modified ‘gallery walk’, where students are asked to share their sketches on the whiteboard, in the case of online students, or in the classroom, pinned to a wall, or spread out on desks. The students ‘visit’ each sketch, either leaving ‘sticky-note’ comments on each other’s work or, if the group is small enough, sharing comments in real time. This activity transforms the individual exercise into a collaborative conversation, normalising the rawness of the work, and building a shared vocabulary for discussing what makes a visualisation effective or ineffective. Students begin to articulate, often for the first time, why a particular choice works, or even how elements from different options could come together to work even better.</p>
+<p>This engagement, sharing, and articulation are where deep learning happens, and for many students ‘pen and paper’ turns out to be transformative in a way they had not expected. Students have stated that this step has changed the way they approach problems more broadly, and by the end of the course many report that they now sketch before they code, think through the design before worrying about the implementation, and seek to consider every component and aspect of the visualisations they create or view (see <a href="#fig-data-vis-5" class="quarto-xref">Figure&nbsp;<span>33.5</span></a>, <a href="#fig-data-vis-6" class="quarto-xref">Figure&nbsp;<span>33.6</span></a>, <a href="#fig-data-vis-7" class="quarto-xref">Figure&nbsp;<span>33.7</span></a>). The pen, it happens, is not a step backwards but rather a step deeper.</p>
+<div id="fig-data-vis-5" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Table with pens and paper. Early sketches of the visualisation.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-data-vis-5-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./chapters/images/C43-data-vis_corrections.jpg" class="img-fluid figure-img" style="width:70.0%" alt="Table with pens and paper. Early sketches of the visualisation.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-data-vis-5-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;33.5: Normalising the rawness of the work.
+</figcaption>
+</figure>
+</div>
+<div id="fig-data-vis-6" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Table with pens and paper. more advanced sketches of the visualisation.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-data-vis-6-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./chapters/images/C43-data-vis_sketch.jpg" class="img-fluid figure-img" style="width:70.0%" alt="Table with pens and paper. more advanced sketches of the visualisation.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-data-vis-6-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;33.6: The time pressure liberates one from perfectionism…
+</figcaption>
+</figure>
+</div>
+<div id="fig-data-vis-7" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Big screen in a room showing a hand-drawn visualisation.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-data-vis-7-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./chapters/images/C43-data-vis_presentation.jpg" class="img-fluid figure-img" style="width:70.0%" alt="Big screen in a room showing a hand-drawn visualisation.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-data-vis-7-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;33.7: …and opens a space for unexpected ideas.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="theory-as-a-foundation-bertin-tufte-and-munzner" class="level2">
+<h2 class="anchored" data-anchor-id="theory-as-a-foundation-bertin-tufte-and-munzner">Theory as a Foundation: Bertin, Tufte, and Munzner</h2>
+<p>The sketching, doodling and ideation work does not happen in a vacuum and is underpinned by a rigorous engagement with the theoretical foundations of data visualisation. These foundations, once understood, give students a language for making and evaluating their design decisions and the decisions of others. The course begins with Jacques Bertin, the French cartographer and theorist whose 1967 work <em>Sémiologie Graphique</em> remains one of the foundational texts of visualisation theory <span class="citation" data-cites="bertin1983semiology">(<a href="#ref-bertin1983semiology" role="doc-biblioref">Bertin 1983</a>)</span>.</p>
+<p><span class="citation" data-cites="bertin1983semiology">Bertin (<a href="#ref-bertin1983semiology" role="doc-biblioref">1983</a>)</span> identifies, what he calls, visual variables, which are the fundamental perceptual properties used to encode information. These are position, size, shape, value (lightness), colour hue, orientation, and texture. His message is that not all variables are equal, with some better suited to encoding quantitative information (position and size are highly effective), while others work better for categorical distinctions (shape, colour hue). Understanding Bertin’s visual variables means understanding the grammar of visual encoding, and once students have this grammar, they have the means to analyse any visualisation they encounter with a clarity and precision not previously possessed. While there have been many additions and variations made to Bertin’s original work (and this is ongoing in this developing area of research), in this course the aim is to keep it as easy and workable for the students as possible with their focus on learning and using Bertin’s visual variables as their foundation.</p>
+<p>The course also introduces students to Edward Tufte, whose work is in many ways the ‘aesthetic conscience’ of data visualisation. Tufte’s principles of data-ink ratio, ‘chart-junk’, small multiples, and the lie factor, are not merely stylistic prescriptions, but also ethical commitments <span class="citation" data-cites="tufte2001visual">(<a href="#ref-tufte2001visual" role="doc-biblioref">Tufte 2001</a>)</span>. Tufte argues, compellingly, that a poorly designed visualisation is not just ugly; it is dishonest, it misleads readers, distorts understanding, and wastes attention. His concept of ‘chart-junk’ (the visual clutter that adds no informational value) resonates powerfully with students. Encountering Tufte can feel like a minor revelation where suddenly less is not just more in the aesthetic sense, it is also more from an ethical perspective. Of course, we do discuss the exceptions to these rules (see <span class="citation" data-cites="lang2009aesthetics">Lang (<a href="#ref-lang2009aesthetics" role="doc-biblioref">2009</a>)</span>, for example) and challenge students to consider this and when it might be proper to break these rules.</p>
+<p>The third major theoretical framework the course introduces is Tamara Munzner’s nested model of visualisation design, first articulated in her 2009 paper and later expanded in her seminal textbook <span class="citation" data-cites="munzner2009nested Munzner2014-oc">(<a href="#ref-munzner2009nested" role="doc-biblioref">Munzner 2009</a>, <a href="#ref-Munzner2014-oc" role="doc-biblioref">2014</a>)</span>. Munzner’s model is particularly valuable for students who are learning to think creatively and systematically about design decisions. It proposes four nested levels of the design process: characterising the domain problem and the data, abstracting those into visualisation tasks and data types, designing the visual encoding and interaction idioms, and finally implementing the algorithms and data structures (students do not realise this fourth level in this course). For students, it is not only what the model offers but how it functions that is important because the nested design model identifies that a mistake can occur at any level and that a mistake made at an outer level will cascade inward, invalidating all the work that follows. Munzner’s model is a theoretical scaffolding that teaches students to question their assumptions at every stage, to ask not just how to create a visualisation but whether the visualisation they are creating is the right one for the task and for the audience. This is not a question that programming tools or AI tools ask. It is a question that only a thoughtful practitioner can ask if they have learned how to ask.</p>
+<p>Woven throughout this visualisation theory is an engagement with perceptual psychology. Visualisation is a perceptual act where data is visually encoded and then decoded by a human’s visual system, which has particular strengths and limitations. Drawing on foundational work in the field <span class="citation" data-cites="ware2012information">(<a href="#ref-ware2012information" role="doc-biblioref">Ware 2012</a>)</span>, students learn about pre-attentive processing (the fact that certain visual properties such as colour, size, and orientation are detected almost instantaneously, in parallel, and before conscious attention is engaged), and the implications of this for design. They learn about the limits of human working memory, about the gestalt principles of visual grouping, about how colour is processed differently depending on whether it encodes categorical or quantitative information. This knowledge does not just make them better designers; it makes them more attentive ones. The human visual system is extraordinary, but it is also fallible and biased, and a visualisation that ignores its limitations is a visualisation that will fail its audience <span class="citation" data-cites="mandal2003human">(<a href="#ref-mandal2003human" role="doc-biblioref">Mandal 2003</a>)</span>.</p>
+</section>
+<section id="storytelling-and-audience-the-communicative-imperative" class="level2">
+<h2 class="anchored" data-anchor-id="storytelling-and-audience-the-communicative-imperative">Storytelling and Audience: The Communicative Imperative</h2>
+<p>If theory gives students the vocabulary and doodling and sketching gives them the freedom, the course’s emphasis on storytelling and audience gives them their purpose. A visualisation is always a communication. It is always made by someone, for someone, about something, in service of some goal. The moment students internalise this, not as an abstract idea but as a design constraint that shapes every decision, their work changes dramatically.</p>
+<p>Audience is one of the key concepts that the course begins with on day one and returns to again and again. Different audiences bring different prior knowledge, different expectations, different emotional responses, and different purposes. In the specific context of health and social care data these distinctions carry a great deal of weight. A visualisation designed for a room of clinical specialists or public health researchers needs to do completely different work from one designed for patients, carers, or a general public audience, even if both are communicating the same underlying data. The specialists can handle complexity, density, and technical annotation; the general audience needs clarity, guided narrative, and context (see <a href="#fig-data-vis-8" class="quarto-xref">Figure&nbsp;<span>33.8</span></a>, <a href="#fig-data-vis-9" class="quarto-xref">Figure&nbsp;<span>33.9</span></a>). Getting this wrong is not merely a stylistic failure. It is a communicative failure which, in health contexts, can contribute to genuine misunderstanding and poor outcomes.</p>
+<div id="fig-data-vis-8" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Hand drawn sketches on paper.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-data-vis-8-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./chapters/images/C43-data-vis_records.jpg" class="img-fluid figure-img" style="width:70.0%" alt="Hand drawn sketches on paper.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-data-vis-8-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;33.8: Theory gives the vocabulary; doodling gives freedom; storytelling gives purpose.
+</figcaption>
+</figure>
+</div>
+<div id="fig-data-vis-9" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Hand drawn sketches on paper.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-data-vis-9-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./chapters/images/C43-data-vis_map.jpg" class="img-fluid figure-img" style="width:70.0%" alt="Hand drawn sketches on paper.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-data-vis-9-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;33.9: Experts can handle complexity, density, and technical annotation; the general public needs clarity, guided narrative, and context.
+</figcaption>
+</figure>
+</div>
+<p>This course, therefore, does not treat audience as a single spectrum from novice to expert, as to do so would run the risk of missing out vital elements. Instead, students are taught to approach audience with curiosity. Not only who are the audience, but also what is the audience doing? Are they exploring data freely, forming their own questions and following their own paths? Or are they being presented with a specific argument, guided through a specific narrative? These two modes, one exploratory, the other explanatory, require fundamentally different design approaches. An exploratory visualisation needs interactivity, flexibility, and rich detail while an explanatory one needs clarity, focus, and narrative momentum. Many students arrive never having made this distinction before, and making it opens up an entirely new dimension of design thinking, which for many is transformative.</p>
+<p>Storytelling, in this context, is not about imposing a narrative on data, rather it is about finding the truthful, meaningful shape of a dataset, the arc of change over time, the contrast between groups, the outlier that demands explanation, and presenting these things in a way that guides the audience towards understanding. The best data visualisations have a kind of rhetorical structure beginning somewhere, developing towards a point, and leaving the reader with something they did not have before. Students learn to ask, “what is the one thing I want my audience to take away from this?” before they begin their design doodling. This single question, explored and answered, transforms the entire process.</p>
+<p>Practical activities support student learning and help them appreciate the importance and complexity of audience and goal. For example, students are asked to present visualisations they have designed to each other and to explain the narrative they intended, then to compare that intended narrative with what their audience actually took away. The gap between the two is almost always instructive. It reveals the biases we hold and the assumptions we make about what is obvious, what needs labelling, what requires annotation, what needs changing altogether. It teaches that what is clear to the maker is not always clear to the viewer and that this gap is the data visualiser’s responsibility to close.</p>
+</section>
+<section id="critical-thinking-as-a-superpower" class="level2">
+<h2 class="anchored" data-anchor-id="critical-thinking-as-a-superpower">Critical Thinking as a Superpower</h2>
+<p>One of the most significant outcomes of the course, and one that students themselves often identify as surprising, is the development of critical thinking skills that extend far beyond data visualisation. The combination of theory, practice, audience awareness, and reflective practice that the course requires supports students to become not only more skilled visualisers, but also more thoughtful practitioners of data science in general.</p>
+<p>Critical thinking, in this context, means the capacity to question the choices embedded in any artefact. To ask not just whether it works but whether it is the right thing to create, for whom it is being created, and what end it serves. Students learn that data visualisations are not neutral. Every design choice, what to include and exclude, how to scale axes, which colour palette to use, whether or not to add symbols, whether to annotate an outlier or let it speak for itself, whether interactions are required and what these might be, how they might be used and the impact they might have, is a choice that encodes assumptions about what matters and who will ultimately understand it. Students who have worked through Bertin’s visual variables and Tufte’s principles and Munzner’s nested model, and have engaged with perceptual theory and the imperatives of understanding audience, are, by the end of the course well-equipped to ask questions with a rigour that students who have only learned to code are not.</p>
+<p>The habit of critique, once established, is generative. Students who have learned to analyse and question visualisation design are in a position to transfer these skills to their study more broadly. They are more likely to question a technical output that seems analytically sound but communicatively misconceived. They are, in short, more conscious practitioners because they have learned to think, to see, to question … and to doodle. There is a developing creativity to be seen in students who have been through the process of doodling and sketching, of generating multiple solutions to a design problem before committing to any of them. These students begin to develop a fluency with divergent thinking that serves them across study and work domains. They are less likely to accept the first solution they think of, or are presented with. They are more comfortable with ambiguity and iteration, they demonstrate a higher tolerance for productive uncertainty, and they begin to see that creativity has a very central and important place in programming.</p>
+</section>
+<section id="future-proofing-in-the-age-of-generative-ai" class="level2">
+<h2 class="anchored" data-anchor-id="future-proofing-in-the-age-of-generative-ai">Future-Proofing in the Age of Generative AI</h2>
+<p>It would be easy, in 2026, to ask whether a course about data visualisation needs to teach design thinking when generative AI tools can now produce a working chart from a natural language prompt in seconds. Type a description into a capable AI system and you will have something render-ready almost instantaneously. If the code can write itself, why should students spend time learning to think about design? The answer, paradoxically, is that generative AI makes this kind of teaching more important, not less. The bottleneck in data visualisation has never been the ability to write code. It has always been the ability to think about what to create. A practitioner who can prompt an AI system to produce code is only as capable as their underlying design thinking. If they do not know that a bar chart is the wrong choice for this data and this audience, the AI will produce a bad bar chart very efficiently. If they do not know that the colour palette they have chosen is inaccessible to people with colour vision deficiencies, the AI will generate those inaccessible colours without hesitation. The code is the easy part, the thinking is the hard part, and it is the part that no AI can do for you.</p>
+<p>So, in a world where AI can produce competent, adequate visualisations on demand, the value of truly excellent visualisation thinking increases dramatically. Competence is no longer scarce, but what is scarce, and will likely become scarcer, is the kind of deep understanding that allows a practitioner to produce visualisations that are not just technically correct but genuinely illuminating, genuinely communicative, and genuinely ‘fit for purpose’.</p>
+<p>There is also a need for critical literacy as AI-generated visualisations proliferate in public health communications, in policy documents, in clinical and even in research publications. The ability to evaluate and critique these visualisations becomes an even greater necessity. A practitioner who has worked through Bertin and Tufte and Munzner, who has doodled and drawn, who has sketched dozens of alternative representations of a single dataset, who has presented their work to an audience and encountered the gap between intention and reception, who understands perceptual theory and how they apply, is well-placed to look at an AI-generated visualisation and ask the right questions. They will identify the misleading axis, the inappropriate chart type, the missing context, the distorted scale, the perceptual inadequacies, the missing audience.</p>
+<p><em>Data Visualisation: Knowledge Transfer</em> is a course that takes an active approach to future-proofing by positioning itself not to compete with AI tools but to develop the human capacities that AI cannot replicate. Students who complete this course are better positioned to work with AI-powered visualisation tools than those who have only ever learned to code – they know what to ask for, how to evaluate what they receive, and how to push beyond adequacy towards excellence.</p>
+</section>
+<section id="seeing-differently-the-lasting-transformation" class="level2">
+<h2 class="anchored" data-anchor-id="seeing-differently-the-lasting-transformation">Seeing Differently: The Lasting Transformation</h2>
+<p>The most powerful testimony to the value of this course comes from the students themselves, and it tends to take a particular form. They do not say that they learned new tools or mastered new techniques, though they do those things too. What they say, more often, is that they now see differently:</p>
+<blockquote class="blockquote">
+<p>“Prior to this course, my undergraduate background led me to believe that data visualisation was only concerned with selecting the correct type of graph for a given dataset. My understanding was limited to presenting data in its rawest form, without considering how it might be communicated to the public or how they may interpret it. I now realise the power and influence data visualisation holds in communicating public health issues.” - Student 1</p>
+</blockquote>
+<p>They look at a visualisation in a health report, a scientific paper, or a public dataset release, and they cannot help asking the questions they have been trained to ask. Whose audience is this for? What story is being told? What encoding choices have been made, and are they the right ones? What has been left out, and why?</p>
+<blockquote class="blockquote">
+<p>“I can no longer look at visualisations the same way. I find myself looking and thinking, hmmm that is not really the best encoding if you want the audience to act on this. This could be so much more effective if…” - Student 1</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>“I now have an increased awareness of my own position when critiquing visualizations and understand that like in art, some of the most memorable pieces occur when the artists vision resonates deeply with viewers as the piece delivers some form of universal experience with the users. Though the individual experiences may be different, the messaging is clear, which is what makes it impactful.” - Student 2</p>
+</blockquote>
+<p>The course aims to produce not just students who can make good visualisations, but students who understand, at a deep and principled level, that visualisation is a form of knowledge transfer, a communicative act, a designed object that encodes both data and values. Students who understand this are better data scientists and better analysts because they understand the human dimension of everything they create:</p>
+<blockquote class="blockquote">
+<p>“I challenged myself to move away from my natural instincts and reliance on line graphs and bar charts and to apply my developing understanding of visualisation principles, such as storytelling and emotive encodings. I found this to be an intensive learning experience as it encouraged me to explore multiple combinations and ideas, which is something I have never done before when creating graphs.” - Student 1</p>
+</blockquote>
+<p>The experience of this course demonstrates that creativity is not a talent you either have or don’t have; rather it makes clear that creativity is a skill that develops through practice, through the willingness to step outside of one’s ‘comfort zone’, and the ability to open up one’s mind and find value in the generation of imperfect ideas and learn from them. Students who arrive believing that they are not creative people (a belief that many data-focused students hold) often leave having revised that self-assessment entirely. They have discovered that creativity is not only or always about producing something beautiful from nothing, but rather it is about asking good questions, generating multiple possibilities, and making principled choices:</p>
+<blockquote class="blockquote">
+<p>“At times I found myself feeling stuck or insecure as I did not feel ‘creative’ enough to create something meaningful. However, this process forced me to think outside of how I normally do and push myself, which I really enjoyed.” - Student 1</p>
+</blockquote>
+<p>Throughout the course students learn to be conscious practitioners who are aware of what they are doing and why, who can articulate the principles behind their choices, and who can evaluate their own work and the work of others with genuine rigour:</p>
+<blockquote class="blockquote">
+<p>“[T]he goal of the final visualization was to inspire motivation within the users by being able to see themselves in the data, engage with the idea[s]… and advocate for themselves by increasing feelings of empowerment. In using affective visualization techniques, the final visualization optimizes users’ engagement through exploring different sensations, narratives, and behaviours within the given context…The visualization allows messaging based on users’ choices. They choose the setting, and the visualization encourages interaction through play. The activity enhances the storytelling as it symbolizes a journey from displaying … information, to suggesting what the user can do with the information…” - Student 2</p>
+</blockquote>
+<p>In the field of health and social care data, where visualisations shape how clinicians, policymakers, and the public understand outcomes, inequalities, and risk, that consciousness is not a luxury, it is a responsibility.</p>
+</section>
+<section id="conclusion-the-pen-as-portal" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion-the-pen-as-portal">Conclusion: The Pen as Portal</h2>
+<p>There is something quietly radical about a course that begins by asking postgraduate students to put down their computers and pick up a pen, to draw and to doodle. It runs against the grain of a discipline that tends to value and promote technical sophistication, to measure progress in terms of tools mastered and programmes learned. <em>Data Visualisation: Knowledge Transfer</em> asks students to be uncertain, to be slow, to be raw and exploratory in an educational culture that often rewards precision and speed. Yet, the radicalism of this is inseparable from its value. By stepping back from the keyboard, students gain access to a creative and critical space that programming tools cannot fully offer. By engaging with the theories of <span class="citation" data-cites="bertin1983semiology">Bertin (<a href="#ref-bertin1983semiology" role="doc-biblioref">1983</a>)</span>, <span class="citation" data-cites="tufte2001visual">Tufte (<a href="#ref-tufte2001visual" role="doc-biblioref">2001</a>)</span>, and Munzner <span class="citation" data-cites="munzner2009nested Munzner2014-oc">(<a href="#ref-munzner2009nested" role="doc-biblioref">2009</a>, <a href="#ref-Munzner2014-oc" role="doc-biblioref">2014</a>)</span>, students acquire a vocabulary for thinking about visual communication. By attending to perceptual psychology <span class="citation" data-cites="ware2012information">(<a href="#ref-ware2012information" role="doc-biblioref">Ware 2012</a>)</span>, audience, and narrative, they develop an understanding of visualisation as a human act, not merely a technical one. And by sketching, doodling, annotating, and critiquing, they build the habits of active, reflective practice that will serve them for the rest of their careers:</p>
+<blockquote class="blockquote">
+<p>“Initially, I viewed data visualisation as a neutral tool, focusing on clarity and function, but I now appreciate the power of emotionally driven storytelling. My final visualisation embodies this shift. Instead of conventional graphs, I used cultural iconography and metaphor, choosing Ozzy Osbourne to represent NHS and social care funding imbalances. Born in 1948, the same year the NHS and social care were established, Ozzy’s chaotic yet beloved public image mirrors the precarious state of social care today…This course has given me the confidence to embrace a more human-centred and creative approach to data visualisation. I will use this in my work…” - Student 3</p>
+</blockquote>
+<p><em>Data Visualisation: Knowledge Transfer</em> is, at its core, a course about learning to see. It teaches students to see data, not as a collection of values to be rendered, but as a story waiting to be told. It teaches them to see their audience, not as a passive recipient of information, but as an active participant in a communicative act. And it teaches them to see themselves not only as technicians, but as designers making creative, responsible, and effective choices. In the age of generative AI, when the code can write itself, learning to see is more important than ever. The best tool for learning to see is not a programming environment or an AI assistant instead; it is a pen, a piece of paper, a whiteboard, and a willingness to think, to challenge … and to doodle.</p>
+</section>
+<section id="acknowledgements" class="level2">
+<h2 class="anchored" data-anchor-id="acknowledgements">Acknowledgements</h2>
+<p>I would like to thank and acknowledge the work and inspiration of my friend and colleague Dr Shane Sheehan whose enthusiasm, knowledge and undying curiosity and belief in the visual inspired and realised the development and growth of the course that this chapter is based on. I would also like to thank Dr Pawel Orzechowski for his support with this course in its most recent iteration. His enthusiasm and playful approach to teaching and learning has added yet another exciting dimension to this course. Also, a very big thank you to all who have participated in this course over the years. It is your enthusiasm together with your experiences that have helped shape this course and bring it to where it is today. Finally, a very heartfelt thanks to the students who so willingly and generously allowed me to include their work and reflections in this chapter. They bring the story of this course to life. Thank you!</p>
+</section>
+<section id="references" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="references">References</h2>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-bertin1983semiology" class="csl-entry" role="listitem">
+Bertin, Jacques. 1983. <em>Semiology of Graphics</em>. University of Wisconsin press.
+</div>
+<div id="ref-lang2009aesthetics" class="csl-entry" role="listitem">
+Lang, Alexander. 2009. <span>“Aesthetics in Information Visualization.”</span> <em>Trends in Information Visualization</em> 8.
+</div>
+<div id="ref-mandal2003human" class="csl-entry" role="listitem">
+Mandal, Mrinal Kr. 2003. <span>“The Human Visual System and Perception.”</span> In <em>Multimedia Signals and Systems</em>. Springer.
+</div>
+<div id="ref-munzner2009nested" class="csl-entry" role="listitem">
+Munzner, Tamara. 2009. <span>“A Nested Model for Visualization Design and Validation.”</span> <em>IEEE Transactions on Visualization and Computer Graphics</em> 15 (6): 921–28.
+</div>
+<div id="ref-Munzner2014-oc" class="csl-entry" role="listitem">
+Munzner, Tamara. 2014. <em>Visualization Analysis and Design</em>. A K Peters/CRC Press.
+</div>
+<div id="ref-tufte2001visual" class="csl-entry" role="listitem">
+Tufte, Edward R. 2001. <em>The Visual Display of Quantitative Information</em>. 2nd ed. Graphics Press.
+</div>
+<div id="ref-ware2012information" class="csl-entry" role="listitem">
+Ware, Colin. 2012. <em>Information Visualization: Perception for Design</em>. Morgan Kaufmann.
+</div>
+</div>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./C41_pair-programming-tutor-reflections.html" class="pagination-link" aria-label="Pair Programming in Practice: A PhD Tutor's Reflections">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Pair Programming in Practice: A PhD Tutor’s Reflections</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./C44_genai-vs-academic-development.html" class="pagination-link" aria-label="GenAI vs Academic Skills Development">
+        <span class="nav-page-text"><span class="chapter-title">GenAI vs Academic Skills Development</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
