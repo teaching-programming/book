@@ -29,7 +29,7 @@ keywords:
 
 ## Introduction
 
-This chapter is designed to serve as a brief tour of connections between sound, music, programming and pedagogy. In particular, it is aimed at educators who want to explore sound and music in their own programming pedagogy. The chapter presents motivations for connecting these domains, introduces prior work in this area, and presents a range of [accompanying resources](TODO) that can be taken up or adapted to bring sound and music into coding education.
+This chapter is designed to serve as a brief tour of connections between sound, music, programming and pedagogy. In particular, it is aimed at educators who want to explore sound and music in their own programming pedagogy. The chapter presents motivations for connecting these domains, introduces prior work in this area, and presents a range of [@matthew_hamilton_2026] that can be taken up or adapted to bring sound and music into coding education.
 
 Making code that engages with sound and music can be fun, even with only a very basic understanding of programming concepts, and regardless of any prior music education. There are many ways in which sound and music may connect with programming. For example:
 
@@ -45,7 +45,7 @@ Making code that engages with sound and music can be fun, even with only a very 
 - **coding responsive sound and music for games** or other interactive
     programs.
 
-We will first explore motivations for connecting music with programming, followed by a brief overview of the rich existing work in this domain. The set of practical accompanying resources that can serve as starting points into different kinds of music/coding projects are introduced next.
+We will first explore motivations for connecting music with programming, followed by a brief overview of the rich existing work in this domain. The set of practical accompanying resources that can serve as starting points into different kinds of music/coding projects are then introduced. The resources themselves are accessible [here](https://github.com/mhamilt/teaching-programming-music-with-code/).
 
 
 ## Why combine programming with sound and music? {#sec-why}
@@ -78,8 +78,6 @@ A key concern across all the above projects is that there should be room for mus
 
 ## Accompanying resources for educators {#sec-resources}
 
-TODO: keep? tidy up?
-
 ::: {#fig-resources}
 
 ```
@@ -90,9 +88,6 @@ TODO: keep? tidy up?
 │   ├── synth.wav
 │   ├── piano.wav
 │   └── wav_library.py
-├── understanding-major-and-minor-chords-using-programming
-│   ├── circle_of_fifths.py
-│   └── readme.md
 ├── gestural-instruments
 │  ├── max/Handshake_rnbo_patch1.maxpat
 │  └── web
@@ -128,6 +123,8 @@ Five example resources accompany this chapter, reflecting some of the different 
 
 This resource is aimed at students who have started on Python quite recently. It attempts to make musical output as simple and accessible as possible. Students are shown how to generate piano pieces as MIDI data which can be played back directly within a Python notebook. Students can develop their understanding of fundamental programming concepts such as lists, loops and conditionals. The ability to directly hear the results is intended to motivate students to think about how they can develop the code by themselves to try to explore how they can start to tailor the musical output towards something they find sonically interesting or satisfying.
 
+The resource is archived as part of the accompanying resources [@matthew_hamilton_2026], and at the time of writing can be accessed [here](https://github.com/mhamilt/teaching-programming-music-with-code/tree/main/resources/python-piano).
+
 ::: {#fig-python-piano layout="[45, 55]" layout-valign="bottom"}
 
 ![Code](/chapters/images/C17_fig2a_python_piano.png){fig-alt="A section of commented Python code which generates a piano chord."}
@@ -145,6 +142,8 @@ This resource is both similar and different to the piano example. Students engag
 
 ![Creating beats with Strudel in a browser. The darker boxes can be run in real-time to listen to the results. As the patterns play, the state is reflected visually with the white highlighting that can be seen in the code in section 3.2 of the image.](/chapters/images/C17_fig3_strudel_drums.png){#fig-strudel-drums width=70% fig-alt="A section of an explanatory document containing brief instructions interspersed with Strudel code samples."}
 
+The resource is archived as part of the accompanying resources [@matthew_hamilton_2026], and at the time of writing can be accessed [here](https://github.com/mhamilt/teaching-programming-music-with-code/tree/main/resources/strudel-drum-patterns).
+
 
 ### An Educator's Guide to WAVE Format Files {#sec-wav_writing}
 
@@ -154,7 +153,7 @@ All data can be represented as sound, and the WAVE file is one of the simplest m
 
 The intention is not to be prescriptive, but rather show how malleable the WAVE format can be for teaching music and programming.
 
-The central lesson is provided in an IPython (Jupyter) notebook, but the resource in `guide-to-wave-format/wav_library` provides companion code in C, C++, Java and Rust to reinforce the basic elements needed to solve the problem.
+The central lesson is provided in an IPython (Jupyter) notebook, but the resource in `guide-to-wave-format/wav_library` provides companion code in C, C++, Java and Rust to reinforce the basic elements needed to solve the problem. The resource is archived as part of the accompanying resources [@matthew_hamilton_2026], and at the time of writing can be accessed [here](https://github.com/mhamilt/teaching-programming-music-with-code/tree/main/resources/guide-to-wave-format).
 
 
 ### Introducing functions by playing with audio files {#sec-functions}
@@ -165,7 +164,7 @@ Working with audio files is an intuitive way to understand how one chooses input
 
 ![A short section of the activity notebook, introducing input arguments as a first design choice when writing functions.](/chapters/images/C17_fig4_function_section.png){#fig-function-inputs width=70% fig-alt="A written tutorial section explaining the choice of input arguments for a Python function."}
 
-The exercises rely on using the Python module `wav_library.py` described in @sec-wav_writing as a tool to read WAVE audio files, with no requirement for students to fully understand it or to have done the activity described there previously.
+The exercises rely on using the Python module `wav_library.py` described in @sec-wav_writing as a tool to read WAVE audio files, with no requirement for students to fully understand it or to have done the activity described there previously. The resource is archived as part of the accompanying resources [@matthew_hamilton_2026], and at the time of writing can be accessed [here](https://github.com/mhamilt/teaching-programming-music-with-code/tree/main/resources/python-functions-fade).
 
 
 ### Gestural instruments in the browser
@@ -184,7 +183,7 @@ Max (left), a visual programming language is used to create the instrument. RNBO
 
 One of the potential benefits of working in this way is that although students start from a visual programming environment, their software can be made available to anyone with a browser (see @fig-rnbo (right)), and they begin to get an exposure to JavaScript and web development. As this resource shows, small tweaks to this JavaScript can be added to refine the user interface, and add extra functionality such as smart phone sensor control.
 
-The example provided here is a responsive synthesiser hosted on the web that, when accessed from a smartphone, utilises the motion sensors to control specific parameters of the synthesiser. Once the code has been exported, it can be further developed through the generated JavaScript/HTML. In this example, a simple sequencer for playing notes and visual feedback is added using the [p5.js](https://p5js.org/) library. Motion data from a smartphone's orientation sensors is mapped in real time so that gestures like tilting or twisting can be used to control the sound. The resource is provided as a worked example that can be adapted for musical instruments, live installations, audience-participation performances, or experimental audio-visual tools.
+The example provided here is a responsive synthesiser hosted on the web that, when accessed from a smartphone, utilises the motion sensors to control specific parameters of the synthesiser. Once the code has been exported, it can be further developed through the generated JavaScript/HTML. In this example, a simple sequencer for playing notes and visual feedback is added using the [p5.js](https://p5js.org/) library. Motion data from a smartphone's orientation sensors is mapped in real time so that gestures like tilting or twisting can be used to control the sound. The resource is provided as a worked example that can be adapted for musical instruments, live installations, audience-participation performances, or experimental audio-visual tools. The resource is archived as part of the accompanying resources [@matthew_hamilton_2026], and at the time of writing can be accessed [here](https://github.com/mhamilt/teaching-programming-music-with-code/tree/main/resources/gestural-instruments).
 
 ### Building a digital circuit to play sounds and notes using Logisim Evolution
 
@@ -204,8 +203,9 @@ and a circuit playing the C major scale using a counter and a multiplexer (@fig-
 
 ![A digital circuit in Logisim Evolution, used to play the C major scale. The notes are encoded as hexadecimal frequency values and provided as input to a multiplexer. A counter (created as a sub-circuit) runs continuously and is used to select the multiplexer inputs (i.e. the note frequencies) in ascending and descending sequence and pass them on to the buzzer to be played.](/chapters/images/C17_fig6_scale_example.png){#fig-logisim-scale width=70% fig-alt="A screenshot of the Logisim Evolution software, showing the digital circuit used to play the C major scale."}
 
-Motivated students/learners can then potentially go further by creating a complete digital piano keyboard or synthesizer, or play preset tunes from a digital memory.
-Such circuits could then potentially be implemented in real hardware later on.
+Motivated students/learners can then potentially go further by creating a complete digital piano keyboard or synthesizer, or play preset tunes from a digital memory. Such circuits could then potentially be implemented in real hardware later on. 
+
+The resource is archived as part of the accompanying resources [@matthew_hamilton_2026], and at the time of writing can be accessed [here](https://github.com/mhamilt/teaching-programming-music-with-code/tree/main/resources/logisim-sound-examples).
 
 ## Summary {#sec-summary}
 
