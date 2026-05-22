@@ -1,5 +1,5 @@
 ---
-title: "Assessments With Generative AI:  Before, During, and After"
+title: "Generative AI in Assessments:  Before, During, and After"
 bibliography: references.bib
 author:
   - name: Lee Clift
