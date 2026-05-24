@@ -35,6 +35,10 @@ format:
         include-in-header: _theme/latex_preamble.tex
         bibliography: references.bib
         links-as-notes: true
+        
+        
+        filters:
+          - _theme/filters/callout-for-docx.lua
     epub:
         bibliography: references.bib
 
