@@ -53,15 +53,15 @@ format:
         margin-bottom: 0cm
         fig-align: center
         filters:
-        - _theme/filters/callout-for-docx.lua
-
-
+          - _theme/filters/callout-for-docx.lua
 
     # epub:
     #     bibliography: references.bib
-    
+# filters:
+#   - _theme/filters/callout-for-docx.lua    
+  
 book:
-    title: "Teaching Programming across Disciplines"
+    title: "Teaching Programming across Disciplines 2"
 
     page-navigation: true
     sidebar:

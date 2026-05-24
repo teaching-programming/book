@@ -3,10 +3,8 @@ title: "Banana"
 bibliography: references.bib
 author:
   - name: Francisco Queiroz
-    email: f.queiroz@leeds.ac.uk
     affiliations: School of Design, University of Leeds
   - name: Maeve Murphy Quinlan
-    email: TODO
     affiliations: Research Computing, University of Leeds
 
 keywords:
@@ -25,13 +23,45 @@ You find yourself in a large room with no windows; the air is still, and nothing
 
 Students.
 
+> some quote is here
 
-::: {.callout-important icon="false"}
-# The anarchist bit:
 
-Another characteristic of anarchist pedagogies, particularly in the arts (and programming is often seen as a liberal art), is how they embrace the fluidity that is necessary for making changes to the learning experience after reflection and evaluation [@wilkinson2025fragments]. After running you campaign, don't be afraid of modifying, discarding, or adapting the system we just proposed according to your experience and that of your students.
+::: {.banana  }
+## 0The anarchist important:
 
+0Another characteristic of anarchist pedagogies, particularly in the arts (and programming is often 
 :::
+
+::: {.callout-important title="oh yeah"}
+## 1The anarchist important:
+
+1Another characteristic of anarchist pedagogies, particularly in the arts (and programming is often 
+:::
+
+::: {.callout-note }
+## The anarchist note:
+
+Another characteristic of anarchist pedagogies, particularly in the arts (and programming is often 
+:::
+
+::: {.callout-warning}
+## The anarchist warning:
+
+Another characteristic of anarchist pedagogies, particularly in the arts (and programming is often 
+:::
+
+::: {.callout-tip }
+## The anarchist tip:
+
+Another characteristic of anarchist pedagogies, particularly in the arts (and programming is often 
+:::
+
+::: {.callout-caution }
+## The anarchist caution:
+
+Another characteristic of anarchist pedagogies, particularly in the arts (and programming is often 
+:::
+
 
 
 ## Acknowledgement
@@ -40,5 +70,5 @@ The authors would like to thank Samantha Ahern and Lucia Michielin for their rev
 
 
 ::: {.content-visible }
-## References {.unnumbered}
+## Referencems {.unnumbered}
 :::

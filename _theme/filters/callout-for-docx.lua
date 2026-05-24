@@ -1,48 +1,48 @@
+io.write("CALLOUTS FILTER")
+
+if quarto.doc.is_format("docx") then
+  -- pdf specific output
+  io.write("CALLOUTS DOC")
+else
+    io.write("CALLOUTS OTHER")
+  -- output for other formats
+end
+
 local style_map = {
-  ["callout-note"] = "BoxHeaderInfo",
-  ["callout-warning"] = "BoxHeaderWarning",
-  ["callout-important"] = "BoxHeaderImportant",
-  ["callout-tip"] = "BoxHeaderTip",
-  ["callout-caution"] = "BoxHeaderCaution"
+  ["note"] = "BoxHeaderInfo",
+  ["warning"] = "BoxHeaderWarning",
+  ["important"] = "BoxHeaderImportant",
+  ["tip"] = "BoxHeaderTip",
+  ["caution"] = "BoxHeaderCaution"
 }
 
 local calloutBody = "BoxBody"
 
-local title_map = {
-  ["callout-note"] = "Info",
-  ["callout-warning"] = "Warning",
-  ["callout-important"] = "Important",
-  ["callout-tip"] = "Tip",
-  ["callout-caution"] = "Caution"
-}
+--  options in callout: type, title, and content
 
-local function make_styled_para(text, style)
-  return pandoc.Para(
-    { pandoc.Str(text) },
-    { ["custom-style"] = style }
-  )
+local function styled_paragraph(inlines, style)
+  return pandoc.Div (inlines, {["custom-style"] = style})
 end
 
-function Div(el)
-  for class, style in pairs(style_map) do
-    if el.classes:includes(class) then
-
-      local title = title_map[class]
-
-      -- use explicit callout title if present
-      if el.attributes.title then
-        title = el.attributes.title
-      end
-
-      table.insert(
-        el.content,
-        1,
-        make_styled_para(title, style)
-      )
-
-      return el
-    end
+function Callout(el)
+  if not quarto.doc.is_format("docx") then
+    return el
   end
 
-  return el
+  local result = {}
+  local headerStyleToUse = style_map[el.type]
+  print("headerStyleToUse" .. headerStyleToUse)
+  if el.title ~= nil  then
+    table.insert(
+      result,
+      styled_paragraph(el.title, headerStyleToUse)
+    )
+  end
+  if el.content ~= nil  then
+    table.insert(
+      result,
+      styled_paragraph(el.content, "BoxBody")
+    )
+  end
+  return result
 end
