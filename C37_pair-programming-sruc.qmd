@@ -5,7 +5,7 @@ author:
   - name: Ignacio Sepúlveda
     email: ignacio.sepulveda@sruc.ac.uk
     corresponding: true
-    affiliations: Oatridge College, Scotland's Rural College (TODO check affiliation)
+    affiliations: Oatridge College, Scotland's Rural College
 
 keywords:
   - pair-programming
@@ -13,7 +13,7 @@ keywords:
 
 ## Natural habitats
 
-I've been teaching the [Wildlife and Conservation Management](https://www.sruc.ac.uk/course-catalogue/wildlife-and-conservation-management/bsc-hons-wildlife-and-conservation-management/) programme at Scotland's Rural College (TODO: check link and specify programme level) for almost 6 years, including modules around climate change, marine habitats, wildlife conflicts, survey methodologies, and map analysis. My groups are typically filled with students of all academic backgrounds and ages, united by a deep desire to protect our natural environments. However, most arrive with little to no IT skills. This is a significant gap, as I consider these abilities vital for any professional in the field, even those who envision themselves as solitary park rangers in the highlands or in the remote islands of Orkney or the Shetlands.
+I've been teaching the [Wildlife and Conservation Management](https://www.sruc.ac.uk/course-catalogue/wildlife-and-conservation-management/bsc-hons-wildlife-and-conservation-management/) programme at Scotland's Rural College for almost 6 years, including modules around climate change, marine habitats, wildlife conflicts, survey methodologies, and map analysis. My groups are typically filled with students of all academic backgrounds and ages, united by a deep desire to protect our natural environments. However, most arrive with little to no IT skills. This is a significant gap, as I consider these abilities vital for any professional in the field, even those who envision themselves as solitary park rangers in the highlands or in the remote islands of Orkney or the Shetlands.
 
 I strongly believe that learning how to code can have a huge impact on how these professionals improve and streamline their work, whether analysing climate data or sharing their findings about endangered species with the world, basic coding skills should be part of their day-to-day toolbox.
 
