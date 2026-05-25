@@ -122,9 +122,8 @@ function authors_as_docx_paragraphs(authors)
     end
     if author.email ~= nil  then
       local email_to_use = ""
-      
-      if author.corresponding  then
-          email_to_use = author.email .. " (corresponding)"
+      if author.corresponding then
+          email_to_use = author.email .. " (*)"
       else
           email_to_use = author.email
       end
