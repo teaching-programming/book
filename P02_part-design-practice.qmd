@@ -1,0 +1,94 @@
+---
+title: "Part II --- Teaching Programming in Context: Design and Practice"
+bibliography: references.bib
+author:
+  - name: TODO
+    affiliations: TODO
+  - name: TODO
+    affiliations: TODO
+---
+
+SOME TEXT INTRODUCITNG THIS PART
+
+## Theme --- Drawing on group dynamics for programming education  
+
+### TitleOfChapterPossiblyShortened [@TeachProgAcross_C16]
+
+SOME TEXT INTRODUCITNG THIS CHAPTER [C16] Peer Programming in Action: Pair Programming in Larger Groups 
+
+SOME TEXT EXPLAINING WHY THIS CHAPTER COULD BE FOR YOU
+
+### TitleOfChapterPossiblyShortened [@TeachProgAcross_C31]
+
+SOME TEXT INTRODUCITNG THIS CHAPTER [C31] Leveraging the heterogeneity - teaching computing skills to a multidisciplinary cohort with a variable skill level
+
+SOME TEXT EXPLAINING WHY THIS CHAPTER COULD BE FOR YOU
+
+### TitleOfChapterPossiblyShortened [@TeachProgAcross_C23]
+
+SOME TEXT INTRODUCITNG THIS CHAPTER [C23] Learning Together Across Modes: Online and On-Site Pair Programming in a Fusion Course
+
+SOME TEXT EXPLAINING WHY THIS CHAPTER COULD BE FOR YOU
+
+
+## Theme --- Teaching Programming to Novices: Python and Beyond  
+
+### TitleOfChapterPossiblyShortened [@TeachProgAcross_C01]
+
+SOME TEXT INTRODUCITNG THIS CHAPTER [C01] A Practical Guide to Teaching Python as a Computational Tool in an Introductory Data Analysis Course
+
+SOME TEXT EXPLAINING WHY THIS CHAPTER COULD BE FOR YOU
+
+### TitleOfChapterPossiblyShortened [@TeachProgAcross_C29]
+
+SOME TEXT INTRODUCITNG THIS CHAPTER [C29] Notebooks for Novices? Pros and Cons of Jupyter
+
+SOME TEXT EXPLAINING WHY THIS CHAPTER COULD BE FOR YOU
+
+### TitleOfChapterPossiblyShortened [@TeachProgAcross_C07]
+
+SOME TEXT INTRODUCITNG THIS CHAPTER [C07] Second Languages:  Teaching C to Python Novices 
+
+SOME TEXT EXPLAINING WHY THIS CHAPTER COULD BE FOR YOU
+
+
+
+## Theme --- Thinking outside the box: designing engaging learning experiences  
+
+### TitleOfChapterPossiblyShortened [@TeachProgAcross_C06]
+
+SOME TEXT INTRODUCITNG THIS CHAPTER [C06] Feminists, anarchists and dungeon masters: co-designing programming teaching experiences
+
+SOME TEXT EXPLAINING WHY THIS CHAPTER COULD BE FOR YOU
+
+### TitleOfChapterPossiblyShortened [@TeachProgAcross_C15]
+
+SOME TEXT INTRODUCITNG THIS CHAPTER [C15] Removing Barriers by Programming without Computers 
+
+SOME TEXT EXPLAINING WHY THIS CHAPTER COULD BE FOR YOU
+
+### TitleOfChapterPossiblyShortened [@TeachProgAcross_C17]
+
+SOME TEXT INTRODUCITNG THIS CHAPTER [C17] Practical approaches to using sound and music in programming pedagogy
+
+SOME TEXT EXPLAINING WHY THIS CHAPTER COULD BE FOR YOU
+
+### TitleOfChapterPossiblyShortened [@TeachProgAcross_C03]
+
+SOME TEXT INTRODUCITNG THIS CHAPTER [C03] Reflections on online teaching 
+
+SOME TEXT EXPLAINING WHY THIS CHAPTER COULD BE FOR YOU
+
+### TitleOfChapterPossiblyShortened [@TeachProgAcross_C43]
+
+SOME TEXT INTRODUCITNG THIS CHAPTER [C43] Seeing Before Coding, Doodling Before Doing: How Teaching Data Visualisation Transforms the Way Students Think 
+
+SOME TEXT EXPLAINING WHY THIS CHAPTER COULD BE FOR YOU
+
+
+
+::: {.content-visible when-format="html" unless-format="epub"}
+
+## References {.unnumbered}
+
+:::

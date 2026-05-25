@@ -1,0 +1,51 @@
+---
+title: "Part III --- Assessment and Feedback: Principles and Practice "
+bibliography: references.bib
+author:
+  - name: TODO
+    affiliations: TODO
+  - name: TODO
+    affiliations: TODO
+---
+
+SOME TEXT INTRODUCITNG THIS PART
+
+## Theme --- Frameworks for assessment and feedback  
+
+### TitleOfChapterPossiblyShortened [@TeachProgAcross_C38]
+
+SOME TEXT INTRODUCITNG THIS CHAPTER [C38] Developing a skills-based framework for assessments in programming courses 
+
+SOME TEXT EXPLAINING WHY THIS CHAPTER COULD BE FOR YOU
+
+### TitleOfChapterPossiblyShortened [@TeachProgAcross_C35]
+
+SOME TEXT INTRODUCITNG THIS CHAPTER [C35] Managing the Rubik’s Cube of Assessment: The Action Feedback Protocol 
+
+SOME TEXT EXPLAINING WHY THIS CHAPTER COULD BE FOR YOU
+
+## Theme --- Practical methods for assessing programming 
+
+### TitleOfChapterPossiblyShortened [@TeachProgAcross_C26.1]
+
+SOME TEXT INTRODUCITNG THIS CHAPTER [C26.1] Assessment and marking in an introductory programming course for physics students 
+
+SOME TEXT EXPLAINING WHY THIS CHAPTER COULD BE FOR YOU
+
+### TitleOfChapterPossiblyShortened [@TeachProgAcross_C02]
+
+SOME TEXT INTRODUCITNG THIS CHAPTER [C02] Generative AI in Assessments: Before, During, and After 
+
+SOME TEXT EXPLAINING WHY THIS CHAPTER COULD BE FOR YOU
+
+
+### TitleOfChapterPossiblyShortened [@TeachProgAcross_C20]
+
+SOME TEXT INTRODUCITNG THIS CHAPTER [C20] The use of automated marking in programming courses to enhance learning 
+
+SOME TEXT EXPLAINING WHY THIS CHAPTER COULD BE FOR YOU
+::: {.content-visible when-format="html" unless-format="epub"}
+
+## References {.unnumbered}
+
+:::
