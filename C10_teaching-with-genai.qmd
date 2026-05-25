@@ -6,7 +6,7 @@ author:
   - name: Steven Watterson
     email: s.watterson@ulster.ac.uk
     affiliations: Personalised Medicine Centre, School of Medicine, Ulster University
-   # corresponding: True
+    corresponding: true
   - name: Laila Dabab Nahas
     email: ldababn@ed.ac.uk
     affiliation: Edinburgh Medical School, The University of Edinburgh
@@ -16,7 +16,6 @@ author:
   - name: Hebatallah Shoukry
     email: h.shoukry@hw.ac.uk
     affiliation: School of Engineering and Physical Sciences, Heriot-Watt University
-
   - name: Ozan Evkaya
     email: Ozan.Evkaya@ed.ac.uk
     affiliations: School of Mathematics, The University of Edinburgh
@@ -26,6 +25,26 @@ keywords:
     AI‑assisted coding
   - Prompt engineering
 ---
+
+::: {.content-visible when-format="docx" note="this should be identical as authors above, for docx"}
+author:
+  - name: Steven Watterson
+    email: s.watterson@ulster.ac.uk
+    affiliations: Personalised Medicine Centre, School of Medicine, Ulster University
+    corresponding: true
+  - name: Laila Dabab Nahas
+    email: ldababn@ed.ac.uk
+    affiliation: Edinburgh Medical School, The University of Edinburgh
+  - name: Tuğrulcan Elmas
+    email: tugrulcan@ed.ac.uk
+    affiliation: School of Informatics, The University of Edinburgh
+  - name: Hebatallah Shoukry
+    email: h.shoukry@hw.ac.uk
+    affiliation: School of Engineering and Physical Sciences, Heriot-Watt University
+  - name: Ozan Evkaya
+    email: Ozan.Evkaya@ed.ac.uk
+    affiliations: School of Mathematics, The University of Edinburgh
+:::
 
 <!--
 ### For whom this chapter is:

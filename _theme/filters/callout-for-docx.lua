@@ -26,7 +26,7 @@ function Callout(el)
 
   local result = {}
   local headerStyleToUse = style_map[el.type]
-  print("headerStyleToUse" .. headerStyleToUse)
+--  print("headerStyleToUse" .. headerStyleToUse)
   if el.title ~= nil  then
     table.insert(
       result,

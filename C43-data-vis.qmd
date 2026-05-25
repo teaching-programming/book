@@ -12,6 +12,14 @@ keywords:
   - alternative-assessment
 ---
 
+::: {.content-visible when-format="docx" note="this should be identical as authors above, for docx"}
+author:
+  - name: Suzanne Goopy
+    email: sgoopy@ed.ac.uk
+    corresponding: true
+    affiliations: Edinburgh Medical School, University of Edinburgh
+:::
+
 ## The Unexpected Course
 
 The scene is set: In a dining room in China, at a kitchen table in Scotland, in a library in Canada, students boot up their laptops, turn on their devices, and come online. In a seminar room in Edinburgh, students file in and take their seats, computers at the ready. Most are postgraduate students — many of them coming from quantitative, scientific, or health backgrounds across the University of Edinburgh. They are individuals interested in and comfortable with numbers, analysis, and programming. They have signed up for a course called *Data Visualisation: Knowledge Transfer*: most have not read the fine print, and they come expecting to write code.  

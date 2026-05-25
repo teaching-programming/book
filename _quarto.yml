@@ -37,6 +37,7 @@ format:
         links-as-notes: true
         
     docx:
+#     temp dev note: in terminal use: quarto render --to docx
         reference-doc: _theme/book-layout-test2.7-ref.docx
         number-sections: false
         bibliography: references.bib
@@ -59,6 +60,7 @@ format:
         fig-align: center 
         filters:
           - _theme/filters/callout-for-docx.lua
+          - _theme/filters/authors-for-docx.lua
     epub:
         bibliography: references.bib
 

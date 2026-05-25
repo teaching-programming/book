@@ -20,6 +20,19 @@ keywords:
   - Code Execution Visualisation
 ---
 
+::: {.content-visible when-format="docx" note="this should be identical as authors above, for docx"}
+author:
+  - name: Joseph El Gemayel
+    email: joseph.el-gemayel@strath.ac.uk
+    affiliations: University of Strathclyde
+  - name: Arif Budiarto
+    email: arif.budiarto@ed.ac.uk
+    affiliations: The University of Edinburgh
+  - name: William Bell
+    email: william.bell@strath.ac.uk
+    affiliations: University of Strathclyde
+:::
+
 ## Introduction
 
 Computer programming has become a core skill for many disciplines, from biology to business, as well as computer science conversion degrees that are designed for students with no prior programming experience. In many contexts, programming is used to solve domain-specific problems. Students need to learn the core programming concepts, while avoiding distractions that are associated with the nuances of particular Integrated Development Environments (IDEs) or software installation issues.

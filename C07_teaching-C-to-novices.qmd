@@ -22,6 +22,22 @@ keywords:
   - julia
 ---
 
+::: {.content-visible when-format="docx" note="this should be identical as authors above, for docx"}
+author:
+  - name: Sam Skipsey
+    email: Samuel.Skipsey@glasgow.ac.uk
+    affiliations: University of Glasgow
+  - name: Gordon Stewart
+    email: Gordon.Stewart@glasgow.ac.uk
+    affiliations: University of Glasgow
+  - name: Jeremy Singer
+    email: Jeremy.Singer@glasgow.ac.uk
+    affiliations: University of Glasgow
+  - name: David Cutting
+    email: d.cutting@qub.ac.uk
+    affiliations: Queen's University Belfast
+:::
+
 ## Introduction
 
 This chapter explores challenges associated with learning a second programming language, in particular for a population of students who are not specialising in computing. In the context of our case study, the second language challenge is compounded in two ways: firstly, the programming paradigm shifts from a high-level managed interpreted language to a low-level unmanaged compiled language (i.e. from [Python](https://www.python.org) to [C](https://9p.io/cm/cs/who/dmr/chist.html)), and secondly, the development environment shifts from a browser-based notebook to a terminal-based text editor (i.e. from [Jupyter](https://jupyter.org) to an editor such as Vim). We highlight common misconceptions experienced by students during this transition process and discuss potential fixes, in particular the use of a *bridge language* to ease the transition from high-level to low-level paradigms.

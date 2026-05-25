@@ -20,6 +20,26 @@ author:
     email: patricialoto@comunidad.unne.edu.ar
 ---
 
+::: {.content-visible when-format="docx" note="this should be identical as authors above, for docx"}
+author:
+  - name: Rebecca L. Colquhoun
+    affiliation: Department of Earth Science and Engineering, Imperial College London
+    email: r.colquhoun23@imperial.ac.uk
+    corresponding: true 
+  - name: Samantha Ahern
+    affiliation: Centre for Advanced Research Computing, UCL
+    email: s.ahern@ucl.ac.uk
+  - name: Gule Saman
+    affiliation: School of Engineering & Physical Sciences, Heriott-Watt University
+    email: s.gule@hw.ac.uk
+  - name: Brittany Blankinship
+    affiliation:  Edinburgh Medical School, University of Edinburgh
+    email: b.blankinship@ed.ac.uk
+  - name: Patrica Loto
+    affiliation: FACENA, Universidad Nacional del Nordeste (UNNE)
+    email: patricialoto@comunidad.unne.edu.ar
+:::
+
 
 ## Introduction
 

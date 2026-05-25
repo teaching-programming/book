@@ -5,19 +5,15 @@ author:
   - name: Andrew MacLaren
     email: a.maclaren@hw.ac.uk
     affiliations: School of Social Sciences, Heriot-Watt University
-
   - name: Frederik Madsen
     email: f.d.madsen@sms.ed.ac.uk
     affiliations: School of GeoSciences, University of Edinburgh; Lyell Centre, British Geological Survey
-
   - name: Antonia Voigt
     email: a.voigt@surrey.ac.uk
     affiliations: Surrey Business School, University of Surrey
-
   - name: Alex Buckley
     email: Alex.Buckley@hw.ac.uk
     affiliations: Learning and Teaching Academy, Heriot-Watt University
-
   - name: Tom Farrington
     email: t.farrington@yahoo.com
     affiliations: Storm ID
@@ -27,6 +23,25 @@ keywords:
   - Feedback
   - Assessment
 ---
+
+::: {.content-visible when-format="docx" note="this should be identical as authors above, for docx"}
+author:
+  - name: Andrew MacLaren
+    email: a.maclaren@hw.ac.uk
+    affiliations: School of Social Sciences, Heriot-Watt University
+  - name: Frederik Madsen
+    email: f.d.madsen@sms.ed.ac.uk
+    affiliations: School of GeoSciences, University of Edinburgh; Lyell Centre, British Geological Survey
+  - name: Antonia Voigt
+    email: a.voigt@surrey.ac.uk
+    affiliations: Surrey Business School, University of Surrey
+  - name: Alex Buckley
+    email: Alex.Buckley@hw.ac.uk
+    affiliations: Learning and Teaching Academy, Heriot-Watt University
+  - name: Tom Farrington
+    email: t.farrington@yahoo.com
+    affiliations: Storm ID
+:::
 
 
 

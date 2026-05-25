@@ -19,6 +19,22 @@ author:
     affiliation: School of Biosciences, Cardiff University
 ---
 
+::: {.content-visible when-format="docx" note="this should be identical as authors above, for docx"}
+author:
+  - name: Robert S. Young
+    affiliation: Edinburgh Medical School, University of Edinburgh and Zhejiang University - University of Edinburgh (ZJE) Institute
+  - name: Rebecca L. Colquhoun
+    affiliation: Department of Earth Science and Engineering, Imperial College London
+  - name: Tiago A. Marques
+    affiliation: School of Mathematics, University of St Andrews
+  - name: Brittany Blankinship
+    affiliation:  Edinburgh Medical School, University of Edinburgh
+  - name: Ozan Evkaya
+    affiliation: School of Mathematics, University of Edinburgh
+  - name: William P. Kay
+    affiliation: School of Biosciences, Cardiff University
+:::
+
 ## Introduction
 
 We live in a data driven world. Much research in STEM departments requires skills in data description, prediction and inference which are often developed through statistics modules but, increasingly, non-trivial statistical analysis requires computer programming. Therefore, for many undergraduate degree programmes, two closely interrelated but technically distinct disciplines - programming and statistics - must often both be taught. There are different possible approaches to teaching these subjects, most notably whether to deliver them simultaneously or sequentially. In this chapter, we focus on undergraduate level teaching in subject areas that are not primarily programming or statistics. We discuss the advantages and disadvantages to three different approaches and provide guidance on best practice in instructional technique and curriculum design. Case-study examples based on our own teaching experiences are provided throughout to illustrate these strategies.
