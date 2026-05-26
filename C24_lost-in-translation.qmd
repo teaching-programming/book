@@ -21,6 +21,21 @@ keywords:
   - Multilingual education
 ---
 
+::: {.content-visible when-format="docx" note="this should be identical as authors above, for docx"}
+author:
+  - name: Olexandr Konovalov
+    email: obk1@st-andrews.ac.uk
+    corresponding: true
+    affiliations: School of Computer Science, University of St Andrews
+  - name: Lucia Michielin
+    email: lucia.michielin@ed.ac.uk
+    corresponding: true
+    affiliations: Edinburgh Futures Institute, University of Edinburgh
+  - name: Yanina Bellini Saibene
+    email: yabellini@gmail.com
+    affiliations: rOpenSci, Universidad Austral, R-Ladies, The Carpentries
+:::
+
 ## Introduction
 
 Translating coding-based teaching material may look like a straightforward practice, especially if you are translating from English to your native language. However, this process is often undertaken in contexts where learners are already navigating coding concepts through a second language, which adds an additional layer of difficulty. If you are directly involved in teaching such students, or participate in international educational projects like [The Carpentries](https://carpentries.org/) or [Programming Historian](https://programminghistorian.org/), you may have considered translating teaching materials to make them more accessible. 

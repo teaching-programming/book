@@ -23,6 +23,23 @@ keywords:
   - sustainability
 ---
 
+::: {.content-visible when-format="docx" note="this should be identical as authors above, for docx"}
+author:
+  - name: Samantha Ahern
+    email: s.ahern@ucl.ac.uk
+    corresponding: true
+    affiliations: Centre for Advanced Research Computing, University College London
+  - name: Sam Skipsey
+    email: Samuel.Skipsey@glasgow.ac.uk
+    affiliations: School of Physics and Astronomy, University of Glasgow
+  - name: Leo Riviera
+    email: leo.riviera@voxa.dev
+    affiliations: Voxa
+  - name: Pawel Orzechowski
+    email: pawel.orzechowski@ed.ac.uk
+    affiliations: Edinburgh Medical School, University of Edinburgh
+:::
+
 ## Introduction
 
 Hypes come and go, and in their aftermath we are left with rubbish and confusion. We are aware of physical trash in landfills, but rapid technological change also leads to inequality, injustice, and unhelpful social patterns. It is like technical debt (the price we pay later for poor and short-sighted technological decisions now), but on a social level. It is something we can't responsibly ignore as educators and humans.

@@ -12,6 +12,13 @@ keywords:
   - keywords
 ---
 
+::: {.content-visible when-format="docx" note="this should be identical as authors above, for docx"}
+author:
+  - name: Author One
+    email: author@one.com
+    affiliations: institution or company
+:::
+
 
 
 [DELETE THIS LINE AND REPLACE IT WITH YOUR MANUSCRIPT]

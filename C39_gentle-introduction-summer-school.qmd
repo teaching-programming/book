@@ -11,6 +11,13 @@ keywords:
   - summer-school
 ---
 
+::: {.content-visible when-format="docx" note="this should be identical as authors above, for docx"}
+author:
+  - name: Pawel Orzechowski
+    corresponding: true
+    affiliations: Edinburgh Medical School, University of Edinburgh
+:::
+
 When people from humanities/social science start learning to code, they might feel alone in the dark end of the woods. But they are not, and you are not. As soon as you see programming as a storytelling exercise, your metaphors and narratives become breadcrumbs which will guide you on this transformative journey.
 
 ::: {.callout-note appearance="simple" title="Disclaimer: this chapter is written like an annoying food blog"}

@@ -7,6 +7,12 @@ author:
     affiliations: School of Engineering, University of Edinburgh
 ---
 
+::: {.content-visible when-format="docx" note="this should be identical as authors above, for docx"}
+author:
+  - name: Nguyen Q. Chien
+    affiliations: School of Engineering, University of Edinburgh
+:::
+
 ## Introduction
 
 It is high time that students from civil engineering (CivEng) get on with some serious programming. Civil engineering involves creating solutions to real-world problems [@wood2012civil]. As such, each solution tends to be unique and associated with the particular environmental and societal circumstances pertaining to the local community. It is no surprise that computing had early been adopted in CivEng, with programming classes added to the curriculum, as reported in a US survey [@hoffbeck2016teaching]. After all, CivEng students cannot just sit there and look at their university friends doing all kinds of interesting stuff with code or AI/machine learning. But what are the difficulties behind the scenes? And why do I focus here on such a narrow engineering discipline?

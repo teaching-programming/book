@@ -21,6 +21,20 @@ keywords:
   - play
 ---
 
+::: {.content-visible when-format="docx" note="this should be identical as authors above, for docx"}
+author:
+  - name: David Cutting
+    email: d.cutting@qub.ac.uk
+    corresponding: true
+    affiliations: School of Electronics, Electrical Engineering and Computer Science, Queen's University Belfast
+  - name: Neil Anderson
+    email: n.anderson@qub.ac.uk
+    affiliations: School of Electronics, Electrical Engineering and Computer Science, Queen's University Belfast
+  - name: Matthew Collins
+    email: m.collins@qub.ac.uk
+    affiliations: School of Electronics, Electrical Engineering and Computer Science, Queen's University Belfast
+:::
+
 
 ## Introduction
 

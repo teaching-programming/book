@@ -18,6 +18,20 @@ keywords:
   - example
 ---
 
+::: {.content-visible when-format="docx" note="this should be identical as authors above, for docx"}
+author:
+  - name: Author One
+    email: author@one.com
+    corresponding: true
+    affiliations: Edinburgh Medical School, University of Edinburgh
+  - name: Author Two
+    email: author@two.com
+    affiliations: Edinburgh Medical School, University of Edinburgh
+  - name: Author Three
+    email: author@three.com
+    affiliations: School of Mathematics and Maxwell Institute for the Mathematical Sciences, University of Edinburgh
+:::
+
 ## Your first top-level section
 
 ### A subsection

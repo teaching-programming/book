@@ -6,18 +6,34 @@ bibliography: references.bib
 toc: true
 author:
   - name: Robert S. Young
-    affiliation: Edinburgh Medical School, University of Edinburgh and Zhejiang University - University of Edinburgh (ZJE) Institute
+    affiliations: Edinburgh Medical School, University of Edinburgh and Zhejiang University - University of Edinburgh (ZJE) Institute
   - name: Rebecca L. Colquhoun
-    affiliation: Department of Earth Science and Engineering, Imperial College London
+    affiliations: Department of Earth Science and Engineering, Imperial College London
   - name: Tiago A. Marques
-    affiliation: School of Mathematics, University of St Andrews
+    affiliations: School of Mathematics, University of St Andrews
   - name: Brittany Blankinship
-    affiliation:  Edinburgh Medical School, University of Edinburgh
+    affiliations:  Edinburgh Medical School, University of Edinburgh
   - name: Ozan Evkaya
-    affiliation: School of Mathematics, University of Edinburgh
+    affiliations: School of Mathematics, University of Edinburgh
   - name: William P. Kay
-    affiliation: School of Biosciences, Cardiff University
+    affiliations: School of Biosciences, Cardiff University
 ---
+
+::: {.content-visible when-format="docx" note="this should be identical as authors above, for docx"}
+author:
+  - name: Robert S. Young
+    affiliations: Edinburgh Medical School, University of Edinburgh and Zhejiang University - University of Edinburgh (ZJE) Institute
+  - name: Rebecca L. Colquhoun
+    affiliations: Department of Earth Science and Engineering, Imperial College London
+  - name: Tiago A. Marques
+    affiliations: School of Mathematics, University of St Andrews
+  - name: Brittany Blankinship
+    affiliations:  Edinburgh Medical School, University of Edinburgh
+  - name: Ozan Evkaya
+    affiliations: School of Mathematics, University of Edinburgh
+  - name: William P. Kay
+    affiliations: School of Biosciences, Cardiff University
+:::
 
 ## Introduction
 

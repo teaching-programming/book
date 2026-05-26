@@ -19,7 +19,19 @@ keywords:
   - Python
   - statistics
 ---
-
+::: {.content-visible when-format="docx" note="this should be identical as authors above, for docx"}
+author:
+  - name: Serveh Sharifi Far
+    email: Serveh.Sharifi@ed.ac.uk
+    corresponding: true
+    affiliations: School of Mathematics and Maxwell Institute for Mathematical Sciences, University of Edinburgh
+  - name: Ruini Qu
+    email: R.Qu@ed.ac.uk
+    affiliations: Edinburgh Business School, University of Edinburgh
+  - name: Stuart King
+    email: S.King@ed.ac.uk
+    affiliations: School of Mathematics and Maxwell Institute for Mathematical Sciences, University of Edinburgh
+:::
 
 ## Teaching Data Analysis and Programming: Does One Need to Come First?
 

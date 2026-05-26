@@ -13,6 +13,12 @@ keywords:
   - studentr-esilience
 ---
 
+::: {.content-visible when-format="docx" note="this should be identical as authors above, for docx"}
+author:
+  - name: Mar Doig
+    affiliations: Engineering Education Lead at Perk (https://www.perk.com)
+:::
+
 ## Introduction: The Debugging Mountain & The Error Misconception
 
 Harken your memory back to your first error message, however many years ago that might be. You likely felt a small jolt of panic, a worry you’d irreparably **broken something**. Nowadays, you hopefully see errors as the lane bumpers of your programming journey. Errors help us understand flaws in our original design, consequences of code changes on original code, and limitations of our system. 

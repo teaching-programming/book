@@ -35,6 +35,32 @@ format:
         include-in-header: _theme/latex_preamble.tex
         bibliography: references.bib
         links-as-notes: true
+        
+    docx:
+#     temp dev note: in terminal use: quarto render --to docx
+        reference-doc: _theme/book-layout-test2.7-ref.docx
+        number-sections: false
+        bibliography: references.bib
+        eval: true
+        code-line-numbers: true
+        code-block-bg: true
+        code-block-border-left: true
+        repo-url: https://github.com/teaching-programming/book
+        toc: true
+        links-as-notes: true
+        fig-width: 2
+        fig-height: 2
+        width: 1
+        height: 1
+        papersize: a4
+        margin-left: 0cm
+        margin-right: 0cm
+        margin-top: 0cm
+        margin-bottom: 0cm
+        fig-align: center 
+        filters:
+          - _theme/filters/callout-for-docx.lua
+          - _theme/filters/authors-for-docx.lua
     epub:
         bibliography: references.bib
 

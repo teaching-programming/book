@@ -16,6 +16,17 @@ keywords:
   - Generative AI
   - competency
 ---
+::: {.content-visible when-format="docx" note="this should be identical as authors above, for docx"}
+author:
+  - name: Lee Clift
+    email: lee.clift@strath.ac.uk
+    corresponding: true
+    affiliations: Department of Computer and Information Science, University of Strathclyde
+  - name: Olga Petrovska
+    email: olga.petrovska@swansea.ac.uk
+    corresponding: true
+    affiliations: School of Mathematics and Computer Science, Swansea University
+:::
 
 ## Introduction 
 

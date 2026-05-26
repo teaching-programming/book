@@ -21,6 +21,19 @@ keywords:
   - stories
 ---
 
+::: {.content-visible when-format="docx" note="this should be identical as authors above, for docx"}
+author:
+  - name: Beatrice Alex
+    corresponding: true
+    affiliations: Edinburgh Futures Institute, University of Edinburgh; School of Literatures, Languages and Cultures, University of Edinburgh
+  - name: Clare Llewellyn
+    affiliations: School of Social and Political Sciences, University of Edinburgh
+  - name: Pawel Orzechowski
+    affiliations: Edinburgh Medical School, University of Edinburgh
+  - name: Luke Stephens
+    affiliations: School of Social and Political Sciences, University of Edinburgh
+:::
+
 ## Introduction
 
 *"Sarah, can you scroll down a bit?"* The voice appeared suddenly in Sophie's headphones, causing her to jump slightly in her chair. Just moments before, she'd been chatting face-to-face with Dr Llewellyn about Python syntax errors. Now her disembodied voice was helping her online partner navigate their shared code, while she remained physically present in the classroom just three feet away. Welcome to fusion teaching, where instructors become friendly ghosts and the boundaries between digital and physical learning dissolve in unexpectedly delightful ways.

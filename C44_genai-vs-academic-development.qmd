@@ -10,6 +10,13 @@ keywords:
   - example
 ---
 
+::: {.content-visible when-format="docx" note="this should be identical as authors above, for docx"}
+author:
+  - name: John Wilson
+    email: jwilso3@ed.ac.uk
+    affiliations: Edinburgh Medical School, University of Edinburgh
+:::
+
 This article originally appeared as a [post on the Unversity of Edinburgh blog Teaching Matters](https://blogs.ed.ac.uk/teaching-matters/genai-vs-academic-skills-development/) in February 2025.
 
 ## Introduction
