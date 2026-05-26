@@ -25,6 +25,25 @@ keywords:
   - resourceful
 ---
 
+::: {.content-visible when-format="docx" note="this should be identical as authors above, for docx"}
+author:
+  - name: Neil Bray
+    email: neil.bray@ukhsa.gov.uk
+    affiliations: UK Health Security Agency
+  - name: Samantha Alvarez Madrazo
+    email: s.alvarez-madrazo@imperial.ac.uk
+    affiliations: Imperial College London
+  - name: Lucia Michielin
+    email: lucia.michielin@ed.ac.uk
+    affiliations: University of Edinburgh
+  - name: Nick Jayanth
+    email: nick.jayanth19@imperial.ac.uk
+    affiliations: Imperial College London
+  - name: Sam Skipsey
+    email: Samuel.Skipsey@glasgow.ac.uk
+    affiliations: University of Glasgow
+:::
+
 ## About us
 
 We're writing this chapter because when we started teaching students to code "from scratch", we would have liked something similar to show us what's worked for other people. Much of the existing resources are direct teaching materials, rather than discussions of how to teach, and, especially, how to teach in the service of other skills, not as an end unto itself. A "coding mindset" develops over time as a combination of problem decomposition, embracing iterative improvement, and expectation management (each of which are also applicable outside coding!). Rather than a rigid set of rules, all the examples below can be seen as "good enough" practices we developed across time, aiming to support beginners in developing those aspects of themselves.

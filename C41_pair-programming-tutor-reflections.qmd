@@ -14,6 +14,14 @@ keywords:
   - reflections
 ---
 
+::: {.content-visible when-format="docx" note="this should be identical as authors above, for docx"}
+author:
+  - name: Sarah Elliot
+    email: s.s.elliot@sms.ed.ac.uk
+    corresponding: true
+    affiliations: Usher Institute, University of Edinburgh
+:::
+
 ## From student to teacher
 
 I am a PhD candidate in healthcare data science, having learnt R and Python programming at university. I vividly remember my own experiences as a beginner: persistently feeling lost or behind my peers due to my non-coding background, jargon-filled error messages, and overwhelming online solutions. Alongside these frustrations, I also recall the satisfaction of mastering a new skill and the sense of achievement that followed solving a difficult problem. These memories shaped my approach to tutoring during my PhD. I was motivated to support students in acquiring technical skills, and, importantly, build confidence while stepping into a new programming space that can often feel intimidating.

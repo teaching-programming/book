@@ -18,6 +18,19 @@ keywords:
   - group work
 ---
 
+::: {.content-visible when-format="docx" note="this should be identical as authors above, for docx"}
+author:
+  - name: Katerina Michalickova
+    email: k.michalickova@imperial.ac.uk
+    affiliations: Imperial College London
+  - name: Jonathan Holt
+    email: j.holt23@imperial.ac.uk
+    affiliations: Imperial College London
+  - name: Chris Cooling
+    email: c.cooling10@imperial.ac.uk
+    affiliations: Imperial College London
+:::
+
 ## Overarching themes
 
 To an educator, this could be the stuff of nightmares. A classroom full of bright university students who have nothing in common - discipline, motivation or prior skill level. Their expectations vary, and they all expect you to help them make sense of computing for their future research. Regardless of their differences, all students chose your elective module.

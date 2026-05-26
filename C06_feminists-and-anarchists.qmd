@@ -14,6 +14,16 @@ keywords:
   - teaching material
 ---
 
+::: {.content-visible when-format="docx" note="this should be identical as authors above, for docx"}
+author:
+  - name: Francisco Queiroz
+    email: f.queiroz@leeds.ac.uk
+    affiliations: School of Design, University of Leeds
+  - name: Maeve Murphy Quinlan
+    email: TODO
+    affiliations: Research Computing, University of Leeds
+:::
+
 ## Introduction
 
 You find yourself in a large room with no windows; the air is still, and nothing suggests the passing of time. The door closes behind you, and it won't open for another hour or two. As you stand in front of the room, you realise there is nothing between you and what seems to be a party of the most intimidating, unpredictable creatures.

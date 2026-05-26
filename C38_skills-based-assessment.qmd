@@ -13,6 +13,14 @@ keywords:
   - case study
 ---
 
+::: {.content-visible when-format="docx" note="this should be identical as authors above, for docx"}
+author:
+  - name: Elizabeth Pankratz
+    email: elizabeth.pankratz@ed.ac.uk
+    corresponding: true
+    affiliations: School of Philosophy, Psychology, and Language Sciences, University of Edinburgh
+:::
+
 ## In this chapter
 
 To learn to program is to develop a new set of skills.

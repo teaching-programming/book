@@ -5,23 +5,30 @@ author:
   - name: Pawel Orzechowski
     email: pawel.orzechowski@ed.ac.uk
     corresponding: true
-    affiliations:
-      - ref: uoe
+    affiliation: Edinburgh Medical School, University of Edinburgh
   - name: Brittany Blankinship
     email: b.blankinship@ed.ac.uk 
-    affiliations:
-      - ref: uoe
+    affiliation: Edinburgh Medical School, University of Edinburgh
   - name: Kasia Banas
-    affiliations:
-      - ref: uoe
-affiliations:
-  - id: uoe
-    name: Edinburgh Medical School, University of Edinburgh
+    affiliation: Edinburgh Medical School, University of Edinburgh
     
 keywords:
   - pair programming
   - groupwork
 ---
+
+::: {.content-visible when-format="docx" note="this should be identical as authors above, for docx"}
+author:
+  - name: Pawel Orzechowski
+    email: pawel.orzechowski@ed.ac.uk
+    corresponding: true
+    affiliations: Edinburgh Medical School, University of Edinburgh
+  - name: Brittany Blankinship
+    email: b.blankinship@ed.ac.uk 
+    affiliations: Edinburgh Medical School, University of Edinburgh
+  - name: Kasia Banas
+    affiliations: Edinburgh Medical School, University of Edinburgh
+:::
 
 ## Context
 

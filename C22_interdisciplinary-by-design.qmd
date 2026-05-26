@@ -19,6 +19,17 @@ keywords:
 
 ---
 
+::: {.content-visible when-format="docx" note="this should be identical as authors above, for docx"}
+author:
+  - name: Lucia Michielin
+    email: lucia.michielin@ed.ac.uk
+    corresponding: true
+    affiliations: Edinburgh Futures Institute, University of Edinburgh
+  - name: Lisa Otty
+    email: Lisa.Otty@ed.ac.uk
+    affiliations: Edinburgh Futures Institute, University of Edinburgh
+:::
+
 ## Introduction
 
 This chapter discusses the Centre for Data, Culture & Society's (CDCS) training initiative, which aims to integrate computational methods into humanities research. CDCS is committed to fostering methodological innovation and advancing digital research skills within the academic community. It provides targeted support and expertise to both individual researchers and groups, enhancing their capacity to employ digital techniques in the arts, humanities, and social sciences. Importantly, the initiative bridges the gap between technology and traditional research methods, preparing scholars to adeptly incorporate digital tools into their work. The CDCS training programme is distinguished by its interdisciplinary and peer-led educational model, which serves researchers at different stages of their career and with very heterogenous levels of digital literacy. The programme fosters a shared language across disciplines, enabling scholars from non-technical backgrounds to embrace coding-based methods confidently. A natural outcome of this approach is that it enables us to observe how the newly acquired shared language facilitates collaboration and interdisciplinary work, effectively breaking down traditional disciplinary barriers. This aspect is particularly crucial in enabling researchers trained in non-technical disciplines to confidently navigate and employ complex digital tools in their work.

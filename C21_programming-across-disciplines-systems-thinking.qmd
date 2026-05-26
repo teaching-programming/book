@@ -20,6 +20,22 @@ keywords:
   - conceptual systems
 ---
 
+::: {.content-visible when-format="docx" note="this should be identical as authors above, for docx"}
+author:
+  - name: Leo Riviera
+    orcid: 0009-0004-3316-1852
+    email: leo.riviera@voxa.dev
+    affiliations: Voxa
+  - name: Maeve Murphy Quinlan
+    email: m.murphyquinlan@leeds.ac.uk
+    affiliations: Research Computing, University of Leeds
+  - name: Rebecca L. Colquhoun
+    affiliation: Department of Earth Science and Engineering, Imperial College London
+  - name: Devanjan Bhattacharya
+    affiliation: Bayes Centre, University of Edinburgh
+    email: d.bhattacharya@ed.ac.uk
+:::
+
 ## Introduction
 
 The purpose of university has been the subject of much discussion [@c21_PurposeOfUniversity]. Some see it as a focal point for the humanist tradition in the Renaissance fashion, where one goes to engage with and anchor themselves in the great work of man. Others see it as a site to acquire knowledge, skills, values, beliefs, and commitments; young people develop their mental faculties and define their world views, becoming more ready to integrate into society [@c21_ReconsideringHigherEducationPurpose].
