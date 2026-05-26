@@ -14,7 +14,7 @@ keywords:
 author:
   - name: John Wilson
     email: jwilso3@ed.ac.uk
-    affiliation: Edinburgh Medical School, University of Edinburgh
+    affiliations: Edinburgh Medical School, University of Edinburgh
 :::
 
 This article originally appeared as a [post on the Unversity of Edinburgh blog Teaching Matters](https://blogs.ed.ac.uk/teaching-matters/genai-vs-academic-skills-development/) in February 2025.

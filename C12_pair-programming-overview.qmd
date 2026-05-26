@@ -22,12 +22,12 @@ author:
   - name: Pawel Orzechowski
     email: pawel.orzechowski@ed.ac.uk
     corresponding: true
-    affiliation: Edinburgh Medical School, University of Edinburgh
+    affiliations: Edinburgh Medical School, University of Edinburgh
   - name: Brittany Blankinship
     email: b.blankinship@ed.ac.uk 
-    affiliation: Edinburgh Medical School, University of Edinburgh
+    affiliations: Edinburgh Medical School, University of Edinburgh
   - name: Kasia Banas
-    affiliation: Edinburgh Medical School, University of Edinburgh
+    affiliations: Edinburgh Medical School, University of Edinburgh
 :::
 
 ## Context

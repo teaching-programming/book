@@ -109,9 +109,14 @@ function authors_as_docx_paragraphs(authors)
   
   for i, author in ipairs(authors) do
     if author.name ~= nil then
+      local name_format = author.name
+      if author.corresponding then
+          name_format = name_format .. "*"
+      end
+      
       table.insert(
         result,
-        styled_paragraph(author.name, style_map["name"])
+        styled_paragraph(name_format, style_map["name"])
       )
     end
     if author.affiliations ~= nil  then
@@ -121,17 +126,10 @@ function authors_as_docx_paragraphs(authors)
       )
     end
     if author.email ~= nil  then
-      local email_to_use = ""
-      if author.corresponding then
-          email_to_use = author.email .. " (*)"
-      else
-          email_to_use = author.email
-      end
       table.insert(
         result,
-        styled_paragraph(email_to_use, style_map["email"])
+        styled_paragraph(author.email, style_map["email"])
       )
-    
     end
   end
  -- print("DONE AUTHORS!" .. #result)
