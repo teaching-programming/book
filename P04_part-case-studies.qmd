@@ -7,6 +7,13 @@ author:
   - name: Ozan Evkaya
     affiliations: School of Mathematics, The University of Edinburgh
 ---
+::: {.content-visible when-format="docx" note="this should be identical as authors above, for docx"}
+author:
+  - name: Pawel Orzechowski
+    affiliations: Edinburgh Medical School, University of Edinburgh
+  - name: Ozan Evkaya
+    affiliations: School of Mathematics, The University of Edinburgh
+:::
 
 Learning is exciting. That's because every next thing we learn is new, yet it somehow connects with what we already knew in unexpected ways. The same premise makes teaching exciting – each course, each lesson, becomes better and gets rediscovered each time we deliver it. As teachers we come up with new examples, or tools, or metaphors, to entertain (and educate) our students.  
 

@@ -7,6 +7,13 @@ author:
   - name: TODO
     affiliations: TODO
 ---
+::: {.content-visible when-format="docx" note="this should be identical as authors above, for docx"}
+author:
+  - name: TODO
+    affiliations: TODO
+  - name: TODO
+    affiliations: TODO
+:::
 
 SOME TEXT INTRODUCITNG THIS PART
 
