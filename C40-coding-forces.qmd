@@ -1,17 +1,15 @@
 ---
-title: "Title of Example Chapter (as will appear on top h1 header and in table of contents)"
+title: "TODO Maybe the Coding Forces Be With You"
 bibliography: references.bib
 author:
-  - name: Author One
-    email: author@one.com
+  - name: John Wilson
+    email: jwilso3@ed.ac.uk
     corresponding: true
     affiliations: Edinburgh Medical School, University of Edinburgh
-  - name: Author Two
-    email: author@two.com
+  - name: Brittany Blankinship
+    email: b.blankinship@ed.ac.uk
+    corresponding: true
     affiliations: Edinburgh Medical School, University of Edinburgh
-  - name: Author Three
-    email: author@three.com
-    affiliations: School of Mathematics and Maxwell Institute for the Mathematical Sciences, University of Edinburgh
 
 keywords:
   - markdown
@@ -20,18 +18,17 @@ keywords:
 
 ::: {.content-visible when-format="docx" note="this should be identical as authors above, for docx"}
 author:
-  - name: Author One
-    email: author@one.com
+  - name: John Wilson
+    email: jwilso3@ed.ac.uk
     corresponding: true
     affiliations: Edinburgh Medical School, University of Edinburgh
-  - name: Author Two
-    email: author@two.com
+  - name: Brittany Blankinship
+    email: b.blankinship@ed.ac.uk
+    corresponding: true
     affiliations: Edinburgh Medical School, University of Edinburgh
-  - name: Author Three
-    email: author@three.com
-    affiliations: School of Mathematics and Maxwell Institute for the Mathematical Sciences, University of Edinburgh
 :::
 
+TODO copy over from google doc horror show 
 ## Your first top-level section
 
 ### A subsection
