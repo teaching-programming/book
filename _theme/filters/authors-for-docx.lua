@@ -85,7 +85,10 @@ function lines_into_authors(lines)
         current_author = {}
       end
     end
-
+    -- fix for affiliation/affiliations 
+    if key_author_info == "affiliation" then
+      key_author_info = "affiliations"
+    end
     current_author[key_author_info] = value_author_info
    ::jump_to_here_to_skip::
   end
