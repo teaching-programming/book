@@ -1,0 +1,135 @@
+---
+title: "Part I --- Theories and applications of teaching programming"
+bibliography: references.bib
+author:
+  - name: TODO
+    affiliations: TODO
+  - name: TODO
+    affiliations: TODO
+---
+::: {.content-visible when-format="docx" note="this should be identical as authors above, for docx"}
+author:
+  - name: TODO
+    affiliations: TODO
+  - name: TODO
+    affiliations: TODO
+:::
+
+SOME TEXT INTRODUCITNG THIS PART
+
+## Theme --- Pair Programming: What? How? Why? 
+
+### TitleOfChapterPossiblyShortened [@TeachProgAcross_C12]
+
+SOME TEXT INTRODUCITNG THIS CHAPTER [C12] Where Do I Even Start With Pair Programming in My Classroom? A Conversation With Seasoned Practitioners.
+
+SOME TEXT EXPLAINING WHY THIS CHAPTER COULD BE FOR YOU
+
+### TitleOfChapterPossiblyShortened [@TeachProgAcross_C36]
+
+SOME TEXT INTRODUCITNG THIS CHAPTER [C36] Structured Group Work With Assigned Asymmetrical Roles and Switching: Lessons From Pair Programming Across Disciplines
+
+SOME TEXT EXPLAINING WHY THIS CHAPTER COULD BE FOR YOU
+
+### TitleOfChapterPossiblyShortened [@TeachProgAcross_C41]
+
+SOME TEXT INTRODUCITNG THIS CHAPTER [C41] Pair Programming in Practice: A PhD Tutor's Reflections 
+
+SOME TEXT EXPLAINING WHY THIS CHAPTER COULD BE FOR YOU
+
+
+
+## Theme --- Building healthy programming habits
+
+### TitleOfChapterPossiblyShortened [@TeachProgAcross_C09]
+
+SOME TEXT INTRODUCITNG THIS CHAPTER [C09] Brain Book Buddy Boss Break: A Practical Debugging Framework for Learners
+
+SOME TEXT EXPLAINING WHY THIS CHAPTER COULD BE FOR YOU
+
+
+### TitleOfChapterPossiblyShortened [@TeachProgAcross_C40]
+
+SOME TEXT INTRODUCITNG THIS CHAPTER [C40] Modes of coding practice
+
+SOME TEXT EXPLAINING WHY THIS CHAPTER COULD BE FOR YOU
+
+
+### TitleOfChapterPossiblyShortened [@TeachProgAcross_C05]
+
+SOME TEXT INTRODUCITNG THIS CHAPTER [C05] A Guide on Empowering Students to Develop a Coding Mindset
+
+SOME TEXT EXPLAINING WHY THIS CHAPTER COULD BE FOR YOU
+
+
+## Theme --- Programming in a world of Gen AI 
+
+### TitleOfChapterPossiblyShortened [@TeachProgAcross_C08]
+
+SOME TEXT INTRODUCITNG THIS CHAPTER [C08] Hype and The Need for Responsible Compute (previously called Boom or Bust)
+
+SOME TEXT EXPLAINING WHY THIS CHAPTER COULD BE FOR YOU
+
+
+### TitleOfChapterPossiblyShortened [@TeachProgAcross_C10]
+
+SOME TEXT INTRODUCITNG THIS CHAPTER [C10] Teaching, Learning and Assessment for coding with the emergence of generative AI
+
+SOME TEXT EXPLAINING WHY THIS CHAPTER COULD BE FOR YOU
+
+
+### TitleOfChapterPossiblyShortened [@TeachProgAcross_C21]
+
+SOME TEXT INTRODUCITNG THIS CHAPTER [C21] How Teaching Programming Across Disciplines Can Prove Useful  - love letter to critical thinking (computational and systems)
+
+SOME TEXT EXPLAINING WHY THIS CHAPTER COULD BE FOR YOU
+
+
+### TitleOfChapterPossiblyShortened [@TeachProgAcross_C44]
+
+SOME TEXT INTRODUCITNG THIS CHAPTER [C44] GenAI vs Developing Academic Skills
+
+SOME TEXT EXPLAINING WHY THIS CHAPTER COULD BE FOR YOU
+
+
+## Theme --- Best teaching practices for programming courses 
+
+
+### TitleOfChapterPossiblyShortened [@TeachProgAcross_C11]
+
+SOME TEXT INTRODUCITNG THIS CHAPTER [C11] Sequential vs. Simultaneous: Approaches to Learning Programming and Statistics 
+
+SOME TEXT EXPLAINING WHY THIS CHAPTER COULD BE FOR YOU
+
+
+### TitleOfChapterPossiblyShortened [@TeachProgAcross_C14]
+
+SOME TEXT INTRODUCITNG THIS CHAPTER [C14] Practices to Foster Inclusion and Accessibility in Programming Teaching
+
+SOME TEXT EXPLAINING WHY THIS CHAPTER COULD BE FOR YOU
+
+
+### TitleOfChapterPossiblyShortened [@TeachProgAcross_C04]
+
+SOME TEXT INTRODUCITNG THIS CHAPTER [C04] Computer says no: Removing technological barriers in programming courses 
+
+SOME TEXT EXPLAINING WHY THIS CHAPTER COULD BE FOR YOU
+
+
+### TitleOfChapterPossiblyShortened [@TeachProgAcross_C33]
+
+SOME TEXT INTRODUCITNG THIS CHAPTER [C33] Overcoming coding anxiety: learnings and strategies 
+SOME TEXT EXPLAINING WHY THIS CHAPTER COULD BE FOR YOU
+
+
+### TitleOfChapterPossiblyShortened [@TeachProgAcross_C34]
+
+SOME TEXT INTRODUCITNG THIS CHAPTER [C34] 3 Stars and 1 Wish: Small and Frequent Student Reflections to promote a Sense of Wonder and a Community of Vulnerability
+
+SOME TEXT EXPLAINING WHY THIS CHAPTER COULD BE FOR YOU
+
+::: {.content-visible when-format="html" unless-format="epub"}
+
+## References {.unnumbered}
+
+:::

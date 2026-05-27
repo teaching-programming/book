@@ -1,25 +1,34 @@
 ---
-title: "Where do I even start with Pair Programming in my classroom? Conversation with seasoned practitioners."
+title: "Where Do I Even Start With Pair Programming in My Classroom? A Conversation With Seasoned Practitioners."
 bibliography: references.bib
 author:
   - name: Pawel Orzechowski
+    email: pawel.orzechowski@ed.ac.uk
     corresponding: true
-    affiliations:
-      - ref: uoe
+    affiliation: Edinburgh Medical School, University of Edinburgh
   - name: Brittany Blankinship
-    affiliations:
-      - ref: uoe
+    email: b.blankinship@ed.ac.uk 
+    affiliation: Edinburgh Medical School, University of Edinburgh
   - name: Kasia Banas
-    affiliations:
-      - ref: uoe
-affiliations:
-  - id: uoe
-    name: Edinburgh Medical School, University of Edinburgh
+    affiliation: Edinburgh Medical School, University of Edinburgh
     
 keywords:
   - pair programming
   - groupwork
 ---
+
+::: {.content-visible when-format="docx" note="this should be identical as authors above, for docx"}
+author:
+  - name: Pawel Orzechowski
+    email: pawel.orzechowski@ed.ac.uk
+    corresponding: true
+    affiliations: Edinburgh Medical School, University of Edinburgh
+  - name: Brittany Blankinship
+    email: b.blankinship@ed.ac.uk 
+    affiliations: Edinburgh Medical School, University of Edinburgh
+  - name: Kasia Banas
+    affiliations: Edinburgh Medical School, University of Edinburgh
+:::
 
 ## Context
 
@@ -313,7 +322,7 @@ But quite often pairs are so deep into their work that they do not want to come 
 
 **Brittany:** I'd say: find a way to experience it by yourself. Since Pair Programming is such an experiential, immersive thing to do, you will really get the point of it once you have done it yourself. When you have had to drive, and navigate, and pass the keyboard to someone. Experience it to understand it.
 
-All you'll need to start is: a willing colleague or friend; two hours of time; and a simple programming task (maybe a challenge from Tidy Tuesday, or Advent of Code). You could even come to one of our taster sessions which we run at conferences and such, where we pair you up with another participant, we give you something to do and let you Pair Program! You can find instructions on how to run such a workshop by yourself on our [website](https://github.com/teaching-programming/pair-programming-r-workshop).
+All you'll need to start is: a willing colleague or friend; two hours of time; and a simple programming task (maybe a challenge from [Tidy Tuesday](https://github.com/rfordatascience/tidytuesday), or [Advent of Code](https://adventofcode.com). You could even come to one of our taster sessions which we run at conferences and such, where we pair you up with another participant, we give you something to do and let you Pair Program! You can find instructions on how to run such a workshop by yourself on our [website](https://github.com/teaching-programming/pair-programming-r-workshop).
 
 **Pawel:** And my biggest suggestion is, once you've tried it, go full steam ahead, without half-measures. It might be tempting to 'simplify' the method and remove some parts of it, but you might end up throwing out the "baby with the bathwater". 
 

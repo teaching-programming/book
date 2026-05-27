@@ -26,6 +26,13 @@ keywords:
   - beginner
 ---
 
+::: {.content-visible when-format="docx" note="this should be identical as authors above, for docx"}
+author:
+  - name: Author One
+    email: author@one.com
+    affiliations: institution or company
+:::
+
 
 ## Introduction
 
