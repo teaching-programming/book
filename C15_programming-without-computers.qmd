@@ -56,7 +56,7 @@ The **ProgBoard**, developed as part of the "Think Like a Computer" initiative [
 
 The board itself consists of a grid on which tokens representing instructions can be placed. Problems are posed in the form of challenges, such as navigating a path, following rules, or producing repeated patterns. Learners construct solutions by arranging instruction tokens in order, creating simple algorithms that can be "executed" by following the board step by step.
 
-![A ProgBoard being used to break the ice with during international programming teaching in China.](/chapters/images/C15_pb3.jpg "ProgBoard used in a Chinese University"){fig-alt="Five students work together on a ProgBoard printed on a sheet of paper." width=70%}
+![A ProgBoard being used to break the ice with during international programming teaching in China.](/chapters/images/C15_pb3.jpg "ProgBoard used in a Chinese University"){#fig-c15-progboard-students fig-alt="Five students work together on a ProgBoard printed on a sheet of paper." width=70%}
 
 ### Sequence
 
