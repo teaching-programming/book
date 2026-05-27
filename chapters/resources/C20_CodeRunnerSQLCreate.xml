@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 38253239  -->
+  <question type="coderunner">
+    <name>
+      <text>Evaluation of SQL database creation</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Write an SQL file called <strong>create.sql</strong> to create the tables for the database below. Before creating them, delete any existing tables using <code>DROP</code>. Define all primary keys and foreign keys correctly.</p>
+<p><strong>Database description:</strong></p>
+<div class="editor-indent" style="margin-left: 30px;">
+<p>Three tables, <strong>worker</strong>, <strong>company</strong>, and <strong>works_for</strong>. </p>
+<ul>
+<li><strong>worker</strong>: stores worker details.
+<ul>
+<li>Attributes: name, city, supervisor. </li>
+<li>name is the primary key.</li>
+<li>supervisor refers to another worker in the same table.</li>
+</ul>
+</li>
+<li><strong>company</strong>: stores company details
+<ul>
+<li>Attributes: name, city. </li>
+<li>name is the primary key.</li>
+</ul>
+</li>
+<li><strong>works_for</strong>: links workers to companies and includes salary.
+<ul>
+<li>Attributes: wname, cname, salary.</li>
+<li>Primary key: (wname, cname).</li>
+<li>wname refers to worker.name and cname refers to company.name.</li>
+</ul>
+</li>
+</ul>
+</div>
+<p>Use <a href="@@PLUGINFILE@@/insert.sql">insert.sql</a> to guide data types (the content of this file is copied below). After creating all tables in PostgreSQL, load <strong>insert.sql</strong> to add rows to your database. The attribute order must match the description.</p>
+<p><strong>Important</strong>: Use attribute names exactly as given so that the automatic marking gives you full mark. You can use the following query to test your code on PostgreSQL and make sure you didn't make any spelling mistakes: <br><code>SELECT worker.name, worker.city,
+    supervisor, wname, cname, salary, company.name, company.city FROM worker,
+    works_for, company;</code> <br>Do not include this code in your submission.</p>
+<p><strong>NOTE</strong>:</p>
+<ul>
+<li>Running <strong>insert.sql</strong> should produce some expected errors, as commented in the file. These are intentional.</li>
+<li>If you only get these errors you can ignore them. If you see no errors or different ones, your tables may be incorrect.</li>
+<li>You are not allowed to modify <strong>insert.sql</strong>.</li>
+</ul>
+<p>Once you are sure your SQL commands in <strong>create.sql</strong> are correct, copy the content of your file into the provided text box in this quiz.</p>
+<p></p>
+<pre>---------------------------------------------------------
+-- file: insert.sql<br>-- Inserting rows for workers database
+---------------------------------------------------------
+
+insert into Worker values
+   ('Juan', 'Glasgow', NULL),
+   ('Amelia', 'Glasgow', 'Juan'),
+   ('George', 'Inverness', 'Juan'),
+   ('David', 'Glasgow', 'Amelia'),
+   ('Sara', 'Edinburgh', 'David'),
+   ('Daniel', 'Edinburgh', 'Sara');  
+	
+---------------- These lines should give ERRORS -----------------------
+insert into Worker values ('Daniel', 'Edinburgh', 'Sara');  -- this should produce an ERROR:  duplicate key value violates unique constraint
+insert into Worker values ('test', 'Edinburgh', 'test2');  -- this should produce an ERROR:  insert or update on table "worker" violates foreign key constraint
+-----------------------------------------------------------------------
+	
+insert into Company values
+    ('Apple', 'Glasgow'),
+    ('Mishop', 'Glasgow'),
+    ('Greens', 'Stirling'),
+    ('Alfa', 'Glasgow'),
+    ('Beta', 'Edinburgh'),
+	('Sony', 'Glasgow');    	
+
+insert into Works_for values
+   ('Juan', 'Apple',  10000.00),
+   ('Amelia', 'Sony', 20000.00),
+   ('Amelia', 'Apple', 10000.00),
+   ('George', 'Apple', 10000.00),
+   ('David', 'Alfa', 20000.00),
+   ('Sara', 'Beta', 40000.00),
+   ('Sara', 'Greens', 30000.00),
+   ('David', 'Greens', 2000.00),
+   ('Daniel', 'Greens', 10000.00),
+   ('Daniel', 'Sony', 10000.00);	  
+
+---------------- These lines should give ERRORS -----------------------
+insert into Works_for values  ('worker1', 'Apple', 10000.00);  -- this should produce an ERROR:  insert or update on table "works_for" violates foreign key constraint
+insert into Works_for values  ('Daniel', 'test', 10000.00);  -- this should produce an ERROR:  insert or update on table "works_for" violates foreign key constraint
+-----------------------------------------------------------------------
+
+
+
+
+</pre>]]></text>
+<file name="insert.sql" path="/" encoding="base64">LS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tDQotLSBJbnNlcnRpbmcgcm93cyBmb3IgQWN0aXZpdHkgOC4yDQotLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0NCg0KaW5zZXJ0IGludG8gV29ya2VyIHZhbHVlcw0KICAgKCdKdWFuJywgJ0dsYXNnb3cnLCBOVUxMKSwNCiAgICgnQW1lbGlhJywgJ0dsYXNnb3cnLCAnSnVhbicpLA0KICAgKCdHZW9yZ2UnLCAnSW52ZXJuZXNzJywgJ0p1YW4nKSwNCiAgICgnRGF2aWQnLCAnR2xhc2dvdycsICdBbWVsaWEnKSwNCiAgICgnU2FyYScsICdFZGluYnVyZ2gnLCAnRGF2aWQnKSwNCiAgICgnRGFuaWVsJywgJ0VkaW5idXJnaCcsICdTYXJhJyk7ICANCgkNCgkNCi0tLS0tLS0tLS0tLS0tLS0gVGhlc2UgbGluZXMgc2hvdWxkIGdpdmUgRVJST1JTIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tDQppbnNlcnQgaW50byBXb3JrZXIgdmFsdWVzICgnRGFuaWVsJywgJ0VkaW5idXJnaCcsICdTYXJhJyk7ICAtLSB0aGlzIHNob3VsZCBwcm9kdWNlIGFuIEVSUk9SOiAgZHVwbGljYXRlIGtleSB2YWx1ZSB2aW9sYXRlcyB1bmlxdWUgY29uc3RyYWludA0KaW5zZXJ0IGludG8gV29ya2VyIHZhbHVlcyAoJ3Rlc3QnLCAnRWRpbmJ1cmdoJywgJ3Rlc3QyJyk7ICAtLSB0aGlzIHNob3VsZCBwcm9kdWNlIGFuIEVSUk9SOiAgaW5zZXJ0IG9yIHVwZGF0ZSBvbiB0YWJsZSAid29ya2VyIiB2aW9sYXRlcyBmb3JlaWduIGtleSBjb25zdHJhaW50DQotLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQ0KCQ0KaW5zZXJ0IGludG8gQ29tcGFueSB2YWx1ZXMNCiAgICAoJ0FwcGxlJywgJ0dsYXNnb3cnKSwNCiAgICAoJ01pc2hvcCcsICdHbGFzZ293JyksDQogICAgKCdHcmVlbnMnLCAnU3RpcmxpbmcnKSwNCiAgICAoJ0FsZmEnLCAnR2xhc2dvdycpLA0KICAgICgnQmV0YScsICdFZGluYnVyZ2gnKSwNCgkoJ1NvbnknLCAnR2xhc2dvdycpOyAgICANCgkNCg0KaW5zZXJ0IGludG8gV29ya3NfZm9yIHZhbHVlcw0KICAgKCdKdWFuJywgJ0FwcGxlJywgIDEwMDAwLjAwKSwNCiAgICgnQW1lbGlhJywgJ1NvbnknLCAyMDAwMC4wMCksDQogICAoJ0FtZWxpYScsICdBcHBsZScsIDEwMDAwLjAwKSwNCiAgICgnR2VvcmdlJywgJ0FwcGxlJywgMTAwMDAuMDApLA0KICAgKCdEYXZpZCcsICdBbGZhJywgMjAwMDAuMDApLA0KICAgKCdTYXJhJywgJ0JldGEnLCA0MDAwMC4wMCksDQogICAoJ1NhcmEnLCAnR3JlZW5zJywgMzAwMDAuMDApLA0KICAgKCdEYXZpZCcsICdHcmVlbnMnLCAyMDAwLjAwKSwNCiAgICgnRGFuaWVsJywgJ0dyZWVucycsIDEwMDAwLjAwKSwNCiAgICgnRGFuaWVsJywgJ1NvbnknLCAxMDAwMC4wMCk7DQoJICANCg0KLS0tLS0tLS0tLS0tLS0tLSBUaGVzZSBsaW5lcyBzaG91bGQgZ2l2ZSBFUlJPUlMgLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0NCmluc2VydCBpbnRvIFdvcmtzX2ZvciB2YWx1ZXMgICgnd29ya2VyMScsICdBcHBsZScsIDEwMDAwLjAwKTsgIC0tIHRoaXMgc2hvdWxkIHByb2R1Y2UgYW4gRVJST1I6ICBpbnNlcnQgb3IgdXBkYXRlIG9uIHRhYmxlICJ3b3Jrc19mb3IiIHZpb2xhdGVzIGZvcmVpZ24ga2V5IGNvbnN0cmFpbnQNCmluc2VydCBpbnRvIFdvcmtzX2ZvciB2YWx1ZXMgICgnRGFuaWVsJywgJ3Rlc3QnLCAxMDAwMC4wMCk7ICAtLSB0aGlzIHNob3VsZCBwcm9kdWNlIGFuIEVSUk9SOiAgaW5zZXJ0IG9yIHVwZGF0ZSBvbiB0YWJsZSAid29ya3NfZm9yIiB2aW9sYXRlcyBmb3JlaWduIGtleSBjb25zdHJhaW50DQotLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQ0KDQoNCg0K</file>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>10</defaultgrade>
+    <penalty>0</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <coderunnertype>sql</coderunnertype>
+    <prototypetype>0</prototypetype>
+    <allornothing>0</allornothing>
+    <penaltyregime>0, 5, 10, 30, ...</penaltyregime>
+    <precheck>0</precheck>
+    <hidecheck>1</hidecheck>
+    <showsource>0</showsource>
+    <answerboxlines>18</answerboxlines>
+    <answerboxcolumns>100</answerboxcolumns>
+    <answerpreload></answerpreload>
+    <globalextra></globalextra>
+    <useace></useace>
+    <resultcolumns></resultcolumns>
+    <template><![CDATA[# A variant of the original sql question type where any sqlite3
+# errors do not raise an exception but simply print the output from
+# sqlite3 but with error line numbers removed.
+import subprocess, os, shutil, re
+
+# Use Twig to get students answer and the columnwidth template parameter
+student_answer = """{{ STUDENT_ANSWER | e('py') }}""".rstrip()
+column_widths = []
+{% for width in QUESTION.parameters.columnwidths %}
+column_widths.append({{width}})
+{% endfor %}
+
+if not student_answer.endswith(';'):
+    student_answer = student_answer + ';'
+db_files = [fname for fname in os.listdir() if fname.endswith('.db')]
+if len(db_files) == 0:
+    raise Exception("No DB files found!")
+elif len(db_files) == 1:
+    db_working = db_files[0][:-3]  # Strip .db extension
+else:
+    raise Exception("Multiple DB files not implemented yet, sorry!")
+
+SEPARATOR = "#<ab@17943918#@>#"
+controls = [".mode column", ".headers on"]
+if column_widths: # Add column width specifiers if given
+    controls.append(".width " + ' '.join(str(width) for width in column_widths))
+prelude = '\n'.join(controls) + '\n'
+
+{% for TEST in TESTCASES %}
+shutil.copyfile(db_files[0], db_working)  # Copy clean writeable db file
+testcode = """{{ TEST.testcode | e('py') }}"""
+extra = """{{ TEST.extra | e('py') }}"""
+code_to_run = '\n'.join([prelude, extra, student_answer, testcode])
+with open('commands', 'w') as sqlite_commands:
+    sqlite_commands.write(code_to_run)
+
+with open('commands') as cmd_input:
+    text_input = cmd_input.read()
+    try:
+        output = subprocess.check_output(['sqlite3', db_working],
+            input=text_input,
+            stderr=subprocess.STDOUT,
+            universal_newlines=True)
+        # Leila: convert it to lower case
+        print(output.lower())
+    except subprocess.CalledProcessError as e:
+        # Remove the line number info and the error code from the error message 
+        # author can match the rest as expected output.
+        output = re.sub(r"Runtime error near line \d+ *: *(.*?)( *\(\d+\))?$", r"Error: \1", e.output)
+        # Leila: convert it to lower case
+        print(output.lower())
+
+{% if not loop.last %}
+print(SEPARATOR)
+{% endif %}
+{% endfor %}]]></template>
+    <iscombinatortemplate></iscombinatortemplate>
+    <allowmultiplestdins></allowmultiplestdins>
+    <answer>drop table if exists  Works_for;
+drop table if exists  Worker;
+drop table if exists  Company;
+---------------------------------------------------------
+-- Create tables
+---------------------------------------------------------
+create table Worker(
+	Name varchar(50) not null,
+	City varchar(20) default null,	
+	Supervisor varchar(50) default null,
+	constraint WrkPK primary key (Name),
+	constraint WrkFK2 foreign key (Supervisor) 
+	references Worker(Name) 
+	on delete set null on update cascade
+	);
+
+create table Company(
+	Name varchar(50) not null,
+	City varchar(20) default null,	
+	
+	constraint ComPK primary key (Name)
+	);
+	
+create table Works_for(
+	WName varchar(50) not null,
+	CName varchar(50) not null,
+	Salary decimal(10,2),
+	
+	constraint WfPK primary key (WName, CName),
+	constraint WfFK foreign key (WName) 
+		references Worker(Name) 
+		on delete cascade on update cascade ,
+	constraint WfFK2 foreign key (CName) 
+		references Company(Name) 
+		on delete cascade on update cascade 	
+	);
+	
+</answer>
+    <validateonsave>1</validateonsave>
+    <testsplitterre></testsplitterre>
+    <language></language>
+    <acelang></acelang>
+    <sandbox></sandbox>
+    <grader>RegexGrader</grader>
+    <cputimelimitsecs></cputimelimitsecs>
+    <memlimitmb></memlimitmb>
+    <sandboxparams></sandboxparams>
+    <templateparams><![CDATA[{"columnwidths": [20,20,20,20,20,20,20,20]}]]></templateparams>
+    <hoisttemplateparams>0</hoisttemplateparams>
+    <extractcodefromjson>1</extractcodefromjson>
+    <templateparamslang>twig</templateparamslang>
+    <templateparamsevalpertry>0</templateparamsevalpertry>
+    <templateparamsevald><![CDATA[{"columnwidths":[20,20,20,20,20,20,20,20]}]]></templateparamsevald>
+    <twigall>0</twigall>
+    <uiplugin></uiplugin>
+    <uiparameters></uiparameters>
+    <attachments>0</attachments>
+    <attachmentsrequired>0</attachmentsrequired>
+    <maxfilesize>0</maxfilesize>
+    <filenamesregex></filenamesregex>
+    <filenamesexplain></filenamesexplain>
+    <displayfeedback>1</displayfeedback>
+    <giveupallowed>0</giveupallowed>
+    <prototypeextra></prototypeextra>
+    <testcases>
+      <testcase testtype="0" useasexample="0" hiderestiffail="0" mark="1.0000000" >
+      <testcode>
+                <text>---------------------------------------------------------
+-- Inserting rows. This should not produce any error
+-- Salary should be defined as a numeric value (float, decimal, etc.).
+-- Supervisor can be NULL as the president of the company may not have any supervisor.
+---------------------------------------------------------
+insert into Worker values
+   ('Daniel', 'Edinburgh', NULL),
+   ('Juan', 'Edinburgh', NULL);
+
+insert into Company values ('Sony', 'Glasgow');
+
+insert into Works_for values
+   ('Daniel', 'Sony', 9000);
+insert into Works_for values
+   ('Juan', 'Sony', 10000);
+
+
+SELECT worker.name, worker.city, supervisor, wname, cname, cast(salary as integer), company.name, company.city FROM worker, works_for, company order by salary;
+	  
+</text>
+      </testcode>
+      <stdin>
+                <text></text>
+      </stdin>
+      <expected>
+                <text>daniel                edinburgh                                   daniel                sony                  9000                  sony                  glasgow.*juan                  edinburgh                                   daniel                sony                  9000                  sony                  glasgow.*daniel                edinburgh                                   juan                  sony                  10000                 sony                  glasgow.*juan                  edinburgh                                   juan                  sony                  10000                 sony                  glasgow
+</text>
+      </expected>
+      <extra>
+                <text>.headers off
+</text>
+      </extra>
+      <display>
+                <text>SHOW</text>
+      </display>
+    </testcase>
+      <testcase testtype="0" useasexample="0" hiderestiffail="0" mark="1.0000000" >
+      <testcode>
+                <text>-- There should be a drop table for each table, in correct order
+---------------------------------------------------------
+-- Inserting rows. This should not produce any error
+---------------------------------------------------------
+insert into Worker values
+   ('Daniel', 'Edinburgh', 'Daniel');  
+
+insert into Company values
+	('Sony', 'Glasgow');    
+
+insert into Works_for values
+   ('Daniel', 'Sony', 10000.00);
+
+SELECT worker.name, worker.city, supervisor, wname, cname, company.name, company.city FROM worker, works_for, company;
+</text>
+      </testcode>
+      <stdin>
+                <text></text>
+      </stdin>
+      <expected>
+                <text>daniel                edinburgh             daniel                daniel                sony                  sony                  glasgow
+</text>
+      </expected>
+      <extra>
+                <text>.headers off
+PRAGMA foreign_keys = ON;
+drop table if exists Works_for;
+drop table if exists Worker;
+drop table if exists Company;
+
+---------------------------------------------------------
+-- Create tables
+---------------------------------------------------------
+create table Worker(
+	Name varchar(50) primary key
+	);
+    
+
+create table Company(
+	Name varchar(50) primary key
+	);
+	
+create table Works_for(
+	WName varchar(50) not null,
+	CName varchar(50) not null,
+	constraint workerforFK1 foreign key (wname) 
+    references worker(name),
+	constraint workerforFK2 foreign key (cname) 
+    references company(name) 
+	);
+insert into Worker values
+   ('Daniel');  
+
+insert into Company values
+	('Sony');    
+
+insert into Works_for values
+   ('Daniel', 'Sony');
+
+
+</text>
+      </extra>
+      <display>
+                <text>SHOW</text>
+      </display>
+    </testcase>
+      <testcase testtype="0" useasexample="0" hiderestiffail="0" mark="1.0000000" >
+      <testcode>
+                <text>-- Tables should be dropped only if they exist
+---------------------------------------------------------
+insert into Worker values
+   ('Daniel', 'Edinburgh', 'Daniel');  
+
+insert into Company values
+	('Sony', 'Glasgow');    
+
+insert into Works_for values
+   ('Daniel', 'Sony', 10000.00);
+
+SELECT worker.name, worker.city, supervisor, wname, cname, company.name, company.city FROM worker, works_for, company;
+</text>
+      </testcode>
+      <stdin>
+                <text></text>
+      </stdin>
+      <expected>
+                <text>\Adaniel                edinburgh             daniel                daniel                sony                  sony                  glasgow
+</text>
+      </expected>
+      <extra>
+                <text>.headers off
+drop table if exists Works_for;
+drop table if exists Worker;
+drop table if exists Company;
+
+---------------------------------------------------------
+-- Create tables
+---------------------------------------------------------
+
+create table Company(
+	Name varchar(50) primary key
+	);
+	
+
+insert into Company values
+	('Sony');    
+
+</text>
+      </extra>
+      <display>
+                <text>SHOW</text>
+      </display>
+    </testcase>
+      <testcase testtype="0" useasexample="0" hiderestiffail="0" mark="1.0000000" >
+      <testcode>
+                <text>-- Testing primary key of Worker.
+-- The following inserts should produce an ERROR if
+-- the key is defined correctly:  
+-- duplicate key value violates unique constraint
+---------------------------------------------------------
+insert into Worker values
+      ('Juan', 'Glasgow', 'Juan');  
+insert into Worker values
+      ('Juan', 'Glasgow', 'Juan');  
+
+
+</text>
+      </testcode>
+      <stdin>
+                <text></text>
+      </stdin>
+      <expected>
+                <text>error: unique constraint failed: worker.name
+</text>
+      </expected>
+      <extra>
+                <text></text>
+      </extra>
+      <display>
+                <text>SHOW</text>
+      </display>
+    </testcase>
+      <testcase testtype="0" useasexample="0" hiderestiffail="0" mark="1.0000000" >
+      <testcode>
+                <text>-- Testing primary key of Company
+-- The following inserts should produce an ERROR if
+-- the key is defined correctly:  
+-- duplicate key value violates unique constraint
+---------------------------------------------------------
+insert into Company values
+    ('Company 1', 'Glasgow');
+insert into Company values
+    ('Company 1', 'Glasgow');</text>
+      </testcode>
+      <stdin>
+                <text></text>
+      </stdin>
+      <expected>
+                <text>error: unique constraint failed: company.name
+</text>
+      </expected>
+      <extra>
+                <text></text>
+      </extra>
+      <display>
+                <text>SHOW</text>
+      </display>
+    </testcase>
+      <testcase testtype="0" useasexample="0" hiderestiffail="0" mark="1.0000000" >
+      <testcode>
+                <text>-- Testing primary key of Works_for
+-- There should be a primary key defined on worker name and company namer.
+-- The following inserts should produce an ERROR if
+-- the key is defined correctly:  
+-- duplicate key value violates unique constraint
+---------------------------------------------------------
+insert into Worker values
+   ('Juan', 'Glasgow', 'Juan');
+insert into Company values
+    ('Company 1', 'Glasgow'); 
+insert into Works_for values
+   ('Juan', 'Company 1',  10000.00);
+insert into Works_for values
+   ('Juan', 'Company 1',  10000.00);</text>
+      </testcode>
+      <stdin>
+                <text></text>
+      </stdin>
+      <expected>
+                <text>error: unique constraint failed: works_for.wname, works_for.cname
+</text>
+      </expected>
+      <extra>
+                <text></text>
+      </extra>
+      <display>
+                <text>SHOW</text>
+      </display>
+    </testcase>
+      <testcase testtype="0" useasexample="0" hiderestiffail="0" mark="1.0000000" >
+      <testcode>
+                <text><![CDATA[-- Testing FK of Worker
+-- This should produce an ERROR if the foreign key is defined correctly:  
+-- insert or update on table "Worker" violates foreign key constraint
+---------------------------------------------------------
+insert into Worker values
+      ('Juan', 'Glasgow', 'Amelia');  
+]]></text>
+      </testcode>
+      <stdin>
+                <text></text>
+      </stdin>
+      <expected>
+                <text>error: foreign key constraint failed
+</text>
+      </expected>
+      <extra>
+                <text>PRAGMA foreign_keys = ON;</text>
+      </extra>
+      <display>
+                <text>SHOW</text>
+      </display>
+    </testcase>
+      <testcase testtype="0" useasexample="0" hiderestiffail="0" mark="1.0000000" >
+      <testcode>
+                <text><![CDATA[-- Testing first FK (WName) of works_for
+-- This should produce an ERROR if the foreign key is defined correctly:   
+-- insert on table "Works_for" violates foreign key constraint 
+---------------------------------------------------------
+insert into Worker values
+   ('Company 1', 'Glasgow', 'Company 1');
+insert into Company values
+    ('Company 1', 'Glasgow');
+insert into Works_for values
+   ('Juan', 'Company 1',  10000.00);]]></text>
+      </testcode>
+      <stdin>
+                <text></text>
+      </stdin>
+      <expected>
+                <text>error: foreign key constraint failed
+</text>
+      </expected>
+      <extra>
+                <text>PRAGMA foreign_keys = ON;</text>
+      </extra>
+      <display>
+                <text>SHOW</text>
+      </display>
+    </testcase>
+      <testcase testtype="0" useasexample="0" hiderestiffail="0" mark="1.0000000" >
+      <testcode>
+                <text><![CDATA[-- Testing second FK (CName) of works_for
+-- This should produce an ERROR if the foreign key is defined correctly:   
+-- insert on table "Works_for" violates foreign key constraint
+---------------------------------------------------------
+
+insert into Worker values
+   ('Juan', 'Glasgow', 'Juan');
+insert into Company values
+    ('Juan', 'Glasgow'); 
+insert into Works_for values
+   ('Juan', 'Company 1',  10000.00);
+]]></text>
+      </testcode>
+      <stdin>
+                <text></text>
+      </stdin>
+      <expected>
+                <text>error: foreign key constraint failed
+</text>
+      </expected>
+      <extra>
+                <text>PRAGMA foreign_keys = ON;</text>
+      </extra>
+      <display>
+                <text>SHOW</text>
+      </display>
+    </testcase>
+<file name="empty.db" path="/" encoding="base64">U1FMaXRlIGZvcm1hdCAzAAQAAQEAQCAgAAAAFAAAAAcAAAADAAAABgAAAAsAAAAEAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUAC5jAA0AAAAABAAAA5gDmAOYA5gDmAOYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8UCThcZGQGCB3RhYmxlb3JkZXJzb3JkZXJzBkNSRUFURSBUQUJMRSAib3JkZXJzIiAob3JkZXJfbnVtIGludCB1bmlxdWUsIGFtb3VudCByZWFsLCBkYXRlIHRleHQgZGVmYXVsdCBDVVJSRU5UX0RBVEUsIGN1c3RvbWVyX2lkIGludCwgc2FsZXBlcnNvbl9pZCBpbnQpA8UBtQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAegMHFx8fAYFDdGFibGVjdXN0b21lcnNjdXN0b21lcnMEQ1JFQVRFIFRBQkxFIGN1c3RvbWVycyAoaWQgaW50IHVuaXF1ZSwgbmFtZSB0ZXh0LCBjaXR5IHRleHQsIGdyYWRlIGludCwgc2FsZXNwZXJzb25faWQgaW50KTEEBhdFHwEAaW5kZXhzcWxpdGVfYXV0b2luZGV4X2N1c3RvbWVyc18xY3VzdG9tZXJzBQPFAGQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABoPxkBAGluZGV4c3FsaXRlX2F1dG9pbmRleF9vcmRlcnNfMW9yZGVycwcAAAA7AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABQAAAAIAAAAFAAAABAAAAAcAAAAGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADQMCAAgCpAAD3wO8AuUDgQNhAsUDIgKkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB8IBgInGQICC7tKb3p5IEFsdGlkb3JlTW9zY293AMgTjx4GBgInGQECC8FHZW9mZiBDYW1lcm9uQmVybGluZBOLGwMGAiEZAQILuUJyYWQgR3V6YW5Mb25kb25kE40DQgAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB4HBgIlGQICC8BKdWxpYW4gR3JlZW5Mb25kb24BLBOKA6AAHwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB4FBgIhHQICC79CcmFkIERhdmlzTmV3IFlvcmsAyBOJHQQGAiUXAgILvEZhYmlhbiBKb2huc1BhcmlzASwTjgAAABwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAhAgYCIyECAgu9R3JhaGFtIFp1c2lDYWxpZm9ybmlhAMgTih8BBgIlHQECC7pOaWNrIFJpbWFuZG9OZXcgWW9ya2QTiQoAAAAIA8kAA+wD+gPJA+UD8wPeA9AD1wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYDAgELuwgGAwIBC8AHBgMCAQvBBgYDAgELvwUGAwIBC7wEBgMCAQu5AwYDAgELvQIFAwIJC7oNAAAADAJ6AAPfA74DnQN8A1sDOgMfAv4C3QK8ApsCegAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHwwGAwchAgIBEX1Ap8szMzMzMzIwMTItMDQtMjULuhOJHwsGAwchAgIBEXtAUtKPXCj1wzIwMTItMDgtMTcLuxOPHwoGAwchAgIBEXxAb05mZmZmZjIwMTItMDYtMjcLwBOKHwkGAwchAgIBEXNAo2DMzMzMzTIwMTItMTAtMTALwROLHwgGAwchAgIBEXpAnv24UeuFHzIwMTItMTAtMTALvBOOGQcGAwIhAgIBEXgWgDIwMTItMDktMTALuhOJHwYGAwchAgIBEXVAosEzMzMzMzIwMTItMDctMjcLvxOJHwUGAwchAgIBEXdAjaQAAAAAADIwMTItMDktMTALvROKHwQGAwchAgIBEXRAW6AAAAAAADIwMTItMDgtMTcLwROLHwMGAwchAgIBEXJAUFCj1wo9cTIwMTItMTAtMDULuhOJHwIGAwchAgIBEXlAcOpmZmZmZjIwMTItMDktMTALuRONHwEGAwchAgIBEXFAYtAAAAAAADIwMTItMTAtMDULvROKCgAAAAwDoQAD+QPpA7kD4QPRA9kDyQPxA8EDqQOxA6EAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHAwMBARF9DAcDAwEBEXsLBwMDAQERfAoHAwMBARFzCQcDAwEBEXoIBwMDAQEReAcHAwMBARF1BgcDAwEBEXcFBwMDAQERdAQHAwMBARFyAwcDAwEBEXkCBgMDCQERcQ==</file>
+    </testcases>
+  </question>
+
+</quiz>
