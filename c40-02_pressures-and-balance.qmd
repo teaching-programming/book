@@ -1,0 +1,38 @@
+## Pressures and rebalancing
+
+Importantly, these coding forces are not separate "modes" that you switch between like changing tools in a toolbar or dramatically entering a new mental state while cinematic music plays in the background.
+All three forces are always present to some extent.
+What changes is the relative intensity of each force and how heavily you choose to lean into them depending on the situation.
+
+This is why we use the term "force".
+A force is something that can be applied with varying strength.
+You can increase the intensity of independent coding when experimenting with a new idea or debugging an unfamiliar issue.
+You can increase the conscious force when making decisions about structure, reproducibility, or long-term maintainability.
+You can increase the social force when preparing code for collaborators, assessment, or future-you three weeks from now wondering what on earth past-you was thinking.
+
+The important point is that you have agency in how these forces are balanced.
+Different situations create different pressures, and they may suggest a certain balance over others.
+So, rephrased, the context may influence the intensity of each force, but it is you who actually decides how heavily to lean into each force.
+
+Some pressures are external.
+Deadlines may push you (temporarily) away from careful, consciously structured code, toward rapid exploratory work.
+Collaborator expectations may increase the need for clarity or documentation or consistency.
+Assessment tasks often increase the importance of social coding because your marker is, in a maybe slightly awkward sense, one of your collaborators.
+
+
+Other pressures are internal.
+You may notice that your code is becoming difficult to debug, difficult to explain, or increasingly fragile as your work becomes more complex.
+You may realise you are over-engineering a tiny script that somehow now contains five layers of wrappers and several coding strategies named after medieval architecture.
+These are all signals that your current balance of coding forces may no longer fit the task particularly well.
+
+
+With experience, programmers become better at recognising these pressures and adjusting accordingly.
+This is less about following fixed rules encountered on the world wild web [note for BB: that looks like a typo, butit's not], and more about developing judgement about when to increase or relax the emphasis on a particular force.
+You might begin with very independent exploratory work, gradually introduce more conscious structure as ideas settle, and later increase the social force once the code needs to be shared, reused, or maintained. [Call back to your section on how we think coders often develop along solo-social lines]
+
+The radar plot reflects this idea.
+It is not intended to divide coding into neat regions or categories, but to show a changing balance of forces at a given moment.
+The resulting shape is simply a snapshot of which forces are currently being emphasized and how strongly they are being applied.
+The goal is not to maximise every individual axis independently, but to arrive at a balance appropriate for the task at hand.
+The important part is not any single axis alone, but the overall shape created by how the forces interact.
+As such, the plot is best understood as a snapshot of the relationship between the forces, not simply three separate values.
