@@ -14,25 +14,38 @@ The important point is that you have agency in how these forces are balanced.
 Different situations create different pressures, and they may suggest a certain balance over others.
 So, rephrased, the context may influence the intensity of each force, but it is you who actually decides how heavily to lean into each force.
 
-Some pressures are external.
+Some pressures are **external**.
 Deadlines may push you (temporarily) away from careful, consciously structured code, toward rapid exploratory work.
 Collaborator expectations may increase the need for clarity or documentation or consistency.
 Assessment tasks often increase the importance of social coding because your marker is, in a maybe slightly awkward sense, one of your collaborators.
 
-
-Other pressures are internal.
+Other pressures are **internal**.
 You may notice that your code is becoming difficult to debug, difficult to explain, or increasingly fragile as your work becomes more complex.
 You may realise you are over-engineering a tiny script that somehow now contains five layers of wrappers and several coding strategies named after medieval architecture.
 These are all signals that your current balance of coding forces may no longer fit the task particularly well.
 
-
 With experience, programmers become better at recognising these pressures and adjusting accordingly.
-This is less about following fixed rules encountered on the world wild web [note for BB: that looks like a typo, butit's not], and more about developing judgement about when to increase or relax the emphasis on a particular force.
+This is less about following fixed rules encountered on the world wild web, and more about developing judgement about when to increase or relax the emphasis on a particular force.
 You might begin with very independent exploratory work, gradually introduce more conscious structure as ideas settle, and later increase the social force once the code needs to be shared, reused, or maintained. [Call back to your section on how we think coders often develop along solo-social lines]
 
 The radar plot reflects this idea.
 It is not intended to divide coding into neat regions or categories, but to show a changing balance of forces at a given moment.
-The resulting shape is simply a snapshot of which forces are currently being emphasized and how strongly they are being applied.
+The resulting shape is simply a snapshot of which forces are currently being emphasized and how strongly they are being applied. Thinking back to our seesaw metaphor, the radar plot is a snapshot of the seesaw at a given moment. 
 The goal is not to maximise every individual axis independently, but to arrive at a balance appropriate for the task at hand.
 The important part is not any single axis alone, but the overall shape created by how the forces interact.
 As such, the plot is best understood as a snapshot of the relationship between the forces, not simply three separate values.
+
+### Moving into the next dimension 
+
+Thus far, the framework as we have presented it can safely and easily live in a 2D mental space, represented by the radar plot and seesaw metaphor. 
+
+If you will permit us to further extend this metaphor, imagine that as you gain more awareness and experience on the seesaw of coding forces that the lever arms no longer move up and down but become a 3D puzzle pieces. As a learner acquiring a new programming language, you can think of your progression through the learning journey and the coding forces as a process of acquiring the puzzle pieces. Once the independent, conscious, and social pieces are acquired, they fit together like a globe or nutshell. If you think of each force as a piece of a globe, when they are brought together a new action is unlocked: spinning the globe and and navigating the full 3D space! 
+
+![Coding forces in 3D moving from a radar plot to nutshell](c40-images/nutshell.png){#fig-independent width=50%}
+
+In this metaphor, meta-awareness and reflection is the glue that fits the puzzle pieces together forming the globe and allowing you to take on the hands of God role and move the globe. This meta-awareness is only possible to reach once you have knowledge of all 3 forces. It is required to then apply a fitting intensity and direct forces that feels appropriate for the problem at hand. 
+
+Using the radar plot imagery when applied to a specific problem it is unrealistic (and difficult to visualize) maxed out intensity applied to all 3 forces. This is where the more 3D nutshell visual takes over. Your knowledge of the force can reach a maximum - this is where meta-awareness comes in to know how to best apply intensity to each force for the specific problem at hand. This is to say, critical thinking becomes your meta-awareness.
+
+And once you realise that you are applying your critical thinking skills in the form of meta-awareness of the coding forces, you can measure your own progress and development! 
+

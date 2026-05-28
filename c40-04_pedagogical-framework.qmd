@@ -2,8 +2,10 @@
 ## As a pedagogical framework
 
 One of the many benefits of this framework, in our very unbiased opinion, is that it is language agnostic and can be adapted with specific examples for whatever language(s) are being taught or used.
+
 As a reflection point, you may consider how code written for teaching and learning purposes is very different from code written for an open shared project or your own projects.
 This framework provides a model for considering why this is the case and vocabulary for communicating to students, other teaching staff, and even yourself.
+
 We have presented the framework forces in the order in which they are often (unintentionally) taught and experienced by learners.
 Independent (write or edit code on your own to make it execute without error) > Conscious (understand the bigger picture of your code base and where and how it might be used and make decisions accordingly) > Social (write code for others to read, use, or maintain) reflects the process as a learner and the forces that they may become more aware of as they progress from novice to competent and even intermediate or advanced.
 
@@ -11,29 +13,37 @@ This framework helps students understand why expectations change across tasks.
 It "allows" exploratory, messy code in learning contexts, while still setting clear standards for shared or assessed work.
 As an educator, learning how to think about these forces can help you identify where students are struggling and push against forces they may be struggling with.
 This framework provides a vocabulary to communicate that opens the door for insights and empathy while giving students the same tool.
+
 Rather than teaching a single notion of "good code," this framework teaches students to employ critical thinking skills and choose how to code based on context.
 It can be used a means of explicitly communicating to students why the code they find in different places (e.g., GitHub, StackOverflow, etc.) or see in the course may look or feel different and how to make informed decisions on how to model their own code depending on its use case.
 Shifting from rules to judgment is what shows a transition to more mature, adaptable programmers.
-The framework can be used to hang "good coding practices" on, both language specific and agnostic, and highlight why they are useful for considered good practice.
+
+The framework can be used to hang "good coding practices" on, both language specific and agnostic, and highlight **why** they are useful for considered good practice.
 For example, naming conventions can be good practice aligning with both conscious and social forces.
 File management allows for independent, conscious, and social forces to all shine.
 Code comments are an example of how the forces of coding that you are working in can change to make a “good” or “useful” comment.
 A code comment to yourself is very different from one intended for a colleague to maintain the code base and understand your decision making process.
-While we will not go into depth here (to save us all the headache for now), it also provides a language for discussing AI use not as something to accept or reject wholesale, but as a tool whose value depends on whether it supports independence, consciousness, and social responsibility.
-Using LLMs as a collaborator necessarily means that you must not take what is generated blindly and ensure it is social, which requires conscious and independent coding forces to be in full effect and awareness of the social force.
+
+While we will not go into depth here (to save us all the headache for now), it also provides a language for discussing AI use not as something to accept or reject wholesale, but as a tool whose value depends on whether it supports independence, consciousness, and social responsibility. Using LLMs as a collaborator necessarily means that you must not take what is generated blindly and ensure it is social, which requires conscious and independent coding forces to be in full effect and awareness of the social force.
 Reading and working with AI generated code also requires some intensity in the social force.
 Guiding questions if using tools such as LLMs when coding are:
-Do you understand the code that has been generated? Do you understand it well enough to debug it, not just what it is doing?
-Would your colleagues understand this code?
-If the LLM is a collaborator, how do you weigh its suggestions vs other (likely human) collaborator inputs?
-Equally, we would suggest that this framework provides a structured answer to ridiculous questions such as “Why should I learn to code if AI can seemingly generate code for me?”
-Our answer would be something along the lines of:
+
+* Do you understand the code that has been generated? Do you understand it well enough to debug it, not just what it is doing?
+* Would your colleagues understand this code?
+* If the LLM is a collaborator, how do you weigh its suggestions vs other (likely human) collaborator inputs?
+
+Equally, we would suggest that this framework provides a structured answer to ridiculous questions such as *“Why should I learn to code if AI can seemingly generate code for me?”*
+
+::: {.callout-caution collapse = "true"}
+## Our answer would be something along the lines of:
+
 That is fine if you want to do that, but you still must use the tool (AI) in a conscious way.
 You need to know how to prompt, which demonstrates a certain level of independence as you have to know what the ask for in a prompt.
 This does not demonstrate conscious thought on its own.
+
 In this framework it is your job to change the level of intensity of conscious thought.
 Similarly, you must intentionally decide what advice to listen to - human collaborator or AI? Should you be “guided” by the AI tool or should you be “directing” the tool? This hits all 3 forces.
-
+:::
 
 If you would like to hear more about our thoughts in this, get in touch or stay tuned for another chapter in Version 2 of the book.
 

@@ -7,33 +7,38 @@ If you’ve spent any time around programming education (or lurking on StackOver
 People talk a lot about things like reading the manual (rtfm)… debugging skills… DRY code (but not too DRY!)… clean code (but not too clean!).
 And entire books exist for each of these, often with very strong opinions.
 And yet, many learners struggle to apply them appropriately.
-The part that’s a bit rarer is seeing them all in the same room, talking to each other.
+The part that’s a bit rarer is seeing them all in the same room, talking to each other - or if you will permit, all together on the same seesaw. 
+
 More often, they’re presented like separate “best practices”, each living in its own neat little box.
 We might have read something about clean code… that leans heavily on social practices, presented as “writing for others”, “name things well”, or “write clear documentation”.
 But without much mention of the messy, trial-and-error habits that actually allow us to make progress in the first place.
 Or a debugging guide might encourage us to poke, prod, and experiment freely, but give us little guidance about when it’s time to slow down and be more deliberate.
+
 So the advice isn’t wrong, but tends to come across as ideas that are isolated from each other, instead of as a set of forces that can be deliberately balanced, where we, ourselves, can decide, rather than guess, how much to lean into a given force at a given time.
 And that leaves learners to stitch it all together themselves, which is a bit like being given three excellent maps without being told they’re of the same place.
 That’s where a lot of the tension creeps in.
 Beginners, especially, can end up feeling like they’re being asked to do contradictory things.
 “Write clean, self-documenting code” sits right next to “just try stuff and see what breaks,” with no explanation of how those ideas fit together.
 It’s not obvious that these aren’t competing rules, but different forces that make sense in different situations.
-The challenge for educators
-Most educators already feel this, even if they don’t always spell it out.
+
+## The challenge for educators
+Most educators already *feel* this, even if they don’t always spell it out.
 You know that a rough, experimental script written while figuring something out is perfectly fine - even desirable.
 You also know that the same code would raise eyebrows (or worse) if it showed up in an assessment or shared project.
 That sense of “what’s appropriate here?” develops over time.
 Learners, however, haven’t had time to build those instincts yet.
-And importantly, they may not even realise there is a shift to notice.
+And importantly, they may not even realise there *is* a shift to notice.
+
 A learner who has spent time writing code that is exploratory, maybe slightly chaotic or full of half-formed ideas, comments to self, and creative shortcuts may not understand why those same habits suddenly become a problem elsewhere.
-It’s not that they’re being careless, it’s just that they’re applying the advice they’ve encountered in the best way they know how… just without a clear sense of how or when to shift their approach as the context changes.
+It’s not that they’re being careless, it’s just that they’re applying the advice they’ve encountered in the best way they know how... just without a clear sense of how or when to shift their approach as the context changes.
+
 This often shows up in predictable ways.
 Bits of exploratory code sneak into submissions or shared projects, bringing their weirdness and chaos with them.
 The result? Code that’s harder to read, harder to trust, and harder to build on.
 On the flip side, some students go the other way by trying to write perfectly polished, fully documented code at all times.
 Which can be unnecessarily slow and frustrating.
-There’s also a slightly awkward truth worth saying out loud: assessment is collaborative.
-I.e.
-the assessor is your collaborator.
+
+There’s also a slightly awkward truth worth saying out loud: **assessment is collaborative.**
+i.e., the assessor *is* your collaborator.
 If your code is easy to read, understand, and trust, it’s not just “good practice”, it will also assess well.
 For many students, this is their first real experience of writing code for someone else, and without a clear way to frame that shift, assessment criteria can feel a bit arbitrary.

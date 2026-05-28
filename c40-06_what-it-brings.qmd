@@ -2,18 +2,23 @@
 ## What this framework brings
 
 This framework is an attempt to bring some clarity to a muddy reality, not by adding more rules, but by giving people better language.
+
 Instead of treating good coding as a single fixed standard (which we either meet or don’t), it frames things as a space we can move around in.
 Independent, Conscious, and Social aren’t boxes to tick; they’re forces we can lean into more or less, depending on what we’re doing.
 The more we apply one force to a problem, the more we move our mentality into our desired mode.
 Deliberately! And conversely, the more we feel ourselves being forced into a corner of a space that isn’t working for our problem, the more we can resist that pressure, and move ourselves into a different region of the force-space.
+
 Sometimes we need to experiment quickly and figure things out (Independent).
 Sometimes we need to slow down and think carefully about structure and decisions (Conscious).
 Sometimes we need to prioritise clarity for others (Social).
 Most of the time, we’re somewhere in between.
 And importantly, we can apply conscious thought to independently position ourselves where we need to be.
+
 The aim is to make that movement visible and intentional.
 Rather than relying on intuition that develops slowly (and unevenly), learners can start to recognise where they are, where they might need to be, and how to adjust.
+
 The radar shows that all three forces are always there, just pulling with different strengths.
-We don’t have to turn one off to use another - we rebalance the forces.
-This all works regardless of whether we are using R, Python, C, or something more obscure (中文 anyone?).
+We don’t have to turn one off to use another - we **rebalance** the forces.
+
+This all works regardless of whether we are using R, Python, C, or something more obscure ([中文](https://esolangs.org/wiki/%E4%B8%AD%E6%96%87) anyone?).
 The specifics change, but the forces don’t, which makes this something we can carry with us across courses, projects, and (eventually) jobs.
