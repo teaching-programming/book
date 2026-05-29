@@ -15,7 +15,7 @@ author:
   - name: Brittany Blankinship
     affiliation:  Edinburgh Medical School, University of Edinburgh
     email: b.blankinship@ed.ac.uk
-  - name: Patrica Loto
+  - name: Patricia Loto
     affiliation: FACENA, Universidad Nacional del Nordeste (UNNE)
     email: patricialoto@comunidad.unne.edu.ar
 ---
