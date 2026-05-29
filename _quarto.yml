@@ -43,8 +43,6 @@ format:
         bibliography: references.bib
         eval: true
         code-line-numbers: true
-        code-block-bg: true
-        code-block-border-left: true
         repo-url: https://github.com/teaching-programming/book
         toc: true
         toc-depth: 1
@@ -62,6 +60,7 @@ format:
         filters:
           - _theme/filters/callout-for-docx.lua
           - _theme/filters/authors-for-docx.lua
+          - _theme/filters/footnote-links-for-docx.lua
     epub:
         bibliography: references.bib
 
@@ -80,18 +79,18 @@ book:
 
     chapters:
         - index.qmd
-        # - 00-chapter-template.qmd
-
+        - 00-chapter-template.qmd
+# 
         # - P00_part-preface.qmd
-        # C0.1 How this book/comminity came about: Chapter from editors - how we got here and how we did it 
-        # C0.2 What's in the book (introduce the parts) 
-        
+        # C0.1 How this book/comminity came about: Chapter from editors - how we got here and how we did it
+        # C0.2 What's in the book (introduce the parts)
+
         # - P01_part-theories-applications.qmd
-        
+
         - C12_pair-programming-overview.qmd
         - C36_pair-programming-across-disciplines.qmd
         - C41_pair-programming-tutor-reflections.qmd
-        
+
         - C09_debugging-beyond-the-debugger.qmd
         # - C40_TODO.qmd
         - C05_coding-mindset.qmd
@@ -108,7 +107,7 @@ book:
 #        - C34_three-stars-one-wish.qmd
 
         # - P02_part-design-practice.qmd
-        
+
         - C16_peer-programming.qmd
         - C31_leveraging-the-heterogeneity.qmd
         - C23_pair-programming-fusion.qmd
@@ -116,7 +115,7 @@ book:
         - C01_teaching-python.qmd
         - C29_notebooks-for-novices.qmd
         - C07_teaching-C-to-novices.qmd
-        
+
         - C06_feminists-and-anarchists.qmd
         - C15_programming-without-computers.qmd
 #        - C17_coding-with-music.qmd
@@ -124,10 +123,10 @@ book:
         - C43-data-vis.qmd
 
         # - P03_part-assessment-feedback.qmd
-        
+
         - C38_skills-based-assessment.qmd
         - C35_action-feedback-plan.qmd
-        
+
         - C26.1-assessment-case-study.qmd
         - C02_genai-before-during-after.qmd
         - C20_automatic-marking.qmd

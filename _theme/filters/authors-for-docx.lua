@@ -19,7 +19,7 @@ local function styled_paragraph(inlines, style)
   return pandoc.Div (inlines, {["custom-style"] = style})
 end
 
-function turn_into_lines(el) -- maybe there is a better way to do this, but I'm taking each renderable component and turning it into a string.
+function turn_into_string(el) 
     local parts = {}
     for _, inline in ipairs(el.content) do
         if inline.t == "Str" then
@@ -33,6 +33,11 @@ function turn_into_lines(el) -- maybe there is a better way to do this, but I'm 
         end
     end
     local recombined_text = table.concat(parts)
+    return recombined_text
+end
+
+function turn_into_lines(el) -- maybe there is a better way to do this, but I'm taking each renderable component and turning it into a string.
+    local recombined_text = turn_into_string(el)
     local lines = {}
     for line in recombined_text:gmatch("[^\r\n]+") do
       table.insert(lines, line)
@@ -68,7 +73,7 @@ function lines_into_authors(lines)
   
   for i, line in ipairs(lines) do
     local key_author_info = line:match("^%-?%s*([^:]+):") -- everything before ":" but ignore optional "- " at start
-    local value_author_info = line:match(": ([^:]+)") -- everything after ": " 
+    local value_author_info = line:match(": (.+)") -- everything after ": " 
 
     if i == 1 and key_author_info ~= "author" then
       return authors
