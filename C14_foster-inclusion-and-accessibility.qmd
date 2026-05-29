@@ -60,7 +60,7 @@ Generally, designing teaching sessions and materials around Universal Design for
 
 In teaching programming there are different approaches to how material is presented. For example, Selby identifies four approaches: 1. code analysis, 2. building blocks, 3. simple units and 4. full systems [@selby_four_2011]. Code analysis begins with students analysing and understanding existing code before going onto writing pseudocode. Only later do students write full programs. This approach provides a structured way for students to first focus on programming logic before having to worry about syntax, which may reduce cognitive load. However some students may struggle with knowledge transfer between writing pseudocode and writing compilable code [@glaser_programming_2000].
 
-In other approaches (building blocks and simple units), students learn small units of code (individual constructs or set coding “phrases” respectively) and gradually build up to writing longer programs. These can lead to fragmented understanding, where students are not sure how to combine the components introduced together, and the early focus on syntax may be overwhelming for some [@selby_four_2011]. However, it does allow students to build up a toolbox of reusable code, which they can then apply in other scenarios, reducing the amount of recall and typing of precise syntax which is required which may pose a challenge for some students. The final approach that Selby [@selby_four_2011] outlines is full systems, where students are immersed in a real-life problem and programming concepts are introduced as needed. This is close to the discovery-led learning discussed previously. 
+In other approaches (building blocks and simple units), students learn small units of code (individual constructs or set coding “phrases” respectively) and gradually build up to writing longer programs. These can lead to fragmented understanding, where students are not sure how to combine the components introduced together, and the early focus on syntax may be overwhelming for some [@selby_four_2011]. However, it does allow students to build up a toolbox of reusable code, which they can then apply in other scenarios, reducing the amount of recall and typing of precise syntax which is required which may pose a challenge for some students. The final approach that @selby_four_2011 outlines is full systems, where students are immersed in a real-life problem and programming concepts are introduced as needed. This is close to the discovery-led learning discussed previously. 
 
 ## Classroom models
 
@@ -146,7 +146,7 @@ When done well, the combination of lecture and lab sessions can help facilitate 
 * an understanding of the rationale for learning and using the concept; and
 * an understanding of how to apply the concept to new problems --- problems beyond those given as homework or lab exercises [@mccartney_liminal_2009].
 
-Knuth [@knuth_theory_1991] spoke about the close relationship between theory and practice as follows:
+@knuth_theory_1991 spoke about the close relationship between theory and practice as follows:
 
 > “The main point I want to emphasize [...] is that both theory and practice can and should be present simultaneously. Theory and practice are not mutually exclusive; they are intimately connected. They live together and support each other.” [@knuth_theory_1991, p. 3]
 
