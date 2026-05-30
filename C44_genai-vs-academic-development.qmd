@@ -1,5 +1,5 @@
 ---
-title: "GenAI vs Academic Skills Development"
+title: "GenAI vs. Academic Skills Development"
 bibliography: references.bib
 author:
   - name: John Wilson
@@ -7,7 +7,9 @@ author:
     affiliation: Edinburgh Medical School, University of Edinburgh
 
 keywords:
-  - example
+  - critical-thinking
+  - responsible-programming	
+  - LLMs	
 ---
 
 ::: {.content-visible when-format="docx" note="this should be identical as authors above, for docx"}

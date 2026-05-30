@@ -6,11 +6,9 @@ author:
     affiliations: Engineering Education Lead at Perk (https://www.perk.com)
 
 keywords:
-  - debugging
-  - problem-solving
-  - learning-strategies
-  - AI
-  - studentr-esilience
+  - solving-errors	
+  - LLMs	
+  - coding-mindset
 ---
 
 ::: {.content-visible when-format="docx" note="this should be identical as authors above, for docx"}

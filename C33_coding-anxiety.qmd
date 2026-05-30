@@ -1,5 +1,5 @@
 ---
-title: "Overcoming coding anxiety: reflections and strategies"
+title: "Overcoming Coding Anxiety: Reflections and Strategies"
 bibliography: references.bib
 author: 
 - name: Tiago A. Marques 
@@ -56,9 +56,8 @@ author:
       country: China
 
 keywords:
-  - anxiety
-  - coding
-  - teaching
+  - student-engagement	
+  - accessibility-and-inclusion
 ---
 
 ::: {.content-visible when-format="docx" note="this should be identical as authors above, for docx"}

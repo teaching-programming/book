@@ -8,9 +8,9 @@ author:
     affiliations: School of Philosophy, Psychology, and Language Sciences, University of Edinburgh
 
 keywords:
-  - alternative assessment
-  - skills-based grading
-  - case study
+  - alternative-assessment	
+  - assessment-design	
+  - accessibility-and-inclusion
 ---
 
 ::: {.content-visible when-format="docx" note="this should be identical as authors above, for docx"}

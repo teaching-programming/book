@@ -11,11 +11,7 @@ author:
     affiliations: Edinburgh Futures Institute, University of Edinburgh
 
 keywords:
-  - interdisciplinary learning
-  - computational methods
-  - open training material
-  - research innovation
-  - humanities
+  - short-courses
 
 ---
 

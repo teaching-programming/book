@@ -1,5 +1,5 @@
 ---
-title: "Case study from Scotland’s Rural College: The wild(life) side of pair programming"
+title: "Case Study From Scotland’s Rural College: The Wild(Life) Side of Pair Programming"
 bibliography: references.bib
 author:
   - name: Ignacio Sepúlveda
@@ -8,7 +8,8 @@ author:
     affiliations: Oatridge College, Scotland's Rural College
 
 keywords:
-  - pair-programming
+  - pair-programming	
+  - student-engagement
 ---
 
 ::: {.content-visible when-format="docx" note="this should be identical as authors above, for docx"}

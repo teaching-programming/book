@@ -1,5 +1,5 @@
 ---
-title: "An optimistic outlook on Teaching, Learning and Assessment for coding with the emergence of generative AI"
+title: "An Optimistic Outlook on Teaching, Learning and Assessment for Coding With the Emergence of Generative AI"
 bibliography: references.bib
 
 author:
@@ -21,9 +21,8 @@ author:
     affiliations: School of Mathematics, The University of Edinburgh
     
 keywords:
-  - GenAI‑resistant assessment
-    AI‑assisted coding
-  - Prompt engineering
+  - LLMs	
+  - scalable-assessment
 ---
 
 ::: {.content-visible when-format="docx" note="this should be identical as authors above, for docx"}

@@ -1,10 +1,14 @@
 ---
-title: "Changing civil engineering students' mindset toward programming"
+title: "Changing Civil Engineering Students' Mindset Toward Programming"
 format: html
 bibliography: references.bib
 author:
   - name: Nguyen Q. Chien
     affiliations: School of Engineering, University of Edinburgh
+
+keywords:
+  - tutor-experience	
+  - coding-mindset
 ---
 
 ::: {.content-visible when-format="docx" note="this should be identical as authors above, for docx"}
