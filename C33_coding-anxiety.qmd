@@ -58,6 +58,7 @@ author:
 keywords:
   - student-engagement	
   - accessibility-and-inclusion
+  - building-community
 ---
 
 ::: {.content-visible when-format="docx" note="this should be identical as authors above, for docx"}
