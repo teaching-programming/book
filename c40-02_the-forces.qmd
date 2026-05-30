@@ -7,48 +7,48 @@ This often presents in debugging, especially knowing when and how to navigate do
 Independent coding is about daring to try things out or experiment with ideas, adapt existing approaches, or develop your own new approaches without step-by-step guidance from a blog, colleague, or teacher.
 
 Much of personal learning lives here.
-Think "I can do it all by myself and know where to look for help and how to implement it (all by myself) if not".
+Think "I can do it all by myself, and how to implement it (all by myself), and know where to look for help if not".
 When primarily leaning into or applying the independent coding force you might produce exploratory scripts, small experiments, and the kind of trial-and-error work that helps to build competence and intuition.
 
 Strong independent coding develops with time and once solid, presents as the confidence to be able to independently learn new packages or workflows.
 Independence is what allows programmers to keep moving forward when they encounter unfamiliar problems.
-This is often the hallmark of "strong coders".
-It is not about knowing everything but having the confidence and skillset to learn and apply (nearly) anything.
+This is one of the hallmarks of "strong coders".
+It is not about knowing everything but having the confidence and skillset to learn and apply (nearly) anything, or to proactively decide to seek help when necessary.
 Programming skillsets like problem decomposition and debugging come into play here, which are built and strengthened through practice and exposure.
 
-![ Asking for help with everything. Knowing when, how, and where to ask for help](c40-images/independent.png){#fig-independent width=50%}
+![A dominant Independent force.
+Being close to the centre of the radar plot suggests zero independence, waiting to be given answers.
+The far end of the axis suggests taking the initiative to make progress, and judging when, how, and where to find neceassary help.](c40-images/independent-zoomed.png){#fig-independent width=50%}
 
-[TODO] insert image with intensity scale 
-Asking for help with everything ----------------------------------------- Knowing when, how, and where to ask for help 
 
 **Conscious Coding** focuses on awareness and intention.
 This coding force is all about being mindful and making deliberate (and informed) choices about the structure, workflow, tools you choose to use in your code base.
 Conscious coding requires thinking ahead about structure, assumptions, and trade-offs rather than just making code "work".
-When coding consciously, you need to consider the bigger picture of how, where your code will be implemented, how it can be maintained, and why you are writing a given bit of code.
-When primarily in this force, code comments will document why certain decisions were made (e.g., using one suite of packages over another due to downstream integration, etc.).
+When coding consciously, you need to consider the bigger picture of how and where your code will be implemented, how it can be maintained, and why you are writing a given bit of code, sometimes even at the level of individual lines.
+When this force is the dominant force in your mindset, code comments should document why certain decisions were made (e.g., using one suite of packages over another due to downstream integration, etc.).
  
-This is where questions about workflow, reproducibility, and tool choice live-including how and when to use AI. [^C40-AI]
-This coding force is inclusive of thoughtful use of AI or LLMs.
-Always bear in mind what it produces, when it is helpful, and when reliance on it may hinder learning, flexibility, or long-term understanding.
+This is where questions about workflow, reproducibility, and tool choice live, including if or how to use AI tools! [^C40-AI]
+Always bear in mind what AI produces, when it is helpful, and when reliance on it may hinder learning, flexibility, or long-term understanding.
 This is especially important when you are developing your skills.
+Learners may well encounter experienced coders that routinely use AI, but they should consider that perhaps those coders have already mastered the skills they are trying to learn!
 One good piece of advice is to type every single line of code AI produces with your own fingertips - avoid the temptation of mindless copy-pasting!
-This force is not about speed in making code that "works" or simply executes.
+This force is not about speed in making code that "works" or simply executes, it's about making conscious decisions using learned judgement
 
 [^C40-AI]: Here we intentionally use AI generally not just Generative AI or LLMs, but AI as an umbrella term including developing tools like agents. 
 
 Conscious coding asks you to slow down and reflect:
 
-  - Do I understand what this code is doing?
-  - Do I understand how to use this solution in another situation?
-  - Is this approach appropriate for this task?
+- Do I understand what this code is doing?
+- Do I understand how to use this solution in another situation?
+- Is this approach appropriate for this task?
   
 If the answer is no to any of the above, take the time to experiment and learn (moving into the independent coding force) until the answers are yes.
 Otherwise, if time does not permit exploratory learning, do not use an approach or solution you do not understand.
 
-![Closer to centre represents blind/mindless copy pasting AI outputs. Closer to tip represents making decisions based on long term maintenance of the code, only implementing solutions you understand and can debug](c40-images/conscious.png){#fig-conscious width=50%}
+![A dominant conscious force.
+Being closer to the centre represents a lack of consideration about the code being written, such as the blind/mindless copy pasting of AI outputs.
+Closer to tip represents making decisions based on long term maintenance of the code, only implementing solutions you understand and can debug.](c40-images/conscious-zoomed.png){#fig-conscious width=50%}
 
-[TODO] insert image with intensity scale 
-Blind/mindless copy pasting AI outputs ----------------------------------------- Making decisions based on long term maintenance of the code, only implementing solutions you understand and can debug  
 
 **Social Coding** focuses on communication.
 Code is written to be read by other humans and executed by the machine.
@@ -61,76 +61,82 @@ This often presents itself in robust documentation and ensuring consistency in p
 Doing this well means writing code with clarity of meaning - i.e., consistent code style, descriptive naming conventions, and clear documentation though judicious use of comments, and properly documenting your functions.
 
 When coding with a focus on the social force, your code may become longer, taking up more lines - which is not a bad thing! It does not mean your code is not DRY (the principle of Do not Repeat Yourself) but rather balances such principles with readability and communication.
-Collaborative projects, research codebases, and (...assessed work in courses...) sit in this space, where maintainability and clarity are as important as correctness.
+Collaborative projects, research codebases, (and... assessed work in courses...), where maintainability and clarity are as important as correctness, depend heavily on a strong application of the social force.
+A useful realization for a learner to have is that collaborators may be people that you never have an actual face to face conversation with.
+Socially aware code, then, has to be friendly and approachable and the best ways to do this are to provide clear, accessible documentation, and code that is also self-documenting.
 
-![Closer to the centre represents ugly rapid code without structure. Closer to the tip represents code nicely refactored with the intention of sharing with collaborators or colleages.](c40-images/social.png){#fig-social width=50%}
+![A dominant Social force.
+Closer to the centre represents, possibly rapididly developed, code that is ugly or without structure.
+Closer to the tip represents code nicely refactored for maximal readability, with the intention of sharing with collaborators or colleages.](c40-images/social-zoomed.png){#fig-social width=50%}
 
-[TODO] insert image with intensity scale - scrappy unstructured code > refactored friendly and readable code  
-Ugly rapid code without structure ----------------------------------------- Refactored code with the intention of sharing with collaborators or colleagues who you may not speak to (i.e., needs to be rewritten in a fully self-documenting, approachable way) 
+Different tasks call for the forces to be applied with different intensities, to actively balances them in the way that best fits the situation.
+What that balance might look like, is a deliberate choice of the coder:
 
-Different tasks call for different balances and
-intensities:
-
-* **quick exploratory work** may mean a priority on independence and experimentation.
-* **short-lived scripts** might justifiably ignore social expectations.
-If that exploratory work transitions into being **integrated into a proper project with collaborators**, the conscious and social forces will be more at play, likely requiring a tidying up and reconsideration of the code.
-* **collaborative projects** need more from conscious and social forces
-troubleshooting falls at the intersection of conscious and independent coding forces
-* **research and work projects** typically sit near the center, requiring independence to solve problems, consciousness to make good design decisions, and social awareness so others can understand, reuse, and replicate the work.
+- **quick exploratory work** may mean a dominance of independence because this allows faster iteration and experimentation.
+- **short-lived scripts** might justifiably ignore social expectations.
+If that exploratory work transitions into being **integrated into a proper project with collaborators**, the influence of the conscious and social forces will become more important, likely requiring a tidying up and reconsideration of the code.
+- **collaborative projects** need more from conscious and social forces
+- **troubleshooting** may require a shared dominance of the conscious and independent coding forces
+- **research and work projects** typically sit near the centre, requiring independence to solve problems, consciousness to make good design decisions, and social awareness so the rest of your team can understand, reuse, and replicate the work.
 
 ## As a tool for reflection - questions to ask yourself in navigating these coding forces
-We have intentionally chosen the term "force" to emphasise that these are not discrete modes you switch between, but influences that are always present…and which you have agency over.
+
+We have intentionally chosen the term "force" to emphasise that these are not discrete modes you switch between, but influences that are always present… and which you have agency over.
 Each force can be applied with varying intensity depending on the situation, which is where your agency comes in.
  
 This framing makes these forces something you can actively work with.
-They become levers you can pull to adjust each force, to manipulate how strongly each one shows up in your code.
+They become levers you can pull to adjust each force, to manipulate how strongly each one shows up in your coding workflow.
 In practice, this isn't about turning one force "on" and another "off", but more like pulling levers that allow you to fiddle with the relative intensities of each force.
-This leads to a continuous tuning/rebalancing of forces as required by the current context.
+This leads to a continuous tuning or rebalancing of forces as required by the current context.
  
 Of course, those adjustments do not happen in a vacuum.
 They are often shaped by "pressures" - internal or external signals such as deadlines, collaborator expectations, or even just that weird feeling that there's something not quite right in your code.
 The radar plot reflects this idea.
-Rather than separating forces into neat regions (as a Venn diagram might imply for example) it shows them all present at once, just at different intensities.
-The resulting shape is simply a snapshot of how things are balanced at a given moment. 
+Rather than separating forces into neat regions it shows them all present at once, just at different intensities.
+The resulting shape is simply a snapshot of how things are balanced at a given moment (@fig-radar-gif).
 
-[TODO insert gif here??]
+![Ever changing balance of independent, conscious, and social code forces.](c40-images/ir-radar.gif){#fig-radar-gif} 
  
-Moving about the spaces these coding forces define requires reflection and awareness.
-This can be regularly asking yourself, "What am I doing right now and where do I want to be?".
+These three forces define a "mindset space", different regions of which are better suited to different applications.
+Moving about this mindset space requires reflection and awareness.
+This can be regularly asking yourself, "What am I doing right now and what mindset do I need to adopt?".
  
 Importantly, it should be understood that using these coding forces is not a matter of switching from one to another.
 It's not as if you turn off "social coding" and suddenly become a purely independent coding machine.
 You do not take a metaphorical turn off Conscious Drive in order to exclusively be on Independence Avenue.
-Rather, you move around these forces dynamically with the intensity of each force adapting to the context or circumstance.
+Rather, you deliberately and dynamically alter the relative intensities of each force adapting to the context or circumstance.
 
 You can think of the radar plot like a 3-way seesaw with each coding force functioning as a lever arm of the seesaw. 
-All three forces are always in play just as all lever arms are in play on a seesaw though with different weights. 
+All three forces are always in play just as all lever arms are in play on a seesaw though with different weights.
+As a visual, this analogy is useful because it highlights that raising one lever arm affects at least one of the others.
 In practice, this feels less like stepping between modes and more like constantly rebalancing, or repositioning.
-You might lean heavily on independence when poking at a new problem, then gradually bring in more conscious structure as you converge to something worth keeping and then add social clarity as things settle down or need to be shared.
+You might lean heavily into independence when poking at a new problem, then gradually bring in more conscious structure as you converge to something worth keeping and then add social clarity as things settle down or need to be shared.
 
 Speaking of our own tendencies, it is often that we (and possibly also the case for you) naturally fall into fast code that is not social or conscious.
 Code is never perfect the first time it is written, which is to say, we never get it perfect right out of the gates.
 Outputting final "socially acceptable" code is iterative, where each iteration changes the intensity of each force.
-When design course content, however, the social coding force strongly dominates in the first instance.
+When designing course content, however, the social coding force strongly dominates in the first instance.
 
 :::{.callout-tip collapse = "true"}
-# Some questions you can ask yourself when navigating and moving between these coding forces are: 
+## Finding the right balance
 
-**To move into the Independent coding force:** 
+Some questions you can ask yourself when searching for the right balance between these coding forces: 
+
+**To increase the influence of the Independent coding force:** 
 
 * I am stuck, how can I create a mini-reprex[^C40-reprex] for this issue?
 
-**To move into the Social coding force**
+**To increase the influence of the Social coding force**
 
 * Will a collaborator (or marker) understand this code? 
 
-**To move into the Conscious coding force**
+**To increase the influence of the Conscious coding force**
 
 * Where or how will this code base be used? Does it need to be over-engineered and consider all edge cases, or no?
 * Oh, I have a lot of functions, should I maybe separate them out into a separate script and source them in for debugging and maintainability? 
 :::
 
-More generally, when building up the awareness of what coding force you are operating in and developing the reflexivity skill, it can be useful to take a step back and reflect on the following: 
+More generally, when building up the awareness of the relative dominance of the coding forces and developing the reflexivity skill, it can be useful to take a step back and reflect on the following: 
 
 * What mindset and coding force am I operating in right now?
 * What mindset should I be in right now?
