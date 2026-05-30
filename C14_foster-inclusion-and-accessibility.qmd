@@ -1,6 +1,7 @@
 ---
-title: "Reflections on Practices to Foster Inclusion and Accessibility in Programming Teaching"
+title: "Practices to Foster Inclusion and Accessibility in Programming Teaching"
 bibliography: references.bib
+
 author:
   - name: Rebecca L. Colquhoun
     affiliation: Department of Earth Science and Engineering, Imperial College London
@@ -18,6 +19,12 @@ author:
   - name: Patricia Loto
     affiliation: FACENA, Universidad Nacional del Nordeste (UNNE)
     email: patricialoto@comunidad.unne.edu.ar
+
+keywords:
+  - accessibility-and-inclusion	
+  - student-engagement	
+  - pair-programming	
+  - flipped-classroom
 ---
 
 ::: {.content-visible when-format="docx" note="this should be identical as authors above, for docx"}

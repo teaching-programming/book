@@ -8,10 +8,8 @@ author:
     affiliations: Usher Institute, University of Edinburgh
 
 keywords:
-  - pair programming
-  - teaching support
-  - challenges
-  - reflections
+  - pair-programming	
+  - tutor-experience
 ---
 
 ::: {.content-visible when-format="docx" note="this should be identical as authors above, for docx"}

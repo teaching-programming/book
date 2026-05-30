@@ -14,10 +14,13 @@ author:
   - name: Devanjan Bhattacharya
     affiliation: Bayes Centre, University of Edinburgh
     email: d.bhattacharya@ed.ac.uk
+
 keywords:
-  - systems thinking
-  - computer programs
-  - conceptual systems
+  - LLMs	
+  - responsible-programming	
+  - education-ecosystem	
+  - critical-thinking	
+  - coding-mindset
 ---
 
 ::: {.content-visible when-format="docx" note="this should be identical as authors above, for docx"}

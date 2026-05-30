@@ -14,9 +14,7 @@ author:
     affiliations: School of Mathematics and Maxwell Institute for Mathematical Sciences, University of Edinburgh
 
 keywords:
-  - data analysis
-  - machine learning
-  - Python
+  - curriculum-design
   - statistics
 ---
 ::: {.content-visible when-format="docx" note="this should be identical as authors above, for docx"}

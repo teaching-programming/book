@@ -23,9 +23,12 @@ author:
     affiliations: Division of Psychiatry, Institute for Neuroscience and Cardiovascular Research, University of Edinburgh
 
 keywords:
-  - peer programming
-  - group work
-  - collaborative learning
+  - pair-programming	
+  - scalable-assessment	
+  - building-community	
+  - tutor-experience	
+  - flipped-classroom	
+  - statistics 
 ---
 
 ::: {.content-visible when-format="docx" note="this should be identical as authors above, for docx"}

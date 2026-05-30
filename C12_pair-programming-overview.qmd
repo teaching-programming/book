@@ -1,5 +1,5 @@
 ---
-title: "Where Do I Even Start With Pair Programming in My Classroom? A Conversation With Seasoned Practitioners."
+title: "Where Do I Even Start With Pair Programming in My Classroom? A Conversation With Seasoned Practitioners"
 bibliography: references.bib
 author:
   - name: Pawel Orzechowski
@@ -8,13 +8,14 @@ author:
     affiliation: Edinburgh Medical School, University of Edinburgh
   - name: Brittany Blankinship
     email: b.blankinship@ed.ac.uk 
+    corresponding: true
     affiliation: Edinburgh Medical School, University of Edinburgh
   - name: Kasia Banas
     affiliation: Edinburgh Medical School, University of Edinburgh
     
 keywords:
-  - pair programming
-  - groupwork
+  - pair-programming	
+  - flipped-classroom
 ---
 
 ::: {.content-visible when-format="docx" note="this should be identical as authors above, for docx"}
@@ -24,7 +25,8 @@ author:
     corresponding: true
     affiliations: Edinburgh Medical School, University of Edinburgh
   - name: Brittany Blankinship
-    email: b.blankinship@ed.ac.uk 
+    email: b.blankinship@ed.ac.uk
+    corresponding: true
     affiliations: Edinburgh Medical School, University of Edinburgh
   - name: Kasia Banas
     affiliations: Edinburgh Medical School, University of Edinburgh

@@ -1,14 +1,15 @@
 ---
-title: "A gentle introduction to coding: narratives from a programming summer school for social sciences and humanities"
+title: "A Gentle Introduction to Coding: Narratives From a Programming Summer School for Social Sciences and Humanities"
 bibliography: references.bib
 author:
   - name: Pawel Orzechowski
     corresponding: true
     affiliations: Edinburgh Medical School, University of Edinburgh
+
 keywords:
-  - bootcamp
-  - social-science
-  - summer-school
+  - short-courses
+  - coding-mindset	
+  - pair-programming	
 ---
 
 ::: {.content-visible when-format="docx" note="this should be identical as authors above, for docx"}

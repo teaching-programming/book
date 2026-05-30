@@ -1,5 +1,5 @@
 ---
-title: "Leveraging the heterogeneity: teaching computing skills to a multidisciplinary cohort with a variable skill level"
+title: "Leveraging the Heterogeneity: Teaching Computing Skills to a Multidisciplinary Cohort With a Variable Skill Level"
 bibliography: references.bib
 author:
   - name: Katerina Michalickova
@@ -13,9 +13,8 @@ author:
     affiliations: Imperial College London
 
 keywords:
-  - multidisciplinary context
-  - multi-skill context
-  - group work
+  - curriculum-design	
+  - student-engagement
 ---
 
 ::: {.content-visible when-format="docx" note="this should be identical as authors above, for docx"}

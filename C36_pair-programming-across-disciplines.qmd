@@ -12,14 +12,13 @@ author:
     email: b.blankinship@ed.ac.uk
     affiliations: Edinburgh Medical School, University of Edinburgh
   - name: Umberto Noè
-    orcid: 0000-0002-4962-5189
     email: Umberto.Noe@ed.ac.uk
     affiliations: School of Philosophy, Psychology and Language Sciences, University of Edinburgh
+
 keywords:
-  - pair programming
-  - group work
-  - student voice
-  - community
+  - pair-programming	
+  - accessibility-and-inclusion	
+  - building-community
 ---
 
 ::: {.content-visible when-format="docx" note="this should be identical as authors above, for docx"}
@@ -34,7 +33,6 @@ author:
     email: b.blankinship@ed.ac.uk
     affiliations: Edinburgh Medical School, University of Edinburgh
   - name: Umberto Noè
-    orcid: 0000-0002-4962-5189
     email: Umberto.Noe@ed.ac.uk
     affiliations: School of Philosophy, Psychology and Language Sciences, University of Edinburgh
 :::

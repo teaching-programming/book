@@ -1,5 +1,5 @@
 ---
-title: "Lost in Translation: Complexities and Good Practices of Translating Coding-based Teaching Materials Across Multiple Human Languages"
+title: "Lost in Translation: Complexities and Good Practices of Translating Coding-Based Teaching Materials Across Multiple Human Languages"
 bibliography: references.bib
 author:
   - name: Olexandr Konovalov
@@ -15,10 +15,7 @@ author:
     affiliations: rOpenSci, Universidad Austral, R-Ladies, The Carpentries
 
 keywords:
-  - Translation platforms
-  - Internationalisation/Localisation
-  - Coding-based teaching materials
-  - Multilingual education
+  - accessibility-and-inclusion
 ---
 
 ::: {.content-visible when-format="docx" note="this should be identical as authors above, for docx"}
