@@ -15,7 +15,6 @@ author:
     email: d.bhattacharya@ed.ac.uk
 
 keywords:
-  - LLMs	
   - responsible-programming	
   - education-ecosystem	
   - critical-thinking	
