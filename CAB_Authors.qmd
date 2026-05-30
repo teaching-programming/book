@@ -8,7 +8,7 @@ bibliography: references.bib
 
 Note: if your profile is not below, duplicate this template and ad dyourself at the bottom. Upload your image to chapters/authors/ and keep it as jpg, max 1MB in size. 
 
-### Template Person (she/her)
+### Exampla Personska (she/her)
 ##### Teaching Fellow, Some Department, University of Bananas
 <!-- ![](/chapters/authors/person-name.jpg ){fig-alt="Person Name Profile" width=30% } -->
 
@@ -140,7 +140,6 @@ Officially I'm a physicist, and stumbled into research-only University track, bu
 
 Work website: <https://www.gla.ac.uk/schools/physics/staff/samuelskipsey/>
 
-
 ----
 
 ### Francisco Queiroz (he/him)
@@ -211,7 +210,6 @@ My work is driven by a vision of a flourishing future for and through higher edu
 
 ORCID: <https://orcid.org/0000-0002-0608-2575>
 
-
 ----
 
 ### Joseph El Gemayel
@@ -242,7 +240,6 @@ LinkedIn: <https://www.linkedin.com/in/yashique/>
 ##### ScotGrid Technical Co-ordinator, School of Physics and Astronomy, University of Glasgow
 I am a research IT specialist who has worked in various disciplines across science and engineering; I currently manage large computer systems primarily used to crunch numbers for CERN, the European Organisation for Nuclear Research.  Having originally trained as a software engineer, I now teach physicists and students from other backgrounds how to use computers—particularly those running Linux operating systems—and how to develop software for use in scientific research.
 
-
 ----
 
 ### Lucia Michielin (she/her)
@@ -252,7 +249,6 @@ I am a research IT specialist who has worked in various disciplines across scien
 Lucia Michielin works within the Data-Led Methods and Research Technology team (EFI-University of Edinburgh), where she leads a data-led methods training programme.  Her work supports researchers in the Arts, Humanities, and Social Sciences who wish to incorporate digital and data-driven methods into their research projects and offers a wide range of learning opportunities, from introductory coding courses to hands-on workshops, challenge-led collaborative work, and in-depth explorations of various digital methods. Lucia has considerable experience in designing and delivering training courses focused on data skills and digital research methods, as well as applying computational methods in humanities research. She holds a PhD in Classics from the University of Edinburgh and has developed extensive expertise in the Digital Humanities.
 
 Work website: <https://edwebprofiles.ed.ac.uk/profile/dr-lucia-michielin>
-
 
 ----
 
@@ -447,7 +443,6 @@ I am a Teaching Fellow and joined the teaching family as a Graduate Teaching Ass
 
 ORCID: <https://orcid.org/0000-0002-6906-4219>
 
-
 ----
 
 ### Ruini Qu (she/her)
@@ -456,16 +451,13 @@ ORCID: <https://orcid.org/0000-0002-6906-4219>
 
 I specialize in Management Science and Operations Research, focusing on how technical tools can be leveraged within Business Analytics. As someone relatively new to teaching code, I am constantly exploring different pedagogical approaches to find what truly resonates with business students. My goal is to move beyond syntax and help learners see the practical side of programming. Outside the classroom, I enjoy DIY projects and crafting handmade pieces—finding the same joy in building things by hand as I do in building a good piece of analysis.
 
-
 ----
 
 ### Leila Shila Shafti
 ##### Teaching Fellow, University of Strathclyde
 I have been teaching programming for more than two decades in Spain and the UK. I have experience teaching both online and in-person classes across undergraduate and postgraduate programmes. I am particularly passionate about exploring innovative methods to enhance teaching and learning, with the aim of making complex concepts more accessible and strengthening practical understanding. I focus on creating an inclusive and supportive learning environment that encourages engagement and curiosity.
 
-
 ----
-
 
 ### Andrew MacLaren (he/him)
 ##### Associate Professor, Heriot-Watt University
@@ -484,7 +476,6 @@ LinkedIn: <https://www.linkedin.com/in/dr-andrew-maclaren-40518216b/>
 I'm a musician who primarily uses coding as a way to explore music-making. I teach on courses that relate to this in the school of music at the University of Edinburgh.
 
 Personal website: <https://tommudd.co.uk>
-
 
 ----
 
@@ -561,5 +552,85 @@ LinkedIn: <https://www.linkedin.com/in/ben-waugh-148053152/>
 I work at the intersection of spatial ecology and statistics, developing biologically realistic models to understand how space use, dispersal, and demography respond to density, environment, and landscape structure. The goal is to turn ecological theory into practical tools for conservation and management.
 
 Personal website: <https://sutherlandecology.com/index.html>
+
+----
+
+TODO: Sarah Elliot
+
+----
+
+TODO: Neil Bray
+
+----
+
+TODO: Steven Watterson 
+
+----
+
+TODO: Tuğrulcan Elmas 
+
+----
+
+TODO: Hebatallah Shoukry
+
+----
+
+TODO: Devanjan Bhattacharya
+
+----
+
+TODO: John Wilson
+
+----
+
+TODO: William P. Kay
+
+----
+
+TODO: Gule Saman 
+
+----
+
+TODO: Jonathan Holt 
+
+----
+
+TODO: Luke Stephens
+
+----
+
+TODO: Arif Budiarto 
+
+----
+
+TODO: William Bell
+
+----
+
+TODO: Jeremy Singer 
+
+----
+
+TODO: Neil Anderson 
+
+----
+
+TODO: Matthew Collins
+
+----
+
+TODO: Suzanne Goopy 
+
+----
+
+TODO: Alex Buckley 
+
+----
+
+TODO: Tom Farrington
+
+----
+
+TODO: Lisa Otty
 
 ----
