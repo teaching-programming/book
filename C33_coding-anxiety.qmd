@@ -6,52 +6,44 @@ author:
   email: tiago.marques@st-andrews.ac.uk 
   corresponding: true
   affiliation: 
-    - name: Faculdade de Ciências da Universidade de Lisboa 
-      department: Departamento de Biologia Animal
+    - name: Departamento de Biologia Animal, Faculdade de Ciências da Universidade de Lisboa 
       city: Lisboa 
       country: Portugal 
-    - name: University of St Andrews 
-      department: Centre for Research into Ecological and Environmental Modelling 
+    - name: Centre for Research into Ecological and Environmental Modelling, University of St Andrews 
       city: St Andrews
       country: Scotland 
 - name: William P. Kay
   email: kayw@cardiff.ac.uk
   corresponding: false
   affiliation:
-    - name: Cardiff University
-      department: School of Biosciences
+    - name: School of Biosciences, Cardiff University
       city: Cardiff
       country: Wales
 - name: Christopher Aldous Oldnall
   email: chris.oldnall@ed.ac.uk
   corresponding: false
   affiliation:
-    - name: The University of Edinburgh
-      department: School of Mathematics and Maxwell Institute for the Mathematical Sciences
+    - name: School of Mathematics and Maxwell Institute for the Mathematical Sciences, The University of Edinburgh
       city: Edinburgh
       country: UK
-    - name: The University of Edinburgh
-      department: Edinburgh Medical School
+    - name: Edinburgh Medical School, The University of Edinburgh
       city: Edinburgh
       country: UK
 - name: Chris Sutherland
   email: css6@st-andrews.ac.uk
   corresponding: false
   affiliation:
-    - name: University of St Andrews
-      department: Centre for Research into Ecological and Environmental Modelling
+    - name: Centre for Research into Ecological and Environmental Modelling, University of St Andrews
       city: St Andrews
       country: Scotland
 - name: Robert S. Young
   email: robert.young@ed.ac.uk
   corresponding: false
   affiliation:
-    - name: The University of Edinburgh
-      department: Usher Institute
+    - name: Edinburgh Medical School, The University of Edinburgh
       city: Edinburgh
       country: UK
-    - name: Zhejiang University
-      department: Zhejiang University - University of Edinburgh (ZJE) Institute
+    - name: University of Edinburgh (ZJE) Institute, Zhejiang University
       city: Haining
       country: China
 
@@ -66,7 +58,7 @@ author:
 - name: Tiago A. Marques 
   email: tiago.marques@st-andrews.ac.uk 
   corresponding: true
-  affiliations: Faculdade de Ciências da Universidade de Lisboa, Departamento de Biologia Animal; Centre for Research into Ecological and Environmental Modelling, University of St Andrews 
+  affiliations: Departamento de Biologia Animal, Faculdade de Ciências da Universidade de Lisboa; Centre for Research into Ecological and Environmental Modelling, University of St Andrews 
 - name: William P. Kay
   email: kayw@cardiff.ac.uk
   corresponding: false
@@ -79,7 +71,7 @@ author:
   affiliations: Centre for Research into Ecological and Environmental Modelling, University of St Andrews
 - name: Robert S. Young
   email: robert.young@ed.ac.uk
-  affiliations: Usher Institute, The University of Edinburgh; Zhejiang University - University of Edinburgh (ZJE) Institute, Zhejiang University
+  affiliations: Edinburgh Medical School, The University of Edinburgh; University of Edinburgh (ZJE) Institute, Zhejiang University
 :::
 
 

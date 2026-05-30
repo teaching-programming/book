@@ -3,7 +3,7 @@ title: "Brain Book Buddy Boss Break: A Practical Debugging Framework for Learner
 bibliography: references.bib
 author:
   - name: Mar Doig
-    affiliations: Engineering Education Lead at Perk (https://www.perk.com)
+    affiliations: Engineering Education Lead at Perk
 
 keywords:
   - solving-errors	
@@ -14,7 +14,7 @@ keywords:
 ::: {.content-visible when-format="docx" note="this should be identical as authors above, for docx"}
 author:
   - name: Mar Doig
-    affiliations: Engineering Education Lead at Perk (https://www.perk.com)
+    affiliations: Engineering Education Lead at Perk
 :::
 
 ## Introduction: The Debugging Mountain & The Error Misconception

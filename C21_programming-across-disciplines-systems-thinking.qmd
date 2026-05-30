@@ -3,7 +3,6 @@ title: "How Teaching Programming Across Disciplines Can Instil Systems Thinking"
 bibliography: references.bib
 author:
   - name: Leo Riviera
-    orcid: 0009-0004-3316-1852
     email: leo.riviera@voxa.dev
     affiliations: Voxa
   - name: Maeve Murphy Quinlan
@@ -26,7 +25,6 @@ keywords:
 ::: {.content-visible when-format="docx" note="this should be identical as authors above, for docx"}
 author:
   - name: Leo Riviera
-    orcid: 0009-0004-3316-1852
     email: leo.riviera@voxa.dev
     affiliations: Voxa
   - name: Maeve Murphy Quinlan
