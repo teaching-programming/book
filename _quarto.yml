@@ -58,9 +58,13 @@ format:
         margin-bottom: 0cm
         fig-align: center 
         filters:
+          - quarto
           - _theme/filters/callout-for-docx.lua
           - _theme/filters/authors-for-docx.lua
           - _theme/filters/footnote-links-for-docx.lua
+          - section-bibliographies
+        reference-section-title: References
+        citeproc: false
     epub:
         bibliography: references.bib
 

@@ -161,7 +161,6 @@ function parse_lines_as_author_blocks(el)
     
     local authors_docx_blocks = authors_as_docx_paragraphs(authors)
    -- print("authors_docx_blocks count" .. #authors_docx_blocks)
-
     return authors_docx_blocks
 end
 

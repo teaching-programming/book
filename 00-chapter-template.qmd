@@ -69,10 +69,11 @@ If it is absolutely necessary to display the full URL in the text, use `<...>`: 
 ### Images
 
 
-![This is the caption for an image, sized to take 70% of the screen width.](/chapters/images/C36_pair-programming-across-disciplines_online_ideas.png "Some Title, appears on mouse hover"){fig-alt="Some alt text for accessibility." width=70%}
+
+![This is the caption for an image, sized to take 70% of the screen width.](/chapters/images/C36_pair-programming-across-disciplines_online_ideas.png "Some Title, appears on mouse hover"){#fig-template-1 fig-alt="Some alt text for accessibility." width=70%}
 
 
-[![This is the caption for an image with a clickable link.](/chapters/images/C36_pair-programming-across-disciplines_online_ideas.png "Some Title, appears on mouse hover"){fig-alt="Some alt text for accessibility." width=70%}](https://quarto.org)
+![This is the caption for an image, sized to take 70% of the screen width.](/chapters/images/C36_pair-programming-across-disciplines_online_ideas.png "Some Title, appears on mouse hover"){#fig-template-2 fig-alt="Some alt text for accessibility." width=70%}
 
 
 ### Putting some content in a box

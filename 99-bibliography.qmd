@@ -5,3 +5,5 @@ nocite: |
 ---
 
 # Bibliography {.unnumbered}
+
+::: {#refs} :::
