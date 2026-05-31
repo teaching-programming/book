@@ -48,7 +48,7 @@ In our own studies, engaging directly with material is essential for "deep learn
 For example, if you use routinely use AI to quickly summarize articles or generate lab reports, you will find it more difficult to develop a whole chain of skills.
   
 ![Over-reliance on AI tools is ikely to weaken key academic skills, which once weakened, will lead to a cyle of continued skills impoverishment.
-(Totally based on opinion - I got no refs for this)](/chapters/images/C44_ai-vs-ac.png){#fig-diagram fig-alt="A sequence of academic skills pointing from 'Meaningful Engagement', 'Developing Critical Thinking', 'Extracting Personal Insights', 'Forming Hypotheses Independently', and then to 'Creating Original Conclusions'.
+(Totally based on opinion - I got no refs for this)](/chapters/images/C44_ai-vs-ac.png){#fig-c44-diagram fig-alt="A sequence of academic skills pointing from 'Meaningful Engagement', 'Developing Critical Thinking', 'Extracting Personal Insights', 'Forming Hypotheses Independently', and then to 'Creating Original Conclusions'.
 An arrow loops back from 'Creating Original Conclusions' to 'Meaningful Engagement', labeled 'Reinforced weakening of academic skills'."}
 
 And most importantly, if the work is mostly AI generated, the feedback you receive does not apply to you personally at all.
