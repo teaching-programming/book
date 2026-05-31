@@ -1,7 +1,6 @@
 ---
-title: "Authors"
+title: "Authors' Biographies"
 bibliography: references.bib
-
 ---
 
 ## Template (delete when everyone is done)
@@ -119,38 +118,40 @@ TODO: Franziska McManus
 
 ----
 
+## Project Manager
+
+### Franziska McManus (she/her)
+
 ## All Chapter Authors
 
-### Mar Doig (they/them)
-##### Engineering Education Lead at Perk (https://www.perk.com)
-![](/chapters/authors/mar-doig.jpg ){fig-alt="Mar Doig Profile" width=30% }
 
-I'm a software engineer and educator focused on the human side of technical literacy. As the Engineering Education Lead at Perk, I designed an in-house academy that turns curiosity into production-ready code, using my own career pivot as a roadmap. Away from the screen, I spend my time exploring high-fantasy worlds and rural Scotland alongside my husband and three children.
+### Samantha J. Ahern (she/her)
+##### Education Co-Lead, Centre for Advanced Research Computing, University College London
+![](/chapters/authors/samantha-ahern.jpg ){fig-alt="Samantha J. Ahern Profile" width=30% }
 
-LinkedIn: <https://www.linkedin.com/in/mardoig/>
+Academically I’m a Computer Scientist, but am an experienced education professional specialising in computing and digital research skills. I focus on the social impacts of technology, including social justice and environmental sustainability. My work in education development is focused on the notion of intentional hospitality, and I enjoy helping colleagues develop as educators. I am a Fellow of AdvanceHE and a Senior Certified Member of ALT. 
 
-GitHub: TODO
+Portfolio: <http://reflect.ucl.ac.uk/sahern>
 
-----
-
-### Sam Skipsey (he/they)
-##### Research Fellow, University of Glasgow
-
-Officially I'm a physicist, and stumbled into research-only University track, but increasingly the things I care about most are; ethics in research and academia (and beyond), teaching people to think better and wider, and computing as a discipline that broadens capability for all. I am also one of the organising committee for the Roller Derby World Cup (and at some point will actually finish the paper on this that we've been co-authoring for more than a year...)
-
-Work website: <https://www.gla.ac.uk/schools/physics/staff/samuelskipsey/>
+Work website: <https://profiles.ucl.ac.uk/38404-samantha-ahern>
 
 ----
 
-### Francisco Queiroz (he/him)
-##### Lecturer, University of Leeds
-![](/chapters/authors/francisco-queiroz.jpg ){fig-alt="Francisco Queiroz Profile" width=30% }
+### TODO: Neil Anderson
 
-I am a designer and educator (not necessarily in that order). My teaching background spans over nineteen years, two countries, and disciplines as diverse as image editing, game prototyping, research methods, and communication. My contribution to this book reflects my intention of making learning a truly collaborative and progressive experience.
+----
 
-Work website: <https://ahc.leeds.ac.uk/design/staff/2233/dr-francisco-queiroz>
+### TODO: William Bell
 
-ResearchGate: <https://www.researchgate.net/profile/Francisco-Queiroz>
+----
+
+### Samantha Alvarez Madrazo (she/her)
+##### Senior Teaching Fellow and Statistical Teaching Coordinator, Imperial College London 
+![](/chapters/authors/samantha-alvarez-madrazo.jpg ){fig-alt="Samantha Alvarez Madrazo Profile" width=30% }
+
+I am a pharmacist, health data scientist  and educator. Learning programming at the same time as learning statistics can be a challenging journey. Being surrounded by supportive and inspiring colleagues and having a continuous dialogue with online and on-campus postgraduate students enriches my journey. My motivation to contribute to this book is to keep learning from each other, share ideas about empowering students to develop a coding mindset and reflecting about online teaching. 
+
+LinkedIn: <https://www.linkedin.com/in/samantha-alvarez-b3137211>
 
 ----
 
@@ -166,61 +167,19 @@ Github: <https://github.com/yabellini>
 
 ----
 
-### Samantha J. Ahern (she/her)
-##### Education Co-Lead, Centre for Advanced Research Computing, University College London
-![](/chapters/authors/samantha-ahern.jpg ){fig-alt="Samantha J. Ahern Profile" width=30% }
-
-Academically I’m a Computer Scientist, but am an experienced education professional specialising in computing and digital research skills. I focus on the social impacts of technology, including social justice and environmental sustainability. My work in education development is focused on the notion of intentional hospitality, and I enjoy helping colleagues develop as educators. I am a Fellow of AdvanceHE and a Senior Certified Member of ALT. 
-
-Portfolio: <http://reflect.ucl.ac.uk/sahern>
-
-Work website: <https://profiles.ucl.ac.uk/38404-samantha-ahern>
+### TODO: Devanjan Bhattacharya
 
 ----
 
-### Frederik Dahl Madsen (He/Him)
-##### PhD Student, School of Geosciences, The University of Edinburgh & Lyell Centre, British Geological Survey
-![](/chapters/authors/frederik-dahl-madsen.jpg ){fig-alt="Frederik Dahl Madsen Profile" width=30% }
-
-I am a PhD student at the University of Edinburgh and British Geological Survey, specialising in geomagnetism and geodesy. I am in particular interested in understanding geomagnetic jerks, and how they affect the length-of-day. Outside of my academic endeavours, I am engaged in outreach and engagement around Scotland. I also teach geophysics and science communication at the University of Edinburgh, and am engaged in improving our approach to assessment feedback in our undergraduate degrees.
-
-Personal website: <https://fdmadsen.wordpress.com/>
-
-ORCID: <https://orcid.org/0000-0002-0621-1541>
+### TODO: Neil Bray
 
 ----
 
-### Chris Cooling
-##### Senior Teaching Fellow, Imperial College London
-![](/chapters/authors/chris-cooling.jpg ){fig-alt="Chris Cooling Profile" width=30% }
-
-As part of the Early Career Researcher Institute, I teach programming courses to early career researchers from all departments across the university. I mainly teach Python, LaTeX, Fortran and AI-Assisted Programming. I have an interest in helping researchers learn the tools and practices that they can immediately use practically to achieve their research goals. I am also interested in the knotty problem of how we can incorporate generative AI into research computing such that we improve efficiency and capability, whilst retaining reliability, accuracy and accountability.
-
-Work website: <https://profiles.imperial.ac.uk/c.cooling10>
-
-LinkedIn: <https://www.linkedin.com/in/chris-cooling-09938125/>
+### TODO: Alex Buckley
 
 ----
 
-### Antonia Voigt (she/her)
-##### Lecturer, Surrey Business School, University of Surrey
-![](/chapters/authors/antonia-voigt.jpg ){fig-alt="Antonia Voigt Profile" width=30% }
-
-My work is driven by a vision of a flourishing future for and through higher education. In the classroom, I am passionate about creating authentic learning experiences that empower students to develop lifelong and lifewide skills. Shaped by my fascination with complex systems, my teaching centres on helping students to find joy in the unpredictable nature of learning. Beyond the classroom, I draw on my background in education and management to support universities as organisations in cultivating educational quality in more sustainable ways.  
-
-ORCID: <https://orcid.org/0000-0002-0608-2575>
-
-----
-
-### Joseph El Gemayel
-##### Teaching Fellow, University of Strathclyde
-![](/chapters/authors/joseph-el-gemayel.jpg ){fig-alt="Joseph El Gemayel Profile" width=30% }
-
-I am an experienced computer science educator and Fellow of the Higher Education Academy, with over a decade of teaching across undergraduate and postgraduate levels, specialising in Artificial Intelligence and Machine Learning. My contribution to this book draws on designing and delivering online modules, creating accessible Python programming instruction for non-computer scientists using Jupyter Notebooks, and developing automated assessment approaches. I am also particularly interested in how AI-driven methods can enhance learning, making complex subjects more engaging, inclusive, and effective for large, diverse cohorts.
-
-Work website: <https://pureportal.strath.ac.uk/en/persons/joseph-el-gemayel/>
-
-LinkedIn: <http://www.linkedin.com/in/joseph-elgemayel>
+### TODO: Arif Budiarto
 
 ----
 
@@ -236,67 +195,13 @@ LinkedIn: <https://www.linkedin.com/in/yashique/>
 
 ----
 
-### Gordon Stewart (he/him)
-##### ScotGrid Technical Co-ordinator, School of Physics and Astronomy, University of Glasgow
-I am a research IT specialist who has worked in various disciplines across science and engineering; I currently manage large computer systems primarily used to crunch numbers for CERN, the European Organisation for Nuclear Research.  Having originally trained as a software engineer, I now teach physicists and students from other backgrounds how to use computers—particularly those running Linux operating systems—and how to develop software for use in scientific research.
+### Rebecca Chislett (she/her)
+##### Associate Professor, University College London
+![](/chapters/authors/rebecca-chislett.jpg ){fig-alt="Rebecca Chislett Profile" width=30% }
 
-----
+I am an associate professor in the High Energy Physics group at UCL. Following on from my PhD working on the LHC, my current research focusses on precision muon physics, specifically muon g-2 and Mu2e. Computer programming is integral across particle physics to analyse the large volumes of data and use innovative techniques to produce the best results. This motivates my teaching of both particle physics and (most relevant here) an introductory python programming course for first year undergraduates. The ethos is about coding for practical uses in physics, to aid and complement their learning and hopefully set them up for their future careers.
 
-### Lucia Michielin (she/her)
-##### Digital Skills Training Manager, The University of Edinburgh
-![](/chapters/authors/lucia-michielin.jpg ){fig-alt="Lucia Michielin Profile" width=30% }
-
-Lucia Michielin works within the Data-Led Methods and Research Technology team (EFI-University of Edinburgh), where she leads a data-led methods training programme.  Her work supports researchers in the Arts, Humanities, and Social Sciences who wish to incorporate digital and data-driven methods into their research projects and offers a wide range of learning opportunities, from introductory coding courses to hands-on workshops, challenge-led collaborative work, and in-depth explorations of various digital methods. Lucia has considerable experience in designing and delivering training courses focused on data skills and digital research methods, as well as applying computational methods in humanities research. She holds a PhD in Classics from the University of Edinburgh and has developed extensive expertise in the Digital Humanities.
-
-Work website: <https://edwebprofiles.ed.ac.uk/profile/dr-lucia-michielin>
-
-----
-
-### David Cutting (he/him)
-##### Reader (Associate Professor), Queen's University Belfast
-![](/chapters/authors/david-cutting.jpg ){fig-alt="David Cutting Profile" width=30% }
-
-I'm a software fanatic who fell into education and hasn't (yet) fallen out of it or with it. Programming since single digits of age I've made every technical mistake imaginable and still seem to generate technical debt at an astounding rate. I'm the author of some open source tools, mostly very obscure networking libraries and software. My research interests are around big dirty systems, often of the legacy and distributed variety and somewhat late to the party AI in software development. In my spare time I am an amateur rocketeer slowly working my way through the UK Rocketry Association certification levels with mixed success.
-
-Personal website: <https://davecutting.uk/>
-
-LinkedIn: <https://www.linkedin.com/in/davecutting/>
-
-----
-
-### Elizabeth Pankratz (she/her)
-##### Lecturer, The University of Edinburgh
-![](/chapters/authors/elizabeth-pankratz.jpg ){fig-alt="Elizabeth Pankratz Profile" width=30% }
-
-I'm a linguist turned statistics teacher. My teaching practice is built on ideas from critical pedagogy and psychological research on motivation, learning, and memory. I care a lot about helping people overcome their fear of statistics and programming, and I think that a key way to do this is to give people the freedom to take risks and try new things without penalty, an idea that I explore in my chapter of this book.
-
-Personal website: <https://elizabethpankratz.github.io>
-
-Github: <https://github.com/elizabethpankratz>
-
-----
-
-### Tiago A. Marques (he/him)
-##### Principal Research Fellow, CREEM; The University of St Andrews / CEAUL; DBA; Faculdade de Ciências da Universidade de Lisboa
-![](/chapters/authors/tiago-a-marques.jpg ){fig-alt="Tiago A. Marques Profile" width=30% }
-
-I was once a biologist that become more and mor atracted by the dark side of the force, so then I did and MSc and a PhD in statistics. These days I work as an ecological statistician, mostly on the topic of animal abundance estimation. I teach, and have a keen interest in how we should be teaching, statistics to ecologists that might be as afraid from it as I once was.
-
-Work website: <https://research-portal.st-andrews.ac.uk/en/persons/tiago-a-marques/>
-
-Github: <https://github.com/TiagoAMarques>
-
-----
-
-### Olexandr Konovalov (he/him)
-##### Lecturer, University of St Andrews
-![](/chapters/authors/olexandr-konovalov.jpg ){fig-alt="Olexandr Konovalov Profile" width=30% }
-
-I am a Lecturer in Computer Science and a Fellow of the Software Sustainability Institute. My background is in Pure Mathematics, and initially I came to Scotland from Ukraine to work on the open-source mathematical software system called GAP. Now I teach Python for diverse cohorts of learners and advocate for good practices of working with code and data. I am an Instructor and an Instructor Trainer for The Carpentries, where I have established and coordinate the Ukrainian Carpentries Community. My contribution to this book is very much based on the experience of translating The Carpentries teaching materials into Ukrainian.
-
-Personal website: <https://olexandr-konovalov.github.io/>
-
-ORCID: <https://orcid.org/0000-0001-5299-3292>
+Work website: <https://profiles.ucl.ac.uk/29547-rebecca-chislett>
 
 ----
 
@@ -312,69 +217,7 @@ ORCID: <https://orcid.org/0000-0002-8313-9934>
 
 ----
 
-### Lizzie Wadsworth (she/her)
-##### Lecturer in Biological Sciences, Kingston University
-![](/chapters/authors/lizzie-wadsworth.jpg ){fig-alt="Lizzie Wadsworth Profile" width=30% }
-
-I feel very fortunate to have been taught Python programming during my undergraduate degree, as it is so useful in Biological Sciences and has led to my PhD and career opportunities. I'm passionate about passing this on to the next generation of biologists as I believe this opens so many doors for them. I also find programming to be the most enjoyable subject to teach as it's so hands-on, and watching students go from very little prior background to confidently writing and debugging their own code is very satisfying. 
-
-Work website: <https://www.kingston.ac.uk/about/staff/dr-lizzie-wadsworth>
-
-LinkedIn: <https://www.linkedin.com/in/lizzie-wadsworth-670b04170/>
-
-----
-
-### Olga Petrovska
-##### Institute of Coding in Wales, Swansea University
-![](/chapters/authors/olga-petrovska.jpg ){fig-alt="Olga Petrovska Profile" width=30% }
-
-I am a researcher and educator at the Institute of Coding in Wales and Swansea University, and a Senior Fellow of the Higher Education Academy. My academic background is diverse, spanning linguistics, pedagogy, and theoretical computer science. I am deeply interested in how people learn, reason about, and communicate technical ideas. My recent work focuses on computing education, with particular emphasis on Generative AI literacy.
-
-Personal website: <https://opetrovska.github.io/#about>
-
-LinkedIn: <https://www.linkedin.com/in/olgapetrovska/>
-
-----
-
-### Robert S Young
-##### Senior Lecturer, Edinburgh Medical School, University of Edinburgh; Zhejiang University - University of Edinburgh (ZJE) Institute
-![](/chapters/authors/robert-s-young.jpg ){fig-alt="Robert S Young Profile" width=30% }
-
-I teach various courses in programming, statistics and genomics. I lead a course which introduces Python programming to students from both a biomedical sciences and a biomedical informatics undergraduate degree programme. I enjoy showing students that the computer can be a powerful tool for research, and not something to be afraid of. I also lead a research programme which investigated how variation in medical traits and disease risk is driven by variation in the genomic content of noncoding, regulatory loci such as promoters and enhancers. 
-
-Work website: <https://edwebprofiles.ed.ac.uk/profile/rob-young>
-
-LinkedIn: <https://www.linkedin.com/in/rob-young-9804a780/>
-
-----
-
-### Maeve Murphy Quinlan (she/her)
-##### Research Software Engineer, University of Leeds
-I'm a research software engineer with a background in planetary science research. I teach researchers how to implement sustainable software practices, in a way that aims to be welcoming, encouraging, and inclusive. When I'm not researching or coding, you can find me playing a TTRPG with my friends: the perfect place to live the dream of redistributing wealth and getting a solid eight hours of uninterrupted sleep. While I helped to brainstorm and plan our chapter in this book, the writing credit must firmly sit at the feet of my fantastic lead co-author, Francisco!
-
-Personal website: <https://murphyqm.github.io/>
-
-ORCID: <https://orcid.org/0000-0003-2958-1008>
-
-----
-
-### Stuart King
-##### Reader, The University of Edinburgh
-I am a Reader in applied mathematics, and my research interests span across applied machine learning and mathematical modelling, with applications from health image data through to environmental problems. I have taught programming and data science in various places over the last twenty years, often with an interdisciplinary angle, and often at an introductory level. I’m really interested in introducing more learners to thinking algorithmically and the value that programming can bring as a way of solving problems. 
-
-LinkedIn: <https://www.linkedin.com/in/stuart-king-a0b64b311>
-
-Work website: <https://webhomes.maths.ed.ac.uk/~sking3/>
-
-----
-
-### Katerina Michalickova (she/her)
-##### Principal Teaching Fellow, Imperial College London
-I’m an educator with a background in high performance computing and bioinformatics. I focus on coordinating and promoting a comprehensive programme in computing and data skills for early-career researchers. I’m always interested in exploring new ways to facilitate learning and in pondering how to adapt our teaching to the LLM generation.
-
-Work website: <https://profiles.imperial.ac.uk/k.michalickova>
-
-LinkedIn: <https://www.linkedin.com/in/katerina-michalickova-a94817141/>
+### TODO: Matthew Collins
 
 ----
 
@@ -390,36 +233,157 @@ Personal website: <https://rebeccacolquhoun.github.io>
 
 ----
 
-### Nguyen Quang Chien  (He)
-##### Research Associate, University of Edinburgh 
-I joined the University of Edinburgh, School of Engineering, on a contract-based work related to software development. My background is in civil engineering, more precisely, hydraulics, and I had university teaching experience in Vietnam before Microsoft Copilot and Google Gemini were introduced. Now, civil engineering students are largely accessible to code and data repositories as well as good practices in programming. I believe that a shift in mindset towards programming would help them start their careers strong, and this initiates my contribution to the book.
+### Chris Cooling
+##### Senior Teaching Fellow, Imperial College London
+![](/chapters/authors/chris-cooling.jpg ){fig-alt="Chris Cooling Profile" width=30% }
 
-Personal website: <https://coastal-study.uk/>
+As part of the Early Career Researcher Institute, I teach programming courses to early career researchers from all departments across the university. I mainly teach Python, LaTeX, Fortran and AI-Assisted Programming. I have an interest in helping researchers learn the tools and practices that they can immediately use practically to achieve their research goals. I am also interested in the knotty problem of how we can incorporate generative AI into research computing such that we improve efficiency and capability, whilst retaining reliability, accuracy and accountability.
 
-ORCID: <https://orcid.org/0000-0002-1952-4360>
+Work website: <https://profiles.imperial.ac.uk/c.cooling10>
 
-----
-
-### Eileen Y. Xu (she/they)
-##### The University of Edinburgh
-![](/chapters/authors/eileen-y-xu.jpg ){fig-alt="Eileen Y. Xu Profile" width=30% }
-
-I am a mental health researcher and statistics tutor on undergraduate and postgraduate data analysis courses in Psychology. As a tutor, I help students to build confidence in their coding abilities during weekly labs by providing not only technical support, but also encouragement and reassurance. After all, nobody <i>really</i> memorises code - it just gets easier with time, practise and a lot of trial and error! 
-
-ORCID: <https://orcid.org/0009-0003-5044-1437>
-
-LinkedIn: <https://www.linkedin.com/in/eileenyxu/>
+LinkedIn: <https://www.linkedin.com/in/chris-cooling-09938125/>
 
 ----
 
-### Mike Taverne (He/Him or They/Them)
-##### Research Fellow in Electrical Engineering, Northumbria University
+### David Cutting (he/him)
+##### Reader (Associate Professor), Queen's University Belfast
+![](/chapters/authors/david-cutting.jpg ){fig-alt="David Cutting Profile" width=30% }
 
-With a background in electrical engineering, I am specifically interested in photonics, quantum technologies, and developing related software. Making these complex concepts accessible and opening doors for others to discover the wonders of these subjects has long been a passion of mine. I enjoy teaching and inspiring others. I consider alternative learning and teaching techniques through playful means, such as music and games. I kept this creative approach in mind when writing my contribution to this book.
+I'm a software fanatic who fell into education and hasn't (yet) fallen out of it or with it. Programming since single digits of age I've made every technical mistake imaginable and still seem to generate technical debt at an astounding rate. I'm the author of some open source tools, mostly very obscure networking libraries and software. My research interests are around big dirty systems, often of the legacy and distributed variety and somewhat late to the party AI in software development. In my spare time I am an amateur rocketeer slowly working my way through the UK Rocketry Association certification levels with mixed success.
 
-Work website: <https://www.northumbria.ac.uk/about-us/our-staff/t/mike-taverne>
+Personal website: <https://davecutting.uk/>
 
-ORCID: <https://orcid.org/0000-0003-0521-8327>
+LinkedIn: <https://www.linkedin.com/in/davecutting/>
+
+----
+
+### Frederik Dahl Madsen (He/Him)
+##### PhD Student, School of Geosciences, The University of Edinburgh & Lyell Centre, British Geological Survey
+![](/chapters/authors/frederik-dahl-madsen.jpg ){fig-alt="Frederik Dahl Madsen Profile" width=30% }
+
+I am a PhD student at the University of Edinburgh and British Geological Survey, specialising in geomagnetism and geodesy. I am in particular interested in understanding geomagnetic jerks, and how they affect the length-of-day. Outside of my academic endeavours, I am engaged in outreach and engagement around Scotland. I also teach geophysics and science communication at the University of Edinburgh, and am engaged in improving our approach to assessment feedback in our undergraduate degrees.
+
+Personal website: <https://fdmadsen.wordpress.com/>
+
+ORCID: <https://orcid.org/0000-0002-0621-1541>
+
+----
+
+### Mar Doig (they/them)
+##### Engineering Education Lead at Perk (https://www.perk.com)
+![](/chapters/authors/mar-doig.jpg ){fig-alt="Mar Doig Profile" width=30% }
+
+I'm a software engineer and educator focused on the human side of technical literacy. As the Engineering Education Lead at Perk, I designed an in-house academy that turns curiosity into production-ready code, using my own career pivot as a roadmap. Away from the screen, I spend my time exploring high-fantasy worlds and rural Scotland alongside my husband and three children.
+
+LinkedIn: <https://www.linkedin.com/in/mardoig/>
+
+GitHub: TODO
+
+----
+
+### Olexandr Konovalov (he/him)
+##### Lecturer, University of St Andrews
+![](/chapters/authors/olexandr-konovalov.jpg ){fig-alt="Olexandr Konovalov Profile" width=30% }
+
+I am a Lecturer in Computer Science and a Fellow of the Software Sustainability Institute. My background is in Pure Mathematics, and initially I came to Scotland from Ukraine to work on the open-source mathematical software system called GAP. Now I teach Python for diverse cohorts of learners and advocate for good practices of working with code and data. I am an Instructor and an Instructor Trainer for The Carpentries, where I have established and coordinate the Ukrainian Carpentries Community. My contribution to this book is very much based on the experience of translating The Carpentries teaching materials into Ukrainian.
+
+Personal website: <https://olexandr-konovalov.github.io/>
+
+ORCID: <https://orcid.org/0000-0001-5299-3292>
+
+----
+
+### Tiago A. Marques (he/him)
+##### Principal Research Fellow, CREEM; The University of St Andrews / CEAUL; DBA; Faculdade de Ciências da Universidade de Lisboa
+![](/chapters/authors/tiago-a-marques.jpg ){fig-alt="Tiago A. Marques Profile" width=30% }
+
+I was once a biologist that become more and mor atracted by the dark side of the force, so then I did and MSc and a PhD in statistics. These days I work as an ecological statistician, mostly on the topic of animal abundance estimation. I teach, and have a keen interest in how we should be teaching, statistics to ecologists that might be as afraid from it as I once was.
+
+Work website: <https://research-portal.st-andrews.ac.uk/en/persons/tiago-a-marques/>
+
+Github: <https://github.com/TiagoAMarques>
+
+----
+
+### Katerina Michalickova (she/her)
+##### Principal Teaching Fellow, Imperial College London
+I’m an educator with a background in high performance computing and bioinformatics. I focus on coordinating and promoting a comprehensive programme in computing and data skills for early-career researchers. I’m always interested in exploring new ways to facilitate learning and in pondering how to adapt our teaching to the LLM generation.
+
+Work website: <https://profiles.imperial.ac.uk/k.michalickova>
+
+LinkedIn: <https://www.linkedin.com/in/katerina-michalickova-a94817141/>
+
+----
+
+### Elizabeth Pankratz (she/her)
+##### Lecturer, The University of Edinburgh
+![](/chapters/authors/elizabeth-pankratz.jpg ){fig-alt="Elizabeth Pankratz Profile" width=30% }
+
+I'm a linguist turned statistics teacher. My teaching practice is built on ideas from critical pedagogy and psychological research on motivation, learning, and memory. I care a lot about helping people overcome their fear of statistics and programming, and I think that a key way to do this is to give people the freedom to take risks and try new things without penalty, an idea that I explore in my chapter of this book.
+
+Personal website: <https://elizabethpankratz.github.io>
+
+Github: <https://github.com/elizabethpankratz>
+
+----
+
+### Louise Dash (she/her)
+##### Associate Professor (Teaching), University College London
+I’m a teaching academic with a research background in computational condensed matter physics. I've been leading in computing education as part of undergraduate physics degrees for over 15 years. I'm particularly passionate about embedding coding as a core skill within physics degrees, not just in programming classes but as a fundamental part of the wider curriculum. Our students come from a diversity of backgrounds and prior experience with programming, and my approach to teaching is to encourage experimentation and increase confidence for all students.
+
+Work website: <https://profiles.ucl.ac.uk/38506-louise-dash/>
+
+----
+
+### Joseph El Gemayel
+##### Teaching Fellow, University of Strathclyde
+![](/chapters/authors/joseph-el-gemayel.jpg ){fig-alt="Joseph El Gemayel Profile" width=30% }
+
+I am an experienced computer science educator and Fellow of the Higher Education Academy, with over a decade of teaching across undergraduate and postgraduate levels, specialising in Artificial Intelligence and Machine Learning. My contribution to this book draws on designing and delivering online modules, creating accessible Python programming instruction for non-computer scientists using Jupyter Notebooks, and developing automated assessment approaches. I am also particularly interested in how AI-driven methods can enhance learning, making complex subjects more engaging, inclusive, and effective for large, diverse cohorts.
+
+Work website: <https://pureportal.strath.ac.uk/en/persons/joseph-el-gemayel/>
+
+LinkedIn: <http://www.linkedin.com/in/joseph-elgemayel>
+
+----
+
+### TODO: Sarah Elliot
+
+----
+
+### TODO: Tuğrulcan Elmas
+
+----
+
+### TODO: Tom Farrington
+
+----
+
+### TODO: Suzanne Goopy
+
+----
+
+### TODO: Jonathan Holt
+
+----
+
+### Nick Jayanth
+##### Teaching Fellow, Imperial College London
+![](/chapters/authors/nick-jayanth.jpg ){fig-alt="Nick Jayanth Profile" width=30% }
+
+I am a Teaching Fellow and joined the teaching family as a Graduate Teaching Assistant after my Masters in 2020, and it was the best decision! I enjoy teaching statistics in the public health context. I also teach programming, mainly in R. I want to share my experiences in these fields and would like to learn from others. Beyond my role, I enjoy history and travelling. I often say to myself if I was not a teacher, I would have been on some archaeological dig in Egypt!
+
+ORCID: <https://orcid.org/0000-0002-6906-4219>
+
+----
+
+### Stuart King
+##### Reader, The University of Edinburgh
+I am a Reader in applied mathematics, and my research interests span across applied machine learning and mathematical modelling, with applications from health image data through to environmental problems. I have taught programming and data science in various places over the last twenty years, often with an interdisciplinary angle, and often at an introductory level. I’m really interested in introducing more learners to thinking algorithmically and the value that programming can bring as a way of solving problems. 
+
+LinkedIn: <https://www.linkedin.com/in/stuart-king-a0b64b311>
+
+Work website: <https://webhomes.maths.ed.ac.uk/~sking3/>
 
 ----
 
@@ -435,30 +399,6 @@ Github: <https://github.com/PatriLoto>
 
 ----
 
-### Nick Jayanth
-##### Teaching Fellow, Imperial College London
-![](/chapters/authors/nick-jayanth.jpg ){fig-alt="Nick Jayanth Profile" width=30% }
-
-I am a Teaching Fellow and joined the teaching family as a Graduate Teaching Assistant after my Masters in 2020, and it was the best decision! I enjoy teaching statistics in the public health context. I also teach programming, mainly in R. I want to share my experiences in these fields and would like to learn from others. Beyond my role, I enjoy history and travelling. I often say to myself if I was not a teacher, I would have been on some archaeological dig in Egypt!
-
-ORCID: <https://orcid.org/0000-0002-6906-4219>
-
-----
-
-### Ruini Qu (she/her)
-##### The University of Edinburgh
-![](/chapters/authors/ruini-qu.jpg ){fig-alt="Ruini Qu Profile" width=30% }
-
-I specialize in Management Science and Operations Research, focusing on how technical tools can be leveraged within Business Analytics. As someone relatively new to teaching code, I am constantly exploring different pedagogical approaches to find what truly resonates with business students. My goal is to move beyond syntax and help learners see the practical side of programming. Outside the classroom, I enjoy DIY projects and crafting handmade pieces—finding the same joy in building things by hand as I do in building a good piece of analysis.
-
-----
-
-### Leila Shila Shafti
-##### Teaching Fellow, University of Strathclyde
-I have been teaching programming for more than two decades in Spain and the UK. I have experience teaching both online and in-person classes across undergraduate and postgraduate programmes. I am particularly passionate about exploring innovative methods to enhance teaching and learning, with the aim of making complex concepts more accessible and strengthening practical understanding. I focus on creating an inclusive and supportive learning environment that encourages engagement and curiosity.
-
-----
-
 ### Andrew MacLaren (he/him)
 ##### Associate Professor, Heriot-Watt University
 ![](/chapters/authors/andrew-maclaren.jpg ){fig-alt="Andrew MacLaren Profile" width=30% }
@@ -471,11 +411,81 @@ LinkedIn: <https://www.linkedin.com/in/dr-andrew-maclaren-40518216b/>
 
 ----
 
+### Lucia Michielin (she/her)
+##### Digital Skills Training Manager, The University of Edinburgh
+![](/chapters/authors/lucia-michielin.jpg ){fig-alt="Lucia Michielin Profile" width=30% }
+
+Lucia Michielin works within the Data-Led Methods and Research Technology team (EFI-University of Edinburgh), where she leads a data-led methods training programme.  Her work supports researchers in the Arts, Humanities, and Social Sciences who wish to incorporate digital and data-driven methods into their research projects and offers a wide range of learning opportunities, from introductory coding courses to hands-on workshops, challenge-led collaborative work, and in-depth explorations of various digital methods. Lucia has considerable experience in designing and delivering training courses focused on data skills and digital research methods, as well as applying computational methods in humanities research. She holds a PhD in Classics from the University of Edinburgh and has developed extensive expertise in the Digital Humanities.
+
+Work website: <https://edwebprofiles.ed.ac.uk/profile/dr-lucia-michielin>
+
+----
+
 ### Tom Mudd
 ##### Reader, School of Music, University of Edinburgh
 I'm a musician who primarily uses coding as a way to explore music-making. I teach on courses that relate to this in the school of music at the University of Edinburgh.
 
 Personal website: <https://tommudd.co.uk>
+
+----
+
+### Maeve Murphy Quinlan (she/her)
+##### Research Software Engineer, University of Leeds
+I'm a research software engineer with a background in planetary science research. I teach researchers how to implement sustainable software practices, in a way that aims to be welcoming, encouraging, and inclusive. When I'm not researching or coding, you can find me playing a TTRPG with my friends: the perfect place to live the dream of redistributing wealth and getting a solid eight hours of uninterrupted sleep. While I helped to brainstorm and plan our chapter in this book, the writing credit must firmly sit at the feet of my fantastic lead co-author, Francisco!
+
+Personal website: <https://murphyqm.github.io/>
+
+ORCID: <https://orcid.org/0000-0003-2958-1008>
+
+----
+
+### TODO: Lisa Otty
+
+----
+
+### TODO: William P.
+
+----
+
+### Olga Petrovska
+##### Institute of Coding in Wales, Swansea University
+![](/chapters/authors/olga-petrovska.jpg ){fig-alt="Olga Petrovska Profile" width=30% }
+
+I am a researcher and educator at the Institute of Coding in Wales and Swansea University, and a Senior Fellow of the Higher Education Academy. My academic background is diverse, spanning linguistics, pedagogy, and theoretical computer science. I am deeply interested in how people learn, reason about, and communicate technical ideas. My recent work focuses on computing education, with particular emphasis on Generative AI literacy.
+
+Personal website: <https://opetrovska.github.io/#about>
+
+LinkedIn: <https://www.linkedin.com/in/olgapetrovska/>
+
+----
+
+### Ruini Qu (she/her)
+##### The University of Edinburgh
+![](/chapters/authors/ruini-qu.jpg ){fig-alt="Ruini Qu Profile" width=30% }
+
+I specialize in Management Science and Operations Research, focusing on how technical tools can be leveraged within Business Analytics. As someone relatively new to teaching code, I am constantly exploring different pedagogical approaches to find what truly resonates with business students. My goal is to move beyond syntax and help learners see the practical side of programming. Outside the classroom, I enjoy DIY projects and crafting handmade pieces—finding the same joy in building things by hand as I do in building a good piece of analysis.
+
+----
+
+### Nguyen Quang Chien  (He)
+##### Research Associate, University of Edinburgh 
+I joined the University of Edinburgh, School of Engineering, on a contract-based work related to software development. My background is in civil engineering, more precisely, hydraulics, and I had university teaching experience in Vietnam before Microsoft Copilot and Google Gemini were introduced. Now, civil engineering students are largely accessible to code and data repositories as well as good practices in programming. I believe that a shift in mindset towards programming would help them start their careers strong, and this initiates my contribution to the book.
+
+Personal website: <https://coastal-study.uk/>
+
+ORCID: <https://orcid.org/0000-0002-1952-4360>
+
+----
+
+### Francisco Queiroz (he/him)
+##### Lecturer, University of Leeds
+![](/chapters/authors/francisco-queiroz.jpg ){fig-alt="Francisco Queiroz Profile" width=30% }
+
+I am a designer and educator (not necessarily in that order). My teaching background spans over nineteen years, two countries, and disciplines as diverse as image editing, game prototyping, research methods, and communication. My contribution to this book reflects my intention of making learning a truly collaborative and progressive experience.
+
+Work website: <https://ahc.leeds.ac.uk/design/staff/2233/dr-francisco-queiroz>
+
+ResearchGate: <https://www.researchgate.net/profile/Francisco-Queiroz>
 
 ----
 
@@ -491,13 +501,7 @@ ORCID: <https://orcid.org/0009-0004-3316-1852>
 
 ----
 
-### Samantha Alvarez Madrazo (she/her)
-##### Senior Teaching Fellow and Statistical Teaching Coordinator, Imperial College London 
-![](/chapters/authors/samantha-alvarez-madrazo.jpg ){fig-alt="Samantha Alvarez Madrazo Profile" width=30% }
-
-I am a pharmacist, health data scientist  and educator. Learning programming at the same time as learning statistics can be a challenging journey. Being surrounded by supportive and inspiring colleagues and having a continuous dialogue with online and on-campus postgraduate students enriches my journey. My motivation to contribute to this book is to keep learning from each other, share ideas about empowering students to develop a coding mindset and reflecting about online teaching. 
-
-LinkedIn: <https://www.linkedin.com/in/samantha-alvarez-b3137211>
+### TODO: Gule Saman
 
 ----
 
@@ -513,23 +517,83 @@ Work website: <https://www.sruc.ac.uk/course-catalogue/wildlife-and-conservation
 
 ----
 
-### Louise Dash (she/her)
-##### Associate Professor (Teaching), University College London
-I’m a teaching academic with a research background in computational condensed matter physics. I've been leading in computing education as part of undergraduate physics degrees for over 15 years. I'm particularly passionate about embedding coding as a core skill within physics degrees, not just in programming classes but as a fundamental part of the wider curriculum. Our students come from a diversity of backgrounds and prior experience with programming, and my approach to teaching is to encourage experimentation and increase confidence for all students.
-
-Work website: <https://profiles.ucl.ac.uk/38506-louise-dash/>
-
+### Leila Shila Shafti
+##### Teaching Fellow, University of Strathclyde
+I have been teaching programming for more than two decades in Spain and the UK. I have experience teaching both online and in-person classes across undergraduate and postgraduate programmes. I am particularly passionate about exploring innovative methods to enhance teaching and learning, with the aim of making complex concepts more accessible and strengthening practical understanding. I focus on creating an inclusive and supportive learning environment that encourages engagement and curiosity.
 
 ----
 
-### Rebecca Chislett (she/her)
-##### Associate Professor, University College London
-![](/chapters/authors/rebecca-chislett.jpg ){fig-alt="Rebecca Chislett Profile" width=30% }
+### TODO: Hebatallah Shoukry
 
-I am an associate professor in the High Energy Physics group at UCL. Following on from my PhD working on the LHC, my current research focusses on precision muon physics, specifically muon g-2 and Mu2e. Computer programming is integral across particle physics to analyse the large volumes of data and use innovative techniques to produce the best results. This motivates my teaching of both particle physics and (most relevant here) an introductory python programming course for first year undergraduates. The ethos is about coding for practical uses in physics, to aid and complement their learning and hopefully set them up for their future careers.
+----
 
-Work website: <https://profiles.ucl.ac.uk/29547-rebecca-chislett>
+### TODO: Jeremy Singer
 
+----
+
+### Sam Skipsey (he/they)
+##### Research Fellow, University of Glasgow
+
+Officially I'm a physicist, and stumbled into research-only University track, but increasingly the things I care about most are; ethics in research and academia (and beyond), teaching people to think better and wider, and computing as a discipline that broadens capability for all. I am also one of the organising committee for the Roller Derby World Cup (and at some point will actually finish the paper on this that we've been co-authoring for more than a year...)
+
+Work website: <https://www.gla.ac.uk/schools/physics/staff/samuelskipsey/>
+
+----
+
+### TODO: Luke Stephens
+
+----
+
+### Gordon Stewart (he/him)
+##### ScotGrid Technical Co-ordinator, School of Physics and Astronomy, University of Glasgow
+I am a research IT specialist who has worked in various disciplines across science and engineering; I currently manage large computer systems primarily used to crunch numbers for CERN, the European Organisation for Nuclear Research.  Having originally trained as a software engineer, I now teach physicists and students from other backgrounds how to use computers—particularly those running Linux operating systems—and how to develop software for use in scientific research.
+
+----
+
+### Chris Sutherland (he/him)
+##### Reader, University of St Andrews
+![](/chapters/authors/chris-sutherland.jpg ){fig-alt="Chris Sutherland Profile" width=30% }
+
+I work at the intersection of spatial ecology and statistics, developing biologically realistic models to understand how space use, dispersal, and demography respond to density, environment, and landscape structure. The goal is to turn ecological theory into practical tools for conservation and management.
+
+Personal website: <https://sutherlandecology.com/index.html>
+
+----
+
+### Mike Taverne (He/Him or They/Them)
+##### Research Fellow in Electrical Engineering, Northumbria University
+
+With a background in electrical engineering, I am specifically interested in photonics, quantum technologies, and developing related software. Making these complex concepts accessible and opening doors for others to discover the wonders of these subjects has long been a passion of mine. I enjoy teaching and inspiring others. I consider alternative learning and teaching techniques through playful means, such as music and games. I kept this creative approach in mind when writing my contribution to this book.
+
+Work website: <https://www.northumbria.ac.uk/about-us/our-staff/t/mike-taverne>
+
+ORCID: <https://orcid.org/0000-0003-0521-8327>
+
+----
+
+### Antonia Voigt (she/her)
+##### Lecturer, Surrey Business School, University of Surrey
+![](/chapters/authors/antonia-voigt.jpg ){fig-alt="Antonia Voigt Profile" width=30% }
+
+My work is driven by a vision of a flourishing future for and through higher education. In the classroom, I am passionate about creating authentic learning experiences that empower students to develop lifelong and lifewide skills. Shaped by my fascination with complex systems, my teaching centres on helping students to find joy in the unpredictable nature of learning. Beyond the classroom, I draw on my background in education and management to support universities as organisations in cultivating educational quality in more sustainable ways.  
+
+ORCID: <https://orcid.org/0000-0002-0608-2575>
+
+----
+
+### Lizzie Wadsworth (she/her)
+##### Lecturer in Biological Sciences, Kingston University
+![](/chapters/authors/lizzie-wadsworth.jpg ){fig-alt="Lizzie Wadsworth Profile" width=30% }
+
+I feel very fortunate to have been taught Python programming during my undergraduate degree, as it is so useful in Biological Sciences and has led to my PhD and career opportunities. I'm passionate about passing this on to the next generation of biologists as I believe this opens so many doors for them. I also find programming to be the most enjoyable subject to teach as it's so hands-on, and watching students go from very little prior background to confidently writing and debugging their own code is very satisfying. 
+
+Work website: <https://www.kingston.ac.uk/about/staff/dr-lizzie-wadsworth>
+
+LinkedIn: <https://www.linkedin.com/in/lizzie-wadsworth-670b04170/>
+
+----
+
+### TODO: Steven Watterson
 
 ----
 
@@ -545,92 +609,31 @@ LinkedIn: <https://www.linkedin.com/in/ben-waugh-148053152/>
 
 ----
 
-### Chris Sutherland (he/him)
-##### Reader, University of St Andrews
-![](/chapters/authors/chris-sutherland.jpg ){fig-alt="Chris Sutherland Profile" width=30% }
-
-I work at the intersection of spatial ecology and statistics, developing biologically realistic models to understand how space use, dispersal, and demography respond to density, environment, and landscape structure. The goal is to turn ecological theory into practical tools for conservation and management.
-
-Personal website: <https://sutherlandecology.com/index.html>
+### TODO: John Wilson
 
 ----
 
-TODO: Sarah Elliot
+### Eileen Y. Xu (she/they)
+##### The University of Edinburgh
+![](/chapters/authors/eileen-y-xu.jpg ){fig-alt="Eileen Y. Xu Profile" width=30% }
+
+I am a mental health researcher and statistics tutor on undergraduate and postgraduate data analysis courses in Psychology. As a tutor, I help students to build confidence in their coding abilities during weekly labs by providing not only technical support, but also encouragement and reassurance. After all, nobody <i>really</i> memorises code - it just gets easier with time, practise and a lot of trial and error! 
+
+ORCID: <https://orcid.org/0009-0003-5044-1437>
+
+LinkedIn: <https://www.linkedin.com/in/eileenyxu/>
 
 ----
 
-TODO: Neil Bray
+### Robert S Young
+##### Senior Lecturer, Edinburgh Medical School, University of Edinburgh; Zhejiang University - University of Edinburgh (ZJE) Institute
+![](/chapters/authors/robert-s-young.jpg ){fig-alt="Robert S Young Profile" width=30% }
+
+I teach various courses in programming, statistics and genomics. I lead a course which introduces Python programming to students from both a biomedical sciences and a biomedical informatics undergraduate degree programme. I enjoy showing students that the computer can be a powerful tool for research, and not something to be afraid of. I also lead a research programme which investigated how variation in medical traits and disease risk is driven by variation in the genomic content of noncoding, regulatory loci such as promoters and enhancers. 
+
+Work website: <https://edwebprofiles.ed.ac.uk/profile/rob-young>
+
+LinkedIn: <https://www.linkedin.com/in/rob-young-9804a780/>
 
 ----
 
-TODO: Steven Watterson 
-
-----
-
-TODO: Tuğrulcan Elmas 
-
-----
-
-TODO: Hebatallah Shoukry
-
-----
-
-TODO: Devanjan Bhattacharya
-
-----
-
-TODO: John Wilson
-
-----
-
-TODO: William P. Kay
-
-----
-
-TODO: Gule Saman 
-
-----
-
-TODO: Jonathan Holt 
-
-----
-
-TODO: Luke Stephens
-
-----
-
-TODO: Arif Budiarto 
-
-----
-
-TODO: William Bell
-
-----
-
-TODO: Jeremy Singer 
-
-----
-
-TODO: Neil Anderson 
-
-----
-
-TODO: Matthew Collins
-
-----
-
-TODO: Suzanne Goopy 
-
-----
-
-TODO: Alex Buckley 
-
-----
-
-TODO: Tom Farrington
-
-----
-
-TODO: Lisa Otty
-
-----
