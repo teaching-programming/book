@@ -5,7 +5,7 @@ Programming courses often focus on what to write... syntax, functions, packages,
 What gets less attention, even in “intermediate” or “advanced” courses, is how context influences the coding approach and how to dynamically adjust approach to fit the context.
 Programming course and tutorials usually give advice on writing DRY, clean, expressive code.
 We believe there is a gap in how such advice is presented that can be filled by considering three tactics that in combination create a programming "mindset space".
-Having an awareness of these tactics allows a learner to consider which tactics are most useful at a given time, for a given problem, and to understand they can which change in response to the different pressures their current situation might be exerting.
+Having an awareness of these tactics allows a learner to consider which tactics are most useful at a given time, for a given problem, and to understand they can change in response to the different pressures their current situation might be exerting.
 As a way of making this explicit and teachable.[^C40-radarfootnote] the three tactics we suggest are being Independent, Conscious, and Social [@fig-balance].
 And further, we refer to these tactics as "forces" because they can be used to push against, or accommodate, the pressures felt as appropriate to the immediate context.
 
