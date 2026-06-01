@@ -1,5 +1,5 @@
 ---
-title: "TODO May the Coding Forces Be With You"
+title: "It Depends: How to Develop Judgement in Programming"
 bibliography: references.bib
 author:
   - name: John Wilson
@@ -12,8 +12,8 @@ author:
     affiliations: Edinburgh Medical School, University of Edinburgh
 
 keywords:
-  - markdown
-  - example
+  - Coding mindset
+  - Solving errors
 ---
 
 ::: {.content-visible when-format="docx" note="this should be identical as authors above, for docx"}
