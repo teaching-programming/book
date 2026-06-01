@@ -1,5 +1,5 @@
 ---
-title: "Notebook for novices? Pros and cons of Jupyter"
+title: "Notebook for Novices? Pros and Cons of Jupyter"
 bibliography: references.bib
 author:
   - name: Joseph El Gemayel
@@ -13,11 +13,9 @@ author:
     affiliations: University of Strathclyde
 
 keywords:
-  - Jupyter Notebook
-  - Novice Programming
-  - Collaborative Coding
-  - Cell-Based Execution
-  - Code Execution Visualisation
+  - tool-review	
+  - solving-errors
+  - accessibility-and-inclusion	
 ---
 
 ::: {.content-visible when-format="docx" note="this should be identical as authors above, for docx"}

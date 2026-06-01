@@ -1,5 +1,5 @@
 ---
-title: "Using automated marking in programming courses to enhance learning"
+title: "Using Automated Marking in Programming Courses to Enhance Learning"
 bibliography: references.bib
 author:
   - name: Leila Shila Shafti
@@ -10,9 +10,10 @@ author:
     affiliations: University of Strathclyde
 
 keywords:
-  - Automated Marking
-  - CodeRunner
-  - Scalable Assessment
+  - scalable-assessment	
+  - assessment-design	
+  - marking-and-feedback
+  - tool-review
 ---
 
 ::: {.content-visible when-format="docx" note="this should be identical as authors above, for docx"}

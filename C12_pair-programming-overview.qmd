@@ -1,5 +1,5 @@
 ---
-title: "Where Do I Even Start With Pair Programming in My Classroom? A Conversation With Seasoned Practitioners."
+title: "Where Do I Even Start With Pair Programming in My Classroom? A Conversation With Seasoned Practitioners"
 bibliography: references.bib
 author:
   - name: Pawel Orzechowski
@@ -8,13 +8,14 @@ author:
     affiliation: Edinburgh Medical School, University of Edinburgh
   - name: Brittany Blankinship
     email: b.blankinship@ed.ac.uk 
+    corresponding: true
     affiliation: Edinburgh Medical School, University of Edinburgh
   - name: Kasia Banas
     affiliation: Edinburgh Medical School, University of Edinburgh
     
 keywords:
-  - pair programming
-  - groupwork
+  - pair-programming	
+  - flipped-classroom
 ---
 
 ::: {.content-visible when-format="docx" note="this should be identical as authors above, for docx"}
@@ -24,7 +25,8 @@ author:
     corresponding: true
     affiliations: Edinburgh Medical School, University of Edinburgh
   - name: Brittany Blankinship
-    email: b.blankinship@ed.ac.uk 
+    email: b.blankinship@ed.ac.uk
+    corresponding: true
     affiliations: Edinburgh Medical School, University of Edinburgh
   - name: Kasia Banas
     affiliations: Edinburgh Medical School, University of Edinburgh
@@ -56,7 +58,9 @@ I’ve decided to interview my team who are experienced with pair programming in
 
 **Interviewer:** Let's start with the basics: What is Pair programming (or pair-groupwork in general) and how does it differ from just working in a pair?
 
+
 ![In pair programming two students work on one computer: Driver operates the computer, while Navigator helps them to find problems and offers advice.](/chapters/images/C12_pair-programming-overview_two_students.png ""){#fig-c12-two-students fig-alt="Drawing of two students practicing pair programming - only one is typing on a computer. They talk to each other." width=70%}
+
 
 **Pawel**: It's a new way to work on practical tasks, where students work in pairs and take turns. One of them is performing the active, leading role of a Driver, and the other one is supporting and guiding them as a Navigator. They switch after every task, or every 15 minutes, so both can experience driving and navigating. That's because there's a lot to learn from leading and from supporting. Communication is the key here, explaining what you're doing is a great way to learn.
 
@@ -129,6 +133,7 @@ Depending on the course, sometimes the benefits take a session or two to become 
 **Brittany**: Weirdly, this happens very rarely. Occasionally we put people in 'pairs' of 3... it is especially useful when someone didn't complete the pre-reading, or is anxious, or has technical troubles. And learning something new is quite often anxiety inducing, but having a familiar structure and clear expectations can be actually useful for calming the nerves. 
 
 Being at university, or even learning in general, is a social experience, so the fact that people are all different is great! This is one of the benefits of pair programming - interacting with people from different cultures, languages, backgrounds. Differences between you and your partner are a benefit, not a problem. The programmers would say "it's a feature, not a bug (haha)".
+
 
 ![Students swap roles frequently to have experience of driving and navigating](/chapters/images/C12_pair-programming-overview_keyboard_switch.png ""){#fig-c12-switching fig-alt="Drawing of two students opracticing pair programming - only one is typing on a computer. They talk to each other. Then they swap who holds the keyboard." width=70%}
 
