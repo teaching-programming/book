@@ -140,7 +140,7 @@ book:
         - C24_lost-in-translation.qmd
 
         # - TODO_SendOFF.qmd
-        - CAB_Author-bio-placeholder.qmd
+        - CAB_Authors.qmd
         # - TODO_Images.qmd
         - 99-bibliography.qmd
         

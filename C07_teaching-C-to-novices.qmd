@@ -15,11 +15,8 @@ author:
     email: d.cutting@qub.ac.uk
     affiliations: Queen's University Belfast
 keywords:
-  - jupyter
-  - mental models
-  - python
-  - C
-  - julia
+  - curriculum-design	
+  - coding-mindset
 ---
 
 ::: {.content-visible when-format="docx" note="this should be identical as authors above, for docx"}
