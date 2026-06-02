@@ -18,13 +18,9 @@ or
 
 > herqw ihq eoiqwh eoi  h roiqwher[oqiwehr [oqiweh ro[qiwehr o[q wih rowqiehr oqwiehr oqwieh rowqiehroq[w ihr[qowiher[ qoiwehr;qwieh r;qwie hrq;woie hr;oqwiehr;oqiweh r;iqw he;roiqh;weo ir hq;woirh]] ]]]]]
   
-TEST simple link [https://pairprogramming.ed.ac.uk/category/winter-school/](https://pairprogramming.ed.ac.uk/category/winter-school/)
-[book called Teaching Programming across Disciplines](https://pairprogramming.ed.ac.uk/join-book/) (this very book).
-[book called Teaching Programming across Disciplines](https://pairprogramming.ed.ac.uk/join-book/) (this very book).
-[book called Teaching Programming across Disciplines](https://pairprogramming.ed.ac.uk/join-book/) (this very book).
-[book called Teaching Programming across Disciplines](https://pairprogramming.ed.ac.uk/join-book/) (this very book).
-
 Our book is an edited, open-access volume comprised of many short chapters written by groups of authors.
+
+@mkrtchian2017modeling
 
 We will be launching the **first edition of Teaching Programming Across Disciplines** at the “Summer-time Winter School” on **22 June 2026**! 🌈
 

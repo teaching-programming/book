@@ -6,9 +6,9 @@ author:
     email: author@one.com
     corresponding: true
     affiliations: Edinburgh Medical School, University of Edinburgh
-  - name: Author Two
+  - name: Author Two Banana
     email: author@two.com
-    affiliations: Edinburgh Medical School, University of Edinburgh
+    affiliations: Edinburgh Medical School, University of Edinburgh https://ed.ac.uk
   - name: Author Three
     email: author@three.com
     affiliations: School of Mathematics and Maxwell Institute for the Mathematical Sciences, University of Edinburgh
@@ -24,9 +24,9 @@ author:
     email: author@one.com
     corresponding: true
     affiliations: Edinburgh Medical School, University of Edinburgh
-  - name: Author Two
+  - name: Author Two Banana
     email: author@two.com
-    affiliations: Edinburgh Medical School, University of Edinburgh
+    affiliations: Edinburgh Medical School, University of Edinburgh https://ed.ac.uk
   - name: Author Three
     email: author@three.com
     affiliations: School of Mathematics and Maxwell Institute for the Mathematical Sciences, University of Edinburgh
@@ -34,9 +34,28 @@ author:
 
 
 
-## Your first top-level section
+## Your first top-level section {#first}
+
+You can jump to the [linktofirst](#first)
 
 ### A subsection
+
+::: {layout="[ 76, 12, 12 ]" layout-valign="bottom"}
+
+:::: {#s2-col-1}
+
+### Hardware and the environment
+
+::::
+
+:::: {#s2-col-2}
+[![](/chapters/images/C08_E-WEB-Goal-08.png "SDG 8: Decent work and Economic Growth"){fig-alt="SDG 8: Decent work and Economic Growth"}](https://sdgs.un.org/goals/goal8)
+::::
+:::: {#s2-col-3}
+[![](/chapters/images/C08_E-WEB-Goal-12.png "SDG 12: Responsible Consumption and Production"){fig-alt="SDG 12: Responsible Consumption and Production"}](https://sdgs.un.org/goals/goal12)
+::::
+
+:::
 
 This is an example subsection, starting with `###`.
 
@@ -70,9 +89,6 @@ If it is absolutely necessary to display the full URL in the text, use `<...>`: 
 
 
 
-![This is the caption for an image, sized to take 70% of the screen width.](/chapters/images/C36_pair-programming-across-disciplines_online_ideas.png "Some Title, appears on mouse hover"){#fig-template-1 fig-alt="Some alt text for accessibility." width=70%}
-
-
 ![This is the caption for an image, sized to take 70% of the screen width.](/chapters/images/C36_pair-programming-across-disciplines_online_ideas.png "Some Title, appears on mouse hover"){#fig-template-2 fig-alt="Some alt text for accessibility." width=70%}
 
 
@@ -86,6 +102,12 @@ You can put some content in a box like this, called a [callout](https://quarto.o
 :::
 
 
+:::{.callout icon="false"}
+# Title of your box plain
+
+You can put some content in a box like this, called a [callout](https://quarto.org/docs/authoring/callouts.html), if you want it to be visually distinct from the rest of your chapter. This could be e.g. if you write an example or a short case study.
+
+:::
 
 
 ::: {.content-visible when-format="html" unless-format="epub"}

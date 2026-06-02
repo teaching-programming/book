@@ -38,7 +38,7 @@ format:
         
     docx:
 #     temp dev note: in terminal use: quarto render --to docx
-        reference-doc: _theme/book-layout-test2.7-ref-macros.docm
+        reference-doc: _theme/book-layout-test2.7-ref.docx
         number-sections: false
         bibliography: references.bib
         eval: true
@@ -58,10 +58,10 @@ format:
         margin-bottom: 0cm
         fig-align: center 
         filters:
-          - quarto
           - _theme/filters/callout-for-docx.lua
           - _theme/filters/authors-for-docx.lua
           - _theme/filters/footnote-links-for-docx.lua
+          - quarto
           - section-bibliographies
         reference-section-title: References
         citeproc: false

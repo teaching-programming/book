@@ -83,7 +83,6 @@ function lines_into_authors(lines)
     
     value_author_info = trim(value_author_info)
 
-
     if key_author_info == "name" then -- we are starting a new current_author
       if current_author ~= {} then
         table.insert(authors, current_author)
