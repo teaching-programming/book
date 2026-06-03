@@ -96,23 +96,10 @@ For an example of how these resources can be included, see @ahern_2026_image.
 
 :::
 
-
-::: {layout="[ 76, 12, 12 ]" layout-valign="bottom"}
-
-:::: {#s2-col-1}
-
 ### Hardware and the environment
 
-::::
-
-:::: {#s2-col-2}
-[![](/chapters/images/C08_E-WEB-Goal-08.png "SDG 8: Decent work and Economic Growth"){fig-alt="SDG 8: Decent work and Economic Growth"}](https://sdgs.un.org/goals/goal8)
-::::
-:::: {#s2-col-3}
-[![](/chapters/images/C08_E-WEB-Goal-12.png "SDG 12: Responsible Consumption and Production"){fig-alt="SDG 12: Responsible Consumption and Production"}](https://sdgs.un.org/goals/goal12)
-::::
-
-:::
+[![](/chapters/images/C08_E-WEB-Goal-08.png "SDG 8: Decent work and Economic Growth"){#fig-c08-a fig-alt="SDG 8: Decent work and Economic Growth" width=10% fig-align="left"}](https://sdgs.un.org/goals/goal8)
+[![](/chapters/images/C08_E-WEB-Goal-12.png "SDG 12: Responsible Consumption and Production"){#fig-c08-b fig-alt="SDG 12: Responsible Consumption and Production" width=10% fig-align="left"}](https://sdgs.un.org/goals/goal12)
 
 Most environmental discussions relating to data-intensive computing are focused on the direct power costs of running increasingly large and dense collections of compute and storage, with increasing concerns relating to water use in cooling systems.
 
