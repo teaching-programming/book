@@ -17,7 +17,7 @@ author:
 
 SOME TEXT INTRODUCITNG THIS PART
 
-## Theme --- Drawing on group dynamics for programming education  
+## Theme --- Drawing on Group Dynamics for Programming Education  
 
 ### TitleOfChapterPossiblyShortened [@TeachProgAcross_C16]
 
@@ -60,7 +60,7 @@ SOME TEXT EXPLAINING WHY THIS CHAPTER COULD BE FOR YOU
 
 
 
-## Theme --- Thinking outside the box: designing engaging learning experiences  
+## Theme --- Thinking Outside the Box: Designing Engaging Learning Experiences  
 
 ### TitleOfChapterPossiblyShortened [@TeachProgAcross_C06]
 

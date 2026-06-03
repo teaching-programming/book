@@ -12,9 +12,9 @@ author:
     affiliations: School of Mathematics and Computer Science, Swansea University
 
 keywords:
-  - assessment
-  - Generative AI
-  - competency
+  - assessment-design	
+  - marking-and-feedback	
+  - LLMs
 ---
 ::: {.content-visible when-format="docx" note="this should be identical as authors above, for docx"}
 author:

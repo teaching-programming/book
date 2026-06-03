@@ -1,5 +1,5 @@
 ---
-title: "Assessment and marking in an introductory programming course for physics students"
+title: "Assessment and Marking in an Introductory Programming Course for Physics Students"
 bibliography: references.bib
 author:
   - name: Ben Waugh
@@ -10,6 +10,12 @@ author:
     affiliations: Department of Physics and Astronomy, UCL
   - name: Louise Dash
     affiliations: Department of Physics and Astronomy, UCL
+
+keywords:
+  - scalable-assessment	
+  - alternative-assessment	
+  - marking-and-feedback	
+  - assessment-design
 ---
 
 ::: {.content-visible when-format="docx" note="this should be identical as authors above, for docx"}
