@@ -1,5 +1,5 @@
 ---
-title: "Overcoming Coding Anxiety: Lowering the Stakes and Making it Fun"
+title: "Overcoming Coding Anxiety: Lowering the Stakes and Making It Fun"
 bibliography: references.bib
 author: 
 - name: Tiago A. Marques 
