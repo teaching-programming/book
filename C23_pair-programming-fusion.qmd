@@ -5,6 +5,7 @@ bibliography: references.bib
 author:
   - name: Beatrice Alex
     corresponding: true
+    email: B.Alex@hw.ac.uk
     affiliations: Edinburgh Futures Institute, University of Edinburgh; School of Literatures, Languages and Cultures, University of Edinburgh
   - name: Clare Llewellyn
     affiliations: School of Social and Political Sciences, University of Edinburgh
