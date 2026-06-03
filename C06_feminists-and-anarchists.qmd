@@ -10,8 +10,8 @@ author:
     affiliations: Research Computing, University of Leeds
 
 keywords:
-  - pedagogical frameworks
-  - teaching material
+  - student-engagement	
+  - short-courses
 ---
 
 ::: {.content-visible when-format="docx" note="this should be identical as authors above, for docx"}

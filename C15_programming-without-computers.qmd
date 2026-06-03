@@ -14,11 +14,10 @@ author:
     affiliations: School of Electronics, Electrical Engineering and Computer Science, Queen's University Belfast
 
 keywords:
-  - computational thinking
-  - computationalthinking
-  - barriers
-  - unplugged
-  - play
+  - coding-mindset	
+  - tool-review	
+  - accessibility-and-inclusion
+  
 ---
 
 ::: {.content-visible when-format="docx" note="this should be identical as authors above, for docx"}

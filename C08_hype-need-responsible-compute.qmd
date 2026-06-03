@@ -1,5 +1,5 @@
 ---
-title: "Hype and The Need for Responsible Compute "
+title: "Hype and The Need for Responsible Compute"
 bibliography: references.bib
 author:
   - name: Samantha Ahern
@@ -17,10 +17,10 @@ author:
     affiliations: Edinburgh Medical School, University of Edinburgh
 
 keywords:
-  - ethics
-  - AI
-  - society
-  - sustainability
+  - responsible-programming	 
+  - LLMs
+  - critical-thinking	
+  - education-ecosystem	
 ---
 
 ::: {.content-visible when-format="docx" note="this should be identical as authors above, for docx"}

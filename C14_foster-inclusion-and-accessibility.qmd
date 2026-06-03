@@ -1,6 +1,7 @@
 ---
-title: "Reflections on Practices to Foster Inclusion and Accessibility in Programming Teaching"
+title: "Practices to Foster Inclusion and Accessibility in Programming Teaching"
 bibliography: references.bib
+
 author:
   - name: Rebecca L. Colquhoun
     affiliation: Department of Earth Science and Engineering, Imperial College London
@@ -15,9 +16,15 @@ author:
   - name: Brittany Blankinship
     affiliation:  Edinburgh Medical School, University of Edinburgh
     email: b.blankinship@ed.ac.uk
-  - name: Patrica Loto
+  - name: Patricia Loto
     affiliation: FACENA, Universidad Nacional del Nordeste (UNNE)
     email: patricialoto@comunidad.unne.edu.ar
+
+keywords:
+  - accessibility-and-inclusion	
+  - student-engagement	
+  - pair-programming	
+  - flipped-classroom
 ---
 
 ::: {.content-visible when-format="docx" note="this should be identical as authors above, for docx"}
@@ -35,7 +42,7 @@ author:
   - name: Brittany Blankinship
     affiliations:  Edinburgh Medical School, University of Edinburgh
     email: b.blankinship@ed.ac.uk
-  - name: Patrica Loto
+  - name: Patricia Loto
     affiliations: FACENA, Universidad Nacional del Nordeste (UNNE)
     email: patricialoto@comunidad.unne.edu.ar
 :::
@@ -60,7 +67,7 @@ Generally, designing teaching sessions and materials around Universal Design for
 
 In teaching programming there are different approaches to how material is presented. For example, Selby identifies four approaches: 1. code analysis, 2. building blocks, 3. simple units and 4. full systems [@selby_four_2011]. Code analysis begins with students analysing and understanding existing code before going onto writing pseudocode. Only later do students write full programs. This approach provides a structured way for students to first focus on programming logic before having to worry about syntax, which may reduce cognitive load. However some students may struggle with knowledge transfer between writing pseudocode and writing compilable code [@glaser_programming_2000].
 
-In other approaches (building blocks and simple units), students learn small units of code (individual constructs or set coding “phrases” respectively) and gradually build up to writing longer programs. These can lead to fragmented understanding, where students are not sure how to combine the components introduced together, and the early focus on syntax may be overwhelming for some [@selby_four_2011]. However, it does allow students to build up a toolbox of reusable code, which they can then apply in other scenarios, reducing the amount of recall and typing of precise syntax which is required which may pose a challenge for some students. The final approach that Selby [@selby_four_2011] outlines is full systems, where students are immersed in a real-life problem and programming concepts are introduced as needed. This is close to the discovery-led learning discussed previously. 
+In other approaches (building blocks and simple units), students learn small units of code (individual constructs or set coding “phrases” respectively) and gradually build up to writing longer programs. These can lead to fragmented understanding, where students are not sure how to combine the components introduced together, and the early focus on syntax may be overwhelming for some [@selby_four_2011]. However, it does allow students to build up a toolbox of reusable code, which they can then apply in other scenarios, reducing the amount of recall and typing of precise syntax which is required which may pose a challenge for some students. The final approach that @selby_four_2011 outlines is full systems, where students are immersed in a real-life problem and programming concepts are introduced as needed. This is close to the discovery-led learning discussed previously. 
 
 ## Classroom models
 
@@ -70,7 +77,7 @@ These different approaches to teaching programming can be delivered in different
 
 Live coding involves an instructor writing code live at the front of the classroom, whilst narrating what they are doing. It becomes participatory by students following along, writing and executing code at the same time [@nederbragt_ten_2020]. Participatory live coding has many advantages, hence why it forms a key tenet of the Carpentries approach to teaching coding [@the_carpentries_live_2025]. For many students, watching someone code and following along is far more engaging than watching someone present a slide deck. In particular, it allows students the chance to ask questions and for the instructor to respond and adapt the teaching accordingly.
 
-![I code it. Then you code it. Repeat.](/chapters/images/c14-inclusion-codealong.png "Participatory live coding"){fig-alt="A cartoon image of a teacher and a student side-by-side, each holding a keyboard. The teacher (left) has a name tag and is 'speaking' complex code snippets labeled 'A'. The student (right) follows along, holding their own keyboard and produces matching code snippet 'A'. This process is then repeated for code snippet 'B'." width=80%}
+![I code it. Then you code it. Repeat.](/chapters/images/c14-inclusion-codealong.png "Participatory live coding"){#fig-c14-inclusion-codealong fig-alt="A cartoon image of a teacher and a student side-by-side, each holding a keyboard. The teacher (left) has a name tag and is 'speaking' complex code snippets labeled 'A'. The student (right) follows along, holding their own keyboard and produces matching code snippet 'A'. This process is then repeated for code snippet 'B'." width=80%}
 
 The instructor needing to type out code also reduces the pace of instruction: it is all too easy to quickly flash up some code on a slide, and have moved onto the next slide before the student has been able to write it down, which is a problem if slide decks are not provided in advance. Equally, it helps keep students on track. The lesson progresses at a set pace reducing the opportunity for students to take exit ramps or get lost on an unrelated tangent. However, the set pace can be an accessibility barrier for some, as it still depends on the instructor being able to judge an appropriate pace that will not leave students behind. Some students may require a slower pace than others, for example dyslexic students may struggle to accurately copy down material from the screen and so will need more time to do this [@blampain_copying_2021]. 
 
@@ -78,14 +85,14 @@ As well as students requiring different amounts of time to copy down information
 
 In a participatory live coding approach, students also benefit from watching how the instructor codes: they are able to model the approach to a problem and the making and solving of mistakes. Explicitly modelling problem solving is particularly helpful for neurodivergent or anxious students for whom arriving at an error, mistake or block may become a barrier for learning rather than an opportunity. 
 
-Some students may benefit from switching to a flipped classroom approach where the instructor is pre-recorded doing a small chunk of coding (see [@nederbragt_video_2021] for an example of a single chunk), and students can follow along. This could either be done in the classroom, with instructors on hand to help students as needed, or be done at home and the classroom time be dedicated to longer problems. This approach also allows for students to turn on captions if needed. Alternatively, the session could be live streamed, so students can see the projected screen more easily on their own computers, adjust the volume and can turn on captions if they wish, whilst still being able to ask questions. 
+Some students may benefit from switching to a flipped classroom approach where the instructor is pre-recorded doing a small chunk of coding (see @nederbragt_video_2021 for an example of a single chunk), and students can follow along. This could either be done in the classroom, with instructors on hand to help students as needed, or be done at home and the classroom time be dedicated to longer problems. This approach also allows for students to turn on captions if needed. Alternatively, the session could be live streamed, so students can see the projected screen more easily on their own computers, adjust the volume and can turn on captions if they wish, whilst still being able to ask questions. 
 
 ### Pair programming
 
-Instructors may want to include time where students independently solve programming problems, either as part of a broader lesson, or as part of inquiry based learning. One way to do this is through pair-programming, where students work in pairs to solve a problem, each taking turns to be the 'driver' and the 'navigator'. This concept is discussed in more detail in another chapter in this book [@desvages_structured_nodate]. Pair programming has been found to lead to better outcomes in introductory programming courses compared to courses where students program alone [@hanks_pair_2011; @faja_evaluating_2014]. 
+Instructors may want to include time where students independently solve programming problems, either as part of a broader lesson, or as part of inquiry based learning. One way to do this is through pair-programming, where students work in pairs to solve a problem, each taking turns to be the 'driver' and the 'navigator'. This concept is discussed in more detail in another chapter in this book [@inbook{TeachProgAcross_C36]. Pair programming has been found to lead to better outcomes in introductory programming courses compared to courses where students program alone [@hanks_pair_2011; @faja_evaluating_2014]. 
 
 
-![I drive, you navigate. Now let's switch who's driving.](/chapters/images/c14-inclusion-pair-prog.png "Pair programming"){fig-alt="Top Panel: Two students work together. One holds the keyboard (the driver) and produces code 'A', while both engage in a verbal dialogue about 'A'. Middle: An arrow shows the keyboard being passed from one student to the other. Bottom Panel: The roles have swapped. The second student now holds the keyboard and produces code 'B' while they continue their verbal discussion." width=70%}
+![I drive, you navigate. Now let's switch who's driving.](/chapters/images/c14-inclusion-pair-prog.png "Pair programming"){#fig-c14-inclusion-pair-prog fig-alt="Top Panel: Two students work together. One holds the keyboard (the driver) and produces code 'A', while both engage in a verbal dialogue about 'A'. Middle: An arrow shows the keyboard being passed from one student to the other. Bottom Panel: The roles have swapped. The second student now holds the keyboard and produces code 'B' while they continue their verbal discussion." width=70%}
 
 A key advantage of pair programming is that it allows students to see different approaches to solving the same problem. For weaker or less confident students, this can help them build confidence and can model how to break down a problem. However, for others, students may compare themselves negatively to one another. One way to alleviate this is to switch partners around, which allows students to see different strengths and weaknesses in coding.  For students who struggle to keep focussed, pair programming can be helpful, since both students are required to maintain active engagement with the task, frequently switching roles. It can also help keep students on task and working at the right pace, if the pairs are chosen carefully.
 
@@ -101,7 +108,7 @@ Pair programming is often thought of as two people using one computer, switching
 
 When learning to program, whether in a classroom setting or independently, it is essential to recognise that programming is fundamentally about problem-solving and critical thinking as discussed by Govender [@govender_experiences_2007]. The syntax of a programming language varies between languages, but what truly matters is developing the ability to think systematically about a problem and design an effective solution. Explicit modelling of the different stages in problem solving can be helpful for many students. 
 
-![These are the steps I would take to solve this problem.](/chapters/images/c14-inclusion-modelling-line.png "Modelling problem solving"){fig-alt="A horizontal flowchart-style diagram depicts the process of solving a problem. It moves from a question mark through several stages: a checklist being written by a pencil, a categorized list, a logic flowchart, and a code snippet, finally resulting in a completed block labeled 'A'."}
+![These are the steps I would take to solve this problem.](/chapters/images/c14-inclusion-modelling-line.png "Modelling problem solving"){#fig-c14-inclusion-modelling-line fig-alt="A horizontal flowchart-style diagram depicts the process of solving a problem. It moves from a question mark through several stages: a checklist being written by a pencil, a categorized list, a logic flowchart, and a code snippet, finally resulting in a completed block labeled 'A'."}
 
 A helpful analogy is preparing a cup of tea. There are countless variations: some people prefer milk, others like sugar; some want herbal, others like it strong. The method you use depends on the preferences of the person you are making it for and any constraints involved (available ingredients, desired strength, etc.). You begin by understanding the requirements, clarifying constraints, and considering expectations, then decide on the steps to achieve the desired result. Programming is similar: syntax is just the final step in communicating a solution, but the real issue is clear thinking and structured planning.
 
@@ -125,7 +132,7 @@ Accessible and inclusive programming education goes far beyond teaching language
 
 As we discussed in the introduction, instructors may prefer to use a discovery-based learning approach rather than the more direct-instruction that could lend itself well to participatory live coding. We previously discussed the cognitive load inherent in discovery based learning, but here consider other aspects of accessibility for this method of teaching. 
 
-![We learn new things when needed as part of a bigger project.](/chapters/images/c14-inclusion-discovery.png "Discovery based learning"){fig-alt="Two students stand before a large, glowing square containing a question mark. They are surrounded by scattered square fragments, which look like post-it notes. Both students are engaged in discussion; with 'A' and 'B' speech bubbles." width=80%}
+![We learn new things when needed as part of a bigger project.](/chapters/images/c14-inclusion-discovery.png "Discovery based learning"){#fig-c14-inclusion-discovery fig-alt="Two students stand before a large, glowing square containing a question mark. They are surrounded by scattered square fragments, which look like post-it notes. Both students are engaged in discussion; with 'A' and 'B' speech bubbles." width=80%}
 
 The advantage of discovery based learning is that students have a reason for everything they learn. When students arrive at a problem, or need a new tool, they discover what is most suitable and this can be more motivating to some students. However, some students may be overwhelmed by the scale of the task and struggle to break down a problem into manageable chunks. Part of the solution to this is making sure students are comfortable asking questions, rather than feeling like they have been ‘abandoned’ to teach themselves. This can be aided by having enough instructors and offering less obtrusive ways to ask questions, for example using a webchat or post-it note flag system. It may also be helpful to combine discovery based learning with some modelling of problem solving in a larger group. Another approach is to combine discovery based learning with pair-programming, with the inherent advantages and disadvantages we previously discussed. Finally, some students may struggle with the generalisation required and transfer to long-term memory: they may successfully identify a tool as suitable for this problem, but when it comes to the next problem they may start from scratch rather than being able to apply their existing knowledge. Part of this is developed with repeated exposure to different problems, but pertinent prompts from instructors may also help students realise this. 
 
@@ -133,7 +140,7 @@ The advantage of discovery based learning is that students have a reason for eve
 
 The ‘traditional’ model of a lecture with a lab/practical session [e.g. @prather_lecturelaboratory_1978] combines instructor-led teaching with an opportunity to partake in practice of the material and/or discovery based learning. However, in the lecture session concepts or ideas may be introduced at a pace where some students become anxious about trying to process large amounts of content in real-time. This can be exacerbated by the use of dismissive language such as “just” or “even a monkey can do…”. In addition, neurodivergent students can struggle to retain focus when there is a lot of information or lack of interaction.
 
-![I talk, you listen. Then you do, I help.](/chapters/images/c14-inclusion-lecture-lab.png "Lecture-lab"){fig-alt="Top Panel (Lecture): A teacher stands at a board displaying 'ABC' while a group of students watches passively.
+![I talk, you listen. Then you do, I help.](/chapters/images/c14-inclusion-lecture-lab.png "Lecture-lab"){#fig-c14-inclusion-lecture-lab fig-alt="Top Panel (Lecture): A teacher stands at a board displaying 'ABC' while a group of students watches passively.
 Bottom Panel (Lab): After time has passed (indicated by a clock), two students sit at keyboards looking stressed and confused. Thought bubbles above them contain 'A?' and 'B?', while the teacher stands nearby with an empty, silent speech bubble." width=70%}
 
 The accessibility of lecture sessions can be improved by providing the session materials in advance. This enables students to engage with them at their own pace and identify any questions they may have for the lecture session. In addition, the inclusion of interactive components in the lecture session such as anonymous quizzes or discussions, enables reinforcement of learning without potentially causing discomfort amongst neurodivergent learners. However, it is important to be mindful that too much interaction may lead to cognitive overload. The regular use of lecture capture can make recordings available to students to review content as and when needed, reducing the risk of anxiety from a fear of not being able to keep up.
@@ -146,7 +153,7 @@ When done well, the combination of lecture and lab sessions can help facilitate 
 * an understanding of the rationale for learning and using the concept; and
 * an understanding of how to apply the concept to new problems --- problems beyond those given as homework or lab exercises [@mccartney_liminal_2009].
 
-Knuth [@knuth_theory_1991] spoke about the close relationship between theory and practice as follows:
+@knuth_theory_1991 spoke about the close relationship between theory and practice as follows:
 
 > “The main point I want to emphasize [...] is that both theory and practice can and should be present simultaneously. Theory and practice are not mutually exclusive; they are intimately connected. They live together and support each other.” [@knuth_theory_1991, p. 3]
 
@@ -160,7 +167,7 @@ To alleviate this risk and to reinforce the interaction between theory and pract
 
 An alternative approach to structuring learning is the flipped classroom model, wherein students engage with learning materials before class, and classroom time is used to engage in problem solving activities [@bergmann_flip_2012; @advance_he_flipped_nodate]. By providing learning materials in advance (most commonly through pre-recorded videos, although this may also be in the form of text or audio), students can engage at their own pace. For some students, removing any time pressure enables them to better engage with the material, since they can pause to take notes, take a break or consult other materials during the course of the 'lecture'. However, effective use of the flipped classroom requires students to engage with the material before class [@moraros_flipping_2015; @gross_increased_2015; @forsey_flipping_2013] and some students may struggle with the lack of direction, either not engaging with the material or becoming distracted by tangents. In a flipped classroom model, it is particularly important to ensure that the structure and signposting of materials is clear, as this can easily become a source of confusion for students.
 
-![You watch and read at home. Later, we do and discuss in class.](/chapters/images/c14-inclusion-flipped.png "Flipped classroom"){fig-alt="Top Panel: Three students are shown in separate frames, learning independently at their own pace. One uses headphones with a monitor, one uses a tablet in a wheelchair, and one uses a laptop with captions/text displayed.
+![You watch and read at home. Later, we do and discuss in class.](/chapters/images/c14-inclusion-flipped.png "Flipped classroom"){#fig-c14-inclusion-flipped fig-alt="Top Panel: Three students are shown in separate frames, learning independently at their own pace. One uses headphones with a monitor, one uses a tablet in a wheelchair, and one uses a laptop with captions/text displayed.
 Bottom Panel: The group is shown together with the teacher. Now that they have reviewed the material, they are actively practicing. One student types code 'A', while another discusses questions and answers ('B?' and 'B!') with the teacher." width=70%}
 
 Having time between engaging with the flipped classroom materials and the in-person session enables students to identify any questions they have in advance, and it is important that materials are released well in advance of synchronous sessions to allow for meaningful engagement. In order to further ensure that students feel comfortable to ask questions, an anonymous question box could be introduced, which is used to guide the in-person sessions. However, if a student misunderstands something early on in the asynchronous teaching, this may lead them to misunderstand the rest of the topic, whereas they may have normally been able to clarify their understanding more immediately. 
