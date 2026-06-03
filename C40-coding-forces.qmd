@@ -12,8 +12,8 @@ author:
     affiliations: Edinburgh Medical School, University of Edinburgh
 
 keywords:
-  - Coding mindset
-  - Solving errors
+  - coding-mindset
+  - solving-errors
 ---
 
 ::: {.content-visible when-format="docx" note="this should be identical as authors above, for docx"}
@@ -36,10 +36,10 @@ What gets less attention, even in “intermediate” or “advanced” courses, 
 Programming course and tutorials usually give advice on writing DRY, clean, expressive code.
 We believe there is a gap in how such advice is presented that can be filled by considering three tactics that in combination create a programming "mindset space".
 Having an awareness of these tactics allows a learner to consider which tactics are most useful at a given time, for a given problem, and to understand they can change in response to the different pressures their current situation might be exerting.
-As a way of making this explicit and teachable.[^C40-radarfootnote] the three tactics we suggest are being Independent, Conscious, and Social [@fig-balance].
+As a way of making this explicit and teachable, [^C40-radarfootnote] the three tactics we suggest are being Independent, Conscious, and Social [@fig-balance].
 And further, we refer to these tactics as "forces" because they can be used to push against, or accommodate, the pressures felt as appropriate to the immediate context.
 
-![Radar plot of coding forces visualized wtih the 3 forced being equally balanced](c40-images/all-balanced.png){#fig-balance width=25%}
+![Radar plot of coding forces visualized wtih the 3 forces being equally balanced](/chapters/images/C40_all-balanced.png){#fig-balance width=50%}
 
 [^C40-radarfootnote]: Here we have decided on a radar plot to represent the coding forces.
     It is not absolutely perfect, but this is a limitation we are accepting for now for clarity of communication.
@@ -71,10 +71,7 @@ This is one of the hallmarks of "strong coders".
 It is not about knowing everything but having the confidence and skillset to learn and apply (nearly) anything, or to proactively decide to seek help when necessary.
 Programming skillsets like problem decomposition and debugging come into play here, which are built and strengthened through practice and exposure.
 
-![A dominant Independent force.
-Being close to the centre of the radar plot suggests zero independence, waiting to be given answers.
-The far end of the axis suggests taking the initiative to make progress, and judging when, how, and where to find neceassary help.](c40-images/independent-zoomed.png){#fig-independent width=50%}
-
+![A dominant Independent force. Being close to the centre of the radar plot suggests zero independence, waiting to be given answers. The far end of the axis suggests taking the initiative to make progress, and judging when, how, and where to find necessary help.](/chapters/images/C40_independent-zoomed.png){#fig-independent width=50%}
 
 **Conscious Coding** focuses on awareness and intention.
 This coding force is all about being mindful and making deliberate (and informed) choices about the structure, workflow, tools you choose to use in your code base.
@@ -100,10 +97,7 @@ Conscious coding asks you to slow down and reflect:
 If the answer is no to any of the above, take the time to experiment and learn (moving into the independent coding force) until the answers are yes.
 Otherwise, if time does not permit exploratory learning, do not use an approach or solution you do not understand.
 
-![A dominant conscious force.
-Being closer to the centre represents a lack of consideration about the code being written, such as the blind/mindless copy pasting of AI outputs.
-Closer to tip represents making decisions based on long term maintenance of the code, only implementing solutions you understand and can debug.](c40-images/conscious-zoomed.png){#fig-conscious width=50%}
-
+![A dominant conscious force. Being closer to the centre represents a lack of consideration about the code being written, such as the blind/mindless copy pasting of AI outputs. Closer to tip represents making decisions based on long term maintenance of the code, only implementing solutions you understand and can debug.](/chapters/images/C40_conscious-zoomed.png){#fig-conscious width=50%}
 
 **Social Coding** focuses on communication.
 Code is written to be read by other humans and executed by the machine.
@@ -120,9 +114,7 @@ Collaborative projects, research codebases, (and... assessed work in courses...)
 A useful realization for a learner to have is that collaborators may be people that you never have an actual face to face conversation with.
 Socially aware code, then, has to be friendly and approachable and the best ways to do this are to provide clear, accessible documentation, and code that is also self-documenting.
 
-![A dominant Social force.
-Closer to the centre represents, possibly rapididly developed, code that is ugly or without structure.
-Closer to the tip represents code nicely refactored for maximal readability, with the intention of sharing with collaborators or colleages.](c40-images/social-zoomed.png){#fig-social width=50%}
+![A dominant Social force. Closer to the centre represents, possibly rapididly developed, code that is ugly or without structure. Closer to the tip represents code nicely refactored for maximal readability, with the intention of sharing with collaborators or colleages.](/chapters/images/C40_social-zoomed.png){#fig-social width=50%}
 
 Different tasks call for the forces to be applied with different intensities, to actively balances them in the way that best fits the situation.
 What that balance might look like, is a deliberate choice of the coder:
@@ -150,7 +142,7 @@ The radar plot reflects this idea.
 Rather than separating forces into neat regions it shows them all present at once, just at different intensities.
 The resulting shape is simply a snapshot of how things are balanced at a given moment (@fig-radar-gif).
 
-![Ever changing balance of independent, conscious, and social code forces.](c40-images/ir-radar.gif){#fig-radar-gif} 
+![Ever changing balance of independent, conscious, and social code forces.](/chapters/images/C40_ir-radar.gif){#fig-radar-gif} 
  
 These three forces define a "mindset space", different regions of which are better suited to different applications.
 Moving about this mindset space requires reflection and awareness.
@@ -250,7 +242,7 @@ As a learner acquiring a new programming language, you can think of your progres
 Once an understanding of the independent, conscious, and social pieces are acquired, you realize they are complimentary elements that fit together and form a globe-like mindset-space.
 If you think of each force as a direction of travel within that globe, a new action is unlocked: spinning the globe and navigating the full 3D space! 
 
-![Exteninding the 2D radar plot into a third dimension lets us imagine a continous volume, through wich we can navigate by changing the influence of the coding forces, until we find the region that corresponds to the best balance between the forces.](c40-images/nutshell.png){#fig-independent width=50%}
+![Exteninding the 2D radar plot into a third dimension lets us imagine a continous volume, through wich we can navigate by changing the influence of the coding forces, until we find the region that corresponds to the best balance between the forces.](/chapters/images/C40_nutshell.png){#fig-independent width=50%}
 
 In this metaphor, meta-awareness and reflection is the glue that fits the puzzle pieces together forming the globe and allowing you to take on the hands of God role and move the globe. This meta-awareness is only possible to reach once you have knowledge of all 3 forces. It is required to then apply a fitting intensity and direct forces that feels appropriate for the problem at hand. 
 
@@ -292,7 +284,7 @@ Guiding questions if using tools such as LLMs when coding are:
 * Would your colleagues understand this code?
 * If the LLM is a collaborator, how do you weigh its suggestions vs other (likely human) collaborator inputs?
 
-Equally, we would suggest that this framework provides a structured answer to ridiculous questions such as *“Why should I learn to code if AI can seemingly generate code for me?”*
+Equally, we would suggest that this framework provides a structured answer to ridiculous questions such as *"Why should I learn to code if AI can seemingly generate code for me?"*
 
 ::: {.callout-caution collapse = "true"}
 ## Our answer would be something along the lines of:
@@ -337,15 +329,15 @@ Beginners, especially, can end up feeling like they’re being asked to do contr
 It’s not obvious that these aren’t competing rules, but different forces that make sense in different situations.
 
 ## The challenge for educators
-Most educators already *feel* this, even if they don’t always spell it out.
+Most educators already *feel* this, even if they don't always spell it out.
 You know that a rough, experimental script written while figuring something out is perfectly fine - even desirable.
 You also know that the same code would raise eyebrows (or worse) if it showed up in an assessment or shared project.
-That sense of “what’s appropriate here?” develops over time.
+That sense of "what's appropriate here?" develops over time.
 Learners, however, haven’t had time to build those instincts yet.
 And importantly, they may not even realise there *is* a shift to notice.
 
 A learner who has spent time writing code that is exploratory, maybe slightly chaotic or full of half-formed ideas, comments to self, and creative shortcuts may not understand why those same habits suddenly become a problem elsewhere.
-It’s not that they’re being careless, it’s just that they’re applying the advice they’ve encountered in the best way they know how... just without a clear sense of how or when to shift their approach as the context changes.
+It's not that they’re being careless, it’s just that they're applying the advice they've encountered in the best way they know how... just without a clear sense of how or when to shift their approach as the context changes.
 
 This often shows up in predictable ways.
 Bits of exploratory code sneak into submissions or shared projects, bringing their weirdness and chaos with them.
@@ -355,7 +347,7 @@ Which can be unnecessarily slow and frustrating.
 
 There’s also a slightly awkward truth worth saying out loud: **assessment is collaborative.**
 i.e., the assessor *is* your collaborator.
-If your code is easy to read, understand, and trust, it’s not just “good practice”, it will also assess well.
+If your code is easy to read, understand, and trust, it's not just "good practice", it will also assess well.
 For many students, this is their first real experience of writing code for someone else, and without a clear way to frame that shift, assessment criteria can feel a bit arbitrary.
 
 
@@ -363,7 +355,7 @@ For many students, this is their first real experience of writing code for someo
 
 This framework is an attempt to bring some clarity to a muddy reality, not by adding more rules, but by giving people better language.
 
-Instead of treating good coding as a single fixed standard (which we either meet or don’t), it frames things as a space we can move around in.
+Instead of treating good coding as a single fixed standard (which we either meet or don't), it frames things as a space we can move around in.
 Independent, Conscious, and Social aren’t boxes to tick; they’re forces we can lean into more or less, depending on what we’re doing.
 The more we apply one force to a problem, the more we move our mentality into our desired mode.
 Deliberately! And conversely, the more we feel ourselves being forced into a corner of a space that isn’t working for our problem, the more we can resist that pressure, and move ourselves into a different region of the force-space.
@@ -378,7 +370,7 @@ The aim is to make that movement visible and intentional.
 Rather than relying on intuition that develops slowly (and unevenly), learners can start to recognise where they are, where they might need to be, and how to adjust.
 
 The radar shows that all three forces are always there, just pulling with different strengths.
-We don’t have to turn one off to use another - we **rebalance** the forces.
+We don't have to turn one off to use another - we **rebalance** the forces.
 
 This all works regardless of whether we are using R, Python, C, or something more obscure ([中文](https://esolangs.org/wiki/%E4%B8%AD%E6%96%87) anyone?).
 The specifics change, but the forces don’t, which makes this something we can carry with us across courses, projects, and (eventually) jobs.
