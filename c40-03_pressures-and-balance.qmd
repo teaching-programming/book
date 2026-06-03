@@ -39,13 +39,16 @@ As such, the plot is best understood as a snapshot of the relationship between t
 
 Thus far, the framework as we have presented it can safely and easily live in a 2D mental space, represented by the radar plot and seesaw metaphor. 
 
-If you will permit us to further extend this metaphor, imagine that as you gain more awareness and experience on the seesaw of coding forces that the lever arms no longer move up and down but become a 3D puzzle pieces. As a learner acquiring a new programming language, you can think of your progression through the learning journey and the coding forces as a process of acquiring the puzzle pieces. Once the independent, conscious, and social pieces are acquired, they fit together like a globe or nutshell. If you think of each force as a piece of a globe, when they are brought together a new action is unlocked: spinning the globe and and navigating the full 3D space! 
+If you will permit us to further extend this metaphor, imagine that as you gain more awareness and experience on the seesaw of coding forces that the lever arms no longer move up and down but become a 3D puzzle pieces.
+As a learner acquiring a new programming language, you can think of your progression through the learning journey and the coding forces as a process of acquiring the puzzle pieces.
+Once an understanding of the independent, conscious, and social pieces are acquired, you realize they are complimentary elements that fit together and form a globe-like mindset-space.
+If you think of each force as a direction of travel within that globe, a new action is unlocked: spinning the globe and navigating the full 3D space! 
 
-![Coding forces in 3D moving from a radar plot to nutshell](c40-images/nutshell.png){#fig-independent width=50%}
+![Exteninding the 2D radar plot into a third dimension lets us imagine a continous volume, through wich we can navigate by changing the influence of the coding forces, until we find the region that corresponds to the best balance between the forces.](c40-images/nutshell.png){#fig-independent width=50%}
 
 In this metaphor, meta-awareness and reflection is the glue that fits the puzzle pieces together forming the globe and allowing you to take on the hands of God role and move the globe. This meta-awareness is only possible to reach once you have knowledge of all 3 forces. It is required to then apply a fitting intensity and direct forces that feels appropriate for the problem at hand. 
 
-Using the radar plot imagery when applied to a specific problem it is unrealistic (and difficult to visualize) maxed out intensity applied to all 3 forces. After all, as human attention is a finite resource. This is where the more 3D nutshell visual takes over. Your knowledge of the force can reach a maximum - this is where meta-awareness comes in to know how to best apply intensity to each force for the specific problem at hand. This is to say, critical thinking becomes your meta-awareness. 
+Using the radar plot imagery when applied to a specific problem it is unrealistic (and difficult to visualize) maxed out intensity applied to all 3 forces. After all, as human attention is a finite resource. This is where the more 3D globe visual takes over. Your knowledge of the force can reach a maximum - this is where meta-awareness comes in to know how to best apply intensity to each force for the specific problem at hand. This is to say, critical thinking becomes your meta-awareness. 
 
 And once you realise that you are applying your critical thinking skills in the form of meta-awareness of the coding forces, you can measure your own progress and development! 
 

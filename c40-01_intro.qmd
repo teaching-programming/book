@@ -1,18 +1,24 @@
 
 ## Introduction
 
-Programming courses often focus on what to write...
-syntax, functions, packages, patterns, pipelines.
+Programming courses often focus on what to write... syntax, functions, packages, patterns, pipelines.
 What gets less attention, even in “intermediate” or “advanced” courses, is how context influences the coding approach and how to dynamically adjust approach to fit the context.
-The framework shown in the diagram proposes three overlapping programming tactics, which change in response to the forces at play in a given context - Independent, Conscious, and Social - as a way of making this explicit and teachable.[^C40-radarfootnote]
+Programming course and tutorials usually give advice on writing DRY, clean, expressive code.
+We believe there is a gap in how such advice is presented that can be filled by considering three tactics that in combination create a programming "mindset space".
+Having an awareness of these tactics allows a learner to consider which tactics are most useful at a given time, for a given problem, and to understand they can change in response to the different pressures their current situation might be exerting.
+As a way of making this explicit and teachable.[^C40-radarfootnote] the three tactics we suggest are being Independent, Conscious, and Social [@fig-balance].
+And further, we refer to these tactics as "forces" because they can be used to push against, or accommodate, the pressures felt as appropriate to the immediate context.
 
-![Radar plot of coding forces visualized wtih the 3 forced balanced](c40-images/all-balanced.png){#fig-balance width=25%}
+![Radar plot of coding forces visualized wtih the 3 forced being equally balanced](c40-images/all-balanced.png){#fig-balance width=25%}
 
 [^C40-radarfootnote]: Here we have decided on a radar plot to represent the coding forces.
     It is not absolutely perfect, but this is a limitation we are accepting for now for clarity of communication.
-    The radar plot is more accurate than say a Venn Diagram, which problematically implies discrete coding forces.
-    A ternary plot we feel would be the most precise, but they can be difficult to interpret so we have spared you this.
+    A Venn diagram seems like a good way to present these the forces, however, this gives an impression of three discrete "modes" of programming.
+    The radar plot is more accurate in that it can show varying degrees of agency along each axis.
+    A ternary plot we feel would be even more precise because it also acknowledges that there is a trade-off inherent in moving along any single axis.
+    But ternary plot can be difficult to interpret, so we have spared you this.
 
-The key idea is simple: good programming is not a single fixed standard; regardless of what language you might be programming in.
+The key idea is simple: good programming is not a single fixed standard, regardless of what language you might be programming in.
 Instead, different situations call for different combinations of skills, habits, approaches, and considerations.
-The classic "well, it depends..." applies to coding as well! This is to say, that in each project or task, the appropriate intensity of each coding force may vary.
+The classic "well, it depends..." applies to coding as well!
+This is to say, that in each project or task, the appropriate intensity of each coding force may vary.
