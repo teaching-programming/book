@@ -58,20 +58,24 @@ author:
 - name: Tiago A. Marques 
   email: tiago.marques@st-andrews.ac.uk 
   corresponding: true
-  affiliations: Departamento de Biologia Animal, Faculdade de Ciências da Universidade de Lisboa; Centre for Research into Ecological and Environmental Modelling, University of St Andrews 
+  affiliations: Departamento de Biologia Animal, Faculdade de Ciências da Universidade de Lisboa; Centre for Research into Ecological and Environmental Modelling, University of St Andrews
 - name: William P. Kay
   email: kayw@cardiff.ac.uk
   corresponding: false
   affiliations: School of Biosciences, Cardiff University
 - name: Christopher Aldous Oldnall
   email: chris.oldnall@ed.ac.uk
-  affiliations: School of Mathematics and Maxwell Institute for the Mathematical Sciences, The University of Edinburgh; Edinburgh Medical School, The University of Edinburgh
+  corresponding: false
+  affiliations: School of Mathematics and Maxwell Institute for the Mathematical Sciences, University of Edinburgh; Edinburgh Medical School, University of Edinburgh
 - name: Chris Sutherland
   email: css6@st-andrews.ac.uk
+  corresponding: false
   affiliations: Centre for Research into Ecological and Environmental Modelling, University of St Andrews
 - name: Robert S. Young
   email: robert.young@ed.ac.uk
-  affiliations: Edinburgh Medical School, The University of Edinburgh; University of Edinburgh (ZJE) Institute, Zhejiang University
+  corresponding: false
+  affiliations: Edinburgh Medical School, University of Edinburgh; Zhejiang University - University of Edinburgh (ZJE) Institute
+ 
 :::
 
 
