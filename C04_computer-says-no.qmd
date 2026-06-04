@@ -4,7 +4,7 @@ bibliography: references.bib
 author:
   - name: Chris Cooling
     email: c.cooling10@imperial.ac.uk
-    affiliations: Imperial College London
+    affiliations: Early Career Researcher Institute, Imperial College London
   - name: David Cutting
     email: d.cutting@qub.ac.uk
     affiliations: Queen's University Belfast
