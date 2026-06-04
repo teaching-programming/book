@@ -1,5 +1,5 @@
 ---
-title: "Reflections on Online Teaching"
+title: "Ways to Teach Online: Lessons Learned Through Experience"
 bibliography: references.bib
 author:
   - name: Samantha Alvarez Madrazo
