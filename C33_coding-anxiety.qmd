@@ -1,5 +1,5 @@
 ---
-title: "Overcoming Coding Anxiety: Lowering the Stakes and Making it Fun"
+title: "Overcoming Coding Anxiety: Lowering the Stakes and Making It Fun"
 bibliography: references.bib
 author: 
 - name: Tiago A. Marques 
@@ -23,10 +23,10 @@ author:
   email: chris.oldnall@ed.ac.uk
   corresponding: false
   affiliation:
-    - name: School of Mathematics and Maxwell Institute for the Mathematical Sciences, The University of Edinburgh
+    - name: School of Mathematics and Maxwell Institute for the Mathematical Sciences, University of Edinburgh
       city: Edinburgh
       country: UK
-    - name: Edinburgh Medical School, The University of Edinburgh
+    - name: Edinburgh Medical School, University of Edinburgh
       city: Edinburgh
       country: UK
 - name: Chris Sutherland
@@ -40,10 +40,10 @@ author:
   email: robert.young@ed.ac.uk
   corresponding: false
   affiliation:
-    - name: Edinburgh Medical School, The University of Edinburgh
+    - name: Edinburgh Medical School, University of Edinburgh
       city: Edinburgh
       country: UK
-    - name: University of Edinburgh (ZJE) Institute, Zhejiang University
+    - name: Zhejiang University - University of Edinburgh (ZJE) Institute
       city: Haining
       country: China
 
@@ -58,20 +58,24 @@ author:
 - name: Tiago A. Marques 
   email: tiago.marques@st-andrews.ac.uk 
   corresponding: true
-  affiliations: Departamento de Biologia Animal, Faculdade de Ciências da Universidade de Lisboa; Centre for Research into Ecological and Environmental Modelling, University of St Andrews 
+  affiliations: Departamento de Biologia Animal, Faculdade de Ciências da Universidade de Lisboa; Centre for Research into Ecological and Environmental Modelling, University of St Andrews
 - name: William P. Kay
   email: kayw@cardiff.ac.uk
   corresponding: false
   affiliations: School of Biosciences, Cardiff University
 - name: Christopher Aldous Oldnall
   email: chris.oldnall@ed.ac.uk
-  affiliations: School of Mathematics and Maxwell Institute for the Mathematical Sciences, The University of Edinburgh; Edinburgh Medical School, The University of Edinburgh
+  corresponding: false
+  affiliations: School of Mathematics and Maxwell Institute for the Mathematical Sciences, University of Edinburgh; Edinburgh Medical School, University of Edinburgh
 - name: Chris Sutherland
   email: css6@st-andrews.ac.uk
+  corresponding: false
   affiliations: Centre for Research into Ecological and Environmental Modelling, University of St Andrews
 - name: Robert S. Young
   email: robert.young@ed.ac.uk
-  affiliations: Edinburgh Medical School, The University of Edinburgh; University of Edinburgh (ZJE) Institute, Zhejiang University
+  corresponding: false
+  affiliations: Edinburgh Medical School, University of Edinburgh; Zhejiang University - University of Edinburgh (ZJE) Institute
+ 
 :::
 
 
@@ -105,7 +109,7 @@ Early hands-on activities focusing on the end product of coding, rather than the
 
 ![Example of a beautiful visualisation created using R (a map of elephant movements through Kruger National Park). Produced by Dr Pratik Gupte for the British Ecological Society Movement Ecology Special Interest Group's MoveMap competition (2021), and reused here with his permission.](chapters/images/C33_coding-anxiety_move.png){#fig-c33-move fig-alt="A visual representation of spatial tracks of elephants through Kruger National Park, obtained from satellite tracking data." width=70%}
 
-Having fun reduces anxiety in a wide variety of contexts, so why not try it for coding anxiety, too? Coding need not be boring! There are many resources that one can use to showcase how coding can be fun. Having fun coding will mean that when coding becomes required, students' receptivity to it is increased. R packages like `memer` and `mermery` allow meme creation from within R, while generative art packages can produce abstract paintings from code (@fig-c33-pair-programming). The R package `fun` makes games and activities accessible from within the R environment. As an example, the classic game Minesweeper can be played within R via a single line of code defining the size of the area and the number of bombs. All the above can be used to introduce, in an informal setting, the concepts of functions and arguments. At the end of a long coding session, or even during one, the package praise can also come in handy. A call to its single function `praise()` returns positive feedback like "You are wonderful!" or "You are supreme!". These simple statements often put a smile on students' faces, and based on our experience, that is halfway towards reducing anxiety. Finally, if students just can't code but want to "fake it till they make it", the R function `look_busy()` in the `player` package will produce output on the console that will make anyone else believe students are working hard (showcase it, but discourage its use!). We have used several of these approaches and provide them as a starting point, but given R is a dynamic and ever-evolving environment, other fun and engaging options must live out there waiting to be used by teachers to help reduce code anxiety.
+Having fun reduces anxiety in a wide variety of contexts, so why not try it for coding anxiety, too? Coding need not be boring! There are many resources that one can use to showcase how coding can be fun. Having fun coding will mean that when coding becomes required, students' receptivity to it is increased. R packages like `memer` and `mermery` allow meme creation from within R, while generative art packages can produce abstract paintings from code (@fig-c33-memes). The R package `fun` makes games and activities accessible from within the R environment. As an example, the classic game Minesweeper can be played within R via a single line of code defining the size of the area and the number of bombs. All the above can be used to introduce, in an informal setting, the concepts of functions and arguments. At the end of a long coding session, or even during one, the package praise can also come in handy. A call to its single function `praise()` returns positive feedback like "You are wonderful!" or "You are supreme!". These simple statements often put a smile on students' faces, and based on our experience, that is halfway towards reducing anxiety. Finally, if students just can't code but want to "fake it till they make it", the R function `look_busy()` in the `player` package will produce output on the console that will make anyone else believe students are working hard (showcase it, but discourage its use!). We have used several of these approaches and provide them as a starting point, but given R is a dynamic and ever-evolving environment, other fun and engaging options must live out there waiting to be used by teachers to help reduce code anxiety.
 
 ![Examples of how R coding can be fun. A: A meme showcasing how memes can reduce code anxiety; this meme can be recreated with 2 lines of code using package [**memer**](https://github.com/sctyner/memer). B: illustrating P-values via emogi with package [**emo**](https://github.com/hadley/emo). C: A painting created in [**aRtsy**](https://cran.r-project.org/web/packages/aRtsy/index.html), a generative art R package. D: An instance of a minesweeper game created in package [**fun**](https://cran.r-project.org/web/packages/fun/index.html), demonstrating the authors inability to play it. E: An example of an animal that can be drawn in R syntax using the  [**cowsay**](https://cran.r-project.org/web/packages/cowsay/index.html) package. F: The [**CatterPlots**](https://github.com/Gibbsdavidl/CatterPlots) package can be used to generate scatterplots that include cats.](chapters/images/C33_coding-anxiety_memes.png "Examples of how R coding can be fun"){#fig-c33-memes fig-alt="Six examples of fun things you can do in R, using packages memer, emo, aRtsy, fun, CatterPlots and cosway packages." width=70%}
 
@@ -125,7 +129,7 @@ Coding confidence grows most effectively outside of formal teaching time. Low-pr
 
 The fear of revealing a lack of coding ability can be a powerful barrier, discouraging students from even attempting new exercises and progressing in their learning. Independent work outside the classroom, supported by carefully developed additional materials, can help overcome this. Providing a list of such resources will empower students to learn on their own. In our experience, a particularly interesting resource comes via the **R** package [**swirl**](https://swirlstats.com/). Swirl "teaches you R programming and data science interactively, at your own pace, and right in the **R** console!". Contents can be explored independently, or by following the prompts of a 'virtual tutor' [@TeachProgAcross_C10]. Students are amused by a virtual tutor calling them by their name, meaning that they engage with the learning experience in a positive mood.
 
-Sharing the learning journey with others can be equally powerful. The mantra "a problem shared is a problem halved" can be operationalised while teaching programming via pair-programming [@TeachProgAcross_C12]. Pair-programming is a useful strategy to lower coding anxiety levels [@Fan2025]. Nonetheless, these are not universal findings; for example, [@Krizsan2024]  found that while performance improved, it did not reduce anxiety levels. Online pair-programming might be less intimidating for some, although it is not clear whether the benefits associated with live pair-programming apply [@Hafeez2023].
+Sharing the learning journey with others can be equally powerful. The mantra "a problem shared is a problem halved" can be operationalised while teaching programming via pair-programming [@TeachProgAcross_C12]. Pair-programming (@fig-c33-pair-programming) is a useful strategy to lower coding anxiety levels [@Fan2025]. Nonetheless, these are not universal findings; for example, [@Krizsan2024]  found that while performance improved, it did not reduce anxiety levels. Online pair-programming might be less intimidating for some, although it is not clear whether the benefits associated with live pair-programming apply [@Hafeez2023].
 
 AI-assisted pair-programming, where a coder is paired with an AI agent, has become an accessible alternative to human-human pair-programming [@Fan2025].  This might be easier for students who would otherwise be reluctant to expose their difficulties to a colleague. While AI-assisted pair-programming has been shown to enhance motivation, reduce anxiety, and even improve performance, it does not fully match the collaborative depth and social presence achieved through human-human pairing [@Fan2025]. Regardless of the pair-programming mode considered, we believe that if well thought out and prepared, pair-programming activities can be used to lower coding anxiety levels in a range of students.
 

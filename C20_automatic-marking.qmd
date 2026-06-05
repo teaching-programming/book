@@ -48,7 +48,7 @@ Our experience shows that automated marking tools can help address this issue by
 
 There are several tools that can be used for automated marking in programming courses. One widely used tool is CodeRunner [@RichardLobbEtAl2016Coderunner], which is built on DOMjudge’s framework for automatic evaluation of programming submissions. In addition to verifying correct outputs, CodeRunner offers enhanced features tailored for programming courses. It can provide automated feedback to help students improve their solutions. It integrates as a plugin for Moodle, allowing seamless incorporation into existing course materials. Moreover, the system is highly customisable, allowing instructors to implement more advanced assessments, including evaluation of code quality and other programming best practices. CodeRunner supports multiple programming languages, including Python 2 and 3, C, C++, Java, PHP, JavaScript (NodeJS), Octave, and SQL (SQLite3), with the flexibility to extend support to other languages. One significant advantage of using CodeRunner within Moodle is that it allows students’ submissions to be processed on a university server, ensuring compliance with data protection regulations.
 
-In the United Kingdom, several institutions have successfully adopted CodeRunner for automated assessment. @MartinGoodFellowEtAl2024AM at the University of Strathclyde have implemented CodeRunner alongside an in-house system, Browser Automated Marking (BAMjs), to assess Java, Python, and C programming languages across undergraduate years 1-3. The integration facilitated consistent and scalable assessments, and student feedback indicated positive reception to the automated approach. Similarly, @DavidCroftEtAl2020CodeRunner at Coventry University utilised CodeRunner for summative assessment in their first-year undergraduate programming curriculum, assessing both Python3 and C++14 code. The adoption led to improved key metrics, including faster feedback and reduced grading workload.
+In the United Kingdom, several institutions have successfully adopted CodeRunner for automated marking and feedback. @MartinGoodFellowEtAl2024AM at the University of Strathclyde have implemented CodeRunner alongside an in-house system, Browser Automated Marking (BAMjs), to assess Java, Python, and C programming languages across undergraduate years 1-3. The integration facilitated consistent and scalable assessments, and student feedback indicated positive reception to the automated approach. Similarly, @DavidCroftEtAl2020CodeRunner at Coventry University utilised CodeRunner for summative assessment in their first-year undergraduate programming curriculum, assessing both Python3 and C++14 code. The adoption led to improved key metrics, including faster feedback and reduced grading workload.
 
 There are other tools for automated marking such as Autolab [@DejanMilojicic2011], developed at Carnegie Mellon University, which automates grading for programming and data science assignments and provides detailed feedback on correctness and code quality. While these tools differ in features, flexibility, and integration with learning management systems, their common goal is to reduce instructor workload while providing timely and consistent feedback.
 
@@ -68,17 +68,17 @@ Therefore, the main step in setting up a CodeRunner question is to define the te
 
 ![Test cases in CodeRunner.](/chapters/images/C20_Figure1.png "Test cases."){#fig-test-cases fig-alt="A screenshot of the CodeRunner 'Test Cases' configuration screen in Moodle, showing fields for standard input, expected output, and a table listing multiple test cases. Interface elements include text boxes and controls for adding or editing test cases." }
 
-In addition to test cases, there are many adjustments that can be made, as can be seen in @fig-config. The most important ones --- Question type, Precheck, Check and Penalty, Customization, Template, and Support Files --- are described in this section. Other options are also available in CodeRunner, and we recommend consulting the [CodeRunner documentation](https://trampgeek.github.io/moodle-qtype_coderunner/) for detailed information.
+In addition to test cases, there are many adjustments that can be made, as can be seen in @fig-config. The most important ones --- Question type, Precheck, Check and Penalty, Customisation, Template, and Support Files --- are described in this section. Other options are also available in CodeRunner, and we recommend consulting the [CodeRunner documentation](https://trampgeek.github.io/moodle-qtype_coderunner/) for detailed information.
 
 ![CodeRunner configuration.](/chapters/images/C20_Figure2.png "CodeRunner configuration."){#fig-config fig-alt="A screenshot of the CodeRunner question configuration panel in Moodle, displaying various settings such as question type, precheck, check and penalty options, customisation, template, and support files."}
 
-Once the question is configured, it can be previewed and tested like any other quiz in Moodle. It is strongly recommended that, after the quiz is completed by students, the submission is reviewed for common errors and misconfigurations. This allows you to readjust the questions for the next cohort.
+Once the question is configured, it can be previewed and tested like any other quiz in Moodle. It is strongly recommended that, after the quiz is completed by students, the submission is reviewed for common errors and misconfigurations. This allows you to adjust the questions for the next cohort.
 
 ### Question type
 
 **Description**: The Question type specifies the programming language used for the assignment. You can select one of the predefined languages from the drop-down menu. However, any language can be used once it is installed on the CodeRunner’s server. 
 
-**Recommendation**: See the [documentation](https://github.com/trampgeek/moodle-qtype_coderunner?tab=readme-ov-file#supporting-or-implementing-new-languages) on supporting or implementing new languages.
+**Recommendation**: See the [CodeRunner documentation](https://trampgeek.github.io/moodle-qtype_coderunner/) on supporting or implementing new languages.
 
 ### Submit buttons - Precheck
 
@@ -104,7 +104,7 @@ Once the question is configured, it can be previewed and tested like any other q
 
 ### Template
 
-**Description:** The template (@fig-customise) allows more complex customisation of the question by defining a script to run for each test case or all test cases. The script defines how the student’s answer should be evaluated. This enables more advanced evaluation of student submission, such as assessing code style, enforcing specific language feature, or analysing code structure. In this way, the template provides full flexibility to define the automated marker according to the requirements of the assignment.
+**Description:** The template (@fig-customise) allows more complex customisation of the question by defining a script to run for each test case or all test cases. The script defines how the student’s answer should be evaluated. This enables more advanced evaluation of student submissions, such as assessing code style, enforcing specific language features, or analysing code structure. In this way, the template provides full flexibility to define the automated marker according to the requirements of the assignment.
 
 **Recommendation:** Use this customisation when the evaluation goes beyond checking for correct input and output, for example, when verifying that a student has used an array, a specific function, or other required programming constructs. 
 
@@ -131,7 +131,7 @@ if 'while' not in student_answer:
         raise Exception("ERROR: You must use a while loop!")
 ```
 
-This can also be significantly more complex; see the Moodle XML file [`CodeRunnerConstruct.xml`](/chapters/resources/C20_CodeRunnerConstruct.xml) for an example.
+The Template configuration can be significantly more complex. See the Moodle XML file [`CodeRunnerConstruct.xml`](/chapters/resources/C20_CodeRunnerConstruct.xml) for an example.
 
 ### Evaluation of JUnit implementation
 
@@ -147,7 +147,7 @@ CodeRunner can also be used to assess students’ ability to design and create S
 
 ## Conclusion
 
-Automated marking provides several important benefits in the context of programming education. It can significantly reduce the workload for examiners and provide immediate feedback to students. Additionally, automated assessment can transform the learning process into something more engaging and enjoyable. The instant feedback and challenge-response style of interaction create a game-like environment that encourages students to experiment, stay motivated, and actively engage with the material.
+Automated marking provides several important benefits in the context of programming education. It can significantly reduce the workload for examiners and provide immediate feedback to students. Additionally, automated marking can transform the learning process into something more engaging and enjoyable. The instant feedback and challenge-response style of interaction create a game-like environment that encourages students to experiment, stay motivated, and actively engage with the material.
 
 Automated marking is particularly valuable for students who find it difficult to ask questions or seek help during class. By receiving immediate and private feedback, these students can identify and correct their mistakes without needing to approach an instructor directly.
 
