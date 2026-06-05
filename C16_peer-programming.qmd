@@ -150,13 +150,13 @@ Working across multiple weeks motivates students to show up, as the different we
 
 Year 1 of an undergraduate or postgraduate degree is typically a year where students need to form new connections. Peer programming (as well as the standard pair programming) has been a key element to ensure students form a peer-to-peer support network and form new friendships. The student feedback from the DAPR1 course with peer programming implemented speaks for itself:
 
-* *“I enjoy working in lab groups because I feel like it helps to have other people to learn and figure things out with.”* - Student 1 
-    
-* *“To be honest, I really like the group work of DAPR1. Before, I didn't participate in too many group activities, I prefer to study by myself. But the activities in the lab gave me a deeper understanding of group activities. Although I don’t want to admit that I actually have a lot of things I don’t understand about the study of DAPR1, the other members of the group helped me make up for it. Compared with self-study, group activities can gather everyone's wisdom, complete homework better, and become good friends with group members. For me, who came to study abroad alone, this is really lucky.”* - Student 2 
-    
-* *“The group work is very helpful. Not only have I made new friends, but I now also have people that I can rely on when I need help. Group work has also made the individual workload seem much lighter and we get things done faster.”* - Student 3 
-    
-* *“Yes I have found it extremely helpful. During week one, I felt extremely lost and confused but my group helped me with that and so I think having that was very beneficial. In addition to this, it helped as different people were better at different aspects than others and it also meant we could spot each other's mistakes quicker, before R tells you it will not work\! I also think that it is really beneficial because it gives you the perfect opportunity to work with other people and make potential new friends.”* - Student 4
+> “I enjoy working in lab groups because I feel like it helps to have other people to learn and figure things out with.” - Student 1 
+ 
+> “To be honest, I really like the group work of DAPR1. Before, I didn't participate in too many group activities, I prefer to study by myself. But the activities in the lab gave me a deeper understanding of group activities. Although I don’t want to admit that I actually have a lot of things I don’t understand about the study of DAPR1, the other members of the group helped me make up for it. Compared with self-study, group activities can gather everyone's wisdom, complete homework better, and become good friends with group members. For me, who came to study abroad alone, this is really lucky.” - Student 2 
+ 
+> “The group work is very helpful. Not only have I made new friends, but I now also have people that I can rely on when I need help. Group work has also made the individual workload seem much lighter and we get things done faster.” - Student 3 
+ 
+> “Yes I have found it extremely helpful. During week one, I felt extremely lost and confused but my group helped me with that and so I think having that was very beneficial. In addition to this, it helped as different people were better at different aspects than others and it also meant we could spot each other's mistakes quicker, before R tells you it will not work\! I also think that it is really beneficial because it gives you the perfect opportunity to work with other people and make potential new friends.” - Student 4
 
 The above feedback, combined with the much improved attendance at labs, highlights the positive effect of peer programming on the student experience. Furthermore, many DAPR1 groups also become “study groups” for other courses and they end up meeting outside of class time.
 
