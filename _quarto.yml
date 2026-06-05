@@ -118,8 +118,35 @@ book:
         
         - C06_feminists-and-anarchists.qmd
         - C15_programming-without-computers.qmd
-#        - C16_pair-programming-extensions.qmd
         - C17_coding-with-music.qmd
+        - C03_online-teaching-reflections.qmd
+        - C43-data-vis.qmd
+
+        # - P03_part-assessment-feedback.qmd
+        
+        - C38_skills-based-assessment.qmd
+        - C35_action-feedback-plan.qmd
+        
+        - C26.1-assessment-case-study.qmd
+        - C02_genai-before-during-after.qmd
+        - C20_automatic-marking.qmd
+
+        - P04_part-case-studies.qmd
+
+        - C39_gentle-introduction-summer-school.qmd
+        - C37_pair-programming-sruc.qmd
+        - C22_interdisciplinary-by-design.qmd
+        - C32_civil-engineering.qmd
+        - C24_lost-in-translation.qmd
+
+        # - TODO_SendOFF.qmd
+        - CAB_Authors.qmd
+        # - TODO_Images.qmd
+        - 99-bibliography.qmd
+        
+#         # Possibly abandoned chapters:
+#        - C08_ai-boom-or-bust.qmd
+#        - C13_pair-programming-adventure.qmd
 #        - C18_social-learning-modelling.qmd
 #        - C19_genai-capabilities-and-challenges.qmd
 #        - C25_supporting-new-tutors.qmd

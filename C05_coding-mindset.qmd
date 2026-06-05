@@ -19,10 +19,9 @@ author:
     affiliations: University of Glasgow
 
 keywords:
-  - coding-mindset
-  - motivation
-  - resilience
-  - resourceful
+  - coding-mindset	
+  - solving-errors	
+  - student-engagement
 ---
 
 ::: {.content-visible when-format="docx" note="this should be identical as authors above, for docx"}

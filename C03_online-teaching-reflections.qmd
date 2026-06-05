@@ -1,5 +1,5 @@
 ---
-title: "Reflections on Online Teaching"
+title: "Ways to Teach Online: Lessons Learned Through Experience"
 bibliography: references.bib
 author:
   - name: Samantha Alvarez Madrazo
@@ -22,11 +22,11 @@ author:
     affiliations: University of Strathclyde
 
 keywords:
-  - online
-  - asynchronous
-  - mooc
-  - assessment
-  - blended
+  - education-ecosystem	
+  - short-courses	
+  - curriculum-design	
+  - assessment-design	
+  - flipped-classroom
 ---
 
 ::: {.content-visible when-format="docx" note="this should be identical as authors above, for docx"}

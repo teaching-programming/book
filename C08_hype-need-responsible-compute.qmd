@@ -1,5 +1,5 @@
 ---
-title: "Hype and The Need for Responsible Compute "
+title: "Hype and The Need for Responsible Compute"
 bibliography: references.bib
 author:
   - name: Samantha Ahern
@@ -17,10 +17,10 @@ author:
     affiliations: Edinburgh Medical School, University of Edinburgh
 
 keywords:
-  - ethics
-  - AI
-  - society
-  - sustainability
+  - responsible-programming	 
+  - LLMs
+  - critical-thinking	
+  - education-ecosystem	
 ---
 
 ::: {.content-visible when-format="docx" note="this should be identical as authors above, for docx"}
@@ -60,19 +60,9 @@ At the end of this chapter, we will bring it back to education and share some pr
 
 In this section, we will introduce a number of the key issues relating to responsible compute through the lens of the UN Sustainable Development Goals, an outcome of the 2025 [UN 2030 Agenda for Sustainable Development](https://sdgs.un.org/2030agenda). These are a series of 17 goals that address a number of key international issues.
 
-::: {layout="[ 88, 12 ]" layout-valign="bottom"}
-
-:::: {#s1-col-1}
-
 ### Engineering Inequities
 
-::::
-
-:::: {#s1-col-2}
-[![](/chapters/images/C08_E-WEB-Goal-10.png "SDG 10: Reduced Inequalities"){fig-alt="SDG 10: Reduced Inequalities"}](https://sdgs.un.org/goals/goal10)
-::::
-
-:::
+[![](/chapters/images/C08_E-WEB-Goal-10.png "SDG 10: Reduced Inequalities"){fig-alt="SDG 10: Reduced Inequalities" width=15% fig-align="left"}](https://sdgs.un.org/goals/goal10)
 
 Failure to consider all members of society in the design and development of products can lead to technologies that privilege some but are not fit for purpose for others. Examples of this include near infra-red automatic soap dispensers, which do not “see” darker skin tones due to their lower reflectivity, and “Shirley” cards in photography, which were designed to help colour balance films but were entirely based on white models [@benjamin_race_2019]. Despite known issues with the film itself and how the printing machines were configured, a diverse “Shirley” card was not introduced until the mid-1990s.
 
@@ -96,23 +86,10 @@ For an example of how these resources can be included, see @ahern_2026_image.
 
 :::
 
-
-::: {layout="[ 76, 12, 12 ]" layout-valign="bottom"}
-
-:::: {#s2-col-1}
-
 ### Hardware and the environment
 
-::::
-
-:::: {#s2-col-2}
-[![](/chapters/images/C08_E-WEB-Goal-08.png "SDG 8: Decent work and Economic Growth"){fig-alt="SDG 8: Decent work and Economic Growth"}](https://sdgs.un.org/goals/goal8)
-::::
-:::: {#s2-col-3}
-[![](/chapters/images/C08_E-WEB-Goal-12.png "SDG 12: Responsible Consumption and Production"){fig-alt="SDG 12: Responsible Consumption and Production"}](https://sdgs.un.org/goals/goal12)
-::::
-
-:::
+[![](/chapters/images/C08_E-WEB-Goal-08.png "SDG 8: Decent work and Economic Growth"){ fig-alt="SDG 8: Decent work and Economic Growth" width=15% fig-align="left"}](https://sdgs.un.org/goals/goal8)
+[![](/chapters/images/C08_E-WEB-Goal-12.png "SDG 12: Responsible Consumption and Production"){ fig-alt="SDG 12: Responsible Consumption and Production" width=15% fig-align="left"}](https://sdgs.un.org/goals/goal12)
 
 Most environmental discussions relating to data-intensive computing are focused on the direct power costs of running increasingly large and dense collections of compute and storage, with increasing concerns relating to water use in cooling systems.
 
@@ -138,23 +115,10 @@ These issues can also be discussed in workshops relating to code optimisation an
 
 :::
 
-
-::: {layout="[ 76, 12, 12 ]" layout-valign="bottom"}
-
-:::: {#s3-col-1}
-
 ### Data acquisition and workforce exploitation {#sec-data-acquisition}
 
-::::
-
-:::: {#s3-col-2}
-[![](/chapters/images/C08_E-WEB-Goal-03.png "SDG 3: Good health and Well-being"){fig-alt="SDG 3: Good health and Well-being"}](https://sdgs.un.org/goals/goal3)
-::::
-:::: {#s3-col-3}
-[![](/chapters/images/C08_E-WEB-Goal-08.png "SDG 8: Decent work and Economic Growth"){fig-alt="SDG 8: Decent work and Economic Growth"}](https://sdgs.un.org/goals/goal8)
-::::
-
-:::
+[![](/chapters/images/C08_E-WEB-Goal-03.png "SDG 3: Good health and Well-being"){ fig-alt="SDG 3: Good health and Well-being" width=15% fig-align="left"}](https://sdgs.un.org/goals/goal3)
+[![](/chapters/images/C08_E-WEB-Goal-08.png "SDG 8: Decent work and Economic Growth"){ fig-alt="SDG 8: Decent work and Economic Growth" width=15% fig-align="left"}](https://sdgs.un.org/goals/goal8)
 
 In 2019, the IBM corporation was criticised for using Flickr photos in a facial-recognition project without obtaining the consent of those who had created or were featured in the images [@solon_facial_2019].
 
@@ -171,20 +135,10 @@ The recent AI boom and the [Data Workers Inquiry](https://data-workers.org/) hav
 
 :::
 
-
-::: {layout="[ 88, 12 ]" layout-valign="bottom"}
-
-:::: {#s4-col-1}
-
 ### Surveillance, sousveillance, and civil liberties
 
-::::
-
-:::: {#s4-col-2}
-[![](/chapters/images/C08_E-WEB-Goal-16.png "SDG 16: Peace, Justice and String institutions"){fig-alt="SDG 16: Peace, Justice and String institutions"}](https://sdgs.un.org/goals/goal16)
-::::
-
-:::
+[![](/chapters/images/C08_E-WEB-Goal-16.png "SDG 16: Peace, Justice and String institutions"){
+fig-alt="SDG 16: Peace, Justice and String institutions" width=15% fig-align="left"}](https://sdgs.un.org/goals/goal16)
 
 In 2018, the British Council published an article based on a letter by Tim Berners-Lee [@berners-lee_web_2013], where he raised concerns about the dark side of the web, alongside his hopes for the future. Specifically, he raised concerns around the concentration of power and the gatekeeping effect which enables a “handful of platforms to control which ideas and opinions are seen and shared”.
 
@@ -209,24 +163,10 @@ In surveillance and sousveillance, the same technologies are used by both those 
 
 :::
 
-
-
-::: {layout="[ 76, 12, 12 ]" layout-valign="bottom"}
-
-:::: {#s5-col-1}
-
 ### Cultural colonialism
 
-::::
-
-:::: {#s5-col-2}
-[![](/chapters/images/C08_E-WEB-Goal-04.png "SDG 4: Quality Education"){fig-alt="SDG 4: Quality Education"}](https://sdgs.un.org/goals/goal4)
-::::
-:::: {#s5-col-3}
-[![](/chapters/images/C08_E-WEB-Goal-10.png "SDG 10: Reduced Inequalities"){fig-alt="SDG 10: Reduced Inequalities"}](https://sdgs.un.org/goals/goal10)
-::::
-
-:::
+[![](/chapters/images/C08_E-WEB-Goal-04.png "SDG 4: Quality Education"){ fig-alt="SDG 4: Quality Education" width=15% fig-align="left"}](https://sdgs.un.org/goals/goal4)
+[![](/chapters/images/C08_E-WEB-Goal-10.png "SDG 10: Reduced Inequalities"){ fig-alt="SDG 10: Reduced Inequalities" width=15% fig-align="left"}](https://sdgs.un.org/goals/goal10)
 
 A related problem to inequity in "AI model training" is inequity in generated content. 
 
@@ -249,7 +189,6 @@ Indeed, even before LLMs, the ease with which Internet-based technologies has al
 - **Example: Homogenisation beyond text**. Image generation models, such as DALL-E, Stable Diffusion, etc., exhibit biases in the way they respond to prompts [@park_white_2024]. With reference to the images in the linked article, students can discuss the biases they see, or do not see, in the responses; and link them to their own self-image.
 
 :::
-
 
 ## Summary {#sec-reading-list}
 
@@ -277,7 +216,6 @@ We hope that these examples, alongside the [QAA and AdvanceHE Education for Sust
   A meticulously researched piece covering the knowing involvement of IBM (and its German subsiduaries) in the actions of Nazi Germany. A good example of where prioritising profit over ethics once led us, and can lead us again.
 
 :::
-
 
 ::: {.content-visible when-format="html" unless-format="epub"}
 

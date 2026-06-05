@@ -1,5 +1,5 @@
 ---
-title: "Assessment and marking in an introductory programming course for physics students"
+title: "Assessment and Marking in an Introductory Programming Course for Physics Students"
 bibliography: references.bib
 author:
   - name: Ben Waugh
@@ -10,6 +10,12 @@ author:
     affiliations: Department of Physics and Astronomy, UCL
   - name: Louise Dash
     affiliations: Department of Physics and Astronomy, UCL
+
+keywords:
+  - scalable-assessment	
+  - alternative-assessment	
+  - marking-and-feedback	
+  - assessment-design
 ---
 
 ::: {.content-visible when-format="docx" note="this should be identical as authors above, for docx"}
@@ -119,7 +125,7 @@ The rubric is inevitably longer because the task is more extended and divided in
 
 The open-ended final investigation cannot be broken down into well-defined specific criteria, so we use only two: *thorough investigation* reflecting the ambition of the work attempted, along with its correctness, and *demonstration and discussion*, assessing how well the conclusions are explained and backed up by appropriate presentation of plots or animations. These criteria are marked out of four, and specific examples are discussed among the markers in an online forum in order to build a shared understanding of how to judge these.
 
-# The future
+## The future
 
 We continue to make minor adjustments to the course syllabus and assessment as issues arise, with an onoging focus on providing constructive feedback and fair marks to students while limiting the resulting staff workload. Possible future developments include more explicit use of frameworks such as standards-based grading [@TeachProgAcross_C38; @ClarkTalbert2023 chapter 5] or specifications grading [@ClarkTalbert2023 chapter 6].
 
