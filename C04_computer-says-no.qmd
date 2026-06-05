@@ -7,19 +7,19 @@ author:
     affiliations: Early Career Researcher Institute, Imperial College London
   - name: David Cutting
     email: d.cutting@qub.ac.uk
-    affiliations: Queen's University Belfast
+    affiliations: School of Electronics, Electrical Engineering and Computer Science, Queen's University Belfast
   - name: Ozan Evkaya
     email: Ozan.Evkaya@ed.ac.uk
-    affiliations: School of Mathematics, University of Edinburgh
+    affiliations: School of Mathematics and Maxwell Institute for Mathematical Sciences, University of Edinburgh
   - name: Lucia Michelin
     email: lucia.michielin@ed.ac.uk
     affiliations: University of Edinburgh
   - name: Samuel Skipsey
     email: Samuel.Skipsey@glasgow.ac.uk
-    affiliations: University of Glasgow
+    affiliations: School of Physics and Astronomy, University of Glasgow, University of Glasgow
   - name: Lizzie Wadsworth
     email: L.Wadsworth@kingston.ac.uk
-    affiliations: Kingston University
+    affiliations: Department of Applied and Human Sciences, Kingston University
 
 keywords:
   - accessibility-and-inclusion	
