@@ -13,7 +13,7 @@ author:
     affiliations: School of Mathematics and Maxwell Institute for Mathematical Sciences, University of Edinburgh
   - name: Lucia Michelin
     email: lucia.michielin@ed.ac.uk
-    affiliations: University of Edinburgh
+    affiliations: Edinburgh Futures Institute, University of Edinburgh
   - name: Samuel Skipsey
     email: Samuel.Skipsey@glasgow.ac.uk
     affiliations: School of Physics and Astronomy, University of Glasgow, University of Glasgow
