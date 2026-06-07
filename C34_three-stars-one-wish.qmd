@@ -2,38 +2,38 @@
 title: "3 Stars and 1 Wish: Small and Frequent Student Reflections Promote a Sense of Wonder and a Community of Vulnerability "
 bibliography: references.bib
 author:
-  - name: Pawel Orzechowski
-    affiliations: Edinburgh Medical School, University of Edinburgh
-  - name: Elaine Mowat
-    affiliations: Edinburgh Medical School, University of Edinburgh
-  - name: Karim Rivera Lares
-    affiliations: Edinburgh Medical School, University of Edinburgh
-  - name: Rebecca Sewell
-    affiliations: Health New Zealand
-  - name: Clare Llewellyn
-    affiliations: School of Social and Political Sciences, University of Edinburgh
-  - name: Beatrice Alex
-    affiliations: School of Mathematical and Computer Sciences, Heriot-Watt University
-  - name: Kasia Banas
-    affiliations: Edinburgh Medical School, University of Edinburgh
+ - name: Pawel Orzechowski
+   affiliations: Edinburgh Medical School, University of Edinburgh
+ - name: Elaine Mowat
+   affiliations: Edinburgh Medical School, University of Edinburgh
+ - name: Karim Rivera Lares
+   affiliations: Edinburgh Medical School, University of Edinburgh
+ - name: Rebecca Sewell
+   affiliations: Health New Zealand
+ - name: Clare Llewellyn
+   affiliations: School of Social and Political Sciences, University of Edinburgh
+ - name: Beatrice Alex
+   affiliations: School of Mathematical and Computer Sciences, Heriot-Watt University
+ - name: Kasia Banas
+   affiliations: Edinburgh Medical School, University of Edinburgh
 ---
 
 ::: {.content-visible when-format="docx" note="this should be identical as authors above, for docx"}
 author:
-  - name: Pawel Orzechowski
-    affiliations: Edinburgh Medical School, University of Edinburgh
-  - name: Elaine Mowat
-    affiliations: Edinburgh Medical School, University of Edinburgh
-  - name: Karim Rivera Lares
-    affiliations: Edinburgh Medical School, University of Edinburgh
-  - name: Rebecca Sewell
-    affiliations: Health New Zealand
-  - name: Clare Llewellyn
-    affiliations: School of Social and Political Sciences, University of Edinburgh
-  - name: Beatrice Alex
-    affiliations: School of Mathematical and Computer Sciences, Heriot-Watt University
-  - name: Kasia Banas
-    affiliations: Edinburgh Medical School, University of Edinburgh
+ - name: Pawel Orzechowski
+   affiliations: Edinburgh Medical School, University of Edinburgh
+ - name: Elaine Mowat
+   affiliations: Edinburgh Medical School, University of Edinburgh
+ - name: Karim Rivera Lares
+   affiliations: Edinburgh Medical School, University of Edinburgh
+ - name: Rebecca Sewell
+   affiliations: Health New Zealand
+ - name: Clare Llewellyn
+   affiliations: School of Social and Political Sciences, University of Edinburgh
+ - name: Beatrice Alex
+   affiliations: School of Mathematical and Computer Sciences, Heriot-Watt University
+ - name: Kasia Banas
+   affiliations: Edinburgh Medical School, University of Edinburgh
 :::
 
 ## What is this chapter about?
@@ -46,30 +46,45 @@ In the **3 Stars and 1 Wish** process, students periodically write a very short 
 
 ### Where did it come from?
 
-The origins of 'Three stars and a wish' (or sometimes 'Two stars and a wish') are difficult to pinpoint, but the technique appears in magazines and reports for primary school teachers [@mullane2013three]. It is used as a structure for children to talk about their achievements (stars) and goals (wishes) in relation to a particular subject, or to share their reflections on the week as part of a Friday classroom routine. It has also been used in schools and higher education as a constructive feedback technique in which positive points are followed by one area for improvement [@webb2009exploring;@wahid2025two].  
+The origins of 'Three stars and a wish' (or sometimes 'Two stars and a wish') are difficult to pinpoint, but the technique appears in magazines and reports for primary school teachers [@mullane2013three]. It is used as a structure for children to talk about their achievements (stars) and goals (wishes) in relation to a particular subject, or to share their reflections on the week as part of a Friday classroom routine. It has also been used in schools and higher education as a constructive feedback technique in which positive points are followed by one area for improvement [@webb2009exploring;@wahid2025two]. 
 
 ### What does a 3 Stars and 1 Wish post look like?
 
 3s1w is a short four-sentence piece of writing which students produce right after learning something. Prompt that students get could look like this:
 
-| Describe your  personal response to this material in three short "star" sentences and one short "wish" sentence: 3 x Star: a thing that brought you joy or wonder, which you found new or interesting 1 x Wish: a thing you wish to understand better or to improve |
-| :---- |
+::: {.callout-note icon="false"}
+# A typical 3s1w prompt for students
 
-The format is very light-touch and students can write about anything, and in any way. Indeed, each cohort develops a slightly different culture of writing 3s1w. To give you an example,  here's an example of a (fictional) 3s1w post from a Bird Physiology course. Many real students' submissions follow this length, granularity, and tone, but also there is a lot of diversity in writing styles. This is a 'check-in' of a student's own learning, so they write the way that works for them.  
+Describe your personal response to this material in three short "star" sentences and one short "wish" sentence:
 
-| 🌟 Birds' bones are are empty inside but very dense, which makes them sturdy but not really lighter\!  🌟 Birds are very warm (40'C) and lower their temperature in winter (but do not hibernate)  🌟 Birds have great vision (including UV light) and possibly sense the magnetic field of the planet with their eyes, too.  ❓ I would love to know how birds sleep. Do they keep flying? Do they have an autopilot to nap mid-flight?  |
-| :---- |
+3 x Star: a thing that brought you joy or wonder, which you found new or interesting
+
+1 x Wish: a thing you wish to understand better or to improve.
+:::
+
+
+The format is very light-touch and students can write about anything, and in any way. Indeed, each cohort develops a slightly different culture of writing 3s1w. To give you an example, here's an example of a (fictional) 3s1w post from a Bird Physiology course. Many real students' submissions follow this length, granularity, and tone, but also there is a lot of diversity in writing styles. This is a 'check-in' of a student's own learning, so they write the way that works for them. 
+
+> 🌟 Birds' bones are are empty inside but very dense, which makes them sturdy but not really lighter\!
+>
+> 🌟 Birds are very warm (40'C) and lower their temperature in winter (but do not hibernate)
+>
+> 🌟 Birds have great vision (including UV light) and possibly sense the magnetic field of the planet with their eyes, too.
+>
+>❓ I would love to know how birds sleep. Do they keep flying? Do they have an autopilot to nap mid-flight?
+
 
 ### Different types of 'wish'
 
 Below are some examples of what students write about in the 'wish' section (these are fictional, but based on our observations). Notice that the points made are not only about the course content, but also about wider issues that the course made students think about. Students often write about their own practice and a change of perspective that the course content caused for them [@marshall2022facilitating].
 
-| ❓In response to the essay about communication styles, I find that I think more now about how to talk TO my superiors, not just hear FROM them. I am looking forward to seeing how this will develop in my practice in the future. |
-| :---- |
-| ❓In my hospital wing (where I work) we tried to accommodate visitors with dyslexia better. I wish everyone could watch this lecture to understand how important accessibility is, and that it does not have to be complicated or expensive.  |
-| ❓ I wish I could access the slides for Wednesday's speaker. I loved their case studies, but was too immersed to take note of the details. Also more Q&A time with her would be great! |
+> ❓In response to the essay about communication styles, I find that I think more now about how to talk TO my superiors, not just hear FROM them. I am looking forward to seeing how this will develop in my practice in the future.
+> 
+> ❓In my hospital wing (where I work) we tried to accommodate visitors with dyslexia better. I wish everyone could watch this lecture to understand how important accessibility is, and that it does not have to be complicated or expensive.
+> 
+>❓ I wish I could access the slides for Wednesday's speaker. I loved their case studies, but was too immersed to take note of the details. Also more Q&A time with her would be great!
 
-While we do not encourage using 3s1w to provide course feedback, or immediate requests for help, it occasionally happens. The wish to understand something better may stem directly from the fact that course delivery was less than ideal;  for example,when the audio quality or text format made it difficult to understand slides, getting these things right could become a wish.
+While we do not encourage using 3s1w to provide course feedback, or immediate requests for help, it occasionally happens. The wish to understand something better may stem directly from the fact that course delivery was less than ideal; for example,when the audio quality or text format made it difficult to understand slides, getting these things right could become a wish.
 
 If you don't want the unique function of a wish to be hijacked by course feedback or requests for help, we recommend providing other means for students to achieve these aims. On most courses we have three separate discussion forums in addition to 3s1w: one for questions about the content; one for questions about course admin; and one for raising bugs. Every day a teaching assistant responds to student posts on those forums and engages with student questions there. This promotes understanding that requests for help or course issues should happen on these discussion forums, rather than in 3s1w.
 
@@ -83,7 +98,7 @@ We created 3s1w so that it gives an opportunity/excuse to learn more, as an "ass
 
 We also believe in allowing the community of learners to lead the course experiences, rather than focusing on lone work, or on rigid structures imposed by the teachers. We drew inspiration from the concept of 'Liberating Structures' [@lipmanowicz2013surprising], a collection of lightly-constraint activities designed to allow learners to be in charge of their learning. Each cohort of students shape their 3s1w forums slightly differently, and we do not interfere as long as they share their insights equitably and kindly.
 
-We also take inspiration from the concept of a Gratitude Journal [@hebbink2025educational] where participants are regularly asked to list things they are grateful for. This is meant to have an effect of motivating them to 'tune into' noticing good things, so that they have something to write about. The same can happen as learners are looking out for things that bring them joy in the course. Since students see each other's posts, we also observed a 'Community of Vulnerability' – a space where students feel safe to admit to their struggles , and see that they are not alone. The "wish" aims to replace the fear and stigma of being confused or lost, with a sense of pride in the educational struggle [@kapur2008productive]. Moments of struggle, and developing strategies  to overcome it, are an important part of learning. This approach promotes sustainable growth over maintaining a false facade of constant high achievement.
+We also take inspiration from the concept of a Gratitude Journal [@hebbink2025educational] where participants are regularly asked to list things they are grateful for. This is meant to have an effect of motivating them to 'tune into' noticing good things, so that they have something to write about. The same can happen as learners are looking out for things that bring them joy in the course. Since students see each other's posts, we also observed a 'Community of Vulnerability' – a space where students feel safe to admit to their struggles , and see that they are not alone. The "wish" aims to replace the fear and stigma of being confused or lost, with a sense of pride in the educational struggle [@kapur2008productive]. Moments of struggle, and developing strategies to overcome it, are an important part of learning. This approach promotes sustainable growth over maintaining a false facade of constant high achievement.
 
 We have been using 3s1w as a short, high frequency, reflective learning activity within university courses at the University of Edinburgh. Between 2019 and 2026, over 1000 students have participated in 3s1w activities as part of 30+ courses delivered across the Business School, the Edinburgh Futures Institute and the Edinburgh Medical School. The courses included online and onsite delivery, postgraduate and undergraduate curriculum, and ranged from 20 to 150 students. 
 
@@ -109,7 +124,7 @@ This process, if done often, is very quick, we encourage students to revisit the
 
 ### It's intimidating 
 
-For teachers, asking our students what they find interesting may be intimidating, we might think "but what if they did not find anything interesting in the class?". This either means that we did not do a very good job, or that the students did not pay attention. In either case, we want to know about this, and we want to know early, so that we can adapt our teaching style. In our courses, when we use 3s1w, we pay attention to the granularity and frequency of check-ins. As we encourage immediate reflection,  students are asked to reflect more rather than less often, for example, after every few hours of learning, after an activity, or as a weekly check-in on a long course. In other words, we ask students to reflect as soon as there is something to reflect upon, and to do it immediately afterwards, when their thoughts and feelings are still fresh.
+For teachers, asking our students what they find interesting may be intimidating, we might think "but what if they did not find anything interesting in the class?". This either means that we did not do a very good job, or that the students did not pay attention. In either case, we want to know about this, and we want to know early, so that we can adapt our teaching style. In our courses, when we use 3s1w, we pay attention to the granularity and frequency of check-ins. As we encourage immediate reflection, students are asked to reflect more rather than less often, for example, after every few hours of learning, after an activity, or as a weekly check-in on a long course. In other words, we ask students to reflect as soon as there is something to reflect upon, and to do it immediately afterwards, when their thoughts and feelings are still fresh.
 
 For students in higher education, struggle is an important part of learning: we do not understand things until we have grappled with them. Reflection, necessarily, will contain what is still unclear and what the students want to understand better. Struggle can stimulate negative feelings, and they need somewhere to go. That's where the 'wish' part of this method comes in. There is a designated place to be vulnerable and to give oneself space to not be confident \- yet. When we see that others are in the same position as us, that they feel that way too, it can bring reassurance and a sense of community where we share our moments of struggle. 3s1w gives students an opportunity to celebrate and be rewarded for their struggles as much as for their successes.
 
@@ -123,9 +138,9 @@ In our courses, we often implement 3s1w as an online discussion forum, where eac
 
 Motivation is an intricate mix of internal and external reasons to do something. Intrinsic motivation can come from curiosity about the subject, engagement with the way teaching is delivered, or from gamification mechanisms. This gamification can encourage students they may have a desire to complete all task, to be the first one who finishes, or to see themselves as part of a team effort. Course-wide 3s1w discussion forum can utilise those game-like motivators positively and safely when combined with a meaningful code of conduct.
 
-We can also provide students with extrinsic sources of motivation, such as grades or the appreciation of their cohort community. Over the years, we have experimented with different ways that could 3s1w contribute towards the course grade. In some courses it was completely voluntary, but in most courses, we have found it helpful to assign a contribution of 10% of the final grade. This is a reward for taking part in the process and encourages engagement. For example, in a course with 15 check-ins, each is worth 0.7% of the final grade, with a total of 10%. This is enough to motivate almost all students to submit their reflections, but also it is a small enough fraction as to not disrupt the final course marks. There is no 'correct answer' to a written reflection of this type, it is by design very personal and individual;  we give each 3s1w entry full marks if it appears to be written by a human and follows the 3s1w format. In the tens of thousands of student entries over the years, we have struggled to find any submissions that do not meet this criteria, no-one ever wrote "blah blah blah" as their entry\! This is possibly due to students keeping each other accountable, as all posts are visible to the whole cohort. One student (see below) told us that she was not even tempted to cheat and use LLMs to write 3s1w for her, because writing the prompt would take her longer than just writing the 3s1w by herself. We consider this our biggest success: honest learning being faster and easier to do than cheating. This is the true meeting of 3s1w being 'almost for free'.
+We can also provide students with extrinsic sources of motivation, such as grades or the appreciation of their cohort community. Over the years, we have experimented with different ways that could 3s1w contribute towards the course grade. In some courses it was completely voluntary, but in most courses, we have found it helpful to assign a contribution of 10% of the final grade. This is a reward for taking part in the process and encourages engagement. For example, in a course with 15 check-ins, each is worth 0.7% of the final grade, with a total of 10%. This is enough to motivate almost all students to submit their reflections, but also it is a small enough fraction as to not disrupt the final course marks. There is no 'correct answer' to a written reflection of this type, it is by design very personal and individual; we give each 3s1w entry full marks if it appears to be written by a human and follows the 3s1w format. In the tens of thousands of student entries over the years, we have struggled to find any submissions that do not meet this criteria, no-one ever wrote "blah blah blah" as their entry\! This is possibly due to students keeping each other accountable, as all posts are visible to the whole cohort. One student (see below) told us that she was not even tempted to cheat and use LLMs to write 3s1w for her, because writing the prompt would take her longer than just writing the 3s1w by herself. We consider this our biggest success: honest learning being faster and easier to do than cheating. This is the true meeting of 3s1w being 'almost for free'.
 
-## Main Themes from feedback and our experience  {#main-themes-from-feedback-and-our-experience}
+## Main Themes from feedback and our experience {#main-themes-from-feedback-and-our-experience}
 
 ### Assessment FOR learning (not just OF learning)
 
@@ -194,7 +209,7 @@ Each course and each cohort are different. Below is a case study of one of our c
 
 ### Case study: Foundations of Software Development 
 
-3s1w has been used in our Foundations of Software Development course (in the Business School, and later in the Edinburgh Medical School). This course has been adapted and delivered to undergraduate and postgraduate students, in-person and online. Below, we will describe its use to illustrate the practicalities of using 3s1w in a university course.  
+3s1w has been used in our Foundations of Software Development course (in the Business School, and later in the Edinburgh Medical School). This course has been adapted and delivered to undergraduate and postgraduate students, in-person and online. Below, we will describe its use to illustrate the practicalities of using 3s1w in a university course. 
 
 In Foundations of Software Development, students learn in 1.5-hour long chunks called badges \- each badge consists of a video, a coding notebook and a small exercise. Right after completing each badge, we ask the students to write their 3s1w on an online forum where it's visible to all other students. In each learning week, students are given 2-3 badges to complete (each ending with a 3s1w entry), which then adds up to about 15 entries over the entire course.
 
@@ -238,7 +253,7 @@ Congruency (or genuineness) has been identified as a core condition for effectiv
 
 #### Make it happen immediately after learning
 
-Including 3s1w as a frequent activity that captures meaningful moments as they occur is key to its currency and interest for students.  We recommend embedding it at regular points that make most sense for your particular course design, taking care to share the rationale with the students so they are clear about why they are doing it. 
+Including 3s1w as a frequent activity that captures meaningful moments as they occur is key to its currency and interest for students. We recommend embedding it at regular points that make most sense for your particular course design, taking care to share the rationale with the students so they are clear about why they are doing it. 
 
 > "There is something great about asking immediately after completing some course content. The immediacy of what you like and what you didn't like... it's all very fresh in your head. You still remember things which were interesting and which you did not understand. It works great when it captures the thoughts and feelings as they happen. But I don't think 3s1w would work after some time, like a week later." - Rebecca, Postrgraduate Student
 
