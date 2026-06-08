@@ -72,6 +72,8 @@ The format is very light-touch and students can write about anything, and in any
 >
 >❓ I would love to know how birds sleep. Do they keep flying? Do they have an autopilot to nap mid-flight?
 
+Students submit their 3s1w reflections as discussion forum posts, one for each course topic (@fig-c34-3s1w-post-prompt).
+
 ![Instructors start a thread for each topic with an example first post. Students write their reflections below. This course was split into 15 badges, hence requiring 15 3s1w posts from each student.]( /chapters/images/c34-3s1w-post-prompt.png){#fig-c34-3s1w-post-prompt fig-alt="Screenshots of virtual learning environment showing discussion forum with 3s1w. First example post is written by the instructor."  width=90%}
 
 ### Different types of 'wish'
@@ -212,7 +214,7 @@ Each course and each cohort are different. Below is a case study of one of our c
 
 3s1w has been used in our Foundations of Software Development course (in the Business School, and later in the Edinburgh Medical School). This course has been adapted and delivered to undergraduate and postgraduate students, in-person and online. Below, we will describe its use to illustrate the practicalities of using 3s1w in a university course. 
 
-In Foundations of Software Development, students learn in 1.5-hour long chunks called badges \- each badge consists of a video, a coding notebook and a small exercise. Right after completing each badge, we ask the students to write their 3s1w on an online forum where it's visible to all other students. In each learning week, students are given 2-3 badges to complete (each ending with a 3s1w entry), which then adds up to about 15 entries over the entire course.
+In Foundations of Software Development, students learn in 1.5-hour long chunks called badges \- each badge consists of a video, a coding notebook and a small exercise. Right after completing each badge, we ask the students to write their 3s1w on an online forum where it's visible to all other students. In each learning week, students are given 2-3 badges to complete (each ending with a 3s1w entry), which then adds up to about 15 entries over the entire course (@fig-c34-3s1w-course-structure).
 
 Participation in 3s1w is worth 10% of the final grade, so if a student meaningfully writes 9 out of 15 posts (60%), they would get 6 out of 10 points towards the course grade. Since this is a low-stakes assessment, each post that is on topic and within the 3s1w format gets full points. Participation is very high, with 80% of students completing all entries, and around 60% of students completing the entries as they learn (rather than 'cramming' them at the end). A member of the teaching team reads the entries and produces a 'weekly digest' email for students about what everyone enjoyed and struggled with this week.
 
