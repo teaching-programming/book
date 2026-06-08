@@ -1,6 +1,4 @@
-**BOOK COPYRIGHT PAGE**
-
----
+## Copyright
 
 First published in 2026 by the University of Edinburgh
 
@@ -28,17 +26,14 @@ Any third-party material in this book is not covered by the book’s Creative Co
 ISBN (print): 978-1-83645-168-6  
 ISBN (ebook): 978-1-83645-079-5  
 DOI: 10.2218/ED.9781836450795  
-DOI link: <https://doi.org/10.2218/ED.9781836450795>
+DOI link: <https://doi.org/10.2218/ED.9781836450795>
 
-Cover design by Pawel Orzechowski  
+Cover design by Pawel Orzechowski
 
 Printed and bound by Lulu.com
 
 
-::: {layout-ncol=2}
-![](chapters/images/C00_UoE_logo.png){fig-alt="The University of Edinburgh logo"}
-
-![](chapters/images/C00_EdinburghDiamond_logo.png){fig-alt="Edinburgh Diamond logo"}
-:::
+![](chapters/images/C00_UoE_logo.png){fig-alt="The University of Edinburgh logo" fig-alight=left width=40%}
+![](chapters/images/C00_EdinburghDiamond_logo.png){fig-alt="Edinburgh Diamond logo" fig-alight=left width=40%}
 
 ---
