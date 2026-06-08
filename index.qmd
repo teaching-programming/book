@@ -1,5 +1,5 @@
 ---
-title: "Teaching Programming across Disciplines"
+title: "Teaching Programming Across Disciplines"
 toc: true
 ---
 
