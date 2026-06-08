@@ -75,7 +75,7 @@ Concepts used to assess motivation are fully explained by @miller2013motivationa
 
 Learners are first asked to rate how confident they feel in learning how to code on a scale of 1 to 10. This is then followed up with two questions: why they didn't choose a lower number to uncover strengths, and why they didn't choose a higher number to identify barriers. This process is then repeated with learners rating how important they feel learning to code is, again giving reasons why they didn't choose a lower or higher number.
 
-A learner may respond that they rate themselves as 5 out of 10 in terms of how confident they feel in learning to code. The learner explains that they have some prior experience writing code, but that they became frustrated by frequent error messages. However, they rate the importance of learning to code as 9 out of 10 because they understand it would be beneficial for their career. In response to this, the educator can offer reassurance that frustration is one of the common concerns that students face when first learning to code, as explained further later in the chapter.
+A learner may respond that they rate themselves as 5 out of 10 in terms of how confident they feel in learning to code. The learner explains that they have some prior experience writing code, but that they became frustrated by frequent error messages. However, they rate the importance of learning to code as 9 out of 10 because they understand it would be beneficial for their career. In response to this, the educator can offer reassurance that frustration is one of the common concerns that students face when first learning to code, as explained later in the chapter.
 
 We suggest this exercise only needs to be completed once as an assessment tool and is most effective in the early stages of a learning programme, during the first class if possible. Educators benefit from this as it provides insight into the needs of the class. The need for additional support, such as drop-in workshops, can be assessed, which is especially helpful in remote settings with limited contact time. As responses are shared within the group, for learners, it can create a sense of peer support when others share similar concerns, and it may also highlight positives they hadn't yet thought of. It is anticipated that this exercise will help learners embrace the learning process rather than being undermined by self-doubt.
 
@@ -96,11 +96,11 @@ To help learners receive and process both types of feedback, reflective learning
 * **Describe the scenario:** I was practising filtering a dataframe using the built-in `iris` dataset in R.
 * **Describe the problem encountered:** the dataframe did not filter.
 * **Which part of the code was the problem?:** `filter(iris, Species == "setosa")`
-* **What was the error message?:** `Error: object ‘Species' not found`
-* **How the problem was solved:** I realised I needed to load the `dplyr` library to access the function that I wanted to use; therefore, at the start of the script, I entered `library(dplyr)` to load the function.
+* **What was the error message?:** `Error: object 'Species' not found`
+* **How the problem was solved:** I realised I needed to load the `dplyr` package to access the function that I wanted to use; therefore, at the start of the script, I entered `library(dplyr)` to load the function.
 * **What further guidance is needed:** I wasn't sure why it didn't tell me that the function itself wasn't loaded.
-* **Lessons or code snippets to take forward for next time:** Always check to ensure necessary libraries are loaded.
-* **Comments from other learners or educators:** "filter" is also the name of a function from the stats package, which is loaded by default. This is why the error message didn't say the filter function could not be found.
+* **Lessons or code snippets to take forward for next time:** Always check to ensure necessary packages are loaded.
+* **Comments from other learners or educators:** `filter()` is also a function in the `stats` package, which is loaded by default. This is why the error message didn't say the `filter()` function could not be found.
 
 :::
 
@@ -154,7 +154,7 @@ It is anticipated that this approach will help learners think through a coding p
 
 Common self-limiting beliefs that students might hold often fall into the themes of the learning process, self-belief, writing code, and the relevance of coding to them. To address these, we have compiled a "Myth vs. Reality" table summarising what we believe to be the most common misconceptions. The goal is for students to identify any myths they may hold and feel encouraged to replace them with more constructive thoughts.
 
-Where possible, the educator can encourage students to add to the table with their own barriers, either by using those highlighted in the motivational exercise or following a brainstorming exercise. It is important that educators use supportive language when working through this exercise. For example, rather than describing code as a "failure", they can take the opportunity to reinforce that coding is an iterative discipline. This helps develop the coding mindset and prepare learners for working on their own projects outside the classroom. 
+Where possible, the educator can encourage students to add to the table with their own barriers, either by using those highlighted in the motivational exercise described earlier in the chapter or following a brainstorming exercise. It is important that educators use supportive language when working through this exercise. For example, rather than describing code as a "failure", they can take the opportunity to reinforce that coding is an iterative discipline. This helps develop the coding mindset and prepare learners for working on their own projects outside the classroom. 
 
 This activity empowers learners to tackle their self-limiting beliefs and also provides educators with insight into their students' mindsets.
 
