@@ -637,3 +637,8 @@ LinkedIn: <https://www.linkedin.com/in/rob-young-9804a780/>
 
 ----
 
+### John Wilson
+
+#### Teaching Fellow, Edinburgh Medical School, University of 
+
+I worked in outdoor education for over 10 years where I helped terrified people understand that walking backwards off a cliff was scary, but safe. I later went to university to study ecology, and eventually found myself explaining that although R was scary, it was safe. I have spent the years since helping people learn technical subjects am convinced that people describe things as "scary" or "difficult" they really just mean "unfamiliar".
