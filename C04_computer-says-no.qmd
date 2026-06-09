@@ -16,7 +16,7 @@ author:
     affiliations: Edinburgh Futures Institute, University of Edinburgh
   - name: Samuel Skipsey
     email: Samuel.Skipsey@glasgow.ac.uk
-    affiliations: School of Physics and Astronomy, University of Glasgow, University of Glasgow
+    affiliations: School of Physics and Astronomy, University of Glasgow
   - name: Lizzie Wadsworth
     email: L.Wadsworth@kingston.ac.uk
     affiliations: Department of Applied and Human Sciences, Kingston University
@@ -43,7 +43,7 @@ author:
     affiliations: Edinburgh Futures Institute, University of Edinburgh
   - name: Samuel Skipsey
     email: Samuel.Skipsey@glasgow.ac.uk
-    affiliations: School of Physics and Astronomy, University of Glasgow, University of Glasgow
+    affiliations: School of Physics and Astronomy, University of Glasgow
   - name: Lizzie Wadsworth
     email: L.Wadsworth@kingston.ac.uk
     affiliations: Department of Applied and Human Sciences, Kingston University
@@ -94,8 +94,6 @@ Using these GIFs, students can be directed to the worksheet and most will be abl
 Some modules can require pre-existing skills in tools such as data visualisation and interpretation, and learning these skills may not be a learning outcome of the module. Instead, these skills may be assumed prior knowledge, which can cause problems for students who do not feel comfortable with these skills. For cohorts with diverse backgrounds, such as postgraduate students, extra care is needed to support novice learners. From that perspective, having clear and open communication with learners to understand their background is a good starting point. To support their learning process effectively, supplementary learning material such as a deck of slides, glossaries and cheat sheets can be provided. These can be referenced by novice learners and can help them keep up without slowing the progress of more experienced learners.
 
 Proactively consulting with learners can be useful to decide which type of supplementary material would be most beneficial for the cohort. A module-specific glossary of key programming terms and common troubleshooting can be a useful reference. Supplementary materials can also include summaries of technical concepts and practical code implementations. More comprehensive materials can even include worked examples or mini exercises with different styles of questions such as code completion or code adaptation.
-
-[TODO: Here I can add a snapshot from a glossary example of my Representing Data ?]
 
 Learners who lack some of the assumed skills may still have to work harder to complete a course, but structured and targeted supplementary materials can make it possible for these students to catch up and keep up.
 
