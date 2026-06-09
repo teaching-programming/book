@@ -59,7 +59,7 @@ Educators looking to balance theory with practical application in data science e
 
 This chapter dives into the role of Jupyter Notebooks in programming education. The chapter explores the benefits of using Jupyter for teaching core programming concepts without overwhelming students with technical setup issues. It also discusses potential pitfalls and presents ways instructors can optimise the learning experience.
 
-This chapter is a valuable read for those teaching in tech-heavy courses.
+This chapter is a valuable read for those teaching in Python tech-heavy courses.
 
 ### Bridging Languages: Teaching C to Python Novices [@TeachProgAcross_C07]
 
