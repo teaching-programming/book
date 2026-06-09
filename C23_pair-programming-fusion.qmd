@@ -1,7 +1,25 @@
 ---
-title: "Learning Together Across Modes: Online and On-site Pair Programming in a Hybrid / Fusion Course"
+title: "Learning Together Across Modes: Online and On-Site Pair Programming in a Fusion Course"
 bibliography: references.bib
 
+author:
+  - name: Beatrice Alex
+    corresponding: true
+    email: B.Alex@hw.ac.uk
+    affiliations: Edinburgh Futures Institute, University of Edinburgh; School of Literatures, Languages and Cultures, University of Edinburgh
+  - name: Clare Llewellyn
+    affiliations: School of Social and Political Sciences, University of Edinburgh
+  - name: Pawel Orzechowski
+    affiliations: Edinburgh Medical School, University of Edinburgh
+  - name: Luke Stephens
+    affiliations: School of Social and Political Sciences, University of Edinburgh
+
+keywords:
+  - pair-programming	
+  - building-community
+---
+
+::: {.content-visible when-format="docx" note="this should be identical as authors above, for docx"}
 author:
   - name: Beatrice Alex
     corresponding: true
@@ -12,14 +30,7 @@ author:
     affiliations: Edinburgh Medical School, University of Edinburgh
   - name: Luke Stephens
     affiliations: School of Social and Political Sciences, University of Edinburgh
-
-keywords:
-  - course innovation
-  - pair programming
-  - teaching programming
-  - text mining
-  - stories
----
+:::
 
 ## Introduction
 

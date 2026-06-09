@@ -8,11 +8,17 @@ author:
     affiliations: Usher Institute, University of Edinburgh
 
 keywords:
-  - pair programming
-  - teaching support
-  - challenges
-  - reflections
+  - pair-programming	
+  - tutor-experience
 ---
+
+::: {.content-visible when-format="docx" note="this should be identical as authors above, for docx"}
+author:
+  - name: Sarah Elliot
+    email: s.s.elliot@sms.ed.ac.uk
+    corresponding: true
+    affiliations: Usher Institute, University of Edinburgh
+:::
 
 ## From student to teacher
 
@@ -22,7 +28,7 @@ I worked as a tutor on an introductory R course designed for beginners. Students
 
 ## Pair programming builds confidence
 
-The emergence of generative artificial intelligence (AI) has reshaped how beginner programmers can approach coding tasks. Problems that previously required trial-and-error troubleshooting can be resolved within seconds of requesting an AI solution. These AI tools are valuable but can reduce the understanding of the resulting code. Learning to program involves more than obtaining functional code: it is important to understand core concepts such as data and its structure, functions, good coding practices, problem solving, and transparent interpretation and communication of results. The best way to develop these skills is through actively engaging with problems as opposed to passively receiving an answer [@bonwell_active_1991; @chattopadhyay_scaffolded_2022].
+The emergence of generative artificial intelligence (AI) has reshaped how beginner programmers can approach coding tasks. **Problems that previously required trial-and-error troubleshooting can be resolved within seconds of requesting an AI solution.** These AI tools are valuable but can reduce the understanding of the resulting code. Learning to program involves more than obtaining functional code: it is important to understand core concepts such as data and its structure, functions, good coding practices, problem solving, and transparent interpretation and communication of results. The best way to develop these skills is through actively engaging with problems as opposed to passively receiving an answer [@bonwell_active_1991; @chattopadhyay_scaffolded_2022].
 
 **Pair programming is a strategy that prioritises learning the process of coding as opposed to just the end product.** It involves at least two individuals working together on the same task at the same time, with one ‘driver’ who types the code and thinks out loud and one ‘navigator’ who instructs the driver, reflects on the code, and looks out for mistakes [@bryant_pair_2008]. Working collaboratively, students articulate their reasoning, suggest alternative approaches and interpret challenges together.
 
@@ -38,13 +44,13 @@ Implementing pair programming was not without difficulties. Grouping students wi
 
 Technical constraints also impacted participation. Due to the remote delivery and global reach of this course, it was common for some learners to have unstable internet connectivity or other technical issues that limited their ability to share their screen and take on the ‘driver’ role. This influenced the roles that individuals could choose and the group dynamics. This was improved by using groups of three where needed, allowing more flexibility in chosen roles.
 
-Although collaborative learning is a valuable skill, it can be undermined if students see their classmates as competitors [@schinske_teaching_2014]. In this course, students are explicitly told that their final grades would not be in competition with their peers, and this framing helped encourage collaboration throughout pair programming. Throughout the pair coding tasks, students shared ideas, experiences, useful tools and innovative functions, which appeared to improve the quality of the learning and understanding of key concepts across the cohort.
+**Although collaborative learning is a valuable skill, it can be undermined if students see their classmates as competitors [@schinske_teaching_2014].** In this course, students are explicitly told that their final grades would not be in competition with their peers, and this framing helped encourage collaboration throughout pair programming. Throughout the pair coding tasks, students shared ideas, experiences, useful tools and innovative functions, which appeared to improve the quality of the learning and understanding of key concepts across the cohort.
 
 ## A richer learning experience for both students and tutors
 
 While facilitating pair programming, a tutor’s role is to support students as they work through tasks and navigate challenges. This involves allowing students to attempt challenges before offering help and, when needed, providing helpful hints as opposed to full solutions, balancing guidance with autonomy. The nature of pair programming means students must verbalise their thought process, making it easier for tutors to assess the learners’ needs and identify any misunderstandings. While the class is working in pairs, tutors have the opportunity to assist individual learners or pairs [@soleimani_peer-mediated_2017]. As more experienced R programmers, tutors can share practical, real-world approaches for students to explore. Tutors are able to observe pair dynamics to learn which pairs work well and who needs more support, to inform future groupings. Tutors should lead by example to support student learning: this includes communicating ideas clearly, modelling good coding practices, maintaining approachability (such as keeping cameras on in remote sessions), and asking reflective questions.
 
-Reflecting on this experience, using pair programming to teach non-programmers resulted in a way of both building confidence in technical skills and fostering community in a remote environment. In an era where AI can readily generate solutions, pair programming allowed students to gain hands-on coding experience and programmatic thinking, while also developing transferable skills such as problem solving, communication, and collaborative learning. As a PhD tutor, pair programming allowed me to share my own strategies during these sessions and also learn new approaches from the students, showing that learning is richest when multiple perspectives are shared at every level.
+Reflecting on this experience, using pair programming to teach non-programmers resulted in a way of both building confidence in technical skills and fostering community in a remote environment. In an era where AI can readily generate solutions, pair programming allowed students to gain hands-on coding experience and programmatic thinking, while also developing transferable skills such as problem solving, communication, and collaborative learning. **As a PhD tutor, pair programming allowed me to share my own strategies during these sessions and also learn new approaches from the students, showing that learning is richest when multiple perspectives are shared at every level.**
 
 
 ::: {.content-visible when-format="html" unless-format="epub"}

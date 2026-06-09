@@ -1,5 +1,5 @@
 ---
-title: "Second Languages: Teaching C to Python+Jupyter Novices"
+title: "Bridging Languages: Teaching C to Python Novices"
 bibliography: references.bib
 author:
   - name: Sam Skipsey
@@ -15,12 +15,25 @@ author:
     email: d.cutting@qub.ac.uk
     affiliations: Queen's University Belfast
 keywords:
-  - jupyter
-  - mental models
-  - python
-  - C
-  - julia
+  - curriculum-design	
+  - coding-mindset
 ---
+
+::: {.content-visible when-format="docx" note="this should be identical as authors above, for docx"}
+author:
+  - name: Sam Skipsey
+    email: Samuel.Skipsey@glasgow.ac.uk
+    affiliations: University of Glasgow
+  - name: Gordon Stewart
+    email: Gordon.Stewart@glasgow.ac.uk
+    affiliations: University of Glasgow
+  - name: Jeremy Singer
+    email: Jeremy.Singer@glasgow.ac.uk
+    affiliations: University of Glasgow
+  - name: David Cutting
+    email: d.cutting@qub.ac.uk
+    affiliations: Queen's University Belfast
+:::
 
 ## Introduction
 
@@ -197,7 +210,7 @@ After this chapter was drafted, the decision was made to change the contents of 
 
 In exchange, the course now covers software engineering concepts more substantially, with lab material on unit testing, performance profiling and reproducible code and packaging now provided. The performance profiling aspects have been the most challenging, in overcoming the intrinsic "just translate it to NumPy" problem, but we have taken the opportunity to introduce the physicists to some light conceptual exercises on the scaling of different data structures as part of this.
 
-Interestingly, immediate feedback from the physics students who had taken the previous version of course has been mixed: those who felt the need to comment mostly argued that learning a performance language like C had been valuable to their deeper understanding of programming as a discipline.
+Interestingly, immediate feedback from the physics students who had taken the previous version of the course has been mixed: those who felt the need to comment mostly argued that learning a performance language like C had been valuable to their deeper understanding of programming as a discipline.
 It is, of course, too early to say if this is a wholly successful change, although interim feedback has been generally positive... except, again, for a small number who were hoping to learn C!
 
 ::: {.content-visible when-format="html" unless-format="epub"}

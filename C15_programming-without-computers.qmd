@@ -14,12 +14,25 @@ author:
     affiliations: School of Electronics, Electrical Engineering and Computer Science, Queen's University Belfast
 
 keywords:
-  - computational thinking
-  - computationalthinking
-  - barriers
-  - unplugged
-  - play
+  - coding-mindset	
+  - tool-review	
+  - accessibility-and-inclusion
+  
 ---
+
+::: {.content-visible when-format="docx" note="this should be identical as authors above, for docx"}
+author:
+  - name: David Cutting
+    email: d.cutting@qub.ac.uk
+    corresponding: true
+    affiliations: School of Electronics, Electrical Engineering and Computer Science, Queen's University Belfast
+  - name: Neil Anderson
+    email: n.anderson@qub.ac.uk
+    affiliations: School of Electronics, Electrical Engineering and Computer Science, Queen's University Belfast
+  - name: Matthew Collins
+    email: m.collins@qub.ac.uk
+    affiliations: School of Electronics, Electrical Engineering and Computer Science, Queen's University Belfast
+:::
 
 
 ## Introduction
@@ -42,7 +55,7 @@ The **ProgBoard**, developed as part of the "Think Like a Computer" initiative [
 
 The board itself consists of a grid on which tokens representing instructions can be placed. Problems are posed in the form of challenges, such as navigating a path, following rules, or producing repeated patterns. Learners construct solutions by arranging instruction tokens in order, creating simple algorithms that can be "executed" by following the board step by step.
 
-![A ProgBoard being used to break the ice with during international programming teaching in China.](/chapters/images/C15_pb3.jpg "ProgBoard used in a Chinese University"){fig-alt="Five students work together on a ProgBoard printed on a sheet of paper." width=70%}
+![A ProgBoard being used to break the ice with during international programming teaching in China.](/chapters/images/C15_pb3.jpg "ProgBoard used in a Chinese University"){#fig-c15-progboard-students fig-alt="Five students work together on a ProgBoard printed on a sheet of paper." width=70%}
 
 ### Sequence
 

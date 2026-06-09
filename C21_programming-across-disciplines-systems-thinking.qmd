@@ -3,7 +3,6 @@ title: "How Teaching Programming Across Disciplines Can Instil Systems Thinking"
 bibliography: references.bib
 author:
   - name: Leo Riviera
-    orcid: 0009-0004-3316-1852
     email: leo.riviera@voxa.dev
     affiliations: Voxa
   - name: Maeve Murphy Quinlan
@@ -14,11 +13,28 @@ author:
   - name: Devanjan Bhattacharya
     affiliation: Bayes Centre, University of Edinburgh
     email: d.bhattacharya@ed.ac.uk
+
 keywords:
-  - systems thinking
-  - computer programs
-  - conceptual systems
+  - responsible-programming	
+  - education-ecosystem	
+  - critical-thinking	
+  - coding-mindset
 ---
+
+::: {.content-visible when-format="docx" note="this should be identical as authors above, for docx"}
+author:
+  - name: Leo Riviera
+    email: leo.riviera@voxa.dev
+    affiliations: Voxa
+  - name: Maeve Murphy Quinlan
+    email: m.murphyquinlan@leeds.ac.uk
+    affiliations: Research Computing, University of Leeds
+  - name: Rebecca L. Colquhoun
+    affiliation: Department of Earth Science and Engineering, Imperial College London
+  - name: Devanjan Bhattacharya
+    affiliation: Bayes Centre, University of Edinburgh
+    email: d.bhattacharya@ed.ac.uk
+:::
 
 ## Introduction
 
@@ -44,7 +60,7 @@ In learning to code, students encounter computational thinking [@C15_r1]. Comput
 * Abstraction, where we model the core aspects of a complex problem or system
 * Systematic testing, where we take purposeful steps to derive solutions
 
-Computational thinking has applications beyond computing. It is seen as fundamental for analysing and solving all sorts of problems, because we can transfer techniques we use to make our solutions efficient for computers to other disciplines[^c21_NuancedPoint] [@c21_ComputationalThinkingWhatAndWhy; @c21_ComputationalThinkingTransferrable]. Programming is a tool to teach computational thinking, but computational thinking can be applied to other problems. Even if one disagrees with the premise that computational thinking provides skills which are directly transferrable to other disciplines, learning to code is a good form of mental exercise and teaches us to solve problems. [@c21_ComputationalThinkingTransfersUnproven; @c21_CodingProblemSolvingSkills]
+Computational thinking has applications beyond computing. It is seen as fundamental for analysing and solving all sorts of problems, because we can transfer techniques we use to make our solutions efficient for computers to other disciplines[^c21_NuancedPoint] [@c21_ComputationalThinkingWhatAndWhy; @c21_ComputationalThinkingTransferrable]. Programming is a tool to teach computational thinking, but computational thinking can be applied to other problems. Even if one disagrees with the premise that computational thinking provides skills which are directly transferrable to other disciplines, learning to code is a good form of mental exercise and teaches us to solve problems [@c21_ComputationalThinkingTransfersUnproven; @c21_CodingProblemSolvingSkills].
 
 [^c21_NuancedPoint]: The point we're making here is quite nuanced. Analysis by @c21_CodingProblemSolvingSkills establishes that learning to code may be associated with *some* broader cognitive benefit, with any possible transfer of learning coming with an explicit cost in the form of sufficient teaching time, supportive educational environments, and teacher training. However, this chapter posits that computational thinking, often taught through computer programming, provides a cognitive framework that makes solving problems in other disciplines easier.
 
@@ -130,7 +146,7 @@ During the process of designing systems, we can consider our mental model of the
 
 Our thinking is bounded by our ability to describe the world. If we lack the language to discuss change, we will struggle to conceptualise it. Put more succinctly by Ludwig Wittgenstein, the limits of one’s language are the limits of their world [@c21_Wittgenstein]. Teaching programming instils computational thinking, as a stepping stone to systems thinking. With systems thinking, we have a language to describe the way the world works and how we can change it. In fact, the two work in tandem. Computational thinking provides us the ability to solve complex problems by breaking them down into smaller parts; systems thinking gives us a way to model how those smaller parts fit together and interact with one another.
 
-What we teach speaks to the kind of people we want in the world. The type of work we do influences the type of people we are. We grow to fit the jobs we work based on the skills we use every day [@c21_WorkInfluencesUs]. We should encourage our students to develop systems thinking skills through programming, and to use those skills as part of their problem-solving toolkit in the workplace. Equipping people with the ability to identify, decompose and eventually restructure the systems which govern our world will make them more effective, more independent and more capable agents of change. They will finally see the world for what it is: a collection of elements to be examined, interrogated, and reconstructed in the image of something more equitable and more sustainable.
+What we teach speaks to the kind of people we want in the world. The type of work we do influences the type of people we are. We grow to fit the jobs we work based on the skills we use every day [@c21_WorkInfluencesUs]. We should encourage our students to develop systems thinking skills through programming, and to use those skills as part of their problem-solving toolkit in the workplace. Equipping people with the ability to identify, decompose and eventually restructure the systems which govern our world will make them more effective, more independent, and more capable agents of change. They will finally see the world for what it is: a collection of elements to be examined, interrogated, and reconstructed in the image of something more equitable and more sustainable.
 
 ## Acknowledgements
 

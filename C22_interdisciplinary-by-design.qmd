@@ -11,13 +11,20 @@ author:
     affiliations: Edinburgh Futures Institute, University of Edinburgh
 
 keywords:
-  - interdisciplinary learning
-  - computational methods
-  - open training material
-  - research innovation
-  - humanities
+  - short-courses
 
 ---
+
+::: {.content-visible when-format="docx" note="this should be identical as authors above, for docx"}
+author:
+  - name: Lucia Michielin
+    email: lucia.michielin@ed.ac.uk
+    corresponding: true
+    affiliations: Edinburgh Futures Institute, University of Edinburgh
+  - name: Lisa Otty
+    email: Lisa.Otty@ed.ac.uk
+    affiliations: Edinburgh Futures Institute, University of Edinburgh
+:::
 
 ## Introduction
 

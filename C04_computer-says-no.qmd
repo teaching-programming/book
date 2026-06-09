@@ -27,6 +27,28 @@ keywords:
   - LLMs
 ---
 
+::: {.content-visible when-format="docx" note="this should be identical as authors above, for docx"}
+author:
+  - name: Chris Cooling
+    email: c.cooling10@imperial.ac.uk
+    affiliations: Early Career Researcher Institute, Imperial College London
+  - name: David Cutting
+    email: d.cutting@qub.ac.uk
+    affiliations: School of Electronics, Electrical Engineering and Computer Science, Queen's University Belfast
+  - name: Ozan Evkaya
+    email: Ozan.Evkaya@ed.ac.uk
+    affiliations: School of Mathematics and Maxwell Institute for Mathematical Sciences, University of Edinburgh
+  - name: Lucia Michelin
+    email: lucia.michielin@ed.ac.uk
+    affiliations: Edinburgh Futures Institute, University of Edinburgh
+  - name: Samuel Skipsey
+    email: Samuel.Skipsey@glasgow.ac.uk
+    affiliations: School of Physics and Astronomy, University of Glasgow, University of Glasgow
+  - name: Lizzie Wadsworth
+    email: L.Wadsworth@kingston.ac.uk
+    affiliations: Department of Applied and Human Sciences, Kingston University
+:::
+
 ## Introduction
 
 Many students come to their first programming course or workshop with little or no experience in any programming language. As well as learning how to write code, students are also required to navigate file systems, open and use interfaces, and potentially work in the terminal. There is a wide range of computer literacy amongst students. Some will possess this tacit knowledge and be completely comfortable with these tasks, but others will have to catch up with these skills, making the initial sessions much harder. Helping these students keep up with the lesson is a challenging part of teaching introductory programming courses.
