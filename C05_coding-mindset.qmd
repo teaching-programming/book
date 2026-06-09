@@ -158,9 +158,7 @@ Where possible, the educator can encourage students to add to the table with the
 
 This activity empowers learners to tackle their self-limiting beliefs and also provides educators with insight into their students' mindsets.
 
-::: {.callout-tip icon=false}
-
-# Myth vs. Reality: common misconceptions surrounding learning to code
+### Myth vs. Reality: common misconceptions surrounding learning to code
 
 | Myth | Reality|
 |:--|:---|
@@ -174,8 +172,6 @@ This activity empowers learners to tackle their self-limiting beliefs and also p
 |Your code should work on the first try.|You will spend a lot of your coding time fixing errors and debugging. It is unrealistic to think you will get it completely right on the first try.|
 |You need to work in technical roles such as web services or statistics for coding to be relevant.|Coding is not limited to one type of role. You can use coding for developing websites, games, managing databases, creating applications and generating artwork.|
 |You can learn the basics, but advanced skills such as modelling will be too difficult.|If you pursue a data modelling career, you will spend a lot of time focusing on data quality rather than complex modelling. If you learn the basics, it helps to make the advanced skills more achievable.|
-
-:::
 
 ## Know your audience 
 
