@@ -65,7 +65,7 @@ format:
         bibliography: references.bib
 
 book:
-    title: "Teaching Programming across Disciplines"
+    title: "Teaching Programming Across Disciplines"
 
     page-navigation: true
     sidebar:
