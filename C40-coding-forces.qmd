@@ -36,7 +36,7 @@ What gets less attention, even in “intermediate” or “advanced” courses, 
 Programming course and tutorials usually give advice on writing DRY, clean, expressive code.
 We believe there is a gap in how such advice is presented that can be filled by considering three tactics that in combination create a programming "mindset space".
 Having an awareness of these tactics allows a learner to consider which tactics are most useful at a given time, for a given problem, and to understand they can change in response to the different pressures their current situation might be exerting.
-As a way of making this explicit and teachable, [^C40-radarfootnote] the three tactics we suggest are being Independent, Conscious, and Social [@fig-balance].
+As a way of making this explicit and teachable, [^C40-radarfootnote] the three tactics we suggest are being Independent, Conscious, and Social (@fig-balance).
 And further, we refer to these tactics as "forces" because they can be used to push against, or accommodate, the pressures felt as appropriate to the immediate context.
 
 ![Radar plot of coding forces visualized wtih the 3 forces being equally balanced](/chapters/images/C40_all-balanced.png){#fig-balance width=50%}
@@ -140,9 +140,15 @@ Of course, those adjustments do not happen in a vacuum.
 They are often shaped by "pressures" - internal or external signals such as deadlines, collaborator expectations, or even just that weird feeling that there's something not quite right in your code.
 The radar plot reflects this idea.
 Rather than separating forces into neat regions it shows them all present at once, just at different intensities.
-The resulting shape is simply a snapshot of how things are balanced at a given moment (@fig-radar-gif).
+The resulting shape is simply a snapshot of how things are balanced at a given moment (@fig-c40-radar-gif).
 
-![Ever changing balance of independent, conscious, and social code forces.](/chapters/images/C40_ir-radar.gif){#fig-radar-gif} 
+
+::: {.content-visible unless-format="html"}
+![Ever changing balance of independent, conscious, and social code forces.](/chapters/images/C40_ir-radar.png){#fig-c40-radar-gif} 
+:::
+::: {.content-visible when-format="html"}
+![Ever changing balance of independent, conscious, and social code forces.](/chapters/images/C40_ir-radar.gif){#fig-c40-radar-gif} 
+:::
  
 These three forces define a "mindset space", different regions of which are better suited to different applications.
 Moving about this mindset space requires reflection and awareness.
