@@ -98,7 +98,7 @@ book:
         - C08_hype-need-responsible-compute.qmd
         - C10_teaching-with-genai.qmd
         - C21_programming-across-disciplines-systems-thinking.qmd
-        - C44_genai-vs-academic-development.qmd
+        - C44_ai-voice-and-style-in-programming-education.qmd
 
         - C11_sequential-vs-simultaneous.qmd
         - C14_foster-inclusion-and-accessibility.qmd

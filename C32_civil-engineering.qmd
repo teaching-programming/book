@@ -33,32 +33,45 @@ This chapter presents some of my experience in tutoring two classes in Thuyloi U
 
 CivEng students generally do not encounter any difficulty in implementing a series of formulae in order, as well as translating a formula to code. For example, in the Python snippet below, the drag coefficient is readily calculated according to the math equation:
 
-+------------------------------------------------------------+------------------------------------------------------------+
-| Math                                                       | Code                                                       |
-+============================================================+============================================================+
-| $$ C_D = \left[ \frac{0.4}{1 + \ln(z_0 / h)} \right]^2\ $$ | ```{.python code-line-numbers="false"}                     |
-|                                                            | CD = (0.4/(1 + math.log(zo/h)))**2
-|                                                            | ```                                                        |
-+------------------------------------------------------------+------------------------------------------------------------+
+
+**Math**                                                                 
+
+$$ C_D = \left[ \frac{0.4}{1 + \ln(z_0 / h)} \right]^2\ $$
+
+**Code in Python**                                                                
+
+```{.python code-line-numbers="false"}
+CD = (0.4/(1 + math.log(zo/h)))**2 
+```
 
 CivEng students are well aware of complex engineering formulas and would be willing to write lengthy statements for mathematical expressions. Furthermore, they have adopted the style of naming variables according to the symbolic representation which is widely agreed in the literature. For example, here the name `CD` is used instead of choosing a more explicit name like `drag_coefficient`.
 
 Even a branching construction would not cause much difficulty, for example to calculate the critical flow velocity using Python. The CivEng student surely would not get confused with units during computation, as they can handily type in conversion factors along with the code:
 
-+---------------------------------------------------------------------+----------------------------------------------------------------+
-| Math                                                                | Code                                                           |
-+=====================================================================+================================================================+
-| $$                                                                  | ```{.python code-line-numbers="false"}                         |
-| U_{cr} = \left\{                                                    | if 0.1E-3 <= d50 <= 0.5E-3: # mm                               |
-| \begin{array}{ll}                                                   |   Ucr = 0.19*(d50**0.1)*math.log10(4*h/d90)                    |
-| {0.19} \, (d_{50})^{0.1} \log_{10}\left(\frac{4h}{d_{90}}\right) &  | elif 0.5E-3 < d50 <= 2E-3: # mm                                |
-| \text{for } \;  0.1 \le d_{50} \le 0.5 \text{  mm}; \\              |   Ucr = 8.5*(d50**0.6)*math.log10(4*h/d90)                     |
-| {8.5} \, (d_{50})^{0.6} \log_{10} \left(\frac{4h}{d_{90}} \right) & | else:                                                          |
-| \text{for } \; {0.5} \le d_{50} \le 2 \text{ mm};                   |   print('Warning: d50 out of range to apply formula for Ucr.') |
-| \end{array}                                                         | ```                                                            |
-| \right.                                                             |                                                                |
-| $$                                                                  |                                                                |
-+---------------------------------------------------------------------+----------------------------------------------------------------+
+**Math**                                                                 
+
+ $$                                                                  
+ U_{cr} = \left\{                                                    
+ \begin{array}{ll}                                                   
+ {0.19} \, (d_{50})^{0.1} \log_{10}\left(\frac{4h}{d_{90}}\right) &  
+ \text{for } \;  0.1 \le d_{50} \le 0.5 \text{  mm}; \\              
+ {8.5} \, (d_{50})^{0.6} \log_{10} \left(\frac{4h}{d_{90}} \right) & 
+ \text{for } \; {0.5} \le d_{50} \le 2 \text{ mm};                   
+ \end{array}                                                         
+ \right.                                                                                                                           
+ $$                                                                                                                               
+
+**Code in Python**                                                                
+
+```{.python code-line-numbers="false"}
+if 0.1E-3 <= d50 <= 0.5E-3: # mm       
+  Ucr = 0.19*(d50**0.1)*math.log10(4*h/d90)
+elif 0.5E-3 < d50 <= 2E-3: # mm 
+  Ucr = 8.5*(d50**0.6)*math.log10(4*h/d90)
+else:  
+  print('Warning: d50 out of range to apply formula for Ucr.')
+```
+
 
 ### Dimensions and units in civil engineering
 
@@ -66,9 +79,9 @@ A particular strength of the CivEng student is having keen eyes on physical quan
 
 ### Matrix manipulation
 
-In many circumstances, the CivEng student has to deal with matrices, such as when solving partial differential equations (PDEs). One of such typical equations is the mass balance equation, where the (time) change in "stock" is related to the spatial changes (gradients) of "flows". It is not too difficult for the CivEng student to understand the finite difference technique and implement a naive version to solve PDEs. As an example, in the problem of sediment transport in rivers or seas, we consider solving the equation for $z_b$ (the underwater bed elevation), which changes in time, given the two fluxes of sediment, represented as two components ($q_x$ and $q_y$) in the two horizontal directions, $x$ and $y$. It is helpful to visualise the river bed or seabed as a "tiled" surface where each cell has its own elevation $z_b$. See the diagram (@fig-sediment) for a simplified representation of the quantities involved.
+In many circumstances, the CivEng student has to deal with matrices, such as when solving partial differential equations (PDEs). One of such typical equations is the mass balance equation, where the (time) change in "stock" is related to the spatial changes (gradients) of "flows". It is not too difficult for the CivEng student to understand the finite difference technique and implement a naive version to solve PDEs. As an example, in the problem of sediment transport in rivers or seas, we consider solving the equation for $z_b$ (the underwater bed elevation), which changes in time, given the two fluxes of sediment, represented as two components ($q_x$ and $q_y$) in the two horizontal directions, $x$ and $y$. It is helpful to visualise the river bed or seabed as a "tiled" surface where each cell has its own elevation $z_b$. See the diagram (@fig-ch32-sediment) for a simplified representation of the quantities involved.
 
-![Sediment transport](/chapters/images/ch32/SedTrans.PNG){#fig-sediment fig-alt="A diagram in 3D, showing a surface split into four tiles of different elevations."}
+![Sediment transport](/chapters/images/ch32-sed-trans.PNG){#fig-ch32-sediment fig-alt="A diagram in 3D, showing a surface split into four tiles of different elevations."}
 
 It should be noted here that the CivEng student is equipped with numerical analysis skills and can approximate the differential in terms of finite differences.
 
@@ -86,48 +99,67 @@ Here the numerical approximation for one flux gradient term is illustrated.
 
 The naive approach is to use a nested list to emulate a 2-D array, which doesn't seem very efficient. But that's enough for the CivEng who wants to get the job done. This way, the code is more transparent when using an index system with ($i \pm 1$). Notably, there is similarity in operators and operands between Python and Julia (thus I will place ellipses in the Julia code). The differences are in for-loop syntax and the 1-based indexing system in Julia as opposed to Python's 0-based. A [notebook implementation](https://nbviewer.org/url/coastal-study.uk/sed.trans/SedTrans.ipynb) is provided online.
 
-+------------------------------------------------------------+------------------------------------------------------------+
-| Python                                                     | Julia                                                      |
-+============================================================+============================================================+
-| ```{.python code-line-numbers="false"}                     | ```{.julia code-line-numbers="false"}                      |
-| for i in range(1,nx):                                      | for i = 1:nx                                               |
-|   for j in range(1,ny):                                    |   for j = 1:ny                                             |
-|     dqxdx[i][j] = (qx[i][j]-qx[i-1][j])/dx                 |     dqxdx[i,j] = ...                                       |
-|     dqydy[i][j] = (qy[i][j]-qy[i][j-1])/dy                 |     dqydy[i,j] = ...                                       |
-|     dzbdt[i][j] = -(1/(1-n)) * (dqxdx[i][j] + dqydy[i][j]) |     dzbdt[i,j] = ...                                       |
-| ```                                                        |   end                                                      |
-|                                                            | end                                                        |
-|                                                            | ```                                                        |
-+------------------------------------------------------------+------------------------------------------------------------+
 
-The use of matrix operations (e.g. using [NumPy](https://numpy.org/) arrays in Python) is faster compared to the "naive" version above, usually quoted as 10 times [@langtangen2006python]. On the downside, the matrix notation obscures the indices `i` and `j` commonly found in numerical methods (see @fig-lattice1, where part of a stencil[^C32-ftn-1] is shown. In this part, where arrows represent subtraction, we are finding "local" difference in the same `qx` array). When using matrix manipulation, the bounds must be specified correctly in all matrix subscripts (see @fig-lattice2 and the code below). So, there should be a consideration in choosing either approach.
+**Code in Python**
+
+```{.python code-line-numbers="false"}
+for i in range(1,nx):
+  for j in range(1,ny):
+    dqxdx[i][j] = (qx[i][j]-qx[i-1][j])/dx
+    dqydy[i][j] = (qy[i][j]-qy[i][j-1])/dy
+    dzbdt[i][j] = -(1/(1-n)) * (dqxdx[i][j] + dqydy[i][j])
+```
+
+**Code in Julia**
+
+```{.julia code-line-numbers="false"}
+for i = 1:nx
+  for j = 1:ny
+    dqxdx[i,j] = ...
+    dqydy[i,j] = ...
+    dzbdt[i,j] = ...
+  end
+end
+```
+
+The use of matrix operations (e.g. using [NumPy](https://numpy.org/) arrays in Python) is faster compared to the "naive" version above, usually quoted as 10 times [@langtangen2006python]. On the downside, the matrix notation obscures the indices `i` and `j` commonly found in numerical methods (see @fig-ch32-lattice1, where part of a stencil[^C32-ftn-1] is shown. In this part, where arrows represent subtraction, we are finding "local" difference in the same `qx` array). When using matrix manipulation, the bounds must be specified correctly in all matrix subscripts (see @fig-ch32-lattice2 and the code below). So, there should be a consideration in choosing either approach.
 
 [^C32-ftn-1]: A stencil is a diagram showing a group of computational nodes where numerical approximation takes place.
 
 **Looping through index**
 
-![Lattice 1](/chapters/images/ch32/Lattice1.PNG){#fig-lattice1 fig-alt="A lattice with dots organised in 2 rows and 4 columns."}
+![Lattice 1](/chapters/images/ch32-lattice1.png){#fig-ch32-lattice1 fig-alt="A lattice with dots organised in 2 rows and 4 columns."}
 
-+--------------------------------------------+-------------------------------------------+
-| Python                                     | Julia/Python                              |
-+============================================+===========================================+
-| ```{.python code-line-numbers="false"}     | ```{.julia code-line-numbers="false"}     |
-| dqxdx[i][j] = (qx[i][j]-qx[i-1][j])/dx     | dqxdx[i,j] = (qx[i,j]-qx[i-1,j])/dx       |
-| ```                                        | ```                                       |
-+--------------------------------------------+-------------------------------------------+
+
+**Code in Python**
+
+```{.python code-line-numbers="false"}
+dqxdx[i][j] = (qx[i][j]-qx[i-1][j])/dx
+```
+
+**Code in Julia/Python**
+
+```{.julia code-line-numbers="false"}
+dqxdx[i,j] = (qx[i,j]-qx[i-1,j])/dx
+```
 
 **Matrix-based computation**
 
-![Lattice 2](/chapters/images/ch32/Lattice2.PNG){#fig-lattice2 fig-alt="A lattice with dots organised in 2 rows and 4 columns, with the 2 left dots, the 4 central dots, and the 2 right dots grouped together."}
+![Lattice 2](/chapters/images/ch32-lattice2.png){#fig-ch32-lattice2 fig-alt="A lattice with dots organised in 2 rows and 4 columns, with the 2 left dots, the 4 central dots, and the 2 right dots grouped together."}
 
-+------------------------------------------------+------------------------------------------------+
-| Python                                         | Julia                                          |
-+================================================+================================================+
-| ```{.python code-line-numbers="false"}         | ```{.julia code-line-numbers="false"}          |
-| dqxdx[0:-1,:] = (qx[1:,:] - qx[0:-1,:])/dx     | dqxdx[1:nx-1,:] = (qx[2:nx,:]-qx[1:nx-1,:])/dx |
-| ```                                            | ```                                            |
-+------------------------------------------------+------------------------------------------------+
 
+
+**Code in Python**
+
+```{.python code-line-numbers="false"}
+dqxdx[0:-1,:] = (qx[1:,:] - qx[0:-1,:])/dx
+```
+
+**Code in Julia**
+
+```{.julia code-line-numbers="false"}
+dqxdx[1:nx-1,:] = (qx[2:nx,:]-qx[1:nx-1,:])/dx
+```
 
 Another source of confusion is due to the concept of ["views" in NumPy](https://numpy.org/doc/stable/user/basics.copies.html), for which the submatrix, e.g. `dqxdx[0:-1,:]` in the code snippet above, is a _view_ and not quite a _copy_ of the array `dqxdx`. In essence, NumPy "views" will behave in unexpected ways. Sure, this can be explained to the students, but every such issue can add up and discourage the learners. Therefore, an "agreement" might be made beforehand, that the matrix `qx` here is calculated once and cannot be modified thereafter. Otherwise, you must switch to another programming language, e.g. MATLAB, although this comes with its own issues.
 
