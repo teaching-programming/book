@@ -1,0 +1,1305 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Chris Cooling">
+<meta name="author" content="David Cutting">
+<meta name="author" content="Ozan Evkaya">
+<meta name="author" content="Lucia Michelin">
+<meta name="author" content="Samuel Skipsey">
+<meta name="author" content="Lizzie Wadsworth">
+<meta name="keywords" content="accessibility-and-inclusion, tool-review, LLMs">
+
+<title>Computer Says No: Reducing Technical Barriers to Help Novice Programmers – Teaching Programming across Disciplines</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./C33_coding-anxiety.html" rel="next">
+<link href="./C14_foster-inclusion-and-accessibility.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-efc217d3be6b0c6b6079591d7e3e0fe0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="_theme/styles.css">
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./C04_computer-says-no.html"><span class="chapter-title">Computer Says No: Reducing Technical Barriers to Help Novice Programmers</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Teaching Programming across Disciplines</a> 
+        <div class="sidebar-tools-main">
+    <div class="dropdown">
+      <a href="" title="Download" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Download"><i class="bi bi-download"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="./teaching_programming_across_disciplines.pdf">
+              <i class="bi bi-file-pdf pe-1"></i>
+            Download PDF
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="./teaching_programming_across_disciplines.epub">
+              <i class="bi bi-journal pe-1"></i>
+            Download ePub
+            </a>
+          </li>
+      </ul>
+    </div>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Teaching Programming Across Disciplines</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C12_pair-programming-overview.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Where Do I Even Start With Pair Programming in My Classroom? A Conversation With Seasoned Practitioners</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C36_pair-programming-across-disciplines.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Structured Group Work With Assigned Asymmetrical Roles and Switching: Lessons From Pair Programming Across Disciplines</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C41_pair-programming-tutor-reflections.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Pair Programming in Practice: A PhD Tutor’s Reflections</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C09_debugging-beyond-the-debugger.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Brain Book Buddy Boss Break: A Practical Debugging Framework for Learners</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C05_coding-mindset.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">A Guide on Empowering Students to Develop a Coding Mindset</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C08_hype-need-responsible-compute.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Hype and The Need for Responsible Compute</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C10_teaching-with-genai.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">An Optimistic Outlook on Teaching, Learning and Assessment for Coding With the Emergence of Generative AI</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C21_programming-across-disciplines-systems-thinking.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">How Teaching Programming Across Disciplines Can Instil Systems Thinking</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C44_ai-voice-and-style-in-programming-education.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">AI, Voice and Style in Programming Education</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C11_sequential-vs-simultaneous.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Sequential vs.&nbsp;Simultaneous: Approaches to Learning Programming and Statistics</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C14_foster-inclusion-and-accessibility.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Practices to Foster Inclusion and Accessibility in Programming Teaching</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C04_computer-says-no.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Computer Says No: Reducing Technical Barriers to Help Novice Programmers</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C33_coding-anxiety.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Overcoming Coding Anxiety: Lowering the Stakes and Making It Fun</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C16_peer-programming.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Peer Programming in Action: Pair Programming in Larger Groups</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C31_leveraging-the-heterogeneity.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Leveraging the Heterogeneity: Teaching Computing Skills to a Multidisciplinary Cohort With a Variable Skill Level</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C23_pair-programming-fusion.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Learning Together Across Modes: Online and On-Site Pair Programming in a Fusion Course</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C01_teaching-python.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">A Practical Guide to Teaching Python as a Computational Tool in an Introductory Data Analysis Course</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C29_notebooks-for-novices.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Notebook for Novices? Pros and Cons of Jupyter</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C07_teaching-C-to-novices.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Bridging Languages: Teaching C to Python Novices</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C06_feminists-and-anarchists.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Dungeon Crawlers and Anarchists: Co-Designing Programming Teaching Experiences</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C15_programming-without-computers.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Removing Barriers by Programming Without Computers</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C03_online-teaching-reflections.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Reflections on Online Teaching</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C43-data-vis.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Seeing Before Coding, Doodling Before Doing: How Teaching Data Visualisation Transforms the Way Students Think</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./P03_part-assessment-feedback.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Part III — Assessment and Feedback: Principles and Practice</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C38_skills-based-assessment.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Developing a Skills-Based Framework for Assessments in Programming Courses</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C35_action-feedback-plan.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Managing the Rubik’s Cube of Assessment: The Action Feedback Protocol</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C26.1-assessment-case-study.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Assessment and Marking in an Introductory Programming Course for Physics Students</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C02_genai-before-during-after.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Generative AI in Assessments: Before, During, and After</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C20_automatic-marking.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Using Automated Marking in Programming Courses to Enhance Learning</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./P04_part-case-studies.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Part IV — Case Studies</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C39_gentle-introduction-summer-school.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">A Gentle Introduction to Coding: Narratives From a Programming Summer School for Social Sciences and Humanities</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C37_pair-programming-sruc.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Case Study From Scotland’s Rural College: The Wild(Life) Side of Pair Programming</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C22_interdisciplinary-by-design.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Interdisciplinary by Design: The Centre for Data, Culture, &amp; Society Training Programme</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C32_civil-engineering.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Changing Civil Engineering Students’ Mindset Toward Programming</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C24_lost-in-translation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Lost in Translation: Complexities and Good Practices of Translating Coding-Based Teaching Materials Across Multiple Human Languages</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./CAB_Authors.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Authors’ Biographies</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./99-bibliography.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bibliography</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar"><div class="quarto-margin-header"><div class="margin-header-item">
+<details id="accessibility-controls">
+    <summary>Display options</summary>
+  
+    <div class="control-group">
+        <label for="fontSizeSlider">Font size</label>
+        <input type="range" id="fontSizeSlider" min="8" max="32" value="16">
+        <span id="fontSizeValue">16</span>px
+    </div>
+  
+    <div class="control-group">
+        <label for="eyeStrainSlider">Eye strain</label>
+        <input type="range" id="eyeStrainSlider" min="0" max="50" value="0">
+        <span id="eyeStrainValue">0</span>%
+    </div>
+  
+    <div class="control-group">
+        <label for="hueRotateSlider">Hue</label>
+        <input type="range" id="hueRotateSlider" min="0" max="360" value="0">
+        <span id="hueRotateValue">0</span>
+    </div>
+  
+    <div class="control-group">
+        <label for="paddingSlider">Padding</label>
+        <input type="range" id="paddingSlider" min="0" max="12" value="3">
+        <span id="paddingValue">0</span>
+    </div>
+  
+    <div class="control-group">
+        <label for="lineSpacingSlider">Spacing</label>
+        <input type="range" id="lineSpacingSlider" min="80" max="250" value="150">
+        <span id="lineSpacingValue">150</span>%
+    </div>
+  
+    <div class="control-group">
+        <label for="fontFamily">Font</label>
+        <select id="fontFamily">
+            <option value="'Atkinson Hyperlegible', sans-serif">Atkinson Hyperlegible</option>
+            <option value="Arial, Helvetica, sans-serif">Sans-serif</option>
+            <option value="Georgia, 'Bitstream Charter', Times, serif">Serif</option>
+        </select>
+    </div>
+  
+    <div class="control-group">
+        <button id="resetDefaults">Reset to Defaults</button>
+    </div>
+
+</details>
+</div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#course-material-design" id="toc-course-material-design" class="nav-link" data-scroll-target="#course-material-design">Course Material Design</a>
+  <ul class="collapse">
+  <li><a href="#clear-wording-sections-and-images" id="toc-clear-wording-sections-and-images" class="nav-link" data-scroll-target="#clear-wording-sections-and-images">Clear wording, sections, and images</a></li>
+  <li><a href="#embedded-gif-screen-recordings" id="toc-embedded-gif-screen-recordings" class="nav-link" data-scroll-target="#embedded-gif-screen-recordings">Embedded GIF screen recordings</a></li>
+  <li><a href="#supplementary-materials" id="toc-supplementary-materials" class="nav-link" data-scroll-target="#supplementary-materials">Supplementary materials</a></li>
+  <li><a href="#pre-recorded-videos" id="toc-pre-recorded-videos" class="nav-link" data-scroll-target="#pre-recorded-videos">Pre-recorded videos</a></li>
+  <li><a href="#embedded-executable-code-blocks" id="toc-embedded-executable-code-blocks" class="nav-link" data-scroll-target="#embedded-executable-code-blocks">Embedded executable code blocks</a></li>
+  <li><a href="#github-and-other-software-development-platforms" id="toc-github-and-other-software-development-platforms" class="nav-link" data-scroll-target="#github-and-other-software-development-platforms">GitHub and other software development platforms</a></li>
+  </ul></li>
+  <li><a href="#computing-platform" id="toc-computing-platform" class="nav-link" data-scroll-target="#computing-platform">Computing Platform</a>
+  <ul class="collapse">
+  <li><a href="#cloud-based-development-environments" id="toc-cloud-based-development-environments" class="nav-link" data-scroll-target="#cloud-based-development-environments">Cloud-based development environments</a></li>
+  <li><a href="#installation-support-for-different-osdevices" id="toc-installation-support-for-different-osdevices" class="nav-link" data-scroll-target="#installation-support-for-different-osdevices">Installation support for different OS/devices</a></li>
+  </ul></li>
+  <li><a href="#supporting-students" id="toc-supporting-students" class="nav-link" data-scroll-target="#supporting-students">Supporting Students</a>
+  <ul class="collapse">
+  <li><a href="#office-hours-and-drop-in-sessions" id="toc-office-hours-and-drop-in-sessions" class="nav-link" data-scroll-target="#office-hours-and-drop-in-sessions">Office hours and drop-in sessions</a></li>
+  <li><a href="#teams-channels-and-other-group-chat-services" id="toc-teams-channels-and-other-group-chat-services" class="nav-link" data-scroll-target="#teams-channels-and-other-group-chat-services">Teams channels (and other group chat services)</a></li>
+  <li><a href="#ai-assistance" id="toc-ai-assistance" class="nav-link" data-scroll-target="#ai-assistance">AI assistance</a></li>
+  </ul></li>
+  <li><a href="#conclusions" id="toc-conclusions" class="nav-link" data-scroll-target="#conclusions">Conclusions</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const fontSizeSlider = document.getElementById('fontSizeSlider');
+        const fontSizeValue = document.getElementById('fontSizeValue');
+
+        const hueRotateSlider = document.getElementById('hueRotateSlider');
+        const hueRotateValue = document.getElementById('hueRotateValue');
+
+        const eyeStrainSlider = document.getElementById('eyeStrainSlider');
+        const eyeStrainValue = document.getElementById('eyeStrainValue');
+
+        const paddingSlider = document.getElementById('paddingSlider');
+        const paddingValue = document.getElementById('paddingValue');
+
+        const lineSpacingSlider = document.getElementById('lineSpacingSlider');
+        const lineSpacingValue = document.getElementById('lineSpacingValue');
+
+        const fontFamilySelect = document.getElementById('fontFamily');
+
+        const html = document.documentElement;
+        const resetButton = document.getElementById('resetDefaults');
+
+        // Define default values
+        const defaults = {
+            fontSize: 16,
+            hueRotate: 0,
+            eyeStrain: 0,
+            padding: 0,
+            lineSpacing: 150,
+            fontFamily: "'Atkinson Hyperlegible', Arial, Helvetica, sans-serif"
+        };
+
+        function updateStyles() {
+            html.style.setProperty('--bs-root-font-size', fontSizeSlider.value + 'px');
+            html.style.setProperty('--hue-rotate', hueRotateSlider.value + 'deg');
+            html.style.setProperty('--eye-strain', eyeStrainSlider.value + '%');
+            html.style.setProperty('--padding', paddingSlider.value + 'em');
+            html.style.setProperty('--line-spacing', lineSpacingSlider.value + '%');
+            html.style.setProperty('--bs-body-font-family', fontFamilySelect.value);
+
+            fontSizeValue.textContent = fontSizeSlider.value;
+            hueRotateValue.textContent = hueRotateSlider.value;
+            eyeStrainValue.textContent = eyeStrainSlider.value;
+            paddingValue.textContent = paddingSlider.value;
+            lineSpacingValue.textContent = lineSpacingSlider.value;
+
+            saveSettings();
+        }
+
+        // Function to save settings to localStorage
+        function saveSettings() {
+            const settings = {
+                fontSize: fontSizeSlider.value,
+                hueRotate: hueRotateSlider.value,
+                eyeStrain: eyeStrainSlider.value,
+                padding: paddingSlider.value,
+                lineSpacing: lineSpacingSlider.value,
+                fontFamily: fontFamilySelect.value
+            };
+            localStorage.setItem('accessibilitySettings', JSON.stringify(settings));
+        }
+
+        // Function to load settings from localStorage
+        function loadSettings() {
+            const savedSettings = localStorage.getItem('accessibilitySettings');
+            if (savedSettings) {
+                const settings = JSON.parse(savedSettings);
+                fontSizeSlider.value = settings.fontSize;
+                hueRotateSlider.value = settings.hueRotate;
+                eyeStrainSlider.value = settings.eyeStrain;
+                paddingSlider.value = settings.padding;
+                lineSpacingSlider.value = settings.lineSpacing;
+                fontFamilySelect.value = settings.fontFamily;
+                updateStyles();
+            }
+        }
+
+        function resetToDefaults() {
+            fontSizeSlider.value = defaults.fontSize;
+            hueRotateSlider.value = defaults.hueRotate;
+            eyeStrainSlider.value = defaults.eyeStrain;
+            paddingSlider.value = defaults.padding;
+            lineSpacingSlider.value = defaults.lineSpacing;
+            fontFamilySelect.value = defaults.fontFamily;
+            updateStyles();
+            localStorage.removeItem('accessibilitySettings');
+        }
+
+        fontSizeSlider.oninput = updateStyles;
+        hueRotateSlider.oninput = updateStyles;
+        eyeStrainSlider.oninput = updateStyles;
+        paddingSlider.oninput = updateStyles;
+        lineSpacingSlider.oninput = updateStyles;
+        fontFamilySelect.onchange = updateStyles;
+        resetButton.onclick = resetToDefaults;
+
+        loadSettings();
+
+    });
+</script>
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-title">Computer Says No: Reducing Technical Barriers to Help Novice Programmers</span></h1>
+</div>
+
+
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Authors</div>
+  <div class="quarto-title-meta-heading">Affiliations</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Chris Cooling <a href="mailto:c.cooling10@imperial.ac.uk" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Early Career Researcher Institute, Imperial College London
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">David Cutting <a href="mailto:d.cutting@qub.ac.uk" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            School of Electronics, Electrical Engineering and Computer Science, Queen’s University Belfast
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Ozan Evkaya <a href="mailto:Ozan.Evkaya@ed.ac.uk" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            School of Mathematics and Maxwell Institute for Mathematical Sciences, University of Edinburgh
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Lucia Michelin <a href="mailto:lucia.michielin@ed.ac.uk" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Edinburgh Futures Institute, University of Edinburgh
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Samuel Skipsey <a href="mailto:Samuel.Skipsey@glasgow.ac.uk" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            School of Physics and Astronomy, University of Glasgow
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Lizzie Wadsworth <a href="mailto:L.Wadsworth@kingston.ac.uk" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Department of Applied and Human Sciences, Kingston University
+          </p>
+      </div>
+  </div>
+
+<div class="quarto-title-meta">
+
+      
+  
+    
+  </div>
+  
+
+<div>
+  <div class="keywords">
+    <div class="block-title">Keywords</div>
+    <p>accessibility-and-inclusion, tool-review, LLMs</p>
+  </div>
+</div>
+
+</header>
+
+
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>Many students come to their first programming course or workshop with little or no experience in any programming language. As well as learning how to write code, students are also required to navigate file systems, open and use interfaces, and potentially work in the terminal. There is a wide range of computer literacy amongst students. Some will possess this tacit knowledge and be completely comfortable with these tasks, but others will have to catch up with these skills, making the initial sessions much harder. Helping these students keep up with the lesson is a challenging part of teaching introductory programming courses.</p>
+<p>If students are working on their own computers, there will be a variety of different operating systems and software configurations. This can make the provision of universally helpful instructions difficult and, in some cases, it might be difficult or impossible to install the desired tools at all. Error messages can also be difficult to decipher, particularly for novices. This can lead to students, quite reasonably, having many questions for tutors. This slows down the course, reducing what can be covered, and frustrating students who are set up and ready to go.</p>
+<p>In this chapter, we will explore some of the techniques and tools that we, as educators, have found to help solve or mitigate these problems. Examples and observations of student behaviour are derived from our experiences in the classroom, which cover a range of class sizes from 10 to over 350 students, undergraduate foundation years to research postgraduates, across a variety of subjects from Biosciences to Physics to Computer Science.</p>
+</section>
+<section id="course-material-design" class="level2">
+<h2 class="anchored" data-anchor-id="course-material-design">Course Material Design</h2>
+<p>When designing a course, one of the first steps is to decide how to present teaching material to learners. In this section, we discuss approaches, mediums and file formats that can support student onboarding best.</p>
+<section id="clear-wording-sections-and-images" class="level3">
+<h3 class="anchored" data-anchor-id="clear-wording-sections-and-images">Clear wording, sections, and images</h3>
+<p>Programming for the first time can be a challenging experience for a student, as there is a lot to learn from the first class — from how to log in and set up, to how to write, build, debug and execute programs. Hence, learning material will need to contain a lot of information for students to be able to follow instructions and write their first program.</p>
+<p>There is a lot of terminology in describing a programming language, which can confuse new students, such as variables, vectors, and functions. These are also quite abstract concepts, so finding a way to describe them in simple language can boost understanding.</p>
+<p>Sections can help students progress through the learning material and keep track of what they have and haven’t done. Clear section headings and numbering can allow students to make a note of where they are, and to tell teaching staff which section they are stuck on. Additionally, splitting up a long worksheet into several smaller pages may reduce students’ feelings of overwhelm by presenting a few manageable tasks at a time.</p>
+<p>Programming is quite text-heavy; most instructions are written in text, and code examples and output are also often text-based. Incorporating images into material can help to break this up for the students and make the material more visually stimulating. This should be done in an accessible manner, with alt-text provided where appropriate. These images could provide more explanation of a key concept (as in the image below). Alternatively, they could be images which explain the concept of the task; for example, if using a dataset which includes penguin flipper measurements, then providing an image of the represented penguin species.</p>
+<div id="fig-flowchart" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Flowchart with 2 levels. First level: 'Is a dog person?' with 'True' leading to 'Dog person' and 'False' leading to the second level: 'Is a cat person?' with 'True' leading to 'Cat person' and 'False' leading to 'Not a dog or cat person'.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-flowchart-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./chapters/images/C04_computer-says-no-flowchart.png" class="img-fluid figure-img" style="width:50.0%" alt="Flowchart with 2 levels. First level: 'Is a dog person?' with 'True' leading to 'Dog person' and 'False' leading to the second level: 'Is a cat person?' with 'True' leading to 'Cat person' and 'False' leading to 'Not a dog or cat person'.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-flowchart-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;13.1: Flow chart visually demonstrating the logic behind an <code>if</code>, <code>elif</code>, <code>else</code> statement in Python, generated using the open-source JavaScript-based tool <a href="https://mermaid.ai/open-source/">Mermaid</a>.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="embedded-gif-screen-recordings" class="level3">
+<h3 class="anchored" data-anchor-id="embedded-gif-screen-recordings">Embedded GIF screen recordings</h3>
+<p>Instructions are never clear enough. You can write detailed step-by-step instructions for how to get set up, and also start a class with a live demonstration of exactly which buttons to click. You may find, however, when you start to walk around the class, that many students in an introduction to programming session have yet to run their first line of code. They may have arrived late, or had technical issues with the first computer they logged into, or missed a step in the demonstration, or for any other reason not been able to follow the instructions.</p>
+<p>One technique which can easily enhance setup instructions is a GIF screen recording. This can show each step really clearly and works especially well with the younger generation, who are more used to video tutorials than they are following written instructions.</p>
+<p><a href="#fig-C04_RStudio_GIF_demonstration" class="quarto-xref">Figure&nbsp;<span>13.2</span></a> shows key frames from a GIF recording of how to create a new folder and an R script, along with running a line of code, in RStudio.</p>
+<div id="fig-C04_RStudio_GIF_demonstration" class="quarto-float quarto-figure quarto-figure-center anchored" alt="A GIF showing the RStudio interface at four different stages of completing a task.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-C04_RStudio_GIF_demonstration-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./chapters/images/C04_RStudio_GIF_demonstration.gif" class="img-fluid figure-img" alt="A GIF showing the RStudio interface at four different stages of completing a task.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-C04_RStudio_GIF_demonstration-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;13.2: Keyframes of example GIF on how to use RStudio.
+</figcaption>
+</figure>
+</div>
+<p>These can be embedded in any online-based tutorial, such as an HTML file or within a page written on a Virtual Learning Environment (VLE) such as Moodle, Blackboard or Canvas. For long processes, you can combine multiple GIFs with text instructions and clear headings (Step 1, Step 2…).</p>
+<p>To make them, there are many different screen-recording software programs you can use. One tool is <a href="https://www.cockos.com/licecap/">LICEcap</a>, which is available for both Windows and Mac, and is free and open source. It records directly to GIF format, so it can be used straight away. Alternatives include the Snipping tool in Windows 11, which can export any screen recording of less than 30 seconds in length as a GIF, and <a href="https://github.com/firatkiral/pypeek/">PyPeek</a>, which works on Windows, Mac and Linux environments. <a href="https://www.screentogif.com/">ScreenToGif</a>, which works on Windows, allows for both MP4 and GIF creation from the same clip or GIF creation from uploaded MP4s which could be useful for making short GIFs from longer videos or screen recordings.</p>
+<p>Using these GIFs, students can be directed to the worksheet and most will be able to follow the instructions and set themselves up, freeing up more time for practical questions on the programming language. The GIFs also become a resource they can return to, so instructions do not need to be repeated in every class.</p>
+</section>
+<section id="supplementary-materials" class="level3">
+<h3 class="anchored" data-anchor-id="supplementary-materials">Supplementary materials</h3>
+<p>Some modules can require pre-existing skills in tools such as data visualisation and interpretation, and learning these skills may not be a learning outcome of the module. Instead, these skills may be assumed prior knowledge, which can cause problems for students who do not feel comfortable with these skills. For cohorts with diverse backgrounds, such as postgraduate students, extra care is needed to support novice learners. From that perspective, having clear and open communication with learners to understand their background is a good starting point. To support their learning process effectively, supplementary learning material such as a deck of slides, glossaries and cheat sheets can be provided. These can be referenced by novice learners and can help them keep up without slowing the progress of more experienced learners.</p>
+<p>Proactively consulting with learners can be useful to decide which type of supplementary material would be most beneficial for the cohort. A module-specific glossary of key programming terms and common troubleshooting can be a useful reference. Supplementary materials can also include summaries of technical concepts and practical code implementations. More comprehensive materials can even include worked examples or mini exercises with different styles of questions such as code completion or code adaptation.</p>
+<p>Learners who lack some of the assumed skills may still have to work harder to complete a course, but structured and targeted supplementary materials can make it possible for these students to catch up and keep up.</p>
+<p>One downside of the inclusion of supplementary materials is the tendency for scope creep of the course. It can be easy to take a 2 hour course and turn it into a 5 hour course with a much larger amount of content. Whilst this can provide necessary context for students with less background knowledge, it risks increasing the amount of content all students might engage with. Some students may even feel obliged to engage with the supplementary material even if it’s not necessary for them. For these reasons, if supplementary materials are used, they should be minimal in covering the assumed knowledge for the course and clearly structured so students can identify which parts are relevant to them personally. Additionally, the nature of the materials as an optional resource to offer a recap of assumed knowledge should be made clear.</p>
+</section>
+<section id="pre-recorded-videos" class="level3">
+<h3 class="anchored" data-anchor-id="pre-recorded-videos">Pre-recorded videos</h3>
+<p>Pre-recorded videos can be useful, and can replace or supplement lecture-based teaching. This is known as a ‘flipped classroom’. These videos can be a good way to explain complex concepts to the whole cohort, allowing students to study at their own pace when it’s convenient for them. A short multiple-choice quiz after a video can be added in most VLEs and can reinforce the content of the video and help students determine whether or not they understand the concepts covered.</p>
+<p>Students may use the videos in a variety of ways. Some students will watch the videos before class and come prepared with questions — these students tend to progress very quickly. Some students will instead watch the videos during class as they try and complete the worksheet activities. This can also be effective, as they can pause and rewind when needed (which they can’t do during a live lecture). This approach can also be problematic if they are playing the video audio out loud or if they spend the whole class copying from the video and don’t progress to trying any practical programming themselves.</p>
+<p>Here are some tips for effective videos:</p>
+<ol type="1">
+<li>Short and concise: a series of 5-10 minute videos helps make it easier for students to maintain concentration, and can be interspersed with other activities such as readings or exercises. Shorter exercises are also easier and quicker to iterate if they need updating. If a longer video is used, clear time stamps allow students to go straight to the part they need explanation for when they hit an issue.</li>
+<li>Live coding: software such as <a href="https://obsproject.com/">OBS</a> can be used to film both your camera and your screen so that you can demonstrate concepts by live coding. This is especially useful for demonstrating debugging — making a (purposeful) mistake in the code and then explaining the error messages and how to fix it. This could also be used to demonstrate how to search for answers on sites such as Stack Overflow, or ask an AI tool for suggestions (which may or may not be helpful!).</li>
+<li>Accurate subtitles: subtitle auto-generation is continually improving, but it can be worth going through and correcting any noticeable errors. This then allows students to follow the video with subtitles in class if they don’t have headphones.</li>
+</ol>
+<p>Existing videos can be a good source of inspiration. There are many programming videos aimed at beginners on educational channels on YouTube. These are often high-quality videos with a high production value (polished, professional and well-made) which can be very engaging. However, not all videos need to have a production value to be useful. Videos with lower production value can be made very quickly to respond to issues raised by students during a module, or to clarify points that were unexpectedly difficult.</p>
+</section>
+<section id="embedded-executable-code-blocks" class="level3">
+<h3 class="anchored" data-anchor-id="embedded-executable-code-blocks">Embedded executable code blocks</h3>
+<p>It’s also possible to provide worksheets which have embedded executable code blocks. These come with the benefits of fewer installation requirements and quicker times to set up and get started, but also have some drawbacks. They can work well in combination with other methods so that students can test short bits of code without setting up elsewhere.</p>
+<section id="jupyter-and-other-notebooks" class="level4">
+<h4 class="anchored" data-anchor-id="jupyter-and-other-notebooks">Jupyter (and other) Notebooks</h4>
+<p><a href="https://jupyter.org/">Jupyter Notebooks</a> can be a useful tool for learning programming, and it is possible to write a worksheet where the instructions are in a Markdown-formatted code block, followed by editable code blocks with over 40 languages supported.</p>
+<p>One advantage of this is that everything is inline — printed outputs and graphs, for instance, can be viewed directly underneath the code block, and students can work directly on the worksheet.</p>
+<p>Although requiring a paid subscription (a lot pricier than most other options here), <a href="https://cocalc.com/">CoCalc</a> is an interesting use of a Jupyter Notebook with collaborative editing. This can work quite well in a remote teaching environment. A teacher account can assign worksheets directly to student accounts, and also enter the student’s folders and files. Similar to multiple people editing a shared online document, a teacher can see student edits to their work in real-time and also add notes. This feature has also been added to <a href="https://noteable.edina.ac.uk">Noteable</a>, which is hosted by EDINA at the University of Edinburgh and is available at a number of universities in the UK.</p>
+<p>One disadvantage of Jupyter notebooks is that they are based on interactive programming, meaning that variables are kept into memory between runs of different code snippets — even if the corresponding code is then deleted. This can lead to issues when trying to debug an unusual error, where the problem code <em>has since been deleted</em><a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>. Other notebooks than Jupyter can solve this (by updating the entire notebook state on changes) such as <a href="https://marimo.io/">marimo</a> for Python or <a href="https://plutojl.org/">Pluto</a> for Julia, but Jupyter is by far the most readily available solution.</p>
+<div id="fig-jupyter" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Screenshot showing a code cell in a Jupyter notebook containing code to produce a scatter plot, as well as the generated scatter plot below the code.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-jupyter-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./chapters/images/C04_computer-says-no-jupyter-notebook.png" class="img-fluid figure-img" style="width:70.0%" alt="Screenshot showing a code cell in a Jupyter notebook containing code to produce a scatter plot, as well as the generated scatter plot below the code.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-jupyter-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;13.3: An example Jupyter notebook with a Python-generated scattergraph.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="running-code-in-the-browser-webr-pyodide" class="level4">
+<h4 class="anchored" data-anchor-id="running-code-in-the-browser-webr-pyodide">Running code in the browser: WebR, Pyodide</h4>
+<p>WebR (for R programming) and Pyodide (for Python) allow for integration of interactive code blocks in HTML-based worksheets. If writing worksheets in Markdown using <a href="https://quarto.org/">Quarto</a>, the <a href="https://r-wasm.github.io/quarto-live/"><code>quarto-live</code></a> extension can be used to include these interactive code blocks.</p>
+<p>The advantage of these is that you can have a worksheet which prompts a student to test parts of code as they go. They can also be great for quick explanations in class, so students can test something without altering the code they are working on.</p>
+<p>Both of these work with a variety of common packages such as <code>ggplot</code> (R) and <code>matplotlib</code> (Python). The <code>quarto-live</code> extension can also be used to generate exercises where students need to fill in the blanks in the provided code, and this can include hints and answers.</p>
+<div id="fig-quarto-live" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Screenshot showing a short code snippet with gaps to fill, with a 'Run code' button.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-quarto-live-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./chapters/images/C04_computer-says-no-quatro-live-exercise.png" class="img-fluid figure-img" style="width:70.0%" alt="Screenshot showing a short code snippet with gaps to fill, with a 'Run code' button.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-quarto-live-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;13.4: An example of a Pyodide exercise.
+</figcaption>
+</figure>
+</div>
+<p>The disadvantage is that the code a student writes is not saved anywhere — so this has to be made clear to them. It is only for temporary use. Additionally, as with the Jupyter notebooks, all variables are saved into a temporary memory so one code block may function differently depending on which blocks were run previously.</p>
+</section>
+</section>
+<section id="github-and-other-software-development-platforms" class="level3">
+<h3 class="anchored" data-anchor-id="github-and-other-software-development-platforms">GitHub and other software development platforms</h3>
+<p>GitHub, and its competitors such as GitLab, Forgejo, etc., are websites that allow users to store code for a project in an online repository using the Git version control system. GitHub, in particular, is currently popular and widely used in software development and data science, and provides many useful tools that we can use to make life easier for our students.</p>
+<p>The first, simplest use of any of these sites is to store course materials in a repository. A wide variety of file types can be stored, allowing scripts (such as <code>.py</code>, <code>.ipynb</code>, <code>.C</code>) and teaching materials (such as <code>.md</code>, <code>.pdf</code> or even PowerPoint files) to be stored together. Educators can define the content of the course and its organisation into directories. Students are able to download these materials directly to their computer, making it easier to ensure students have the correct files and directory structure on their computer. Indeed, as use of version control systems themselves is a useful coding-adjacent skill, interacting with the repository can provide additional learning benefits.</p>
+<p>Furthermore, when adopting server or Docker-based solutions in educational contexts, the collection of all educational materials in a GitHub repository markedly simplifies the process of importing data. These platforms, including Google Colab and Posit, integrate easily with GitHub, allowing effortless uploads of comprehensive educational content directly into virtual learning environments. This setup, therefore, enhances accessibility and maintains a uniform teaching approach across various platforms. Unfortunately, the integration of some such platforms with GitHub alternatives is often less good — it’s often possible to get them to work with GitLab etc., but the flow is less polished.</p>
+<p>The built-in GitHub integration streamlines the teaching workflow, enabling instructors to update teaching materials in real time. As these updates are pushed to GitHub, they can be synchronised automatically with the student’s learning platforms, ensuring all participants have immediate access to the latest resources. This synchronisation eliminates the common logistical hurdles associated with outdated teaching materials or inconsistencies in software versions across different student setups.</p>
+</section>
+</section>
+<section id="computing-platform" class="level2">
+<h2 class="anchored" data-anchor-id="computing-platform">Computing Platform</h2>
+<p>Once course materials have been created, it needs to be decided how and where students will run code as they complete courses or projects. In this section, we discuss the cloud-based options and local options, including how to support each.</p>
+<section id="cloud-based-development-environments" class="level3">
+<h3 class="anchored" data-anchor-id="cloud-based-development-environments">Cloud-based development environments</h3>
+<p>While students can see the code held on GitHub and similar platforms, they cannot run it in the browser file viewers, which can be frustrating for a novice who just wants it to simply work. Traditional local setup frequently raises barriers, often involving intricate installation and configuration steps, which might deter beginners even before they engage with the actual coding exercises. Such steps can also lead to a proliferation of setup errors, turning what should be an exciting learning adventure into a tedious, error-prone process. This issue is particularly pronounced in online and hybrid learning environments.</p>
+<p>In fully in-person classes, instructors or teaching assistants can quickly diagnose and resolve installation problems simply by glancing at a student’s screen and offering immediate guidance. In small classes, this is often manageable but can create disruption and slow down classes when many students need help. Troubleshooting in remote settings is far more complex. It often requires extended back-and-forth exchanges in the chat or moving the student into a breakout room, where they must share their screen. While screen sharing can be effective, it frequently causes students to miss important portions of the live session, creating additional learning gaps and disrupting the overall flow of instruction.</p>
+<p>Cloud-based platforms offer an avenue to dismantle the initial barriers that commonly discourage learners or slow down live sessions. Tools like Posit and Colab allow beginner-level students to interact with code environments with a couple of clicks. These cloud-based development environments host an equivalent system on cloud-based services, often incorporating a browser-based IDE. This can help students to quickly get code running.</p>
+<p>Cloud-based tools also offer a pre-configured, reproducible environment which requires no setup by the student. This accelerates the starting process and spares students from the demotivating sequence of ‘boring’ steps, allowing them to dive directly into the more gratifying aspects of programming. Moreover, some of these platforms provide free access to computing resources, which is a significant advantage, particularly for students who do not have the means to acquire powerful hardware capable of running complex code or large applications.</p>
+<p>Cloud-based tools also bring benefits relating to accessibility and collaboration. Being cloud-based, these tools are accessible from anywhere, facilitating a flexible learning environment. Additionally, these platforms are inherently collaboration-friendly and in many cases support version control by default.</p>
+<p>Despite these substantial benefits, several challenges persist. Pre-loaded library conflicts can arise, posing a significant hurdle compared to the more controlled, albeit time-consuming, process of manually installing each necessary library. This automated convenience could sometimes backfire, leading to intricate conflicts that are hard to resolve without comprehensive control over the server environment. Furthermore, instances of server crashes can disrupt the learning process, culminating in potentially unsaved work and progress loss.</p>
+<div id="fig-dependency" class="quarto-float quarto-figure quarto-figure-center anchored" alt="A webcomic depicting blocks precariously piled on top of another, labelled 'All modern digital infrastructure', all resting on a single tiny block at the bottom, labelled 'A project some random person in Nebraska has been thanklessly maintaining since 2003'.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-dependency-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./chapters/images/C04_computer-says-no-xkcd-dependency.png" class="img-fluid figure-img" style="width:50.0%" alt="A webcomic depicting blocks precariously piled on top of another, labelled 'All modern digital infrastructure', all resting on a single tiny block at the bottom, labelled 'A project some random person in Nebraska has been thanklessly maintaining since 2003'.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-dependency-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;13.5: Visual representation of software dependencies, an <a href="https://xkcd.com/2347/">xkcd</a> webcomic by Randall Munroe.
+</figcaption>
+</figure>
+</div>
+<p>Admin permissions, or lack thereof, can also generate challenges, particularly when obscure errors emerge that require more than just user-level access to resolve. This limitation can frustrate users, especially when the path to a solution is barricaded by restricted permissions. Cloud-hosted development platforms can present additional challenges in remote and hybrid settings. Although the computational workload is handled on external servers, these platforms still rely heavily on the user’s local machine and network stability for smooth interaction. When used concurrently with video conferencing tools required for live instruction, stresses on the user’s internet connection may cause problems including lag, reduced responsiveness, or disconnection. These issues can affect instructors and learners, disrupting the continuity of teaching and learning.</p>
+<p>Lastly, concerns around data security persist; while cloud environments offer numerous advantages, the necessity to run certain processes locally for security reasons becomes a complex task for those unfamiliar with how to configure local environments effectively.</p>
+<p>These considerations draw a complex picture of the trade-offs involved in using cloud-based platforms for educational purposes. While they significantly lower the threshold for beginners to engage in coding by removing many logistical hurdles, they introduce a different set of challenges that need careful navigation to ensure a secure, effective, and continuous learning experience.</p>
+<section id="codespaces" class="level4">
+<h4 class="anchored" data-anchor-id="codespaces">Codespaces</h4>
+<p>One prominent example of a cloud-based platform is the Codespace feature offered by GitHub (owned by Microsoft), which integrates Microsoft’s Visual Studio Code IDE. Codespaces are a major example of a cloud-based development environment which we’ll discuss in this section.</p>
+<p>A Codespace is a development environment hosted by GitHub. Each Codespace will be based on a repository. This allows learners to visit a GitHub repository owned by the teacher containing the course materials and start a Codespace. This Codespace will be owned by the student and persists for 30 days by default, allowing them to revisit the Codespace if the course spans multiple sessions, or to revisit it after the session. Learners are also able to download the materials from their Codespace, allowing them to keep any annotations they make during the course or their solutions to exercises.</p>
+<p>By default, a Codespace will open a Visual Studio Code interface in the browser. This makes the interface very portable as it will work on any operating system and is independent of the learner’s computer. This greatly reduces the likelihood of problems during setup and means the learner doesn’t need to install anything locally on their computer before the session. Visual Studio Code is a powerful and flexible interface, supporting a wide range of programming languages and tools. This includes a built-in Linux terminal allowing command-line commands and other programs to be run in the Codespace.</p>
+<p>The Codespace is run within a Docker container, which is defined by the creator of the repository. This allows the educator to define the environment the learner is using, including installing programs in the container, installing packages and dependencies within a programming language environment, or installing Visual Studio Code extensions. This setup will be done automatically when the Codespace begins. This means the educator can make sure all tools are correctly and reliably installed across all learners’ environments. The learner will still have to learn to navigate the interface, but there should be many fewer problems relating to setup compared to students locally configuring their own system.</p>
+</section>
+<section id="comparison-of-the-main-server-or-docker-based-options" class="level4">
+<h4 class="anchored" data-anchor-id="comparison-of-the-main-server-or-docker-based-options">Comparison of the main server or Docker-based options</h4>
+<p>Each cloud-based tool has its pros and cons and quirks. Below you can find a table that summarises them based on our experience.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 4%">
+<col style="width: 4%">
+<col style="width: 36%">
+<col style="width: 53%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Name</th>
+<th style="text-align: center;">Type</th>
+<th style="text-align: center;">Pros</th>
+<th style="text-align: center;">Cons</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">Codespaces</td>
+<td style="text-align: center;">IDE-based</td>
+<td style="text-align: center;">Comprehensive support of a wide range of tasks and extensive ability to set up the environment.</td>
+<td style="text-align: center;">Tie-in to Microsoft ecosystem. Complex configurations can be slow to load.</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Posit</td>
+<td style="text-align: center;">IDE-based</td>
+<td style="text-align: center;">Comprehensive R and Python support; seamless GitHub integration</td>
+<td style="text-align: center;">No pre-installed packages result in a long setup time running (and possible crashes), data security concerns, can become expensive for larger teams or more extensive resource needs</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">PythonAnywhere</td>
+<td style="text-align: center;">IDE-based</td>
+<td style="text-align: center;">Support for Python, hosting a web app and using a bash console; can link teacher and student accounts</td>
+<td style="text-align: center;">No graphics, data security concerns, IPython notebooks are paid-only, teacher and student accounts need to be on the same server (EU and US versions)</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Colab</td>
+<td style="text-align: center;">Notebook-based</td>
+<td style="text-align: center;">Easily integrates with Google Drive and GitHub; free GPU access for better performance on larger datasets.</td>
+<td style="text-align: center;">Limited to Python for deep technical tasks, limited amount of pre-installed libraries, data security concerns</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">My Binder</td>
+<td style="text-align: center;">Notebook-based</td>
+<td style="text-align: center;">Turns a Git repo into a collection of interactive notebooks, free to use</td>
+<td style="text-align: center;">Instances are temporary and can take ages to spin (traffic-dependent and therefore unpredictable), and are mostly Python-oriented</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Noteable</td>
+<td style="text-align: center;">Notebook-based</td>
+<td style="text-align: center;">Designed specifically for educational purposes, integrates well with University/VLE login systems, good data security</td>
+<td style="text-align: center;">Pre-installed packages can create issues with additional packages needed, free only for a specific institution makes collaboration harder</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="installation-support-for-different-osdevices" class="level3">
+<h3 class="anchored" data-anchor-id="installation-support-for-different-osdevices">Installation support for different OS/devices</h3>
+<p>Sometimes it may not be possible or desirable to use a cloud-based service. Learners may not have a steady internet connection at home, or may want or need to work on public transport without an internet connection. Online tools often have a limited number of CPU-hours (or a similar restriction) that make them unsuitable for larger projects. Finally, teaching students to run code and tools locally is a valuable skill and one that an educator might want to cultivate. For these reasons, instructors may want to support students running code and tools locally. However, learners may have different operating systems and setups, and this means supporting the installation of software across all machines can be a challenge.</p>
+<p>To effectively engage students from the beginning, having additional support for installing tools plays a crucial role. Particularly for courses with a lot of novice students, the tools that will be used in the course should be introduced to students early so they feel comfortable using them. As well as introducing tools in a workshop or lecture, asynchronous support resources (e.g.&nbsp;online documentation or written materials) can help troubleshoot setup issues. These resources should be easy to follow and up to date. This may involve updating them during the first couple of weeks in response to student problems and feedback.</p>
+<p>The first workshop of a course could be dedicated to installing software, and making sure the students’ computers are set up correctly and that they are comfortable with the tool. There may be device-specific issues, especially for devices other than Windows and Mac laptops such as Chromebooks or tablets. Additionally, students might miss the first week, or new problems may crop up as the course progresses, meaning ongoing support is vital. One-to-one support for individual students and Q&amp;A hours can help make sure students remain supported in terms of their setup throughout the course. Sometimes, overcoming a technical obstacle can be too great a task to achieve in a session. In these cases, it is possible to suggest that students temporarily use alternative computational platforms (such as lab computers or online platforms) to avoid falling behind during the workshop, and then give extra help after the session to resolve their individual device-related issues.</p>
+</section>
+</section>
+<section id="supporting-students" class="level2">
+<h2 class="anchored" data-anchor-id="supporting-students">Supporting Students</h2>
+<p>When completing a programme of study, students will often need support to overcome technical hurdles. In this section, we discuss how educators might provide this support.</p>
+<section id="office-hours-and-drop-in-sessions" class="level3">
+<h3 class="anchored" data-anchor-id="office-hours-and-drop-in-sessions">Office hours and drop-in sessions</h3>
+<p>Learning programming for the first time requires a lot of time and practice. For students to be successful, they will most likely need to practice in their independent study time. However, this will mean that they do not have anyone to ask if they get an error message they don’t understand or if they need any guidance on how to progress. If a student cannot progress and has to wait for potentially a week or longer before their next taught session, this can stall progress and demotivate the student.</p>
+<p>Office hours or drop-in sessions can be crucial in supporting students between sessions. This could be either individually or in small groups, especially for those who are otherwise struggling to keep on top of the course. Office hours could be scheduled for specific times throughout the week, and drop-in sessions could either be timetabled, arranged using booking software such as Microsoft Bookings or arranged on request by email.</p>
+<p>Clear communication to students that this assistance is available and how to reach out if they feel like they need support is important for this to be effective. Doing this consistently from the first session, such as mentioning it once in every class, should help to reach students if they start to struggle at any point in the course. One-to-one or small group sessions can also be really useful for encouraging students and building their confidence, as well as finding out what areas of the course are most commonly misunderstood.</p>
+<p>While being available for student support outside of their timetabled teaching can be valuable, it is also important as educators to establish boundaries for our own well-being — for instance, only allowing student meetings to take place during your own working hours and blocking out time for breaks or to focus on other work.</p>
+</section>
+<section id="teams-channels-and-other-group-chat-services" class="level3">
+<h3 class="anchored" data-anchor-id="teams-channels-and-other-group-chat-services">Teams channels (and other group chat services)</h3>
+<p>Providing a managed online chat platform can be effective to allow students a space to discuss the material. The choice of chat service can be strictly limited by University policy and GDPR, despite there being a wide range of alternatives — from commercial, closed-source, hosted versions like Microsoft Teams, Discord, Slack, WhatsApp and so on, through more open-source, locally-hostable services like Mattermost, Zulip, RocketChat, etc. However, it is common to only be allowed to create official chat channels on one of these options, usually Microsoft Teams.</p>
+<p>Setting up Teams channels for a course can be effective to allow a space for students to discuss the material, but this requires careful management. Specific channels can guide students to where they can find related materials or post their questions. For instance, an additional code support channel can be created, and students can be informed about how to share their code-related questions specifically. Often, the students who most want to discuss difficulties are also reluctant to admit to issues in a “public space” where teaching staff and other students can observe them. Pseudonymous or anonymous posting in Teams channels hosted by Universities tends to be against policy for safety reasons, but sometimes semi-anonymous posting (where only the teacher can see a poster’s identity) can help to relieve social anxiety of students. Tools such as Padlet may be more suited to allowing “low-pressure” anonymous discussion, but anonymous posting requires more moderation to ensure no inappropriate content appears.</p>
+<p>Teams, and other equivalent services, provide useful integrations with many of the above services, and can be configured to at least coordinate updates to student material in a centralised way.</p>
+</section>
+<section id="ai-assistance" class="level3">
+<h3 class="anchored" data-anchor-id="ai-assistance">AI assistance</h3>
+<p>Generative AI tools are rapidly becoming a popular tool for learning to program, or to support learning programming. This has some advantages and disadvantages when it comes to learning programming, but it also has some applications when trying to remove barriers to getting started. Generative AIs have been trained on a wide range of material, including sources like Stack Overflow, where programmers have been asking questions relating to errors and problems with setups for a long time. This means, in theory, generative AI tools should be able to answer at least some questions relating to setup issues.</p>
+<p>There are also many ethical issues which may influence your desire to use Generative AI tools in the classroom. Generative AI companies consume large amounts of power in training (and build new, larger, datacentres at high rates, with their own environmental impacts)<span class="citation" data-cites="iea_energy_demand_ai">(<a href="#ref-iea_energy_demand_ai" role="doc-biblioref">IEA 2024</a>)</span>. Many generative AI models were trained on copyrighted data without consent <span class="citation" data-cites="Quintais_generative_ai_copyright">(<a href="#ref-Quintais_generative_ai_copyright" role="doc-biblioref">Quintais 2025</a>)</span> and their unmanaged adoption poses significant workers’ rights issues. Numerous cases have been recorded of generative AI agents having a negative influence on social relationships. Several papers have also demonstrated that the training sets for most generative AI models used for text generation (“LLMs”) have significant Western-USA English-speaking cultural bias, resulting in their outputs being similarly biased <span class="citation" data-cites="nyaaba2025generative_ai_power_imbalances">(<a href="#ref-nyaaba2025generative_ai_power_imbalances" role="doc-biblioref">Nyaaba et al. 2025</a>)</span>; this results in a “flattening” effect in expression for people interacting with LLMs to “improve” their writing, or when soliciting advice <span class="citation" data-cites="agarwal2025ai_suggestions_homogenize_writing">(<a href="#ref-agarwal2025ai_suggestions_homogenize_writing" role="doc-biblioref">Agarwal et al. 2025</a>)</span>. Given their prominence within discourse, and the fact that people are still using them regardless of the above, it is still relevant to discuss their application to beginning coders.</p>
+<p>Sometimes, pasting an error message into a generative AI tool does give useful information that can help to solve a problem. However, there are important limitations for learners. Firstly, generative AI tools can only see the information they are presented with. A tool like ChatGPT can only see the information in its prompts. A tool like GitHub Copilot can be integrated into the development environment and can see, or be provided with, the file structure of the project. More recently, GitHub Copilot can be used in “Agent” mode to interrogate the setup of the system in terms of installing programs, packages or their configuration. This is sporadically successful and can sometimes identify and fix issues, but this is unreliable. Generative AIs cannot generally see the interface the user is looking at, making it difficult to provide information about certain classes of problems.</p>
+<p>Another limitation to the information available to the tool comes from the learners themselves. A novice learner may not be able to adequately or accurately describe the problem they’re encountering. This can lead to the tool misdiagnosing the problem. Learners with less experience may also struggle to implement reasonable attempts to fix a problem described by a generative AI and not know what follow-up questions to ask. Even if a problem is precisely described, generative AI tools can sometimes fail to suggest the actual fix to a problem. A tutor looking over a student’s shoulder in a session may be able to immediately fix the same problem, particularly if they’re an expert in the area or have observed an exercise being tackled by lots of students before.</p>
+<p>Educators are often also skilled at quickly establishing a learner’s level of understanding and providing further help and explanation when necessary. Generative AI tools are not yet good at this as they can often suggest code which uses advanced structures that the learner has not yet encountered, which could overwhelm and confuse the learner, rather than gradually introducing new concepts and structures as the learner progresses.</p>
+<p>At their current level of maturity, generative AI tools are unreliable, particularly when it comes to helping novices with limited tacit knowledge of the area being studied. Sometimes they are helpful, and attempting to use one is not a bad idea for a stuck learner, but it often won’t work. As generative AI tools improve in their accuracy and become more closely integrated into development environments, their usefulness may improve.</p>
+<p>However, a significant issue for generative AI tools is that they can become a tempting crutch. If a student is already underconfident in their skills, the apparent ability of a large language model to simply “solve the problem” can lead to disengagement from the material entirely — a student may substitute reliance on prompting the generative model for solutions for their own critical thought. In the worst cases, which some of us have observed, reliance on generative AI tools can result in the student effectively deskilling as a result. Generally, this pattern follows the form that a student initially develops some small skill in writing code from scratch, but increasingly leans on LLMs to handle “the difficult bits” — over time, increasing amounts of the coding process are handled by the LLM, to the extent that the student is no longer confident in even starting a project without the LLM to provide some initial material to work with.</p>
+</section>
+</section>
+<section id="conclusions" class="level2">
+<h2 class="anchored" data-anchor-id="conclusions">Conclusions</h2>
+<p>In this chapter, we have discussed a variety of barriers that students may face when trying to engage with learning activities relating to programming. These are varied, including technical, cultural and practical aspects. There are a number of steps that we, as educators, can take to mitigate these problems and we have outlined and discussed some of the approaches that we have found work for us. A common theme relates to reducing cognitive load — the more we can reduce the level of tacit knowledge, setup and background information, the easier it is to get beginners started. Careful consideration of the order in which skills are taught within a course and across courses can also be helpful for ensuring that students have the correct skills when their studies require it.</p>
+<p>Every context is different in terms of the cohort of students, the material being taught and the time and resources available, so there is no “one size fits all” approach. A good technique is to be mindful of and actively identify the barriers students may face, putting yourself in their shoes. From there, it is possible to think of the most suitable mitigations and strategies we can use to reduce the barriers students face and improve their educational experience.</p>
+<p>The above collection of advice, rather than aiming to be a definitive guide of dos and don’ts when it comes to removing technology barriers for novice learners, represents a set of wins and fails that the authors have experienced directly in the classroom. Removing technological barriers in programming education is inherently an ongoing process, requiring flexibility, clear communication, and a variety of accessible tools. No single approach will suit every learner, but by combining structured resources, visual guidance, and responsive support, educators can meet students where they are.</p>
+<p>Crucially, these useful techniques are most effective when they are embedded not only within individual courses but also consistently across an entire curriculum. This consistency reduces cognitive load for learners and ensures that valuable skills — such as using GitHub, for example — are reinforced through repeated exposure, making them second nature. As digital platforms and AI assistance continue to evolve, maintaining a careful balance between support and the fostering of independent problem-solving becomes more important than ever. By addressing setup frustrations at both course and programme levels, and prioritising an inclusive environment, educators can lay the essential foundations for students to gain confidence and thrive as they begin their journey in coding.</p>
+</section>
+<section id="references" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="references">References</h2>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-agarwal2025ai_suggestions_homogenize_writing" class="csl-entry" role="listitem">
+Agarwal, Dhruv, Mor Naaman, and Aditya Vashistha. 2025. <span>“AI Suggestions Homogenize Writing Toward Western Styles and Diminish Cultural Nuances.”</span> <em>Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems</em> (New York, NY, USA), CHI ’25. <a href="https://doi.org/10.1145/3706598.3713564">https://doi.org/10.1145/3706598.3713564</a>.
+</div>
+<div id="ref-iea_energy_demand_ai" class="csl-entry" role="listitem">
+IEA. 2024. <em>Energy Demand from AI</em>. <a href="https://www.iea.org/reports/energy-and-ai/energy-demand-from-ai" class="uri">Https://www.iea.org/reports/energy-and-ai/energy-demand-from-ai</a>.
+</div>
+<div id="ref-nyaaba2025generative_ai_power_imbalances" class="csl-entry" role="listitem">
+Nyaaba, Matthew, Alyson Wright, and Gyu Lim Choi. 2025. <em>Generative AI and Power Imbalances in Global Education: Frameworks for Bias Mitigation</em>. <a href="https://arxiv.org/abs/2406.02966">https://arxiv.org/abs/2406.02966</a>.
+</div>
+<div id="ref-Quintais_generative_ai_copyright" class="csl-entry" role="listitem">
+Quintais, João Pedro. 2025. <span>“Generative AI, Copyright and the AI Act.”</span> <em>Computer Law &amp; Security Review</em> 56: 106107. https://doi.org/<a href="https://doi.org/10.1016/j.clsr.2025.106107">https://doi.org/10.1016/j.clsr.2025.106107</a>.
+</div>
+</div>
+</section>
+<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn1"><p>For example, one time, a student using a Jupyter Python notebook named a variable <code>str</code>, overwriting the built-in <code>str()</code> function, then deleted the code, leading to unexpected behaviour when trying to use the <code>str()</code> function later.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./C14_foster-inclusion-and-accessibility.html" class="pagination-link" aria-label="Practices to Foster Inclusion and Accessibility in Programming Teaching">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Practices to Foster Inclusion and Accessibility in Programming Teaching</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./C33_coding-anxiety.html" class="pagination-link" aria-label="Overcoming Coding Anxiety: Lowering the Stakes and Making It Fun">
+        <span class="nav-page-text"><span class="chapter-title">Overcoming Coding Anxiety: Lowering the Stakes and Making It Fun</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
