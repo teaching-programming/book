@@ -1,0 +1,39 @@
+## Copyright
+
+First published in 2026 by the University of Edinburgh
+
+<https://books.ed.ac.uk/edinburgh-diamond> | [\@EdinDiamond](https://bsky.app/profile/edinburghdiamond.bsky.social)
+
+Collection © Editors, 2026  
+Text © Authors, 2026  
+Images © Contributors and copyright holders named in Images Section at the end of the book, 2026  
+
+The authors have asserted their rights under the Copyright, Designs and Patents Act 1988 to be identified as the authors of this work. 
+
+This book is published under Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International license (CC BY-NC-SA 4.0), <https://creativecommons.org/licenses/by-nc-sa/4.0/>
+
+![](chapters/images/C00_CC_logo.png){fig-alt="Logo of CC BY-NC-SA 4.0 license" fig-align="left" width="30%"}
+
+Further details about Creative Commons licenses are available at <https://creativecommons.org/about/cclicenses/>
+
+
+_Attribution should include the following information:_  
+Blankinship, Orzechowski, Desvages, Banas, Noè, Oldnall, Sharifi Far, Llewellyn, Alex, Evkaya, and McManus. 2026. Teaching Programming Across Disciplines.  
+Edinburgh: University of Edinburgh. <https://doi.org/10.2218/ED.9781836450795>
+
+Any third-party material in this book is not covered by the book’s Creative Commons license. Details of the copyright ownership and permitted use of third-party material is given in the image credit lines. If you would like to reuse any third-party material not covered by the book’s Creative Commons license, you will need to obtain permission directly from the copyright owner. 
+
+ISBN (print): 978-1-83645-168-6  
+ISBN (ebook): 978-1-83645-079-5  
+DOI: 10.2218/ED.9781836450795  
+DOI link: <https://doi.org/10.2218/ED.9781836450795>
+
+Cover design by Pawel Orzechowski
+
+Printed and bound by Lulu.com
+
+
+![](chapters/images/C00_UoE_logo.png){fig-alt="The University of Edinburgh logo" fig-alight=left width=40%}
+![](chapters/images/C00_EdinburghDiamond_logo.png){fig-alt="Edinburgh Diamond logo" fig-alight=left width=40%}
+
+---
