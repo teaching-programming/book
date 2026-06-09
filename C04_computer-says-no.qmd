@@ -81,7 +81,13 @@ One technique which can easily enhance setup instructions is a GIF screen record
 
 @fig-C04_RStudio_GIF_demonstration shows key frames from a GIF recording of how to create a new folder and an R script, along with running a line of code, in RStudio. 
 
+
+::: {.content-visible unless-format="html"}
+![Keyframe of example GIF on how to use RStudio.](/chapters/images/C04_RStudio_GIF_demonstration.png){#fig-C04_RStudio_GIF_demonstration fig-alt="A frame of a GIF showing the RStudio interface at four different stages of completing a task."}
+:::
+::: {.content-visible when-format="html"}
 ![Keyframes of example GIF on how to use RStudio.](/chapters/images/C04_RStudio_GIF_demonstration.gif){#fig-C04_RStudio_GIF_demonstration fig-alt="A GIF showing the RStudio interface at four different stages of completing a task."}
+:::
 
 These can be embedded in any online-based tutorial, such as an HTML file or within a page written on a Virtual Learning Environment (VLE) such as Moodle, Blackboard or Canvas. For long processes, you can combine multiple GIFs with text instructions and clear headings (Step 1, Step 2...). 
 
