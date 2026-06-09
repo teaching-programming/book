@@ -144,10 +144,10 @@ The resulting shape is simply a snapshot of how things are balanced at a given m
 
 
 ::: {.content-visible unless-format="html"}
-![Ever changing balance of independent, conscious, and social code forces.](/chapters/images/C40_ir-radar.png){#fig-c40-radar-gif} 
+![Ever changing balance of independent, conscious, and social code forces. In the online version, this is a dynamic gif but presented here as a static snapshot.](/chapters/images/C40_ir-radar.png){#fig-c40-radar-gif} 
 :::
 ::: {.content-visible when-format="html"}
-![Ever changing balance of independent, conscious, and social code forces.](/chapters/images/C40_ir-radar.gif){#fig-c40-radar-gif} 
+![Ever changing balance of independent, conscious, and social code forces. In the online version, this is a dynamic gif but presented here as a static snapshot.](/chapters/images/C40_ir-radar.gif){#fig-c40-radar-gif} 
 :::
  
 These three forces define a "mindset space", different regions of which are better suited to different applications.
