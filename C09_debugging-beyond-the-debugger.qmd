@@ -21,7 +21,7 @@ author:
 
 Harken your memory back to your first error message, however many years ago that might be. You likely felt a small jolt of panic, a worry you’d irreparably **broken something**. Nowadays, you hopefully see errors as the lane bumpers of your programming journey. Errors help us understand flaws in our original design, consequences of code changes on original code, and limitations of our system. 
 
-When teaching students at the beginning of their journey, it’s important to remember they will require psychological coaching to reframe these errors from failure, to progress. To them, proficient in their own field, they will not be accustomed to many errors in their work. In learning a new skill it’s key to foster the growth mindset that’s so fundamental in programming. 
+When teaching students at the beginning of their journey, it’s important to remember they will require psychological coaching to reframe these errors from failure, to progress. As experts in their field, they rarely make mistakes in their work. In learning a new skill it’s key to foster the growth mindset that’s so fundamental in programming. 
 
 This growth mindset muscle must be strong, so strong in fact that it can conquer the usual process of fixing one error only to find another one. An experienced programmer would see this as progress, the stepping stones that will lead to their desired end result. Whereas students often see it as compounding failure, eroding away at their frustration tolerance. This can be a huge blocker in their learning and lead to demotivation or the classic “programming is just not for me” mindset.
 
@@ -31,7 +31,7 @@ This chapter will lay out the **5Bs framework[^C09-origin] - Brain, Book, Buddy,
 
 ### A Note about Debugging and AI
 
-However you feel about the broad usage of AI, their integration into learning environments demands our careful consideration. These powerful assistants can remarkably accelerate experienced developers and are invaluable for "getting the job done" efficiently. However, for the novice programmer focused on building foundational understanding and their own problem-solving abilities, they present a double-edged sword. If an AI consistently serves the perfectly cooked meal, the learner may miss the crucial sometimes messy process of learning to prepare it themselves, hindering the development of their core analytical and debugging muscles. With this in mind, the 5Bs framework presented in this chapter will explore how to thoughtfully integrate AI at each stage, aiming to strike a crucial balance: leveraging these incredible tools appropriately while always prioritizing and fostering deep, independent learning and critical thinking.
+However you feel about the broad usage of AI, their integration into learning environments demands our careful consideration. These powerful assistants can remarkably accelerate experienced developers and are invaluable for getting the job done efficiently. However, for the novice programmer focused on building foundational understanding and their own problem-solving abilities, they present a double-edged sword. If an AI consistently serves the perfectly cooked meal, the learner may miss the crucial, sometimes messy, process of learning to prepare it themselves. This may hinder the development of their core analytical and debugging muscles. With this in mind, the 5Bs framework presented in this chapter will explore how to thoughtfully integrate AI at each stage, aiming to strike a crucial balance: leveraging these incredible tools appropriately while always prioritizing and fostering deep, independent learning and critical thinking.
 
 ## BRAIN: Engage Your Mind Before Your Keyboard
 
@@ -78,7 +78,7 @@ Despite it being a complex source to parse, I would always encourage the student
 
 ### Books
 
-While it isn’t the quickest way to solve a bug, certainly many engineers' favourite pathway into deeper understanding is reading published titles. Authors have taken much time and deliberation over every sentence in their book, and this leads to the highest quality explanations of concepts. Books are a form of linear learning, which contrast to the other options’ fragmented learning. While a google search might fix a bug, reading a book chapter will fix the misunderstanding that caused it in the first place.
+While it isn’t the quickest way to solve a bug, many engineers' favourite pathway into deeper understanding is reading published titles. Authors have taken much time and deliberation over every sentence in their book, and this leads to the highest quality explanations of concepts. Books are a form of linear learning, which contrast to the other options’ fragmented learning. While a google search might fix a bug, reading a book chapter will fix the misunderstanding that caused it in the first place.
 
 Reading around a topic when one is stuck can be a natural way to gain deep understanding without feeling like one must set aside time for learning & development. By using these casual opportunities to learn, the student can create a lifelong habit of continuous learning.
 
@@ -116,7 +116,7 @@ Of course, as mentioned in the section above, if a student chooses to use AI the
 
 ### Fellow humans
 
-The two prior options described are great resources for the middle of the night questions. However, if there is an option to discuss with an actual person, I would recommend this option above all.
+The two prior options described are great resources for the middle of the night bugs. However, if there is an option to discuss with an actual person, I would recommend this option above all.
 
 Explaining your reasoning to someone else holds you to a higher standard of use of technical language. Whenever you describe your code to someone else, you organise your thoughts before you speak and you take cues from them to expand on explaining the parts that are most important. Their intuition collaborates with yours in real time to create better understanding. You’d be surprised how often discussing something with a colleague will also enhance their understanding of concepts too.
 
@@ -146,7 +146,7 @@ The hardest part of reaching out can be the intimidation of knowing, ironically,
 - **Context** - What are you trying to do? What part of what you’re tacking is new to you? What specific error message or bug are you getting?  
 - **Brain** - What is your understanding of the problem? What hypotheses have you tested?  
 - **Book** - Where did you go to get more information? Was it helpful? Did it confuse you further? Do you have any similar sample code which you do understand?  
-- **Buddy** - Have you talked it through with a colleague? Did you discuss this problem with AI? Where in their explanations have you got lost?   
+- **Buddy** - Have you talked it through with a colleague? Did you discuss this problem with AI? Where in their explanations did you get lost?   
 - **Question** - What one specific question could your tutor answer you that would lead to the most significant unblocking?  
 
   Ensure you treat a student’s escalation with utmost care, they are likely building a fragile muscle which will require tackling one's own ego and some old stubborn habits.
