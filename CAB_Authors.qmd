@@ -26,11 +26,9 @@ GitHub: <https://...>
 
 ResearchGate: <https:/...>
 
-----
-
 ## Book Editors
 
-TODO: Brittany Blankinship
+### TODO: Brittany Blankinship
 
 ----
 
@@ -46,11 +44,19 @@ Personal website: <https://www.codestorytelling.com/>
 
 ----
 
-TODO: Charlotte Desvages
+### TODO: Charlotte Desvages
 
 ----
 
-TODO: Kasia Banas
+### Kasia Banas (she/her)
+##### Senior Lecturer, Edinburgh Medical School, University of Edinburgh
+![](/chapters/authors/kasia-banas.jpg ){#fig-author-kasia-banas fig-alt="Kasia Banas Profile" width=30% }
+
+My background is in social psychology, and it wasn't until after my PhD that I discovered my love for programming. But, once I was introduced to R, I fell in love and never looked back. Now I teach introductory data science skills to medics and biomedical sciences students, paying special attention to the fact that most of them never expected to have to code as part of their degree. As a psychologist, I recognise the value of identity and community in learning, and I conduct pedagogical research looking at how we can best support students on their university journey. Together with the other editors, we came up with the (somewhat crazy) idea for this book, and I'm delighted to see it turn into reality.
+
+LinkedIn: <https://www.linkedin.com/in/kasia-banas/>
+
+Work website: <https://edwebprofiles.ed.ac.uk/profile/kasia-banas>
 
 ----
 
@@ -86,7 +92,16 @@ ORCID: <https://orcid.org/0000-0001-8403-6286>
 
 ----
 
-TODO: Clare Llewellyn
+### Clare Llewellyn-MacRae (she/her)
+##### Senior Lecturer, The University of Edinburgh
+
+![](/chapters/authors/clare-llewellyn-macrae.jpg ){#fig-author-clare-llewellyn-macrae fig-alt="Clare Llewellyn-MacRae Profile" width=30% }
+
+I'm a senior lecturer in governance, data, and technology, based in a politics and international relations department. My background is in AI and natural language processing. I use these skills to answer real-world, politically motivated questions that are grounded in theory. My research focuses on how AI and Machine Learning methods can be developed and used to understand political views, identity, and behaviour in massive data sets such as news, social media, and archives. I really enjoy sharing my knowledge of coding, AI, and machine learning, as well as my experimental and procedural skills, to support safer, more accountable technology in public-sector and democratic contexts. I have supported Scottish, UK, EU, and US government stakeholders through data-informed research on AI, digital influence, and policy engagement. I have taught programming to people from very diverse backgrounds at different stages of their careers. I love the teaching experience, I learn so much from it, and I enjoy being in that moment when someone gets something that previously felt impenetrable. There is nothing more rewarding.
+
+Work website: <https://www.sps.ed.ac.uk/staff/clare-llewellyn>
+
+LinkedIn: <https://www.linkedin.com/in/clare-llewellyn-4749318/>
 
 ----
 
@@ -114,13 +129,14 @@ LinkedIn: <https://www.linkedin.com/in/ozanevkaya/>
 
 ----
 
-TODO: Franziska McManus
+### TODO: Franziska McManus
 
 ----
 
 ## Project Coordinator
 
 ### Franziska McManus (she/her)
+
 
 ## All Chapter Authors
 
@@ -137,11 +153,23 @@ Work website: <https://profiles.ucl.ac.uk/38404-samantha-ahern>
 
 ----
 
-### TODO: Neil Anderson
+### Neil Anderson
+##### Reader (Associate Professor), Queens University Belfast
+![](/chapters/authors/neil-anderson.jpg ){#fig-author-neil-anderson fig-alt="Neil Anderson Profile" width=30% }
+
+I am an educator and researcher in computing with a particular interest in software engineering education, student engagement, and creating effective learning communities. Throughout my career, I have worked to help students develop confidence as programmers and problem-solvers, whether they are learning on campus or through online and distance-learning programmes. My interests span assessment, feedback, learning analytics, and the opportunities and challenges presented by generative AI in education. Alongside this, I have collaborated across disciplines on the development of software systems and digital technologies to support public health and healthcare research. I am passionate about making computing accessible, inclusive, and relevant, helping learners from a wide range of backgrounds discover how programming can be used to solve meaningful real-world problems.
 
 ----
 
-### TODO: William Bell
+### William H. Bell
+##### Teaching Fellow, University of Strathclyde
+![](/chapters/authors/william-bell.jpg ){#fig-author-william-bell fig-alt="William Bell Profile" width=30% }
+
+I have developed software within large international collaborations and commercial projects, using a range of different programming languages and hardware platforms.  I starting teaching software development concepts more than two decades ago, including postgraduate and undergraduate students, as well as the general public. I was responsible for many programming articles in the Raspberry Pi magazine and have run public events in France, Switzerland and the UK.  I enjoy learning new technologies and delivering useful learning.
+
+Personal website: <https://whbell.net/>
+
+Work website: <https://www.strath.ac.uk/staff/bellwilliamdr/>
 
 ----
 
@@ -167,11 +195,25 @@ Github: <https://github.com/yabellini>
 
 ----
 
-### TODO: Devanjan Bhattacharya
+### Devanjan Bhattacharya (he/him)
+##### Research Fellow, The University of Edinburgh
+![](/chapters/authors/devanjan-bhattacharya.jpg ){#fig-author-devanjan-bhattacharya fig-alt="Devanjan Bhattacharya Profile" width=30% }
+
+Devanjan is a Research Fellow on WARSHARE where he leads a research strand aimed at computational data analytics using AI/ML. His areas of research and teaching being geomatics and geo-spatial technologies, he works towards intelligent geospatial analytics merging remotely sensed data, navigation technologies, informatics and GIS together, which are proving a strong platform to progress towards sustainable smart societies, and he continues his endeavour towards that goal, through academic engagements. In the University of Edinburgh, he has reprised the roles of researcher and teacher. He was a Marie Curie Postdoc Fellow on data-driven innovation under TRAIN@ED project, where he worked with peace-building processes compiling spatial data collected online, using AI, NLP and geo-visualization. Then he was on a Teaching Fellowship at the Bayes Centre, involved in the running of earth observation courses. Presently, he holds a Research Fellowship in an ERC/UKRI Advanced Grant in the School of Social and Political Science, developing language parsing in the domain of conflicts and wars media data. He can be reached at d.bhattacharya@ed.ac.uk or sps.ed.ac.uk/staff/devanjan-bhattacharya"
+
+LinkedIn: <https://www.linkedin.com/in/devanjan-bhattacharya-13428b7/>
+
+Work website: <https://edwebprofiles.ed.ac.uk/profile/devanjan-bhattacharya>
 
 ----
 
-### TODO: Neil Bray
+### Neil Bray (he/him)
+##### Senior Epidemiology Scientist, UK Health Security Agency
+![](/chapters/authors/neil-bray.jpg ){#fig-author-neil-bray fig-alt="Neil Bray Profile" width=30% }
+
+My background is in public health, where coding has become an essential skill for my career. I started teaching programming as I wanted others to see the benefits of coding, to feel like it was achievable, and to enjoy the learning process. As I became a more experienced coder, I realised that programming was not just about writing code but also about developing a particular way of thinking. My contribution to this book is a chapter that explores this further and includes strategies that educators can use to develop this coding mindset in their students.
+
+ORCID: <https://orcid.org/0009-0006-4315-9486>
 
 ----
 
@@ -179,13 +221,21 @@ Github: <https://github.com/yabellini>
 
 ----
 
-### TODO: Arif Budiarto
+### Arif Budiarto (he/him)
+##### Postdoctoral Research Fellow, The University of Edinburgh
+![](/chapters/authors/arif-budiarto.jpg ){#fig-author-arif-budiarto fig-alt="Arif Budiarto Profile" width=30% }
+
+I'm a health data scientist specialising in clinical prediction modelling, EHR analytics, and translational (responsible) AI. After completing my PhD in Medical Informatics at the University of Edinburgh, I moved into a postdoctoral fellowship developing deployable COPD risk_stratification tools for NHS clinicians. I love turning complex health data into tools that can help people.
+
+LinkedIn: <https://www.linkedin.com/in/abudiarto/>
+
+Work website: <https://edwebprofiles.ed.ac.uk/profile/arifbudiarto>
 
 ----
 
 ### Yashique Chalil (He/Him)
 ##### Tutor, Reid School of Music, University of Edinburgh
-![](/chapters/authors/yashique-chalil.jpg ){#fig-author-yashique-chalil fig-alt="Yashique Chalil Profile" width=30% }
+![](/chapters/authors/yashique-chalil.jpg ){#fig-author-yashique-chalil #fig-author-yashique-chalil fig-alt="Yashique Chalil Profile" width=30% }
 
 I am a Software Engineer and Sound Designer dedicated to exploring the limits and possibilities of creative expression. Working at the intersection of music technology, academia, and community-based practices, I aspire to build tools that make this expression more accessible and intuitive.  My fascination with the intricate relationship between programming, electronics, nature, culture and the arts inspires me to pursue this path. 
 
@@ -217,7 +267,11 @@ ORCID: <https://orcid.org/0000-0002-8313-9934>
 
 ----
 
-### TODO: Matthew Collins
+### Matthew Collins (he/him)
+##### Reader (Associate Professor), Queens University Belfast
+![](/chapters/authors/matthew-collins.jpg ){#fig-author-matthew-collins fig-alt="Matthew Collins Profile" width=30% }
+
+I'm a former student who never left the university so they eventually started paying me and made me part of the lecturing staff. I teach a variety of modules across our different undergrad and postgrad pathways on both discrete maths and programming subjects. I have a keen interest in Virtual Reality and run a VR lab where students can produce innovative and immersive final year projects and am always interested in exploring what's possible. Inspiring student's to use their imagination to write creative software that unlocks the potential of new hardware is extremely rewarding.
 
 ----
 
@@ -281,8 +335,6 @@ I'm a software engineer and educator focused on the human side of technical lite
 
 LinkedIn: <https://www.linkedin.com/in/mardoig/>
 
-GitHub: TODO
-
 ----
 
 ### Olexandr Konovalov (he/him)
@@ -311,6 +363,7 @@ Github: <https://github.com/TiagoAMarques>
 
 ### Katerina Michalickova (she/her)
 ##### Principal Teaching Fellow, Imperial College London
+
 I’m an educator with a background in high performance computing and bioinformatics. I focus on coordinating and promoting a comprehensive programme in computing and data skills for early-career researchers. I’m always interested in exploring new ways to facilitate learning and in pondering how to adapt our teaching to the LLM generation.
 
 Work website: <https://profiles.imperial.ac.uk/k.michalickova>
@@ -333,6 +386,7 @@ Github: <https://github.com/elizabethpankratz>
 
 ### Louise Dash (she/her)
 ##### Associate Professor (Teaching), University College London
+
 I’m a teaching academic with a research background in computational condensed matter physics. I've been leading in computing education as part of undergraduate physics degrees for over 15 years. I'm particularly passionate about embedding coding as a core skill within physics degrees, not just in programming classes but as a fundamental part of the wider curriculum. Our students come from a diversity of backgrounds and prior experience with programming, and my approach to teaching is to encourage experimentation and increase confidence for all students.
 
 Work website: <https://profiles.ucl.ac.uk/38506-louise-dash/>
@@ -355,7 +409,15 @@ LinkedIn: <http://www.linkedin.com/in/joseph-elgemayel>
 
 ----
 
-### TODO: Tuğrulcan Elmas
+### Tuğrulcan Elmas
+##### Lecturer, The University of Edinburgh
+![](/chapters/authors/tugrulcan-elmas.jpg ){#fig-author-tugrulcan-elmas fig-alt="Tuğrulcan Elmas Profile" width=30% }
+
+I am a Lecturer in the School of Informatics at the University of Edinburgh, directing Social Media Analysis and Support For Humanity (SMASH) Lab and teaching Computational Social Science. My research focuses on social media & misinformation, Human-AI interaction, and automating science & education. Recently, Im particularly interested in developing methods to teach Computational Social Science without overdelegating thinking and planning to AI, which is one reason I am glad to be a contributor to this book
+
+Personal website: <https://tugrulcan.com/>
+
+LinkedIn: <https://uk.linkedin.com/in/tugrulcanelmas>
 
 ----
 
@@ -363,11 +425,24 @@ LinkedIn: <http://www.linkedin.com/in/joseph-elgemayel>
 
 ----
 
-### TODO: Suzanne Goopy
+### Suzanne Goopy
+##### The University of Edinburgh 
+<!-- ![](/chapters/authors/suzanne-goopy.jpg ){#fig-author-suzanne-goopy fig-alt="Suzanne Goopy Profile" width=30% } -->
+
+TODO: uncomment above image once Ziska uploads photo
+
+I am a social and visual anthropologist by training and an educationalist by design. In practice, across a career spanning (too) many years and a number of countries, I have sought to find innovative ways to engage with contemporary issues and challenges both in research and education. I have worked with academic and industry research partners and collaborated across different fields including data science, library sciences, environmental design, medicine, nursing, psychology, health, migration, arts, ethics, and documentary practice. I enjoy exploring and teaching others about innovative visual and cultural research and dissemination methodologies. I most especially enjoy the challenges that arise from multilayered explorations of knowledge translation and knowledge exchange.
+
+ORCID: <https://orcid.org/0000-0001-7862-6212>
 
 ----
 
-### TODO: Jonathan Holt
+### Jonathan Holt (he/him)
+##### PhD Student, Imperial College London
+
+I am a PhD student at Imperial College London focusing on the biomechanics of the knee. Most of my work has been on the coding side of the development of simultaneous partial knee reconstructions and ligament repairs.
+
+Github: <https://github.com/jjholt>
 
 ----
 
@@ -383,6 +458,7 @@ ORCID: <https://orcid.org/0000-0002-6906-4219>
 
 ### Stuart King
 ##### Reader, The University of Edinburgh
+
 I am a Reader in applied mathematics, and my research interests span across applied machine learning and mathematical modelling, with applications from health image data through to environmental problems. I have taught programming and data science in various places over the last twenty years, often with an interdisciplinary angle, and often at an introductory level. I’m really interested in introducing more learners to thinking algorithmically and the value that programming can bring as a way of solving problems. 
 
 LinkedIn: <https://www.linkedin.com/in/stuart-king-a0b64b311>
@@ -427,6 +503,7 @@ Work website: <https://edwebprofiles.ed.ac.uk/profile/dr-lucia-michielin>
 
 ### Tom Mudd
 ##### Reader, School of Music, University of Edinburgh
+
 I'm a musician who primarily uses coding as a way to explore music-making. I teach on courses that relate to this in the school of music at the University of Edinburgh.
 
 Personal website: <https://tommudd.co.uk>
@@ -435,6 +512,7 @@ Personal website: <https://tommudd.co.uk>
 
 ### Maeve Murphy Quinlan (she/her)
 ##### Research Software Engineer, University of Leeds
+
 I'm a research software engineer with a background in planetary science research. I teach researchers how to implement sustainable software practices, in a way that aims to be welcoming, encouraging, and inclusive. When I'm not researching or coding, you can find me playing a TTRPG with my friends: the perfect place to live the dream of redistributing wealth and getting a solid eight hours of uninterrupted sleep. While I helped to brainstorm and plan our chapter in this book, the writing credit must firmly sit at the feet of my fantastic lead co-author, Francisco!
 
 Personal website: <https://murphyqm.github.io/>
@@ -443,7 +521,13 @@ ORCID: <https://orcid.org/0000-0003-2958-1008>
 
 ----
 
-### TODO: Lisa Otty
+### Lisa Otty
+##### University of Edinburgh
+![](/chapters/authors/lisa-otty.jpg ){#fig-author-lisa-otty fig-alt="Lisa Otty Profile" width=30% }
+
+I am Director of the Centre for Data, Culture & Society and Head of Data-Led Methods and Research Technology at the Edinburgh Futures Institute, where my work focuses on finding creative and engaging ways to support researchers exploring, adopting and adapting data-led and applied computational methods. My background is in Digital Humanities and textual scholarship, I am motivated by the belief that arts and humanities scholars can bring invaluable insights to the design, development and implementation of tools and technologies.
+
+Work website: <https://edwebprofiles.ed.ac.uk/profile/dr-lisa-otty>
 
 ----
 
@@ -473,6 +557,7 @@ I specialize in Management Science and Operations Research, focusing on how tech
 
 ### Nguyen Quang Chien  (He)
 ##### Research Associate, University of Edinburgh 
+
 I joined the University of Edinburgh, School of Engineering, on a contract-based work related to software development. My background is in civil engineering, more precisely, hydraulics, and I had university teaching experience in Vietnam before Microsoft Copilot and Google Gemini were introduced. Now, civil engineering students are largely accessible to code and data repositories as well as good practices in programming. I believe that a shift in mindset towards programming would help them start their careers strong, and this initiates my contribution to the book.
 
 Personal website: <https://coastal-study.uk/>
@@ -505,7 +590,13 @@ ORCID: <https://orcid.org/0009-0004-3316-1852>
 
 ----
 
-### TODO: Gule Saman
+### Gule Saman (she/her)
+##### Associate Professor, Heriot-Watt University Edinburgh
+![](/chapters/authors/gule-saman.jpg ){#fig-author-gule-saman fig-alt="Gule Saman Profile" width=30% }
+
+I am an Associate Professor in Data Science with a background in Computer Vision at Heriot-Watt University (HWU), where I serve as Co-Programme Director of the Graduate Apprenticeship in Data Science Programme and Associate Academic Dean. I am passionate about creating inclusive and supportive environments in STEM and co-lead the HWU STEM Inclusivity Network, which was Highly Commended in HWU's Equality, Diversity and Inclusion Champion Team Award 2025. With a background in STEM, and often being the only woman in my engineering lectures, I understand the importance of fostering inclusivity, belonging, and representation. As a Senior Fellow of the Higher Education Academy and recipient of a commendation in the HWU Inspiring Learning Early Career Award (2021), I am committed to empowering the next generation and contributing to meaningful conversations that help all students recognise and celebrate their place within the STEM ecosystem.
+
+LinkedIn: <https://www.linkedin.com/in/gule-saman-389b9ba1/>
 
 ----
 
@@ -521,17 +612,37 @@ Work website: <https://www.sruc.ac.uk/course-catalogue/wildlife-and-conservation
 
 ----
 
+### Rebecca Sewell (she/her)
+##### Data Integrity Administrator, Health New Zealand
+
+----
+
 ### Leila Shila Shafti
 ##### Teaching Fellow, University of Strathclyde
+
 I have been teaching programming for more than two decades in Spain and the UK. I have experience teaching both online and in-person classes across undergraduate and postgraduate programmes. I am particularly passionate about exploring innovative methods to enhance teaching and learning, with the aim of making complex concepts more accessible and strengthening practical understanding. I focus on creating an inclusive and supportive learning environment that encourages engagement and curiosity.
 
 ----
 
-### TODO: Hebatallah Shoukry
+### Hebatallah Shoukry
+##### Assistant Professor, Heriot-Watt University
+<!-- ![](/chapters/authors/hebatallah-shoukry.jpg ){#fig-author-hebatallah-shoukry fig-alt="Hebatallah Shoukry Profile" width=30% } -->
+
+Hebatallah Shoukry earned her PhD from Heriot-Watt University in 2020 and currently holds the position of Assistant Professor in the Electrical, Electronics, Computer Engineering (EECE) department within the School of Engineering and Physical Science (EPS). Specialising in mathematical and introductory computer science courses for the Data Science Graduate Apprenticeship programme, she emphasises student-staff collaboration to boost student engagement. Recognized for her dedication, she received a commendation at the Teaching Excellence Awards 2021 and attained Fellowship of the Higher Education Academy (FHEA) in 2022 for her commitment to teaching and learning standards. Focused on student engagement and active learning, Heba Shoukry's research revolves around effective pedagogies to enrich student experiences. Guided by a teaching philosophy centered on fostering strong relationships and communication, she strives to support students both academically and socially. 
+
+LinkedIn: <https://www.linkedin.com/in/hebatallah-shoukry-799134196>
 
 ----
 
-### TODO: Jeremy Singer
+### Jeremy Singer
+##### Professor, University of Glasgow
+![](/chapters/authors/jeremy-singer.jpg ){#fig-author-jeremy-singer fig-alt="Jeremy Singer Profile" width=30% }
+
+I teach programming to students from various backgrounds - some are Computer Science majors, many are not. My favourite programming languages are Haskell, Java and Rust. I also confess to knowing C and Python. I love seeing students' eyes light up when they 'get it' and understand what's wrong with their code and how to fix it.
+
+Personal website: <https://www.dcs.gla.ac.uk/~jsinger>
+
+Github: <https://github.com/jeremysinger>
 
 ----
 
@@ -544,12 +655,20 @@ Work website: <https://www.gla.ac.uk/schools/physics/staff/samuelskipsey/>
 
 ----
 
-### TODO: Luke Stephens
+### Luke Stephens (He/Him)
+##### Research Fellow, University of Edinburgh
+
+![](/chapters/authors/luke-stephens.jpg ){#fig-author-luke-stephens fig-alt="Luke Stephens Profile" width=30% }
+
+I'm a Research Fellow in the Neuropolitics Lab at the University of Edinburgh, where I study narrative, foreign policy, and International Relations theory. My work brings together interpretive narrative analysis and computational methods, looking at how the stories we tell shape political identity. I recently worked on a framework for using Large Language Models to perform qualitative narrative analysis, and I'm interested in teaching others to use these tools thoughtfully, without losing interpretive rigour.
+
+Work website: <https://www.sps.ed.ac.uk/staff/luke-stephens>
 
 ----
 
 ### Gordon Stewart (he/him)
 ##### ScotGrid Technical Co-ordinator, School of Physics and Astronomy, University of Glasgow
+
 I am a research IT specialist who has worked in various disciplines across science and engineering; I currently manage large computer systems primarily used to crunch numbers for CERN, the European Organisation for Nuclear Research.  Having originally trained as a software engineer, I now teach physicists and students from other backgrounds how to use computers—particularly those running Linux operating systems—and how to develop software for use in scientific research.
 
 ----
@@ -616,7 +735,7 @@ LinkedIn: <https://www.linkedin.com/in/ben-waugh-148053152/>
 
 ### John Wilson
 
-#### Teaching Fellow, Edinburgh Medical School, University of 
+#### Teaching Fellow, Edinburgh Medical School, University of Edinburgh
 
 I worked in outdoor education for over 10 years where I helped terrified people understand that walking backwards off a cliff was scary, but safe. I later went to university to study ecology, and eventually found myself explaining that although R was scary, it was safe. I have spent the years since helping people learn technical subjects am convinced that people describe things as "scary" or "difficult" they really just mean "unfamiliar".
 
@@ -643,3 +762,5 @@ I teach various courses in programming, statistics and genomics. I lead a course
 Work website: <https://edwebprofiles.ed.ac.uk/profile/rob-young>
 
 LinkedIn: <https://www.linkedin.com/in/rob-young-9804a780/>
+
+----
