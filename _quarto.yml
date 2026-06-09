@@ -122,7 +122,7 @@ book:
         - C03_online-teaching-reflections.qmd
         - C43-data-vis.qmd
 
-        # - P03_part-assessment-feedback.qmd
+        - P03_part-assessment-feedback.qmd
         
         - C38_skills-based-assessment.qmd
         - C35_action-feedback-plan.qmd
