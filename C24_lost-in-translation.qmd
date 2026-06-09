@@ -12,7 +12,7 @@ author:
     affiliations: Edinburgh Futures Institute, University of Edinburgh
   - name: Yanina Bellini Saibene
     email: yabellini@gmail.com
-    affiliations: rOpenSci, Universidad Austral, R-Ladies, The Carpentries
+    affiliations: rOpenSci; RLadies+; Universidad Austral
 
 keywords:
   - accessibility-and-inclusion
@@ -30,7 +30,7 @@ author:
     affiliations: Edinburgh Futures Institute, University of Edinburgh
   - name: Yanina Bellini Saibene
     email: yabellini@gmail.com
-    affiliations: rOpenSci, Universidad Austral, R-Ladies, The Carpentries
+    affiliations: rOpenSc; RLadies+; Universidad Austral
 :::
 
 ## Introduction

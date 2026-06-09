@@ -562,6 +562,7 @@ Personal website: <https://sutherlandecology.com/index.html>
 
 ### Mike Taverne (He/Him or They/Them)
 ##### Research Fellow in Electrical Engineering, Northumbria University
+![](/chapters/authors/mike-taverne.png ){#fig-author-mike-taverne fig-alt="Mike Taverne Profile" width=30% }
 
 With a background in electrical engineering, I am specifically interested in photonics, quantum technologies, and developing related software. Making these complex concepts accessible and opening doors for others to discover the wonders of these subjects has long been a passion of mine. I enjoy teaching and inspiring others. I consider alternative learning and teaching techniques through playful means, such as music and games. I kept this creative approach in mind when writing my contribution to this book.
 
@@ -609,7 +610,11 @@ LinkedIn: <https://www.linkedin.com/in/ben-waugh-148053152/>
 
 ----
 
-### TODO: John Wilson
+### John Wilson
+
+#### Teaching Fellow, Edinburgh Medical School, University of 
+
+I worked in outdoor education for over 10 years where I helped terrified people understand that walking backwards off a cliff was scary, but safe. I later went to university to study ecology, and eventually found myself explaining that although R was scary, it was safe. I have spent the years since helping people learn technical subjects am convinced that people describe things as "scary" or "difficult" they really just mean "unfamiliar".
 
 ----
 
@@ -634,6 +639,3 @@ I teach various courses in programming, statistics and genomics. I lead a course
 Work website: <https://edwebprofiles.ed.ac.uk/profile/rob-young>
 
 LinkedIn: <https://www.linkedin.com/in/rob-young-9804a780/>
-
-----
-
