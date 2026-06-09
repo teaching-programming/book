@@ -101,7 +101,7 @@ div.csl-indent {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-efc217d3be6b0c6b6079591d7e3e0fe0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-468d89cafa99efebba817d085cab6815.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -249,11 +249,6 @@ div.csl-indent {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./C04_computer-says-no.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Computer Says No: Reducing Technical Barriers to Help Novice Programmers</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="./C33_coding-anxiety.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Overcoming Coding Anxiety: Lowering the Stakes and Making It Fun</span></a>
   </div>
 </li>
@@ -299,7 +294,7 @@ div.csl-indent {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./C03_online-teaching-reflections.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Reflections on Online Teaching</span></a>
+  <a href="./C03_online-teaching-reflections.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Ways to Teach Online: Lessons Learned Through Experience</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -633,25 +628,25 @@ div.csl-indent {
 <p>CodeRunner can be easily customised for simple tasks, such as testing the output of a program, or for more advanced assessments, including evaluation of code style. While the tool is highly flexible, new instructors may require some initial learning to become familiar with its features and configuration options. To support this, this section provides straightforward examples and sample Moodle XML files that can be imported into Moodle. These resources help instructors quickly understand how to set up and use CodeRunner effectively, reducing the initial learning curve and enabling them to design assessments that meet the needs of their courses. For further details, the reader is referred to the <a href="https://trampgeek.github.io/moodle-qtype_coderunner/">CodeRunner documentation</a>.</p>
 <p>To use CodeRunner, an activity must first be added as a Quiz. Within the quiz, a new CodeRunner question can then be created. This will open the configuration page for CodeRunner.</p>
 <p>When the student submits their code, CodeRunner tests the code with a set of test cases. The simplest test case is to define an input (if any) and the expected output. Then, CodeRunner runs the submitted program with the given input and compares the result of the program with the expected output. If the output of the submitted program does not match the expected output, the student will not receive any marks for that test case. Each question can have several test cases, with associated marks.</p>
-<p>Therefore, the main step in setting up a CodeRunner question is to define the test cases (<a href="#fig-test-cases" class="quarto-xref">Figure&nbsp;<span>30.1</span></a>). The most important elements here are the <strong>Standard Input</strong> and <strong>Expected Output</strong>, which determine what the input and output of the program should be.</p>
+<p>Therefore, the main step in setting up a CodeRunner question is to define the test cases (<a href="#fig-test-cases" class="quarto-xref">Figure&nbsp;<span>29.1</span></a>). The most important elements here are the <strong>Standard Input</strong> and <strong>Expected Output</strong>, which determine what the input and output of the program should be.</p>
 <div id="fig-test-cases" class="quarto-float quarto-figure quarto-figure-center anchored" alt="A screenshot of the CodeRunner 'Test Cases' configuration screen in Moodle, showing fields for standard input, expected output, and a table listing multiple test cases. Interface elements include text boxes and controls for adding or editing test cases.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-test-cases-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="./chapters/images/C20_Figure1.png" title="Test cases." class="img-fluid figure-img" alt="A screenshot of the CodeRunner 'Test Cases' configuration screen in Moodle, showing fields for standard input, expected output, and a table listing multiple test cases. Interface elements include text boxes and controls for adding or editing test cases.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-test-cases-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;30.1: Test cases in CodeRunner.
+Figure&nbsp;29.1: Test cases in CodeRunner.
 </figcaption>
 </figure>
 </div>
-<p>In addition to test cases, there are many adjustments that can be made, as can be seen in <a href="#fig-config" class="quarto-xref">Figure&nbsp;<span>30.2</span></a>. The most important ones — Question type, Precheck, Check and Penalty, Customisation, Template, and Support Files — are described in this section. Other options are also available in CodeRunner, and we recommend consulting the <a href="https://trampgeek.github.io/moodle-qtype_coderunner/">CodeRunner documentation</a> for detailed information.</p>
+<p>In addition to test cases, there are many adjustments that can be made, as can be seen in <a href="#fig-config" class="quarto-xref">Figure&nbsp;<span>29.2</span></a>. The most important ones — Question type, Precheck, Check and Penalty, Customisation, Template, and Support Files — are described in this section. Other options are also available in CodeRunner, and we recommend consulting the <a href="https://trampgeek.github.io/moodle-qtype_coderunner/">CodeRunner documentation</a> for detailed information.</p>
 <div id="fig-config" class="quarto-float quarto-figure quarto-figure-center anchored" alt="A screenshot of the CodeRunner question configuration panel in Moodle, displaying various settings such as question type, precheck, check and penalty options, customisation, template, and support files.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-config-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="./chapters/images/C20_Figure2.png" title="CodeRunner configuration." class="img-fluid figure-img" alt="A screenshot of the CodeRunner question configuration panel in Moodle, displaying various settings such as question type, precheck, check and penalty options, customisation, template, and support files.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-config-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;30.2: CodeRunner configuration.
+Figure&nbsp;29.2: CodeRunner configuration.
 </figcaption>
 </figure>
 </div>
@@ -663,12 +658,12 @@ Figure&nbsp;30.2: CodeRunner configuration.
 </section>
 <section id="submit-buttons---precheck" class="level3">
 <h3 class="anchored" data-anchor-id="submit-buttons---precheck">Submit buttons - Precheck</h3>
-<p><strong>Description:</strong> Precheck determines whether the “Precheck” button should be available in the answer form (<a href="#fig-answer" class="quarto-xref">Figure&nbsp;<span>30.3</span></a>). The Precheck button allows students to test their solution before it is marked, ensuring they have followed basic instructions, such as the required output format. This does not affect their mark.</p>
+<p><strong>Description:</strong> Precheck determines whether the “Precheck” button should be available in the answer form (<a href="#fig-answer" class="quarto-xref">Figure&nbsp;<span>29.3</span></a>). The Precheck button allows students to test their solution before it is marked, ensuring they have followed basic instructions, such as the required output format. This does not affect their mark.</p>
 <p><strong>Recommendation:</strong> Since CodeRunner compares the output of the program with the expected output, even a small difference may result in zero marks for the test. If the objective of the assessment is not the format of the output but the correct functionality, then Precheck can be used to test the submission against some basic input to ensure students are not penalised for the output format.</p>
 </section>
 <section id="check-and-penalty" class="level3">
 <h3 class="anchored" data-anchor-id="check-and-penalty">Check and Penalty</h3>
-<p><strong>Description:</strong> In addition to Precheck, there is also a Check button in the answer form, as shown in <a href="#fig-answer" class="quarto-xref">Figure&nbsp;<span>30.3</span></a>. This button allows students to verify if their answer is correct. A penalty regime can be defined to specify whether marks should be reduced if students change their solution after each Check. The Check button can be disabled by selecting Hide Check (<a href="#fig-config" class="quarto-xref">Figure&nbsp;<span>30.2</span></a>). Then, students would have only one chance to submit their code.</p>
+<p><strong>Description:</strong> In addition to Precheck, there is also a Check button in the answer form, as shown in <a href="#fig-answer" class="quarto-xref">Figure&nbsp;<span>29.3</span></a>. This button allows students to verify if their answer is correct. A penalty regime can be defined to specify whether marks should be reduced if students change their solution after each Check. The Check button can be disabled by selecting Hide Check (<a href="#fig-config" class="quarto-xref">Figure&nbsp;<span>29.2</span></a>). Then, students would have only one chance to submit their code.</p>
 <p><strong>Recommendation:</strong> Using the Check button gives the student the opportunity to learn from their mistakes and improve their submission. However, depending on the assignment, you may want to hide this button and allow only one attempt.</p>
 <div id="fig-answer" class="quarto-float quarto-figure quarto-figure-center anchored" alt="A screenshot of the student-facing answer form in CodeRunner, showing a programming answer input box along with Precheck and Check buttons beneath it.">
 <figure class="quarto-float quarto-float-fig figure">
@@ -676,14 +671,14 @@ Figure&nbsp;30.2: CodeRunner configuration.
 <img src="./chapters/images/C20_Figure3.png" title="Answer form." class="img-fluid figure-img" alt="A screenshot of the student-facing answer form in CodeRunner, showing a programming answer input box along with Precheck and Check buttons beneath it.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-answer-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;30.3: Answer form.
+Figure&nbsp;29.3: Answer form.
 </figcaption>
 </figure>
 </div>
 </section>
 <section id="customisation" class="level3">
 <h3 class="anchored" data-anchor-id="customisation">Customisation</h3>
-<p><strong>Description:</strong> One of the powerful features of CodeRunner is that it enables customisation by selecting the Customise option (<a href="#fig-config" class="quarto-xref">Figure&nbsp;<span>30.2</span></a>). This will allow more complex customisation of the question, as shown in <a href="#fig-customise" class="quarto-xref">Figure&nbsp;<span>30.4</span></a>. A useful option in customisation is Grading, which allows you to define how you want the output to match the expected output. It can be an Exact Match, a Nearly Exact Match (ignoring extra whitespaces and case differences), a Regular Expression, etc.</p>
+<p><strong>Description:</strong> One of the powerful features of CodeRunner is that it enables customisation by selecting the Customise option (<a href="#fig-config" class="quarto-xref">Figure&nbsp;<span>29.2</span></a>). This will allow more complex customisation of the question, as shown in <a href="#fig-customise" class="quarto-xref">Figure&nbsp;<span>29.4</span></a>. A useful option in customisation is Grading, which allows you to define how you want the output to match the expected output. It can be an Exact Match, a Nearly Exact Match (ignoring extra whitespaces and case differences), a Regular Expression, etc.</p>
 <p><strong>Recommendation:</strong> For most of our assignments, we use Nearly Exact Match, as we don’t want to penalise students for extra spaces or case mismatches in their output. In some cases, Regular Expressions are used to focus only on a specific output without paying attention to other text in the output.</p>
 <div id="fig-customise" class="quarto-float quarto-figure quarto-figure-center anchored" alt="A screenshot of the CodeRunner customisation settings window, displaying options for grading, templates, and advanced configuration for how code submissions are evaluated.">
 <figure class="quarto-float quarto-float-fig figure">
@@ -691,14 +686,14 @@ Figure&nbsp;30.3: Answer form.
 <img src="./chapters/images/C20_Figure4.png" title="Customisation panel." class="img-fluid figure-img" alt="A screenshot of the CodeRunner customisation settings window, displaying options for grading, templates, and advanced configuration for how code submissions are evaluated.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-customise-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;30.4: Customisation panel.
+Figure&nbsp;29.4: Customisation panel.
 </figcaption>
 </figure>
 </div>
 </section>
 <section id="template" class="level3">
 <h3 class="anchored" data-anchor-id="template">Template</h3>
-<p><strong>Description:</strong> The template (<a href="#fig-customise" class="quarto-xref">Figure&nbsp;<span>30.4</span></a>) allows more complex customisation of the question by defining a script to run for each test case or all test cases. The script defines how the student’s answer should be evaluated. This enables more advanced evaluation of student submissions, such as assessing code style, enforcing specific language features, or analysing code structure. In this way, the template provides full flexibility to define the automated marker according to the requirements of the assignment.</p>
+<p><strong>Description:</strong> The template (<a href="#fig-customise" class="quarto-xref">Figure&nbsp;<span>29.4</span></a>) allows more complex customisation of the question by defining a script to run for each test case or all test cases. The script defines how the student’s answer should be evaluated. This enables more advanced evaluation of student submissions, such as assessing code style, enforcing specific language features, or analysing code structure. In this way, the template provides full flexibility to define the automated marker according to the requirements of the assignment.</p>
 <p><strong>Recommendation:</strong> Use this customisation when the evaluation goes beyond checking for correct input and output, for example, when verifying that a student has used an array, a specific function, or other required programming constructs.</p>
 </section>
 <section id="support-files" class="level3">
