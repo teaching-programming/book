@@ -102,7 +102,7 @@ book:
 
         - C11_sequential-vs-simultaneous.qmd
         - C14_foster-inclusion-and-accessibility.qmd
-#        - C04_computer-says-no.qmd
+        - C04_computer-says-no.qmd
         - C33_coding-anxiety.qmd
 #        - C34_three-stars-one-wish.qmd
 

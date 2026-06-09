@@ -1,5 +1,5 @@
 ---
-title: "Ways to Teach Online: Lessons Learned Through Experience"
+title: "Reflections on Online Teaching"
 bibliography: references.bib
 author:
   - name: Samantha Alvarez Madrazo
@@ -22,34 +22,12 @@ author:
     affiliations: University of Strathclyde
 
 keywords:
-  - education-ecosystem	
-  - short-courses	
-  - curriculum-design	
-  - assessment-design	
-  - flipped-classroom
+  - online
+  - asynchronous
+  - mooc
+  - assessment
+  - blended
 ---
-
-::: {.content-visible when-format="docx" note="this should be identical as authors above, for docx"}
-author:
-  - name: Samantha Alvarez Madrazo
-    email: s.alvarez-madrazo@imperial.ac.uk
-    affiliations: Imperial College London
-  - name: Chris Cooling
-    email: c.cooling10@imperial.ac.uk
-    affiliations: Imperial College London
-  - name: Joseph El Gemayel
-    email: joseph.el-gemayel@strath.ac.uk
-    affiliations: University of Strathclyde
-  - name: Nick Jayanth
-    email: nick.jayanth19@imperial.ac.uk
-    affiliations: Imperial College London
-  - name: Lucia Michielin
-    email: lucia.michielin@ed.ac.uk
-    affiliations: University of Edinburgh
-  - name: Leila S. Shafti
-    email: leila.shafti@strath.ac.uk
-    affiliations: University of Strathclyde
-:::
 
 
 ## Introduction
