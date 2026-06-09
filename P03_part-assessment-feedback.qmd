@@ -3,16 +3,26 @@ title: "Part III --- Assessment and Feedback: Principles and Practice"
 bibliography: references.bib
 author:
   - name: Umberto Noè
-    orcid: 0000-0002-4962-5189
     email: Umberto.Noe@ed.ac.uk
     affiliations: School of Philosophy, Psychology and Language Sciences, University of Edinburgh
+  - name: Franziska McManus
+    email: z.mcmanus@ed.ac.uk
+    affiliations: Edinburgh Medical School, University of Edinburgh
+  - name: Brittany Blankinship
+    email: b.blankinship@ed.ac.uk
+    affiliatioms: Edinburgh Medical School, University of Edinburgh
 ---
 ::: {.content-visible when-format="docx" note="this should be identical as authors above, for docx"}
 author:
   - name: Umberto Noè
-    orcid: 0000-0002-4962-5189
     email: Umberto.Noe@ed.ac.uk
     affiliations: School of Philosophy, Psychology and Language Sciences, University of Edinburgh
+  - name: Franziska McManus
+    email: z.mcmanus@ed.ac.uk
+    affiliations: Edinburgh Medical School, University of Edinburgh
+  - name: Brittany Blankinship
+    email: b.blankinship@ed.ac.uk
+    affiliatioms: Edinburgh Medical School, University of Edinburgh
 :::
 
 Assessment is, for many students, the most anxious part of their studies. For many educators, it is the most time-consuming. For institutions, it is one of the most consequential as assessment shapes what students prioritise, how they feel about their learning, and whether they can progress. This part of the book asks: what does good assessment and feedback look like in programming education, and how do we actually build it?
