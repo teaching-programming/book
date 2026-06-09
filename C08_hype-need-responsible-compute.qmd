@@ -196,9 +196,7 @@ In this chapter, we have raised a number of repeating socio-technical issues and
 
 We hope that these examples, alongside the [QAA and AdvanceHE Education for Sustainable Development Guidance](https://www.advance-he.ac.uk/knowledge-hub/education-sustainable-development-guidance), will help embed these key ideas throughout our curricula. In addition, we have provided a list of recommended further reading that will expand on the ideas introduced more fully, and provide inspiration for how we can introduce these key topics to our students and lead to a more sustainable, and ethical, future for all.
 
-::: {.callout-tip icon=false}
-
-# Further reading
+## Further reading
 
 - @eubanks_automating_2019, **Automating inequality: how high-tech tools profile, police, and punish the poor.**
   This is a USA focused book. It discusses a range of issues related to algorithmic decision making that have negatively impacted on less privileged areas of society. The spur for writing the book was Eubanks’ partner falling foul of a health insurance algorithm and being denied funding for health care.
@@ -215,7 +213,6 @@ We hope that these examples, alongside the [QAA and AdvanceHE Education for Sust
 - @black2012ibm, **IBM and the Holocaust: The Strategic Alliance Between Nazi Germany and America's Most Powerful Corporation -- Expanded Edition.**
   A meticulously researched piece covering the knowing involvement of IBM (and its German subsiduaries) in the actions of Nazi Germany. A good example of where prioritising profit over ethics once led us, and can lead us again.
 
-:::
 
 ::: {.content-visible when-format="html" unless-format="epub"}
 
