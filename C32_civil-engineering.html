@@ -262,7 +262,7 @@ window.Quarto = {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./C44_genai-vs-academic-development.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">GenAI vs.&nbsp;Academic Skills Development</span></a>
+  <a href="./C44_ai-voice-and-style-in-programming-education.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">AI, Voice and Style in Programming Education</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -627,58 +627,30 @@ window.Quarto = {
 <section id="logic-of-calculation" class="level3">
 <h3 class="anchored" data-anchor-id="logic-of-calculation">Logic of calculation</h3>
 <p>CivEng students generally do not encounter any difficulty in implementing a series of formulae in order, as well as translating a formula to code. For example, in the Python snippet below, the drag coefficient is readily calculated according to the math equation:</p>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 50%">
-<col style="width: 50%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Math</th>
-<th>Code</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><span class="math display">\[ C_D = \left[ \frac{0.4}{1 + \ln(z_0 / h)} \right]^2\ \]</span></td>
-<td><div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>CD <span class="op">=</span> (<span class="fl">0.4</span><span class="op">/</span>(<span class="dv">1</span> <span class="op">+</span> math.log(zo<span class="op">/</span>h)))<span class="op">**</span><span class="dv">2</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></td>
-</tr>
-</tbody>
-</table>
+<p><strong>Math</strong></p>
+<p><span class="math display">\[ C_D = \left[ \frac{0.4}{1 + \ln(z_0 / h)} \right]^2\ \]</span></p>
+<p><strong>Code in Python</strong></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>CD <span class="op">=</span> (<span class="fl">0.4</span><span class="op">/</span>(<span class="dv">1</span> <span class="op">+</span> math.log(zo<span class="op">/</span>h)))<span class="op">**</span><span class="dv">2</span> </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>CivEng students are well aware of complex engineering formulas and would be willing to write lengthy statements for mathematical expressions. Furthermore, they have adopted the style of naming variables according to the symbolic representation which is widely agreed in the literature. For example, here the name <code>CD</code> is used instead of choosing a more explicit name like <code>drag_coefficient</code>.</p>
 <p>Even a branching construction would not cause much difficulty, for example to calculate the critical flow velocity using Python. The CivEng student surely would not get confused with units during computation, as they can handily type in conversion factors along with the code:</p>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 51%">
-<col style="width: 48%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Math</th>
-<th>Code</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><span class="math display">\[
-U_{cr} = \left\{
-\begin{array}{ll}
-{0.19} \, (d_{50})^{0.1} \log_{10}\left(\frac{4h}{d_{90}}\right) &amp;
-\text{for } \;  0.1 \le d_{50} \le 0.5 \text{  mm}; \\
+<p><strong>Math</strong></p>
+<p><span class="math display">\[                                                                  
+U_{cr} = \left\{                                                    
+\begin{array}{ll}                                                   
+{0.19} \, (d_{50})^{0.1} \log_{10}\left(\frac{4h}{d_{90}}\right) &amp;  
+\text{for } \;  0.1 \le d_{50} \le 0.5 \text{  mm}; \\              
 {8.5} \, (d_{50})^{0.6} \log_{10} \left(\frac{4h}{d_{90}} \right) &amp;
-\text{for } \; {0.5} \le d_{50} \le 2 \text{ mm};
-\end{array}
-\right.
-\]</span></td>
-<td><div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="fl">0.1E-3</span> <span class="op">&lt;=</span> d50 <span class="op">&lt;=</span> <span class="fl">0.5E-3</span>: <span class="co"># mm</span></span>
+\text{for } \; {0.5} \le d_{50} \le 2 \text{ mm};                   
+\end{array}                                                         
+\right.                                                                                                                           
+\]</span></p>
+<p><strong>Code in Python</strong></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="fl">0.1E-3</span> <span class="op">&lt;=</span> d50 <span class="op">&lt;=</span> <span class="fl">0.5E-3</span>: <span class="co"># mm       </span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  Ucr <span class="op">=</span> <span class="fl">0.19</span><span class="op">*</span>(d50<span class="op">**</span><span class="fl">0.1</span>)<span class="op">*</span>math.log10(<span class="dv">4</span><span class="op">*</span>h<span class="op">/</span>d90)</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="cf">elif</span> <span class="fl">0.5E-3</span> <span class="op">&lt;</span> d50 <span class="op">&lt;=</span> <span class="fl">2E-3</span>: <span class="co"># mm</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="cf">elif</span> <span class="fl">0.5E-3</span> <span class="op">&lt;</span> d50 <span class="op">&lt;=</span> <span class="fl">2E-3</span>: <span class="co"># mm </span></span>
 <span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  Ucr <span class="op">=</span> <span class="fl">8.5</span><span class="op">*</span>(d50<span class="op">**</span><span class="fl">0.6</span>)<span class="op">*</span>math.log10(<span class="dv">4</span><span class="op">*</span>h<span class="op">/</span>d90)</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(<span class="st">'Warning: d50 out of range to apply formula for Ucr.'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></td>
-</tr>
-</tbody>
-</table>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:  </span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(<span class="st">'Warning: d50 out of range to apply formula for Ucr.'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="dimensions-and-units-in-civil-engineering" class="level3">
 <h3 class="anchored" data-anchor-id="dimensions-and-units-in-civil-engineering">Dimensions and units in civil engineering</h3>
@@ -686,13 +658,13 @@ U_{cr} = \left\{
 </section>
 <section id="matrix-manipulation" class="level3">
 <h3 class="anchored" data-anchor-id="matrix-manipulation">Matrix manipulation</h3>
-<p>In many circumstances, the CivEng student has to deal with matrices, such as when solving partial differential equations (PDEs). One of such typical equations is the mass balance equation, where the (time) change in “stock” is related to the spatial changes (gradients) of “flows”. It is not too difficult for the CivEng student to understand the finite difference technique and implement a naive version to solve PDEs. As an example, in the problem of sediment transport in rivers or seas, we consider solving the equation for <span class="math inline">\(z_b\)</span> (the underwater bed elevation), which changes in time, given the two fluxes of sediment, represented as two components (<span class="math inline">\(q_x\)</span> and <span class="math inline">\(q_y\)</span>) in the two horizontal directions, <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span>. It is helpful to visualise the river bed or seabed as a “tiled” surface where each cell has its own elevation <span class="math inline">\(z_b\)</span>. See the diagram (<a href="#fig-sediment" class="quarto-xref">Figure&nbsp;<span>33.1</span></a>) for a simplified representation of the quantities involved.</p>
-<div id="fig-sediment" class="quarto-float quarto-figure quarto-figure-center anchored" alt="A diagram in 3D, showing a surface split into four tiles of different elevations.">
+<p>In many circumstances, the CivEng student has to deal with matrices, such as when solving partial differential equations (PDEs). One of such typical equations is the mass balance equation, where the (time) change in “stock” is related to the spatial changes (gradients) of “flows”. It is not too difficult for the CivEng student to understand the finite difference technique and implement a naive version to solve PDEs. As an example, in the problem of sediment transport in rivers or seas, we consider solving the equation for <span class="math inline">\(z_b\)</span> (the underwater bed elevation), which changes in time, given the two fluxes of sediment, represented as two components (<span class="math inline">\(q_x\)</span> and <span class="math inline">\(q_y\)</span>) in the two horizontal directions, <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span>. It is helpful to visualise the river bed or seabed as a “tiled” surface where each cell has its own elevation <span class="math inline">\(z_b\)</span>. See the diagram (<a href="#fig-ch32-sediment" class="quarto-xref">Figure&nbsp;<span>33.1</span></a>) for a simplified representation of the quantities involved.</p>
+<div id="fig-ch32-sediment" class="quarto-float quarto-figure quarto-figure-center anchored" alt="A diagram in 3D, showing a surface split into four tiles of different elevations.">
 <figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-sediment-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="./chapters/images/ch32/SedTrans.PNG" class="img-fluid figure-img" alt="A diagram in 3D, showing a surface split into four tiles of different elevations.">
+<div aria-describedby="fig-ch32-sediment-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./chapters/images/ch32-sed-trans.PNG" class="img-fluid figure-img" alt="A diagram in 3D, showing a surface split into four tiles of different elevations.">
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-sediment-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch32-sediment-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;33.1: Sediment transport
 </figcaption>
 </figure>
@@ -705,93 +677,51 @@ Figure&nbsp;33.1: Sediment transport
 <p><span class="math display">\[ \left( \frac{\partial q_x}{\partial x} \right) = \frac{q_{i,j} - q_{i-1,j}}{dx} \]</span></p>
 <p>Here the numerical approximation for one flux gradient term is illustrated.</p>
 <p>The naive approach is to use a nested list to emulate a 2-D array, which doesn’t seem very efficient. But that’s enough for the CivEng who wants to get the job done. This way, the code is more transparent when using an index system with (<span class="math inline">\(i \pm 1\)</span>). Notably, there is similarity in operators and operands between Python and Julia (thus I will place ellipses in the Julia code). The differences are in for-loop syntax and the 1-based indexing system in Julia as opposed to Python’s 0-based. A <a href="https://nbviewer.org/url/coastal-study.uk/sed.trans/SedTrans.ipynb">notebook implementation</a> is provided online.</p>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 50%">
-<col style="width: 50%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Python</th>
-<th>Julia</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>,nx):</span>
+<p><strong>Code in Python</strong></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>,nx):</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> j <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>,ny):</span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    dqxdx[i][j] <span class="op">=</span> (qx[i][j]<span class="op">-</span>qx[i<span class="op">-</span><span class="dv">1</span>][j])<span class="op">/</span>dx</span>
 <span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    dqydy[i][j] <span class="op">=</span> (qy[i][j]<span class="op">-</span>qy[i][j<span class="op">-</span><span class="dv">1</span>])<span class="op">/</span>dy</span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    dzbdt[i][j] <span class="op">=</span> <span class="op">-</span>(<span class="dv">1</span><span class="op">/</span>(<span class="dv">1</span><span class="op">-</span>n)) <span class="op">*</span> (dqxdx[i][j] <span class="op">+</span> dqydy[i][j])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></td>
-<td><div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="op">=</span> <span class="fl">1</span><span class="op">:</span>nx</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    dzbdt[i][j] <span class="op">=</span> <span class="op">-</span>(<span class="dv">1</span><span class="op">/</span>(<span class="dv">1</span><span class="op">-</span>n)) <span class="op">*</span> (dqxdx[i][j] <span class="op">+</span> dqydy[i][j])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>Code in Julia</strong></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="op">=</span> <span class="fl">1</span><span class="op">:</span>nx</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> j <span class="op">=</span> <span class="fl">1</span><span class="op">:</span>ny</span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    dqxdx[i,j] <span class="op">=</span> <span class="op">...</span></span>
 <span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>    dqydy[i,j] <span class="op">=</span> <span class="op">...</span></span>
 <span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>    dzbdt[i,j] <span class="op">=</span> <span class="op">...</span></span>
 <span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>  <span class="cf">end</span></span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="cf">end</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></td>
-</tr>
-</tbody>
-</table>
-<p>The use of matrix operations (e.g.&nbsp;using <a href="https://numpy.org/">NumPy</a> arrays in Python) is faster compared to the “naive” version above, usually quoted as 10 times <span class="citation" data-cites="langtangen2006python">(<a href="#ref-langtangen2006python" role="doc-biblioref">Langtangen 2006</a>)</span>. On the downside, the matrix notation obscures the indices <code>i</code> and <code>j</code> commonly found in numerical methods (see <a href="#fig-lattice1" class="quarto-xref">Figure&nbsp;<span>33.2</span></a>, where part of a stencil<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> is shown. In this part, where arrows represent subtraction, we are finding “local” difference in the same <code>qx</code> array). When using matrix manipulation, the bounds must be specified correctly in all matrix subscripts (see <a href="#fig-lattice2" class="quarto-xref">Figure&nbsp;<span>33.3</span></a> and the code below). So, there should be a consideration in choosing either approach.</p>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="cf">end</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>The use of matrix operations (e.g.&nbsp;using <a href="https://numpy.org/">NumPy</a> arrays in Python) is faster compared to the “naive” version above, usually quoted as 10 times <span class="citation" data-cites="langtangen2006python">(<a href="#ref-langtangen2006python" role="doc-biblioref">Langtangen 2006</a>)</span>. On the downside, the matrix notation obscures the indices <code>i</code> and <code>j</code> commonly found in numerical methods (see <a href="#fig-ch32-lattice1" class="quarto-xref">Figure&nbsp;<span>33.2</span></a>, where part of a stencil<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> is shown. In this part, where arrows represent subtraction, we are finding “local” difference in the same <code>qx</code> array). When using matrix manipulation, the bounds must be specified correctly in all matrix subscripts (see <a href="#fig-ch32-lattice2" class="quarto-xref">Figure&nbsp;<span>33.3</span></a> and the code below). So, there should be a consideration in choosing either approach.</p>
 <p><strong>Looping through index</strong></p>
-<div id="fig-lattice1" class="quarto-float quarto-figure quarto-figure-center anchored" alt="A lattice with dots organised in 2 rows and 4 columns.">
+<div id="fig-ch32-lattice1" class="quarto-float quarto-figure quarto-figure-center anchored" alt="A lattice with dots organised in 2 rows and 4 columns.">
 <figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-lattice1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="./chapters/images/ch32/Lattice1.PNG" class="img-fluid figure-img" alt="A lattice with dots organised in 2 rows and 4 columns.">
+<div aria-describedby="fig-ch32-lattice1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./chapters/images/ch32-lattice1.png" class="img-fluid figure-img" alt="A lattice with dots organised in 2 rows and 4 columns.">
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-lattice1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch32-lattice1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;33.2: Lattice 1
 </figcaption>
 </figure>
 </div>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 50%">
-<col style="width: 49%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Python</th>
-<th>Julia/Python</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>dqxdx[i][j] <span class="op">=</span> (qx[i][j]<span class="op">-</span>qx[i<span class="op">-</span><span class="dv">1</span>][j])<span class="op">/</span>dx</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></td>
-<td><div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>dqxdx[i,j] <span class="op">=</span> (qx[i,j]<span class="op">-</span>qx[i<span class="op">-</span><span class="fl">1</span>,j])<span class="op">/</span>dx</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></td>
-</tr>
-</tbody>
-</table>
+<p><strong>Code in Python</strong></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>dqxdx[i][j] <span class="op">=</span> (qx[i][j]<span class="op">-</span>qx[i<span class="op">-</span><span class="dv">1</span>][j])<span class="op">/</span>dx</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>Code in Julia/Python</strong></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>dqxdx[i,j] <span class="op">=</span> (qx[i,j]<span class="op">-</span>qx[i<span class="op">-</span><span class="fl">1</span>,j])<span class="op">/</span>dx</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p><strong>Matrix-based computation</strong></p>
-<div id="fig-lattice2" class="quarto-float quarto-figure quarto-figure-center anchored" alt="A lattice with dots organised in 2 rows and 4 columns, with the 2 left dots, the 4 central dots, and the 2 right dots grouped together.">
+<div id="fig-ch32-lattice2" class="quarto-float quarto-figure quarto-figure-center anchored" alt="A lattice with dots organised in 2 rows and 4 columns, with the 2 left dots, the 4 central dots, and the 2 right dots grouped together.">
 <figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-lattice2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="./chapters/images/ch32/Lattice2.PNG" class="img-fluid figure-img" alt="A lattice with dots organised in 2 rows and 4 columns, with the 2 left dots, the 4 central dots, and the 2 right dots grouped together.">
+<div aria-describedby="fig-ch32-lattice2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./chapters/images/ch32-lattice2.png" class="img-fluid figure-img" alt="A lattice with dots organised in 2 rows and 4 columns, with the 2 left dots, the 4 central dots, and the 2 right dots grouped together.">
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-lattice2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch32-lattice2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;33.3: Lattice 2
 </figcaption>
 </figure>
 </div>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 50%">
-<col style="width: 50%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Python</th>
-<th>Julia</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>dqxdx[<span class="dv">0</span>:<span class="op">-</span><span class="dv">1</span>,:] <span class="op">=</span> (qx[<span class="dv">1</span>:,:] <span class="op">-</span> qx[<span class="dv">0</span>:<span class="op">-</span><span class="dv">1</span>,:])<span class="op">/</span>dx</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></td>
-<td><div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>dqxdx[<span class="fl">1</span><span class="op">:</span>nx<span class="op">-</span><span class="fl">1</span>,<span class="op">:</span>] <span class="op">=</span> (qx[<span class="fl">2</span><span class="op">:</span>nx,<span class="op">:</span>]<span class="op">-</span>qx[<span class="fl">1</span><span class="op">:</span>nx<span class="op">-</span><span class="fl">1</span>,<span class="op">:</span>])<span class="op">/</span>dx</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></td>
-</tr>
-</tbody>
-</table>
+<p><strong>Code in Python</strong></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>dqxdx[<span class="dv">0</span>:<span class="op">-</span><span class="dv">1</span>,:] <span class="op">=</span> (qx[<span class="dv">1</span>:,:] <span class="op">-</span> qx[<span class="dv">0</span>:<span class="op">-</span><span class="dv">1</span>,:])<span class="op">/</span>dx</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>Code in Julia</strong></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>dqxdx[<span class="fl">1</span><span class="op">:</span>nx<span class="op">-</span><span class="fl">1</span>,<span class="op">:</span>] <span class="op">=</span> (qx[<span class="fl">2</span><span class="op">:</span>nx,<span class="op">:</span>]<span class="op">-</span>qx[<span class="fl">1</span><span class="op">:</span>nx<span class="op">-</span><span class="fl">1</span>,<span class="op">:</span>])<span class="op">/</span>dx</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Another source of confusion is due to the concept of <a href="https://numpy.org/doc/stable/user/basics.copies.html">“views” in NumPy</a>, for which the submatrix, e.g.&nbsp;<code>dqxdx[0:-1,:]</code> in the code snippet above, is a <em>view</em> and not quite a <em>copy</em> of the array <code>dqxdx</code>. In essence, NumPy “views” will behave in unexpected ways. Sure, this can be explained to the students, but every such issue can add up and discourage the learners. Therefore, an “agreement” might be made beforehand, that the matrix <code>qx</code> here is calculated once and cannot be modified thereafter. Otherwise, you must switch to another programming language, e.g.&nbsp;MATLAB, although this comes with its own issues.</p>
 </section>
 </section>
