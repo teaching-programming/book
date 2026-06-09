@@ -1,10 +1,15 @@
 ---
-title: "AI, Voice and Style in Programming Education"
+title: "AI, Voice, and Style in Programming Education"
 bibliography: references.bib
 author:
   - name: John Wilson
     email: jwilso3@ed.ac.uk
     affiliations: Edinburgh Medical School, University of Edinburgh
+
+keywords:
+  - responsible-programming	
+  - LLMs	
+  - critical-thinking
 ---
 
 ::: {.content-visible when-format="docx" note="this should be identical as authors above, for docx"}
