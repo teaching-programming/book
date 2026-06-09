@@ -33,18 +33,16 @@ This chapter presents some of my experience in tutoring two classes in Thuyloi U
 
 CivEng students generally do not encounter any difficulty in implementing a series of formulae in order, as well as translating a formula to code. For example, in the Python snippet below, the drag coefficient is readily calculated according to the math equation:
 
-+------------------------------------------------------------+
-| Math                                                       | 
-+------------------------------------------------------------+
-| $$ C_D = \left[ \frac{0.4}{1 + \ln(z_0 / h)} \right]^2\ $$ |  
-+------------------------------------------------------------+
-| Code                                                       | 
-+------------------------------------------------------------+
-| ```{.python code-line-numbers="false"}                     |
-| CD = (0.4/(1 + math.log(zo/h)))**2                         |
-| ```                                                        | 
-+------------------------------------------------------------+
 
+**Math**                                                                 
+
+$$ C_D = \left[ \frac{0.4}{1 + \ln(z_0 / h)} \right]^2\ $$
+
+**Code in Python**                                                                
+
+```{.python code-line-numbers="false"}
+CD = (0.4/(1 + math.log(zo/h)))**2 
+```
 
 CivEng students are well aware of complex engineering formulas and would be willing to write lengthy statements for mathematical expressions. Furthermore, they have adopted the style of naming variables according to the symbolic representation which is widely agreed in the literature. For example, here the name `CD` is used instead of choosing a more explicit name like `drag_coefficient`.
 
