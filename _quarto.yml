@@ -84,12 +84,12 @@ book:
     chapters:
         - index.qmd
         - 00-chapter-template.qmd
-# 
+#
         # - P00_part-preface.qmd
         # C0.1 How this book/comminity came about: Chapter from editors - how we got here and how we did it
         # C0.2 What's in the book (introduce the parts)
 
-        # - P01_part-theories-applications.qmd
+        - P01_part-theories-applications.qmd
 
         - C12_pair-programming-overview.qmd
         - C36_pair-programming-across-disciplines.qmd
