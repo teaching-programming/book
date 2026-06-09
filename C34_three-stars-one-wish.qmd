@@ -54,7 +54,7 @@ The origins of 'Three stars and a wish' (or sometimes 'Two stars and a wish') ar
 
 ### What does a 3 Stars and 1 Wish post look like?
 
-3s1w is a short four-sentence piece of writing which students produce right after learning something. Prompt that students get could look like this:
+3s1w is a short four-sentence piece of writing which students produce right after learning something. The prompt that students get can look like this:
 
 ::: {.callout-note icon="false"}
 # A typical 3s1w prompt for students
@@ -82,7 +82,7 @@ Students submit their 3s1w reflections as discussion forum posts, one for each c
 
 ### Different types of 'wish'
 
-Below are some examples of what students write about in the 'wish' section (these are fictional, but based on our observations). Notice that the points made are not only about the course content, but also about wider issues that the course made students think about. Students often write about their own practice and a change of perspective that the course content caused for them [@marshall2022facilitating].
+Below are some examples of what students write about in the 'wish' section (these are fictional, but based on our observations). Notice that the points made are not only about the course content, but also about wider issues that the course made students think about. Students often write about their own practice and/or a change of perspective that the course content caused for them [@marshall2022facilitating].
 
 > ❓In response to the essay about communication styles, I find that I think more now about how to talk TO my superiors, not just hear FROM them. I am looking forward to seeing how this will develop in my practice in the future.
 > 
@@ -90,7 +90,7 @@ Below are some examples of what students write about in the 'wish' section (thes
 > 
 >❓ I wish I could access the slides for Wednesday's speaker. I loved their case studies, but was too immersed to take note of the details. Also more Q&A time with her would be great!
 
-While we do not encourage using 3s1w to provide course feedback, or immediate requests for help, it occasionally happens. The wish to understand something better may stem directly from the fact that course delivery was less than ideal; for example,when the audio quality or text format made it difficult to understand slides, getting these things right could become a wish.
+While we do not encourage using 3s1w to provide course feedback, or immediate requests for help, it occasionally happens. The wish to understand something better may stem directly from the fact that course delivery was less than ideal; for example, when the audio quality or text formatting made it difficult to understand slides, getting these things right could become a wish.
 
 If you don't want the unique function of a wish to be hijacked by course feedback or requests for help, we recommend providing other means for students to achieve these aims. On most courses we have three separate discussion forums in addition to 3s1w: one for questions about the content; one for questions about course admin; and one for raising bugs. Every day a teaching assistant responds to student posts on those forums and engages with student questions there. This promotes understanding that requests for help or course issues should happen on these discussion forums, rather than in 3s1w.
 
