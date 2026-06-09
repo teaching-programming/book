@@ -2,95 +2,104 @@
 title: "Part II --- Teaching Programming in Context: Design and Practice"
 bibliography: references.bib
 author:
-  - name: TODO
-    affiliations: TODO
-  - name: TODO
-    affiliations: TODO
+  - name: Serveh Sharifi Far
+    email: Serveh.Sharifi@ed.ac.uk
+    affiliations: School of Mathematics and Maxwell Institute for Mathematical Sciences, University of Edinburgh
+  - name: Christopher Aldous Oldnall
+    email: chris.oldnall@ed.ac.uk
+    affiliation: Edinburgh Medical School, University of Edinburgh
 ---
 ::: {.content-visible when-format="docx" note="this should be identical as authors above, for docx"}
 author:
-  - name: TODO
-    affiliations: TODO
-  - name: TODO
-    affiliations: TODO
+  - name: Serveh Sharifi Far
+    email: Serveh.Sharifi@ed.ac.uk
+    affiliations: School of Mathematics and Maxwell Institute for Mathematical Sciences, University of Edinburgh
+  - name: Christopher Aldous Oldnall
+    email: chris.oldnall@ed.ac.uk
+    affiliation: Edinburgh Medical School, University of Edinburgh
 :::
 
-SOME TEXT INTRODUCITNG THIS PART
+Effective programming education requires thoughtful design that responds to learners and their context. Decisions about technologies, learning activities and collaboration are shaped not only by programming concepts, but also by the characteristics of learners themselves. This is particularly important in contemporary programming education, where learners come from different disciplinary backgrounds, possessing a variety of prior experience. The chapters in this section explore three interconnected aspects of programming education. First, they consider how learning can be strengthened through collaboration, peer interaction and the dynamics of learning within groups. Second, they examine how educators can support learners as they begin their programming journey and develop confidence with programming languages and tools. Finally, they explore how creative and unconventional teaching approaches can broaden participation, increase engagement and encourage learners to think differently about programming and computational problem-solving. 
+
+Together, these perspectives demonstrate that programming education extends beyond the choice of programming language or curriculum content, highlighting the interplay between collaboration, learner development, and experimental teaching approaches. The chapters illustrate how active choices of programming tools and environments support the development of confidence and technical competence. From group-based learning and hybrid classrooms to visual, musical, and unplugged approaches to computational thinking, these contributions illustrate the wide range of pedagogical strategies available to programming educators. Collectively, they offer practical insights into designing learning experiences that are responsive to learners, contexts, and educational goals.
 
 ## Theme --- Drawing on Group Dynamics for Programming Education  
 
-### TitleOfChapterPossiblyShortened [@TeachProgAcross_C16]
+This theme explores how collaboration, peer interaction, and cohort diversity can be leveraged to enhance programming education. Together, the chapters examine approaches that promote inclusive participation, strengthen engagement, and support learning across a range of educational contexts.
 
-SOME TEXT INTRODUCITNG THIS CHAPTER [C16] Peer Programming in Action: Pair Programming in Larger Groups 
+### Peer Programming in Action: Pair Programming in Larger Groups [@TeachProgAcross_C16]
 
-SOME TEXT EXPLAINING WHY THIS CHAPTER COULD BE FOR YOU
+This chapter expands on the concept of pair programming by introducing "Peer Programming," applying collaborative principles to larger groups. With six case studies from a 20-week course, it offers a practical look at the benefits and challenges of implementing peer programming. 
 
-### TitleOfChapterPossiblyShortened [@TeachProgAcross_C31]
+This insight is helpful for teachers who aim to boost student engagement through collaborative methods.
 
-SOME TEXT INTRODUCITNG THIS CHAPTER [C31] Leveraging the heterogeneity - teaching computing skills to a multidisciplinary cohort with a variable skill level
+### Leveraging the Heterogeneity [@TeachProgAcross_C31]
 
-SOME TEXT EXPLAINING WHY THIS CHAPTER COULD BE FOR YOU
+This chapter tackles the complexities of teaching a diverse cohort with varied skill levels and motivations. The authors share a refined framework for addressing these differences, combining quantitative and qualitative analyses to improve teaching techniques. 
 
-### TitleOfChapterPossiblyShortened [@TeachProgAcross_C23]
+Educators facing similarly diverse classrooms will find this chapter valuable for its insights and adaptable strategies, particularly those interested in integrating research into teaching practice.
 
-SOME TEXT INTRODUCITNG THIS CHAPTER [C23] Learning Together Across Modes: Online and On-Site Pair Programming in a Fusion Course
+### Learning Together Across Modes [@TeachProgAcross_C23]
 
-SOME TEXT EXPLAINING WHY THIS CHAPTER COULD BE FOR YOU
+This chapter presents an ambitious approach for integrating onsite and remote students in hybrid teaching. By addressing technological, social, and pedagogical challenges, the authors craft a successful model for fusion teaching, where onsite and remote learners collaborate seamlessly. 
 
+This chapter is helpful for educators seeking to push the boundaries of online learning and explore new avenues in hybrid education. 
 
 ## Theme --- Teaching Programming to Novices: Python and Beyond  
 
-### TitleOfChapterPossiblyShortened [@TeachProgAcross_C01]
+This theme focuses on supporting learners as they develop programming knowledge and confidence. The chapters explore the use of Python for data analysis, the role of tools such as Jupyter in programming education, and the challenges of transitioning to additional programming languages. Together, they provide practical insights into designing learning experiences that support both immediate application and longer-term development.
 
-SOME TEXT INTRODUCITNG THIS CHAPTER [C01] A Practical Guide to Teaching Python as a Computational Tool in an Introductory Data Analysis Course
+### Teaching Python as a Computational Tool [@TeachProgAcross_C01]
 
-SOME TEXT EXPLAINING WHY THIS CHAPTER COULD BE FOR YOU
+This chapter provides a practical guide for integrating Python into an introductory data science course. The chapter addresses the challenge of teaching statistical and programming skills together, offering a step-by-step approach that helps students connect technical coding skills with data science concepts. 
 
-### TitleOfChapterPossiblyShortened [@TeachProgAcross_C29]
+Educators looking to balance theory with practical application in data science education will find this chapter useful.
 
-SOME TEXT INTRODUCITNG THIS CHAPTER [C29] Notebooks for Novices? Pros and Cons of Jupyter
+### Notebooks for Novices? Pros and Cons of Jupyter [@TeachProgAcross_C29]
 
-SOME TEXT EXPLAINING WHY THIS CHAPTER COULD BE FOR YOU
+This chapter dives into the role of Jupyter Notebooks in programming education. The chapter explores the benefits of using Jupyter for teaching core programming concepts without overwhelming students with technical setup issues. It also discusses potential pitfalls and presents ways instructors can optimise the learning experience.
 
-### TitleOfChapterPossiblyShortened [@TeachProgAcross_C07]
+This chapter is a valuable read for those teaching in tech-heavy courses.
 
-SOME TEXT INTRODUCITNG THIS CHAPTER [C07] Second Languages:  Teaching C to Python Novices 
+### Bridging Languages: Teaching C to Python Novices [@TeachProgAcross_C07]
 
-SOME TEXT EXPLAINING WHY THIS CHAPTER COULD BE FOR YOU
+This chapter tackles the challenges of introducing a second programming language to students already familiar with Python and Jupyter. It focuses on the transition to learning C, highlighting typical difficulties and offering solutions to ease the process. 
 
-
+This chapter is helpful for educators who aim to guide students through diverse programming paradigms, teaching them to adapt and expand their programming toolkit.
 
 ## Theme --- Thinking Outside the Box: Designing Engaging Learning Experiences  
 
-### TitleOfChapterPossiblyShortened [@TeachProgAcross_C06]
+This theme focuses on supporting learners as they develop programming knowledge and confidence. The chapters explore the use of Python for data analysis, the role of tools such as Jupyter in programming education, and the challenges of transitioning to additional programming languages. Together, they provide practical insights into designing learning experiences that support both immediate application and longer-term development. 
 
-SOME TEXT INTRODUCITNG THIS CHAPTER [C06] Feminists, anarchists and dungeon masters: co-designing programming teaching experiences
+### Co-designing Programming Teaching Experiences [@TeachProgAcross_C06]
 
-SOME TEXT EXPLAINING WHY THIS CHAPTER COULD BE FOR YOU
+This chapter draws inspiration from role-playing games and anarchist pedagogies to create dynamic and collaborative learning environments. 
 
-### TitleOfChapterPossiblyShortened [@TeachProgAcross_C15]
+By organizing learning activities without traditional hierarchies, it helps educators design courses that foster student agency and teamwork.
 
-SOME TEXT INTRODUCITNG THIS CHAPTER [C15] Removing Barriers by Programming without Computers 
+### Removing Barriers by Programming Without Computers [@TeachProgAcross_C15]
 
-SOME TEXT EXPLAINING WHY THIS CHAPTER COULD BE FOR YOU
+This chapter tackles programming education barriers by teaching computational thinking without computers. By using games and tangible resources, it provides a low-pressure environment that emphasizes problem-solving skills. 
 
-### TitleOfChapterPossiblyShortened [@TeachProgAcross_C17]
+This approach is valuable for diverse groups, including non-traditional learners. 
 
-SOME TEXT INTRODUCITNG THIS CHAPTER [C17] Practical approaches to using sound and music in programming pedagogy
+### Sound and Music in Programming Pedagogy [@TeachProgAcross_C17]
 
-SOME TEXT EXPLAINING WHY THIS CHAPTER COULD BE FOR YOU
+This chapter explores the integration of sound and music in programming education, transforming how students engage with learning. 
 
-### TitleOfChapterPossiblyShortened [@TeachProgAcross_C03]
+By utilising these sensory elements, educators can make abstract concepts more tangible and relatable, enhancing students' understanding and retention.
 
-SOME TEXT INTRODUCITNG THIS CHAPTER [C03] Reflections on online teaching 
+### Ways to Teach Online [@TeachProgAcross_C03]
 
-SOME TEXT EXPLAINING WHY THIS CHAPTER COULD BE FOR YOU
+This chapter explores practical approaches to online and blended programming education, drawing on experiences from MOOCs, self-paced learning, and professional education programmes. 
 
-### TitleOfChapterPossiblyShortened [@TeachProgAcross_C43]
+It offers insights into course design, learner engagement, assessment, and feedback in digital learning environments. 
 
-SOME TEXT INTRODUCITNG THIS CHAPTER [C43] Seeing Before Coding, Doodling Before Doing: How Teaching Data Visualisation Transforms the Way Students Think 
+### Seeing Before Coding, Doodling Before Doing [@TeachProgAcross_C43]
 
-SOME TEXT EXPLAINING WHY THIS CHAPTER COULD BE FOR YOU
+This chapter focuses on data visualization skills by encouraging students to sketch and doodle. This method nurtures critical thinking and creativity, urging students to conceptualize data visually before coding, a crucial skill in an AI-driven world.
+
+Educators who have a desire to shift their teaching from programming classes to physical, non-computer based activity, will find this chapter engaging.
 
 
 
