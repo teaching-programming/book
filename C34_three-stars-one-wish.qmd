@@ -16,6 +16,10 @@ author:
    affiliations: School of Mathematical and Computer Sciences, Heriot-Watt University
  - name: Kasia Banas
    affiliations: Edinburgh Medical School, University of Edinburgh
+
+keywords:
+  - alternative-assessment	
+  - building-community
 ---
 
 ::: {.content-visible when-format="docx" note="this should be identical as authors above, for docx"}
