@@ -468,7 +468,7 @@ Work website: <https://webhomes.maths.ed.ac.uk/~sking3/>
 ----
 
 ### Patricia A. Loto (she/her)
-##### Teaching Assistant, UNNE,  FACENA, Universidad Nacional del Nordeste (UNNE)
+##### Teaching Assistant, Software Quality Research Group - UNNE
 ![](/chapters/authors/patricia-a-loto.jpg ){#fig-author-patricia-a-loto fig-alt="Patricia A. Loto Profile" width=30% }
 
 My background is in Information Systems and I work as a university programming instructor. I have taught people approaching code for the first time, with no prior computing background, and I currently teach core computer science courses — a journey that showed me that, regardless of the level, what defines a good programming class is designing for those who need it most, leaving no one behind.
