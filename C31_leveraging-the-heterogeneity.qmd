@@ -4,13 +4,13 @@ bibliography: references.bib
 author:
   - name: Katerina Michalickova
     email: k.michalickova@imperial.ac.uk
-    affiliations: Imperial College London
+    affiliations: Early Career Researcher Institute, Imperial College London
   - name: Jonathan Holt
     email: j.holt23@imperial.ac.uk
-    affiliations: Imperial College London
+    affiliations: Mechanical Engineering, Imperial College London
   - name: Chris Cooling
     email: c.cooling10@imperial.ac.uk
-    affiliations: Imperial College London
+    affiliations: Early Career Researcher Institute, Imperial College London
 
 keywords:
   - curriculum-design	
@@ -21,13 +21,13 @@ keywords:
 author:
   - name: Katerina Michalickova
     email: k.michalickova@imperial.ac.uk
-    affiliations: Imperial College London
+    affiliations: Early Career Researcher Institute, Imperial College London
   - name: Jonathan Holt
     email: j.holt23@imperial.ac.uk
-    affiliations: Imperial College London
+    affiliations: Mechanical Engineering, Imperial College London
   - name: Chris Cooling
     email: c.cooling10@imperial.ac.uk
-    affiliations: Imperial College London
+    affiliations: Early Career Researcher Institute, Imperial College London
 :::
 
 ## Overarching themes
