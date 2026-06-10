@@ -56,7 +56,7 @@ In this chapter, we look at a number of topics where sustainability, AI, and edu
 
 At the end of this chapter, we will bring it back to education and share some practical resources you can use. You will find classroom activities that support responsible computing interspersed throughout, as well as a reading list (@sec-reading-list) of our favourite articles and books. Feel free to pick some of them and plant them straight into your own curriculum. And weather-allowing, from these seeds we will watch the growth of a new, curious and slightly more sustainable generation of students and future teachers.
 
-## Responsible compute and the UN Sustainable Development Goals
+## Responsible Compute and the UN Sustainable Development Goals
 
 In this section, we will introduce a number of the key issues relating to responsible compute through the lens of the UN Sustainable Development Goals, an outcome of the 2025 [UN 2030 Agenda for Sustainable Development](https://sdgs.un.org/2030agenda). These are a series of 17 goals that address a number of key international issues.
 
@@ -75,7 +75,7 @@ The free website [`inequalities.ai`](https://inequalities.ai/) provides maps tha
 
 ::: {.callout-tip icon=false}
 
-# Classroom activities: Facial Recognition workshop
+# Classroom Activities: Facial Recognition Workshop
 
 The Programming Historian lesson [**Facial Recognition in Historical Photographs with Artificial Intelligence in Python**](https://programminghistorian.org/en/lessons/facial-recognition-ai-python) introduces key concepts of facial recognition. This tutorial can be expanded to introduce key issues related to inequalities.
 
@@ -86,7 +86,7 @@ For an example of how these resources can be included, see @ahern_2026_image.
 
 :::
 
-### Hardware and the environment
+### Hardware and the Environment
 
 [![](/chapters/images/C08_E-WEB-Goal-08.png "SDG 8: Decent work and Economic Growth"){ fig-alt="SDG 8: Decent work and Economic Growth" width=15% fig-align="left"}](https://sdgs.un.org/goals/goal8)
 [![](/chapters/images/C08_E-WEB-Goal-12.png "SDG 12: Responsible Consumption and Production"){ fig-alt="SDG 12: Responsible Consumption and Production" width=15% fig-align="left"}](https://sdgs.un.org/goals/goal12)
@@ -101,7 +101,7 @@ Mining of **coltan**, the dominant source of tantalum (and niobium), is infamous
 
 ::: {.callout-tip icon=false}
 
-# Classroom activities: Exploring the impact of mining 
+# Classroom Activities: Exploring the Impact of Mining 
 
 Current business models are based upon planned obsolescence. This could lead to a discussion of the sustainability of this business model --- why the hardware cannot just be manufactured and why computational hardware has a short supported lifespan compared to its actual usable lifespan.
 
@@ -115,7 +115,7 @@ These issues can also be discussed in workshops relating to code optimisation an
 
 :::
 
-### Data acquisition and workforce exploitation {#sec-data-acquisition}
+### Data Acquisition and Workforce Exploitation {#sec-data-acquisition}
 
 [![](/chapters/images/C08_E-WEB-Goal-03.png "SDG 3: Good health and Well-being"){ fig-alt="SDG 3: Good health and Well-being" width=15% fig-align="left"}](https://sdgs.un.org/goals/goal3)
 [![](/chapters/images/C08_E-WEB-Goal-08.png "SDG 8: Decent work and Economic Growth"){ fig-alt="SDG 8: Decent work and Economic Growth" width=15% fig-align="left"}](https://sdgs.un.org/goals/goal8)
@@ -128,14 +128,14 @@ The recent AI boom and the [Data Workers Inquiry](https://data-workers.org/) hav
 
 ::: {.callout-tip icon=false}
 
-# Classroom activities: Data sources for training models
+# Classroom Activities: Data Sources for Training Models
 
 - **Example: Data Workers Inquiry**. Explore ["Data Workers in Europe Speak Out"](https://data-workers.org/). Do these experiences align with notions of decent work? What are the harms?
 - **Example: [Hugging Face RAG tutorial](https://huggingface.co/blog/ngxson/make-your-own-rag)**. In this part of the tutorial, you could discuss the source of the file contents for the RAG training. This could then lead into discussions around access and licensing. 
 
 :::
 
-### Surveillance, sousveillance, and civil liberties
+### Surveillance, Sousveillance, and Civil Liberties
 
 [![](/chapters/images/C08_E-WEB-Goal-16.png "SDG 16: Peace, Justice and String institutions"){
 fig-alt="SDG 16: Peace, Justice and String institutions" width=15% fig-align="left"}](https://sdgs.un.org/goals/goal16)
@@ -150,7 +150,7 @@ In surveillance and sousveillance, the same technologies are used by both those 
 
 ::: {.callout-tip icon=false}
 
-# Classroom activities: Responsible AI
+# Classroom Activities: Responsible AI
 
 - **Example: [Datopolis --- The Open Data Board Game](https://datopolis.theodi.org/)**. This board game from the Open Data Initiative is available to play online. It introduces key ideas around why data may be open or closed, and longer versions of the game introduce different perspectives on how data can be used. This helps learners to understand that decisions around data use are political and opens up the idea that data itself may not be neutral.
 - **Example: Explore whether AI smart glasses should be a consumer technology**.
@@ -163,7 +163,7 @@ In surveillance and sousveillance, the same technologies are used by both those 
 
 :::
 
-### Cultural colonialism
+### Cultural Colonialism
 
 [![](/chapters/images/C08_E-WEB-Goal-04.png "SDG 4: Quality Education"){ fig-alt="SDG 4: Quality Education" width=15% fig-align="left"}](https://sdgs.un.org/goals/goal4)
 [![](/chapters/images/C08_E-WEB-Goal-10.png "SDG 10: Reduced Inequalities"){ fig-alt="SDG 10: Reduced Inequalities" width=15% fig-align="left"}](https://sdgs.un.org/goals/goal10)
@@ -182,7 +182,7 @@ Indeed, even before LLMs, the ease with which Internet-based technologies has al
 
 ::: {.callout-tip icon=false}
 
-# Classroom activities: Generative AI and homogenisation
+# Classroom Activities: Generative AI and Homogenisation
 
 - **Example: Volume of content generation**. A Graphite study [@paredes_more_2025] shows that LLMs now generate more content on the internet than humans. Students can discuss what this might mean about unique perspectives and the place for human voices and thought. Students may be prompted to consider the danger of conformity in general, and how much we can trust online content without provenance! Educators might discuss the Scots Wikipedia scandal mentioned above as an example of how, even without LLMs, technology amplifies the actions of individuals in potentially harmful ways.
 - **Example: Essay "help"**. Students almost certainly have used LLMs to generate or "help" with essay writing or editing. Discuss, with prompting an LLM in class, where individual style may be a matter of taste --- and how the style biases of the LLM are themselves obvious. Compare to the diverse range of styles found in (English) literature --- do the students think that an LLM would have allowed James Joyce to write Ulysses? Or William Shakespeare to write his plays, given his invention (or at least promotion) of many new words in the English language? (This can become a discussion about the need for critical thinking, creativity and analysis in any text.)
@@ -196,7 +196,7 @@ In this chapter, we have raised a number of repeating socio-technical issues and
 
 We hope that these examples, alongside the [QAA and AdvanceHE Education for Sustainable Development Guidance](https://www.advance-he.ac.uk/knowledge-hub/education-sustainable-development-guidance), will help embed these key ideas throughout our curricula. In addition, we have provided a list of recommended further reading that will expand on the ideas introduced more fully, and provide inspiration for how we can introduce these key topics to our students and lead to a more sustainable, and ethical, future for all.
 
-## Further reading
+## Further Reading
 
 - @eubanks_automating_2019, **Automating inequality: how high-tech tools profile, police, and punish the poor.**
   This is a USA focused book. It discusses a range of issues related to algorithmic decision making that have negatively impacted on less privileged areas of society. The spur for writing the book was Eubanks’ partner falling foul of a health insurance algorithm and being denied funding for health care.

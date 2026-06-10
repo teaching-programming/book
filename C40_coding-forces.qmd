@@ -54,7 +54,7 @@ The classic "well, it depends..." applies to coding as well!
 This is to say, that in each project or task, the appropriate intensity of each coding force may vary.
 
 
-## The 3 coding forces 
+## The 3 Coding Forces 
 
 **Independent coding** focuses on problem-solving autonomy and self-sufficiency.
 This coding force is all about developing coding approaches without hand holding.
@@ -126,7 +126,7 @@ If that exploratory work transitions into being **integrated into a proper proje
 - **troubleshooting** may require a shared dominance of the conscious and independent coding forces
 - **research and work projects** typically sit near the centre, requiring independence to solve problems, consciousness to make good design decisions, and social awareness so the rest of your team can understand, reuse, and replicate the work.
 
-## As a tool for reflection - questions to ask yourself in navigating these coding forces
+## As a Tool for Reflection – Questions To Ask Yourself in Navigating These Coding Forces
 
 We have intentionally chosen the term "force" to emphasise that these are not discrete modes you switch between, but influences that are always present… and which you have agency over.
 Each force can be applied with varying intensity depending on the situation, which is where your agency comes in.
@@ -171,7 +171,7 @@ Outputting final "socially acceptable" code is iterative, where each iteration c
 When designing course content, however, the social coding force strongly dominates in the first instance.
 
 :::{.callout-tip collapse = "true"}
-## Finding the right balance
+## Finding the Right Balance
 
 Some questions you can ask yourself when searching for the right balance between these coding forces: 
 
@@ -202,7 +202,7 @@ More generally, when building up the awareness of the relative dominance of the 
     It is amazing how often the process of writing up a self-contained and minimal example allows you to answer your own question.
 
 
-## Pressures and rebalancing
+## Pressures and Rebalancing
 
 Importantly, these coding forces are not separate "modes" that you switch between like changing tools in a toolbar or dramatically entering a new mental state while cinematic music plays in the background.
 All three forces are always present to some extent.
@@ -239,7 +239,7 @@ The goal is not to maximise every individual axis independently, but to arrive a
 The important part is not any single axis alone, but the overall shape created by how the forces interact.
 As such, the plot is best understood as a snapshot of the relationship between the forces, not simply three separate values.
 
-### Moving into the next dimension 
+### Moving Into the Next Dimension 
 
 Thus far, the framework as we have presented it can safely and easily live in a 2D mental space, represented by the radar plot and seesaw metaphor. 
 
@@ -257,7 +257,7 @@ Using the radar plot imagery when applied to a specific problem it is unrealisti
 And once you realise that you are applying your critical thinking skills in the form of meta-awareness of the coding forces, you can measure your own progress and development! 
 
 
-## As a pedagogical framework
+## As a Pedagogical Framework
 
 One of the many benefits of this framework, in our very unbiased opinion, is that it is language agnostic and can be adapted with specific examples for whatever language(s) are being taught or used.
 
@@ -293,7 +293,7 @@ Guiding questions if using tools such as LLMs when coding are:
 Equally, we would suggest that this framework provides a structured answer to ridiculous questions such as *"Why should I learn to code if AI can seemingly generate code for me?"*
 
 ::: {.callout-caution collapse = "true"}
-## Our answer would be something along the lines of:
+## Our Answer Would Be Something Along the Lines Of:
 
 That is fine if you want to do that, but you still must use the tool (AI) in a conscious way.
 You need to know how to prompt, which demonstrates a certain level of independence as you have to know what the ask for in a prompt.
@@ -312,7 +312,7 @@ Is its code actually as socially aware as it looks at first?
 If you would like to hear more about our thoughts in this, get in touch or stay tuned for another chapter in Version 2 of the book.
 
 
-## The need for this framework
+## The Need For This Framework
 
 Yes, none of these forces are a new or unique idea.
 Many of us are familiar with them already.
@@ -334,7 +334,8 @@ Beginners, especially, can end up feeling like they’re being asked to do contr
 “Write clean, self-documenting code” sits right next to “just try stuff and see what breaks,” with no explanation of how those ideas fit together.
 It’s not obvious that these aren’t competing rules, but different forces that make sense in different situations.
 
-## The challenge for educators
+## The Challenge For Educators
+
 Most educators already *feel* this, even if they don't always spell it out.
 You know that a rough, experimental script written while figuring something out is perfectly fine - even desirable.
 You also know that the same code would raise eyebrows (or worse) if it showed up in an assessment or shared project.
@@ -357,7 +358,7 @@ If your code is easy to read, understand, and trust, it's not just "good practic
 For many students, this is their first real experience of writing code for someone else, and without a clear way to frame that shift, assessment criteria can feel a bit arbitrary.
 
 
-## What this framework brings
+## What This Framework Brings
 
 This framework is an attempt to bring some clarity to a muddy reality, not by adding more rules, but by giving people better language.
 

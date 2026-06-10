@@ -66,7 +66,7 @@ Computational thinking has applications beyond computing. It is seen as fundamen
 
 However, teaching programming outside of computer science courses may have another, less obvious benefit: instilling systems thinking skills in students. To understand why this could have value, we need to take a brief foray into the world of systems.
 
-## A Leap into Systems Thinking
+## A Leap Into Systems Thinking
 
 A system is a collection of entities which are connected to each other and work together for some purpose. As a result of interactions between entities, the system produces its own pattern of behaviour over time. The pattern of behaviour that emerges from a system can be quite different from the behaviour of its constituent parts [@c21_DanielKimSystemsThinking, pp. 2-5]. The process of identifying, understanding, decomposing and rebuilding systems is called systems thinking. More formally, systems thinking can be defined as "...a set of synergistic analytic skills used to improve the capability of identifying and understanding systems, predicting their behaviors, and devising modifications to them in order to produce desired effects"[^c21_SystemsThinkingDefinition] [@c21_SystemsThinkingDefinition]. Systems thinking is, at its core, a tool for allowing us to see the world differently, ask different questions and get different (often unexpected, sometimes better) answers.
 
@@ -116,7 +116,7 @@ Much like any other system, a computer program’s purpose is what it does, rega
 
 With a computer program, we may have access to logging, tracing, and observability tools which help us diagnose deviant behaviours. Eventually, we identify the element or interconnect which has caused our unexpected behaviours (colloquially known as a “bug”), and we make an adjustment to remediate it. The methodical troubleshooting approach can be applied to the systems which govern the behaviour of friend groups, companies, charities, universities, market economies, and other groups of interconnected entities.
 
-## Decomposing Conceptual Systems with Computational Thinking
+## Decomposing Conceptual Systems With Computational Thinking
 
 We can decompose the systems which exist in our world using the same process we use to construct computer programs: computational thinking. As mentioned previously, the end result of the computational thinking process is algorithms that can solve a problem. Along with other components, the algorithms we define and the relationships between them form a system we call a computer program. Perhaps performing the steps of computational thinking in reverse could be useful for decomposing a system into its constituent parts?
 

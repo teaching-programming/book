@@ -34,26 +34,7 @@ keywords:
 ---
 
 ::: {.content-visible when-format="docx" note="this should be identical as authors above, for docx"}
-author:
-  - name: Robert S. Young
-    email: robert.young@ed.ac.uk
-    corresponding: false
-    affiliations: Edinburgh Medical School, University of Edinburgh; Zhejiang University - University of Edinburgh (ZJE) Institute
-  - name: Rebecca L. Colquhoun
-    email: r.colquhoun23@imperial.ac.uk
-    affiliations: Department of Earth Science and Engineering, Imperial College London
-  - name: Tiago A. Marques
-    email: tiago.marques@st-andrews.ac.uk
-    affiliations: School of Mathematics, University of St Andrews
-  - name: Brittany Blankinship
-    email: B.Blankinship@ed.ac.uk
-    affiliations:  Edinburgh Medical School, University of Edinburgh
-  - name: Ozan Evkaya
-    email: ozan.evkaya@ed.ac.uk
-    affiliations: School of Mathematics, University of Edinburgh
-  - name: William P. Kay
-    email: kayw@cardiff.ac.uk
-    affiliations: School of Biosciences, Cardiff University
+author: - name: Robert S. Young email: robert.young\@ed.ac.uk corresponding: false affiliations: Edinburgh Medical School, University of Edinburgh; Zhejiang University - University of Edinburgh (ZJE) Institute - name: Rebecca L. Colquhoun email: r.colquhoun23\@imperial.ac.uk affiliations: Department of Earth Science and Engineering, Imperial College London - name: Tiago A. Marques email: tiago.marques\@st-andrews.ac.uk affiliations: School of Mathematics, University of St Andrews - name: Brittany Blankinship email: B.Blankinship\@ed.ac.uk affiliations: Edinburgh Medical School, University of Edinburgh - name: Ozan Evkaya email: ozan.evkaya\@ed.ac.uk affiliations: School of Mathematics, University of Edinburgh - name: William P. Kay email: kayw\@cardiff.ac.uk affiliations: School of Biosciences, Cardiff University
 :::
 
 ## Introduction
@@ -62,7 +43,7 @@ We live in a data driven world. Much research in STEM departments requires skill
 
 The topic of teaching statistics to non-specialists has been discussed at length [@kelly1992teaching; @mustafa1996challenge; @metz2008teaching; @gimenez2013can; @o2016teaching; @bromage2022teaching]. How to do so while acknowledging that programming is an important and related skill has received less focus, which we address here. In all scenarios teachers should be mindful of their own educational context, and, inter alia, what knowledge and skills they want their students to obtain from learning both programming and statistics.
 
-## Teaching statistics before programming
+## Teaching Statistics Before Programming
 
 This is perhaps the original or "old school" approach. As authors, many of us were taught in this way in our own undergraduate degrees prior to the widespread use of high quality, open-source programming languages (e.g. Python, R). Drawing on our experience, we have found that a key advantage of this approach is its focus on core theoretical concepts in statistics (e.g. probability distributions, uncertainty) without the additional cognitive load associated with technology or implementation. In disciplines where students are likely to need to perform statistical analyses across different contexts and using a range of technologies, this emphasis on foundational statistical reasoning has been particularly valuable.
 
@@ -76,7 +57,7 @@ In a first-year geoscience course, statistics was taught independently of progra
 
 :::
 
-## Teaching programming before statistics
+## Teaching Programming Before Statistics
 
 An alternative approach we have adopted in some contexts is to teach programming first, followed by statistics lessons that make explicit use of students' programming skills. Here, students have time to consolidate their programming skills and build their programming mindset. They can then build knowledge and understanding through computational investigation of statistical concepts, before being introduced to formal statistical definitions.
 
@@ -90,7 +71,7 @@ In a second-year course in biomedical informatics, the concept of variance was i
 
 :::
 
-## Teaching programming and statistics together
+## Teaching Programming and Statistics Together
 
 The final approach we have identified is to teach programming and statistics together [@sarvary2014bio]. In practice, we have seen this implemented in two ways: within a single module, instructors can teach either programming or statistics first and immediately apply it to the other, or the two can be truly interleaved e.g. by introducing new programming constructs and statistical concepts in parallel.
 
@@ -108,7 +89,7 @@ Students then participated in workshops where context-specific exercises with ne
 
 :::
 
-## Practical strategies for teaching statistics and programming
+## Practical Strategies for Teaching Statistics and Programming
 
 Drawing on our teaching experience across a range of programmes, we now summarise a number of practical strategies that we have found effective when teaching programming and statistics, regardless of whether these topics are taught sequentially or simultaneously.
 
@@ -116,7 +97,7 @@ First, we have learnt that embedding the teaching of these topics into the subje
 
 Second, statistical methodologies are most effectively taught when also described clearly using a computational approach. For example, while it is helpful to describe the formal mathematical derivation for generating a test statistic, we recommend that this is routinely followed up with the programming approach required to generate the same result. Demonstrating the same concept from both perspectives helps students to consolidate the underlying statistical concepts and to see how statistics are applied in practice, highlighting the close connection between the two approaches.
 
-A third strategy that has emerged from our teaching is to foster a "programming or coding mindset". We found it important to foreground programming as an important transferable skill in its own right, rather than solely being a tool to perform statistical analysis. This involved teaching students how to interact with data programmatically rather than relying on graphical user interfaces or apps alone. In practice, this included providing explicit instruction in code annotation, file paths, naming conventions, and being able to discriminate between characters, numbers, and special symbols. We also found that dedicating time to debugging code  – particularly through live programming in lectures – helps to demystify programming and normalise common programming errors.
+A third strategy that has emerged from our teaching is to foster a "programming or coding mindset". We found it important to foreground programming as an important transferable skill in its own right, rather than solely being a tool to perform statistical analysis. This involved teaching students how to interact with data programmatically rather than relying on graphical user interfaces or apps alone. In practice, this included providing explicit instruction in code annotation, file paths, naming conventions, and being able to discriminate between characters, numbers, and special symbols. We also found that dedicating time to debugging code – particularly through live programming in lectures – helps to demystify programming and normalise common programming errors.
 
 Finally, our experience strongly suggests that motivating and enthusing students about both statistics and programming is critical. For example, framing computational statistics as a means to increase reproducibility, transparency, and confidence in scientific discoveries helps students appreciate its broader value. We have also found that highlighting the fact that these skills are universally applicable, lucrative, and in high demand in the job market, including beyond academia, is useful for motivating engagement. As an illustrative example, note that the gap in data-driven technical skills reported in 2023 in the UK includes specialist data skills (including statistics), alongside programming and software engineering skills required to manage and analyse datasets [@fearns2023data].
 

@@ -73,7 +73,7 @@ And, with an over-reliance on AI for our work, neither do we.
 For example, using AI to brainstorm essay questions or projects can prevent students from both conceiving and exploring their own interesting ideas.
 Again, if it helps, think in terms of "novelty", often a requirement for publishing later in their careers.
 
-## Promoting students' Lived Experience, Individuality and Own Voice
+## Promoting Students' Lived Experience, Individuality and Own Voice
 
 AI models are trained on vast datasets from the internet, reflecting the "most common" values and perspectives, often dominated by only a few societal groups.
 This can lead to reinforcement of their viewpoints while under representing diverse experiences, especially those from minority groups.
