@@ -4,16 +4,16 @@ bibliography: references.bib
 author:
   - name: Sam Skipsey
     email: Samuel.Skipsey@glasgow.ac.uk
-    affiliations: University of Glasgow
+    affiliations: School of Physics and Astronomy, University of Glasgow
   - name: Gordon Stewart
     email: Gordon.Stewart@glasgow.ac.uk
-    affiliations: University of Glasgow
+    affiliations: School of Physics and Astronomy, University of Glasgow
   - name: Jeremy Singer
     email: Jeremy.Singer@glasgow.ac.uk
-    affiliations: University of Glasgow
+    affiliations: School of Computing Science, University of Glasgow
   - name: David Cutting
     email: d.cutting@qub.ac.uk
-    affiliations: Queen's University Belfast
+    affiliations: School of Electronics, Electrical Engineering and Computer Science, Queen's University Belfast
 keywords:
   - curriculum-design	
   - coding-mindset
@@ -23,16 +23,16 @@ keywords:
 author:
   - name: Sam Skipsey
     email: Samuel.Skipsey@glasgow.ac.uk
-    affiliations: University of Glasgow
+    affiliations: School of Physics and Astronomy, University of Glasgow
   - name: Gordon Stewart
     email: Gordon.Stewart@glasgow.ac.uk
-    affiliations: University of Glasgow
+    affiliations: School of Physics and Astronomy, University of Glasgow
   - name: Jeremy Singer
     email: Jeremy.Singer@glasgow.ac.uk
-    affiliations: University of Glasgow
+    affiliations: School of Computing Science, University of Glasgow
   - name: David Cutting
     email: d.cutting@qub.ac.uk
-    affiliations: Queen's University Belfast
+    affiliations: School of Electronics, Electrical Engineering and Computer Science, Queen's University Belfast
 :::
 
 ## Introduction
