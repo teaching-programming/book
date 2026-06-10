@@ -10,7 +10,7 @@ author:
  - name: Karim Rivera Lares
    affiliations: Edinburgh Medical School, University of Edinburgh
  - name: Rebecca Sewell
-   affiliations: Health New Zealand
+   affiliations: Health New Zealand | Te Whatu Ora
  - name: Clare Llewellyn
    affiliations: School of Social and Political Sciences, University of Edinburgh
  - name: Beatrice Alex
@@ -34,7 +34,7 @@ author:
  - name: Karim Rivera Lares
    affiliations: Edinburgh Medical School, University of Edinburgh
  - name: Rebecca Sewell
-   affiliations: Health New Zealand
+   affiliations: Health New Zealand | Te Whatu Ora
  - name: Clare Llewellyn
    affiliations: School of Social and Political Sciences, University of Edinburgh
  - name: Beatrice Alex

@@ -613,7 +613,8 @@ Work website: <https://www.sruc.ac.uk/course-catalogue/wildlife-and-conservation
 ----
 
 ### Rebecca Sewell (she/her)
-##### Data Integrity Administrator, Health New Zealand
+##### Data Integrity Administrator, Health New Zealand | Te Whatu Ora
+![](/chapters/authors/rebecca-sewell.jpg ){#fig-author-rebecca-sewell fig-alt="Rebecca Sewell Profile" width=30% }
 
 ----
 
