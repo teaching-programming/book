@@ -3,22 +3,41 @@ title: "Teaching Programming Across Disciplines"
 toc: true
 ---
 
-Welcome to our book!
+## Copyright
 
-We are a community of teachers and educators of computer programming outside of traditional computer science settings. Our 300+ members around the world meet every year for a [Winter School](https://pairprogramming.ed.ac.uk/category/winter-school/) and co-author a [book called Teaching Programming across Disciplines](https://pairprogramming.ed.ac.uk/join-book/) (this very book).
+First published in 2026 by the University of Edinburgh
 
-Our book is an edited, open-access volume comprised of many short chapters written by groups of authors.
+<https://books.ed.ac.uk/edinburgh-diamond> | [\@EdinDiamond](https://bsky.app/profile/edinburghdiamond.bsky.social)
 
-We will be launching the **first edition of Teaching Programming Across Disciplines** at the “Summer-time Winter School” on **22 June 2026**! 🌈
+Collection © Editors, 2026  
+Text © Authors, 2026  
+Images © Contributors and copyright holders named in Images Section at the end of the book, 2026  
 
-The **hard deadline for chapter submissions** is **1 April 2026** – meaning your chapter should be edited, polished, and on the GitHub Repository (watch [Pawel’s video](https://media.ed.ac.uk/media//1_7nk68kt4) for instructions on how to do this). The book will be growing from now until 1 April 2026 as chapters are added.
-📖 There will be a print copy available (eventually... stay tuned).
+The authors have asserted their rights under the Copyright, Designs and Patents Act 1988 to be identified as the authors of this work. 
 
-We hold monthly writing retreats, which authors or anyone interested in having dedicated writing time with a group of lovely people are welcome to join. We also have a newsletter with book updates and (interesting) events.
-➡️ If you would like to join our mailing list, email [pairprogramming@ed.ac.uk](mailto:pairprogramming@ed.ac.uk)
+This book is published under Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International license (CC BY-NC-SA 4.0), <https://creativecommons.org/licenses/by-nc-sa/4.0/>
+
+![](chapters/images/C00_CC_logo.png){fig-alt="Logo of CC BY-NC-SA 4.0 license" fig-align="left" width="30%"}
+
+Further details about Creative Commons licenses are available at <https://creativecommons.org/about/cclicenses/>
 
 
-🖋️ The Book Team (Brittany Blankinship, Pawel Orzechowski, Charlotte Desvages, Kasia Banas, Umberto Noè, Chris Oldnall, Serveh Sharifi Far, Clare Llewellyn, Beatrice Alex, Ozan Evkaya, Franziska McManus)
+_Attribution should include the following information:_  
+Blankinship, Orzechowski, Desvages, Banas, Noè, Oldnall, Sharifi Far, Llewellyn, Alex, Evkaya, and McManus. 2026. Teaching Programming Across Disciplines.  
+Edinburgh: University of Edinburgh. <https://doi.org/10.2218/ED.9781836450795>
 
+Any third-party material in this book is not covered by the book’s Creative Commons license. Details of the copyright ownership and permitted use of third-party material is given in the image credit lines. If you would like to reuse any third-party material not covered by the book’s Creative Commons license, you will need to obtain permission directly from the copyright owner. 
+
+ISBN (print): 978-1-83645-168-6  
+ISBN (ebook): 978-1-83645-079-5  
+DOI: 10.2218/ED.9781836450795  
+DOI link: <https://doi.org/10.2218/ED.9781836450795>
+
+Cover design by Pawel Orzechowski
+
+Printed and bound by Lulu.com
 
 This project was supported by a grant from the University of Edinburgh's Pricipal's Teaching Award Scheme (PTAS), which funded a project coordinator role. No authors or contributors were paid for their contribution to this book.
+
+
+![](chapters/images/C00_UoE_logo.png){fig-alt="The University of Edinburgh logo" fig-alight=left width=40%}

@@ -1,5 +1,5 @@
 ---
-title: "Preface: Who Are We and How Did We Get Here?"
+title: "Preface --- Who Are We and How Did We Get Here?"
 author:
   - name: Brittany Blankinship
     email: b.blankinship@ed.ac.uk
