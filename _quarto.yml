@@ -85,14 +85,14 @@ book:
         # C0.1 How this book/comminity came about: Chapter from editors - how we got here and how we did it 
         # C0.2 What's in the book (introduce the parts) 
         
-        # - P01_part-theories-applications.qmd
+        - P01_part-theories-applications.qmd
         
         - C12_pair-programming-overview.qmd
         - C36_pair-programming-across-disciplines.qmd
         - C41_pair-programming-tutor-reflections.qmd
         
         - C09_debugging-beyond-the-debugger.qmd
-        # - C40_coding-forces.qmd
+        - C40_coding-forces.qmd
         - C05_coding-mindset.qmd
 
         - C08_hype-need-responsible-compute.qmd
