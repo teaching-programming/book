@@ -2,12 +2,12 @@
 title: "Ways to Teach Online: Lessons Learned Through Experience"
 bibliography: references.bib
 author:
-  - name: Samantha Alvarez Madrazo
-    email: s.alvarez-madrazo@imperial.ac.uk
-    affiliations: School of Public Health, Imperial College London
   - name: Chris Cooling
     email: c.cooling10@imperial.ac.uk
     affiliations: Early Career Researcher Institute, Imperial College London
+  - name: Samantha Alvarez Madrazo
+    email: s.alvarez-madrazo@imperial.ac.uk
+    affiliations: School of Public Health, Imperial College London
   - name: Joseph El Gemayel
     email: joseph.el-gemayel@strath.ac.uk
     affiliations: Computer & Information Sciences, University of Strathclyde
@@ -31,12 +31,12 @@ keywords:
 
 ::: {.content-visible when-format="docx" note="this should be identical as authors above, for docx"}
 author:
-  - name: Samantha Alvarez Madrazo
-    email: s.alvarez-madrazo@imperial.ac.uk
-    affiliations: School of Public Health, Imperial College London
   - name: Chris Cooling
     email: c.cooling10@imperial.ac.uk
     affiliations: Early Career Researcher Institute, Imperial College London
+  - name: Samantha Alvarez Madrazo
+    email: s.alvarez-madrazo@imperial.ac.uk
+    affiliations: School of Public Health, Imperial College London
   - name: Joseph El Gemayel
     email: joseph.el-gemayel@strath.ac.uk
     affiliations: Computer & Information Sciences, University of Strathclyde
