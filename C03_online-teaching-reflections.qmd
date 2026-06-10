@@ -13,7 +13,7 @@ author:
     affiliations: University of Strathclyde
   - name: Nick Jayanth
     email: nick.jayanth19@imperial.ac.uk
-    affiliations: Imperial College London
+    affiliations: School of Public Health, Imperial College London
   - name: Lucia Michielin
     email: lucia.michielin@ed.ac.uk
     affiliations: University of Edinburgh
@@ -42,7 +42,7 @@ author:
     affiliations: University of Strathclyde
   - name: Nick Jayanth
     email: nick.jayanth19@imperial.ac.uk
-    affiliations: Imperial College London
+    affiliations:  School of Public Health, Imperial College London
   - name: Lucia Michielin
     email: lucia.michielin@ed.ac.uk
     affiliations: University of Edinburgh
