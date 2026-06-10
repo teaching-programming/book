@@ -17,12 +17,14 @@ keywords:
 ---
 
 ::: {.content-visible when-format="docx" note="this should be identical as authors above, for docx"}
+author:
   - name: Leila Shila Shafti
     email: leila.shafti@strath.ac.uk
-    affiliations: University of Strathclyde
+    affiliations: Computer & Information Sciences, University of Strathclyde
   - name: Joseph El Gemayel
     email: joseph.el-gemayel@strath.ac.uk
-    affiliations: University of Strathclyde
+    affiliations: Computer & Information Sciences, University of Strathclyde
+
 :::
 
 
