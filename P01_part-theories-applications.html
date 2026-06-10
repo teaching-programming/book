@@ -1,0 +1,1180 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Brittany Blankinship">
+<meta name="author" content="Franziska McManus">
+<meta name="author" content="Umberto Noè">
+
+<title>Part I — Theories and Applications of Teaching Programming – Teaching Programming Across Disciplines</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./C12_pair-programming-overview.html" rel="next">
+<link href="./index.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-468d89cafa99efebba817d085cab6815.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="_theme/styles.css">
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./P01_part-theories-applications.html"><span class="chapter-title">Part I — Theories and Applications of Teaching Programming</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Teaching Programming Across Disciplines</a> 
+        <div class="sidebar-tools-main">
+    <div class="dropdown">
+      <a href="" title="Download" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Download"><i class="bi bi-download"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="./teaching_programming_across_disciplines.pdf">
+              <i class="bi bi-file-pdf pe-1"></i>
+            Download PDF
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="./teaching_programming_across_disciplines.epub">
+              <i class="bi bi-journal pe-1"></i>
+            Download ePub
+            </a>
+          </li>
+      </ul>
+    </div>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Teaching Programming Across Disciplines</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./P01_part-theories-applications.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Part I — Theories and Applications of Teaching Programming</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C12_pair-programming-overview.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Where Do I Even Start With Pair Programming in My Classroom? A Conversation With Seasoned Practitioners</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C36_pair-programming-across-disciplines.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Structured Group Work With Assigned Asymmetrical Roles and Switching: Lessons From Pair Programming Across Disciplines</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C41_pair-programming-tutor-reflections.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Pair Programming in Practice: A PhD Tutor’s Reflections</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C09_debugging-beyond-the-debugger.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Brain Book Buddy Boss Break: A Practical Debugging Framework for Learners</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C40_coding-forces.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">It Depends: How to Develop Judgement in Programming</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C05_coding-mindset.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">A Guide on Empowering Students to Develop a Coding Mindset</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C08_hype-need-responsible-compute.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Hype and The Need for Responsible Compute</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C10_teaching-with-genai.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">An Optimistic Outlook on Teaching, Learning and Assessment for Coding With the Emergence of Generative AI</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C21_programming-across-disciplines-systems-thinking.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">How Teaching Programming Across Disciplines Can Instil Systems Thinking</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C44_ai-voice-and-style-in-programming-education.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">AI, Voice, and Style in Programming Education</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C11_sequential-vs-simultaneous.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Sequential vs.&nbsp;Simultaneous: Approaches to Learning Programming and Statistics</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C14_foster-inclusion-and-accessibility.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Practices to Foster Inclusion and Accessibility in Programming Teaching</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C04_computer-says-no.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Computer Says No: Reducing Technical Barriers to Help Novice Programmers</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C33_coding-anxiety.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Overcoming Coding Anxiety: Lowering the Stakes and Making It Fun</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C34_three-stars-one-wish.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">3 Stars and 1 Wish: Small and Frequent Student Reflections Promote a Sense of Wonder and a Community of Vulnerability</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C16_peer-programming.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Peer Programming in Action: Pair Programming in Larger Groups</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C31_leveraging-the-heterogeneity.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Leveraging the Heterogeneity: Teaching Computing Skills to a Multidisciplinary Cohort With a Variable Skill Level</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C23_pair-programming-fusion.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Learning Together Across Modes: Online and On-Site Pair Programming in a Fusion Course</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C01_teaching-python.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">A Practical Guide to Teaching Python as a Computational Tool in an Introductory Data Analysis Course</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C29_notebooks-for-novices.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Notebook for Novices? Pros and Cons of Jupyter</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C07_teaching-C-to-novices.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Bridging Languages: Teaching C to Python Novices</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C06_feminists-and-anarchists.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Dungeon Crawlers and Anarchists: Co-Designing Programming Teaching Experiences</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C15_programming-without-computers.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Removing Barriers by Programming Without Computers</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C17_coding-with-music.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Practical approaches to using sound and music in programming pedagogy</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C03_online-teaching-reflections.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Ways to Teach Online: Lessons Learned Through Experience</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C43-data-vis.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Seeing Before Coding, Doodling Before Doing: How Teaching Data Visualisation Transforms the Way Students Think</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./P03_part-assessment-feedback.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Part III — Assessment and Feedback: Principles and Practice</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C38_skills-based-assessment.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Developing a Skills-Based Framework for Assessments in Programming Courses</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C35_action-feedback-plan.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Managing the Rubik’s Cube of Assessment: The Action Feedback Protocol</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C26.1-assessment-case-study.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Assessment and Marking in an Introductory Programming Course for Physics Students</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C02_genai-before-during-after.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Generative AI in Assessments: Before, During, and After</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C20_automatic-marking.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Using Automated Marking in Programming Courses to Enhance Learning</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./P04_part-case-studies.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Part IV — Case Studies</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C39_gentle-introduction-summer-school.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">A Gentle Introduction to Coding: Narratives From a Programming Summer School for Social Sciences and Humanities</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C37_pair-programming-sruc.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Case Study From Scotland’s Rural College: The Wild(Life) Side of Pair Programming</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C22_interdisciplinary-by-design.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Interdisciplinary by Design: The Centre for Data, Culture, &amp; Society Training Programme</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C32_civil-engineering.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Changing Civil Engineering Students’ Mindset Toward Programming</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C24_lost-in-translation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Lost in Translation: Complexities and Good Practices of Translating Coding-Based Teaching Materials Across Multiple Human Languages</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./CAB_Authors.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Authors’ Biographies</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./99-bibliography.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bibliography</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar"><div class="quarto-margin-header"><div class="margin-header-item">
+<details id="accessibility-controls">
+    <summary>Display options</summary>
+  
+    <div class="control-group">
+        <label for="fontSizeSlider">Font size</label>
+        <input type="range" id="fontSizeSlider" min="8" max="32" value="16">
+        <span id="fontSizeValue">16</span>px
+    </div>
+  
+    <div class="control-group">
+        <label for="eyeStrainSlider">Eye strain</label>
+        <input type="range" id="eyeStrainSlider" min="0" max="50" value="0">
+        <span id="eyeStrainValue">0</span>%
+    </div>
+  
+    <div class="control-group">
+        <label for="hueRotateSlider">Hue</label>
+        <input type="range" id="hueRotateSlider" min="0" max="360" value="0">
+        <span id="hueRotateValue">0</span>
+    </div>
+  
+    <div class="control-group">
+        <label for="paddingSlider">Padding</label>
+        <input type="range" id="paddingSlider" min="0" max="12" value="3">
+        <span id="paddingValue">0</span>
+    </div>
+  
+    <div class="control-group">
+        <label for="lineSpacingSlider">Spacing</label>
+        <input type="range" id="lineSpacingSlider" min="80" max="250" value="150">
+        <span id="lineSpacingValue">150</span>%
+    </div>
+  
+    <div class="control-group">
+        <label for="fontFamily">Font</label>
+        <select id="fontFamily">
+            <option value="'Atkinson Hyperlegible', sans-serif">Atkinson Hyperlegible</option>
+            <option value="Arial, Helvetica, sans-serif">Sans-serif</option>
+            <option value="Georgia, 'Bitstream Charter', Times, serif">Serif</option>
+        </select>
+    </div>
+  
+    <div class="control-group">
+        <button id="resetDefaults">Reset to Defaults</button>
+    </div>
+
+</details>
+</div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#theme-pair-programming-what-how-why" id="toc-theme-pair-programming-what-how-why" class="nav-link active" data-scroll-target="#theme-pair-programming-what-how-why">Theme — Pair Programming: What? How? Why?</a>
+  <ul class="collapse">
+  <li><a href="#where-do-i-even-start-with-pair-programming-teachprogacross_c12" id="toc-where-do-i-even-start-with-pair-programming-teachprogacross_c12" class="nav-link" data-scroll-target="#where-do-i-even-start-with-pair-programming-teachprogacross_c12">Where Do I Even Start With Pair Programming? <span class="citation" data-cites="TeachProgAcross_C12">(Orzechowski et al. 2026)</span></a></li>
+  <li><a href="#lessons-from-pair-programming-across-disciplines-teachprogacross_c36" id="toc-lessons-from-pair-programming-across-disciplines-teachprogacross_c36" class="nav-link" data-scroll-target="#lessons-from-pair-programming-across-disciplines-teachprogacross_c36">Lessons From Pair Programming Across Disciplines <span class="citation" data-cites="TeachProgAcross_C36">(Desvages et al. 2026)</span></a></li>
+  <li><a href="#a-phd-tutors-reflections-teachprogacross_c41" id="toc-a-phd-tutors-reflections-teachprogacross_c41" class="nav-link" data-scroll-target="#a-phd-tutors-reflections-teachprogacross_c41">A PhD Tutor’s Reflections <span class="citation" data-cites="TeachProgAcross_C41">(Elliot 2026)</span></a></li>
+  </ul></li>
+  <li><a href="#theme-building-healthy-programming-habits" id="toc-theme-building-healthy-programming-habits" class="nav-link" data-scroll-target="#theme-building-healthy-programming-habits">Theme — Building Healthy Programming Habits</a>
+  <ul class="collapse">
+  <li><a href="#a-practical-debugging-framework-for-learners-teachprogacross_c09" id="toc-a-practical-debugging-framework-for-learners-teachprogacross_c09" class="nav-link" data-scroll-target="#a-practical-debugging-framework-for-learners-teachprogacross_c09">A Practical Debugging Framework for Learners <span class="citation" data-cites="TeachProgAcross_C09">(Doig 2026)</span></a></li>
+  <li><a href="#empowering-students-to-develop-a-coding-mindset-teachprogacross_c05" id="toc-empowering-students-to-develop-a-coding-mindset-teachprogacross_c05" class="nav-link" data-scroll-target="#empowering-students-to-develop-a-coding-mindset-teachprogacross_c05">Empowering Students to Develop a Coding Mindset <span class="citation" data-cites="TeachProgAcross_C05">(Bray et al. 2026)</span></a></li>
+  <li><a href="#it-depends-how-to-develop-judgement-in-programming-teachprogacross_c40" id="toc-it-depends-how-to-develop-judgement-in-programming-teachprogacross_c40" class="nav-link" data-scroll-target="#it-depends-how-to-develop-judgement-in-programming-teachprogacross_c40">It Depends: How to Develop Judgement in Programming <span class="citation" data-cites="TeachProgAcross_C40">(Wilson and Blankinship 2026)</span></a></li>
+  </ul></li>
+  <li><a href="#theme-programming-in-a-world-of-generative-ai" id="toc-theme-programming-in-a-world-of-generative-ai" class="nav-link" data-scroll-target="#theme-programming-in-a-world-of-generative-ai">Theme — Programming in a World of Generative AI</a>
+  <ul class="collapse">
+  <li><a href="#hype-and-the-need-for-responsible-compute-teachprogacross_c08" id="toc-hype-and-the-need-for-responsible-compute-teachprogacross_c08" class="nav-link" data-scroll-target="#hype-and-the-need-for-responsible-compute-teachprogacross_c08">Hype and The Need for Responsible Compute <span class="citation" data-cites="TeachProgAcross_C08">(Ahern et al. 2026)</span></a></li>
+  <li><a href="#teaching-with-the-emergence-of-generative-ai-teachprogacross_c10" id="toc-teaching-with-the-emergence-of-generative-ai-teachprogacross_c10" class="nav-link" data-scroll-target="#teaching-with-the-emergence-of-generative-ai-teachprogacross_c10">Teaching With the Emergence of Generative AI <span class="citation" data-cites="TeachProgAcross_C10">(Evkaya et al. 2026)</span></a></li>
+  <li><a href="#ai-voice-and-style-in-programming-education-teachprogacross_c44" id="toc-ai-voice-and-style-in-programming-education-teachprogacross_c44" class="nav-link" data-scroll-target="#ai-voice-and-style-in-programming-education-teachprogacross_c44">AI, Voice, and Style in Programming Education <span class="citation" data-cites="TeachProgAcross_C44">(Wilson 2026)</span></a></li>
+  <li><a href="#how-teaching-programming-across-disciplines-can-instil-systems-thinking-teachprogacross_c21" id="toc-how-teaching-programming-across-disciplines-can-instil-systems-thinking-teachprogacross_c21" class="nav-link" data-scroll-target="#how-teaching-programming-across-disciplines-can-instil-systems-thinking-teachprogacross_c21">How Teaching Programming Across Disciplines Can Instil Systems Thinking <span class="citation" data-cites="TeachProgAcross_C21">(Riviera et al. 2026)</span></a></li>
+  </ul></li>
+  <li><a href="#theme-teaching-programming-courses-what-worked-for-us" id="toc-theme-teaching-programming-courses-what-worked-for-us" class="nav-link" data-scroll-target="#theme-teaching-programming-courses-what-worked-for-us">Theme — Teaching Programming Courses: What Worked for Us</a>
+  <ul class="collapse">
+  <li><a href="#reducing-technological-barriers-in-programming-courses-teachprogacross_c04" id="toc-reducing-technological-barriers-in-programming-courses-teachprogacross_c04" class="nav-link" data-scroll-target="#reducing-technological-barriers-in-programming-courses-teachprogacross_c04">Reducing Technological Barriers in Programming Courses <span class="citation" data-cites="TeachProgAcross_C04">(Wadsworth et al. 2026)</span></a></li>
+  <li><a href="#inclusion-and-accessibility-in-programming-teaching-teachprogacross_c14" id="toc-inclusion-and-accessibility-in-programming-teaching-teachprogacross_c14" class="nav-link" data-scroll-target="#inclusion-and-accessibility-in-programming-teaching-teachprogacross_c14">Inclusion and Accessibility in Programming Teaching <span class="citation" data-cites="TeachProgAcross_C14">(Colquhoun et al. 2026)</span></a></li>
+  <li><a href="#overcoming-coding-anxiety-teachprogacross_c33" id="toc-overcoming-coding-anxiety-teachprogacross_c33" class="nav-link" data-scroll-target="#overcoming-coding-anxiety-teachprogacross_c33">Overcoming Coding Anxiety <span class="citation" data-cites="TeachProgAcross_C33">(Oldnall et al. 2026)</span></a></li>
+  <li><a href="#stars-and-1-wish-teachprogacross_c34" id="toc-stars-and-1-wish-teachprogacross_c34" class="nav-link" data-scroll-target="#stars-and-1-wish-teachprogacross_c34">3 Stars and 1 Wish <span class="citation" data-cites="TeachProgAcross_C34">(Orzechowski and Elaine Mowat 2026)</span></a></li>
+  <li><a href="#sequential-vs.-simultaneous-teachprogacross_c11" id="toc-sequential-vs.-simultaneous-teachprogacross_c11" class="nav-link" data-scroll-target="#sequential-vs.-simultaneous-teachprogacross_c11">Sequential vs.&nbsp;Simultaneous <span class="citation" data-cites="TeachProgAcross_C11">(Young et al. 2026)</span></a></li>
+  </ul></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const fontSizeSlider = document.getElementById('fontSizeSlider');
+        const fontSizeValue = document.getElementById('fontSizeValue');
+
+        const hueRotateSlider = document.getElementById('hueRotateSlider');
+        const hueRotateValue = document.getElementById('hueRotateValue');
+
+        const eyeStrainSlider = document.getElementById('eyeStrainSlider');
+        const eyeStrainValue = document.getElementById('eyeStrainValue');
+
+        const paddingSlider = document.getElementById('paddingSlider');
+        const paddingValue = document.getElementById('paddingValue');
+
+        const lineSpacingSlider = document.getElementById('lineSpacingSlider');
+        const lineSpacingValue = document.getElementById('lineSpacingValue');
+
+        const fontFamilySelect = document.getElementById('fontFamily');
+
+        const html = document.documentElement;
+        const resetButton = document.getElementById('resetDefaults');
+
+        // Define default values
+        const defaults = {
+            fontSize: 16,
+            hueRotate: 0,
+            eyeStrain: 0,
+            padding: 0,
+            lineSpacing: 150,
+            fontFamily: "'Atkinson Hyperlegible', Arial, Helvetica, sans-serif"
+        };
+
+        function updateStyles() {
+            html.style.setProperty('--bs-root-font-size', fontSizeSlider.value + 'px');
+            html.style.setProperty('--hue-rotate', hueRotateSlider.value + 'deg');
+            html.style.setProperty('--eye-strain', eyeStrainSlider.value + '%');
+            html.style.setProperty('--padding', paddingSlider.value + 'em');
+            html.style.setProperty('--line-spacing', lineSpacingSlider.value + '%');
+            html.style.setProperty('--bs-body-font-family', fontFamilySelect.value);
+
+            fontSizeValue.textContent = fontSizeSlider.value;
+            hueRotateValue.textContent = hueRotateSlider.value;
+            eyeStrainValue.textContent = eyeStrainSlider.value;
+            paddingValue.textContent = paddingSlider.value;
+            lineSpacingValue.textContent = lineSpacingSlider.value;
+
+            saveSettings();
+        }
+
+        // Function to save settings to localStorage
+        function saveSettings() {
+            const settings = {
+                fontSize: fontSizeSlider.value,
+                hueRotate: hueRotateSlider.value,
+                eyeStrain: eyeStrainSlider.value,
+                padding: paddingSlider.value,
+                lineSpacing: lineSpacingSlider.value,
+                fontFamily: fontFamilySelect.value
+            };
+            localStorage.setItem('accessibilitySettings', JSON.stringify(settings));
+        }
+
+        // Function to load settings from localStorage
+        function loadSettings() {
+            const savedSettings = localStorage.getItem('accessibilitySettings');
+            if (savedSettings) {
+                const settings = JSON.parse(savedSettings);
+                fontSizeSlider.value = settings.fontSize;
+                hueRotateSlider.value = settings.hueRotate;
+                eyeStrainSlider.value = settings.eyeStrain;
+                paddingSlider.value = settings.padding;
+                lineSpacingSlider.value = settings.lineSpacing;
+                fontFamilySelect.value = settings.fontFamily;
+                updateStyles();
+            }
+        }
+
+        function resetToDefaults() {
+            fontSizeSlider.value = defaults.fontSize;
+            hueRotateSlider.value = defaults.hueRotate;
+            eyeStrainSlider.value = defaults.eyeStrain;
+            paddingSlider.value = defaults.padding;
+            lineSpacingSlider.value = defaults.lineSpacing;
+            fontFamilySelect.value = defaults.fontFamily;
+            updateStyles();
+            localStorage.removeItem('accessibilitySettings');
+        }
+
+        fontSizeSlider.oninput = updateStyles;
+        hueRotateSlider.oninput = updateStyles;
+        eyeStrainSlider.oninput = updateStyles;
+        paddingSlider.oninput = updateStyles;
+        lineSpacingSlider.oninput = updateStyles;
+        fontFamilySelect.onchange = updateStyles;
+        resetButton.onclick = resetToDefaults;
+
+        loadSettings();
+
+    });
+</script>
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-title">Part I — Theories and Applications of Teaching Programming</span></h1>
+</div>
+
+
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Authors</div>
+  <div class="quarto-title-meta-heading">Affiliations</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Brittany Blankinship <a href="mailto:b.blankinship@ed.ac.uk" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Edinburgh Medical School, University of Edinburgh
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Franziska McManus <a href="mailto:z.mcmanus@ed.ac.uk" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Edinburgh Medical School, University of Edinburgh
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Umberto Noè <a href="mailto:Umberto.Noe@ed.ac.uk" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            School of Philosophy, Psychology and Language Sciences, University of Edinburgh
+          </p>
+      </div>
+  </div>
+
+<div class="quarto-title-meta">
+
+      
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>As a community, our philosophy towards teaching is grounded in the practice and framework of pair programming (if you haven’t heard of this yet, read on!). This framework for structured group work, taken from industry, was the first aspect of our teaching which we shared amongst ourselves at the University of Edinburgh and became a uniting feature of our teaching. Today, pair programming features in all of our teaching as a standard. Our teaching and working life centres around the philosophy of working together to create a shared product and vision – that is, working openly, kindly, and together.</p>
+<p>In the first theme, you will get acquainted with what pair programming is and how it can be implemented across courses, levels of study, and disciplines. By the end of it, we hope it will convince you that pair programming is a framework worth getting excited about and perhaps something to implement in your own teaching.</p>
+<p>The second theme focuses on a selection of core concepts in programming that are essential for building healthy programming habits. While learning a programming language’s vocabulary and syntax is a fundamental part of learning to code, these chapters propose broader approaches that nurture more general skills required to be successful coders and learners (hello transferrable skills).</p>
+<p>The third theme acknowledges that being a good learner necessarily means thinking critically and making connections across ideas and topics. As educators, we expect our students not only to produce code that executes, but also to interact meaningfully with it and the wider context. It discusses what it means to teach and learn programming in a world of Generative AI, addressing the good, the bad, and the ugly. You will not find another debate but a range of viewpoints as they exist in our teaching community. These chapters will resonate with educators, address concepts that have always been fundamental to programming, and hopefully reveal a few surprises along the way.</p>
+<p>Finally, as programming educators, you may have an idea of what concepts and mindsets you would like to teach your students. But how do you actually implement it in a pragmatic, engaging, and effective way? In the fourth and final theme of Part I, our authors tackle core pedagogical issues from the perspective of teaching programming:</p>
+<ul>
+<li>How do we get total beginners learning a tool they never expected to use in the first place?</li>
+<li>How do you teach multiple complex concepts at the same time?<br>
+</li>
+<li>How do you build confidence and create an inclusive and welcoming atmosphere for your students?</li>
+</ul>
+<p>Some of the concepts and ideas presented in Part I may be familiar to you already, but we hope that you will gain either a framework to describe what you are already doing or a new way to approach teaching.</p>
+<section id="theme-pair-programming-what-how-why" class="level2">
+<h2 class="anchored" data-anchor-id="theme-pair-programming-what-how-why">Theme — Pair Programming: What? How? Why?</h2>
+<section id="where-do-i-even-start-with-pair-programming-teachprogacross_c12" class="level3">
+<h3 class="anchored" data-anchor-id="where-do-i-even-start-with-pair-programming-teachprogacross_c12">Where Do I Even Start With Pair Programming? <span class="citation" data-cites="TeachProgAcross_C12">(<a href="#ref-TeachProgAcross_C12" role="doc-biblioref">Orzechowski et al. 2026</a>)</span></h3>
+<p>An introduction to pair programming in the form of a (written) podcast interview where you can read or listen. This chapter is a joyful and pragmatic approach to answering some of the most frequently asked questions around introducing pair programming in the classroom.</p>
+<p>This chapter is for you if you are interested in pair programming as a teaching practice or you would like ideas around how to explain it to your students or colleagues.</p>
+</section>
+<section id="lessons-from-pair-programming-across-disciplines-teachprogacross_c36" class="level3">
+<h3 class="anchored" data-anchor-id="lessons-from-pair-programming-across-disciplines-teachprogacross_c36">Lessons From Pair Programming Across Disciplines <span class="citation" data-cites="TeachProgAcross_C36">(<a href="#ref-TeachProgAcross_C36" role="doc-biblioref">Desvages et al. 2026</a>)</span></h3>
+<p>A walkthrough of the origins and practice of pair programming and what this has looked like for the authors in their disciplines. A highlight of this chapter is the fun illustrations that bring to life explanations of pair programming supported by student feedback.</p>
+<p>This chapter is for you if you want to learn more about pair programming or are looking for a resource to explain pair programming to students, colleagues, and management.</p>
+</section>
+<section id="a-phd-tutors-reflections-teachprogacross_c41" class="level3">
+<h3 class="anchored" data-anchor-id="a-phd-tutors-reflections-teachprogacross_c41">A PhD Tutor’s Reflections <span class="citation" data-cites="TeachProgAcross_C41">(<a href="#ref-TeachProgAcross_C41" role="doc-biblioref">Elliot 2026</a>)</span></h3>
+<p>A PhD students’ experience of teaching pair programming in an introductory R course. The author reflects on when pair programming works and when it doesn’t, as well as the tutor’s role in facilitating pair programming.</p>
+<p>This chapter is for you if you are a graduate student or tutor on a course that uses pair programming, or are in a position to implement it in a tutorial setting. Course organisers will also benefit from the insightful reflections from the front line of teaching.</p>
+</section>
+</section>
+<section id="theme-building-healthy-programming-habits" class="level2">
+<h2 class="anchored" data-anchor-id="theme-building-healthy-programming-habits">Theme — Building Healthy Programming Habits</h2>
+<section id="a-practical-debugging-framework-for-learners-teachprogacross_c09" class="level3">
+<h3 class="anchored" data-anchor-id="a-practical-debugging-framework-for-learners-teachprogacross_c09">A Practical Debugging Framework for Learners <span class="citation" data-cites="TeachProgAcross_C09">(<a href="#ref-TeachProgAcross_C09" role="doc-biblioref">Doig 2026</a>)</span></h3>
+<p>An accessible and joyful introduction to debugging via the 5 B’s framework. The sections of Brain, Book, Buddy, Boss, Break are expertly scaffolded and explained, turning this chapter into an adaptable teaching resource.</p>
+<p>This chapter is for you if you teach any programming language and want your students to approach errors and debugging in a critical and independent fashion.</p>
+</section>
+<section id="empowering-students-to-develop-a-coding-mindset-teachprogacross_c05" class="level3">
+<h3 class="anchored" data-anchor-id="empowering-students-to-develop-a-coding-mindset-teachprogacross_c05">Empowering Students to Develop a Coding Mindset <span class="citation" data-cites="TeachProgAcross_C05">(<a href="#ref-TeachProgAcross_C05" role="doc-biblioref">Bray et al. 2026</a>)</span></h3>
+<p>The most important skillset you can learn when coding is not actually the syntax of the specific programming language, but rather the “coding mindset”. This chapter outlines practical suggestions and approaches for ensuring your teaching goes beyond the syntax and focuses on developing the students’ mindset to allow them to effectively code in other languages too in the future.</p>
+<p>This chapter is for you if you are embarking on teaching your first programming course and want to develop the course beyond the syntax you might be teaching. Experienced programmers will also find the chapter interesting as a source for reflection on their own “coding mindset” and how it has developed.</p>
+</section>
+<section id="it-depends-how-to-develop-judgement-in-programming-teachprogacross_c40" class="level3">
+<h3 class="anchored" data-anchor-id="it-depends-how-to-develop-judgement-in-programming-teachprogacross_c40">It Depends: How to Develop Judgement in Programming <span class="citation" data-cites="TeachProgAcross_C40">(<a href="#ref-TeachProgAcross_C40" role="doc-biblioref">Wilson and Blankinship 2026</a>)</span></h3>
+<p>Extending the idea of “best practice” in coding, this chapter asks the programmer to question the needs of their context rather than seeing “good” and “bad” coding practices in black and white. The central concept, that there are “forces” of coding, will be useful as a teaching resource to help students write good code and consider why they are coding in the first place.</p>
+<p>This chapter is for anyone who codes and wants to expand their approach to coding independently, consciously, and/or collaboratively.</p>
+</section>
+</section>
+<section id="theme-programming-in-a-world-of-generative-ai" class="level2">
+<h2 class="anchored" data-anchor-id="theme-programming-in-a-world-of-generative-ai">Theme — Programming in a World of Generative AI</h2>
+<section id="hype-and-the-need-for-responsible-compute-teachprogacross_c08" class="level3">
+<h3 class="anchored" data-anchor-id="hype-and-the-need-for-responsible-compute-teachprogacross_c08">Hype and The Need for Responsible Compute <span class="citation" data-cites="TeachProgAcross_C08">(<a href="#ref-TeachProgAcross_C08" role="doc-biblioref">Ahern et al. 2026</a>)</span></h3>
+<p>Every new computational tool or AI model comes with exciting promises, but it also brings challenges. These often leave behind questions about fairness, who benefits from this technology, and who pays the hidden costs. As educators, we are placed in the middle of this hype, trying to help our students make sense of these tools.</p>
+<p>This chapter will take you through the journey of responsible computing through the lens of the United Nations (UN) Sustainable Development Goals. You will learn how issues like inequality, environmental harm, workforce exploitation, and bias can be part of new technologies. Along this journey, the authors share classroom activities, teaching ideas, and recommended readings you can assign in your own courses. This chapter is for you if you want your students not only to learn about fancy new algorithms, but also to be responsible and sustainable in their usage.</p>
+</section>
+<section id="teaching-with-the-emergence-of-generative-ai-teachprogacross_c10" class="level3">
+<h3 class="anchored" data-anchor-id="teaching-with-the-emergence-of-generative-ai-teachprogacross_c10">Teaching With the Emergence of Generative AI <span class="citation" data-cites="TeachProgAcross_C10">(<a href="#ref-TeachProgAcross_C10" role="doc-biblioref">Evkaya et al. 2026</a>)</span></h3>
+<p>You are likely familiar with the fact that students can now generate working code in a matter of seconds with AI. However, you may also worry about what this means for assessments and question the value of your own teaching. This chapter invites you to rethink your approach to teaching and focus on what matters most when teaching students how to code. The authors talk about how Gen AI tools can help with exploration and feedback, while keeping some space for struggle and genuine understanding. They share examples of how to adapt your teaching and assessment without giving up on rigour.</p>
+<p>If you are wondering about how to rethink your teaching or assessment approach for students coding with AI, this will be an interesting read.</p>
+</section>
+<section id="ai-voice-and-style-in-programming-education-teachprogacross_c44" class="level3">
+<h3 class="anchored" data-anchor-id="ai-voice-and-style-in-programming-education-teachprogacross_c44">AI, Voice, and Style in Programming Education <span class="citation" data-cites="TeachProgAcross_C44">(<a href="#ref-TeachProgAcross_C44" role="doc-biblioref">Wilson 2026</a>)</span></h3>
+<p>The author puts into writing many facets of the impact of Generative AI on academic skills development that educators will have been uncomfortable about but may not have been able to put into words themselves.</p>
+<p>This chapter is for educators who want to be able to communicate their concerns around the erosion of academic skills with the existence and accessibility of Generative AI. It will be a useful teaching resource to give to students as is.</p>
+</section>
+<section id="how-teaching-programming-across-disciplines-can-instil-systems-thinking-teachprogacross_c21" class="level3">
+<h3 class="anchored" data-anchor-id="how-teaching-programming-across-disciplines-can-instil-systems-thinking-teachprogacross_c21">How Teaching Programming Across Disciplines Can Instil Systems Thinking <span class="citation" data-cites="TeachProgAcross_C21">(<a href="#ref-TeachProgAcross_C21" role="doc-biblioref">Riviera et al. 2026</a>)</span></h3>
+<p>Starting with the purpose and function of the university as an institution, this chapter takes you on a journey through the benefits of learning to program from a systems thinking perspective. If systems thinking is a new concept for you, you will find an intriguing introduction and a new way of looking at programming and the wider world (i.e., systems).</p>
+<p>For many readers, this will answer the question of why it is a worthwhile endeavour to teach students programming skills (that they may not use again). As a teaching resource, this chapter would be excellent compulsory reading for students and a starting point for discussion-based tutorials.</p>
+</section>
+</section>
+<section id="theme-teaching-programming-courses-what-worked-for-us" class="level2">
+<h2 class="anchored" data-anchor-id="theme-teaching-programming-courses-what-worked-for-us">Theme — Teaching Programming Courses: What Worked for Us</h2>
+<section id="reducing-technological-barriers-in-programming-courses-teachprogacross_c04" class="level3">
+<h3 class="anchored" data-anchor-id="reducing-technological-barriers-in-programming-courses-teachprogacross_c04">Reducing Technological Barriers in Programming Courses <span class="citation" data-cites="TeachProgAcross_C04">(<a href="#ref-TeachProgAcross_C04" role="doc-biblioref">Wadsworth et al. 2026</a>)</span></h3>
+<p>Learning to code for the first time is fraught with challenges ranging from the technical, cultural, and practical. As an educator, how do you help your students when “the computer says no”? This chapter covers implementable steps for reducing barriers in programming courses, to ensure students don’t lose motivation to learn programming when faced with such issues, while ensuring instructors are not overworked.</p>
+<p>This chapter is for you if you teach novice programmers and want to reduce friction in getting set up and working through the programming curriculum. With clear suggestions and a summary of pros and cons, it will allow you to pick the best setup for your own course!</p>
+</section>
+<section id="inclusion-and-accessibility-in-programming-teaching-teachprogacross_c14" class="level3">
+<h3 class="anchored" data-anchor-id="inclusion-and-accessibility-in-programming-teaching-teachprogacross_c14">Inclusion and Accessibility in Programming Teaching <span class="citation" data-cites="TeachProgAcross_C14">(<a href="#ref-TeachProgAcross_C14" role="doc-biblioref">Colquhoun et al. 2026</a>)</span></h3>
+<p>Moving beyond standard prescriptions for inclusion and accessibility, this chapter takes a broader approach to pedagogical practice that fosters learning, allows vulnerability, and creates a space for all students to succeed. It provides a structured overview of the impact of different methods of delivery and a range of approaches that you can use dynamically depending on your student cohorts.</p>
+<p>For programming educators who would like to make their classroom more welcoming, this chapter will offer practical approaches tailored to the experience of teaching programming across disciplines and being an adaptive teacher.</p>
+</section>
+<section id="overcoming-coding-anxiety-teachprogacross_c33" class="level3">
+<h3 class="anchored" data-anchor-id="overcoming-coding-anxiety-teachprogacross_c33">Overcoming Coding Anxiety <span class="citation" data-cites="TeachProgAcross_C33">(<a href="#ref-TeachProgAcross_C33" role="doc-biblioref">Oldnall et al. 2026</a>)</span></h3>
+<p>For many students, anxiety is a central and paralysing part of their coding experience. This is particularly true for students in non-programming disciplines where educators may need to make a targeted effort to approach this head on. The authors offer practical suggestions and tips provided from their experiences that you can easily pick up and embed out of the box in your own teaching.</p>
+<p>This chapter is for you if you have ever taught coding to anxious students or would like ideas on ways to make your programming course more accessible and fun for all students, regardless of background.</p>
+</section>
+<section id="stars-and-1-wish-teachprogacross_c34" class="level3">
+<h3 class="anchored" data-anchor-id="stars-and-1-wish-teachprogacross_c34">3 Stars and 1 Wish <span class="citation" data-cites="TeachProgAcross_C34">(<a href="#ref-TeachProgAcross_C34" role="doc-biblioref">Orzechowski and Elaine Mowat 2026</a>)</span></h3>
+<p>With its origins in primary school teaching, this reflective practice framework will be a surprising and adaptable tool for use in higher education teaching, both in-person and online. This chapter introduces the idea of ‘3 stars and a wish’, where reflection is a flexible way of creating community that may replace existing discussion boards and feedback surveys. The authors present a case study and practical tips for implementing the framework.</p>
+<p>This chapter is for you if you are an educator who would like to integrate continuous bite-sized reflection into your teaching or for anyone who is looking for ways to pulse-check student learning and progress.</p>
+</section>
+<section id="sequential-vs.-simultaneous-teachprogacross_c11" class="level3">
+<h3 class="anchored" data-anchor-id="sequential-vs.-simultaneous-teachprogacross_c11">Sequential vs.&nbsp;Simultaneous <span class="citation" data-cites="TeachProgAcross_C11">(<a href="#ref-TeachProgAcross_C11" role="doc-biblioref">Young et al. 2026</a>)</span></h3>
+<p>Within many statistics modules, programming is presented as a tool which students need to learn quickly, engage with briefly, and then move on from. Yet, both statistics and programming come with a heavy cognitive load and are sources of angst, anxiety, and confusion for students. This chapter compares three approaches to teaching statistics and programming for students who need to know both. This chapter is for anyone designing (or re-designing) a course teaching both programming and statistics. With concrete examples from the author’s diverse experiences, this chapter presents a practical guide as well as an opportunity to learn from others who have been there before.</p>
+</section>
+</section>
+<section id="references" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="references">References</h2>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-TeachProgAcross_C08" class="csl-entry" role="listitem">
+Ahern, Samantha, Sam Skipsey, and Leo Riviera. 2026. <em>Teaching Programming Across Disciplines</em>.
+</div>
+<div id="ref-TeachProgAcross_C05" class="csl-entry" role="listitem">
+Bray, Neil, Samantha Alvarez Madrazo, Lucia Michielin, Nick Jayanth, and Sam Skipsey. 2026. <em>Teaching Programming Across Disciplines</em>.
+</div>
+<div id="ref-TeachProgAcross_C14" class="csl-entry" role="listitem">
+Colquhoun, Rebecca, Samantha Ahern, Brittany Blankinship, and Patricia Loto. 2026. <em>Teaching Programming Across Disciplines</em>.
+</div>
+<div id="ref-TeachProgAcross_C36" class="csl-entry" role="listitem">
+Desvages, Charlotte, Brittany Blankinship, Umberto Noè, and Pawel Orzechowski. 2026. <em>Teaching Programming Across Disciplines</em>.
+</div>
+<div id="ref-TeachProgAcross_C09" class="csl-entry" role="listitem">
+Doig, Mar. 2026. <em>Teaching Programming Across Disciplines</em>.
+</div>
+<div id="ref-TeachProgAcross_C41" class="csl-entry" role="listitem">
+Elliot, Sarah. 2026. <em>Teaching Programming Across Disciplines</em>.
+</div>
+<div id="ref-TeachProgAcross_C10" class="csl-entry" role="listitem">
+Evkaya, Ozan, Hebatallah Shoukry, TJ Elmas, Laila Dabab Nahas, and Steven Watterson. 2026. <em>Teaching Programming Across Disciplines</em>.
+</div>
+<div id="ref-TeachProgAcross_C33" class="csl-entry" role="listitem">
+Oldnall, Chris, William Kay, Chris Sutherland, Tiago A. Marques, and Robert Young. 2026. <em>Teaching Programming Across Disciplines</em>.
+</div>
+<div id="ref-TeachProgAcross_C12" class="csl-entry" role="listitem">
+Orzechowski, Pawel, Brittany Blankinship, and Kasia Banas. 2026. <em>Teaching Programming Across Disciplines</em>.
+</div>
+<div id="ref-TeachProgAcross_C34" class="csl-entry" role="listitem">
+Orzechowski, Pawel, and Bea Alex Elaine Mowat Clare Llewellyn. 2026. <em>Teaching Programming Across Disciplines</em>.
+</div>
+<div id="ref-TeachProgAcross_C21" class="csl-entry" role="listitem">
+Riviera, Leo, Maeve Murphy Quinlan, Rebecca Colquhoun, and Devanjan Bhattacharya. 2026. <em>Teaching Programming Across Disciplines</em>.
+</div>
+<div id="ref-TeachProgAcross_C04" class="csl-entry" role="listitem">
+Wadsworth, Lizzie, Lucia Michielin, Chris Cooling, Ozan Evkaya, Sam Skipsey, and David Cutting. 2026. <em>Teaching Programming Across Disciplines</em>.
+</div>
+<div id="ref-TeachProgAcross_C44" class="csl-entry" role="listitem">
+Wilson, John. 2026. <em>Teaching Programming Across Disciplines</em>.
+</div>
+<div id="ref-TeachProgAcross_C40" class="csl-entry" role="listitem">
+Wilson, John, and Brittany Blankinship. 2026. <em>Teaching Programming Across Disciplines</em>.
+</div>
+<div id="ref-TeachProgAcross_C11" class="csl-entry" role="listitem">
+Young, Robert S., Rebecca L. Colquhoun, Tiago A. Marques, Brittany Blankinship, Ozan Evkaya, and William P. Kay. 2026. <em>Teaching Programming Across Disciplines</em>.
+</div>
+</div>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./index.html" class="pagination-link" aria-label="Teaching Programming Across Disciplines">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Teaching Programming Across Disciplines</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./C12_pair-programming-overview.html" class="pagination-link" aria-label="Where Do I Even Start With Pair Programming in My Classroom? A Conversation With Seasoned Practitioners">
+        <span class="nav-page-text"><span class="chapter-title">Where Do I Even Start With Pair Programming in My Classroom? A Conversation With Seasoned Practitioners</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
