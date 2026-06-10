@@ -253,25 +253,7 @@ This approach comes with the caveat that experience of working with standardised
 
 Whilst it is strategically important to frustrate the use of GenAI in assessment, at the same time, we must acknowledge that GenAI tools have a place supporting student learning and we need to encourage students to use AI constructively to prepare them for the workplace. When used effectively, AI can enhance productivity, ensure continuous skill development and provide a more secure future aligned with emerging technologies.
 
-Asking students to outline the logical steps they planned and followed using AI tools as an assistant for completing tasks or assessments introduces a certain degree of transparency around GenAI engagement [@cotelli2025fostering]. They should describe the steps taken to validate GenAI outputs, as well as how they addressed biases and disparities in the results. A self-assessment provides students with the additional opportunity to reflect on their experience of working with GenAI tools, identifying when GenAI use was most beneficial, when it was not or was unproductive and how it has improved their learning skills and helped them to achieve their goals [@combrinck2025student]. Checklists have already been introduced to students to disclose and reflect on their use of GenAI either as part of their assessment or as general guidance; an example is reproduced below from the [University of Leeds' generative AI pages](https://generative-ai.leeds.ac.uk/ai-and-assessments/gen-ai-quick-checklist/).
-
-::: {.callout-tip icon=false}
-
-# Checklist for the use of GenAI in assignments taken from the [University of Leeds](https://generative-ai.leeds.ac.uk/ai-and-assessments/gen-ai-quick-checklist/)
-
-- I have checked the assessment brief or have spoken to my tutor or supervisor and can confirm that use of Gen AI is not prohibited for my assessment type.
-- I have reviewed the Academic Integrity principles to help me avoid unintentional plagiarism.
-- I have understood the risks and limitations of using Gen AI, including a recognition of issues of bias, sensitivity, accuracy, appropriate content and ethical issues.
-- I have considered how the Gen AI tool will use the data I input (including checking the terms and conditions and privacy policy) and have chosen an appropriate Gen AI tool for my task.
-- I have checked and critically reviewed any quotations, citations or outputs that the Gen AI tool has generated.
-- I have not submitted any Personally Identifiable Information (PII) to a Gen AI tool.
-- I have ensured that no part of my assessment copies or paraphrases Gen AI outputs without acknowledgement.
-- I have ensured that my assignment / research remains my own work.
-- I have appropriately referenced the use of Gen AI tools in my work.
-- I have saved copies of Gen AI outputs used in preparing my assessment. These copies may be asked to be provided as an appendix to my assessment or as part of any misconduct process.
-- I sought help from my tutors or the Library’s Learning Development Team when I was unsure about use of Gen AI or needed further guidance.
-
-:::
+Asking students to outline the logical steps they planned and followed using AI tools as an assistant for completing tasks or assessments introduces a certain degree of transparency around GenAI engagement [@cotelli2025fostering]. They should describe the steps taken to validate GenAI outputs, as well as how they addressed biases and disparities in the results. A self-assessment provides students with the additional opportunity to reflect on their experience of working with GenAI tools, identifying when GenAI use was most beneficial, when it was not or was unproductive and how it has improved their learning skills and helped them to achieve their goals [@combrinck2025student]. Checklists have already been introduced to students to disclose and reflect on their use of GenAI either as part of their assessment or as general guidance. We recommend the example provided by the University of Leeds and [published in their generative AI guidance pages](https://generative-ai.leeds.ac.uk/ai-and-assessments/gen-ai-quick-checklist/).
 
 ## The Digital Divergence
 
