@@ -100,14 +100,14 @@ To access the MOOCs, there were originally two options. The first option is to o
 The second option to access the MOOCs, which is the one we were suggesting to our students holding an offer for the MPHO, was to audit the whole MOOC 1 for free. In that way they could start to get familiar with the statistical concepts, follow instructions to install R/RStudio and start practising in R. However, in August 2025, Coursera replaced the auditing by a ‘preview mode’ which currently only allows full access to the first week of some of the MOOCs. 
 
 @tbl-mooc-enrolment below shows a summary of the number of students enrolled and the completion rate up to August 2025 for the four MOOCs.
-
+ 
 
 | **MOOC No** |                          **Title**                          | **Enrolled** | **Completed (%)** |
-|:-----------:|:-----------------------------------------------------------:|:------------:|:-----------------:|
-|      1      | Introduction to Statistics & Data Analysis in Public Health |    60,185    |    10,962 (18%)   |
-|      2      |           Linear Regression in R for Public Health          |    17,223    |    4,572 (27%)    |
-|      3      |          Logistic Regression in R for Public Health         |    14,308    |    3,167 (22%)    |
-|      4      |           Survival Analysis in R for Public Health          |    16,007    |    3,096 (19%)    |
+|:----------:|:----------------------------------|------:|----------------:|
+|     1      | Introduction to Statistics & Data Analysis in Public Health |    60,185    |    10,962 (18%)   |
+|     2      |           Linear Regression in R for Public Health          |    17,223    |    4,572 (27%)    |
+|     3      |          Logistic Regression in R for Public Health         |    14,308    |    3,167 (22%)    |
+|     4      |           Survival Analysis in R for Public Health          |    16,007    |    3,096 (19%)    |
 
 : Summary of Students Enrolled on the Four MOOCs and the Completion Rate. Source: Coursera {#tbl-mooc-enrolment}
 
