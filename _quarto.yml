@@ -118,7 +118,7 @@ book:
         
         - C06_feminists-and-anarchists.qmd
         - C15_programming-without-computers.qmd
-#        - C17_coding-with-music.qmd
+        - C17_coding-with-music.qmd
         - C03_online-teaching-reflections.qmd
         - C43-data-vis.qmd
 
