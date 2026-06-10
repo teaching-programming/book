@@ -33,13 +33,13 @@ author:
 
 Programming courses often focus on what to write... syntax, functions, packages, patterns, pipelines.
 What gets less attention, even in “intermediate” or “advanced” courses, is how context influences the coding approach and how to dynamically adjust approach to fit the context.
-Programming course and tutorials usually give advice on writing DRY, clean, expressive code.
+Programming courses and tutorials usually give advice on writing DRY, clean, expressive code.
 We believe there is a gap in how such advice is presented that can be filled by considering three tactics that in combination create a programming "mindset space".
 Having an awareness of these tactics allows a learner to consider which tactics are most useful at a given time, for a given problem, and to understand they can change in response to the different pressures their current situation might be exerting.
 As a way of making this explicit and teachable, [^C40-radarfootnote] the three tactics we suggest are being Independent, Conscious, and Social (@fig-balance).
 And further, we refer to these tactics as "forces" because they can be used to push against, or accommodate, the pressures felt as appropriate to the immediate context.
 
-![Radar plot of coding forces visualized wtih the 3 forces being equally balanced](/chapters/images/C40_all-balanced.png){#fig-balance width=50%}
+![Radar plot of coding forces visualized with the 3 forces being equally balanced](/chapters/images/C40_all-balanced.png){#fig-balance width=50%}
 
 [^C40-radarfootnote]: Here we have decided on a radar plot to represent the coding forces.
     It is not absolutely perfect, but this is a limitation we are accepting for now for clarity of communication.
@@ -84,7 +84,7 @@ Always bear in mind what AI produces, when it is helpful, and when reliance on i
 This is especially important when you are developing your skills.
 Learners may well encounter experienced coders that routinely use AI, but they should consider that perhaps those coders have already mastered the skills they are trying to learn!
 One good piece of advice is to type every single line of code AI produces with your own fingertips - avoid the temptation of mindless copy-pasting!
-This force is not about speed in making code that "works" or simply executes, it's about making conscious decisions using learned judgement
+This force is not about speed in making code that "works" or simply executes, it's about making conscious decisions using learned judgement.
 
 [^C40-AI]: Here we intentionally use AI generally not just Generative AI or LLMs, but AI as an umbrella term including developing tools like agents. 
 
@@ -97,26 +97,26 @@ Conscious coding asks you to slow down and reflect:
 If the answer is no to any of the above, take the time to experiment and learn (moving into the independent coding force) until the answers are yes.
 Otherwise, if time does not permit exploratory learning, do not use an approach or solution you do not understand.
 
-![A dominant conscious force. Being closer to the centre represents a lack of consideration about the code being written, such as the blind/mindless copy pasting of AI outputs. Closer to tip represents making decisions based on long term maintenance of the code, only implementing solutions you understand and can debug.](/chapters/images/C40_conscious-zoomed.png){#fig-conscious width=50%}
+![A dominant conscious force. Being close to the centre represents a lack of consideration about the code being written, such as the blind/mindless copy pasting of AI outputs. The far end of the axis represents making decisions based on long term maintenance of the code, only implementing solutions you understand and can debug.](/chapters/images/C40_conscious-zoomed.png){#fig-conscious width=50%}
 
 **Social Coding** focuses on communication.
 Code is written to be read by other humans and executed by the machine.
-Social coding recognizes that most code is read (by other humans) more often that it is written.
+Social coding recognizes that most code is read (by other humans) more often than it is written.
 In this way, code itself is a form of communication, which you should want to be as clear as possible.
 We do not code in binary (can you imagine how gross this would be) for a reason!
 
 This coding force is all about writing code that other human-beings can read and understand quickly and easily as well as reuse and trust.
 This often presents itself in robust documentation and ensuring consistency in procedures and approaches in a given script.
-Doing this well means writing code with clarity of meaning - i.e., consistent code style, descriptive naming conventions, and clear documentation though judicious use of comments, and properly documenting your functions.
+Doing this well means writing code with clarity of meaning - i.e., consistent code style, descriptive naming conventions, and clear documentation through judicious use of comments, and properly documenting your functions.
 
 When coding with a focus on the social force, your code may become longer, taking up more lines - which is not a bad thing! It does not mean your code is not DRY (the principle of Do not Repeat Yourself) but rather balances such principles with readability and communication.
 Collaborative projects, research codebases, (and... assessed work in courses...), where maintainability and clarity are as important as correctness, depend heavily on a strong application of the social force.
 A useful realization for a learner to have is that collaborators may be people that you never have an actual face to face conversation with.
 Socially aware code, then, has to be friendly and approachable and the best ways to do this are to provide clear, accessible documentation, and code that is also self-documenting.
 
-![A dominant Social force. Closer to the centre represents, possibly rapididly developed, code that is ugly or without structure. Closer to the tip represents code nicely refactored for maximal readability, with the intention of sharing with collaborators or colleages.](/chapters/images/C40_social-zoomed.png){#fig-social width=50%}
+![A dominant Social force. Being close to the centre represents, possibly rapidly developed, code that is ugly or without structure. The far end of the axis represents code nicely refactored for maximal readability, with the intention of sharing with collaborators or colleagues.](/chapters/images/C40_social-zoomed.png){#fig-social width=50%}
 
-Different tasks call for the forces to be applied with different intensities, to actively balances them in the way that best fits the situation.
+Different tasks call for the forces to be applied with different intensities, to actively balance them in the way that best fits the situation.
 What that balance might look like, is a deliberate choice of the coder:
 
 - **quick exploratory work** may mean a dominance of independence because this allows faster iteration and experimentation.
@@ -230,7 +230,7 @@ These are all signals that your current balance of coding forces may no longer f
 
 With experience, programmers become better at recognising these pressures and adjusting accordingly.
 This is less about following fixed rules encountered on the world wild web, and more about developing judgement about when to increase or relax the emphasis on a particular force.
-You might begin with very independent exploratory work, gradually introduce more conscious structure as ideas settle, and later increase the social force once the code needs to be shared, reused, or maintained. [Call back to your section on how we think coders often develop along solo-social lines]
+You might begin with very independent exploratory work, gradually introduce more conscious structure as ideas settle, and later increase the social force once the code needs to be shared, reused, or maintained. [Call back to your section on how we think coders often develop along solo-social lines] <TODO: chapter link missing>
 
 The radar plot reflects this idea.
 It is not intended to divide coding into neat regions or categories, but to show a changing balance of forces at a given moment.
@@ -248,7 +248,7 @@ As a learner acquiring a new programming language, you can think of your progres
 Once an understanding of the independent, conscious, and social pieces are acquired, you realize they are complimentary elements that fit together and form a globe-like mindset-space.
 If you think of each force as a direction of travel within that globe, a new action is unlocked: spinning the globe and navigating the full 3D space! 
 
-![Exteninding the 2D radar plot into a third dimension lets us imagine a continous volume, through wich we can navigate by changing the influence of the coding forces, until we find the region that corresponds to the best balance between the forces.](/chapters/images/C40_nutshell.png){#fig-independent width=50%}
+![Extending the 2D radar plot into a third dimension lets us imagine a continous volume, through wich we can navigate by changing the influence of the coding forces, until we find the region that corresponds to the best balance between the forces.](/chapters/images/C40_nutshell.png){#fig-independent width=50%} <TODO: Fix duplicated figure tag>
 
 In this metaphor, meta-awareness and reflection is the glue that fits the puzzle pieces together forming the globe and allowing you to take on the hands of God role and move the globe. This meta-awareness is only possible to reach once you have knowledge of all 3 forces. It is required to then apply a fitting intensity and direct forces that feels appropriate for the problem at hand. 
 
@@ -306,7 +306,7 @@ But don't take our word for it.
 Try coming up with your own answer by asking which of the forces the AI is applying.
 Is it truly applying independent judgement?
 Is it conscious of the wider needs or implications of your project?
-Is it's code actually as socially aware as it looks at first?
+Is its code actually as socially aware as it looks at first?
 :::
 
 If you would like to hear more about our thoughts in this, get in touch or stay tuned for another chapter in Version 2 of the book.
