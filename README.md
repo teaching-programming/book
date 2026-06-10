@@ -98,6 +98,10 @@ Optionally, if you have Quarto installed on your computer, you can render the bo
 2. Render the book using Quarto:
     - If you use RStudio, add the `book` folder to your workspace, open `index.qmd`, and click the Render button (blue arrow).
     - If you use terminal commands, navigate to the main folder, and run `quarto render`.
+        - To only render HTML: `quarto render --to html`
+        - To only render PDF: `quarto render --to pdf`
+        - To only render EPUB: `quarto render --to epub`
+
 3. When rendered, open `_book/Cxx_chapter-title.html` in a browser.
 
 If you want to make any further changes then, don't forget to push or reupload them to your fork on GitHub when you are done.
