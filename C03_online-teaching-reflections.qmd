@@ -4,22 +4,22 @@ bibliography: references.bib
 author:
   - name: Samantha Alvarez Madrazo
     email: s.alvarez-madrazo@imperial.ac.uk
-    affiliations: Imperial College London
+    affiliations: School of Public Health, Imperial College London
   - name: Chris Cooling
     email: c.cooling10@imperial.ac.uk
-    affiliations: Imperial College London
+    affiliations: Early Career Researcher Institute, Imperial College London
   - name: Joseph El Gemayel
     email: joseph.el-gemayel@strath.ac.uk
-    affiliations: University of Strathclyde
+    affiliations: Computer & Information Sciences, University of Strathclyde
   - name: Nick Jayanth
     email: nick.jayanth19@imperial.ac.uk
     affiliations: School of Public Health, Imperial College London
   - name: Lucia Michielin
     email: lucia.michielin@ed.ac.uk
-    affiliations: University of Edinburgh
+    affiliations: Edinburgh Futures Institute, University of Edinburgh
   - name: Leila S. Shafti
     email: leila.shafti@strath.ac.uk
-    affiliations: University of Strathclyde
+    affiliations: Computer & Information Sciences, University of Strathclyde
 
 keywords:
   - education-ecosystem	
@@ -33,22 +33,22 @@ keywords:
 author:
   - name: Samantha Alvarez Madrazo
     email: s.alvarez-madrazo@imperial.ac.uk
-    affiliations: Imperial College London
+    affiliations: School of Public Health, Imperial College London
   - name: Chris Cooling
     email: c.cooling10@imperial.ac.uk
-    affiliations: Imperial College London
+    affiliations: Early Career Researcher Institute, Imperial College London
   - name: Joseph El Gemayel
     email: joseph.el-gemayel@strath.ac.uk
-    affiliations: University of Strathclyde
+    affiliations: Computer & Information Sciences, University of Strathclyde
   - name: Nick Jayanth
     email: nick.jayanth19@imperial.ac.uk
     affiliations:  School of Public Health, Imperial College London
   - name: Lucia Michielin
     email: lucia.michielin@ed.ac.uk
-    affiliations: University of Edinburgh
+    affiliations: Edinburgh Futures Institute, University of Edinburgh
   - name: Leila S. Shafti
     email: leila.shafti@strath.ac.uk
-    affiliations: University of Strathclyde
+    affiliations: Computer & Information Sciences, University of Strathclyde
 :::
 
 ## Introduction
