@@ -83,7 +83,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-efc217d3be6b0c6b6079591d7e3e0fe0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-468d89cafa99efebba817d085cab6815.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -176,6 +176,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./dedication.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Dedication</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./C00.1_this_book.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Preface: Who Are We and How Did We Get Here?</span></a>
   </div>
 </li>
@@ -211,12 +216,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./C40_coding-forces.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">It Depends: How to Develop Judgement in Programming</span></a>
+  <a href="./C05_coding-mindset.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">A Guide on Empowering Students to Develop a Coding Mindset</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./C05_coding-mindset.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">A Guide on Empowering Students to Develop a Coding Mindset</span></a>
+  <a href="./C40_coding-forces.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">It Depends: How to Develop Judgement in Programming</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -231,27 +236,22 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./C21_programming-across-disciplines-systems-thinking.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">How Teaching Programming Across Disciplines Can Instil Systems Thinking</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="./C44_ai-voice-and-style-in-programming-education.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">AI, Voice, and Style in Programming Education</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./C11_sequential-vs-simultaneous.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Sequential vs.&nbsp;Simultaneous: Approaches to Learning Programming and Statistics</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./C14_foster-inclusion-and-accessibility.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Practices To Foster Inclusion and Accessibility in Programming Teaching</span></a>
+  <a href="./C21_programming-across-disciplines-systems-thinking.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">How Teaching Programming Across Disciplines Can Instil Systems Thinking</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./C04_computer-says-no.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Computer Says No: Reducing Technical Barriers to Help Novice Programmers</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C14_foster-inclusion-and-accessibility.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Practices To Foster Inclusion and Accessibility in Programming Teaching</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -262,6 +262,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./C34_three-stars-one-wish.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">3 Stars and 1 Wish: Small and Frequent Student Reflections Promote a Sense of Wonder and a Community of Vulnerability</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C11_sequential-vs-simultaneous.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Sequential vs.&nbsp;Simultaneous: Approaches to Learning Programming and Statistics</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -656,30 +661,30 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>The choice of a development environment can determine whether programming feels approachable or intimidating, especially for students encountering it for the first time. While professional IDEs are powerful, they may include features that distract a first-time programmer. In contrast, Jupyter Notebook provides a simple user-friendly interface, together with immediate feedback. This section explores some of the practical features of Jupyter Notebook that are appealing to beginners, including IDE functionality, collaboration and visualisation, supporting its use within an educational context.</p>
 <section id="an-easy-to-use-ide" class="level3">
 <h3 class="anchored" data-anchor-id="an-easy-to-use-ide">An Easy-To-Use IDE</h3>
-<p>In professional Python programming environments, a developer normally creates a virtual environment and installs packages, which is driven by command-line tools. Jupyter Notebook provides a simpler interface, allowing Python to be written directly into a cell and executed with a keystroke. An example Python segment is given in <a href="#fig-hello-world" class="quarto-xref">Figure&nbsp;<span>25.1</span></a>, where program execution is triggered by pressing <em>Shift+Enter</em> and the output is given below the <code>print</code> command.</p>
+<p>In professional Python programming environments, a developer normally creates a virtual environment and installs packages, which is driven by command-line tools. Jupyter Notebook provides a simpler interface, allowing Python to be written directly into a cell and executed with a keystroke. An example Python segment is given in <a href="#fig-hello-world" class="quarto-xref">Figure&nbsp;<span>26.1</span></a>, where program execution is triggered by pressing <em>Shift+Enter</em> and the output is given below the <code>print</code> command.</p>
 <div id="fig-hello-world" class="quarto-float quarto-figure quarto-figure-center anchored" alt="A snippet of Python code using a print function to display the text 'Hello, world'.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-hello-world-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="./chapters/images/C29_Figure1.png" title="Printing 'Hello, world' with a Jupyter Notebook." class="img-fluid figure-img" alt="A snippet of Python code using a print function to display the text 'Hello, world'.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-hello-world-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;25.1: Printing ‘Hello, world’ with a Jupyter Notebook.
+Figure&nbsp;26.1: Printing ‘Hello, world’ with a Jupyter Notebook.
 </figcaption>
 </figure>
 </div>
-<p>As shown in <a href="#fig-hello-world" class="quarto-xref">Figure&nbsp;<span>25.1</span></a>, there is no need to create a virtual environment, install packages or open a command-line interface during everyday use. Once Python, Jupyter Notebook, and relevant packages have been installed, the user is presented with a simple workflow. The instant evaluation of Python code makes programming feel less abstract and more welcoming to novices.</p>
+<p>As shown in <a href="#fig-hello-world" class="quarto-xref">Figure&nbsp;<span>26.1</span></a>, there is no need to create a virtual environment, install packages or open a command-line interface during everyday use. Once Python, Jupyter Notebook, and relevant packages have been installed, the user is presented with a simple workflow. The instant evaluation of Python code makes programming feel less abstract and more welcoming to novices.</p>
 </section>
 <section id="working-with-code-in-pieces" class="level3">
 <h3 class="anchored" data-anchor-id="working-with-code-in-pieces">Working With Code in Pieces</h3>
 <p>One of Jupyter Notebook’s defining features is its cell-based execution. Instead of writing and running an entire script at once, learners can break programs into smaller, manageable pieces. This modularity allows students to focus on one part of the code at a time and makes it easier to identify where errors occur.</p>
-<p>The code in <a href="#fig-cell" class="quarto-xref">Figure&nbsp;<span>25.2</span></a> creates a list, defines a function to square all the numbers in that list, and then prints the results. Rather than placing everything in a single large cell, the program is split into three separate cells. If an error appears in one step, the student can rerun only that cell without restarting the whole Notebook.</p>
+<p>The code in <a href="#fig-cell" class="quarto-xref">Figure&nbsp;<span>26.2</span></a> creates a list, defines a function to square all the numbers in that list, and then prints the results. Rather than placing everything in a single large cell, the program is split into three separate cells. If an error appears in one step, the student can rerun only that cell without restarting the whole Notebook.</p>
 <div id="fig-cell" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Python notebook with three cells: the first creates a list called 'numbers', the second defines a function 'square_list' that returns the squares of the list elements, and the third prints the squared list.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-cell-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="./chapters/images/C29_Figure2.png" title="An example of cell-based execution." class="img-fluid figure-img" alt="Python notebook with three cells: the first creates a list called 'numbers', the second defines a function 'square_list' that returns the squares of the list elements, and the third prints the squared list.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-cell-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;25.2: An example of cell-based execution.
+Figure&nbsp;26.2: An example of cell-based execution.
 </figcaption>
 </figure>
 </div>
@@ -699,14 +704,14 @@ Figure&nbsp;25.2: An example of cell-based execution.
 </section>
 <section id="using-libraries-with-ease" class="level3">
 <h3 class="anchored" data-anchor-id="using-libraries-with-ease">Using Libraries With Ease</h3>
-<p>One of the biggest challenges for beginner computer programmers is learning how to extend a language with external libraries. When using a Python installation on a local machine, packages can be installed using the <code>pip</code> or <code>conda</code> package manager. Python <code>pip</code> packages are installed into the system or often into a virtual environment to prevent conflicts from arising. Python can also be installed using Anaconda, which includes the Python interpreter, together with many data analysis <code>conda</code> packages, and Jupyter Notebook. Due to the more comprehensive nature of the standard Anaconda installation, it is unlikely that students will have to install additional libraries, except when working with more advanced or specialised packages. For example, the NumPy library is part of the standard Anaconda installation and is also present in the cloud installation of Jupyter Notebook, such as Google Colaboratory (Colab). This implies that a student can import NumPy, as shown in <a href="#fig-numpy" class="quarto-xref">Figure&nbsp;<span>25.3</span></a>.</p>
+<p>One of the biggest challenges for beginner computer programmers is learning how to extend a language with external libraries. When using a Python installation on a local machine, packages can be installed using the <code>pip</code> or <code>conda</code> package manager. Python <code>pip</code> packages are installed into the system or often into a virtual environment to prevent conflicts from arising. Python can also be installed using Anaconda, which includes the Python interpreter, together with many data analysis <code>conda</code> packages, and Jupyter Notebook. Due to the more comprehensive nature of the standard Anaconda installation, it is unlikely that students will have to install additional libraries, except when working with more advanced or specialised packages. For example, the NumPy library is part of the standard Anaconda installation and is also present in the cloud installation of Jupyter Notebook, such as Google Colaboratory (Colab). This implies that a student can import NumPy, as shown in <a href="#fig-numpy" class="quarto-xref">Figure&nbsp;<span>26.3</span></a>.</p>
 <div id="fig-numpy" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Python script using NumPy: an array of numbers is created, each number is squared, the mean of the squared values is calculated, and the original array, squared array, and mean are printed.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-numpy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="./chapters/images/C29_Figure3.png" title="Using the NumPy library." class="img-fluid figure-img" alt="Python script using NumPy: an array of numbers is created, each number is squared, the mean of the squared values is calculated, and the original array, squared array, and mean are printed.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-numpy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;25.3: Using the NumPy library.
+Figure&nbsp;26.3: Using the NumPy library.
 </figcaption>
 </figure>
 </div>
@@ -760,37 +765,37 @@ Figure&nbsp;25.3: Using the NumPy library.
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1"></a><span class="op">%</span>pdb on</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>before the cells under test, followed by</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1"></a><span class="op">%</span>pdb off</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>If the execution fails, the user will be provided with an <code>ipdb</code> command prompt automatically. The <code>pdb</code> commands are demonstrated in <a href="#fig-pdb" class="quarto-xref">Figure&nbsp;<span>25.4</span></a>.</p>
+<p>If the execution fails, the user will be provided with an <code>ipdb</code> command prompt automatically. The <code>pdb</code> commands are demonstrated in <a href="#fig-pdb" class="quarto-xref">Figure&nbsp;<span>26.4</span></a>.</p>
 <div id="fig-pdb" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Python notebook cell where an empty dictionary is accessed with a non-existent key, causing a KeyError, with automatic pdb debugging turned on and traceback displayed.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-pdb-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="./chapters/images/C29_Figure4.png" title="Using the pdb command within Jupyter Notebook." class="img-fluid figure-img" alt="Python notebook cell where an empty dictionary is accessed with a non-existent key, causing a KeyError, with automatic pdb debugging turned on and traceback displayed.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-pdb-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;25.4: Using the pdb command within Jupyter Notebook.
+Figure&nbsp;26.4: Using the pdb command within Jupyter Notebook.
 </figcaption>
 </figure>
 </div>
 <p>More advanced debugging is accessible in Jupyter Notebook by using one of the kernels that supports the front-end debugger interface, which is documented in the <a href="https://jupyterlab.readthedocs.io/en/stable/user/debugger.html">JupyterLab Debugger online tutorial</a>. Similar to Visual Studio Code and other modern IDEs, breakpoints can be added by hovering over the line number within a code block. Once the program has paused, a user can inspect the values that are contained in variables and view the callstack.</p>
-<p>The front-end debugger is not enabled by default. When Jupyter Notebook is started, if the kernel supports debugging a grey bug icon is shown to the left of the kernel name as illustrated in <a href="#fig-debugger" class="quarto-xref">Figure&nbsp;<span>25.5</span></a>.</p>
+<p>The front-end debugger is not enabled by default. When Jupyter Notebook is started, if the kernel supports debugging a grey bug icon is shown to the left of the kernel name as illustrated in <a href="#fig-debugger" class="quarto-xref">Figure&nbsp;<span>26.5</span></a>.</p>
 <div id="fig-debugger" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Jupyter Notebook header showing the active kernel 'Python 3 (ipykernel)' with a grey bug icon next to it, illustrating that debugging is available for the kernel.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-debugger-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="./chapters/images/C29_Figure5.png" title="A kernel that supports debugging, where debugging is not active." class="img-fluid figure-img" alt="Jupyter Notebook header showing the active kernel 'Python 3 (ipykernel)' with a grey bug icon next to it, illustrating that debugging is available for the kernel.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-debugger-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;25.5: A kernel that supports debugging, where debugging is not active.
+Figure&nbsp;26.5: A kernel that supports debugging, where debugging is not active.
 </figcaption>
 </figure>
 </div>
-<p>Debugging can be activated by clicking on the bug icon, which changes colour when activated. If the kernel is restarted, debugging becomes inactive again. When debugging is active, line numbers appear to the left of each line of Python code. Using the mouse to hover to the left of a line number causes a dark red circle to be displayed. Clicking on this red circle causes a breakpoint to be set for the specific line. When the code segment is run, the execution pauses at the breakpoint. The properties of values in memory can be viewed by enabling the Debugging Panel within the View menu. Paused code and associated Debugging Panel values are shown in <a href="#fig-debug-panel" class="quarto-xref">Figure&nbsp;<span>25.6</span></a>.</p>
+<p>Debugging can be activated by clicking on the bug icon, which changes colour when activated. If the kernel is restarted, debugging becomes inactive again. When debugging is active, line numbers appear to the left of each line of Python code. Using the mouse to hover to the left of a line number causes a dark red circle to be displayed. Clicking on this red circle causes a breakpoint to be set for the specific line. When the code segment is run, the execution pauses at the breakpoint. The properties of values in memory can be viewed by enabling the Debugging Panel within the View menu. Paused code and associated Debugging Panel values are shown in <a href="#fig-debug-panel" class="quarto-xref">Figure&nbsp;<span>26.6</span></a>.</p>
 <div id="fig-debug-panel" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Jupyter Notebook debugging view where code execution is paused inside a for-loop over a list, highlighting the current line and displaying variable values such as the current index and value in the sidebar.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-debug-panel-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="./chapters/images/C29_Figure6.png" title="Paused execution and associated Debugging Panel values." class="img-fluid figure-img" alt="Jupyter Notebook debugging view where code execution is paused inside a for-loop over a list, highlighting the current line and displaying variable values such as the current index and value in the sidebar.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-debug-panel-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;25.6: Paused execution and associated Debugging Panel values.
+Figure&nbsp;26.6: Paused execution and associated Debugging Panel values.
 </figcaption>
 </figure>
 </div>
