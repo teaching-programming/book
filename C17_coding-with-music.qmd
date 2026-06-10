@@ -63,7 +63,12 @@ Programming concepts can be playfully explored in musical contexts. For example,
 
 Sound and music can also be used to present and experience data in different ways. Data sonification has a long history [@worrall_2019], from giving a constant awareness of something otherwise invisible as with Geiger counters or medical monitoring devices, to hearing emergent behaviours in dynamical systems, providing auditory graphs for the visually impaired [@walker_mauney_2010], or creative projects that use the data for musical ends [@bulley_jones_2011; @barrett_mair_2014].
 
+::: {.content-visible unless-format="html"}
+![Two examples of arrays becoming sound and music. On the left, the array is translated into note values. On the right, the array is translated directly to an audio file.](/chapters/images/C17_fig1_arrays_as_sound_and_music.png){#fig-arrays-as-music fig-alt="Left image: a command to create an array of numbers, above a representation of a MIDI score and a traditional music score. Right image: another command to create an array of numbers, above a plot of a single period of a sin wave."}
+:::
+::: {.content-visible when-format="html"}
 ![Two examples of arrays becoming sound and music. On the left, the array is translated into note values. On the right, the array is translated directly to an audio file.](/chapters/images/C17_fig1_arrays_as_sound_and_music.svg){#fig-arrays-as-music fig-alt="Left image: a command to create an array of numbers, above a representation of a MIDI score and a traditional music score. Right image: another command to create an array of numbers, above a plot of a single period of a sin wave."}
+:::
 
 There are obvious parallels here with coding and visual art. Environments such as Processing [@reas_2006] connect programming with image and animation, motivating learning and exploration [@reas_and_fry_2007 p. 1]. As explored in the following section, there is a similarly rich history of music making in programming pedagogy. To mix music, art, computers and coding therefore continues a long and fruitful tradition [@reichardt_1971; @dreher_2014; @wang_17], and can serve as a reminder to both students and educators that coding is fundamentally about making things and is therefore a creative act.
 
