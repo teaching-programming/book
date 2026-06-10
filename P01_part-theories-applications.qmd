@@ -79,7 +79,7 @@ The most important skillset you can learn when coding is not actually the syntax
 This chapter is for you if you are embarking on teaching your first programming course and want to develop the course beyond the syntax you might be teaching. Experienced programmers will also find the chapter interesting as a source for reflection on their own “coding mindset” and how it has developed. 
 
 
-### Modes of coding practice [@TeachProgAcross_C40]
+### It Depends: How to Develop Judgement in Programming [@TeachProgAcross_C40]
 
 Extending the idea of “best practice” in coding, this chapter asks the programmer to question the needs of their context rather than seeing “good” and “bad” coding practices in black and white. The central concept, that there are “forces” of coding, will be useful as a teaching resource to help students write good code and consider why they are coding in the first place.  
 
