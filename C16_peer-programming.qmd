@@ -10,15 +10,12 @@ format:
 bibliography: references.bib
 author:
   - name: Umberto Noè
-    orcid: 0000-0002-4962-5189
     email: Umberto.Noe@ed.ac.uk
     affiliations: School of Philosophy, Psychology and Language Sciences, University of Edinburgh
   - name: Franziska McManus
-    orcid: 0009-0007-7218-8523
     email: z.mcmanus@ed.ac.uk
     affiliations: Edinburgh Medical School, University of Edinburgh
   - name: Eileen Y. Xu
-    orcid: 0009-0003-5044-1437
     email: eileen.xu@ed.ac.uk
     affiliations: Division of Psychiatry, Institute for Neuroscience and Cardiovascular Research, University of Edinburgh
 
