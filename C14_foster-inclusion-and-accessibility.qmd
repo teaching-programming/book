@@ -16,8 +16,8 @@ author:
   - name: Brittany Blankinship
     affiliation:  Edinburgh Medical School, University of Edinburgh
     email: b.blankinship@ed.ac.uk
-  - name: Patricia Loto
-    affiliation: FACENA, Universidad Nacional del Nordeste (UNNE)
+  - name: Patricia A. Loto
+    affiliation: Software Quality Research Group, Universidad Nacional del Nordeste(UNNE)
     email: patricialoto@comunidad.unne.edu.ar
 
 keywords:
@@ -42,8 +42,8 @@ author:
   - name: Brittany Blankinship
     affiliations:  Edinburgh Medical School, University of Edinburgh
     email: b.blankinship@ed.ac.uk
-  - name: Patricia Loto
-    affiliations: FACENA, Universidad Nacional del Nordeste (UNNE)
+  - name: Patricia A. Loto
+    affiliations: Software Quality Research Group, Universidad Nacional del Nordeste(UNNE)
     email: patricialoto@comunidad.unne.edu.ar
 :::
 
