@@ -1,0 +1,1407 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Tom Mudd">
+<meta name="author" content="Yashique Chalil">
+<meta name="author" content="Matthew Hamilton">
+<meta name="author" content="Charlotte Desvages">
+<meta name="author" content="Mike Taverne">
+<meta name="keywords" content="practical, resources, music, audio, beginner">
+
+<title>Practical approaches to using sound and music in programming pedagogy – Teaching Programming across Disciplines</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./C03_online-teaching-reflections.html" rel="next">
+<link href="./C15_programming-without-computers.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-efc217d3be6b0c6b6079591d7e3e0fe0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="_theme/styles.css">
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./C17_coding-with-music.html"><span class="chapter-title">Practical approaches to using sound and music in programming pedagogy</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Teaching Programming across Disciplines</a> 
+        <div class="sidebar-tools-main">
+    <div class="dropdown">
+      <a href="" title="Download" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Download"><i class="bi bi-download"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="./teaching_programming_across_disciplines.pdf">
+              <i class="bi bi-file-pdf pe-1"></i>
+            Download PDF
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="./teaching_programming_across_disciplines.epub">
+              <i class="bi bi-journal pe-1"></i>
+            Download ePub
+            </a>
+          </li>
+      </ul>
+    </div>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Teaching Programming Across Disciplines</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C12_pair-programming-overview.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Where Do I Even Start With Pair Programming in My Classroom? A Conversation With Seasoned Practitioners</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C36_pair-programming-across-disciplines.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Structured Group Work With Assigned Asymmetrical Roles and Switching: Lessons From Pair Programming Across Disciplines</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C41_pair-programming-tutor-reflections.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Pair Programming in Practice: A PhD Tutor’s Reflections</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C09_debugging-beyond-the-debugger.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Brain Book Buddy Boss Break: A Practical Debugging Framework for Learners</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C05_coding-mindset.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">A Guide on Empowering Students to Develop a Coding Mindset</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C08_hype-need-responsible-compute.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Hype and The Need for Responsible Compute</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C10_teaching-with-genai.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">An Optimistic Outlook on Teaching, Learning and Assessment for Coding With the Emergence of Generative AI</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C21_programming-across-disciplines-systems-thinking.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">How Teaching Programming Across Disciplines Can Instil Systems Thinking</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C44_ai-voice-and-style-in-programming-education.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">AI, Voice, and Style in Programming Education</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C11_sequential-vs-simultaneous.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Sequential vs.&nbsp;Simultaneous: Approaches to Learning Programming and Statistics</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C14_foster-inclusion-and-accessibility.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Practices to Foster Inclusion and Accessibility in Programming Teaching</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C04_computer-says-no.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Computer Says No: Reducing Technical Barriers to Help Novice Programmers</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C33_coding-anxiety.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Overcoming Coding Anxiety: Lowering the Stakes and Making It Fun</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C34_three-stars-one-wish.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">3 Stars and 1 Wish: Small and Frequent Student Reflections Promote a Sense of Wonder and a Community of Vulnerability</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C16_peer-programming.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Peer Programming in Action: Pair Programming in Larger Groups</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C31_leveraging-the-heterogeneity.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Leveraging the Heterogeneity: Teaching Computing Skills to a Multidisciplinary Cohort With a Variable Skill Level</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C23_pair-programming-fusion.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Learning Together Across Modes: Online and On-Site Pair Programming in a Fusion Course</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C01_teaching-python.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">A Practical Guide to Teaching Python as a Computational Tool in an Introductory Data Analysis Course</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C29_notebooks-for-novices.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Notebook for Novices? Pros and Cons of Jupyter</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C07_teaching-C-to-novices.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Bridging Languages: Teaching C to Python Novices</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C06_feminists-and-anarchists.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Dungeon Crawlers and Anarchists: Co-Designing Programming Teaching Experiences</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C15_programming-without-computers.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Removing Barriers by Programming Without Computers</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C17_coding-with-music.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Practical approaches to using sound and music in programming pedagogy</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C03_online-teaching-reflections.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Ways to Teach Online: Lessons Learned Through Experience</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C43-data-vis.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Seeing Before Coding, Doodling Before Doing: How Teaching Data Visualisation Transforms the Way Students Think</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./P03_part-assessment-feedback.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Part III — Assessment and Feedback: Principles and Practice</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C38_skills-based-assessment.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Developing a Skills-Based Framework for Assessments in Programming Courses</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C35_action-feedback-plan.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Managing the Rubik’s Cube of Assessment: The Action Feedback Protocol</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C26.1-assessment-case-study.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Assessment and Marking in an Introductory Programming Course for Physics Students</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C02_genai-before-during-after.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Generative AI in Assessments: Before, During, and After</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C20_automatic-marking.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Using Automated Marking in Programming Courses to Enhance Learning</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./P04_part-case-studies.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Part IV — Case Studies</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C39_gentle-introduction-summer-school.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">A Gentle Introduction to Coding: Narratives From a Programming Summer School for Social Sciences and Humanities</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C37_pair-programming-sruc.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Case Study From Scotland’s Rural College: The Wild(Life) Side of Pair Programming</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C22_interdisciplinary-by-design.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Interdisciplinary by Design: The Centre for Data, Culture, &amp; Society Training Programme</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C32_civil-engineering.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Changing Civil Engineering Students’ Mindset Toward Programming</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C24_lost-in-translation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Lost in Translation: Complexities and Good Practices of Translating Coding-Based Teaching Materials Across Multiple Human Languages</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./CAB_Authors.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Authors’ Biographies</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./99-bibliography.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bibliography</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar"><div class="quarto-margin-header"><div class="margin-header-item">
+<details id="accessibility-controls">
+    <summary>Display options</summary>
+  
+    <div class="control-group">
+        <label for="fontSizeSlider">Font size</label>
+        <input type="range" id="fontSizeSlider" min="8" max="32" value="16">
+        <span id="fontSizeValue">16</span>px
+    </div>
+  
+    <div class="control-group">
+        <label for="eyeStrainSlider">Eye strain</label>
+        <input type="range" id="eyeStrainSlider" min="0" max="50" value="0">
+        <span id="eyeStrainValue">0</span>%
+    </div>
+  
+    <div class="control-group">
+        <label for="hueRotateSlider">Hue</label>
+        <input type="range" id="hueRotateSlider" min="0" max="360" value="0">
+        <span id="hueRotateValue">0</span>
+    </div>
+  
+    <div class="control-group">
+        <label for="paddingSlider">Padding</label>
+        <input type="range" id="paddingSlider" min="0" max="12" value="3">
+        <span id="paddingValue">0</span>
+    </div>
+  
+    <div class="control-group">
+        <label for="lineSpacingSlider">Spacing</label>
+        <input type="range" id="lineSpacingSlider" min="80" max="250" value="150">
+        <span id="lineSpacingValue">150</span>%
+    </div>
+  
+    <div class="control-group">
+        <label for="fontFamily">Font</label>
+        <select id="fontFamily">
+            <option value="'Atkinson Hyperlegible', sans-serif">Atkinson Hyperlegible</option>
+            <option value="Arial, Helvetica, sans-serif">Sans-serif</option>
+            <option value="Georgia, 'Bitstream Charter', Times, serif">Serif</option>
+        </select>
+    </div>
+  
+    <div class="control-group">
+        <button id="resetDefaults">Reset to Defaults</button>
+    </div>
+
+</details>
+</div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#sec-why" id="toc-sec-why" class="nav-link" data-scroll-target="#sec-why">Why combine programming with sound and music?</a></li>
+  <li><a href="#sec-literature" id="toc-sec-literature" class="nav-link" data-scroll-target="#sec-literature">Overview of existing work</a></li>
+  <li><a href="#sec-resources" id="toc-sec-resources" class="nav-link" data-scroll-target="#sec-resources">Accompanying resources for educators</a>
+  <ul class="collapse">
+  <li><a href="#creating-a-piano-piece-with-python" id="toc-creating-a-piano-piece-with-python" class="nav-link" data-scroll-target="#creating-a-piano-piece-with-python">Creating a piano piece with Python</a></li>
+  <li><a href="#creating-drum-patterns-in-the-browser-with-strudel" id="toc-creating-drum-patterns-in-the-browser-with-strudel" class="nav-link" data-scroll-target="#creating-drum-patterns-in-the-browser-with-strudel">Creating drum patterns in the browser with Strudel</a></li>
+  <li><a href="#sec-wav_writing" id="toc-sec-wav_writing" class="nav-link" data-scroll-target="#sec-wav_writing">An Educator’s Guide to WAVE Format Files</a></li>
+  <li><a href="#sec-functions" id="toc-sec-functions" class="nav-link" data-scroll-target="#sec-functions">Introducing functions by playing with audio files</a></li>
+  <li><a href="#gestural-instruments-in-the-browser" id="toc-gestural-instruments-in-the-browser" class="nav-link" data-scroll-target="#gestural-instruments-in-the-browser">Gestural instruments in the browser</a></li>
+  <li><a href="#building-a-digital-circuit-to-play-sounds-and-notes-using-logisim-evolution" id="toc-building-a-digital-circuit-to-play-sounds-and-notes-using-logisim-evolution" class="nav-link" data-scroll-target="#building-a-digital-circuit-to-play-sounds-and-notes-using-logisim-evolution">Building a digital circuit to play sounds and notes using Logisim Evolution</a></li>
+  </ul></li>
+  <li><a href="#sec-summary" id="toc-sec-summary" class="nav-link" data-scroll-target="#sec-summary">Summary</a></li>
+  <li><a href="#sec-resourcetable" id="toc-sec-resourcetable" class="nav-link" data-scroll-target="#sec-resourcetable">Appendix: Resource list for educators</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const fontSizeSlider = document.getElementById('fontSizeSlider');
+        const fontSizeValue = document.getElementById('fontSizeValue');
+
+        const hueRotateSlider = document.getElementById('hueRotateSlider');
+        const hueRotateValue = document.getElementById('hueRotateValue');
+
+        const eyeStrainSlider = document.getElementById('eyeStrainSlider');
+        const eyeStrainValue = document.getElementById('eyeStrainValue');
+
+        const paddingSlider = document.getElementById('paddingSlider');
+        const paddingValue = document.getElementById('paddingValue');
+
+        const lineSpacingSlider = document.getElementById('lineSpacingSlider');
+        const lineSpacingValue = document.getElementById('lineSpacingValue');
+
+        const fontFamilySelect = document.getElementById('fontFamily');
+
+        const html = document.documentElement;
+        const resetButton = document.getElementById('resetDefaults');
+
+        // Define default values
+        const defaults = {
+            fontSize: 16,
+            hueRotate: 0,
+            eyeStrain: 0,
+            padding: 0,
+            lineSpacing: 150,
+            fontFamily: "'Atkinson Hyperlegible', Arial, Helvetica, sans-serif"
+        };
+
+        function updateStyles() {
+            html.style.setProperty('--bs-root-font-size', fontSizeSlider.value + 'px');
+            html.style.setProperty('--hue-rotate', hueRotateSlider.value + 'deg');
+            html.style.setProperty('--eye-strain', eyeStrainSlider.value + '%');
+            html.style.setProperty('--padding', paddingSlider.value + 'em');
+            html.style.setProperty('--line-spacing', lineSpacingSlider.value + '%');
+            html.style.setProperty('--bs-body-font-family', fontFamilySelect.value);
+
+            fontSizeValue.textContent = fontSizeSlider.value;
+            hueRotateValue.textContent = hueRotateSlider.value;
+            eyeStrainValue.textContent = eyeStrainSlider.value;
+            paddingValue.textContent = paddingSlider.value;
+            lineSpacingValue.textContent = lineSpacingSlider.value;
+
+            saveSettings();
+        }
+
+        // Function to save settings to localStorage
+        function saveSettings() {
+            const settings = {
+                fontSize: fontSizeSlider.value,
+                hueRotate: hueRotateSlider.value,
+                eyeStrain: eyeStrainSlider.value,
+                padding: paddingSlider.value,
+                lineSpacing: lineSpacingSlider.value,
+                fontFamily: fontFamilySelect.value
+            };
+            localStorage.setItem('accessibilitySettings', JSON.stringify(settings));
+        }
+
+        // Function to load settings from localStorage
+        function loadSettings() {
+            const savedSettings = localStorage.getItem('accessibilitySettings');
+            if (savedSettings) {
+                const settings = JSON.parse(savedSettings);
+                fontSizeSlider.value = settings.fontSize;
+                hueRotateSlider.value = settings.hueRotate;
+                eyeStrainSlider.value = settings.eyeStrain;
+                paddingSlider.value = settings.padding;
+                lineSpacingSlider.value = settings.lineSpacing;
+                fontFamilySelect.value = settings.fontFamily;
+                updateStyles();
+            }
+        }
+
+        function resetToDefaults() {
+            fontSizeSlider.value = defaults.fontSize;
+            hueRotateSlider.value = defaults.hueRotate;
+            eyeStrainSlider.value = defaults.eyeStrain;
+            paddingSlider.value = defaults.padding;
+            lineSpacingSlider.value = defaults.lineSpacing;
+            fontFamilySelect.value = defaults.fontFamily;
+            updateStyles();
+            localStorage.removeItem('accessibilitySettings');
+        }
+
+        fontSizeSlider.oninput = updateStyles;
+        hueRotateSlider.oninput = updateStyles;
+        eyeStrainSlider.oninput = updateStyles;
+        paddingSlider.oninput = updateStyles;
+        lineSpacingSlider.oninput = updateStyles;
+        fontFamilySelect.onchange = updateStyles;
+        resetButton.onclick = resetToDefaults;
+
+        loadSettings();
+
+    });
+</script>
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-title">Practical approaches to using sound and music in programming pedagogy</span></h1>
+</div>
+
+
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Authors</div>
+  <div class="quarto-title-meta-heading">Affiliations</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Tom Mudd <a href="mailto:tom.mudd@ed.ac.uk" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Reid School of Music, Edinburgh College of Art, University of Edinburgh
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Yashique Chalil <a href="mailto:ychalil@ed.ac.uk" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Reid School of Music, Edinburgh College of Art, University of Edinburgh
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Matthew Hamilton <a href="mailto:s0674653@ed.ac.uk" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Reid School of Music, Edinburgh College of Art, University of Edinburgh
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Charlotte Desvages <a href="mailto:charlotte.desvages@ed.ac.uk" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            School of Mathematics and Maxwell Institute for the Mathematical Sciences, University of Edinburgh
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Mike Taverne <a href="mailto:mike.taverne@northumbria.ac.uk" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            School of Engineering, Physics and Mathematics, Northumbria University
+          </p>
+      </div>
+  </div>
+
+<div class="quarto-title-meta">
+
+      
+  
+    
+  </div>
+  
+
+<div>
+  <div class="keywords">
+    <div class="block-title">Keywords</div>
+    <p>practical, resources, music, audio, beginner</p>
+  </div>
+</div>
+
+</header>
+
+
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>This chapter is designed to serve as a brief tour of connections between sound, music, programming and pedagogy. In particular, it is aimed at educators who want to explore sound and music in their own programming pedagogy. The chapter presents motivations for connecting these domains, introduces prior work in this area, and presents a range of <span class="citation" data-cites="matthew_hamilton_2026">(<a href="#ref-matthew_hamilton_2026" role="doc-biblioref"><span class="nocase">Hamilton et al.</span> 2026</a>)</span> that can be taken up or adapted to bring sound and music into coding education.</p>
+<p>Making code that engages with sound and music can be fun, even with only a very basic understanding of programming concepts, and regardless of any prior music education. There are many ways in which sound and music may connect with programming. For example:</p>
+<ul>
+<li><strong>composing with code</strong>: using code to write pieces of music,</li>
+<li><strong>performing with code</strong>: writing code in a performance to make music,</li>
+<li><strong>creating instruments</strong>: building software tools for personal music making or for others to use,</li>
+<li><strong>understanding sound</strong>: coding to analyse and explore representations of sound and/or music,</li>
+<li><strong>data sonification</strong>: representing existing data as sound or music, either in real-time or with historical data,</li>
+<li><strong>coding responsive sound and music for games</strong> or other interactive programs.</li>
+</ul>
+<p>We will first explore motivations for connecting music with programming, followed by a brief overview of the rich existing work in this domain. The set of practical accompanying resources that can serve as starting points into different kinds of music/coding projects are then introduced. The resources themselves are accessible <a href="https://github.com/mhamilt/teaching-programming-music-with-code/">here</a>.</p>
+</section>
+<section id="sec-why" class="level2">
+<h2 class="anchored" data-anchor-id="sec-why">Why combine programming with sound and music?</h2>
+<p>Music and programming have a rich intertwined history. Simple but effective connections can be found between programming concepts — such as iteration, abstraction, conditionals, loops — and musical concepts such as rhythm, timing, harmony, pattern and so on. Writing a program that generates sound provides an immediate, engaging way to manifest abstract processes. In a pedagogical sense, the sound output is a form of feedback. Programs don’t have to be complicated or sophisticated in terms of the coding to be musically satisfying. Students can create sound and music that they can share with friends and relatives, who may not know the first thing about programming but can nonetheless engage with the creative outcomes.</p>
+<p>Programming concepts can be playfully explored in musical contexts. For example, an integer array can be rendered as a piano melody, a drum rhythm, or directly as a sound file (see <a href="#fig-arrays-as-music" class="quarto-xref">Figure&nbsp;<span>24.1</span></a>). This gives an immediate meaning to the output data, motivating students to care about the specific values in the array, the length of the array, the range of data in the array, different ways of reading and writing values to and from the array and so on. Operations on that array take on musical meanings: ordering an might provide a scale; reversing an array reverses musical material; subdividing an array isolates a particular phrase. Meaningful data that students care about can motivate students to find things out for themselves, and provides a context for the kind of creative explorations that are often lacking on introductory programming courses <span class="citation" data-cites="sharmin_creativity_2021">(<a href="#ref-sharmin_creativity_2021" role="doc-biblioref">Sharmin 2021</a>)</span>.</p>
+<p>Sound and music can also be used to present and experience data in different ways. Data sonification has a long history <span class="citation" data-cites="worrall_2019">(<a href="#ref-worrall_2019" role="doc-biblioref">Worrall 2019</a>)</span>, from giving a constant awareness of something otherwise invisible as with Geiger counters or medical monitoring devices, to hearing emergent behaviours in dynamical systems, providing auditory graphs for the visually impaired <span class="citation" data-cites="walker_mauney_2010">(<a href="#ref-walker_mauney_2010" role="doc-biblioref">Walker and Mauney 2010</a>)</span>, or creative projects that use the data for musical ends <span class="citation" data-cites="bulley_jones_2011 barrett_mair_2014">(<a href="#ref-bulley_jones_2011" role="doc-biblioref">Bulley and Jones 2011</a>; <a href="#ref-barrett_mair_2014" role="doc-biblioref">Barrett and Mair 2014</a>)</span>.</p>
+<div id="fig-arrays-as-music" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Left image: a command to create an array of numbers, above a representation of a MIDI score and a traditional music score. Right image: another command to create an array of numbers, above a plot of a single period of a sin wave.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-arrays-as-music-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./chapters/images/C17_fig1_arrays_as_sound_and_music.svg" class="img-fluid figure-img" alt="Left image: a command to create an array of numbers, above a representation of a MIDI score and a traditional music score. Right image: another command to create an array of numbers, above a plot of a single period of a sin wave.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-arrays-as-music-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;24.1: Two examples of arrays becoming sound and music. On the left, the array is translated into note values. On the right, the array is translated directly to an audio file.
+</figcaption>
+</figure>
+</div>
+<p>There are obvious parallels here with coding and visual art. Environments such as Processing <span class="citation" data-cites="reas_2006">(<a href="#ref-reas_2006" role="doc-biblioref">Reas and Fry 2006</a>)</span> connect programming with image and animation, motivating learning and exploration <span class="citation" data-cites="reas_and_fry_2007">(<a href="#ref-reas_and_fry_2007" role="doc-biblioref">Reas and Fry 2007, 1</a>)</span>. As explored in the following section, there is a similarly rich history of music making in programming pedagogy. To mix music, art, computers and coding therefore continues a long and fruitful tradition <span class="citation" data-cites="reichardt_1971 dreher_2014 wang_17">(<a href="#ref-reichardt_1971" role="doc-biblioref">Reichardt 1971</a>; <a href="#ref-dreher_2014" role="doc-biblioref">Dreher 2014</a>; <a href="#ref-wang_17" role="doc-biblioref">Wang 2017</a>)</span>, and can serve as a reminder to both students and educators that coding is fundamentally about making things and is therefore a creative act.</p>
+</section>
+<section id="sec-literature" class="level2">
+<h2 class="anchored" data-anchor-id="sec-literature">Overview of existing work</h2>
+<p>Music and programming have been connected in a wide variety of ways, sometimes through the addition of libraries for integrating musical inputs and outputs with existing languages, and sometimes through the development of specifically designed languages or environments. As this is a very short chapter, it only scratches the surface of many of the interesting work done in this domain, and the focus is on music/code projects with explicit pedagogical dimensions.</p>
+<p>Most mainstream programming languages are able to work with sound and music as outputs. This could be achieved by writing data to a file, e.g.&nbsp;an audio file (see <a href="#sec-wav_writing" class="quarto-xref"><span>An Educator’s Guide to WAVE Format Files</span></a> below) or a MIDI file (a common musical data format that can be used to synthesise sound). The program could also transmit real-time messages to an audio engine that runs separately, e.g.&nbsp;a standalone synthesiser or sampler<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>, a digital audio workstation, or frameworks such as <a href="https://github.com/musikinformatik/SuperDirt">SuperDirt</a>. Most mainstream programming languages will have libraries available for these purposes, making it relatively easy to adapt any simple programming exercise into a sonic/musical exercise.</p>
+<p>The <a href="https://scratch.mit.edu/educators/">Scratch programming language</a> is a well-established starting point for young people to engage with coding. While sound and music are not usually the primary focus for students, there is still considerable scope for creativity and experimentation. Brown and Ruthman present a useful range of project types in their <em>Scratch Music Projects</em> book <span class="citation" data-cites="brown_20">(<a href="#ref-brown_20" role="doc-biblioref">Brown and Ruthman 2020</a>)</span>, from simple theremin-like interactive instruments, through playing simple riffs, up to thinking about loops, musical structures, generative music, and live coding performance. As Scratch is used more generally for creating games, stories or animations, students can be motivated to explore sound and music as one component in wider creative projects.</p>
+<p><a href="https://sonic-pi.net">Sonic Pi</a> is a popular example of a language specifically designed for music. It is a simple but flexible environment that aims to support school-age students to learn to code by making music <span class="citation" data-cites="aaron_sonic_2016">(<a href="#ref-aaron_sonic_2016" role="doc-biblioref">Aaron 2016</a>)</span>. As with Scratch, the focus on play and having fun with Sonic Pi can foster a more positive attitude towards programming <span class="citation" data-cites="petri_sonicpi_2022">(<a href="#ref-petri_sonicpi_2022" role="doc-biblioref">Petrie 2022</a>)</span>, and can provide a starting point for moving from simple programming concepts to more involved topics such as concurrency <span class="citation" data-cites="traversaro_hearplay_2024">(<a href="#ref-traversaro_hearplay_2024" role="doc-biblioref">Traversaro et al. 2024</a>)</span>. Sound-making programs can start off very simple with basic commands such as <code>play 60</code>, but can be built into entire pieces or performances <a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>.</p>
+<p>Sonic Pi is rooted in practices of live coding for music, a substantial community that serves as an access point to programming for many musicians, as well as an access point to music for some programmers. The movement has engaged closely with programming pedagogy from different perspectives; Blackwell et al <span class="citation" data-cites="blackwell_livecoding_2022">(<a href="#ref-blackwell_livecoding_2022" role="doc-biblioref">Blackwell et al. 2022</a>)</span> provide a useful overview. The proceedings of the <a href="https://iclc.toplap.org/">International Conference on Live Coding</a> also present a broader repository of topics, including live coding music in educational contexts <span class="citation" data-cites="corvi_2023 jara_lopez_2025">(<a href="#ref-corvi_2023" role="doc-biblioref">Corvi et al. 2023</a>; <a href="#ref-jara_lopez_2025" role="doc-biblioref">Jara López 2025</a>)</span>. Live musical coding is also notable as a community that has attempted to push back against coding as a male-dominated space <span class="citation" data-cites="blackwell_livecoding_2022">(<a href="#ref-blackwell_livecoding_2022" role="doc-biblioref">Blackwell et al. 2022</a>)</span>, with all-women and non-binary workshops being a regular occurrence. Armitage <span class="citation" data-cites="armitage_spaces_2018">(<a href="#ref-armitage_spaces_2018" role="doc-biblioref">2018</a>)</span> points to the domain as being a “a space in which to fail constructively”.</p>
+<p>The <a href="https://earsketch.gatech.edu/">EarSketch</a> <span class="citation" data-cites="engelman_earsketch_2017">(<a href="#ref-engelman_earsketch_2017" role="doc-biblioref">Engelman et al. 2017</a>)</span> and <a href="https://tunepad.com/">TunePad</a> projects are similar to Sonic Pi in their pedagogical aims, in that they seek to broaden participation in computing by demystifying coding and relating it to a domain of interest to students. The projects embed coding elements alongside more conventional music-making tools such as instruments, tracks, a timeline, a mixer, etc. This provides a familiar workspace for those with musical backgrounds and means that the code doesn’t need to cover all aspects of the music making, but can be written in snippets with very particular goals, such as making a drum loop, or a bass riff. Both projects run in the browser and use Python (although EarSketch has a JavaScript option). They are designed specifically with sharing in mind, both code sharing and collaborative editing, further motivating students to engage with the coding <span class="citation" data-cites="freeman_earsketch_2019">(<a href="#ref-freeman_earsketch_2019" role="doc-biblioref">Freeman et al. 2019</a>)</span>. Petrie <span class="citation" data-cites="petrie_ct_2024">(<a href="#ref-petrie_ct_2024" role="doc-biblioref">2024</a>)</span> studied the potential for both projects to support computational thinking in 11-12 year old students who had no prior school experience of either programming or music making. Petrie notes that students benefit from the fact that the kinds of musical tasks supported by these projects are naturally incremental and iterative.</p>
+<p>A key concern across all the above projects is that there should be room for musical variety and expression; although they may present simple entry points to engaging with programming, it is possible to create rich and interesting creative work that students will be proud of.</p>
+</section>
+<section id="sec-resources" class="level2">
+<h2 class="anchored" data-anchor-id="sec-resources">Accompanying resources for educators</h2>
+<div id="fig-resources" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-resources-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<pre><code>.
+├── python-functions-fade
+│   ├── functions.ipynb
+│   ├── guitar.wav
+│   ├── synth.wav
+│   ├── piano.wav
+│   └── wav_library.py
+├── gestural-instruments
+│  ├── max/Handshake_rnbo_patch1.maxpat
+│  └── web
+│     ├── export/
+│     ├── img/
+│     ├── index.html
+│     ├── js
+│     │  ├── app.js
+│     │  ├── draw.js
+│     │  └── guardrails.js
+│     ├── ssl/
+│     └── style/
+├── guide-to-wave-format
+│  ├── functions.ipynb
+│  ├── ipynb_audio_interactivity.ipynb
+│  ├── iteration.ipynb
+│  ├── wav_files.ipynb
+│  ├── wav_library
+│  │  └──  c/   c++/   java/   python/   rust/
+│  └── wav_library.py
+├── python-piano
+│  ├── pianopiece_assignment.ipynb
+│  └── pianopiece_learning.ipynb
+└── strudel-drum-patterns/index.html</code></pre>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-resources-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;24.2: Resources available with this chapter.
+</figcaption>
+</figure>
+</div>
+<p>Five example resources accompany this chapter, reflecting some of the different approaches to combining aspects of sound, music and programming in the different authors’ existing pedagogical work. Each example resource comes with a <code>readme</code> that gives a sense of how the resource might be used, who might find it valuable, what prior knowledge the students may need, and what technologies will be needed. Each resource is described briefly below.</p>
+<section id="creating-a-piano-piece-with-python" class="level3">
+<h3 class="anchored" data-anchor-id="creating-a-piano-piece-with-python">Creating a piano piece with Python</h3>
+<p>This resource is aimed at students who have started on Python quite recently. It attempts to make musical output as simple and accessible as possible. Students are shown how to generate piano pieces as MIDI data which can be played back directly within a Python notebook. Students can develop their understanding of fundamental programming concepts such as lists, loops and conditionals. The ability to directly hear the results is intended to motivate students to think about how they can develop the code by themselves to try to explore how they can start to tailor the musical output towards something they find sonically interesting or satisfying.</p>
+<p>The resource is archived as part of the accompanying resources <span class="citation" data-cites="matthew_hamilton_2026">(<a href="#ref-matthew_hamilton_2026" role="doc-biblioref"><span class="nocase">Hamilton et al.</span> 2026</a>)</span>, and at the time of writing can be accessed <a href="https://github.com/mhamilt/teaching-programming-music-with-code/tree/main/resources/python-piano">here</a>.</p>
+<div id="fig-python-piano" class="quarto-layout-panel">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-python-piano-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-layout-row quarto-layout-valign-bottom">
+<div class="quarto-layout-cell" style="flex-basis: 45.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./chapters/images/C17_fig2a_python_piano.png" class="img-fluid figure-img" alt="A section of commented Python code which generates a piano chord."></p>
+<figcaption>Code</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 55.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./chapters/images/C17_fig2b_python_piano.png" class="img-fluid figure-img" alt="A screenshot of the generated piano chord displayed in MIDI format."></p>
+<figcaption>MIDI output</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-python-piano-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;24.3: A subsection of the Python piano learning resource as a Python notebook, with a visualisation of the MIDI output on the side.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="creating-drum-patterns-in-the-browser-with-strudel" class="level3">
+<h3 class="anchored" data-anchor-id="creating-drum-patterns-in-the-browser-with-strudel">Creating drum patterns in the browser with Strudel</h3>
+<p>This resource is both similar and different to the piano example. Students engage with <a href="https://strudel.cc/workshop/getting-started/#what-is-strudel">Strudel</a>, a browser-based JavaScript port of the popular <a href="https://tidalcycles.org/">TidalCycles</a> live coding language. The language has been particularly popular for exploring algorithmic approaches to beat making<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>. The editor provides useful visual feedback to show how the code relates to the unfolding beats. Both TidalCycles and Strudel have been popular and accessible ways to engage with code for the first time. They also present a useful introduction to Haskell and functional programming for others. Substantial communities have been built around these technologies <span class="citation" data-cites="blackwell_livecoding_2022">(<a href="#ref-blackwell_livecoding_2022" role="doc-biblioref">Blackwell et al. 2022</a>)</span>, offering routes for those new to either coding or music making to quickly connect to others working in this way.</p>
+<div id="fig-strudel-drums" class="quarto-float quarto-figure quarto-figure-center anchored" alt="A section of an explanatory document containing brief instructions interspersed with Strudel code samples.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-strudel-drums-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./chapters/images/C17_fig3_strudel_drums.png" class="img-fluid figure-img" style="width:70.0%" alt="A section of an explanatory document containing brief instructions interspersed with Strudel code samples.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-strudel-drums-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;24.4: Creating beats with Strudel in a browser. The darker boxes can be run in real-time to listen to the results. As the patterns play, the state is reflected visually with the white highlighting that can be seen in the code in section 3.2 of the image.
+</figcaption>
+</figure>
+</div>
+<p>The resource is archived as part of the accompanying resources <span class="citation" data-cites="matthew_hamilton_2026">(<a href="#ref-matthew_hamilton_2026" role="doc-biblioref"><span class="nocase">Hamilton et al.</span> 2026</a>)</span>, and at the time of writing can be accessed <a href="https://github.com/mhamilt/teaching-programming-music-with-code/tree/main/resources/strudel-drum-patterns">here</a>.</p>
+</section>
+<section id="sec-wav_writing" class="level3">
+<h3 class="anchored" data-anchor-id="sec-wav_writing">An Educator’s Guide to WAVE Format Files</h3>
+<p>Resources are contained within the <code>guide-to-wave-format/</code> directory (<a href="#fig-resources" class="quarto-xref">Figure&nbsp;<span>24.2</span></a>). The <code>guide-to-wave-format/wav_files.ipynb</code> notebook addresses educators directly, laying down the ground work needed to make the portable and technologically accessible audio programming lessons. No prior knowledge is assumed; the resource is intended to guide the reader through the process of WAVE file creation, the ultimate goal being a simple library ripe for customisation and intimately understood for easy dissemination to students.</p>
+<p>All data can be represented as sound, and the WAVE file is one of the simplest means of data sonification. Most modern operating systems (and many older ones) will support WAVE file playback through a media player, browser, or command line tool. The resource emphasises the use of standard libraries, both to improve portability and to allow students to get started quickly, instead of burdening them with language-specific ancillary concepts that could potentially be a demotivating obstacle to new programmers.</p>
+<p>The intention is not to be prescriptive, but rather show how malleable the WAVE format can be for teaching music and programming.</p>
+<p>The central lesson is provided in an IPython (Jupyter) notebook, but the resource in <code>guide-to-wave-format/wav_library</code> provides companion code in C, C++, Java and Rust to reinforce the basic elements needed to solve the problem. The resource is archived as part of the accompanying resources <span class="citation" data-cites="matthew_hamilton_2026">(<a href="#ref-matthew_hamilton_2026" role="doc-biblioref"><span class="nocase">Hamilton et al.</span> 2026</a>)</span>, and at the time of writing can be accessed <a href="https://github.com/mhamilt/teaching-programming-music-with-code/tree/main/resources/guide-to-wave-format">here</a>.</p>
+</section>
+<section id="sec-functions" class="level3">
+<h3 class="anchored" data-anchor-id="sec-functions">Introducing functions by playing with audio files</h3>
+<p>This resource is aimed at novice Python programmers, with some familiarity with variables, lists, and loops. It motivates the use of user-defined functions and introduces their syntax, using fade-ins and fade-outs on audio files as examples. Throughout the activity, students are encouraged to iterate on their function structure and choice of input arguments and return values, to help them take ownership of their program design, to better understand how and why these choices are made, and to internalise that one-shot perfect code structure isn’t necessarily achievable (or even a goal that one should aim for).</p>
+<p>Working with audio files is an intuitive way to understand how one chooses input arguments in particular, as the choice naturally arises from “what do I want to be able to control or to change easily”, as opposed to “what do I want to hide away and trust that it will always reliably do the same thing” (the function body). The effect of the students’ functions is also directly observable (audible, in fact!) by listening to the faded-in or faded-out audio.</p>
+<div id="fig-function-inputs" class="quarto-float quarto-figure quarto-figure-center anchored" alt="A written tutorial section explaining the choice of input arguments for a Python function.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-function-inputs-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./chapters/images/C17_fig4_function_section.png" class="img-fluid figure-img" style="width:70.0%" alt="A written tutorial section explaining the choice of input arguments for a Python function.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-function-inputs-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;24.5: A short section of the activity notebook, introducing input arguments as a first design choice when writing functions.
+</figcaption>
+</figure>
+</div>
+<p>The exercises rely on using the Python module <code>wav_library.py</code> described in <a href="#sec-wav_writing" class="quarto-xref"><span>An Educator’s Guide to WAVE Format Files</span></a> as a tool to read WAVE audio files, with no requirement for students to fully understand it or to have done the activity described there previously. The resource is archived as part of the accompanying resources <span class="citation" data-cites="matthew_hamilton_2026">(<a href="#ref-matthew_hamilton_2026" role="doc-biblioref"><span class="nocase">Hamilton et al.</span> 2026</a>)</span>, and at the time of writing can be accessed <a href="https://github.com/mhamilt/teaching-programming-music-with-code/tree/main/resources/python-functions-fade">here</a>.</p>
+</section>
+<section id="gestural-instruments-in-the-browser" class="level3">
+<h3 class="anchored" data-anchor-id="gestural-instruments-in-the-browser">Gestural instruments in the browser</h3>
+<p>This resource demonstrates the creation of a web-based musical instrument that can be controlled via the sensors on a smart phone. This kind of activity would require students to have some existing experience of the coding language, so would fit well as an exercise or assignment as part of a wider course on music, art, design or programming. The coding is primarily done in <a href="https://cycling74.com/products/max">Max</a>, a proprietary visual programming environment aimed at musicians, as shown in <a href="#fig-rnbo" class="quarto-xref">Figure&nbsp;<span>24.6</span></a> (left). <a href="https://cycling74.com/products/rnbo">RNBO</a> — an extension of Max — allows the visual code to be exported as JavaScript, and will auto-generate a simple HTML page that embeds the project.</p>
+<div id="fig-rnbo" class="quarto-layout-panel">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-rnbo-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-layout-row quarto-layout-valign-bottom">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./chapters/images/C17_fig5a_max.png" class="img-fluid figure-img" alt="A screenshot of a Max patch with multiple linked modules."></p>
+<figcaption>Max</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./chapters/images/C17_fig5b_web_seq_demo.png" class="img-fluid figure-img" alt="A screenshot of a web app with sliders and controls, shown on a mobile device."></p>
+<figcaption>Exported web app</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-rnbo-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;24.6: Max (left), a visual programming language is used to create the instrument. RNBO, an extension of MAX can be used to export patches to external targets such as C++, VSTs (Virtual Studio Technology), JavaScript or Raspberry Pi. The exported web app (right) can be accessed on a mobile web browser. The program will then map the relevant motion sensors to the assigned parameters.
+</figcaption>
+</figure>
+</div>
+<p>One of the potential benefits of working in this way is that although students start from a visual programming environment, their software can be made available to anyone with a browser (see <a href="#fig-rnbo" class="quarto-xref">Figure&nbsp;<span>24.6</span></a> (right)), and they begin to get an exposure to JavaScript and web development. As this resource shows, small tweaks to this JavaScript can be added to refine the user interface, and add extra functionality such as smart phone sensor control.</p>
+<p>The example provided here is a responsive synthesiser hosted on the web that, when accessed from a smartphone, utilises the motion sensors to control specific parameters of the synthesiser. Once the code has been exported, it can be further developed through the generated JavaScript/HTML. In this example, a simple sequencer for playing notes and visual feedback is added using the <a href="https://p5js.org/">p5.js</a> library. Motion data from a smartphone’s orientation sensors is mapped in real time so that gestures like tilting or twisting can be used to control the sound. The resource is provided as a worked example that can be adapted for musical instruments, live installations, audience-participation performances, or experimental audio-visual tools. The resource is archived as part of the accompanying resources <span class="citation" data-cites="matthew_hamilton_2026">(<a href="#ref-matthew_hamilton_2026" role="doc-biblioref"><span class="nocase">Hamilton et al.</span> 2026</a>)</span>, and at the time of writing can be accessed <a href="https://github.com/mhamilt/teaching-programming-music-with-code/tree/main/resources/gestural-instruments">here</a>.</p>
+</section>
+<section id="building-a-digital-circuit-to-play-sounds-and-notes-using-logisim-evolution" class="level3">
+<h3 class="anchored" data-anchor-id="building-a-digital-circuit-to-play-sounds-and-notes-using-logisim-evolution">Building a digital circuit to play sounds and notes using Logisim Evolution</h3>
+<p>This resource explores sound and music making in the context of logic circuits. It is aimed at students working with the basics of digital logic circuit simulator <a href="https://github.com/logisim-evolution/logisim-evolution">Logisim Evolution</a>. It demonstrates how to use a buzzer to play sounds and notes. The ability to generate sounds is intended to make learning about digital logic more fun and engaging.</p>
+<p>Only minimal knowledge is required to test run the project and it can be used as part of a tutorial on digital logic and Logisim Evolution. Alternatively, it could be used as an assignment. It can also be used in music teaching to explain how notes relate to frequencies.</p>
+<p>Three main example circuits are provided: a minimal example showing how to use the buzzer; a slightly more advanced example, introducing a bit extender and an adder; and a circuit playing the C major scale using a counter and a multiplexer (<a href="#fig-logisim-scale" class="quarto-xref">Figure&nbsp;<span>24.7</span></a>).</p>
+<div id="fig-logisim-scale" class="quarto-float quarto-figure quarto-figure-center anchored" alt="A screenshot of the Logisim Evolution software, showing the digital circuit used to play the C major scale.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-logisim-scale-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./chapters/images/C17_fig6_scale_example.png" class="img-fluid figure-img" style="width:70.0%" alt="A screenshot of the Logisim Evolution software, showing the digital circuit used to play the C major scale.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-logisim-scale-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;24.7: A digital circuit in Logisim Evolution, used to play the C major scale. The notes are encoded as hexadecimal frequency values and provided as input to a multiplexer. A counter (created as a sub-circuit) runs continuously and is used to select the multiplexer inputs (i.e.&nbsp;the note frequencies) in ascending and descending sequence and pass them on to the buzzer to be played.
+</figcaption>
+</figure>
+</div>
+<p>Motivated students/learners can then potentially go further by creating a complete digital piano keyboard or synthesizer, or play preset tunes from a digital memory. Such circuits could then potentially be implemented in real hardware later on.</p>
+<p>The resource is archived as part of the accompanying resources <span class="citation" data-cites="matthew_hamilton_2026">(<a href="#ref-matthew_hamilton_2026" role="doc-biblioref"><span class="nocase">Hamilton et al.</span> 2026</a>)</span>, and at the time of writing can be accessed <a href="https://github.com/mhamilt/teaching-programming-music-with-code/tree/main/resources/logisim-sound-examples">here</a>.</p>
+</section>
+</section>
+<section id="sec-summary" class="level2">
+<h2 class="anchored" data-anchor-id="sec-summary">Summary</h2>
+<p>This chapter has touched briefly on some of the many connections between sound, music, and programming that exist, and how these can be and have been productively brought to bear on programming pedagogy. We close with Rebecca Fiebrink’s advice to musical coders <span class="citation" data-cites="brown_20">(<a href="#ref-brown_20" role="doc-biblioref">Brown and Ruthman 2020, 145</a>)</span>, that captures some of the excitement of bringing these domains together:</p>
+<blockquote class="blockquote">
+<p>Have you figured out how to recreate your favorite pop song with code? Great! Now try composing a new song that’s all your own. Or see if you can create new types of music that are easier to make with code than without it — or even types of music that are impossible to create without a computer! What do you come up with? Can you make new sounds that nobody in the world has ever heard before? Can you make musical “instruments” that you can interact with to perform music that you could never make with a piano or a violin? What else could you create, that nobody before you has ever made?</p>
+</blockquote>
+</section>
+<section id="sec-resourcetable" class="level2 unnumbered appendix">
+<h2 class="unnumbered anchored" data-anchor-id="sec-resourcetable">Appendix: Resource list for educators</h2>
+<div id="tbl-resource-list" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-resource-list-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;24.1: An non-exhaustive list of software and software libraries for exploring music and sound in coding contexts.
+</figcaption>
+<div aria-describedby="tbl-resource-list-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Name</strong></td>
+<td style="text-align: left;"><strong>Type</strong></td>
+<td style="text-align: left;"><strong>URL</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">EarSketch (Python or Javascript)</td>
+<td style="text-align: left;">Browser IDE</td>
+<td style="text-align: left;"><a href="https://earsketch.gatech.edu" class="uri">https://earsketch.gatech.edu</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">gm (R)</td>
+<td style="text-align: left;">Library</td>
+<td style="text-align: left;"><a href="https://flujoo.github.io/gm" class="uri">https://flujoo.github.io/gm</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Mido (Python)</td>
+<td style="text-align: left;">Library</td>
+<td style="text-align: left;"><a href="https://mido.readthedocs.io" class="uri">https://mido.readthedocs.io</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Max</td>
+<td style="text-align: left;">Visual coding</td>
+<td style="text-align: left;"><a href="https://cycling74.com" class="uri">https://cycling74.com</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">PureData</td>
+<td style="text-align: left;">Visual coding</td>
+<td style="text-align: left;"><a href="https://puredata.info" class="uri">https://puredata.info</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Scratch</td>
+<td style="text-align: left;">Browser IDE, visual coding</td>
+<td style="text-align: left;"><a href="https://scratch.mit.edu" class="uri">https://scratch.mit.edu</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Sonic Pi (Ruby)</td>
+<td style="text-align: left;">Live coding environment</td>
+<td style="text-align: left;"><a href="https://sonic-pi.net" class="uri">https://sonic-pi.net</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Strudel</td>
+<td style="text-align: left;">Browser IDE</td>
+<td style="text-align: left;"><a href="https://strudel.cc" class="uri">https://strudel.cc</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SuperCollider</td>
+<td style="text-align: left;">Programming language</td>
+<td style="text-align: left;"><a href="https://supercollider.github.io" class="uri">https://supercollider.github.io</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Tau5</td>
+<td style="text-align: left;">Browser IDE</td>
+<td style="text-align: left;"><a href="https://tau5.live" class="uri">https://tau5.live</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">TidalCycles</td>
+<td style="text-align: left;">Live coding environment</td>
+<td style="text-align: left;"><a href="https://tidalcycles.org" class="uri">https://tidalcycles.org</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">TunePad (Python)</td>
+<td style="text-align: left;">Browser IDE</td>
+<td style="text-align: left;"><a href="https://tunepad.com" class="uri">https://tunepad.com</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</section>
+<section id="references" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="references">References</h2>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-aaron_sonic_2016" class="csl-entry" role="listitem">
+Aaron, Sam. 2016. <span>“Sonic Pi – Performance in Education, Technology and Art.”</span> <em>International Journal of Performance Arts and Digital Media</em> 12 (2): 171–78. <a href="https://doi.org/10.1080/14794713.2016.1227593">https://doi.org/10.1080/14794713.2016.1227593</a>.
+</div>
+<div id="ref-armitage_spaces_2018" class="csl-entry" role="listitem">
+Armitage, Joanne Louise. 2018. <span>“Spaces to Fail in: Negotiating Gender, Community and Technology in Algorave.”</span> <em>Dancecult: Journal of Electronic Dance Music Culture</em> 10 (1).
+</div>
+<div id="ref-barrett_mair_2014" class="csl-entry" role="listitem">
+Barrett, Natasha, and Karen Mair. 2014. <span>“Aftershock: A Science–Art Collaboration Through Sonification.”</span> <em>Organised Sound</em> 19 (1): 4–16. <a href="https://doi.org/10.1017/S1355771813000368">https://doi.org/10.1017/S1355771813000368</a>.
+</div>
+<div id="ref-blackwell_livecoding_2022" class="csl-entry" role="listitem">
+Blackwell, Alan F., Emma Cocker, Geoff Cox, Alex McLean, and Thor Magnusson. 2022. <em>Live <span>Coding</span>: <span>A User</span>’s <span>Manual</span></em>. MIT Press.
+</div>
+<div id="ref-brown_20" class="csl-entry" role="listitem">
+Brown, Andrew R, and Alex S Ruthman, eds. 2020. <em>Scratch Music Projects</em>. Oxford University Press.
+</div>
+<div id="ref-bulley_jones_2011" class="csl-entry" role="listitem">
+Bulley, James, and Daniel Jones. 2011. <span>“Variable 4: A Dynamical Composition for Weather Systems.”</span> <em>Proceedings of International Computer Music Conference,(ICMC 2011)</em>.
+</div>
+<div id="ref-corvi_2023" class="csl-entry" role="listitem">
+Corvi, Francesco, Giovanni Mori, and Giovanni Nulli. 2023. <span>“Live Coding and Education. A Practical Experience.”</span> <em>Proceedings of the 7th International Conference on Live Coding (ICLC) 2023, Utrecht</em>. <a href="https://doi.org/10.5281/zenodo.7843819">https://doi.org/10.5281/zenodo.7843819</a>.
+</div>
+<div id="ref-dreher_2014" class="csl-entry" role="listitem">
+Dreher, Thomas. 2014. <em>History of Computer Art</em>. Lulu Press, Inc.
+</div>
+<div id="ref-engelman_earsketch_2017" class="csl-entry" role="listitem">
+Engelman, Shelly, Brian Magerko, Tom McKlin, Morgan Miller, Doug Edwards, and Jason Freeman. 2017. <span>“Creativity in Authentic STEAM Education with EarSketch.”</span> <em>Proceedings of the 2017 ACM SIGCSE Technical Symposium on Computer Science Education</em>, 183–88.
+</div>
+<div id="ref-freeman_earsketch_2019" class="csl-entry" role="listitem">
+Freeman, Jason, Brian Magerko, Doug Edwards, Tom Mcklin, Taneisha Lee, and Roxanne Moore. 2019. <span>“EarSketch: Engaging Broad Populations in Computing Through Music.”</span> <em>Communications of the ACM</em> 62 (9): 78–85.
+</div>
+<div id="ref-matthew_hamilton_2026" class="csl-entry" role="listitem">
+<span class="nocase">Hamilton, Matthew, Tom Mudd, Charlotte Desvages, and mtav</span>. 2026. <em>Mhamilt/Teaching-Programming-Music-with-Code: Zenodo Integration Test</em>. V. 1.0. Zenodo, released March. <a href="https://doi.org/10.5281/zenodo.19148713">https://doi.org/10.5281/zenodo.19148713</a>.
+</div>
+<div id="ref-jara_lopez_2025" class="csl-entry" role="listitem">
+Jara López, Jesús. 2025. <em>The Live Coding Toolkit. Designing a Methodology for Music Teaching Through Live Coding for Primary Education Students.</em> Zenodo. <a href="https://doi.org/10.5281/zenodo.15528530">https://doi.org/10.5281/zenodo.15528530</a>.
+</div>
+<div id="ref-petri_sonicpi_2022" class="csl-entry" role="listitem">
+Petrie, Christopher. 2022. <span>“Programming Music with Sonic Pi Promotes Positive Attitudes for Beginners.”</span> <em>Computers &amp; Education</em> 179: 104409. https://doi.org/<a href="https://doi.org/10.1016/j.compedu.2021.104409">https://doi.org/10.1016/j.compedu.2021.104409</a>.
+</div>
+<div id="ref-petrie_ct_2024" class="csl-entry" role="listitem">
+Petrie, Christopher. 2024. <span>“Design and Use of Domain-Specific Programming Platforms: Interdisciplinary Computational Thinking with <span>EarSketch</span> and <span>TunePad</span>.”</span> <em>Computer Science Education</em> 34 (4): 645–78. <a href="https://doi.org/10.1080/08993408.2023.2240657">https://doi.org/10.1080/08993408.2023.2240657</a>.
+</div>
+<div id="ref-reas_2006" class="csl-entry" role="listitem">
+Reas, Casey, and Ben Fry. 2006. <span>“Processing Code: Programming Within the Context of Visual Art and Design.”</span> <em>Aesthetic Computing</em>, 476.
+</div>
+<div id="ref-reas_and_fry_2007" class="csl-entry" role="listitem">
+Reas, Casey, and Ben Fry. 2007. <em>Processing: A Programming Handbook for Visual Designers and Artists</em>. MIT Press.
+</div>
+<div id="ref-reichardt_1971" class="csl-entry" role="listitem">
+Reichardt, Jasia, ed. 1971. <em>Cybernetics, Art and Ideas</em>. New York Graphic Society.
+</div>
+<div id="ref-sharmin_creativity_2021" class="csl-entry" role="listitem">
+Sharmin, Sadia. 2021. <span>“Creativity in CS1: A Literature Review.”</span> <em>ACM Trans. Comput. Educ.</em> (New York, NY, USA) 22 (2). <a href="https://doi.org/10.1145/3459995">https://doi.org/10.1145/3459995</a>.
+</div>
+<div id="ref-traversaro_hearplay_2024" class="csl-entry" role="listitem">
+Traversaro, Daniele, Giorgio Delzanno, and Giovanna Guerrini. 2024. <span>“<span>‘<span>Hear</span>’</span> and <span>‘<span>Play</span>’</span> <span>Students Misconceptions</span> on <span>Concurrent Programming</span> Using <span>Sonic Pi</span>.”</span> <em>Informatics in Education</em> 23 (3): 679–718. <a href="https://doi.org/10.15388/infedu.2024.22">https://doi.org/10.15388/infedu.2024.22</a>.
+</div>
+<div id="ref-walker_mauney_2010" class="csl-entry" role="listitem">
+Walker, B. N., and L. M. Mauney. 2010. <span>“Universal Design of Auditory Graphs: A Comparison of Sonification Mappings for Visually Impaired and Sighted Listeners.”</span> <em>ACM Trans. Access. Comput.</em> (New York, NY, USA) 2 (3). <a href="https://doi.org/10.1145/1714458.1714459">https://doi.org/10.1145/1714458.1714459</a>.
+</div>
+<div id="ref-wang_17" class="csl-entry" role="listitem">
+Wang, Ge. 2017. <span>“A History of Programming and Music.”</span> In <em>The Cambridge Companion to Electronic Music</em>, Second, <span class="nocase">edited by Nick Collins and Julio d’Escrivan</span>. Cambridge University Press.
+</div>
+<div id="ref-worrall_2019" class="csl-entry" role="listitem">
+Worrall, David. 2019. <span>“Data Sonification: A Prehistory.”</span> In <em>Sonification Design: From Data to Intelligible Soundfields</em>. Springer International Publishing. <a href="https://doi.org/10.1007/978-3-030-01497-1_1">https://doi.org/10.1007/978-3-030-01497-1_1</a>.
+</div>
+</div>
+</section>
+<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn1"><p>Lots of open source synthesisers are available such as <a href="https://surge-synthesizer.github.io/">Surge XT</a> or <a href="https://asb2m10.github.io/dexed/">Dexed</a>.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>E.g. see work by DJ_Dave in Sonic Pi: <a href="https://www.youtube.com/watch?v=w2s1DK1w3WI" class="uri">https://www.youtube.com/watch?v=w2s1DK1w3WI</a><a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>E.g. see the international Algorave movement: <a href="https://algorave.com/" class="uri">https://algorave.com/</a><a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./C15_programming-without-computers.html" class="pagination-link" aria-label="Removing Barriers by Programming Without Computers">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Removing Barriers by Programming Without Computers</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./C03_online-teaching-reflections.html" class="pagination-link" aria-label="Ways to Teach Online: Lessons Learned Through Experience">
+        <span class="nav-page-text"><span class="chapter-title">Ways to Teach Online: Lessons Learned Through Experience</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

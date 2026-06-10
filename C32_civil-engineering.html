@@ -100,7 +100,7 @@ div.csl-indent {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-468d89cafa99efebba817d085cab6815.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-efc217d3be6b0c6b6079591d7e3e0fe0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -328,6 +328,11 @@ window.Quarto = {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./C15_programming-without-computers.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Removing Barriers by Programming Without Computers</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C17_coding-with-music.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Practical approaches to using sound and music in programming pedagogy</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -632,7 +637,7 @@ window.Quarto = {
 
 <section id="introduction" class="level2">
 <h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
-<p>It is high time that students from civil engineering (CivEng) get on with some serious programming. Civil engineering involves creating solutions to real-world problems <span class="citation" data-cites="wood2012civil">(<a href="#ref-wood2012civil" role="doc-biblioref">Wood 2012</a>)</span>. As such, each solution tends to be unique and associated with the particular environmental and societal circumstances pertaining to the local community. It is no surprise that computing had early been adopted in CivEng, with programming classes added to the curriculum, as reported in a US survey <span class="citation" data-cites="hoffbeck2016teaching">(<a href="#ref-hoffbeck2016teaching" role="doc-biblioref">Hoffbeck et al. 2016</a>)</span>. After all, CivEng students cannot just sit there and look at their university friends doing all kinds of interesting stuff with code or AI/machine learning. But what are the difficulties behind the scenes? And why do I focus here on such a narrow engineering discipline?</p>
+<p>It is high time that students from civil engineering (CivEng) get on with some serious programming. Civil engineering involves creating solutions to real-world problems <span class="citation" data-cites="wood2012civil">(<a href="#ref-wood2012civil" role="doc-biblioref"><strong>wood2012civil?</strong></a>)</span>. As such, each solution tends to be unique and associated with the particular environmental and societal circumstances pertaining to the local community. It is no surprise that computing had early been adopted in CivEng, with programming classes added to the curriculum, as reported in a US survey <span class="citation" data-cites="hoffbeck2016teaching">(<a href="#ref-hoffbeck2016teaching" role="doc-biblioref"><strong>hoffbeck2016teaching?</strong></a>)</span>. After all, CivEng students cannot just sit there and look at their university friends doing all kinds of interesting stuff with code or AI/machine learning. But what are the difficulties behind the scenes? And why do I focus here on such a narrow engineering discipline?</p>
 <p>Civil engineers have good logical ability, especially deduction, using and manipulating mathematical expressions, dealing with real dimensions, approximation and optimisation. They have a firm belief in the deterministic: an expected system for this input must yield that output.</p>
 <p>Until they start to realise that the computer system (or the compiler, but anyway the students don’t care about this) tends to play tricks on them. For example, a code snippet copied from the online tutorial doesn’t work, or merging two innocent-looking code chunks throws an error. That’s when they realise that they will need a good approach to programming. The class instructor, too, will need to dedicate time to create good code examples as teaching materials — perhaps examples that illustrate some key principles in programming but merge seamlessly with domain knowledge.</p>
 <p>This chapter presents some of my experience in tutoring two classes in Thuyloi University (Vietnam), one for final-year undergraduates and one for an MSc class, with use of the Python and Julia programming languages. In both cases, instead of delving into the merits of each language or making any comparison between them, I focus on the practical aspects of solving a typical civil engineering problem — sediment transport. For this problem, we are interested in the amount of sand moving in natural bodies of water (e.g.&nbsp;lakes, rivers) and how the bed elevation of such lakes/rivers changes over time, which has vast applications in real development projects. There is some maths and physics involved, but I will provide simple explanations. Hopefully, by the end of the chapter we can pinpoint some “good practices” for engineering students starting to write their own code. The chapter may also benefit CivEng class instructors who are aiming toward more effective lectures.</p>
@@ -673,14 +678,14 @@ U_{cr} = \left\{
 </section>
 <section id="matrix-manipulation" class="level3">
 <h3 class="anchored" data-anchor-id="matrix-manipulation">Matrix manipulation</h3>
-<p>In many circumstances, the CivEng student has to deal with matrices, such as when solving partial differential equations (PDEs). One of such typical equations is the mass balance equation, where the (time) change in “stock” is related to the spatial changes (gradients) of “flows”. It is not too difficult for the CivEng student to understand the finite difference technique and implement a naive version to solve PDEs. As an example, in the problem of sediment transport in rivers or seas, we consider solving the equation for <span class="math inline">\(z_b\)</span> (the underwater bed elevation), which changes in time, given the two fluxes of sediment, represented as two components (<span class="math inline">\(q_x\)</span> and <span class="math inline">\(q_y\)</span>) in the two horizontal directions, <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span>. It is helpful to visualise the river bed or seabed as a “tiled” surface where each cell has its own elevation <span class="math inline">\(z_b\)</span>. See the diagram (<a href="#fig-ch32-sediment" class="quarto-xref">Figure&nbsp;<span>36.1</span></a>) for a simplified representation of the quantities involved.</p>
+<p>In many circumstances, the CivEng student has to deal with matrices, such as when solving partial differential equations (PDEs). One of such typical equations is the mass balance equation, where the (time) change in “stock” is related to the spatial changes (gradients) of “flows”. It is not too difficult for the CivEng student to understand the finite difference technique and implement a naive version to solve PDEs. As an example, in the problem of sediment transport in rivers or seas, we consider solving the equation for <span class="math inline">\(z_b\)</span> (the underwater bed elevation), which changes in time, given the two fluxes of sediment, represented as two components (<span class="math inline">\(q_x\)</span> and <span class="math inline">\(q_y\)</span>) in the two horizontal directions, <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span>. It is helpful to visualise the river bed or seabed as a “tiled” surface where each cell has its own elevation <span class="math inline">\(z_b\)</span>. See the diagram (<a href="#fig-ch32-sediment" class="quarto-xref">Figure&nbsp;<span>37.1</span></a>) for a simplified representation of the quantities involved.</p>
 <div id="fig-ch32-sediment" class="quarto-float quarto-figure quarto-figure-center anchored" alt="A diagram in 3D, showing a surface split into four tiles of different elevations.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-ch32-sediment-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="./chapters/images/ch32-sed-trans.PNG" class="img-fluid figure-img" alt="A diagram in 3D, showing a surface split into four tiles of different elevations.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch32-sediment-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;36.1: Sediment transport
+Figure&nbsp;37.1: Sediment transport
 </figcaption>
 </figure>
 </div>
@@ -706,7 +711,7 @@ Figure&nbsp;36.1: Sediment transport
 <span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>    dzbdt[i,j] <span class="op">=</span> <span class="op">...</span></span>
 <span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>  <span class="cf">end</span></span>
 <span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="cf">end</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>The use of matrix operations (e.g.&nbsp;using <a href="https://numpy.org/">NumPy</a> arrays in Python) is faster compared to the “naive” version above, usually quoted as 10 times <span class="citation" data-cites="langtangen2006python">(<a href="#ref-langtangen2006python" role="doc-biblioref">Langtangen 2006</a>)</span>. On the downside, the matrix notation obscures the indices <code>i</code> and <code>j</code> commonly found in numerical methods (see <a href="#fig-ch32-lattice1" class="quarto-xref">Figure&nbsp;<span>36.2</span></a>, where part of a stencil<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> is shown. In this part, where arrows represent subtraction, we are finding “local” difference in the same <code>qx</code> array). When using matrix manipulation, the bounds must be specified correctly in all matrix subscripts (see <a href="#fig-ch32-lattice2" class="quarto-xref">Figure&nbsp;<span>36.3</span></a> and the code below). So, there should be a consideration in choosing either approach.</p>
+<p>The use of matrix operations (e.g.&nbsp;using <a href="https://numpy.org/">NumPy</a> arrays in Python) is faster compared to the “naive” version above, usually quoted as 10 times <span class="citation" data-cites="langtangen2006python">(<a href="#ref-langtangen2006python" role="doc-biblioref">Langtangen 2006</a>)</span>. On the downside, the matrix notation obscures the indices <code>i</code> and <code>j</code> commonly found in numerical methods (see <a href="#fig-ch32-lattice1" class="quarto-xref">Figure&nbsp;<span>37.2</span></a>, where part of a stencil<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> is shown. In this part, where arrows represent subtraction, we are finding “local” difference in the same <code>qx</code> array). When using matrix manipulation, the bounds must be specified correctly in all matrix subscripts (see <a href="#fig-ch32-lattice2" class="quarto-xref">Figure&nbsp;<span>37.3</span></a> and the code below). So, there should be a consideration in choosing either approach.</p>
 <p><strong>Looping through index</strong></p>
 <div id="fig-ch32-lattice1" class="quarto-float quarto-figure quarto-figure-center anchored" alt="A lattice with dots organised in 2 rows and 4 columns.">
 <figure class="quarto-float quarto-float-fig figure">
@@ -714,7 +719,7 @@ Figure&nbsp;36.1: Sediment transport
 <img src="./chapters/images/ch32-lattice1.png" class="img-fluid figure-img" alt="A lattice with dots organised in 2 rows and 4 columns.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch32-lattice1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;36.2: Lattice 1
+Figure&nbsp;37.2: Lattice 1
 </figcaption>
 </figure>
 </div>
@@ -729,7 +734,7 @@ Figure&nbsp;36.2: Lattice 1
 <img src="./chapters/images/ch32-lattice2.png" class="img-fluid figure-img" alt="A lattice with dots organised in 2 rows and 4 columns, with the 2 left dots, the 4 central dots, and the 2 right dots grouped together.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch32-lattice2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;36.3: Lattice 2
+Figure&nbsp;37.3: Lattice 2
 </figcaption>
 </figure>
 </div>
@@ -820,7 +825,7 @@ Figure&nbsp;36.3: Lattice 2
 <div id="lst-student-func" class="julia listing quarto-float quarto-figure quarto-figure-left anchored">
 <figure class="quarto-float quarto-float-lst figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-lst" id="lst-student-func-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Listing&nbsp;36.1: Student’s version
+Listing&nbsp;37.1: Student’s version
 </figcaption>
 <div aria-describedby="lst-student-func-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode numberSource julia number-lines code-with-copy"><code class="sourceCode julia"><span id="cb10-1"><a href="#cb10-1"></a>deriv_sq <span class="op">=</span> <span class="kw">function</span>(o, h)</span>
@@ -839,7 +844,7 @@ Listing&nbsp;36.1: Student’s version
 <div id="lst-recommended-func" class="julia listing quarto-float quarto-figure quarto-figure-left anchored">
 <figure class="quarto-float quarto-float-lst figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-lst" id="lst-recommended-func-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Listing&nbsp;36.2: Recommended version
+Listing&nbsp;37.2: Recommended version
 </figcaption>
 <div aria-describedby="lst-recommended-func-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode numberSource julia number-lines code-with-copy"><code class="sourceCode julia"><span id="cb11-1"><a href="#cb11-1"></a><span class="co"># A generic central-difference approximation</span></span>
@@ -884,9 +889,6 @@ Listing&nbsp;36.2: Recommended version
 <div id="ref-TeachProgAcross_C29" class="csl-entry" role="listitem">
 El Gemayel, Joseph, Arif Budiarto, and William Bell. 2026. <em>Teaching Programming Across Disciplines</em>.
 </div>
-<div id="ref-hoffbeck2016teaching" class="csl-entry" role="listitem">
-Hoffbeck, Joseph P, Heather E Dillon, Robert J Albright, Wayne Lu, and Timothy A Doughty. 2016. <span>“Teaching Programming in the Context of Solving Engineering Problems.”</span> <em>2016 IEEE Frontiers in Education Conference (FIE)</em>, 1–7.
-</div>
 <div id="ref-langtangen2006python" class="csl-entry" role="listitem">
 Langtangen, Hans Petter. 2006. <em>Python Scripting for Computational Science</em>. Springer.
 </div>
@@ -895,9 +897,6 @@ Papert, Seymour A. 2020. <em>Mindstorms: Children, Computers, and Powerful Ideas
 </div>
 <div id="ref-TeachProgAcross_C07" class="csl-entry" role="listitem">
 Skipsey, Sam, Gordon Stewart, Jeremy Singer, and David Cutting. 2026. <em>Teaching Programming Across Disciplines</em>.
-</div>
-<div id="ref-wood2012civil" class="csl-entry" role="listitem">
-Wood, David Muir. 2012. <em>Civil Engineering: A Very Short Introduction</em>. Vol. 331. Oxford University Press.
 </div>
 </div>
 </section>
