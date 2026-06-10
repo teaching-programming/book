@@ -81,7 +81,6 @@ book:
         - index.qmd
         # - 00-chapter-template.qmd
 
-        # - P00_part-preface.qmd
         - dedication.qmd
         - C00.1_this_book.qmd
         - C00.2_all_parts_introduction.qmd
@@ -148,12 +147,4 @@ book:
         - 99-bibliography.qmd
         
 #         # Possibly abandoned chapters:
-#        - C08_ai-boom-or-bust.qmd
 #        - C13_pair-programming-adventure.qmd
-#        - C18_social-learning-modelling.qmd
-#        - C19_genai-capabilities-and-challenges.qmd
-#        - C25_supporting-new-tutors.qmd
-#        - C26_assessment-and-feedback-overview.qmd
-#        - C27_curriculum-design-overview.qmd
-#        - C28_incorporating-reproducibility.qmd
-#        - C30_project-based-teaching.qmd
