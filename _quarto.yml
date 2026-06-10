@@ -92,7 +92,7 @@ book:
         - C41_pair-programming-tutor-reflections.qmd
         
         - C09_debugging-beyond-the-debugger.qmd
-        # - C40_TODO.qmd
+        # - C40_coding-forces.qmd
         - C05_coding-mindset.qmd
 
         - C08_hype-need-responsible-compute.qmd
@@ -104,7 +104,7 @@ book:
         - C14_foster-inclusion-and-accessibility.qmd
         - C04_computer-says-no.qmd
         - C33_coding-anxiety.qmd
-#        - C34_three-stars-one-wish.qmd
+        - C34_three-stars-one-wish.qmd
 
         # - P02_part-design-practice.qmd
         

@@ -111,7 +111,7 @@ Use the **Bestiary** template to establish (or remind) learners of the course le
 
 | **Name:**
 | Create GitHub repository for your project
-| **\[x\]** Main Quest  **\[ \]** Side Quest
+| **\[x\]** Main Quest **\[ \]** Side Quest
 |
 | **Learning Outcomes:**
 | 1. Apply best practices to source code management and versioning

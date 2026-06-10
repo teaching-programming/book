@@ -1,5 +1,5 @@
 ---
-title: "Reflections on Online Teaching"
+title: "Ways to Teach Online: Lessons Learned Through Experience"
 bibliography: references.bib
 author:
   - name: Samantha Alvarez Madrazo
@@ -22,13 +22,34 @@ author:
     affiliations: University of Strathclyde
 
 keywords:
-  - online
-  - asynchronous
-  - mooc
-  - assessment
-  - blended
+  - education-ecosystem	
+  - short-courses	
+  - curriculum-design	
+  - assessment-design	
+  - flipped-classroom
 ---
 
+::: {.content-visible when-format="docx" note="this should be identical as authors above, for docx"}
+author:
+  - name: Samantha Alvarez Madrazo
+    email: s.alvarez-madrazo@imperial.ac.uk
+    affiliations: Imperial College London
+  - name: Chris Cooling
+    email: c.cooling10@imperial.ac.uk
+    affiliations: Imperial College London
+  - name: Joseph El Gemayel
+    email: joseph.el-gemayel@strath.ac.uk
+    affiliations: University of Strathclyde
+  - name: Nick Jayanth
+    email: nick.jayanth19@imperial.ac.uk
+    affiliations: Imperial College London
+  - name: Lucia Michielin
+    email: lucia.michielin@ed.ac.uk
+    affiliations: University of Edinburgh
+  - name: Leila S. Shafti
+    email: leila.shafti@strath.ac.uk
+    affiliations: University of Strathclyde
+:::
 
 ## Introduction
 
@@ -83,7 +104,7 @@ If I were developing a Coursera course again, one thing I would do is learn how 
 
 Overall, I’m pleased to have developed the Coursera course. It provides a great asynchronous resource for learners to study the basics of Python. As this is one of our most popular topics, it supports a large number of students and frees up a lot of teaching time, helping to justify the large time and effort outlay of creating the course. Careful consideration of the content, sequencing, problems users might encounter, formatting and which examples and exercises would be most useful help make it a useful resource for learners.
 
-## Comparing MOOCs and online degree content
+## Comparing MOOCs and Online Degree Content
 
 _In this section, Samantha and Nick compare how content was created and is currently delivered in four MOOCs for Statistics for Public Health and the corresponding Statistics for Public Health core module (previously known as specialisation),  which is part of the Master of Public Health online (MPHO) degree at Imperial College London._
 
@@ -101,29 +122,28 @@ The second option to access the MOOCs, which is the one we were suggesting to ou
 
 @tbl-mooc-enrolment below shows a summary of the number of students enrolled and the completion rate up to August 2025 for the four MOOCs.
 
-
 | **MOOC No** |                          **Title**                          | **Enrolled** | **Completed (%)** |
-|:-----------:|:-----------------------------------------------------------:|:------------:|:-----------------:|
-|      1      | Introduction to Statistics & Data Analysis in Public Health |    60,185    |    10,962 (18%)   |
-|      2      |           Linear Regression in R for Public Health          |    17,223    |    4,572 (27%)    |
-|      3      |          Logistic Regression in R for Public Health         |    14,308    |    3,167 (22%)    |
-|      4      |           Survival Analysis in R for Public Health          |    16,007    |    3,096 (19%)    |
+|:----------:|:----------------------------------|------:|----------------:|
+|     1      | Introduction to Statistics & Data Analysis in Public Health |    60,185    |    10,962 (18%)   |
+|     2      |           Linear Regression in R for Public Health          |    17,223    |    4,572 (27%)    |
+|     3      |          Logistic Regression in R for Public Health         |    14,308    |    3,167 (22%)    |
+|     4      |           Survival Analysis in R for Public Health          |    16,007    |    3,096 (19%)    |
 
 : Summary of Students Enrolled on the Four MOOCs and the Completion Rate. Source: Coursera {#tbl-mooc-enrolment}
 
 For the degree students, there have been several additions to the content. We will provide here three pivotal ones: the different options to increase student-faculty interactions, the mock assessment, and the summative assessments.
 
-### Interactions between students/learners and faculty in MOOCs and degree content
+### Interactions Between Students/Learners and Faculty in MOOCs and Degree Content
 
 There is currently no consensus on the meaning of ‘engagement’. However, it has been proposed that one key engagement dimension from the National Survey of Student Engagement is student and faculty interaction [@robinson_2008_benchmarks]. This dimension is clearly different between the MOOC learners and the degree students. The MOOC learners have required over the years minimal interactions with staff, and have mainly contacted us when there is an issue to be awarded a certificate. Prof. Bottle monitored the course for a brief period after the MOOCs were launched, but there has not been any reason to continue doing it. Therefore, we have minimal monitoring and modifications to the content. The higher numbers of students have also posed challenges for one-on-one engagement. 
 
 In contrast, the degree students have more frequent interactions with staff. These interactions include two induction sessions to support installation of R/RStudio (60 min each), then, during term time, 15 weekly office hours to solve statistical questions (60 min each), 12 weekly R drop-in sessions to solve coding questions (60 min each), forums to post questions related to statistical or coding questions, 13 weekly live sessions to reinforce the online learning (60 min each) and communication via e-mail. The number of degree students enrolled in the Statistics for Public Health module has varied between 2019 and 2025 from 60 to 110. As students are studying part-time and are based worldwide, it is their choice to interact with faculty members or not. Therefore, usually 10-20% have at least one student-faculty interaction. Several of these interactions have been useful to update the degree content (e.g. providing alternative commands to displaying R output in the format provided by newer versions).
 
-### Mock assessment
+### Mock Assessment
 
 Compared to the MOOCs, MPHO students have the Statistics module with 12 weeks of compulsory content. This is the standard length of modules in the online degree to allow students time to prepare for their summative assessments. The content from the degree had modifications from the four MOOCs to cover all the essential concepts in 12 weeks. In week 13, MPHO students are provided with an optional formative mock assessment, which is not accessible to the students enrolled on the MOOCs. This is because the mock assessment, which has its own dataset, is directly linked to the summative assessment that MPHO students have to successfully complete in order to pass the module and obtain their high-level qualification. With access to the mock assessment, students can practise the skills acquired throughout the module and write an abstract with the results obtained. From the abstracts submitted each year, two of them are selected as examples and feedback is provided by staff and peers in the last online live session of the module. This allows the students to have a better understanding of how to put together their abstract for the final summative assessment. For the students whose mock assessment abstracts are chosen for the online live session, their abstracts are anonymised and the students receive detailed feedback, which is an incentive to take part.
 
-### Summative assessments
+### Summative Assessments
 
 As mentioned earlier, in the paid version in Coursera, a certificate can be obtained from each of the four MOOCs, and to do so, different assessments have to be completed:
 
@@ -142,7 +162,7 @@ These changes in summative assessment have also required over the years updating
 
 Overall, the use of shared high quality content for both MOOC and degree learners based worldwide proved to be a successful approach. It allows flexible, accessible education to equip learners with basic statistical methods used in the public health field. Those who are interested in specific topics with minimal faculty interactions can take the MOOCs; future work will focus on increasing the amount of free content available and ensuring there are opportunities to keep the MOOCs content up to date. Those who are interested in obtaining a high-level qualification from the School of Public Health at Imperial College London have access to continuously updated content, with increased student-faculty interaction, and scaffolding for the summative assessment which at the same time empowers them to write their own abstracts.
 
-## Blended work-based learning
+## Blended Work-Based Learning
 
 _In this section, Joseph and Leila describe their experiences of developing and delivering online modules for the Graduate Apprenticeship and Degree Apprenticeship (GADA) BSc (Hons) programmes in the Department of Computer and Information Sciences at the University of Strathclyde._
 
@@ -164,31 +184,31 @@ Ultimately, effective teaching depends on the ability to engage students and fos
 
 Drawing on our experiences of designing and delivering these modules, we offer several practical recommendations for educators developing similar programmes.
 
-### Designing coherent learning pathways
+### Designing Coherent Learning Pathways
 
 Students benefit when the relationships between videos, readings, exercises, and discussion forums are made explicit. When these elements are clearly connected, learners can better understand how each activity contributes to their development. Structuring materials in smaller units is particularly helpful. Dividing longer lectures into short videos focused on individual topics enables a more balanced learning experience, allowing students to alternate between watching videos, reading supporting materials, and completing exercises.
 
-### Keeping video content concise and interactive
+### Keeping Video Content Concise and Interactive
 
 Video lectures are most effective when they remain brief and focused. Unlike traditional face-to-face lectures, online videos do not need to repeat explanations in multiple ways within a single session. Students can pause, replay segments, or consult additional resources as needed. Incorporating interactive elements within videos can further enhance engagement, particularly when introducing complex programming concepts. For example, instructors can present a short exercise during the video and encourage students to pause and attempt a solution before reviewing the worked example. Tools such as [H5P](https://h5p.org/) allow such interactions to be embedded directly into the video environment.
 
-### Supporting discussion and collaboration
+### Supporting Discussion and Collaboration
 
 Online discussion forums can play an important role in supporting peer learning, but they require careful design to function effectively. Broad instructions often lead to minimal engagement, as students may not know how to begin contributing. More focused prompts or discussion tasks linked to exercises or assessments tend to generate more meaningful participation. In addition, learners frequently expect instructors to remain visible in these discussions, even when the primary aim is to encourage peer-to-peer interaction.
 
 Collaborative activities conducted outside the classroom can also enhance engagement. Off-campus group work allows students to share perspectives and experiences from their workplaces, enriching the learning process while maintaining the flexibility required by work-based learners.
 
-### Encouraging practice and self-assessment
+### Encouraging Practice and Self-Assessment
 
 Programming modules require frequent opportunities for practice. However, too many summative assessments can place considerable pressure on students who are already managing professional responsibilities. For this reason, formative exercises are particularly valuable, allowing students to experiment, make mistakes, and develop their skills without the pressure of grading.
 
 Self-assessment activities also support learning by enabling students to evaluate their own work independently. This process helps build confidence and encourages learners to take greater responsibility for monitoring their own progress.
 
-### Providing timely feedback
+### Providing Timely Feedback
 
 Immediate feedback is an important motivator for learners. When students receive rapid responses to their submissions, they are more likely to correct mistakes and refine their understanding. Automated assessment tools such as Coderunner [@lobb_2016_coderunner] are particularly effective in programming modules, as they allow students to receive instant feedback on their code while reducing the marking workload for instructors. @TeachProgAcross_C20 in this volume address the topic of automated marking in more detail.
 
-### Maintaining and improving learning materials
+### Maintaining and Improving Learning Materials
 
 Finally, online learning materials should be reviewed and updated regularly, ideally on an annual basis. Designing content in a modular format helps make this process manageable. Short videos focusing on individual topics are easier to revise or replace without requiring the re-recording of entire lectures. Monitoring which resources students revisit most frequently can also provide valuable insights into where students encounter difficulties or require additional clarification. These insights can guide improvements to explanations, examples, and exercises in subsequent iterations of the module.
 

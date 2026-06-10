@@ -9,9 +9,9 @@ author:
     email: m.murphyquinlan@leeds.ac.uk
     affiliations: Research Computing, University of Leeds
   - name: Rebecca L. Colquhoun
-    affiliation: Department of Earth Science and Engineering, Imperial College London
+    affiliations: Department of Earth Science and Engineering, Imperial College London
   - name: Devanjan Bhattacharya
-    affiliation: Bayes Centre, University of Edinburgh
+    affiliations: WARSHARE, School of Social and Political Science, University of Edinburgh; MagIC, Nova Information Management School, Universidade Nova de Lisboa
     email: d.bhattacharya@ed.ac.uk
 
 keywords:
@@ -30,9 +30,9 @@ author:
     email: m.murphyquinlan@leeds.ac.uk
     affiliations: Research Computing, University of Leeds
   - name: Rebecca L. Colquhoun
-    affiliation: Department of Earth Science and Engineering, Imperial College London
+    affiliations: Department of Earth Science and Engineering, Imperial College London
   - name: Devanjan Bhattacharya
-    affiliation: Bayes Centre, University of Edinburgh
+    affiliations: WARSHARE, School of Social and Political Science, University of Edinburgh; MagIC, Nova Information Management School, Universidade Nova de Lisboa
     email: d.bhattacharya@ed.ac.uk
 :::
 
