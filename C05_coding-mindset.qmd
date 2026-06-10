@@ -7,16 +7,16 @@ author:
     affiliations: UK Health Security Agency
   - name: Samantha Alvarez Madrazo
     email: s.alvarez-madrazo@imperial.ac.uk
-    affiliations: Imperial College London
+    affiliations: School of Public Health, Imperial College London
   - name: Lucia Michielin
     email: lucia.michielin@ed.ac.uk
-    affiliations: University of Edinburgh
+    affiliations: Edinburgh Futures Institute, University of Edinburgh
   - name: Nick Jayanth
     email: nick.jayanth19@imperial.ac.uk
-    affiliations: Imperial College London
+    affiliations: School of Public Health, Imperial College London
   - name: Sam Skipsey
     email: Samuel.Skipsey@glasgow.ac.uk
-    affiliations: University of Glasgow
+    affiliations: School of Physics and Astronomy, University of Glasgow
 
 keywords:
   - coding-mindset	
@@ -31,16 +31,16 @@ author:
     affiliations: UK Health Security Agency
   - name: Samantha Alvarez Madrazo
     email: s.alvarez-madrazo@imperial.ac.uk
-    affiliations: Imperial College London
+    affiliations: School of Public Health, Imperial College London
   - name: Lucia Michielin
     email: lucia.michielin@ed.ac.uk
-    affiliations: University of Edinburgh
+    affiliations: Edinburgh Futures Institute, University of Edinburgh
   - name: Nick Jayanth
     email: nick.jayanth19@imperial.ac.uk
-    affiliations: Imperial College London
+    affiliations: School of Public Health, Imperial College London
   - name: Sam Skipsey
     email: Samuel.Skipsey@glasgow.ac.uk
-    affiliations: University of Glasgow
+    affiliations: School of Physics and Astronomy, University of Glasgow
 :::
 
 ## About Us

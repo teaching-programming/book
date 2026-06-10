@@ -4,13 +4,13 @@ bibliography: references.bib
 author:
   - name: Joseph El Gemayel
     email: joseph.el-gemayel@strath.ac.uk
-    affiliations: University of Strathclyde
+    affiliations: Computer & Information Sciences, University of Strathclyde
   - name: Arif Budiarto
     email: arif.budiarto@ed.ac.uk
-    affiliations: The University of Edinburgh
+    affiliations: Usher Institute, University of Edinburgh
   - name: William Bell
     email: william.bell@strath.ac.uk
-    affiliations: University of Strathclyde
+    affiliations: Computer & Information Sciences, University of Strathclyde
 
 keywords:
   - tool-review	
@@ -22,13 +22,13 @@ keywords:
 author:
   - name: Joseph El Gemayel
     email: joseph.el-gemayel@strath.ac.uk
-    affiliations: University of Strathclyde
+    affiliations: Computer & Information Sciences, University of Strathclyde
   - name: Arif Budiarto
     email: arif.budiarto@ed.ac.uk
-    affiliations: The University of Edinburgh
+    affiliations: Usher Institute, University of Edinburgh
   - name: William Bell
     email: william.bell@strath.ac.uk
-    affiliations: University of Strathclyde
+    affiliations: Computer & Information Sciences, University of Strathclyde
 :::
 
 ## Introduction
