@@ -1,5 +1,5 @@
 ---
-title: "Preface: Welcome to the Book"
+title: "Preface --- Welcome to the Book"
 author:
   - name: Franziska McManus
     email: z.mcmanus@ed.ac.uk
