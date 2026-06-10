@@ -2,132 +2,153 @@
 title: "Part I --- Theories and Applications of Teaching Programming"
 bibliography: references.bib
 author:
-  - name: TODO
-    affiliations: TODO
-  - name: TODO
-    affiliations: TODO
+  - name: Brittany Blankinship
+    email: b.blankinship@ed.ac.uk
+    affiliations: Edinburgh Medical School, University of Edinburgh
+  - name: Franziska McManus
+    email: z.mcmanus@ed.ac.uk
+    affiliations: Edinburgh Medical School, University of Edinburgh
+  - name: Umberto Noè
+    email: Umberto.Noe@ed.ac.uk
+    affiliations: School of Philosophy, Psychology and Language Sciences, University of Edinburgh
 ---
 ::: {.content-visible when-format="docx" note="this should be identical as authors above, for docx"}
 author:
-  - name: TODO
-    affiliations: TODO
-  - name: TODO
-    affiliations: TODO
+  - name: Brittany Blankinship
+    email: b.blankinship@ed.ac.uk
+    affiliations: Edinburgh Medical School, University of Edinburgh
+  - name: Franziska McManus
+    email: z.mcmanus@ed.ac.uk
+    affiliations: Edinburgh Medical School, University of Edinburgh
+  - name: Umberto Noè
+    email: Umberto.Noe@ed.ac.uk
+    affiliations: School of Philosophy, Psychology and Language Sciences, University of Edinburgh
 :::
 
-SOME TEXT INTRODUCITNG THIS PART
+As a community, our philosophy towards teaching is grounded in the practice and framework of pair programming (if you haven’t heard of this yet, read on!).  This framework for structured group work, taken from industry, was the first aspect of our teaching which we shared amongst ourselves at the University of Edinburgh and became a uniting feature of our teaching.  Today, pair programming features in all of our teaching as a standard. Our teaching and working life centres around the philosophy of working together to create a shared product and vision – that is, working openly, kindly, and together.  
+
+In the first theme, you will get acquainted with what pair programming is and how it can be implemented across courses, levels of study, and disciplines. By the end of it, we hope it will convince you that pair programming is a framework worth getting excited about and perhaps something to implement in your own teaching.  
+
+The second theme focuses on a selection of core concepts in programming that are essential for building healthy programming habits. While learning a programming language’s vocabulary and syntax is a fundamental part of learning to code, these chapters propose broader approaches that nurture more general skills required to be successful coders and learners (hello transferrable skills). 
+
+The third theme acknowledges that being a good learner necessarily means thinking critically and making connections across ideas and topics. As educators, we expect our students not only to produce code that executes, but also to interact meaningfully with it and the wider context. It discusses what it means to teach and learn programming in a world of Generative AI, addressing the good, the bad, and the ugly.  You will not find another debate but a range of viewpoints as they exist in our teaching community. These chapters will resonate with educators, address concepts that have always been fundamental to programming, and hopefully reveal a few surprises along the way. 
+
+Finally, as programming educators, you may have an idea of what concepts and mindsets you would like to teach your students. But how do you actually implement it in a pragmatic, engaging, and effective way? In the fourth and final theme of Part I, our authors tackle core pedagogical issues from the perspective of teaching programming: 
+
+- How do we get total beginners learning a tool they never expected to use in the first place? 
+- How do you teach multiple complex concepts at the same time?  
+- How do you build confidence and create an inclusive and welcoming atmosphere for your students?  
+
+Some of the concepts and ideas presented in Part I may be familiar to you already, but we hope that you will gain either a framework to describe what you are already doing or a new way to approach teaching.  
 
 ## Theme --- Pair Programming: What? How? Why? 
 
-### TitleOfChapterPossiblyShortened [@TeachProgAcross_C12]
+### Where Do I Even Start With Pair Programming? [@TeachProgAcross_C12]
 
-SOME TEXT INTRODUCITNG THIS CHAPTER [C12] Where Do I Even Start With Pair Programming in My Classroom? A Conversation With Seasoned Practitioners.
+An introduction to pair programming in the form of a (written) podcast interview where you can read or listen. This chapter is a joyful and pragmatic approach to answering some of the most frequently asked questions around introducing pair programming in the classroom. 
 
-SOME TEXT EXPLAINING WHY THIS CHAPTER COULD BE FOR YOU
+This chapter is for you if you are interested in pair programming as a teaching practice or you would like ideas around how to explain it to your students or colleagues.  
 
-### TitleOfChapterPossiblyShortened [@TeachProgAcross_C36]
+### Lessons From Pair Programming Across Disciplines [@TeachProgAcross_C36]
 
-SOME TEXT INTRODUCITNG THIS CHAPTER [C36] Structured Group Work With Assigned Asymmetrical Roles and Switching: Lessons From Pair Programming Across Disciplines
+A walkthrough of the origins and practice of pair programming and what this has looked like for the authors in their disciplines. A highlight of this chapter is the fun illustrations that bring to life explanations of pair programming supported by student feedback.  
 
-SOME TEXT EXPLAINING WHY THIS CHAPTER COULD BE FOR YOU
+This chapter is for you if you want to learn more about pair programming or are looking for a resource to explain pair programming to students, colleagues, and management.
 
-### TitleOfChapterPossiblyShortened [@TeachProgAcross_C41]
+### A PhD Tutor's Reflections [@TeachProgAcross_C41]
 
-SOME TEXT INTRODUCITNG THIS CHAPTER [C41] Pair Programming in Practice: A PhD Tutor's Reflections 
+A PhD students’ experience of teaching pair programming in an introductory R course. The author reflects on when pair programming works and when it doesn’t, as well as the tutor's role in facilitating pair programming.  
 
-SOME TEXT EXPLAINING WHY THIS CHAPTER COULD BE FOR YOU
+This chapter is for you if you are a graduate student or tutor on a course that uses pair programming, or are in a position to implement it in a tutorial setting. Course organisers will also benefit from the insightful reflections from the front line of teaching.
 
 
 
 ## Theme --- Building Healthy Programming Habits
 
-### TitleOfChapterPossiblyShortened [@TeachProgAcross_C09]
+### A Practical Debugging Framework for Learners [@TeachProgAcross_C09]
 
-SOME TEXT INTRODUCITNG THIS CHAPTER [C09] Brain Book Buddy Boss Break: A Practical Debugging Framework for Learners
+An accessible and joyful introduction to debugging via the 5 B’s framework. The sections of Brain, Book, Buddy, Boss, Break are expertly scaffolded and explained, turning this chapter into an adaptable teaching resource.  
 
-SOME TEXT EXPLAINING WHY THIS CHAPTER COULD BE FOR YOU
-
-
-### TitleOfChapterPossiblyShortened [@TeachProgAcross_C05]
-
-SOME TEXT INTRODUCITNG THIS CHAPTER [C05] A Guide on Empowering Students to Develop a Coding Mindset
-
-SOME TEXT EXPLAINING WHY THIS CHAPTER COULD BE FOR YOU
+This chapter is for you if you teach any programming language and want your students to approach errors and debugging in a critical and independent fashion.
 
 
-### TitleOfChapterPossiblyShortened [@TeachProgAcross_C40]
+### Empowering Students to Develop a Coding Mindset [@TeachProgAcross_C05]
 
-SOME TEXT INTRODUCITNG THIS CHAPTER [C40] Modes of coding practice
+The most important skillset you can learn when coding is not actually the syntax of the specific programming language, but rather the “coding mindset”. This chapter outlines practical suggestions and approaches for ensuring your teaching goes beyond the syntax and focuses on developing the students’ mindset to allow them to effectively code in other languages too in the future.  
 
-SOME TEXT EXPLAINING WHY THIS CHAPTER COULD BE FOR YOU
+This chapter is for you if you are embarking on teaching your first programming course and want to develop the course beyond the syntax you might be teaching. Experienced programmers will also find the chapter interesting as a source for reflection on their own “coding mindset” and how it has developed. 
+
+
+### Modes of coding practice [@TeachProgAcross_C40]
+
+Extending the idea of “best practice” in coding, this chapter asks the programmer to question the needs of their context rather than seeing “good” and “bad” coding practices in black and white. The central concept, that there are “forces” of coding, will be useful as a teaching resource to help students write good code and consider why they are coding in the first place.  
+
+This chapter is for anyone who codes and wants to expand their approach to coding independently, consciously, and/or collaboratively.  
 
 
 ## Theme --- Programming in a World of Generative AI 
 
-### TitleOfChapterPossiblyShortened [@TeachProgAcross_C08]
+### Hype and The Need for Responsible Compute [@TeachProgAcross_C08]
 
-SOME TEXT INTRODUCITNG THIS CHAPTER [C08] Hype and The Need for Responsible Compute (previously called Boom or Bust)
+Every new computational tool or AI model comes with exciting promises, but it also brings challenges. These often leave behind questions about fairness, who benefits from this technology, and who pays the hidden costs. As educators, we are placed in the middle of this hype, trying to help our students make sense of these tools. 
 
-SOME TEXT EXPLAINING WHY THIS CHAPTER COULD BE FOR YOU
-
-
-### TitleOfChapterPossiblyShortened [@TeachProgAcross_C10]
-
-SOME TEXT INTRODUCITNG THIS CHAPTER [C10] Teaching, Learning and Assessment for coding with the emergence of generative AI
-
-SOME TEXT EXPLAINING WHY THIS CHAPTER COULD BE FOR YOU
+This chapter will take you through the journey of responsible computing through the lens of the United Nations (UN) Sustainable Development Goals. You will learn how issues like inequality, environmental harm, workforce exploitation, and bias can be part of new technologies. Along this journey, the authors share classroom activities, teaching ideas, and recommended readings you can assign in your own courses. This chapter is for you if you want your students not only to learn about fancy new algorithms, but also to be responsible and sustainable in their usage. 
 
 
-### TitleOfChapterPossiblyShortened [@TeachProgAcross_C44]
+### Teaching with the emergence of generative AI [@TeachProgAcross_C10]
 
-SOME TEXT INTRODUCITNG THIS CHAPTER [C44] GenAI vs Developing Academic Skills
+You are likely familiar with the fact that students can now generate working code in a matter of seconds with AI. However, you may also worry about what this means for assessments and question the value of your own teaching. This chapter invites you to rethink your approach to teaching and focus on what matters most when teaching students how to code. The authors talk about how Gen AI tools can help with exploration and feedback, while keeping some space for struggle and genuine understanding. They share examples of how to adapt your teaching and assessment without giving up on rigour.  
 
-SOME TEXT EXPLAINING WHY THIS CHAPTER COULD BE FOR YOU
+If you are wondering about how to rethink your teaching or assessment approach for students coding with AI, this will be an interesting read. 
 
 
-### TitleOfChapterPossiblyShortened [@TeachProgAcross_C21]
+### GenAI vs Developing Academic Skills [@TeachProgAcross_C44]
 
-SOME TEXT INTRODUCITNG THIS CHAPTER [C21] How Teaching Programming Across Disciplines Can Prove Useful  - love letter to critical thinking (computational and systems)
+The author puts into writing many facets of the impact of Generative AI on academic skills development that educators will have been uncomfortable about but may not have been able to put into words themselves. 
 
-SOME TEXT EXPLAINING WHY THIS CHAPTER COULD BE FOR YOU
+This chapter is for educators who want to be able to communicate their concerns around the erosion of academic skills with the existence and accessibility of Generative AI. It will be a useful teaching resource to give to students as is. 
+
+
+### Love Letter to Critical Thinking [@TeachProgAcross_C21]
+
+Starting with the purpose and function of the university as an institution, this chapter takes you on a journey through the benefits of learning to program from a systems thinking perspective. If systems thinking is a new concept for you, you will find an intriguing introduction and a new way of looking at programming and the wider world (i.e., systems).  
+
+For many readers, this will answer the question of why it is a worthwhile endeavour to teach students programming skills (that they may not use again). As a teaching resource, this chapter would be excellent compulsory reading for students and a starting point for discussion-based tutorials.  
 
 
 ## Theme --- Teaching Programming Courses: What Worked for Us  
 
+### Removing technological barriers in programming courses [@TeachProgAcross_C04]
 
-### TitleOfChapterPossiblyShortened [@TeachProgAcross_C04]
+Learning to code for the first time is fraught with challenges ranging from the technical, cultural, and practical. As an educator, how do you help your students when “the computer says no”? This chapter covers implementable steps for reducing barriers in programming courses, to ensure students don’t lose motivation to learn programming when faced with such issues, while ensuring instructors are not overworked.
 
-SOME TEXT INTRODUCITNG THIS CHAPTER [C04] Computer says no: Removing technological barriers in programming courses 
-
-SOME TEXT EXPLAINING WHY THIS CHAPTER COULD BE FOR YOU
-
-
-### TitleOfChapterPossiblyShortened [@TeachProgAcross_C14]
-
-SOME TEXT INTRODUCITNG THIS CHAPTER [C14] Practices to Foster Inclusion and Accessibility in Programming Teaching
-
-SOME TEXT EXPLAINING WHY THIS CHAPTER COULD BE FOR YOU
+This chapter is for you if you teach novice programmers and want to reduce friction in getting set up and working through the programming curriculum. With clear suggestions and a summary of pros and cons, it will allow you to pick the best setup for your own course! 
 
 
-### TitleOfChapterPossiblyShortened [@TeachProgAcross_C33]
+### Inclusion and Accessibility in Programming Teaching [@TeachProgAcross_C14]
 
-SOME TEXT INTRODUCITNG THIS CHAPTER [C33] Overcoming coding anxiety: learnings and strategies 
-SOME TEXT EXPLAINING WHY THIS CHAPTER COULD BE FOR YOU
+Moving beyond standard prescriptions for inclusion and accessibility, this chapter takes a broader approach to pedagogical practice that fosters learning, allows vulnerability, and creates a space for all students to succeed. It provides a structured overview of the impact of different methods of delivery and a range of approaches that you can use dynamically depending on your student cohorts. 
 
-
-### TitleOfChapterPossiblyShortened [@TeachProgAcross_C34]
-
-SOME TEXT INTRODUCITNG THIS CHAPTER [C34] 3 Stars and 1 Wish: Small and Frequent Student Reflections to promote a Sense of Wonder and a Community of Vulnerability
-
-SOME TEXT EXPLAINING WHY THIS CHAPTER COULD BE FOR YOU
+For programming educators who would like to make their classroom more welcoming, this chapter will offer practical approaches tailored to the experience of teaching programming across disciplines and being an adaptive teacher.
 
 
-### TitleOfChapterPossiblyShortened [@TeachProgAcross_C11]
+### Overcoming coding anxiety [@TeachProgAcross_C33]
 
-SOME TEXT INTRODUCITNG THIS CHAPTER [C11] Sequential vs. Simultaneous: Approaches to Learning Programming and Statistics 
+For many students, anxiety is a central and paralysing part of their coding experience. This is particularly true for students in non-programming disciplines where educators may need to make a targeted effort to approach this head on. The authors offer practical suggestions and tips provided from their experiences that you can easily pick up and embed out of the box in your own teaching.  
 
-SOME TEXT EXPLAINING WHY THIS CHAPTER COULD BE FOR YOU
+This chapter is for you if you have ever taught coding to anxious students or would like ideas on ways to make your programming course more accessible and fun for all students, regardless of background.  
 
+
+### 3 Stars and 1 Wish [@TeachProgAcross_C34]
+
+With its origins in primary school teaching, this reflective practice framework will be a surprising and adaptable tool for use in higher education teaching, both in-person and online. This chapter introduces the idea of ‘3 stars and a wish’, where reflection is a flexible way of creating community that may replace existing discussion boards and feedback surveys. The authors present a case study and practical tips for implementing the framework. 
+
+This chapter is for you if you are an educator who would like to integrate continuous bite-sized reflection into your teaching or for anyone who is looking for ways to pulse-check student learning and progress.
+
+
+### Sequential vs. Simultaneous [@TeachProgAcross_C11]
+
+Within many statistics modules, programming is presented as a tool which students need to learn quickly, engage with briefly, and then move on from. Yet, both statistics and programming come with a heavy cognitive load and are sources of angst, anxiety, and confusion for students. This chapter compares three approaches to teaching statistics and programming for students who need to know both. This chapter is for anyone designing (or re-designing) a course teaching both programming and statistics. With concrete examples from the author’s diverse experiences, this chapter presents a practical guide as well as an opportunity to learn from others who have been there before.  
 
 
 ::: {.content-visible when-format="html" unless-format="epub"}
