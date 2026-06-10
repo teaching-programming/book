@@ -85,9 +85,9 @@ This approach is valuable for diverse groups, including non-traditional learners
 
 ### Sound and Music in Programming Pedagogy [@TeachProgAcross_C17]
 
-This chapter explores the integration of sound and music in programming education, transforming how students engage with learning. 
+This chapter connects sound, music, and programming and how these can be combined in programming teaching. The authors provide a rich set of resources in numerous programming languages that educators can adapt and use in their teaching.
 
-By utilising these sensory elements, educators can make abstract concepts more tangible and relatable, enhancing students' understanding and retention.
+This chapter is for you if you are interested in sound, music, or programming and would be excited to bring these domains together. 
 
 ### Ways to Teach Online [@TeachProgAcross_C03]
 
