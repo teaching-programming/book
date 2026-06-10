@@ -97,9 +97,9 @@ It offers insights into course design, learner engagement, assessment, and feedb
 
 ### Seeing Before Coding, Doodling Before Doing [@TeachProgAcross_C43]
 
-This chapter focuses on data visualization skills by encouraging students to sketch and doodle. This method nurtures critical thinking and creativity, urging students to conceptualize data visually before coding, a crucial skill in an AI-driven world.
+This chapter focuses on a data visualization course that encourages students to sketch and doodle. The approach described in this chapter nurtures critical thinking and creativity, urging students to conceptualize data visually before coding - a crucial skill in an AI-driven world.
 
-Educators who have a desire to shift their teaching from programming classes to physical, non-computer based activity, will find this chapter engaging.
+This chapter is for educators who are interested in teaching data visualisation as a challenging and creative activity that requires engagement and real-world thinking rather than code output.
 
 
 
