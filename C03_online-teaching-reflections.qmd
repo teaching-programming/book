@@ -29,6 +29,27 @@ keywords:
   - flipped-classroom
 ---
 
+::: {.content-visible when-format="docx" note="this should be identical as authors above, for docx"}
+author:
+  - name: Samantha Alvarez Madrazo
+    email: s.alvarez-madrazo@imperial.ac.uk
+    affiliations: Imperial College London
+  - name: Chris Cooling
+    email: c.cooling10@imperial.ac.uk
+    affiliations: Imperial College London
+  - name: Joseph El Gemayel
+    email: joseph.el-gemayel@strath.ac.uk
+    affiliations: University of Strathclyde
+  - name: Nick Jayanth
+    email: nick.jayanth19@imperial.ac.uk
+    affiliations: Imperial College London
+  - name: Lucia Michielin
+    email: lucia.michielin@ed.ac.uk
+    affiliations: University of Edinburgh
+  - name: Leila S. Shafti
+    email: leila.shafti@strath.ac.uk
+    affiliations: University of Strathclyde
+:::
 
 ## Introduction
 
@@ -101,13 +122,12 @@ The second option to access the MOOCs, which is the one we were suggesting to ou
 
 @tbl-mooc-enrolment below shows a summary of the number of students enrolled and the completion rate up to August 2025 for the four MOOCs.
 
-
 | **MOOC No** |                          **Title**                          | **Enrolled** | **Completed (%)** |
-|:-----------:|:-----------------------------------------------------------:|:------------:|:-----------------:|
-|      1      | Introduction to Statistics & Data Analysis in Public Health |    60,185    |    10,962 (18%)   |
-|      2      |           Linear Regression in R for Public Health          |    17,223    |    4,572 (27%)    |
-|      3      |          Logistic Regression in R for Public Health         |    14,308    |    3,167 (22%)    |
-|      4      |           Survival Analysis in R for Public Health          |    16,007    |    3,096 (19%)    |
+|:----------:|:----------------------------------|------:|----------------:|
+|     1      | Introduction to Statistics & Data Analysis in Public Health |    60,185    |    10,962 (18%)   |
+|     2      |           Linear Regression in R for Public Health          |    17,223    |    4,572 (27%)    |
+|     3      |          Logistic Regression in R for Public Health         |    14,308    |    3,167 (22%)    |
+|     4      |           Survival Analysis in R for Public Health          |    16,007    |    3,096 (19%)    |
 
 : Summary of Students Enrolled on the Four MOOCs and the Completion Rate. Source: Coursera {#tbl-mooc-enrolment}
 
