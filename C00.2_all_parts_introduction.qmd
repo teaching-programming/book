@@ -1,30 +1,59 @@
 ---
-title: "Part 0 --- Preface"
-bibliography: references.bib
+title: "Preface: Welcome to the Book"
 author:
-  - name: TODO
-    affiliations: TODO
-  - name: TODO
-    affiliations: TODO
+  - name: Franziska McManus
+    email: z.mcmanus@ed.ac.uk
+    affiliations: Edinburgh Medical School, University of Edinburgh
+  - name: Brittany Blankinship
+    email: b.blankinship@ed.ac.uk
+    affiliations: Edinburgh Medical School, Univeristy of Edinburgh
+  - name: Pawel Orzechowski
+    email: pawel.orzechowski@ed.ac.uk
+    affiliation: Edinburgh Medical School, University of Edinburgh
 ---
+
 ::: {.content-visible when-format="docx" note="this should be identical as authors above, for docx"}
 author:
-  - name: TODO
-    affiliations: TODO
-  - name: TODO
-    affiliations: TODO
+  - name: Franziska McManus
+    email: z.mcmanus@ed.ac.uk
+    affiliations: Edinburgh Medical School, University of Edinburgh
+  - name: Brittany Blankinship
+    email: b.blankinship@ed.ac.uk
+    affiliations: Edinburgh Medical School, University of Edinburgh
+  - name: Pawel Orzechowski
+    email: pawel.orzechowski@ed.ac.uk
+    affiliation: Edinburgh Medical School, University of Edinburgh
 :::
 
-SOME TEXT INTRODUCITNG THIS PART
+Welcome to the Teaching Programming Across Disciplines Book! Our book is an edited, open-access volume comprised of many short chapters written by groups of authors from our community. In this first edition of the book, we have curated 44 chapters from 75 authors. Since the original pitch, these chapters have been drafted, revised, and polished, with rewrites from authors, feedback from the editing team, and many writing retreats along the way. Contributions to this book are not limited to one institution, and while reading you will notice that our authors have drawn on their experiences across different institutions, countries, and educational backgrounds. 
 
-## Theme --- ThemeTitle. Preface? 
+Come on a journey through some of the core questions that arise when teaching programming across disciplines. The book is grouped into four sections (Part I, Part II, Part III, and Part IV), each comprised of themes, which themselves contain chapters. Chapters are the smallest unit in the book and vary in length. You will find teaching resources spread across every chapter. Some chapters you can even share with your students directly. Unless other specified, the illustration can be used as an additional teaching resource and to share your practice [^C002-footnote].
 
-C0.1 How this book/comminity came about: Chapter from editors - how we got here and how we did it 
-C0.2 What's in the book (introduce the parts) 
+[^C002-footnote]: Just follow licensing outlined in the Images Section and credit the creator
 
+### Why did we write this book?  
 
-::: {.content-visible when-format="html" unless-format="epub"}
+At a basic level, we wrote this book because it is something we would have wanted to exist when we started our own teaching journeys. That is, we would have liked guidance from a community with specific experience in teaching programming to non-programming (i.e., not computer science) students.  
 
-## References {.unnumbered}
+There is an existing literature on teaching programming within computer science. However, the teaching advice and challenges are not always relevant to our students or contexts. For example, a fundamental challenge of teaching programming across disciplines is its status as a supplementary tool alongside a primary discipline. Within a broader programme of study, our courses are often given limited time and are taught in conjunction with other skills (e.g. statistics, research design, laboratory work). This gives rise/creates unique challenges related to teaching to a tight timeframe, many skills at once, and managing student expectations and confidence. We are not teaching coding as a skill in and of itself. It has to exist rooted within the disciplinary context and alongside it.  
 
-:::
+Our community works in departments related to our disciplines, rather than the programming we teach. This often results in silos – or even teams of one – delivering the entire programming curriculum for a cohort. As a result, we rely on chance meetings with colleagues at conferences and coding clubs to create opportunities for likeminded people to connect and develop their practice. We hope that this book will offer something similar - a window into how others teach and an opportunity to pick the best bits for your own teaching. Above all, we hope that it will be a source of support and solidarity that speaks to your unique teaching experiences. 
+
+### Who is this book for?  
+
+This book is for anyone who is interested in teaching, programming, or the intersection of these ideas. Many chapters are written with the aim of creating community and sharing our experiences with fellow educators. Others are suitable for students to read as they are.  
+
+The volume we have edited is relevant to both educators starting out on their teaching journey and more experienced teachers. We like to think that there is value for teaching-adjacent colleagues as well – leadership, administrators, etc. 
+
+### How to read this book 
+
+There are many (we have yet to quantify an exhaustive list) ways in which a reader can navigate our book. It is unlikely that you will open this book and read it cover to cover. To find chapters most relevant to your teaching, you can use the Part and Theme names as a guide. Alternatively, close your eyes and randomly open the physical book to a page or scroll on your computer and see where your cursor lands on our online version of the book.  
+
+### A note on vocabulary 
+
+We would not be a community of academics working on a project together if we did not do the very academic thing of defining our terms. At some higher education institutions, the terms “course” and “module” are used to refer to the overall degree program of study and individual organized learning opportunities bearing credit, while others use “program” and “course”. Similarly, you may notice “student” and “learner” are both used. As editors, we have left it to the authors’ discretion as this is most representative of how the terms are used across our community.  
+
+ 
+
+We hope you find something interesting to you as a human and perhaps even useful if you are an educator in the chapters that follow. Happy reading!  
+
