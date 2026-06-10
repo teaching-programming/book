@@ -13,7 +13,7 @@ author:
     affiliations: University of Edinburgh
   - name: Nick Jayanth
     email: nick.jayanth19@imperial.ac.uk
-    affiliations: Imperial College London
+    affiliations: School of Public Health, Imperial College London
   - name: Sam Skipsey
     email: Samuel.Skipsey@glasgow.ac.uk
     affiliations: University of Glasgow
@@ -37,7 +37,7 @@ author:
     affiliations: University of Edinburgh
   - name: Nick Jayanth
     email: nick.jayanth19@imperial.ac.uk
-    affiliations: Imperial College London
+    affiliations: School of Public Health, Imperial College London
   - name: Sam Skipsey
     email: Samuel.Skipsey@glasgow.ac.uk
     affiliations: University of Glasgow
