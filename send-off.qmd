@@ -9,10 +9,11 @@ author:
     affiliations: Edinburgh Medical School, University of Edinburgh
   - name: Pawel Orzechowski
     email: pawel.orzechowski@ed.ac.uk
-    affiliation: Edinburgh Medical School, University of Edinburgh
+    affiliations: Edinburgh Medical School, University of Edinburgh
 ---
 
 ::: {.content-visible when-format="docx" note="this should be identical as authors above, for docx"}
+author:
   - name: Brittany Blankinship
     email: b.blankinship@ed.ac.uk
     affiliations: Edinburgh Medical School, University of Edinburgh 
@@ -21,7 +22,7 @@ author:
     affiliations: Edinburgh Medical School, University of Edinburgh
   - name: Pawel Orzechowski
     email: pawel.orzechowski@ed.ac.uk
-    affiliation: Edinburgh Medical School, University of Edinburgh
+    affiliations: Edinburgh Medical School, University of Edinburgh
 :::
 
 You have made it to the end! Well, the end for now...cue the dramatic music \<dun dun dun\>. Much like our community, which is open and ever growing, this book is a living document. There will be a second version at some point, which expands and fills gaps in the current version. If you have read this far, you may want to join us and contribute! 
