@@ -41,7 +41,7 @@ Based on our experience in translations and localisation projects, we decided to
 
 This contribution is a collection of personal reflections and good enough practices we learned through the years, with the caveat that any translating project will have its own peculiarities and needs. While many of our reflections stem from medium to larger, collaborative efforts, some of these practices may also be adapted to smaller-scale projects, although this is not the primary focus of this chapter.
 
-## General considerations
+## General Considerations
 
 Before moving into the practical side of this contribution (organised around the different project stages: designing, deploying, and maintaining), we wanted to outline a few general considerations.
 
@@ -63,11 +63,11 @@ More generally, any translation project benefits from two key approaches: a coll
 
 Having discussed these general approaches and issues, we now move into more targeted advice based on the different stages of the project. Although it may seem more applicable to a large and medium-sized translation workflows, you may find it useful to consider even when starting a small personal project, since it may be helpful to set up things in a scalable and reproducible manner from the start (in the same way like setting up a Git repository for a personal task).
 
-## Before starting: the design stage
+## Before Starting: The Design Stage
 
 Approaching a translation project, it’s important to have a clear idea about its organisation. You are going to face a substantial task. Choosing the wrong tools and process may cause substantial delays later or impose very restrictive limitations.
 
-### Internationalisation vs. localisation
+### Internationalisation vs. Localisation
 
 A common view is to separate internationalisation (commonly denoted as “i18n”) and localisation (“l10n”) steps[^C24-ftn1]. Internationalisation is focussed on creating multi-language versions of the product (e.g. book, website, software, etc.), while localisation is usually a separate step which happens later.
 
@@ -77,7 +77,7 @@ You also need to decide whether there is a real need in the localisation of exam
 
 [^C24-ftn1]: See [Wikipedia - Internationalization and localization](https://en.wikipedia.org/wiki/Internationalization_and_localization)
 
-### Technical tools
+### Technical Tools
 
 Next, you need to consider the technical infrastructure for your translation project. There are some aspects to keep in mind for ad hoc approaches without using any of the specialised platforms. 
 
@@ -98,7 +98,7 @@ In the following table, we describe several existing platforms for collaborative
 
 ::: {.callout-tip icon=false collapse=true}
 
-# Table: Comparing platforms for collaborative translation
+# Table: Comparing Platforms for Collaborative Translation
 
 | Feature / Platform | Crowdin | Transifex | Weblate |
 | ----- | ----- | ----- | ----- |
@@ -119,11 +119,11 @@ In the following table, we describe several existing platforms for collaborative
 
 :::
 
-## The implementation stage: the translation workflow
+## The Implementation Stage: The Translation Workflow
 
 When it comes to the deployment stage, much will depend on the specific tools and setup you choose to use. However, we have gathered a series of good practices and common pitfalls that should help streamline the deployment phase, whatever your workflow. The following tips are designed to support a smoother, more efficient translation workflow as you bring your teaching materials into multiple languages.
 
-### Peer review
+### Peer Review
 
 Whenever the translations are made in a specialised platform like one from the table above, submitted via GitHub or GitLab pull requests, or contributed in some other way, it is crucial to have them reviewed. This helps to ensure consistency of translation across the project and to propagate the knowledge within the translation team. Make sure that you provide feedback to the translators, instead of quietly correcting their errors. Timely feedback is especially important when new translators join the team: delayed feedback may result in them repeatedly making the same errors, causing more work to fix them in the future.
 
@@ -131,7 +131,7 @@ Reviewing collaboratively-made translations imposes the need for an approval sta
 
 For languages spoken in multiple countries, revisions should ideally involve reviewers from different regions. For example, in Spanish, it is beneficial to include reviewers from several countries to ensure that the chosen words and expressions are widely understood. Don't underestimate that asynchronous communication will take more time. Sometimes getting together in an online meeting helps to traverse and finalise the remaining fragments of the text much faster and get the next portion of the document ready for publication.
 
-### Onboarding new translators
+### Onboarding New Translators
 
 Onboarding new translators is a regular task in community-driven projects. It is important to prepare guidance and provide training for new contributors. Here, there are a few things that need to be explained:
 
@@ -153,7 +153,7 @@ Finally, if the glossary is not a part of the translated document, we recommend 
 :::
 
 
-## The long-term maintenance: general good practices
+## The Long-Term Maintenance: General Good Practices
 
 While the creation and deployment of multilingual teaching materials are critical steps, it is equally important to recognise that the process does not end there. Digital and web-based resources are inherently dynamic --- they need periodic updates as the software changes, educational needs evolve, or the content becomes outdated. Over time, links may break, interfaces may change, and new technologies might require updates to ensure continued accessibility and functionality.
 
@@ -167,7 +167,7 @@ It may also happen that while you are working on the translation, a new version 
 
 Finally, translating code-based teaching materials is a challenge: one should be fluent in the terminology and subtleties in both languages and understand the technical content. Welcoming contributors who do not necessarily possess all three skills, but just one, and are willing to learn through collaboration and feedback, would make your community more inclusive and diverse.
 
-## Final remarks
+## Final Remarks
 
 Language shapes who can access knowledge, participate, and contribute in communities. When most resources are available only in English, a large portion of the global community faces structural barriers that cannot be overcome by individual effort alone. Addressing these barriers is essential not only for being fair but also for the sustainability and global relevance of scientific and open-source initiatives and projects. 
 

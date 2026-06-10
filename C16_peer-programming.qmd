@@ -106,7 +106,7 @@ When students attend their first lab session, they self-select a table as their 
 > **Eileen:** As a tutor, I try to be conscious of which students do/don't contribute, and whether they might be having difficulty keeping up. It can be difficult to ask for help on topics you're having trouble understanding, especially in a group setting. As a tutor, I try to alleviate this when I explain things to a group, and make sure that individual students aren't "singled out" for not understanding something. I often start by asking questions about the week’s concept/code; group members with clearer understanding are usually the ones to answer, and I can prompt them to lay out their thought process, filling in any gaps. This 1\) allows students with clearer understanding to consolidate their knowledge and build confidence by explaining concepts to their peers, 2\) gives students who are having difficulties the option to ask for help or pose follow-up questions without singling them out, and 3\) facilitates discussion in quieter groups, as students can direct questions and suggestions to a tutor (one person) instead of the whole group. Everyone gets to reap the benefits, and over the semester I get to watch students turn to me less and less as they become more confident in their ability to problem-solve as a group.
 
 
-## Case Study 2: Peer Programming as Scenario-based Tutor Training
+## Case Study 2: Peer Programming As Scenario-based Tutor Training
 
 As course organiser, I’m also responsible for hiring and training tutors, an important step to ensure the course runs smoothly. Each year, I hire a team of six tutors (who staff four labs each week, with four tutors per lab, and also help with the marking of assignments). It is essential that tutors receive training, for quality assurance and to ensure they feel confident explaining the material and addressing any issues or computing errors during the labs.
 
@@ -143,7 +143,7 @@ The first three reports are formative, giving students the chance to obtain feed
 
 Working across multiple weeks motivates students to show up, as the different weeks are intertwined, and there is a shared understanding that people need to turn up and help to avoid the group falling behind, so students are keen to participate. This gives the group a sense of ownership and they tend to care about their work. Asking students to submit their end-product is also key to their engagement and attendance in labs.
 
-## Case Study 4: Peer Programming to Foster Belonging
+## Case Study 4: Peer Programming To Foster Belonging
 
 Year 1 of an undergraduate or postgraduate degree is typically a year where students need to form new connections. Peer programming (as well as the standard pair programming) has been a key element to ensure students form a peer-to-peer support network and form new friendships. The student feedback from the DAPR1 course with peer programming implemented speaks for itself:
 
@@ -166,7 +166,7 @@ The above feedback, combined with the much improved attendance at labs, highligh
 > Other cohorts may not share the same values. For example, in a course with a high workload, students may need to be highly strategic in their learning to keep up with the demands of the course. If pair (or peer) programming is seen to slow them down, it may be met with resistance. I have seen first-hand how this pressure influences how pair programming as a concept is received. Similarly, if students are interested in "getting the right answer" and don't expect to use programming again, they are less likely to see the value in exploring alternative approaches with other students. In contrast, the psychology students of DAPR1 have surprised me in how often they come willing to learn, even when other assessments loom. I think a large part of this is the welcoming atmosphere in labs and the reduced need for independent study outside of scheduled hours \- if you attend lectures and labs, you will learn statistical theory, see it performed in R, and apply it yourself in an assessed (or formative) report. For our first-year psychologists, there is also value in learning things well. They have two years of R courses to go, and a dissertation year after that. It is worth applying good practices and investing for the future.
 
 
-## Case Study 5: Peer Assessment to Encourage Active Contribution and Sense of Ownership
+## Case Study 5: Peer Assessment To Encourage Active Contribution and Sense of Ownership
 
 As educators, we may be concerned (and many students are) with the fact that any type of groupwork could have free riders, i.e. people who benefit from the work of others without meaningfully contributing to it. To help address this challenge I wanted to have in place a strategy to reward students who contributed to the end-product, where the “contribution amount” is based on ratings by their peers. With the help of the University’s learning technology team, I based the implementation on the [WebPA tool by Loughborough University](https://webpaproject.lboro.ac.uk).
 

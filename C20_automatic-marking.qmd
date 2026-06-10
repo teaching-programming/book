@@ -1,5 +1,5 @@
 ---
-title: "Using Automated Marking in Programming Courses to Enhance Learning"
+title: "Using Automated Marking in Programming Courses To Enhance Learning"
 bibliography: references.bib
 author:
   - name: Leila Shila Shafti
@@ -38,7 +38,7 @@ In courses that teach programming, the need for automated marking is especially 
 
 This chapter explores the practical implementation of automated marking, providing step-by-step guidance, and lessons learned from experience. 
 
-## What is automated marking?
+## What Is Automated Marking?
 
 Automated marking refers to the use of software systems to evaluate students’ submissions without manual intervention. In programming courses, it enables the assessment of various aspects such as code correctness, efficiency, readability, and adherence to coding standards. Automated marking tools provide fast, consistent, and objective feedback, facilitating timely interventions and supporting large-scale assessments.
 
@@ -54,7 +54,7 @@ There are other tools for automated marking such as Autolab [@DejanMilojicic2011
 
 In this chapter, we focus specifically on CodeRunner, exploring its practical implementation, integration with Moodle, and benefits in programming courses. The following section provides a practical guide to implementing automated marking using CodeRunner, demonstrating how these features can be effectively applied in real teaching contexts. This is followed by a description of our experience using CodeRunner at the University of Strathclyde, and finally, the chapter concludes with key reflections.
 
-## Implementing automated marking 
+## Implementing Automated Marking 
 
 This section provides basic instructions on how to effectively set up an assignment in Moodle using CodeRunner as the automated marker. Before using CodeRunner, the plugin must be installed on Moodle.
 
@@ -74,13 +74,13 @@ In addition to test cases, there are many adjustments that can be made, as can b
 
 Once the question is configured, it can be previewed and tested like any other quiz in Moodle. It is strongly recommended that, after the quiz is completed by students, the submission is reviewed for common errors and misconfigurations. This allows you to adjust the questions for the next cohort.
 
-### Question type
+### Question Type
 
 **Description**: The Question type specifies the programming language used for the assignment. You can select one of the predefined languages from the drop-down menu. However, any language can be used once it is installed on the CodeRunner’s server. 
 
 **Recommendation**: See the [CodeRunner documentation](https://trampgeek.github.io/moodle-qtype_coderunner/) on supporting or implementing new languages.
 
-### Submit buttons - Precheck
+### Submit Buttons - Precheck
 
 **Description:** Precheck determines whether the “Precheck” button should be available in the answer form (@fig-answer). The Precheck button allows students to test their solution before it is marked, ensuring they have followed basic instructions, such as the required output format. This does not affect their mark.
 
@@ -108,21 +108,21 @@ Once the question is configured, it can be previewed and tested like any other q
 
 **Recommendation:** Use this customisation when the evaluation goes beyond checking for correct input and output, for example, when verifying that a student has used an array, a specific function, or other required programming constructs. 
 
-### Support files
+### Support Files
 
 **Description:** When additional files are needed to execute and evaluate a student’s solution, they can be uploaded through the Support Files section of CodeRunner.
 
 **Recommendation**: This section is useful for providing any supplementary files required for the assignment, such as additional C++ or Java classes, or even a Java parser for more detailed analysis of the student’s code.
 
-## Our experience
+## Our Experience
 
 At the University of Strathclyde, CodeRunner has been integrated into several programming modules, including C, Python, Java, and SQL. Below are some examples of how it has been used.
 
-### Basic input/output evaluation
+### Basic Input/Output Evaluation
 
 CodeRunner is used to verify whether a program produces the correct output. Questions can be configured to require either a complete program or a specific function. When the output varies depending on the input, all relevant test cases are included in the question. See the Moodle XML file [`CodeRunnerBasic.xml`](/chapters/resources/C20_CodeRunnerBasic.xml) for an example.
 
-### Use of specific programming constructs
+### Use of Specific Programming Constructs
 
 In some cases, the goal is to ensure that students apply a particular programming feature. For example, in a loop evaluation task, it may be necessary to check that a student uses a while-loop rather than a for-loop. This can be enforced using the Template configuration. Depending on the programming language, the template script may be relatively simple, such as:
 
@@ -133,15 +133,15 @@ if 'while' not in student_answer:
 
 The Template configuration can be significantly more complex. See the Moodle XML file [`CodeRunnerConstruct.xml`](/chapters/resources/C20_CodeRunnerConstruct.xml) for an example.
 
-### Evaluation of JUnit implementation
+### Evaluation of JUnit Implementation
 
 In some assessments, it was necessary to evaluate students’ understanding of JUnit within Java programming. This was achieved by using a [CodeRunner template](https://github.com/jackodsteel/coderunner-questions/tree/master/JUnitTesting) developed specifically for this purpose. 
 
-### Evaluation of SQL queries
+### Evaluation of SQL Queries
 
 CodeRunner makes it easy to design assessments involving SQL queries. The database required for the question can be created using SQLite and uploaded via the Support Files section of CodeRunner. Each query is then tested by comparing its output against the expected result. Since the order of rows in SQL query results is not guaranteed, students should either be instructed to use an ORDER BY clause on a specific attribute, or the template script can be configured to automatically sort the output of SELECT statements before comparison. See the Moodle XML file [`CodeRunnerSQLQueries.xml`](/chapters/resources/C20_CodeRunnerSQLQueries.xml) for an example.
 
-### Evaluation of SQL database creation
+### Evaluation of SQL Database Creation
 
 CodeRunner can also be used to assess students’ ability to design and create SQL databases. Test cases can be written to check whether tables are defined correctly, including the correct definition of primary keys, foreign keys, and data types. INSERT statements can be included in the test case to verify whether the student’s tables enforce the required constraints. Since invalid inserts produce errors instead of standard output, a script must be added to the CodeRunner template to capture and display these errors as the student’s output. See the Moodle XML file [`CodeRunnerSQLCreate.xml`](/chapters/resources/C20_CodeRunnerSQLCreate.xml) for a simple example.
 

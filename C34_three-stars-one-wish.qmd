@@ -60,7 +60,7 @@ The origins of 'Three stars and a wish' (or sometimes 'Two stars and a wish') ar
 3s1w is a short four-sentence piece of writing which students produce right after learning something. The prompt that students get can look like this:
 
 ::: {.callout-note icon="false"}
-# A typical 3s1w prompt for students
+# A Typical 3s1w Prompt For Students
 
 Describe your personal response to this material in three short "star" sentences and one short "wish" sentence:
 
@@ -97,7 +97,7 @@ While we do not encourage using 3s1w to provide course feedback, or immediate re
 
 If you don't want the unique function of a wish to be hijacked by course feedback or requests for help, we recommend providing other means for students to achieve these aims. On most courses we have three separate discussion forums in addition to 3s1w: one for questions about the content; one for questions about course admin; and one for raising bugs. Every day a teaching assistant responds to student posts on those forums and engages with student questions there. This promotes understanding that requests for help or course issues should happen on these discussion forums, rather than in 3s1w.
 
-### Why We Adapted 3s1w For University Courses 
+### Why We Adapted 3s1w for University Courses 
 
 Let us briefly introduce the reasons why we adapted 3s1w for our programming courses. Later in this chapter we will expand on the topics of motivation, community and authentic (inward-focused and world-focused) learning.
 
@@ -161,7 +161,7 @@ Given the progress of cheating technology (LLMs) and pressures of life outside t
 
 > "In terms of cheating, I think this particular assessment is not prone to using AI because it's so short. If you asked about more text, even a paragraph, I would see an appeal of using LLM to write or correct my writing. And instead, I'd read through other people's posts and use that as an inspiration. And that's a good thing, reading other people's posts felt like learning." - Rebecca, Postrgraduate Student
 
-### Build Community, so That It Builds You	
+### Build Community, So That It Builds You	
 
 We meet friends for life when we are students, and both identities (friends and students) have the capacity to enhance the other one. Feeling part of a community is a meaningful but also challenging aspect of the higher education learning experience [@haddow2024harnessing]. Building a sense of community may be especially important in online and blended learning, where 'social presence' \- the degree to which online participants feel connected to one another \- has been identified as a key factor for successful learning [@whiteside2023social]. When online or hybrid, learners may be missing out on all the small 'water cooler' interactions with fellow students, e.g. chats while waiting for the lecture, or discussing things in the cafeteria.
 

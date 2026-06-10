@@ -40,9 +40,9 @@ You can also listen to the [audio podcast version of this interview](https://med
 
 ![Authors recording the podcast version. We rigged the space for optimal audio quality and comfort.](/chapters/images/C12_pair-programming-overview_podcast_recording.jpg "Authors recording the podcast version. We rigged the space for optimal audio quality and comfort."){#fig-C12_pair-programming-overview_podcast_recording fig-alt="Photo of authors recoring the podcast. On the photo there are annotations about how we created a standing table from ironingboard, and used carpets and curtains to control external noise." width=70%}
 
-## Communicating the why
+## Communicating the Why
 
-### Let's jump right in:
+### Let's Jump Right In:
 
 **Interviewer (Kasia):** Hi, we are a group of educators at the University of Edinburgh. We have been using an asymmetrical group working technique in our classrooms, called Pair programming. It’s used a lot in the industry, but not so much in education. Recently, a lot of colleagues have become interested in our experience of this, asking us questions at conferences and within our own university.
 
@@ -54,7 +54,7 @@ I’ve decided to interview my team who are experienced with pair programming in
 
 **Kasia:** Hello, my name is Kasia and I have been teaching programming for 5 years now. I also use pair programming in my courses, particularly those I teach in person. Join me over the next while as I interview my colleagues and ask them some of the questions that frequently come up when we introduce pair programming to other people.
 
-### What is Pair Programming?
+### What Is Pair Programming?
 
 **Interviewer:** Let's start with the basics: What is Pair programming (or pair-groupwork in general) and how does it differ from just working in a pair?
 
@@ -78,7 +78,7 @@ When it's time to switch roles you would just pass the keyboard around. Or a whi
 
 **Brittany:** We've been using it across our departments for about a decade, with about two thousands students in total. We've gathered a lot of expertise and are reaching a place where we're starting to look more analytically into what works and what doesn't. Especially what types of pair programming give people a better learning experience and better outcomes.
 
-### Why PP is good for learning {#why-pp-is-good-for-learning}
+### Why PP Is Good for Learning {#why-pp-is-good-for-learning}
 
 **Interviewer:** That's right, it is all about learning better after all. So how does pair programming fit into your courses? Where does it shine and where does it not?
 
@@ -118,7 +118,7 @@ In creative industries, like coding, we can't think about efficiency like we do 
 
 It depends on a task, but often another pair of eyes makes the code more solid, which is worth it in the long run. Additionally, pairing up and working with people across the team means more people have a deep understanding of what we're building, which makes for a more robust and agile team in the long run.
 
-### Students' reactions
+### Students' Reactions
 
 **Interviewer:** Oh wow, I see how this approach would be useful, both in education and in industry. But do students get it? Do you have to spend a lot of time convincing them?
 
@@ -134,11 +134,11 @@ Being at university, or even learning in general, is a social experience, so the
 
 ![Students swap roles frequently to have experience of driving and navigating](/chapters/images/C12_pair-programming-overview_keyboard_switch.png ""){#fig-C12_pair-programming-overview_keyboard_switch fig-alt="Drawing of two students opracticing pair programming - only one is typing on a computer. They talk to each other. Then they swap who holds the keyboard." width=70%}
 
-## Preparing for the session
+## Preparing for the Session
 
 **Interviewer:** Ok, this sounds really cool. Can we now talk a little bit about the practicalities? Walk me through how pair programming actually happens in the classroom.
 
-### How to run a PP session
+### How To Run a PP Session
 
 **Interviewer:** For example, how long would your pair programming sessions be?
 
@@ -186,7 +186,7 @@ To create an equitable world with diversity and inclusion in focus, we can't jus
 
 **Interviewer:** Oh, I see how pair programming could be a great practice for inclusivity, and how we have an important mission here as teachers to make sure that it is in fact inclusive.
 
-### Logistics (room, equipment)
+### Logistics (Room, Equipment)
 
 **Interviewer:** I have a few more questions about the practical side of things. When doing pair programming in person, what equipment do you need? Will any classroom do? Do you need special screens, tables, chairs?
 
@@ -212,7 +212,7 @@ It requires a lot of prep, great knowledge of technology, and a really good team
 
 **Interviewer:** Wow, 300 students, half in person and half online, working together. What a thing to imagine! Amazing!
 
-### Tasks students work on
+### Tasks Students Work On
 
 **Interviewer:** Ok, so it sounds like you're using pair programming a lot, in many different modalities. Tell me about the design of materials for pair programming sessions.
 
@@ -254,9 +254,9 @@ Same goes for any logistical issues, like patchy internet in online classes, or 
 
 It works really well when the driver is pitching the solution to the group and they approve of it, or suggest improvements. It seems to work well, especially when well integrated into the design of the whole course. Pair programming is a very flexible way to collaborate, but it's important to communicate the roles, the structure and the expectations to students very clearly.
 
-## Running a session
+## Running a Session
 
-### Before we start / Preparing the group
+### Before We Start / Preparing the Group
 
 **Interviewer:** Right, that makes sense - the whole class should be on board and know exactly what they are doing. How do you achieve that? How do you onboard the class, especially the first few times?
 
@@ -276,7 +276,7 @@ It works really well when the driver is pitching the solution to the group and t
 
 **Pawel:** It's quite eyeopening and creates a lot of moments of pride! You stop accepting quick, shoddy code... or just thinking "oh, I'll fix this later". Instead we switch to long-term, kind thinking like "I need to write this code clearly and simply enough, so when we switch drivers, the next person can continue without much drama".
 
-### Once pairs are at work / Roles of instructors and students
+### Once Pairs Are at Work / Roles of Instructors and Students
 
 **Interviewer:** And once the pairs are at work, what do the instructors do?
 
@@ -312,7 +312,7 @@ When a tutor approaches a pair who asked for help, the first thing they would as
 
 In big classes, like our EFI course with 300 students, our Teaching Assistants would act as the avant garde - they go to help students first. And if the problem is very challenging, then they escalate it further and call over the Lecturer. Really it is just more of that "brain book buddy boss" philosophy. To learn problem solving, as a whole class we need to practice problem solving.
 
-### End of the session
+### End of the Session
 
 **Interviewer:** I see. So the focus in a pair programming session is to get more practical experience. And how do the sessions end? Is there a structure similar to how you start the session?
 

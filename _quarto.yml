@@ -82,8 +82,8 @@ book:
         # - 00-chapter-template.qmd
 
         # - P00_part-preface.qmd
-        # C0.1 How this book/comminity came about: Chapter from editors - how we got here and how we did it 
-        # C0.2 What's in the book (introduce the parts) 
+        - C00.1_this_book.qmd
+        - C00.2_all_parts_introduction.qmd
         
         - P01_part-theories-applications.qmd
         
@@ -106,7 +106,7 @@ book:
         - C33_coding-anxiety.qmd
         - C34_three-stars-one-wish.qmd
 
-        # - P02_part-design-practice.qmd
+        - P02_part-design-practice.qmd
         
         - C16_peer-programming.qmd
         - C31_leveraging-the-heterogeneity.qmd
@@ -139,7 +139,7 @@ book:
         - C32_civil-engineering.qmd
         - C24_lost-in-translation.qmd
 
-        # - TODO_SendOFF.qmd
+        - send_off.qmd
         - CAB_Authors.qmd
         # - TODO_Images.qmd
         - 99-bibliography.qmd

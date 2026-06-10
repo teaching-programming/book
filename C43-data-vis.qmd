@@ -28,7 +28,7 @@ More often than not our students arrive expecting to learn about new chart types
 
 This chapter presents a story of transformation by offering some insights into what the course *Data Visualisation: Knowledge Transfer* does, how it does it, and why, at a moment in time when generative AI can produce a bar chart from a prompt in seconds, it matters more than ever that our students can see before coding and doodle before doing. 
 
-## The Problem with Jumping Straight to Code 
+## The Problem With Jumping Straight to Code 
 
 There is a seductive logic to the idea that learning data visualisation means learning to code visualisation. After all, programming tools are powerful, expressive, and fast. A student who knows how to use a *Python* or *R* visualisation package can produce a scatter plot in minutes; they can iterate, tweak, re-render, and they can handle thousands of data points with ease. So why do we not start here? Indeed, why do we not go here at all? The answer is that programming tools, for all their power, are also ‘cognitive cages’. From the moment a student opens a coding environment, they are limited. Constrained by the chart types the tool offers, the parameters it accepts, the defaults it imposes. The tool shapes their thought. A student reaching for a data visualisation tool will, almost instinctively, reach for a line chart or a bar chart not because these are the right choices for the data or the audience, but because these are what the tool offers first. With this, the creative space collapses before it has even had a chance to open. 
 
