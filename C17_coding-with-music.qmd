@@ -19,18 +19,27 @@ author:
     affiliations: School of Engineering, Physics and Mathematics, Northumbria University
 
 keywords:
-  - practical
-  - resources
-  - music
-  - audio
-  - beginner
+  - student-engagement	
+  - tool-review
 ---
 
 ::: {.content-visible when-format="docx" note="this should be identical as authors above, for docx"}
 author:
-  - name: Author One
-    email: author@one.com
-    affiliations: institution or company
+  - name: Tom Mudd
+    email: tom.mudd@ed.ac.uk
+    affiliations: Reid School of Music, Edinburgh College of Art, University of Edinburgh
+  - name: Yashique Chalil
+    email: ychalil@ed.ac.uk
+    affiliations: Reid School of Music, Edinburgh College of Art, University of Edinburgh
+  - name: Matthew Hamilton
+    email: s0674653@ed.ac.uk
+    affiliations: Reid School of Music, Edinburgh College of Art, University of Edinburgh
+  - name: Charlotte Desvages
+    email: charlotte.desvages@ed.ac.uk
+    affiliations: School of Mathematics and Maxwell Institute for the Mathematical Sciences, University of Edinburgh
+  - name: Mike Taverne
+    email: mike.taverne@northumbria.ac.uk
+    affiliations: School of Engineering, Physics and Mathematics, Northumbria University
 :::
 
 
