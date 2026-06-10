@@ -1,6 +1,5 @@
 ---
 title: "Send off"
-bibliography: references.bib
 author:
   - name: Brittany Blankinship
     email: b.blankinship@ed.ac.uk
@@ -11,8 +10,6 @@ author:
   - name: Pawel Orzechowski
     email: pawel.orzechowski@ed.ac.uk
     affiliation: Edinburgh Medical School, University of Edinburgh
----
-
 ---
 
 ::: {.content-visible when-format="docx" note="this should be identical as authors above, for docx"}
