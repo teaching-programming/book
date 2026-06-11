@@ -1,3 +1,8 @@
+---
+title: "Image Register"
+bibliography: references.bib
+---
+
 ## Chapter --- Hype and The Need for Responsible Compute
 
 ### Figure 0.0
