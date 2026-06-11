@@ -222,7 +222,7 @@ Apparently, most of the computational workload here lends itself to imperative p
 
 CivEng students understand the use of functions and are adept in translating formulation of various calculation routines into functions. So that should be enough for generalising code, shouldn't it? During a practice session, after having students estimate the derivative $f'(x_0)$ for the specific functions $f(x) = x^2$ and $f(x) = \cos(x)$ with finite differences, I required them to generalise their `deriv_*` function to accept any mathematical function. Well, how can we do that? --- they doubted, until I showed that we can just pass the function under investigation as one of the inputs of the function `deriv` (see the Julia code below) --- a first step toward functional programming.
 
-```{#lst-student-func .julia lst-cap="Student's version"}
+```{.julia lst-cap="Student's version"}
 deriv_sq = function(o, h)
   ((o + h)^2 - (o - h)^2) / 2h
 end
@@ -235,7 +235,7 @@ deriv_sq(0, 1E-3)
 deriv_cos(0, 1E-3)
 ```
 
-```{#lst-recommended-func .julia lst-cap="Recommended version"}
+```{.julia lst-cap="Recommended version"}
 # A generic central-difference approximation
 deriv = function(f, o, h)
   (f(o + h) - f(o - h)) / 2h
