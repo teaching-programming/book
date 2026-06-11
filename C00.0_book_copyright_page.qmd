@@ -1,4 +1,4 @@
-## Copyright
+# Copyright {.unnumbered .unlisted}
 
 First published in 2026 by the University of Edinburgh
 
