@@ -34,6 +34,7 @@ This project was supported by a grant from the University of Edinburgh's Princip
 
 
 ![](chapters/images/C00_UoE_logo.png){fig-alt="The University of Edinburgh logo" fig-alight=left width=40%}
+
 ![](chapters/images/C00_EdinburghDiamond_logo.png){fig-alt="Edinburgh Diamond logo" fig-alight=left width=40%}
 
 ---
