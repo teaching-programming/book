@@ -1,5 +1,4 @@
 ---
-title: "Preface --- Welcome to the Book"
 author:
   - name: Franziska McManus
     email: z.mcmanus@ed.ac.uk
@@ -24,6 +23,8 @@ author:
     email: pawel.orzechowski@ed.ac.uk
     affiliation: Edinburgh Medical School, University of Edinburgh
 :::
+
+# Preface --- Welcome to the Book {.unnumbered .unlisted}
 
 Welcome to the Teaching Programming Across Disciplines Book! Our book is an edited, open-access volume comprised of many short chapters written by groups of authors from our community. In this first edition of the book, we have curated 44 chapters from 75 authors. Since the original pitch, these chapters have been drafted, revised, and polished, with rewrites from authors, feedback from the editing team, and many writing retreats along the way. Contributions to this book are not limited to one institution, and while reading you will notice that our authors have drawn on their experiences across different institutions, countries, and educational backgrounds. 
 

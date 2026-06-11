@@ -49,15 +49,7 @@ The choice of a development environment can determine whether programming feels 
 
 In professional Python programming environments, a developer normally creates a virtual environment and installs packages, which is driven by command-line tools. Jupyter Notebook provides a simpler interface, allowing Python to be written directly into a cell and executed with a keystroke. An example Python segment is given in @fig-hello-world, where program execution is triggered by pressing *Shift+Enter* and the output is given below the `print` command.
 
-::: {.content-visible unless-format="html"}
 ![Printing 'Hello, world' with a Jupyter Notebook.](/chapters/images/C29_Figure1_narrow.png "Printing 'Hello, world' with a Jupyter Notebook."){#fig-hello-world fig-alt="A snippet of Python code using a print function to display the text 'Hello, world'."}
-:::
-
-::: {.content-visible when-format="html"}
-![Printing 'Hello, world' with a Jupyter Notebook.](/chapters/images/C29_Figure1.png "Printing 'Hello, world' with a Jupyter Notebook."){#fig-hello-world fig-alt="A snippet of Python code using a print function to display the text 'Hello, world'."}
-:::
-
-
 
 As shown in @fig-hello-world, there is no need to create a virtual environment, install packages or open a command-line interface during everyday use. Once Python, Jupyter Notebook, and relevant packages have been installed, the user is presented with a simple workflow. The instant evaluation of Python code makes programming feel less abstract and more welcoming to novices.
 
@@ -67,15 +59,7 @@ One of Jupyter Notebook’s defining features is its cell-based execution. Inste
 
 The code in @fig-cell creates a list, defines a function to square all the numbers in that list, and then prints the results. Rather than placing everything in a single large cell, the program is split into three separate cells. If an error appears in one step, the student can rerun only that cell without restarting the whole Notebook.
 
-
-::: {.content-visible unless-format="html"}
 ![An example of cell-based execution.](/chapters/images/C29_Figure2_narrow.png "An example of cell-based execution."){#fig-cell fig-alt="Python notebook with three cells: the first creates a list called 'numbers', the second defines a function 'square_list' that returns the squares of the list elements, and the third prints the squared list."}
-:::
-::: {.content-visible when-format="html"}
-![An example of cell-based execution.](/chapters/images/C29_Figure2.png "An example of cell-based execution."){#fig-cell fig-alt="Python notebook with three cells: the first creates a list called 'numbers', the second defines a function 'square_list' that returns the squares of the list elements, and the third prints the squared list."}
-:::
-
-
 
 The cell-based workflow encourages experimentation, where learners modify input values, rerun a function, and immediately see how the output changes. This reduces frustration, supports trial-and-error learning, problem-solving, and generally encourages novice programmers.
 
@@ -95,14 +79,8 @@ One of the biggest challenges for beginner computer programmers is learning how 
 
 
 
-::: {.content-visible unless-format="html"}
+
 ![Using the NumPy library.](/chapters/images/C29_Figure3_narrow.png "Using the NumPy library."){#fig-numpy fig-alt="Python script using NumPy: an array of numbers is created, each number is squared, the mean of the squared values is calculated, and the original array, squared array, and mean are printed."}
-:::
-::: {.content-visible when-format="html"}
-![Using the NumPy library.](/chapters/images/C29_Figure3.png "Using the NumPy library."){#fig-numpy fig-alt="Python script using NumPy: an array of numbers is created, each number is squared, the mean of the squared values is calculated, and the original array, squared array, and mean are printed."}
-:::
-
-
 
 Other common libraries used for AI/ML included in Anaconda are Pandas and Matplotlib, and further libraries are also available as `conda` packages that can be installed separately.
 
