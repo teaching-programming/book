@@ -19,12 +19,12 @@ author:
     affiliation: Edinburgh Medical School, University of Edinburgh
 :::
 
-This article originally appeared as a post on the Unversity of Edinburgh blog Teaching Matters in February 2025.
+This article originally appeared as a post on the University of Edinburgh blog Teaching Matters in February 2025.
 
 Back in September 2024, an "Angry Developer" posted their opinion on the effect of AI code tools ([Why Copilot is making programmers worse at programming](https://www.darrenhorrocks.co.uk/why-copilot-making-programmers-worse-at-programming/)).
 
 This got me thinking about the effect of AI LLM tools on _academic skills_.
-Hopefully in way the gives some useful perspective on why-or-when _not_ to turn to AI, beyond the "because the uni said 'No!'" rules, and that might resonate with our students on a more personal level.
+Hopefully in a way that gives some useful perspective on why-or-when _not_ to turn to AI, beyond the "because the uni said 'No!'" rules, and that might resonate with our students on a more personal level.
 
 ## Erosion of Academic Skills
 
@@ -45,7 +45,7 @@ In programming, we never get our code right first time, and our feedback comes i
 In our own studies, engaging directly with material is essential for "deep learning" (pun not _really_ intended, but I'll take it).
 For example, if students routinely use AI to quickly summarise articles or generate lab reports, they will find it more difficult to develop a whole chain of skills.
 
-![Over-reliance on AI tools is ikely to weaken key academic skills, which once weakened, will lead to a cyle of continued skills impoverishment.
+![Over-reliance on AI tools is likely to weaken key academic skills, which once weakened, will lead to a cycle of continued skills impoverishment.
 (Totally based on opinion - I got no refs for this)](/chapters/images/C44_ai-vs-ac-flowchart.png){#fig-c44-diagram fig-alt="A sequence of academic skills pointing from 'Meaningful Engagement', 'Developing Critical Thinking', 'Extracting Personal Insights', 'Forming Hypotheses Independently', and then to 'Creating Original Conclusions'.
 An arrow loops back from 'Creating Original Conclusions' to 'Meaningful Engagement', labeled 'Reinforced weakening of academic skills'."}
 

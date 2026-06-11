@@ -33,7 +33,7 @@ When people from humanities/social science start learning to code, they might fe
 
 ![Laptop stickers from the summer school, including the pair-programming proficiency badge](/chapters/images/C39_gentle-introduction-summer-school-laptop-sticker.jpg){#fig-c39-laptop-sticker  fig-alt="photo of stickers on a laptop. One sticker says 'Text and Data Analysis DCS Summer School'." }
 
-## Coding is like dancing, right? {#poetic-intro}
+## Coding Is Like Dancing, Right? {#poetic-intro}
 
 Everyone can dance, even if a little clumsily, even if we were never officially taught how to. And sure, we probably won't all star in a KPop music video, or dance a tango milonga with a partner. But we can definitely wiggle to the Barbie Girl tune, or to our inner music, and it will feel natural and fun. Dancing taps into everything we've ever learned to do with our bodies (like walking, jumping) and puts it in some context. It weaves a functional chain of input (music) and output (wiggling). It benefits from our strengths, and works with/around our challenges. Indeed, much of learning to dance is not learning new things from scratch (like juggling), but rather it builds on the things you already know how to do. Skills and thinking patterns needed for dancing (or coding) are just 'sleeping' in you, and you can combine them into this new ability.
 
@@ -43,7 +43,7 @@ What a wild metaphor, eh? It really holds its ground when you realise what Codin
 
 > "At the end of it, I ended up being as excited about Python as about teaching." - Student feedback
 
-## Solving sudoku is coding. Guessing Wordle is coding. Putting plates in a dishwasher is coding.
+## Solving Sudoku Is Coding. Guessing Wordle Is Coding. Putting Plates in a Dishwasher Is Coding.
 
 When you're problem-solving, you work around constraints and build a toolkit of mental skills and models. You chisel away at the problem in small chunks; you find small transferable mini-skills and patterns, that then you combine into bigger skills and patterns. We all do it all the time. The core component of this type of coding is that you do not solve one problem only once – you also learn to solve it better next time. And quickly you graduate to a higher level of abstraction – you see a bigger picture.
 
@@ -59,19 +59,19 @@ Imagine this: as you learn to play your first ever boardgame (e.g. chess, Scrabb
 
 And before you notice, you get better at assembling IKEA furniture, or fixing your bike with a YouTube tutorial. You gain the meta-skill of learning to learn, and a scaffolding of patterns which will support your next lesson. A very similar thing happens with programming: you are NOT starting from scratch, and you get better at learning\!
 
-## As you learn programming, you will use skills and thinking patterns from other parts of your life.
+## As You Learn Programming, You Will Use Skills and Thinking Patterns From Other Parts of Your Life
 
 When you learn coding, just like any other skill, you anchor it in your skills, memories, metaphors and ways of thinking [@ambrose2010learning]. You keep drawing on old patterns and constantly creating new ones. You solve more intricate puzzles and express those solutions in a very specific language. And as you master that new language you learn new nouns, verbs, acronyms and proverb-like shortcuts to achieve your goal quicker and more elegantly. You can imagine that this process gets easier as you do it more, right?  
 
 ![Instructors and some of the attendees of the CDCS summer school Gentle Introduction to Coding](/chapters/images/C39_gentle-introduction-summer-school-attendees.jpg){#fig-c39-attendees  fig-alt="Photo of summer school participants taken on a summer day in a park in front of a university building in Edinburgh" }
 
-## How to apply this practically in learning?
+## How to Apply This Practically in Learning?
 
 Over the last 6 years I've taught thousands of people to code at the bootcamp and at the university. For each of my students this has been a journey of building on things that they already knew, their previous life experience and careers. But what skills do we all have which are relevant for coding?
 
 I've seen students with experiences of hospitality or parenthood be great at pipelining, prioritising, just-on-time preparation, hundreds of small puzzles and numerous optimizations. Those who worked as book illustrators or language interpreters excelled at understanding someone else's vision and representing it in another format, managing process and dependencies, and doing it all within given time and quality constraints. I've seen my students combine tens of skills from different parts of their human experience, into how they UNDERSTAND coding. Everyone's journey to "getting" coding was different.
 
-## CDCS Summer School: 5 days of intense-yet-gentle coding {#summer-school-details}
+## CDCS Summer School: 5 Days of Intense-Yet-Gentle Coding {#summer-school-details}
 
 "Gentle Introduction to Coding" was the week-long summer school for 25 brave students who joined me in June 2023\. What connected most of them were two things: they came from social science and humanities; and they never learned to program before. For me this was my first time running a 5-day summer school, and I was anticipatory (aka anxious) of how it would combine my previous experiences of teaching (4-month intense coding bootcamps; semester-long university courses). This summer school was organised by the amazing team of [Center for Data, Culture and Society](https://www.cdcs.ed.ac.uk/) who also ran a more advanced summer school in the building next door. For all slides and coding exercises I used [my teaching materials](https://www.codestorytelling.com/) from other courses. Below I will share with you some novel teaching methods I tried and how it went.
 
@@ -91,7 +91,7 @@ Here are some of student comments combined:
 >
 > ❓ I only wished to have a lot more time to practise the new skills, ideally over a longer period of time with the support from the teaching assistants/teacher. Maybe there is a scope for a follow-up course or meetup via CDCS?
 
-## "Pair Programming" is a collaboration technique, where two people share one computer and take turns typing on it.
+## “Pair Programming” Is a Collaboration Technique, Where Two People Share One Computer and Take Turns Typing on It
 
 While the 'Driver' (person who types) talks out loud about what they are doing, the 'Navigator' (person who accompanies) is looking out for mistakes and asks clarifying questions. This allows the driver to focus on the challenge at hand, knowing that another set of eyes is checking what they are doing. At the same time the navigator supports and questions them. (I like to conjure an image of a little angel and devil duo sitting on the shoulders of a cartoon character). Every 15 minutes they swap roles, giving both participants the opportunity to practise both skills. This usually is repeated a number of times over a 2 hour session [@hawlitschek2023empirical].
 
@@ -105,7 +105,7 @@ Cross-pollinating ideas in pair programming works surprisingly well in diverse g
 
 If you'd like to know more about Pair programming, join our [special interest group](https://pairprogramming.ed.ac.uk/) or read more about how to introduce it into your classroom in other chapters of this book [@TeachProgAcross_C12;@TeachProgAcross_C36].
 
-## Badges: Collect skills like Pokemon\!
+## Badges: Collect Skills Like Pokemon\!
 
 I find it easier to learn something new when it is separated into manageable chunks, especially when I understand how each chunk fits into a bigger picture. I also love it when assembling all the pieces feels personal, fun and challenges how I see things. That's why I resonated so deeply with Threshold Concepts [@meyer2003threshold] (thank you [PgCAP](https://institute-academic-development.ed.ac.uk/learning-teaching/cpd/postgraduate-certificate)\!) – a theory that some knowledge cannot be unlearned and is transformative (like crossing a door threshold). That's why all of the summer school content was separated into 15 Badges (achievements, blocks, sections). Each badge was a 1.5-hour-long chunk of knowledge/skill and each built on top of all previous achievements. To collect a badge students participated in a 20 minute interactive presentation from the teaching team, followed by an hour of pair-programming, and a few minutes of self-reflection.
 
@@ -123,7 +123,7 @@ We leaned into our inner children not just during the reflective mini-diary, but
 
 ![Graph showing students' self-perceived improvement in terms of skills before and after the summer-school, on scale from 0 to 5](/chapters/images/C39_gentle-introduction-summer-school-skills.png){#fig-c39-skills  fig-alt="Graph showing results of student questionnaire about their confidence before and after the course. Trends show improved confidence (on average 2-3 points on a 0 to 5 scale). Skills include 'reading code', 'discussing code' and 'coding concepts'" }
 
-## As promised: some practical top tips for running similar courses {#practical-tips}
+## As Promised: Some Practical Top Tips for Running Similar Courses {#practical-tips}
 
 !['Time Timer' is a large clock designed for primary schools which we used to indicate when driver and navigator should switch roles.](/chapters/images/C39_gentle-introduction-summer-school-timer.jpg){#fig-c39-timer   width=70% fig-alt="Picture of a classroom setup where projector shows a clock counting down to 15 minutes. Image on a projector comes from a physical clock with a document camera pointed at it." }
 
@@ -153,7 +153,7 @@ We leaned into our inner children not just during the reflective mini-diary, but
 
 10. Try to have at least 2 teachers in the room, so that the team can take breaks without abandoning students.
 
-## This is the beginning of a beautiful friendship
+## This Is the Beginning of a Beautiful Friendship
 
 To sum it all up, our summer school combined a number of teaching methods, which did resonate with the participants. Splitting content into Badges enabled us to scaffold learning, and be very agile about which parts to skip, and which to expand, following what the group wanted. Practical exercises all involved pair-programming and constant peer-feedback for cross-pollination of skills. Frequent reflections with 3 stars & 1 wish and classroom discussions created a feedback loop between the students and the teaching team (shout out to Karim and Chris, my amazing teaching assistants). Additionally, since most participants were early career academics/students, their feedback often mentioned not just learning to code, but learning how to run a well-designed, modern and interactive course.
 

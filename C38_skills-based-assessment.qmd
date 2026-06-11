@@ -21,7 +21,7 @@ author:
     affiliations: School of Philosophy, Psychology, and Language Sciences, University of Edinburgh
 :::
 
-## In this chapter
+## In This Chapter
 
 To learn to program is to develop a new set of skills.
 In this chapter, I'll discuss an approach to course design and assessment that brings skill development to the fore: the skills-based assessment framework.

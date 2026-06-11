@@ -163,6 +163,16 @@ I am an educator and researcher in computing with a particular interest in softw
 
 ----
 
+### Samantha Alvarez Madrazo (she/her)
+##### Senior Teaching Fellow and Statistical Teaching Coordinator, Imperial College London 
+![](/chapters/authors/samantha-alvarez-madrazo.jpg ){#fig-author-samantha-alvarez-madrazo fig-alt="Samantha Alvarez Madrazo Profile" width=30% }
+
+I am a pharmacist, health data scientist and educator. Learning programming at the same time as learning statistics can be a challenging journey. Being surrounded by supportive and inspiring colleagues and having a continuous dialogue with online and on-campus postgraduate students enriches my journey. My motivation to contribute to this book is to keep learning from each other, share ideas about empowering students to develop a coding mindset and reflecting about online teaching. 
+
+LinkedIn: <https://www.linkedin.com/in/samantha-alvarez-b3137211>
+
+----
+
 ### William H. Bell
 ##### Teaching Fellow, University of Strathclyde
 ![](/chapters/authors/william-bell.jpg ){#fig-author-william-bell fig-alt="William Bell Profile" width=30% }
@@ -174,17 +184,6 @@ Personal website: <https://whbell.net/>
 Work website: <https://www.strath.ac.uk/staff/bellwilliamdr/>
 
 ----
-
-### Samantha Alvarez Madrazo (she/her)
-##### Senior Teaching Fellow and Statistical Teaching Coordinator, Imperial College London 
-![](/chapters/authors/samantha-alvarez-madrazo.jpg ){#fig-author-samantha-alvarez-madrazo fig-alt="Samantha Alvarez Madrazo Profile" width=30% }
-
-I am a pharmacist, health data scientist and educator. Learning programming at the same time as learning statistics can be a challenging journey. Being surrounded by supportive and inspiring colleagues and having a continuous dialogue with online and on-campus postgraduate students enriches my journey. My motivation to contribute to this book is to keep learning from each other, share ideas about empowering students to develop a coding mindset and reflecting about online teaching. 
-
-LinkedIn: <https://www.linkedin.com/in/samantha-alvarez-b3137211>
-
-----
-
 ### Yanina Bellini Saibene (she/her)
 ##### Community Manager, rOpenSci, RLadies+, Universidad Austral
 ![](/chapters/authors/yanina-bellini-saibene.jpg ){#fig-author-yanina-bellini-saibene fig-alt="Yanina Bellini Saibene Profile" width=30% }
@@ -342,6 +341,15 @@ ORCID: <https://orcid.org/0000-0002-0621-1541>
 
 ----
 
+### Louise Dash (she/her)
+##### Associate Professor (Teaching), University College London
+
+I’m a teaching academic with a research background in computational condensed matter physics. I've been leading in computing education as part of undergraduate physics degrees for over 15 years. I'm particularly passionate about embedding coding as a core skill within physics degrees, not just in programming classes but as a fundamental part of the wider curriculum. Our students come from a diversity of backgrounds and prior experience with programming, and my approach to teaching is to encourage experimentation and increase confidence for all students.
+
+Work website: <https://profiles.ucl.ac.uk/38506-louise-dash/>
+
+----
+
 ### Mar Doig (they/them)
 ##### Engineering Education Lead at Perk (https://www.perk.com)
 ![](/chapters/authors/mar-doig.jpg ){#fig-author-mar-doig fig-alt="Mar Doig Profile" width=30% }
@@ -349,62 +357,6 @@ ORCID: <https://orcid.org/0000-0002-0621-1541>
 I'm a software engineer and educator focused on the human side of technical literacy. As the Engineering Education Lead at Perk, I designed an in-house academy that turns curiosity into production-ready code, using my own career pivot as a roadmap. Away from the screen, I spend my time exploring high-fantasy worlds and rural Scotland alongside my husband and three children.
 
 LinkedIn: <https://www.linkedin.com/in/mardoig/>
-
-----
-
-### Olexandr Konovalov (he/him)
-##### Lecturer, University of St Andrews
-![](/chapters/authors/olexandr-konovalov.jpg ){#fig-author-olexandr-konovalov fig-alt="Olexandr Konovalov Profile" width=30% }
-
-I am a Lecturer in Computer Science and a Fellow of the Software Sustainability Institute. My background is in Pure Mathematics, and initially I came to Scotland from Ukraine to work on the open-source mathematical software system called GAP. Now I teach Python for diverse cohorts of learners and advocate for good practices of working with code and data. I am an Instructor and an Instructor Trainer for The Carpentries, where I have established and coordinate the Ukrainian Carpentries Community. My contribution to this book is very much based on the experience of translating The Carpentries teaching materials into Ukrainian.
-
-Personal website: <https://olexandr-konovalov.github.io/>
-
-ORCID: <https://orcid.org/0000-0001-5299-3292>
-
-----
-
-### Tiago A. Marques (he/him)
-##### Principal Research Fellow, CREEM; The University of St Andrews / CEAUL; DBA; Faculdade de Ciências da Universidade de Lisboa
-![](/chapters/authors/tiago-a-marques.jpg ){#fig-author-tiago-a-marques fig-alt="Tiago A. Marques Profile" width=30% }
-
-I was once a biologist that become more and mor atracted by the dark side of the force, so then I did and MSc and a PhD in statistics. These days I work as an ecological statistician, mostly on the topic of animal abundance estimation. I teach, and have a keen interest in how we should be teaching, statistics to ecologists that might be as afraid from it as I once was.
-
-Work website: <https://research-portal.st-andrews.ac.uk/en/persons/tiago-a-marques/>
-
-Github: <https://github.com/TiagoAMarques>
-
-----
-
-### Katerina Michalickova (she/her)
-##### Principal Teaching Fellow, Imperial College London
-
-I’m an educator with a background in high performance computing and bioinformatics. I focus on coordinating and promoting a comprehensive programme in computing and data skills for early-career researchers. I’m always interested in exploring new ways to facilitate learning and in pondering how to adapt our teaching to the LLM generation.
-
-Work website: <https://profiles.imperial.ac.uk/k.michalickova>
-
-LinkedIn: <https://www.linkedin.com/in/katerina-michalickova-a94817141/>
-
-----
-
-### Elizabeth Pankratz (she/her)
-##### Lecturer, The University of Edinburgh
-![](/chapters/authors/elizabeth-pankratz.jpg ){#fig-author-elizabeth-pankratz fig-alt="Elizabeth Pankratz Profile" width=30% }
-
-I'm a linguist turned statistics teacher. My teaching practice is built on ideas from critical pedagogy and psychological research on motivation, learning, and memory. I care a lot about helping people overcome their fear of statistics and programming, and I think that a key way to do this is to give people the freedom to take risks and try new things without penalty, an idea that I explore in my chapter of this book.
-
-Personal website: <https://elizabethpankratz.github.io>
-
-Github: <https://github.com/elizabethpankratz>
-
-----
-
-### Louise Dash (she/her)
-##### Associate Professor (Teaching), University College London
-
-I’m a teaching academic with a research background in computational condensed matter physics. I've been leading in computing education as part of undergraduate physics degrees for over 15 years. I'm particularly passionate about embedding coding as a core skill within physics degrees, not just in programming classes but as a fundamental part of the wider curriculum. Our students come from a diversity of backgrounds and prior experience with programming, and my approach to teaching is to encourage experimentation and increase confidence for all students.
-
-Work website: <https://profiles.ucl.ac.uk/38506-louise-dash/>
 
 ----
 
@@ -479,6 +431,11 @@ ORCID: <https://orcid.org/0000-0002-6906-4219>
 
 ----
 
+### William P. Kay
+##### Lecturer in Statistics, Cardiff University | Prifysgol Caerdydd
+
+----
+
 ### Stuart King
 ##### Reader, The University of Edinburgh
 
@@ -487,6 +444,18 @@ I am a Reader in applied mathematics, and my research interests span across appl
 LinkedIn: <https://www.linkedin.com/in/stuart-king-a0b64b311>
 
 Work website: <https://webhomes.maths.ed.ac.uk/~sking3/>
+
+----
+
+### Olexandr Konovalov (he/him)
+##### Lecturer, University of St Andrews
+![](/chapters/authors/olexandr-konovalov.jpg ){#fig-author-olexandr-konovalov fig-alt="Olexandr Konovalov Profile" width=30% }
+
+I am a Lecturer in Computer Science and a Fellow of the Software Sustainability Institute. My background is in Pure Mathematics, and initially I came to Scotland from Ukraine to work on the open-source mathematical software system called GAP. Now I teach Python for diverse cohorts of learners and advocate for good practices of working with code and data. I am an Instructor and an Instructor Trainer for The Carpentries, where I have established and coordinate the Ukrainian Carpentries Community. My contribution to this book is very much based on the experience of translating The Carpentries teaching materials into Ukrainian.
+
+Personal website: <https://olexandr-konovalov.github.io/>
+
+ORCID: <https://orcid.org/0000-0001-5299-3292>
 
 ----
 
@@ -513,6 +482,29 @@ Personal website: <https://sites.google.com/view/theactionfeedbackprotocol/home>
 LinkedIn: <https://www.linkedin.com/in/dr-andrew-maclaren-40518216b/>
 
 ----
+
+### Tiago A. Marques (he/him)
+##### Principal Research Fellow, CREEM; The University of St Andrews / CEAUL; DBA; Faculdade de Ciências da Universidade de Lisboa
+![](/chapters/authors/tiago-a-marques.jpg ){#fig-author-tiago-a-marques fig-alt="Tiago A. Marques Profile" width=30% }
+
+I was once a biologist that become more and mor atracted by the dark side of the force, so then I did and MSc and a PhD in statistics. These days I work as an ecological statistician, mostly on the topic of animal abundance estimation. I teach, and have a keen interest in how we should be teaching, statistics to ecologists that might be as afraid from it as I once was.
+
+Work website: <https://research-portal.st-andrews.ac.uk/en/persons/tiago-a-marques/>
+
+Github: <https://github.com/TiagoAMarques>
+
+----
+
+### Katerina Michalickova (she/her)
+##### Principal Teaching Fellow, Imperial College London
+
+I’m an educator with a background in high performance computing and bioinformatics. I focus on coordinating and promoting a comprehensive programme in computing and data skills for early-career researchers. I’m always interested in exploring new ways to facilitate learning and in pondering how to adapt our teaching to the LLM generation.
+
+Work website: <https://profiles.imperial.ac.uk/k.michalickova>
+
+LinkedIn: <https://www.linkedin.com/in/katerina-michalickova-a94817141/>
+
+---
 
 ### Lucia Michielin (she/her)
 ##### Digital Skills Training Manager, The University of Edinburgh
@@ -562,8 +554,15 @@ Work website: <https://edwebprofiles.ed.ac.uk/profile/dr-lisa-otty>
 
 ----
 
-### William P. Kay
-##### Lecturer in Statistics, Cardiff University | Prifysgol Caerdydd
+### Elizabeth Pankratz (she/her)
+##### Lecturer, The University of Edinburgh
+![](/chapters/authors/elizabeth-pankratz.jpg ){#fig-author-elizabeth-pankratz fig-alt="Elizabeth Pankratz Profile" width=30% }
+
+I'm a linguist turned statistics teacher. My teaching practice is built on ideas from critical pedagogy and psychological research on motivation, learning, and memory. I care a lot about helping people overcome their fear of statistics and programming, and I think that a key way to do this is to give people the freedom to take risks and try new things without penalty, an idea that I explore in my chapter of this book.
+
+Personal website: <https://elizabethpankratz.github.io>
+
+Github: <https://github.com/elizabethpankratz>
 
 ----
 
