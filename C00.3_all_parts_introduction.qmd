@@ -5,7 +5,7 @@ author:
     affiliations: Edinburgh Medical School, University of Edinburgh
   - name: Brittany Blankinship
     email: b.blankinship@ed.ac.uk
-    affiliations: Edinburgh Medical School, Univeristy of Edinburgh
+    affiliations: Edinburgh Medical School, University of Edinburgh
   - name: Pawel Orzechowski
     email: pawel.orzechowski@ed.ac.uk
     affiliation: Edinburgh Medical School, University of Edinburgh
@@ -26,7 +26,7 @@ author:
 
 # Welcome to the Book {.unnumbered .unlisted}
 
-Welcome to the Teaching Programming Across Disciplines Book! Our book is an edited, open-access volume comprised of many short chapters written by groups of authors from our community. In this first edition of the book, we have curated 44 chapters from 75 authors. Since the original pitch, these chapters have been drafted, revised, and polished, with rewrites from authors, feedback from the editing team, and many writing retreats along the way. Contributions to this book are not limited to one institution, and while reading you will notice that our authors have drawn on their experiences across different institutions, countries, and educational backgrounds. 
+Welcome to the Teaching Programming Across Disciplines Book! Our book is an edited, open-access volume comprised of many short chapters written by groups of authors from our community. In this first edition of the book, we have curated 36 chapters from 75 authors. Since the original pitch, these chapters have been drafted, revised, and polished, with rewrites from authors, feedback from the editing team, and many writing retreats along the way. Contributions to this book are not limited to one institution, and while reading you will notice that our authors have drawn on their experiences across different institutions, countries, and educational backgrounds. 
 
 Come on a journey through some of the core questions that arise when teaching programming across disciplines. The book is grouped into four sections (Part I, Part II, Part III, and Part IV), each comprised of themes, which themselves contain chapters. Chapters are the smallest unit in the book and vary in length. You will find teaching resources spread across every chapter. Some chapters you can even share with your students directly. Unless other specified, the illustration can be used as an additional teaching resource and to share your practice [^C002-footnote].
 

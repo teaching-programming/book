@@ -34,7 +34,26 @@ keywords:
 ---
 
 ::: {.content-visible when-format="docx" note="this should be identical as authors above, for docx"}
-author: - name: Robert S. Young email: robert.young\@ed.ac.uk corresponding: false affiliations: Edinburgh Medical School, University of Edinburgh; Zhejiang University - University of Edinburgh (ZJE) Institute - name: Rebecca L. Colquhoun email: r.colquhoun23\@imperial.ac.uk affiliations: Department of Earth Science and Engineering, Imperial College London - name: Tiago A. Marques email: tiago.marques\@st-andrews.ac.uk affiliations: School of Mathematics, University of St Andrews - name: Brittany Blankinship email: B.Blankinship\@ed.ac.uk affiliations: Edinburgh Medical School, University of Edinburgh - name: Ozan Evkaya email: ozan.evkaya\@ed.ac.uk affiliations: School of Mathematics, University of Edinburgh - name: William P. Kay email: kayw\@cardiff.ac.uk affiliations: School of Biosciences, Cardiff University
+author: 
+  - name: Robert S. Young 
+    email: robert.young@ed.ac.uk 
+    corresponding: false 
+    affiliations: Edinburgh Medical School, University of Edinburgh; Zhejiang University - University of Edinburgh (ZJE) Institute 
+  - name: Rebecca L. Colquhoun 
+    email: r.colquhoun23@imperial.ac.uk 
+    affiliations: Department of Earth Science and Engineering, Imperial College London
+  - name: Tiago A. Marques 
+    email: tiago.marques@st-andrews.ac.uk 
+    affiliations: School of Mathematics, University of St Andrews 
+  - name: Brittany Blankinship 
+    email: B.Blankinship@ed.ac.uk 
+    affiliations: Edinburgh Medical School, University of Edinburgh 
+  - name: Ozan Evkaya 
+    email: ozan.evkaya@ed.ac.uk 
+    affiliations: School of Mathematics, University of Edinburgh 
+  - name: William P. Kay 
+    email: kayw@cardiff.ac.uk 
+    affiliations: School of Biosciences, Cardiff University
 :::
 
 ## Introduction

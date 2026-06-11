@@ -148,4 +148,4 @@ book:
         - C99.1-sendoff.qmd
         - C99.2-authors.qmd
         - C99.3-images.qmd
-        - C99.4-bibliography.qmd
+        #- C99.4-bibliography.qmd
