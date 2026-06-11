@@ -206,7 +206,7 @@ Self-assessment activities also support learning by enabling students to evaluat
 
 ### Providing Timely Feedback
 
-Immediate feedback is an important motivator for learners. When students receive rapid responses to their submissions, they are more likely to correct mistakes and refine their understanding. Automated assessment tools such as Coderunner [@lobb_2016_coderunner] are particularly effective in programming modules, as they allow students to receive instant feedback on their code while reducing the marking workload for instructors. @TeachProgAcross_C20 in this volume address the topic of automated marking in more detail.
+Immediate feedback is an important motivator for learners. When students receive rapid responses to their submissions, they are more likely to correct mistakes and refine their understanding. Automated assessment tools such as Coderunner [@RichardLobbEtAl2016Coderunner] are particularly effective in programming modules, as they allow students to receive instant feedback on their code while reducing the marking workload for instructors. @TeachProgAcross_C20 in this volume address the topic of automated marking in more detail.
 
 ### Maintaining and Improving Learning Materials
 

@@ -113,11 +113,11 @@ Further dimensions compound the challenge of belonging in traditional academic s
 All of these disadvantages can present a serious barrier in traditionally graded courses, in which students are commonly graded on things that go beyond the course's content-related learning objectives, such as regular attendance, active verbal in-class participation, and (as mentioned above) the timeliness of their understanding.
 
 But in the skills-based framework, barriers like these are softened.
-Where clear expectations and goals are provided, less background knowledge is required, making the space more inclusive to people with different backgrounds [@Parker2018].[^1]
+Where clear expectations and goals are provided, less background knowledge is required, making the space more inclusive to people with different backgrounds [@Parker2018].[^C38_1]
 As such, skills-based courses have been shown to achieve more equitable outcomes for a wider range of learners [e.g., by @OLearyStockwell2021; @OLearyStockwell2022].
 I really hope that the more flexible structure of skills-based assessment will help our intersectionally disadvantaged students build their skills as well as their sense of self-efficacy in a more compassionate space.
 
-[^1]: A well-formulated rubric may accomplish a similar goal, but rubrics tend to have two issues that skills do not. 
+[^C38_1]: A well-formulated rubric may accomplish a similar goal, but rubrics tend to have two issues that skills do not. 
   For one, by their nature, rubrics focus on the work's deficits until the very highest levels of achievement.
   Here is an example from one of our earlier report-based assessments: "Results are mostly clear and logically presented.
   Interpretation is mostly accurate but may lack depth in linkage to analysis strategy".
