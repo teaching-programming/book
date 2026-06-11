@@ -143,6 +143,6 @@ book:
 
         - send-off.qmd
         - CAB_Authors.qmd
-        # - TODO_Images.qmd
+        - CIMG_images.qmd
         - 99-bibliography.qmd
         
