@@ -81,7 +81,7 @@ A particular strength of the CivEng student is having keen eyes on physical quan
 
 In many circumstances, the CivEng student has to deal with matrices, such as when solving partial differential equations (PDEs). One of such typical equations is the mass balance equation, where the (time) change in "stock" is related to the spatial changes (gradients) of "flows". It is not too difficult for the CivEng student to understand the finite difference technique and implement a naive version to solve PDEs. As an example, in the problem of sediment transport in rivers or seas, we consider solving the equation for $z_b$ (the underwater bed elevation), which changes in time, given the two fluxes of sediment, represented as two components ($q_x$ and $q_y$) in the two horizontal directions, $x$ and $y$. It is helpful to visualise the river bed or seabed as a "tiled" surface where each cell has its own elevation $z_b$. See the diagram (@fig-ch32-sediment) for a simplified representation of the quantities involved.
 
-![Sediment transport](/chapters/images/ch32-sed-trans.PNG){#fig-ch32-sediment fig-alt="A diagram in 3D, showing a surface split into four tiles of different elevations."}
+![Sediment transport](/chapters/images/ch32-sed-trans.png){#fig-ch32-sediment fig-alt="A diagram in 3D, showing a surface split into four tiles of different elevations."}
 
 It should be noted here that the CivEng student is equipped with numerical analysis skills and can approximate the differential in terms of finite differences.
 

@@ -103,7 +103,7 @@ Let us briefly introduce the reasons why we adapted 3s1w for our programming cou
 
 As educators, we value the use of assessment as a tool for learning, rather than just a mechanism for giving students marks. 
 
-We created 3s1w so that it gives an opportunity/excuse to learn more, as an "assessment for learning" (not "assessment of learning") [@black2003assessment;@wiliam2011assessment].
+We created 3s1w so that it gives an opportunity/excuse to learn more, as an "assessment for learning" (not "assessment of learning") [@black2003assessment;@wiliam_afl_2011].
 
 We also believe in allowing the community of learners to lead the course experiences, rather than focusing on lone work, or on rigid structures imposed by the teachers. We drew inspiration from the concept of 'Liberating Structures' [@lipmanowicz2013surprising], a collection of lightly-constraint activities designed to allow learners to be in charge of their learning. Each cohort of students shape their 3s1w forums slightly differently, and we do not interfere as long as they share their insights equitably and kindly.
 
@@ -155,7 +155,7 @@ As teachers, we can also provide students with extrinsic sources of motivation, 
 
 Assessment is, for better or worse, a core part of university courses, serving purposes such as quality control, motivation, and student-differentiation [@brown2012assessing]. But when grades and assessment become solely key performance indicators ("things to focus on"), students can over-optimise for getting good grades at the expense of deep and lasting learning. To save the baby from being spilled with the bathwater, course designers can harness the pressure and reward of assessment as a motivating factor.
 
-To recycle (or compost) the idea of assessment we can relax on the **Assessment OF Learning** (mundane busy-work, to catch students out and take away points for what's missing) and strive towards an **Assessment FOR learning** (work which provides more opportunities to learn, while fitting in with the existing assessment frameworks) [@wiliam2011assessment]. In 3s1w, a small reward (i.e., marks for any meaningful participation) for a simple activity becomes an excuse to engage in deeper learning.
+To recycle (or compost) the idea of assessment we can relax on the **Assessment OF Learning** (mundane busy-work, to catch students out and take away points for what's missing) and strive towards an **Assessment FOR learning** (work which provides more opportunities to learn, while fitting in with the existing assessment frameworks) [@wiliam_afl_2011]. In 3s1w, a small reward (i.e., marks for any meaningful participation) for a simple activity becomes an excuse to engage in deeper learning.
 
 Given the progress of cheating technology (LLMs) and pressures of life outside the university, the temptation to play the system grows, so a meaningful way to learn can be a motivational carrot, in a stickless world. 
 
