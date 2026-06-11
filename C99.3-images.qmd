@@ -622,16 +622,6 @@ bibliography: references.bib
 
 **Source**: Author's own
 
-![](chapters/images/C29_Figure1.png){#C29_Figure1-ref width="20%" fig-align="left"}
-
-### Figure 18.1
-
-**Licence**: CC BY-NC-SA
-
-**Author/creator**: Joseph El Gemayel
-
-**Source**: Author's own
-
 ![](chapters/images/C29_Figure1_narrow.png){#C29_Figure1_narrow-ref width="20%" fig-align="left"}
 
 ### Figure 18.2
@@ -642,27 +632,7 @@ bibliography: references.bib
 
 **Source**: Author's own
 
-![](chapters/images/C29_Figure2.png){#C29_Figure2-ref width="20%" fig-align="left"}
-
-### Figure 18.2
-
-**Licence**: CC BY-NC-SA
-
-**Author/creator**: Joseph El Gemayel
-
-**Source**: Author's own
-
 ![](chapters/images/C29_Figure2_narrow.png){#C29_Figure2_narrow-ref width="20%" fig-align="left"}
-
-### Figure 18.3
-
-**Licence**: CC BY-NC-SA
-
-**Author/creator**: Joseph El Gemayel
-
-**Source**: Author's own
-
-![](chapters/images/C29_Figure3.png){#C29_Figure3-ref width="20%" fig-align="left"}
 
 ### Figure 18.3
 
