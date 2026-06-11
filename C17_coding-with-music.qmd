@@ -146,13 +146,31 @@ This resource is aimed at students who have started on Python quite recently. It
 
 The resource is archived as part of the accompanying resources [@matthew_hamilton_2026], and at the time of writing can be accessed [here](https://github.com/mhamilt/teaching-programming-music-with-code/tree/main/resources/python-piano).
 
-::: {#fig-python-piano layout="[45, 55]" layout-valign="bottom"}
+::: {.content-visible unless-format="docx"}
+
+:::: {#fig-python-piano layout="[45, 55]" layout-valign="bottom"}
 
 ![Code](/chapters/images/C17_fig2a_python_piano.png){fig-alt="A section of commented Python code which generates a piano chord."}
 
 ![MIDI output](/chapters/images/C17_fig2b_python_piano.png){fig-alt="A screenshot of the generated piano chord displayed in MIDI format."}
 
 A subsection of the Python piano learning resource as a Python notebook, with a visualisation of the MIDI output on the side.
+
+::::
+
+:::
+
+::: {.content-visible when-format="docx"}
+
+:::: {#fig-python-piano}
+
+![Code](/chapters/images/C17_fig2a_python_piano.png){fig-alt="A section of commented Python code which generates a piano chord."}
+
+![MIDI output](/chapters/images/C17_fig2b_python_piano.png){fig-alt="A screenshot of the generated piano chord displayed in MIDI format."}
+
+A subsection of the Python piano learning resource as a Python notebook, with a visualisation of the MIDI output on the side.
+
+::::
 
 :::
 
@@ -192,7 +210,9 @@ The exercises rely on using the Python module `wav_library.py` described in @sec
 
 This resource demonstrates the creation of a web-based musical instrument that can be controlled via the sensors on a smart phone. This kind of activity would require students to have some existing experience of the coding language, so would fit well as an exercise or assignment as part of a wider course on music, art, design or programming. The coding is primarily done in [Max](https://cycling74.com/products/max), a proprietary visual programming environment aimed at musicians, as shown in @fig-rnbo (left). [RNBO](https://cycling74.com/products/rnbo) --- an extension of Max --- allows the visual code to be exported as JavaScript, and will auto-generate a simple HTML page that embeds the project.
 
-::: {#fig-rnbo layout-ncol=2 layout-valign="bottom"}
+::: {.content-visible unless-format="docx"}
+
+:::: {#fig-rnbo layout-ncol=2 layout-valign="bottom"}
 
 ![Max](/chapters/images/C17_fig5a_max.png){fig-alt="A screenshot of a Max patch with multiple linked modules."}
 
@@ -200,7 +220,24 @@ This resource demonstrates the creation of a web-based musical instrument that c
 
 Max (left), a visual programming language is used to create the instrument. RNBO, an extension of MAX can be used to export patches to external targets such as C++, VSTs (Virtual Studio Technology), JavaScript or Raspberry Pi. The exported web app (right) can be accessed on a mobile web browser. The program will then map the relevant motion sensors to the assigned parameters.
 
+::::
+
 :::
+
+::: {.content-visible when-format="docx"}
+
+:::: {#fig-rnbo}
+
+![Max](/chapters/images/C17_fig5a_max.png){fig-alt="A screenshot of a Max patch with multiple linked modules."}
+
+![Exported web app](/chapters/images/C17_fig5b_web_seq_demo.png){fig-alt="A screenshot of a web app with sliders and controls, shown on a mobile device."}
+
+Max (left), a visual programming language is used to create the instrument. RNBO, an extension of MAX can be used to export patches to external targets such as C++, VSTs (Virtual Studio Technology), JavaScript or Raspberry Pi. The exported web app (right) can be accessed on a mobile web browser. The program will then map the relevant motion sensors to the assigned parameters.
+
+::::
+
+:::
+
 
 One of the potential benefits of working in this way is that although students start from a visual programming environment, their software can be made available to anyone with a browser (see @fig-rnbo (right)), and they begin to get an exposure to JavaScript and web development. As this resource shows, small tweaks to this JavaScript can be added to refine the user interface, and add extra functionality such as smart phone sensor control.
 
