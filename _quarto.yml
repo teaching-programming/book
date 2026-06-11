@@ -69,7 +69,7 @@ format:
         bibliography: references.bib
 
 book:
-    title: "Teaching Programming across Disciplines"
+    title: "Teaching Programming Across Disciplines"
 
     page-navigation: true
     sidebar:
@@ -83,35 +83,37 @@ book:
 
     chapters:
         - index.qmd
-        - 00-chapter-template.qmd
-#
-        # - P00_part-preface.qmd
-        # C0.1 How this book/comminity came about: Chapter from editors - how we got here and how we did it
-        # C0.2 What's in the book (introduce the parts)
 
+        - C00.0_book_copyright_page.qmd
+        - C00.1_dedication.qmd
+        - C00.2_this_book.qmd
+        - C00.3_all_parts_introduction.qmd
+        
         - P01_part-theories-applications.qmd
-
+        
         - C12_pair-programming-overview.qmd
         - C36_pair-programming-across-disciplines.qmd
         - C41_pair-programming-tutor-reflections.qmd
 
         - C09_debugging-beyond-the-debugger.qmd
-        # - C40_TODO.qmd
         - C05_coding-mindset.qmd
+        - C40_coding-forces.qmd
+
 
         - C08_hype-need-responsible-compute.qmd
         - C10_teaching-with-genai.qmd
+        - C44_ai-voice-and-style-in-programming-education.qmd
         - C21_programming-across-disciplines-systems-thinking.qmd
-        - C44_genai-vs-academic-development.qmd
 
-        - C11_sequential-vs-simultaneous.qmd
+
+        - C04_computer-says-no.qmd
         - C14_foster-inclusion-and-accessibility.qmd
-#        - C04_computer-says-no.qmd
         - C33_coding-anxiety.qmd
-#        - C34_three-stars-one-wish.qmd
+        - C34_three-stars-one-wish.qmd
+        - C11_sequential-vs-simultaneous.qmd
 
-        # - P02_part-design-practice.qmd
-
+        - P02_part-design-practice.qmd
+        
         - C16_peer-programming.qmd
         - C31_leveraging-the-heterogeneity.qmd
         - C23_pair-programming-fusion.qmd
@@ -122,12 +124,12 @@ book:
 
         - C06_feminists-and-anarchists.qmd
         - C15_programming-without-computers.qmd
-#        - C17_coding-with-music.qmd
+        - C17_coding-with-music.qmd
         - C03_online-teaching-reflections.qmd
         - C43-data-vis.qmd
 
-        # - P03_part-assessment-feedback.qmd
-
+        - P03_part-assessment-feedback.qmd
+        
         - C38_skills-based-assessment.qmd
         - C35_action-feedback-plan.qmd
 
@@ -143,18 +145,7 @@ book:
         - C32_civil-engineering.qmd
         - C24_lost-in-translation.qmd
 
-        # - TODO_SendOFF.qmd
-        - CAB_Authors.qmd
-        # - TODO_Images.qmd
-        - 99-bibliography.qmd
-        
-#         # Possibly abandoned chapters:
-#        - C08_ai-boom-or-bust.qmd
-#        - C13_pair-programming-adventure.qmd
-#        - C18_social-learning-modelling.qmd
-#        - C19_genai-capabilities-and-challenges.qmd
-#        - C25_supporting-new-tutors.qmd
-#        - C26_assessment-and-feedback-overview.qmd
-#        - C27_curriculum-design-overview.qmd
-#        - C28_incorporating-reproducibility.qmd
-#        - C30_project-based-teaching.qmd
+        - C99.1-sendoff.qmd
+        - C99.2-authors.qmd
+        - C99.3-images.qmd
+        - C99.4-bibliography.qmd

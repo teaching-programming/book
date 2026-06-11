@@ -89,7 +89,7 @@ This was strengthened by staff at times leaving the main classroom and speaking 
 
 For students, this fluidity created a sense of seamlessness between the two media, and while much thought went into facilitating this, for the students, it felt effortless. Some even shifted between modes during the course, starting the day online before coming on-site or the other way around. Allowing this flexibility showed that students felt at ease in either mode and that, while both had specific issues, neither was better than the other. For instance, at one point, electrical issues on-site meant that students in the room were unable to access their workbooks, while those online were unaffected. Therefore, while both modes could present challenges, in creating flexibility between them, students were able to adapt with little disruption.
 
-## Micro-interactions
+## Micro-Interactions
 
 *Micro-interactions are how we bring the learning into the wider classroom*
 
@@ -122,7 +122,7 @@ For completeness, this technique is not limited only to online or hybrid environ
 ![Feedback collected during a one-day intensive course on Hands-on Data Visualisation within Edinburgh Medical School at the University of Edinburgh.](/chapters/images/C23_pair-programming-fusion-relentless-feedback-sharpie.png "Example feedback"){#fig-example-feedback fig-alt="Feedback collected during a one-day intensive course on Hands-on Data Visualisation within Edinburgh Medical School at the University of Edinburgh." width=70%}
 
 
-### Chat Blast and Other Micro-contributions
+### Chat Blast and Other Micro-Contributions
 
 Following the same philosophy as in the feedback above, we wanted to give students opportunities to check in with their own learning and the group and provide constructive feedback to the teaching team. Throughout the course, there were moments where we asked them to contribute questions that we would then discuss in the session after each pair programming exercise. This enabled the entire cohort to benefit from the discussion and answers provided. We also ensured that all student questions were repeated aloud during debrief sessions, while also encouraging students to share their own solutions via the chat.
 

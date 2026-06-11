@@ -14,16 +14,10 @@ keywords:
 
 ::: {.content-visible when-format="docx" note="this should be identical as authors above, for docx"}
 author:
-  - name: Author One
-    email: author@one.com
+  - name: Ignacio Sepúlveda
+    email: ignacio.sepulveda@sruc.ac.uk
     corresponding: true
-    affiliations: Edinburgh Medical School, University of Edinburgh
-  - name: Author Two
-    email: author@two.com
-    affiliations: Edinburgh Medical School, University of Edinburgh
-  - name: Author Three
-    email: author@three.com
-    affiliations: School of Mathematics and Maxwell Institute for the Mathematical Sciences, University of Edinburgh
+    affiliations: Oatridge College, Scotland's Rural College
 :::
 
 ## Natural habitats
@@ -34,18 +28,18 @@ I strongly believe that learning how to code can have a huge impact on how these
 
 As my background has always related to physical sciences and programming, especially around R[^C37-R-footnote] and QGIS[^C37-QGIS-footnote], I felt the need to show my students that world. A world normally hidden to them under the idea that only 'computer skilled' people are allowed to explore it. We were about to demolish that myth together.
 
-## Always changing
+## Always Changing
 
 This IT module has evolved quite a lot from its initial structure. During my first year teaching it, the module had a more basic and general approach; it served its purpose as a "work-for-all" type of module, but I realised that by the end of term the students were craving more skills to make their lives as future ecologists easier.
 
 Over the next couple of years, I added a few workshops on advanced Excel and Word as an extra feature, and this year, for the first time, the students will also have a brief introduction to R and QGIS.
 
-## A leap of faith
+## A Leap of Faith
 
 Over the past two years, I’ve been experimenting with new teaching techniques for my second-year students, having them share roles while tackling Excel data analysis or collaborating on map creation in QGIS. Looking back now, I realise I was using pair programming [@TeachProgAcross_C36] (two students working together on one computer) all along, unaware of its formal framework or established structure. It had emerged from my imagination during those late Sunday night planning sessions, born out of necessity and intuition.
 That initial gut feeling pushed me to learn more about pair programming, and I was ready to apply it. I wanted to show my students that programming isn’t just for coders; it’s for them too, demonstrating that when we work together, share our thinking, and build on each other's strengths, even the most intimidating technical challenges become accessible.
 
-### The challenge begins
+### The Challenge Begins
 
 My first-year students had already a gentle introduction to Excel, mostly through a few easy-to-follow examples that they then replicated in their own computers. A good start? Yes. Enough for their current needs? Not quite. That was when pair programming emerged as a good idea to try - for the first time in this module.
 
@@ -55,7 +49,7 @@ We'll work in pairs. One student will be the **driver**, controlling the main PC
 
 ![Students in their pair programming roles](/chapters/images/C37_pair-programming-sruc-pairs.jpg){#fig-c37-pairs fig-alt="Two pairs of students on their driver and co-pilot roles ready to start the challenge."}
 
-## Get real messy data and figure it out. Together.
+## Get Real Messy Data and Figure It Out. Together.
 
 This time, they had to download a real dataset from the MetOffice: climate data from Scotland in a strange-looking format (.txt). It involved conversion, structuring, and cleaning all at once. I could see them struggling with this. Some groups were trying different options, while others were looking for answers on websites or asking me questions. I could see how different strategies arose, but most importantly, each pair was using their different skill sets to solve this first part. Some of them almost gave up, while others were thriving and moving into the analysis stage.
 

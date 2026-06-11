@@ -52,6 +52,8 @@ We, the authors of this chapter have been involved in the development of the AFP
  
 Feedback is often considered an isolated event attached to the distribution of marks. @higgins2001getting, among many other researchers, find that this event-type posture stops feedback from being used to its full potential. On the learner side, @winstone2017supporting and @winstone2017d highlight the under-emphasised area of learner responsibility in the feedback dynamic, something they describe as a lack of ‘proactive recipience’. The role of the learner is equally important in the ultimate effectiveness of the feedback they receive. @orsmond2005biology [p. 381] note that if feedback “is simply stored in memory and never used, it is not feedback”. This is particularly relevant in Science, Technology, Engineering and Mathematics (STEM) subjects, where reflective practice is not a part of the typical curriculum [@boswell2023investigating]. @bevan2008seeing and @weaver2006students attribute these issues to the common absence or under-provision of training for learners in the role of feedback in their learning. These conditions create the prevailing sense that more could be done to ensure that learners are adequately prepared to meet the feedback they receive halfway. 
 
+![The Rubik's Cube of Assessment](/chapters/images/C35-rubiks-cube.png "The Rubik's Cube of Assessment"){#fig-c35-rubiks-cube fig-alt="A partially solved Rubik’s Cube at the centre of the image, surrounded by icons representing higher education, such as: a university building, graduation cap, student figure, checklist, books, and graded paper. There are circular arrows indicating an interconnected and dynamic feedback system among the elements displayed." width=70%}
+
 ## Introducing the Action Feedback Protocol
 
 Addressing this complexity therefore requires simultaneous attention on how students are informed on feedback literacy and how they are supported to act on the feedback they receive, as well as carefully considering how we, as educators, produce feedback in the first place. The AFP uses evidence-informed, simple and robust approaches to address feedback as part of a bigger complex system, rather than treating it as an isolated event. The approach therefore tackles head-on the need to foster proactive recipience among learners, couples the nature of feedback produced with students’ expectations of it, and creates structured alignment between staff across marking teams and student programmes. The AFP’s three dimensions are: (1) Tune the Ear, (2) Simplify the Message, and (3) Encourage Action.
@@ -74,7 +76,7 @@ This involves signposting students to help them reflect on the feedback, and enc
 
 ::: {.callout-tip icon=false}
 
-# A genuine example of the three comments from Engineering
+# A Genuine Example of the Three Comments From Engineering
 
 - **Aspect(s) done particularly well:**
 A feature of this work that was done well was the presentation of a very detailed report in terms of the experimental work and its results. It demonstrates a good understanding of thermal systems and subsystem integration. The relevance to sustainable energy practices in Malaysia is well contextualised.
@@ -96,15 +98,15 @@ Feedback not acted upon is not really feedback, so now it is up to you to make a
 The AFP is designed to be as simple as possible for everyone: parsimonious and efficient for educators and, most importantly, clear and supportive to learners. It takes a ‘less is more approach’ to assessment and feedback. @ackerman2010instructor tell us that students become overwhelmed with copious feedback that is hard to penetrate. This means they are less likely to act on their feedback, which makes it less useful. The AFP does significant heavy lifting on the part of markers and course leaders by increasing student feedback literacy and setting their expectations around what good feedback looks like. This in turn allows students to meet the system halfway, as engaged learners. It gives markers a template to follow which helps them manage their workload within a marking team, and it gives helpful and supportive signposting to students about where to go and what to do next when they receive their feedback. 
 
 
-## Implementation and impact
+## Implementation and Impact
 
 The AFP has been implemented at Heriot-Watt University across multiple disciplines such as Mathematics, Computer Science, Engineering, Physics, Languages, Economics, and Psychology across all its global campuses in Scotland, Dubai and Malaysia. It has received positive evaluations from both staff and students with surveys over multiple years indicating high levels of satisfaction with the clarity, helpfulness, and perceived fairness of feedback delivered using the AFP. Additionally, uptake beyond the institution, in contexts including STEM disciplines at other UK universities, suggests a degree of adaptability across subject and institutional boundaries. Importantly, the AFP is intended as an Open Educational Resource (OER), aiming to support learners and educators across all disciplines to engage with the feedback process. The idea is that the AFP creates a system through which there is a form of teamwork that aligns all sides of the feedback dynamic: learners, educators and institutions [@maclaren2026feedback].
 
-### A test case: The University of Edinburgh’s School of GeoSciences
+### A Test Case: The University of Edinburgh’s School of GeoSciences
 
 The following describes the experience of using the AFP, in its accessible OER form, in two undergraduate courses at the University of Edinburgh’s School of GeoSciences, in the academic year 2024-2025: GeoSciences Outreach and Engagement (GO&E) and Research Training for Geophysics (RTG). Neither course was restructured to incorporate the AFP, the protocol was adopted within the existing delivery structure. GO&E is a final year course, which is open to all undergraduates, but typically taken by students from the Schools of GeoSciences and Physics. In this course, students are given at least two supervisors --- one member of academic staff, and one postgraduate tutor --- whom they meet regularly. As outlined by @cross2022geoscience, this course stood out from ‘conventional’ courses in that the evaluation primarily focused on authentic assessment and student engagement. RTG, on the other hand, is a penultimate year course, mandatory in the Geophysics undergraduate degree. This course is more conventional in its assessment, as the students are assessed on two pieces of written work.
 
-### How did the AFP work across diverse courses?
+### How Did the AFP Work Across Diverse Courses?
 
 The assessment design in both courses remained the same, and the only change we implemented in the courses was the format of the system of feedback in order to align with the AFP. This was a useful test of the ease with which the AFP could be retrofitted to an existing assessment structure. However, as these courses are very different, the way we fitted the AFP into each course was adjusted accordingly.
 
@@ -112,7 +114,7 @@ In GO&E, there were six assessments spread throughout the course. For the first 
 
 In RTG, there were two major assessments, both written: a literature review, and a group project report. The literature review, due in the final part of semester 1, was assessed as usual, according to four marking criteria (content; communication; presentation; and referencing) and comments were provided following the ‘Simplify the Message’ three comments structure. Here, the AFP was being rolled out in a more standard summative assessment sense, with dedicated class-time to ‘Tune the Ear’ and develop feedback literacy prior to the release of results. Once results and feedback were made available, we ran a further classroom session to guide the students on how to utilise their feedback through a set of reflective exercises, in line with the ‘Encourage Action’ steps of the AFP. This session gave them time to write action points from their literature review to use in their forthcoming group project reports (the second assessment on the course), which enabled the students to use the AFP to feed forward into the subsequent assessment.
 
-### So, how did it go?
+### So, How Did It Go?
 
 The AFP was well received in both courses. In GO&E, the course organiser noted two distinct benefits to embracing the AFP as the feedback system; the first underscores the fact educators should not overlook the power of motivational and affirmational feedback, and the second is aligning across larger and more diverse marking teams, a common challenge in modern higher education.
 

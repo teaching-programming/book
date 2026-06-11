@@ -53,7 +53,7 @@ Here we list the core code elements and Python functionalities fundamental to th
 * **Data suggestion**: Using minimal lists and arrays of numbers and characters is helpful at this stage. Students can be invited to make a small list of their favorite fruits, colors, or a short series of numeric values (e.g., prices, scores).  
 * **Common pitfalls**: Misspelling variables or functions names; reusing variable names unintentionally; calling an unassigned variable (e.g., the notebook has defined some variables in a cell and students call these variables without executing the cell); forgetting to assign results of calculations to variables; misunderstanding variable type changes (e.g., overwriting a numeric/integer variable with a text/string).
 
-### Element 2 - Handling Data with `pandas`: Reading and Cleaning
+### Element 2 - Handling Data With `pandas`: Reading and Cleaning
 
 * **Goal**: Equip students with the essential skills to load, explore, and clean datasets.  
 * **Pedagogical value**: It is essential for students to learn to work with structured data in the form of data frames. Introducing them to how to load datasets, explore their structure, and select or clean rows and columns is needed for visualisation, modeling, and interpretation.  
@@ -61,7 +61,7 @@ Here we list the core code elements and Python functionalities fundamental to th
 * **Real data suggestion**: Turtle Size dataset [@phillips2021long] is a simply structured and helpful dataset which includes numerical and categorical variables. Penguins dataset [@gorman2014ecological] is another interesting and manageable dataset with some missing values for students to explore.  
 * **Common pitfalls**: Confusing `loc[]` with `iloc[]`; forgetting to save cleaned data in a variable; misunderstanding how `[]` behaves differently with rows and columns; forgetting that column names are strings when selecting them (e.g., `df["ColumnName"]`); forgetting to use a list when selecting multiple columns/rows (e.g., `dataframe.iloc[[5,1]]` vs `dataframe.iloc[5,1]`).
 
-### Element 3 - Visualising Data with `matplotlib` and `seaborn`: Explore, Compare, and Communicate
+### Element 3 - Visualising Data With `matplotlib` and `seaborn`: Explore, Compare, and Communicate
 
 * **Goal**: Use visual tools to describe the data, explore distributions, trends, and relationships among variables.  
 * **Pedagogical value**: Visualisation helps students in conducting exploratory analysis of the data, identifying outliers, checking distributions, and spotting potential relationships between variables, and reinforces the connection between statistical concepts and their visual representations.  
@@ -77,7 +77,7 @@ Here we list the core code elements and Python functionalities fundamental to th
 * **Real data suggestion**: Sleep in Mammals [@allison1976sleep] and Animals Life Expectancy [@che2019sex] are interesting datasets about animals with various features in different types that can be used to encourage students to explore the pattern of how long these animals sleep and live.  
 * **Common pitfalls**: Applying numeric-only summary functions to non-numeric variables; ignoring or not checking for missing values; not inspecting the shape and possible skewness of the distributions.
 
-### Element 5 - Normal Linear Regression with statsmodels: Explain and Predict Relationships
+### Element 5 - Normal Linear Regression With `statsmodels`: Explain and Predict Relationships
 
 * **Goal**: Provide students with tools to build linear regression models to explain relationships between variables and make predictions, using syntax that mirrors traditional statistical notation.  
 * **Pedagogical value**: Linear models are simple yet foundational, offering students a strong basis for deeper study of statistical modelling.  Introducing the normal linear model, along with the binary linear model (logistic regression) if time permits, could be sufficient at this stage. Attention should be given to checking the model assumptions and its goodness-of-fit.  
@@ -85,7 +85,7 @@ Here we list the core code elements and Python functionalities fundamental to th
 * **Real data suggestion**: World Happiness Report [@Happiness] data from most countries around the world and different years can be used to aim to model the countries level of happiness based on various measured social elements. Programme for International Student Assessment [@pisa] data provides standardised exam scores for a large sample of students in different countries along with many social and educational indicators.  
 * **Common pitfalls**: Difficulty in coding categorical variables; in extending the model formula to variable names including spaces; and in inputting new data in the `predict` function or passing in wrong data types.
 
-### Element 6 - Machine Learning with `scikit-learn`: Classification
+### Element 6 - Machine Learning With `scikit-learn`: Classification
 
 * **Goal**: Introduce students to basic supervised machine learning for classification problems, using intuitive models like k-Nearest Neighbors, decision trees, and ensemble methods, and reinforcing best practices in model evaluation.  
 * **Pedagogical value**: Introducing classification methods shows students how algorithms can learn patterns from labelled data to make predictions.  

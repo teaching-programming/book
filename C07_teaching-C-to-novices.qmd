@@ -4,16 +4,16 @@ bibliography: references.bib
 author:
   - name: Sam Skipsey
     email: Samuel.Skipsey@glasgow.ac.uk
-    affiliations: University of Glasgow
+    affiliations: School of Physics and Astronomy, University of Glasgow
   - name: Gordon Stewart
     email: Gordon.Stewart@glasgow.ac.uk
-    affiliations: University of Glasgow
+    affiliations: School of Physics and Astronomy, University of Glasgow
   - name: Jeremy Singer
     email: Jeremy.Singer@glasgow.ac.uk
-    affiliations: University of Glasgow
+    affiliations: School of Computing Science, University of Glasgow
   - name: David Cutting
     email: d.cutting@qub.ac.uk
-    affiliations: Queen's University Belfast
+    affiliations: School of Electronics, Electrical Engineering and Computer Science, Queen's University Belfast
 keywords:
   - curriculum-design	
   - coding-mindset
@@ -23,16 +23,16 @@ keywords:
 author:
   - name: Sam Skipsey
     email: Samuel.Skipsey@glasgow.ac.uk
-    affiliations: University of Glasgow
+    affiliations: School of Physics and Astronomy, University of Glasgow
   - name: Gordon Stewart
     email: Gordon.Stewart@glasgow.ac.uk
-    affiliations: University of Glasgow
+    affiliations: School of Physics and Astronomy, University of Glasgow
   - name: Jeremy Singer
     email: Jeremy.Singer@glasgow.ac.uk
-    affiliations: University of Glasgow
+    affiliations: School of Computing Science, University of Glasgow
   - name: David Cutting
     email: d.cutting@qub.ac.uk
-    affiliations: Queen's University Belfast
+    affiliations: School of Electronics, Electrical Engineering and Computer Science, Queen's University Belfast
 :::
 
 ## Introduction
@@ -53,7 +53,7 @@ As a consequence of arguments similar to those described in [@Balreira_2023] and
 These two lab-based experiences are, for many Physics students, their very first introduction to programming and, indeed, their first introduction to the concept that programming is important to the practice of physics as a discipline. We've noticed that this sometimes requires a significant adjustment to the students' mental image of what it means to be a physicist in the modern world, which seems to be set by prior experience in primary and secondary education as "someone who does experiments and knows advanced mathematics". Students are also expected to take mathematics courses in their first two years at university, but because they expect this as part of their image of the subject, they do not dispute the necessity of this; they may, however, dislike other aspects, for example the extreme rigour of some proof requirements in mathematical processes. By contrast, a significant fraction of physics undergraduates in their first year do find the introduction of computing topics both surprising and, if not unwelcome, then at least not well justified.
 
 
-### "P2T" -- a specialised course in C for physicists
+### "P2T" -- A Specialised Course in C for Physicists
 
 In the second semester of year two, Physics offers the course "P2T[^C07-P2T]: C Programming Under Linux", which introduces lower-level programming in the C language[^C07-oldP2T], the use of the GNU/Linux operating system, and command-line tooling for debugging, build orchestration and version control. This course is a prerequisite for students on the Theoretical Physics track, who have the programming background mentioned in the previous section; meanwhile, approximately half of the cohort each year is made up of second-year students from the School of Computing Science, who begin with a much stronger background in programming concepts, including experience of assembly language. In fact, P2T is a small (10 credit) course designed to stand alone with no formal prerequisites and thus is available to any student; in practice, however, only a few students outside of physics and computing science choose to take it. 
 
@@ -110,7 +110,7 @@ Misconception 2 may also be caused by the use of Jupyter to a greater extent tha
 
 Misconceptions 3, 4 and 5, conversely, clearly originate with the language itself, or at least with the pedagogic approach adopted by courses the students have previously undertaken. 
 
-### A "Whorfian" third way
+### A "Whorfian" Third Way
 
 Pedagogically, the programming languages we teach students in a specific discipline should be chosen to promote particular modes of thought. Pragmatically, we are also pressured to teach languages which provide students with employable skills, and these two goals may not perfectly overlap.  Esoteric programming languages, for example, can help to develop specific problem solving or mental models in programmers [@Singer_2025], but are by definition not widely used.
 

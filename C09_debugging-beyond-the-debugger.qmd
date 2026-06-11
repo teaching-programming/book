@@ -21,17 +21,17 @@ author:
 
 Harken your memory back to your first error message, however many years ago that might be. You likely felt a small jolt of panic, a worry you’d irreparably **broken something**. Nowadays, you hopefully see errors as the lane bumpers of your programming journey. Errors help us understand flaws in our original design, consequences of code changes on original code, and limitations of our system. 
 
-When teaching students at the beginning of their journey, it’s important to remember they will require psychological coaching to reframe these errors from failure, to progress. To them, proficient in their own field, they will not be accustomed to many errors in their work. In learning a new skill it’s key to foster the growth mindset that’s so fundamental in programming. 
+When teaching students at the beginning of their journey, it’s important to remember they will require psychological coaching to reframe these errors from failure, to progress. As experts in their field, they rarely make mistakes in their work. In learning a new skill it’s key to foster the growth mindset that’s so fundamental in programming. 
 
 This growth mindset muscle must be strong, so strong in fact that it can conquer the usual process of fixing one error only to find another one. An experienced programmer would see this as progress, the stepping stones that will lead to their desired end result. Whereas students often see it as compounding failure, eroding away at their frustration tolerance. This can be a huge blocker in their learning and lead to demotivation or the classic “programming is just not for me” mindset.
 
 This chapter will lay out the **5Bs framework[^C09-origin] - Brain, Book, Buddy, Boss, Break -** a guide for students encountering debugging. This strategy codifies the organic path of problem solving that is cultivated in engineering. It will allow the student to develop a systematic approach to problem-solving that will keep them moving forward in their debugging, increasing their frustration tolerance as a result. Throughout this framework, we'll also explore how learners can thoughtfully leverage modern AI assistants as powerful aids, while still ensuring they build deep conceptual understanding and robust problem-solving skills.
 
-[^C09-origin]: We expand on the "Brain Book Buddy Boss" technique, which is used in classrooms, but seldom mentioned in teaching literature or books. We could not track down its exact origins, but in chapter 4 of [@claxton2018learning] it is introduced as a variant of "Try Three Before Me". "Try Three Before Me" guides pupils who got stuck to first try solving or troubleshooting their problem themselves in 3 different ways, before they escalate it to the teacher. "Brain Book Buddy Boss" is a more specific variant, which suggests specific stops on that troubleshooting journey.
+[^C09-origin]: We expand on the "Brain Book Buddy Boss" technique, which is used in classrooms, but seldom mentioned in teaching literature or books. We could not track down its exact origins, but in chapter 4 of @claxton2018learning it is introduced as a variant of "Try Three Before Me". "Try Three Before Me" guides pupils who got stuck to first try solving or troubleshooting their problem themselves in 3 different ways, before they escalate it to the teacher. "Brain Book Buddy Boss" is a more specific variant, which suggests specific stops on that troubleshooting journey.
 
-### A Note about Debugging and AI
+### A Note About Debugging and AI
 
-However you feel about the broad usage of AI, their integration into learning environments demands our careful consideration. These powerful assistants can remarkably accelerate experienced developers and are invaluable for "getting the job done" efficiently. However, for the novice programmer focused on building foundational understanding and their own problem-solving abilities, they present a double-edged sword. If an AI consistently serves the perfectly cooked meal, the learner may miss the crucial sometimes messy process of learning to prepare it themselves, hindering the development of their core analytical and debugging muscles. With this in mind, the 5Bs framework presented in this chapter will explore how to thoughtfully integrate AI at each stage, aiming to strike a crucial balance: leveraging these incredible tools appropriately while always prioritizing and fostering deep, independent learning and critical thinking.
+However you feel about the broad usage of AI, their integration into learning environments demands our careful consideration. These powerful assistants can remarkably accelerate experienced developers and are invaluable for getting the job done efficiently. However, for the novice programmer focused on building foundational understanding and their own problem-solving abilities, they present a double-edged sword. If an AI consistently serves the perfectly cooked meal, the learner may miss the crucial, sometimes messy, process of learning to prepare it themselves. This may hinder the development of their core analytical and debugging muscles. With this in mind, the 5Bs framework presented in this chapter will explore how to thoughtfully integrate AI at each stage, aiming to strike a crucial balance: leveraging these incredible tools appropriately while always prioritizing and fostering deep, independent learning and critical thinking.
 
 ## BRAIN: Engage Your Mind Before Your Keyboard
 
@@ -55,7 +55,7 @@ At this point we are ready to test Y until we figure it out, or we find a new er
 This process is designed to be done in loops, until one moves forward or has to use another step in the framework. Encourage students to keep checkpointed versions of their work, as undo commands only provide a limited safety net.
 
 ::: {.callout-tip}
-### Tip for educators
+### Tip for Educators
 
 Encourage the student's self-reflection during this process by prompting them with simple questions:
 
@@ -68,7 +68,7 @@ Encourage the student's self-reflection during this process by prompting them wi
 
 Official sources of knowledge should be the core of a student’s debugging. These are presented in the order the student should consider consulting them.
 
-### Own materials
+### Own Materials
 
 A common first step is for the student to consult their learning materials, their notes or their code. This is usually a very useful resource, as they are deeply engaged with it and it’s likely to have similar examples to the problem they’re trying to solve. Students may be motivated to produce tidy, well-commented code in the course of their learning, when they know they’re likely to go back to it when they’re stuck.
 
@@ -78,7 +78,7 @@ Despite it being a complex source to parse, I would always encourage the student
 
 ### Books
 
-While it isn’t the quickest way to solve a bug, certainly many engineers' favourite pathway into deeper understanding is reading published titles. Authors have taken much time and deliberation over every sentence in their book, and this leads to the highest quality explanations of concepts. Books are a form of linear learning, which contrast to the other options’ fragmented learning. While a google search might fix a bug, reading a book chapter will fix the misunderstanding that caused it in the first place.
+While it isn’t the quickest way to solve a bug, many engineers' favourite pathway into deeper understanding is reading published titles. Authors have taken much time and deliberation over every sentence in their book, and this leads to the highest quality explanations of concepts. Books are a form of linear learning, which contrast to the other options’ fragmented learning. While a google search might fix a bug, reading a book chapter will fix the misunderstanding that caused it in the first place.
 
 Reading around a topic when one is stuck can be a natural way to gain deep understanding without feeling like one must set aside time for learning & development. By using these casual opportunities to learn, the student can create a lifelong habit of continuous learning.
 
@@ -95,7 +95,7 @@ A great way for students to leverage AI is by using it to demystify some of the 
 As explained earlier as it relates to AI, the limitations of this technology should be made clear to students. It can, and indeed does, confidently hallucinate answers and provide references that do not exist. Students should verify the knowledge passed on by AI with external sources, especially if the AI’s suggestions start to sound implausible or make the code worse.
 
 ::: {.callout-tip}
-### Tip for educators
+### Tip for Educators
 
 Provide your students with an AI prompt that they can put into their chatbot which asks the agent not to give the students any code, and instead act as a Socratic Teacher who will engage in conversation about the topics and guide the student towards their understanding. For example:
 
@@ -114,16 +114,16 @@ A very common practice for software engineers is rubber ducking. This is when so
 
 Of course, as mentioned in the section above, if a student chooses to use AI they should primarily use them as a Socratic tutor who they can have a discussion with. For me, this places AI firmly in the category of Buddy. Using the prompt above, the student should be able to engage with the AI as they would a colleague, with the great advantage of its 24/7 availability.
 
-### Fellow humans
+### Fellow Humans
 
-The two prior options described are great resources for the middle of the night questions. However, if there is an option to discuss with an actual person, I would recommend this option above all.
+The two prior options described are great resources for the middle of the night bugs. However, if there is an option to discuss with an actual person, I would recommend this option above all.
 
 Explaining your reasoning to someone else holds you to a higher standard of use of technical language. Whenever you describe your code to someone else, you organise your thoughts before you speak and you take cues from them to expand on explaining the parts that are most important. Their intuition collaborates with yours in real time to create better understanding. You’d be surprised how often discussing something with a colleague will also enhance their understanding of concepts too.
 
 Finally, learning is a collaborative endeavour: it becomes more effective and more enjoyable when shared. 
 
 ::: {.callout-tip}
-### Tip for educators
+### Tip for Educators
 
 Provide as many opportunities as you can to engage your students’ technical collaboration skills. A great way to do this is by encouraging pair programming as part of tackling coding challenges.
 
@@ -139,14 +139,14 @@ Helping them build out the skill of reaching out to a superior at this early sta
 A common first question is “how long do I wait?”, and the reply is that it depends on the length of time you have to complete the task. If a student has been set a task in class that’s 30 minutes long, and 10 minutes in they’re still in the beginning stages, then it’s appropriate to reach out. If they’re working on an assignment that they have weeks to complete, they ought to try for longer than 10 minutes before reaching out.
 
 ::: {.callout-tip}
-### Tip for educators
+### Tip for Educators
 
 The hardest part of reaching out can be the intimidation of knowing, ironically, that they’ve probably now waited longer than they should have. To encourage the students to reach out when appropriate and push through that feeling, it can be helpful to give them a framework of preparation they can use as a guide to feel more comfortable in escalating.
 
 - **Context** - What are you trying to do? What part of what you’re tacking is new to you? What specific error message or bug are you getting?  
 - **Brain** - What is your understanding of the problem? What hypotheses have you tested?  
 - **Book** - Where did you go to get more information? Was it helpful? Did it confuse you further? Do you have any similar sample code which you do understand?  
-- **Buddy** - Have you talked it through with a colleague? Did you discuss this problem with AI? Where in their explanations have you got lost?   
+- **Buddy** - Have you talked it through with a colleague? Did you discuss this problem with AI? Where in their explanations did you get lost?   
 - **Question** - What one specific question could your tutor answer you that would lead to the most significant unblocking?  
 
   Ensure you treat a student’s escalation with utmost care, they are likely building a fragile muscle which will require tackling one's own ego and some old stubborn habits.

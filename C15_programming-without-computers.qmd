@@ -49,7 +49,7 @@ Alternative methods for introducing CT have been explored over the last two deca
 
 This chapter discusses two approaches to teaching programming and CT without the use of computers. The first is the **ProgBoard**, a printable tool that enables learners to explore sequence, selection, and iteration. The second is a **play-kit for first-year computing students**, developed to foster computational thinking through playful and tangible activities. The chapter then draws connections between these approaches and the wider challenges of accessibility and inclusion in programming education, concluding with a reflection on the potential of such methods for diverse learner groups.
 
-## Unplugged Programming with ProgBoard
+## Unplugged Programming With ProgBoard
 
 The **ProgBoard**, developed as part of the "Think Like a Computer" initiative [@C15_r12] and available from [thinklikeacomputer.org](https://thinklikeacomputer.org), provides learners with a structured way to engage with programming fundamentals in a tangible form. It is a printable teaching tool designed to introduce the three fundamental programming constructs of **sequence**, **selection**, **iteration**, and **variables** all without requiring a computer.
 
