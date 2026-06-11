@@ -8,7 +8,7 @@ bibliography: references.bib
 ----
 
 ### Brittany Blankinship (she/her)
-##### Lecturer in Data Science , Edinburgh Medical School, University of Edinburgh
+##### Lecturer in Data Science, Edinburgh Medical School, University of Edinburgh
 ![](/chapters/authors/brittany-blankinship.jpg ){#fig-author-brittany-blankinship fig-alt="Brittany Blankinship Profile" width=30% }
 
 Prior to entering the Data Science and Health Tech landscape, my academic background was in Linguistics, History, Psychology, and Neuroscience. In fact, I did not encounter programming until my Master's Degree. This was a truly transformative experience that altered the trajectory of my career. Programming unlocked statistics and so much more - and I have never looked back! Day to day, I am the Programme Director for an online, part-time MSc in Data Science for Health and Social Care. I am committed to empowering students by making programming and data science accessible and enjoyable to learn.
@@ -184,6 +184,7 @@ Personal website: <https://whbell.net/>
 Work website: <https://www.strath.ac.uk/staff/bellwilliamdr/>
 
 ----
+
 ### Yanina Bellini Saibene (she/her)
 ##### Community Manager, rOpenSci, RLadies+, Universidad Austral
 ![](/chapters/authors/yanina-bellini-saibene.jpg ){#fig-author-yanina-bellini-saibene fig-alt="Yanina Bellini Saibene Profile" width=30% }
@@ -372,7 +373,7 @@ LinkedIn: <http://www.linkedin.com/in/joseph-elgemayel>
 
 ----
 
-### Sarah Elliot (She/her)
+### Sarah Elliot (she/her)
 ##### PhD Candidate , The University of Edinburgh
 I am a PhD student in Medical Informatics with a strong commitment to lifelong learning. Since joining Edinburgh University I have had the opportunity to teach and support others in their learning journeys, which has been very rewarding. I am passionate about learning, sharing knowledge, and using data that can improve public health and healthcare outcomes. 
 

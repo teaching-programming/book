@@ -16,7 +16,7 @@ Further details about Creative Commons licenses are available at <https://creati
 
 
 _Attribution should include the following information:_  
-Blankinship, B., Orzechowski, P., Desvages, C., Banas, K., Noè, U., Oldnall, C.A., Sharifi Far, S., Llewellyn, C., Alex, B., Evkaya, O., and McManus, F. 2026. Teaching Programming Across Disciplines.  
+Blankinship, B., Orzechowski, P., Desvages, C., Banas, K., Noè, U., Oldnall, C.A., Sharifi Far, S., Llewellyn-MacRae, C., Alex, B., Evkaya, O., and McManus, F. 2026. Teaching Programming Across Disciplines.  
 Edinburgh: University of Edinburgh. <https://doi.org/10.2218/ED.9781836450795>
 
 Any third-party material in this book is not covered by the book’s Creative Commons license. Details of the copyright ownership and permitted use of third-party material is given in the image credit lines. If you would like to reuse any third-party material not covered by the book’s Creative Commons license, you will need to obtain permission directly from the copyright owner. 

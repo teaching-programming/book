@@ -71,7 +71,7 @@ This chapter is helpful for educators who aim to guide students through diverse 
 
 This theme focuses on supporting learners as they develop programming knowledge and confidence. The chapters explore the use of Python for data analysis, the role of tools such as Jupyter in programming education, and the challenges of transitioning to additional programming languages. Together, they provide practical insights into designing learning experiences that support both immediate application and longer-term development. 
 
-### Co-designing Programming Teaching Experiences [@TeachProgAcross_C06]
+### Co-Designing Programming Teaching Experiences [@TeachProgAcross_C06]
 
 This chapter draws inspiration from role-playing games and anarchist pedagogies to create dynamic and collaborative learning environments. 
 
