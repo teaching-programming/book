@@ -1,5 +1,4 @@
 ---
-title: "Preface --- Who Are We and How Did We Get Here?"
 author:
   - name: Brittany Blankinship
     email: b.blankinship@ed.ac.uk
@@ -24,9 +23,11 @@ author:
     affiliation: Edinburgh Medical School, University of Edinburgh
 :::
 
+# Who Are We and How Did We Get Here? {.unnumbered .unlisted}
+
 The origin of this book can be traced to one afternoon in a University of Edinburgh cafe that no longer exists. Sat around a table were colleagues who teach programming to students in medicine, business, mathematics, and psychology. Amongst the buzz of university staff and students working, having meetings, and enjoying a hot beverage, we discussed ideas for our fledgling community. It was on this auspicious afternoon that Kasia Banas suggested “What if we organize a small workshop or conference? Like a summer school but in winter?” And so, the Edinburgh Winter School was not quite born, but the seeds planted for what would grow into the annual Winter School and eventually this very book.  
 
-Some months prior, we had started a blossoming community of support and practice anchored around the use of using pair programming in teaching and learning (hence our community’s email account and website – pairprogramming@ed.ac.uk and https://www.pairprogramming.ed.ac.uk respectively). We had identified a gap in teaching-focused communities of practice: educators such as ourselves who love teaching and find joy in it but teach programming across disciplines. And in this, we were all facing similar problems: how to teach practical skills in large courses to diverse groups of students, many of whom did not begin their studies to learn or develop programming skills. 
+Some months prior, we had started a blossoming community of support and practice anchored around the use of using pair programming in teaching and learning (hence our community’s email account and website – <pairprogramming@ed.ac.uk> and <https://www.pairprogramming.ed.ac.uk> respectively). We had identified a gap in teaching-focused communities of practice: educators such as ourselves who love teaching and find joy in it but teach programming across disciplines. And in this, we were all facing similar problems: how to teach practical skills in large courses to diverse groups of students, many of whom did not begin their studies to learn or develop programming skills. 
 
 This book and our community have expanded beyond pair programming, but it remains core to who we are. As such, our book starts with pair programming, sharing our various experiences using it as a structured form of group work in programming courses. Through pair programming, we aim to give students a learning experience where coding is a joyful, creative, and community-centered activity (instead of scary, frustrating, and lonely). This continues to be a golden thread connecting our community – hence the title “Teaching Programming Across Disciplines: A collection of articles on teaching coding kindly, openly, and together”.  
 
