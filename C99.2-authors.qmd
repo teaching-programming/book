@@ -163,6 +163,16 @@ I am an educator and researcher in computing with a particular interest in softw
 
 ----
 
+### Samantha Alvarez Madrazo (she/her)
+##### Senior Teaching Fellow and Statistical Teaching Coordinator, Imperial College London 
+![](/chapters/authors/samantha-alvarez-madrazo.jpg ){#fig-author-samantha-alvarez-madrazo fig-alt="Samantha Alvarez Madrazo Profile" width=30% }
+
+I am a pharmacist, health data scientist and educator. Learning programming at the same time as learning statistics can be a challenging journey. Being surrounded by supportive and inspiring colleagues and having a continuous dialogue with online and on-campus postgraduate students enriches my journey. My motivation to contribute to this book is to keep learning from each other, share ideas about empowering students to develop a coding mindset and reflecting about online teaching. 
+
+LinkedIn: <https://www.linkedin.com/in/samantha-alvarez-b3137211>
+
+----
+
 ### William H. Bell
 ##### Teaching Fellow, University of Strathclyde
 ![](/chapters/authors/william-bell.jpg ){#fig-author-william-bell fig-alt="William Bell Profile" width=30% }
@@ -174,17 +184,6 @@ Personal website: <https://whbell.net/>
 Work website: <https://www.strath.ac.uk/staff/bellwilliamdr/>
 
 ----
-
-### Samantha Alvarez Madrazo (she/her)
-##### Senior Teaching Fellow and Statistical Teaching Coordinator, Imperial College London 
-![](/chapters/authors/samantha-alvarez-madrazo.jpg ){#fig-author-samantha-alvarez-madrazo fig-alt="Samantha Alvarez Madrazo Profile" width=30% }
-
-I am a pharmacist, health data scientist and educator. Learning programming at the same time as learning statistics can be a challenging journey. Being surrounded by supportive and inspiring colleagues and having a continuous dialogue with online and on-campus postgraduate students enriches my journey. My motivation to contribute to this book is to keep learning from each other, share ideas about empowering students to develop a coding mindset and reflecting about online teaching. 
-
-LinkedIn: <https://www.linkedin.com/in/samantha-alvarez-b3137211>
-
-----
-
 ### Yanina Bellini Saibene (she/her)
 ##### Community Manager, rOpenSci, RLadies+, Universidad Austral
 ![](/chapters/authors/yanina-bellini-saibene.jpg ){#fig-author-yanina-bellini-saibene fig-alt="Yanina Bellini Saibene Profile" width=30% }
