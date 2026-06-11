@@ -5,17 +5,14 @@ First published in 2026 by the University of Edinburgh
 <https://books.ed.ac.uk/edinburgh-diamond> | [\@EdinDiamond](https://bsky.app/profile/edinburghdiamond.bsky.social)
 
 Collection © Editors, 2026  
-Text © Authors, 2026  
-Images © Contributors and copyright holders named in Images Section at the end of the book, 2026  
-
-The authors have asserted their rights under the Copyright, Designs and Patents Act 1988 to be identified as the authors of this work. 
+Text © Contributors, 2026  
+Images © Contributors and copyright holders named in Image Register at the end of the book, 2026  
 
 This book is published under Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International license (CC BY-NC-SA 4.0), <https://creativecommons.org/licenses/by-nc-sa/4.0/>
 
 ![](chapters/images/C00_CC_logo.png){fig-alt="Logo of CC BY-NC-SA 4.0 license" fig-align="left" width="30%"}
 
 Further details about Creative Commons licenses are available at <https://creativecommons.org/about/cclicenses/>
-
 
 _Attribution should include the following information:_  
 Blankinship, Orzechowski, Desvages, Banas, Noè, Oldnall, Sharifi Far, Llewellyn, Alex, Evkaya, and McManus. 2026. Teaching Programming Across Disciplines.  
