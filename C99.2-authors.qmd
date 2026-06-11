@@ -184,6 +184,7 @@ Personal website: <https://whbell.net/>
 Work website: <https://www.strath.ac.uk/staff/bellwilliamdr/>
 
 ----
+
 ### Yanina Bellini Saibene (she/her)
 ##### Community Manager, rOpenSci, RLadies+, Universidad Austral
 ![](/chapters/authors/yanina-bellini-saibene.jpg ){#fig-author-yanina-bellini-saibene fig-alt="Yanina Bellini Saibene Profile" width=30% }
