@@ -37,7 +37,7 @@ Cover design by Pawel Orzechowski
 
 Printed and bound by Lulu.com
 
-This project was supported by a grant from the University of Edinburgh's Pricipal's Teaching Award Scheme (PTAS), which funded a project coordinator role. No authors or contributors were paid for their contribution to this book.
+This project was supported by a grant from the University of Edinburgh's Principal's Teaching Award Scheme (PTAS), which funded a project coordinator role. No authors or contributors were paid for their contribution to this book.
 
 
 ![](chapters/images/C00_UoE_logo.png){fig-alt="The University of Edinburgh logo" fig-alight=left width=40%}
