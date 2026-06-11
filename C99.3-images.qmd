@@ -67,20 +67,6 @@ bibliography: references.bib
 
 ![](chapters/images/C08_E-WEB-Goal-16.png){#C08_E-WEB-Goal-16-ref width="20%" fig-align="left"}
 
-## Chapter --- Computer Says No: Reducing Technical Barriers to Help Novice Programmers
-
-### Figure 0.0
-
-**Licence**: CC BY-NC-SA
-
-**Author/creator**: Lizzie Wadsworth
-
-**Source**: Author's own
-
-**Notes**: Not in use?
-
-![](chapters/images/C04_computer-says-no-keyframes-of-gif.png){#C04_computer-says-no-keyframes-of-gif-ref width="20%" fig-align="left"}
-
 ## Chapter --- It Depends: How to Develop Judgement in Programming
 
 ### Figure 0.1
