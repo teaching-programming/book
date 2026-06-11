@@ -866,13 +866,8 @@ Figure&nbsp;39.3: Lattice 2
 <section id="generalisation" class="level2">
 <h2 class="anchored" data-anchor-id="generalisation">Generalisation</h2>
 <p>CivEng students understand the use of functions and are adept in translating formulation of various calculation routines into functions. So that should be enough for generalising code, shouldn’t it? During a practice session, after having students estimate the derivative <span class="math inline">\(f'(x_0)\)</span> for the specific functions <span class="math inline">\(f(x) = x^2\)</span> and <span class="math inline">\(f(x) = \cos(x)\)</span> with finite differences, I required them to generalise their <code>deriv_*</code> function to accept any mathematical function. Well, how can we do that? — they doubted, until I showed that we can just pass the function under investigation as one of the inputs of the function <code>deriv</code> (see the Julia code below) — a first step toward functional programming.</p>
-<div id="lst-student-func" class="julia listing quarto-float quarto-figure quarto-figure-left anchored">
-<figure class="quarto-float quarto-float-lst figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-lst" id="lst-student-func-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Listing&nbsp;39.1: Student’s version
-</figcaption>
-<div aria-describedby="lst-student-func-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode numberSource julia number-lines code-with-copy"><code class="sourceCode julia"><span id="cb10-1"><a href="#cb10-1"></a>deriv_sq <span class="op">=</span> <span class="kw">function</span>(o, h)</span>
+<p><strong>Student’s version</strong></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10" data-lst-cap="Student's version"><pre class="sourceCode numberSource julia number-lines code-with-copy"><code class="sourceCode julia"><span id="cb10-1"><a href="#cb10-1"></a>deriv_sq <span class="op">=</span> <span class="kw">function</span>(o, h)</span>
 <span id="cb10-2"><a href="#cb10-2"></a>  ((o <span class="op">+</span> h)<span class="op">^</span><span class="fl">2</span> <span class="op">-</span> (o <span class="op">-</span> h)<span class="op">^</span><span class="fl">2</span>) <span class="op">/</span> <span class="fl">2</span>h</span>
 <span id="cb10-3"><a href="#cb10-3"></a><span class="kw">end</span></span>
 <span id="cb10-4"><a href="#cb10-4"></a></span>
@@ -882,25 +877,14 @@ Listing&nbsp;39.1: Student’s version
 <span id="cb10-8"><a href="#cb10-8"></a></span>
 <span id="cb10-9"><a href="#cb10-9"></a><span class="fu">deriv_sq</span>(<span class="fl">0</span>, <span class="fl">1E-3</span>)</span>
 <span id="cb10-10"><a href="#cb10-10"></a><span class="fu">deriv_cos</span>(<span class="fl">0</span>, <span class="fl">1E-3</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-</figure>
-</div>
-<div id="lst-recommended-func" class="julia listing quarto-float quarto-figure quarto-figure-left anchored">
-<figure class="quarto-float quarto-float-lst figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-lst" id="lst-recommended-func-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Listing&nbsp;39.2: Recommended version
-</figcaption>
-<div aria-describedby="lst-recommended-func-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode numberSource julia number-lines code-with-copy"><code class="sourceCode julia"><span id="cb11-1"><a href="#cb11-1"></a><span class="co"># A generic central-difference approximation</span></span>
+<p><strong>Recommended version</strong></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11" data-lst-cap="Recommended version"><pre class="sourceCode numberSource julia number-lines code-with-copy"><code class="sourceCode julia"><span id="cb11-1"><a href="#cb11-1"></a><span class="co"># A generic central-difference approximation</span></span>
 <span id="cb11-2"><a href="#cb11-2"></a>deriv <span class="op">=</span> <span class="kw">function</span>(f, o, h)</span>
 <span id="cb11-3"><a href="#cb11-3"></a>  (<span class="fu">f</span>(o <span class="op">+</span> h) <span class="op">-</span> <span class="fu">f</span>(o <span class="op">-</span> h)) <span class="op">/</span> <span class="fl">2</span>h</span>
 <span id="cb11-4"><a href="#cb11-4"></a><span class="kw">end</span></span>
 <span id="cb11-5"><a href="#cb11-5"></a></span>
 <span id="cb11-6"><a href="#cb11-6"></a><span class="fu">deriv</span>(x <span class="op">-&gt;</span> x<span class="op">^</span><span class="fl">2</span>, <span class="fl">0</span>, <span class="fl">1E-3</span>)</span>
 <span id="cb11-7"><a href="#cb11-7"></a><span class="fu">deriv</span>(x <span class="op">-&gt;</span> <span class="fu">cos</span>(x), <span class="fl">0</span>, <span class="fl">1E-3</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-</figure>
-</div>
 </section>
 <section id="tooling" class="level2">
 <h2 class="anchored" data-anchor-id="tooling">Tooling</h2>
