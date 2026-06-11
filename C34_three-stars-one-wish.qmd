@@ -11,7 +11,7 @@ author:
    affiliations: Edinburgh Medical School, University of Edinburgh
  - name: Rebecca Sewell
    affiliations: Health New Zealand | Te Whatu Ora
- - name: Clare Llewellyn
+ - name: Clare Llewellyn-MacRae
    affiliations: School of Social and Political Sciences, University of Edinburgh
  - name: Beatrice Alex
    affiliations: School of Mathematical and Computer Sciences, Heriot-Watt University
@@ -35,7 +35,7 @@ author:
    affiliations: Edinburgh Medical School, University of Edinburgh
  - name: Rebecca Sewell
    affiliations: Health New Zealand | Te Whatu Ora
- - name: Clare Llewellyn
+ - name: Clare Llewellyn-MacRae
    affiliations: School of Social and Political Sciences, University of Edinburgh
  - name: Beatrice Alex
    affiliations: School of Mathematical and Computer Sciences, Heriot-Watt University
