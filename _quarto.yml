@@ -141,8 +141,7 @@ book:
         - C32_civil-engineering.qmd
         - C24_lost-in-translation.qmd
 
-        - send-off.qmd
-        - CAB_Authors.qmd
-        - CIMG_images.qmd
-        - 99-bibliography.qmd
-        
+        - C99.1-sendoff.qmd
+        - C99.2-authors.qmd
+        - C99.3-images.qmd
+        - C99.4-bibliography.qmd

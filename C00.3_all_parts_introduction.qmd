@@ -24,7 +24,7 @@ author:
     affiliation: Edinburgh Medical School, University of Edinburgh
 :::
 
-# Preface --- Welcome to the Book {.unnumbered .unlisted}
+# Welcome to the Book {.unnumbered .unlisted}
 
 Welcome to the Teaching Programming Across Disciplines Book! Our book is an edited, open-access volume comprised of many short chapters written by groups of authors from our community. In this first edition of the book, we have curated 44 chapters from 75 authors. Since the original pitch, these chapters have been drafted, revised, and polished, with rewrites from authors, feedback from the editing team, and many writing retreats along the way. Contributions to this book are not limited to one institution, and while reading you will notice that our authors have drawn on their experiences across different institutions, countries, and educational backgrounds. 
 
@@ -32,7 +32,7 @@ Come on a journey through some of the core questions that arise when teaching pr
 
 [^C002-footnote]: Just follow licensing outlined in the Images Section and credit the creator
 
-### Why did we write this book?  
+## Why Did We Write This Book?  
 
 At a basic level, we wrote this book because it is something we would have wanted to exist when we started our own teaching journeys. That is, we would have liked guidance from a community with specific experience in teaching programming to non-programming (i.e., not computer science) students.  
 
@@ -40,21 +40,19 @@ There is an existing literature on teaching programming within computer science.
 
 Our community works in departments related to our disciplines, rather than the programming we teach. This often results in silos – or even teams of one – delivering the entire programming curriculum for a cohort. As a result, we rely on chance meetings with colleagues at conferences and coding clubs to create opportunities for likeminded people to connect and develop their practice. We hope that this book will offer something similar - a window into how others teach and an opportunity to pick the best bits for your own teaching. Above all, we hope that it will be a source of support and solidarity that speaks to your unique teaching experiences. 
 
-### Who is this book for?  
+## Who Is This Book For?  
 
 This book is for anyone who is interested in teaching, programming, or the intersection of these ideas. Many chapters are written with the aim of creating community and sharing our experiences with fellow educators. Others are suitable for students to read as they are.  
 
 The volume we have edited is relevant to both educators starting out on their teaching journey and more experienced teachers. We like to think that there is value for teaching-adjacent colleagues as well – leadership, administrators, etc. 
 
-### How to read this book 
+## How To Read This Book 
 
 There are many (we have yet to quantify an exhaustive list) ways in which a reader can navigate our book. It is unlikely that you will open this book and read it cover to cover. To find chapters most relevant to your teaching, you can use the Part and Theme names as a guide. Alternatively, close your eyes and randomly open the physical book to a page or scroll on your computer and see where your cursor lands on our online version of the book.  
 
-### A note on vocabulary 
+## A Note on Vocabulary 
 
 We would not be a community of academics working on a project together if we did not do the very academic thing of defining our terms. At some higher education institutions, the terms “course” and “module” are used to refer to the overall degree program of study and individual organized learning opportunities bearing credit, while others use “program” and “course”. Similarly, you may notice “student” and “learner” are both used. As editors, we have left it to the authors’ discretion as this is most representative of how the terms are used across our community.  
-
- 
 
 We hope you find something interesting to you as a human and perhaps even useful if you are an educator in the chapters that follow. Happy reading!  
 
