@@ -4,6 +4,7 @@ bibliography: references.bib
 author:
   - name: Pawel Orzechowski
     corresponding: true
+    email: pawel.orzechowski@ed.ac.uk
     affiliations: Edinburgh Medical School, University of Edinburgh
 
 keywords:
@@ -16,6 +17,7 @@ keywords:
 author:
   - name: Pawel Orzechowski
     corresponding: true
+    email: pawel.orzechowski@ed.ac.uk
     affiliations: Edinburgh Medical School, University of Edinburgh
 :::
 
