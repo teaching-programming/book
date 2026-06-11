@@ -37,7 +37,8 @@ keywords:
 author: 
   - name: Robert S. Young 
     email: robert.young\@ed.ac.uk 
-    corresponding: false affiliations: Edinburgh Medical School, University of Edinburgh; Zhejiang University - University of Edinburgh (ZJE) Institute 
+    corresponding: false 
+    affiliations: Edinburgh Medical School, University of Edinburgh; Zhejiang University - University of Edinburgh (ZJE) Institute 
   - name: Rebecca L. Colquhoun 
     email: r.colquhoun23\@imperial.ac.uk 
     affiliations: Department of Earth Science and Engineering, Imperial College London
