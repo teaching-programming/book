@@ -1,3 +1,8 @@
+---
+title: "Image Register"
+bibliography: references.bib
+---
+
 ## Chapter: Where Do I Even Start With Pair Programming in My Classroom? A Conversation With Seasoned Practitioners
 
 
@@ -53,72 +58,55 @@
 ----
 
 
-## Chapter:  let me type it in!"
+## Chapter: Structured Group Work With Assigned Asymmetrical Roles and Switching: Lessons From Pair Programming Across Disciplines
 
 
-### Figure  we did it! It works!"".
+### Figure 3.1
 
-**Licence**:  I see a bracket missing on line 7
+**Licence**: CC BY-NC-SA
 
-**Creator**:  "Let's run this code and see what happens."
+**Creator**: Pawel Orzechowski
 
-**Source**:  "Yay
-
-**Notes**:  we did it! It works!""
+**Source**: Author's own
 
 ![](chapters/images/C36_pair-programming-across-disciplines_driver_and_navigator_speak.png){#C36_pair-programming-across-disciplines_driver_and_navigator_speak-ref width=20% fig-align='left' }
 
 ----
 
 
-## Chapter:  "Is it time to switch drivers?"
+### Figure 3.2
 
+**Licence**: CC BY-NC-SA
 
-### Figure .
+**Creator**: Pawel Orzechowski
 
-**Licence**:  "Do you need help getting unblocked or are you just cracking on?""
-
-**Creator**: Structured Group Work With Assigned Asymmetrical Roles and Switching: Lessons From Pair Programming Across Disciplines
-
-**Source**: CC BY-NC-SA
-
-**Notes**: Pawel Orzechowski
+**Source**: Author's own
 
 ![](chapters/images/C36_pair-programming-across-disciplines_tutor_helps.png){#C36_pair-programming-across-disciplines_tutor_helps-ref width=20% fig-align='left' }
 
 ----
 
 
-## Chapter:  or much more advanced than me?"
+### Figure 3.3
 
+**Licence**: CC BY-NC-SA
 
-### Figure  and learning new coding styles"".
+**Creator**: Pawel Orzechowski
 
-**Licence**:  "I'm uncomfortable in socially complex situations. Will I know what to say and do in a groupâ€¦"
-
-**Creator**:  "Should I just always work with the same friend
-
-**Source**:  or would I miss out on meeting new people
-
-**Notes**:  and learning new coding styles""
+**Source**: Author's own
 
 ![](chapters/images/C36_pair-programming-across-disciplines_group_anxiety.png){#C36_pair-programming-across-disciplines_group_anxiety-ref width=20% fig-align='left' }
 
 ----
 
 
-## Chapter:  is â€¦"
+### Figure 3.4
 
+**Licence**: CC BY-NC-SA
 
-### Figure .
+**Creator**: Pawel Orzechowski
 
-**Licence**:  "I see another way to solve this!"
-
-**Creator**:  "That's cool! I never thought about it this way""
-
-**Source**: Structured Group Work With Assigned Asymmetrical Roles and Switching: Lessons From Pair Programming Across Disciplines
-
-**Notes**: CC BY-NC-SA
+**Source**: Author's own
 
 ![](chapters/images/C36_pair-programming-across-disciplines_online_ideas.png){#C36_pair-programming-across-disciplines_online_ideas-ref width=20% fig-align='left' }
 
@@ -190,7 +178,12 @@
 
 **Notes**: online only
 
+::: {.content-visible unless-format="html"}
+![](chapters/images/C40_ir-radar.png){#C40_ir-radar-ref width=20% fig-align='left' }
+:::
+::: {.content-visible when-format="html"}
 ![](chapters/images/C40_ir-radar.gif){#C40_ir-radar-ref width=20% fig-align='left' }
+:::
 
 ----
 
@@ -374,7 +367,12 @@
 
 **Notes**: online only
 
+::: {.content-visible unless-format="html"}
+![](chapters/images/C04_RStudio_GIF_demonstration.png){#C04_RStudio_GIF_demonstration-ref width=20% fig-align='left' }
+:::
+::: {.content-visible when-format="html"}
 ![](chapters/images/C04_RStudio_GIF_demonstration.gif){#C04_RStudio_GIF_demonstration-ref width=20% fig-align='left' }
+:::
 
 ----
 
@@ -629,18 +627,13 @@
 ----
 
 
-## Chapter:  each with 5-6 chairs and a shared PC screen
+### Figure 18.2
 
+**Licence**: CC BY-NC-SA
 
-### Figure .
+**Creator**: Eileen Xu
 
-**Licence**:  which facilitates discussions and groupwork."
-
-**Creator**: Peer Programming in Action: Pair Programming in Larger Groups
-
-**Source**: CC BY-NC-SA
-
-**Notes**: Eileen Xu
+**Source**: Author's own
 
 ![](chapters/images/C16_peer-programming_teaching-room.png){#C16_peer-programming_teaching-room-ref width=20% fig-align='left' }
 
@@ -728,7 +721,12 @@
 
 **Notes**: online only
 
+::: {.content-visible unless-format="html"}
+![](chapters/images/C23_pair-programming-fusion-relentless-feedback-gif.png){#C23_pair-programming-fusion-relentless-feedback-gif-ref width=20% fig-align='left' }
+:::
+::: {.content-visible when-format="html"}
 ![](chapters/images/C23_pair-programming-fusion-relentless-feedback-gif.gif){#C23_pair-programming-fusion-relentless-feedback-gif-ref width=20% fig-align='left' }
+:::
 
 ----
 
@@ -884,7 +882,13 @@
 
 **Notes**: online only
 
+::: {.content-visible unless-format="html"}
+![](chapters/images/C17_fig1_arrays_as_sound_and_music.png){#C17_fig1_arrays_as_sound_and_music-ref width=20% fig-align='left' }
+:::
+::: {.content-visible when-format="html"}
 ![](chapters/images/C17_fig1_arrays_as_sound_and_music.svg){#C17_fig1_arrays_as_sound_and_music-ref width=20% fig-align='left' }
+:::
+
 
 ----
 
@@ -1146,18 +1150,16 @@
 ----
 
 
-## Chapter: Managing the Rubik's Cube of Assessment: The Action Feedback Protocol
+## Chapter: Managing the Rubik s Cube of Assessment: The Action Feedback Protocol
 
 
-### Figure 31.1.
+### Figure 31.1
 
 **Licence**: CC BY-NC-SA
 
 **Creator**: Andrew MacLaren
 
-**Source**: Image adapted and further modified from Rubik's cube v3" by User:Booyabazooka and User:Meph666
-
-**Notes**:  modified by User:Niabot
+**Source**: Image adapted and further modified from  Rubik s cube v3  by User:Booyabazooka and User:Meph666, modified by User:Niabot, licensed under CC BY-SA 3.0. https://creativecommons.org/licenses/by-sa/3.0/
 
 ![](chapters/images/C35-rubiks-cube.png){#C35-rubiks-cube-ref width=20% fig-align='left' }
 
@@ -1339,7 +1341,7 @@
 ----
 
 
-## Chapter: Case Study From Scotland's Rural College: The Wild(Life) Side of Pair Programming
+## Chapter: Case Study From Scotland s Rural College: The Wild(Life) Side of Pair Programming
 
 
 ### Figure 37.1
@@ -1381,7 +1383,7 @@
 ----
 
 
-## Chapter: Changing Civil Engineering Students' Mindset Toward Programming
+## Chapter: Changing Civil Engineering Students  Mindset Toward Programming
 
 
 ### Figure 39.1
@@ -1436,7 +1438,12 @@
 
 **Notes**: online only
 
+::: {.content-visible unless-format="html"}
+![](chapters/images/C24_Fig_1.png){#C24_Fig_1-ref width=20% fig-align='left' }
+:::
+::: {.content-visible when-format="html"}
 ![](chapters/images/C24_Fig_1.svg){#C24_Fig_1-ref width=20% fig-align='left' }
+:::
 
 ----
 
@@ -1466,7 +1473,12 @@
 
 **Notes**: online only
 
+::: {.content-visible unless-format="html"}
+![](chapters/images/C24_Fig_2.png){#C24_Fig_2-ref width=20% fig-align='left' }
+:::
+::: {.content-visible when-format="html"}
 ![](chapters/images/C24_Fig_2.svg){#C24_Fig_2-ref width=20% fig-align='left' }
+:::
 
 ----
 
