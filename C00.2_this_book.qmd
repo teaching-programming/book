@@ -2,7 +2,7 @@
 author:
   - name: Brittany Blankinship
     email: b.blankinship@ed.ac.uk
-    affiliations: Edinburgh Medical School, Univeristy of Edinburgh 
+    affiliations: Edinburgh Medical School, University of Edinburgh 
   - name: Franziska McManus
     email: z.mcmanus@ed.ac.uk
     affiliations: Edinburgh Medical School, University of Edinburgh
@@ -14,7 +14,7 @@ author:
 author:
   - name: Brittany Blankinship
     email: b.blankinship@ed.ac.uk
-    affiliations: Edinburgh Medical School, Univeristy of Edinburgh 
+    affiliations: Edinburgh Medical School, University of Edinburgh 
   - name: Franziska McManus
     email: z.mcmanus@ed.ac.uk
     affiliations: Edinburgh Medical School, University of Edinburgh
