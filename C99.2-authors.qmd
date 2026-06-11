@@ -8,7 +8,7 @@ bibliography: references.bib
 ----
 
 ### Brittany Blankinship (she/her)
-##### Lecturer in Data Science , Edinburgh Medical School, University of Edinburgh
+##### Lecturer in Data Science, Edinburgh Medical School, University of Edinburgh
 ![](/chapters/authors/brittany-blankinship.jpg ){#fig-author-brittany-blankinship fig-alt="Brittany Blankinship Profile" width=30% }
 
 Prior to entering the Data Science and Health Tech landscape, my academic background was in Linguistics, History, Psychology, and Neuroscience. In fact, I did not encounter programming until my Master's Degree. This was a truly transformative experience that altered the trajectory of my career. Programming unlocked statistics and so much more - and I have never looked back! Day to day, I am the Programme Director for an online, part-time MSc in Data Science for Health and Social Care. I am committed to empowering students by making programming and data science accessible and enjoyable to learn.
