@@ -5,7 +5,7 @@ author:
     affiliations: Edinburgh Medical School, University of Edinburgh
   - name: Brittany Blankinship
     email: b.blankinship@ed.ac.uk
-    affiliations: Edinburgh Medical School, Univeristy of Edinburgh
+    affiliations: Edinburgh Medical School, University of Edinburgh
   - name: Pawel Orzechowski
     email: pawel.orzechowski@ed.ac.uk
     affiliation: Edinburgh Medical School, University of Edinburgh
