@@ -3,1062 +3,1496 @@ title: "Image Register"
 bibliography: references.bib
 ---
 
-## Chapter --- Hype and The Need for Responsible Compute
+## Chapter: Where Do I Even Start With Pair Programming in My Classroom? A Conversation With Seasoned Practitioners
 
-### Figure 0.0
-
-**Licence**: CC BY-NC-SA
-
-**Author/creator**: United Nations
-
-**Source**: <https://sdgs.un.org/goals/goal3>
-
-**Notes**: <https://www.un.org/sustainabledevelopment/wp-content/uploads/2019/01/SDG_Guidelines_AUG_2019_Final.pdf>
-
-![](chapters/images/C08_E-WEB-Goal-03.png){#C08_E-WEB-Goal-03-ref width="20%" fig-align="left"}
-
-### Figure 0.0
-
-**Licence**: CC BY-NC-SA
-
-**Author/creator**: United Nations
-
-**Source**: <https://sdgs.un.org/goals/goal4>
-
-![](chapters/images/C08_E-WEB-Goal-04.png){#C08_E-WEB-Goal-04-ref width="20%" fig-align="left"}
-
-### Figure 0.0
-
-**Licence**: CC BY-NC-SA
-
-**Author/creator**: United Nations
-
-**Source**: <https://sdgs.un.org/goals/goal8>
-
-![](chapters/images/C08_E-WEB-Goal-08.png){#C08_E-WEB-Goal-08-ref width="20%" fig-align="left"}
-
-### Figure 0.0
-
-**Licence**: CC BY-NC-SA
-
-**Author/creator**: United Nations
-
-**Source**: <https://sdgs.un.org/goals/goal10>
-
-![](chapters/images/C08_E-WEB-Goal-10.png){#C08_E-WEB-Goal-10-ref width="20%" fig-align="left"}
-
-### Figure 0.0
-
-**Licence**: CC BY-NC-SA
-
-**Author/creator**: United Nations
-
-**Source**: <https://sdgs.un.org/goals/goal12>
-
-![](chapters/images/C08_E-WEB-Goal-12.png){#C08_E-WEB-Goal-12-ref width="20%" fig-align="left"}
-
-### Figure 0.0
-
-**Licence**: CC BY-NC-SA
-
-**Author/creator**: United Nations
-
-**Source**: <https://sdgs.un.org/goals/goal16>
-
-![](chapters/images/C08_E-WEB-Goal-16.png){#C08_E-WEB-Goal-16-ref width="20%" fig-align="left"}
-
-## Chapter --- It Depends: How to Develop Judgement in Programming
-
-### Figure 0.1
-
-**Licence**: CC BY-NC-SA
-
-**Author/creator**: John Wilson
-
-**Source**: Author's own
-
-![](chapters/images/C40_all-balanced.png){#C40_all-balanced-ref width="20%" fig-align="left"}
-
-### Figure 0.2
-
-**Licence**: CC BY-NC-SA
-
-**Author/creator**: John Wilson
-
-**Source**: Author's own
-
-![](chapters/images/C40_independent-zoomed.png){#C40_independent-zoomed-ref width="20%" fig-align="left"}
-
-### Figure 0.3
-
-**Licence**: CC BY-NC-SA
-
-**Author/creator**: John Wilson
-
-**Source**: Author's own
-
-![](chapters/images/C40_conscious-zoomed.png){#C40_conscious-zoomed-ref width="20%" fig-align="left"}
-
-### Figure 0.4
-
-**Licence**: CC BY-NC-SA
-
-**Author/creator**: John Wilson
-
-**Source**: Author's own
-
-![](chapters/images/C40_social-zoomed.png){#C40_social-zoomed-ref width="20%" fig-align="left"}
-
-### Figure 0.5
-
-**Licence**: CC BY-NC-SA
-
-**Author/creator**: John Wilson
-
-**Source**: Author's own
-
-**Notes**: online only
-
-
-::: {.content-visible unless-format="html"}
-![](chapters/images/C40_ir-radar.png){width="20%" fig-align="left"}
-:::
-::: {.content-visible when-format="html"}
-![](chapters/images/C40_ir-radar.gif){#C40_ir-radar-ref width="20%" fig-align="left"}
-:::
-
-### Figure 0.5
-
-**Licence**: CC BY-NC-SA
-
-**Author/creator**: John Wilson
-
-**Source**: Author's own
-
-**Notes**: print only
-
-![](chapters/images/C40_ir-radar.png){width="20%" fig-align="left"}
-
-### Figure 0.6
-
-**Licence**: CC BY-NC-SA
-
-**Author/creator**: Seren Wilson
-
-**Source**: Author's own
-
-![](chapters/images/C40_nutshell.png){#C40_nutshell-ref width="20%" fig-align="left"}
-
-## Chapter --- Where Do I Even Start With Pair Programming in My Classroom? A Conversation With Seasoned Practitioners
 
 ### Figure 2.1
 
 **Licence**: CC BY-NC-SA
 
-**Author/creator**: Pawel Orzechowski
+**Creator**: Pawel Orzechowski
 
 **Source**: Author's own
 
-![](chapters/images/C12_pair-programming-overview_breakout_rooms.png){#C12_pair-programming-overview_breakout_rooms-ref width="20%" fig-align="left"}
+![](chapters/images/C12_pair-programming-overview_podcast_recording.jpg){#C12_pair-programming-overview_podcast_recording-ref width=20% fig-align='left' }
+
+----
+
 
 ### Figure 2.2
 
 **Licence**: CC BY-NC-SA
 
-**Author/creator**: Pawel Orzechowski
+**Creator**: Pawel Orzechowski
 
 **Source**: Author's own
 
-![](chapters/images/C12_pair-programming-overview_keyboard_switch.png){#C12_pair-programming-overview_keyboard_switch-ref width="20%" fig-align="left"}
+![](chapters/images/C12_pair-programming-overview_two_students.png){#C12_pair-programming-overview_two_students-ref width=20% fig-align='left' }
+
+----
+
 
 ### Figure 2.3
 
 **Licence**: CC BY-NC-SA
 
-**Author/creator**: Pawel Orzechowski
+**Creator**: Pawel Orzechowski
 
 **Source**: Author's own
 
-![](chapters/images/C12_pair-programming-overview_podcast_recording.jpg){#C12_pair-programming-overview_podcast_recording-ref width="20%" fig-align="left"}
+![](chapters/images/C12_pair-programming-overview_keyboard_switch.png){#C12_pair-programming-overview_keyboard_switch-ref width=20% fig-align='left' }
+
+----
+
 
 ### Figure 2.4
 
 **Licence**: CC BY-NC-SA
 
-**Author/creator**: Pawel Orzechowski
+**Creator**: Pawel Orzechowski
 
 **Source**: Author's own
 
-![](chapters/images/C12_pair-programming-overview_two_students.png){#C12_pair-programming-overview_two_students-ref width="20%" fig-align="left"}
+![](chapters/images/C12_pair-programming-overview_breakout_rooms.png){#C12_pair-programming-overview_breakout_rooms-ref width=20% fig-align='left' }
 
-## Chapter --- Structured Group Work With Assigned Asymmetrical Roles and Switching: Lessons From Pair Programming Across Disciplines
+----
+
+
+## Chapter: Structured Group Work With Assigned Asymmetrical Roles and Switching: Lessons From Pair Programming Across Disciplines
+
 
 ### Figure 3.1
 
 **Licence**: CC BY-NC-SA
 
-**Author/creator**: Pawel Orzechowski
+**Creator**: Pawel Orzechowski
 
 **Source**: Author's own
 
-![](chapters/images/C36_pair-programming-across-disciplines_driver_and_navigator_speak.png){#C36_pair-programming-across-disciplines_driver_and_navigator_speak-ref width="20%" fig-align="left"}
+![](chapters/images/C36_pair-programming-across-disciplines_driver_and_navigator_speak.png){#C36_pair-programming-across-disciplines_driver_and_navigator_speak-ref width=20% fig-align='left' }
+
+----
+
 
 ### Figure 3.2
 
 **Licence**: CC BY-NC-SA
 
-**Author/creator**: Pawel Orzechowski
+**Creator**: Pawel Orzechowski
 
 **Source**: Author's own
 
-![](chapters/images/C36_pair-programming-across-disciplines_tutor_helps.png){#C36_pair-programming-across-disciplines_tutor_helps-ref width="20%" fig-align="left"}
+![](chapters/images/C36_pair-programming-across-disciplines_tutor_helps.png){#C36_pair-programming-across-disciplines_tutor_helps-ref width=20% fig-align='left' }
+
+----
+
 
 ### Figure 3.3
 
 **Licence**: CC BY-NC-SA
 
-**Author/creator**: Pawel Orzechowski
+**Creator**: Pawel Orzechowski
 
 **Source**: Author's own
 
-![](chapters/images/C36_pair-programming-across-disciplines_group_anxiety.png){#C36_pair-programming-across-disciplines_group_anxiety-ref width="20%" fig-align="left"}
+![](chapters/images/C36_pair-programming-across-disciplines_group_anxiety.png){#C36_pair-programming-across-disciplines_group_anxiety-ref width=20% fig-align='left' }
+
+----
+
 
 ### Figure 3.4
 
 **Licence**: CC BY-NC-SA
 
-**Author/creator**: Pawel Orzechowski
+**Creator**: Pawel Orzechowski
 
 **Source**: Author's own
 
-![](chapters/images/C36_pair-programming-across-disciplines_online_ideas.png){#C36_pair-programming-across-disciplines_online_ideas-ref width="20%" fig-align="left"}
+![](chapters/images/C36_pair-programming-across-disciplines_online_ideas.png){#C36_pair-programming-across-disciplines_online_ideas-ref width=20% fig-align='left' }
 
-## Chapter --- An Optimistic Outlook on Teaching, Learning and Assessment for Coding With the Emergence of Generative AI
+----
+
+
+## Chapter: It Depends: How to Develop Judgement in Programming
+
+
+### Figure 7.1
+
+**Licence**: CC BY-NC-SA
+
+**Creator**: John Wilson
+
+**Source**: Author's own
+
+![](chapters/images/C40_all-balanced.png){#C40_all-balanced-ref width=20% fig-align='left' }
+
+----
+
+
+### Figure 7.2
+
+**Licence**: CC BY-NC-SA
+
+**Creator**: John Wilson
+
+**Source**: Author's own
+
+![](chapters/images/C40_independent-zoomed.png){#C40_independent-zoomed-ref width=20% fig-align='left' }
+
+----
+
+
+### Figure 7.3
+
+**Licence**: CC BY-NC-SA
+
+**Creator**: John Wilson
+
+**Source**: Author's own
+
+![](chapters/images/C40_conscious-zoomed.png){#C40_conscious-zoomed-ref width=20% fig-align='left' }
+
+----
+
+
+### Figure 7.4
+
+**Licence**: CC BY-NC-SA
+
+**Creator**: John Wilson
+
+**Source**: Author's own
+
+![](chapters/images/C40_social-zoomed.png){#C40_social-zoomed-ref width=20% fig-align='left' }
+
+----
+
+
+### Figure 7.5
+
+**Licence**: CC BY-NC-SA
+
+**Creator**: John Wilson
+
+**Source**: Author's own
+
+**Notes**: online only
+
+::: {.content-visible unless-format="html"}
+![](chapters/images/C40_ir-radar.png){#C40_ir-radar-ref width=20% fig-align='left' }
+:::
+::: {.content-visible when-format="html"}
+![](chapters/images/C40_ir-radar.gif){#C40_ir-radar-ref width=20% fig-align='left' }
+:::
+
+----
+
+
+### Figure 7.5
+
+**Licence**: CC BY-NC-SA
+
+**Creator**: John Wilson
+
+**Source**: Author's own
+
+**Notes**: print only
+
+![](chapters/images/C40_ir-radar.png){#C40_ir-radar-ref width=20% fig-align='left' }
+
+----
+
+
+### Figure 7.6
+
+**Licence**: CC BY-NC-SA
+
+**Creator**: Seren Wilson
+
+**Source**: Author's own
+
+![](chapters/images/C40_nutshell.png){#C40_nutshell-ref width=20% fig-align='left' }
+
+----
+
+
+## Chapter: Hype and The Need for Responsible Compute
+
 
 ### Figure 8.1
 
 **Licence**: CC BY-NC-SA
 
-**Author/creator**: Laila Dabab Nahas
+**Creator**: United Nations
+
+**Source**: https://sdgs.un.org/goals/goal3
+
+**Notes**: For details of copyright, see: https://www.un.org/sustainabledevelopment/wp-content/uploads/2019/01/SDG_Guidelines_AUG_2019_Final.pdf
+
+![](chapters/images/C08_E-WEB-Goal-03.png){#C08_E-WEB-Goal-03-ref width=20% fig-align='left' }
+
+----
+
+
+### Figure 8.2
+
+**Licence**: CC BY-NC-SA
+
+**Creator**: United Nations
+
+**Source**: https://sdgs.un.org/goals/goal4
+
+**Notes**: For details of copyright, see: https://www.un.org/sustainabledevelopment/wp-content/uploads/2019/01/SDG_Guidelines_AUG_2019_Final.pdf
+
+![](chapters/images/C08_E-WEB-Goal-04.png){#C08_E-WEB-Goal-04-ref width=20% fig-align='left' }
+
+----
+
+
+### Figure 8.3
+
+**Licence**: CC BY-NC-SA
+
+**Creator**: United Nations
+
+**Source**: https://sdgs.un.org/goals/goal8
+
+**Notes**: For details of copyright, see: https://www.un.org/sustainabledevelopment/wp-content/uploads/2019/01/SDG_Guidelines_AUG_2019_Final.pdf
+
+![](chapters/images/C08_E-WEB-Goal-08.png){#C08_E-WEB-Goal-08-ref width=20% fig-align='left' }
+
+----
+
+
+### Figure 8.4
+
+**Licence**: CC BY-NC-SA
+
+**Creator**: United Nations
+
+**Source**: https://sdgs.un.org/goals/goal10
+
+**Notes**: For details of copyright, see: https://www.un.org/sustainabledevelopment/wp-content/uploads/2019/01/SDG_Guidelines_AUG_2019_Final.pdf
+
+![](chapters/images/C08_E-WEB-Goal-10.png){#C08_E-WEB-Goal-10-ref width=20% fig-align='left' }
+
+----
+
+
+### Figure 8.5
+
+**Licence**: CC BY-NC-SA
+
+**Creator**: United Nations
+
+**Source**: https://sdgs.un.org/goals/goal12
+
+**Notes**: For details of copyright, see: https://www.un.org/sustainabledevelopment/wp-content/uploads/2019/01/SDG_Guidelines_AUG_2019_Final.pdf
+
+![](chapters/images/C08_E-WEB-Goal-12.png){#C08_E-WEB-Goal-12-ref width=20% fig-align='left' }
+
+----
+
+
+### Figure 8.6
+
+**Licence**: CC BY-NC-SA
+
+**Creator**: United Nations
+
+**Source**: https://sdgs.un.org/goals/goal16
+
+**Notes**: For details of copyright, see: https://www.un.org/sustainabledevelopment/wp-content/uploads/2019/01/SDG_Guidelines_AUG_2019_Final.pdf
+
+![](chapters/images/C08_E-WEB-Goal-16.png){#C08_E-WEB-Goal-16-ref width=20% fig-align='left' }
+
+----
+
+
+## Chapter: An Optimistic Outlook on Teaching, Learning and Assessment for Coding With the Emergence of Generative AI
+
+
+### Figure 9.1
+
+**Licence**: CC BY-NC-SA
+
+**Creator**: Laila Dabab Nahas
 
 **Source**: Author's own
 
-![](chapters/images/C19_LLMs_development.png){#C19_LLMs_development-ref width="20%" fig-align="left"}
+![](chapters/images/C19_LLMs_development.png){#C19_LLMs_development-ref width=20% fig-align='left' }
 
-## Chapter --- AI, Voice, and Style in Programming Education
+----
+
+
+## Chapter: AI, Voice, and Style in Programming Education
+
 
 ### Figure 10.1
 
 **Licence**: CC BY-NC-SA
 
-**Author/creator**: John Wilson
+**Creator**: John Wilson
 
 **Source**: Author's own
 
-![](chapters/images/C44_ai-vs-ac-flowchart.png){#C44_ai-vs-ac-flowchart-ref width="20%" fig-align="left"}
+![](chapters/images/C44_ai-vs-ac-flowchart.png){#C44_ai-vs-ac-flowchart-ref width=20% fig-align='left' }
 
-## Chapter --- Practices to Foster Inclusion and Accessibility in Programming Teaching
+----
+
+
+## Chapter: Computer Says No: Reducing Technical Barriers to Help Novice Programmers
+
 
 ### Figure 12.1
 
 **Licence**: CC BY-NC-SA
 
-**Author/creator**: Pawel Orzechowski
+**Creator**: Lizzie Wadsworth
 
 **Source**: Author's own
 
-![](chapters/images/c14-inclusion-codealong.png){#c14-inclusion-codealong-ref width="20%" fig-align="left"}
+![](chapters/images/C04_computer-says-no-flowchart.png){#C04_computer-says-no-flowchart-ref width=20% fig-align='left' }
+
+----
+
 
 ### Figure 12.2
 
 **Licence**: CC BY-NC-SA
 
-**Author/creator**: Pawel Orzechowski
+**Creator**: Lizzie Wadsworth
 
 **Source**: Author's own
 
-![](chapters/images/c14-inclusion-flipped.png){#c14-inclusion-flipped-ref width="20%" fig-align="left"}
+**Notes**: online only
+
+::: {.content-visible unless-format="html"}
+![](chapters/images/C04_RStudio_GIF_demonstration.png){#C04_RStudio_GIF_demonstration-ref width=20% fig-align='left' }
+:::
+::: {.content-visible when-format="html"}
+![](chapters/images/C04_RStudio_GIF_demonstration.gif){#C04_RStudio_GIF_demonstration-ref width=20% fig-align='left' }
+:::
+
+----
+
+
+### Figure 12.2
+
+**Licence**: CC BY-NC-SA
+
+**Creator**: Lizzie Wadsworth
+
+**Source**: Author's own
+
+**Notes**: print only
+
+![](chapters/images/C04_RStudio_GIF_demonstration.png){#C04_RStudio_GIF_demonstration-ref width=20% fig-align='left' }
+
+----
+
 
 ### Figure 12.3
 
 **Licence**: CC BY-NC-SA
 
-**Author/creator**: Pawel Orzechowski
+**Creator**: Lizzie Wadsworth
 
 **Source**: Author's own
 
-![](chapters/images/c14-inclusion-modelling-line.png){#c14-inclusion-modelling-line-ref width="20%" fig-align="left"}
+![](chapters/images/C04_computer-says-no-jupyter-notebook.png){#C04_computer-says-no-jupyter-notebook-ref width=20% fig-align='left' }
+
+----
+
 
 ### Figure 12.4
 
 **Licence**: CC BY-NC-SA
 
-**Author/creator**: Pawel Orzechowski
+**Creator**: Lizzie Wadsworth
 
 **Source**: Author's own
 
-![](chapters/images/c14-inclusion-pair-prog.png){#c14-inclusion-pair-prog-ref width="20%" fig-align="left"}
+![](chapters/images/C04_computer-says-no-quatro-live-exercise.png){#C04_computer-says-no-quatro-live-exercise-ref width=20% fig-align='left' }
+
+----
+
 
 ### Figure 12.5
 
 **Licence**: CC BY-NC-SA
 
-**Author/creator**: Pawel Orzechowski
+**Creator**: xkcd
 
-**Source**: Author's own
+**Source**: https://xkcd.com/
 
-![](chapters/images/c14-inclusion-lecture-lab.png){#c14-inclusion-lecture-lab-ref width="20%" fig-align="left"}
+![](chapters/images/C04_computer-says-no-xkcd-dependency.png){#C04_computer-says-no-xkcd-dependency-ref width=20% fig-align='left' }
 
-### Figure 12.6
+----
 
-**Licence**: CC BY-NC-SA
 
-**Author/creator**: Pawel Orzechowski
+## Chapter: Practices To Foster Inclusion and Accessibility in Programming Teaching
 
-**Source**: Author's own
-
-![](chapters/images/c14-inclusion-discovery.png){#c14-inclusion-discovery-ref width="20%" fig-align="left"}
-
-## Chapter --- Overcoming Coding Anxiety: Lowering the Stakes and Making It Fun
 
 ### Figure 13.1
 
 **Licence**: CC BY-NC-SA
 
-**Author/creator**: The Square Comic
-
-**Source**: <https://www.thesquarecomics.com/>
-
-**Notes**: Via <https://www.reddit.com/user/yuva-krishna-memes/>
-
-![](chapters/images/C33_coding-anxiety_humour.png){#C33_coding-anxiety_humour-ref width="20%" fig-align="left"}
-
-## Chapter --- Computer Says No: Reducing Technical Barriers to Help Novice Programmers
-
-### Figure 13.1
-
-**Licence**: CC BY-NC-SA
-
-**Author/creator**: Lizzie Wadsworth
+**Creator**: Pawel Orzechowski
 
 **Source**: Author's own
 
-![](chapters/images/C04_computer-says-no-flowchart.png){#C04_computer-says-no-flowchart-ref width="20%" fig-align="left"}
+![](chapters/images/c14-inclusion-codealong.png){#c14-inclusion-codealong-ref width=20% fig-align='left' }
 
-## Chapter --- Overcoming Coding Anxiety: Lowering the Stakes and Making It Fun
-
-### Figure 13.2
-
-**Licence**: CC BY-NC-SA
-
-**Author/creator**: Maria Zacarias
-
-**Source**: Adapted from <https://www.mentalyc.com/>
-
-![](chapters/images/C33_coding-anxiety_cycle.png){#C33_coding-anxiety_cycle-ref width="20%" fig-align="left"}
-
-## Chapter --- Computer Says No: Reducing Technical Barriers to Help Novice Programmers
-
-### Figure 13.2
-
-**Licence**: CC BY-NC-SA
-
-**Author/creator**: Lizzie Wadsworth
-
-**Source**: Author's own
-
-**Notes**: online only
-
-
-::: {.content-visible unless-format="html"}
-![](chapters/images/C04_RStudio_GIF_demonstration.png){width="20%" fig-align="left"}
-:::
-::: {.content-visible when-format="html"}
-![](chapters/images/C04_RStudio_GIF_demonstration.gif){#C04_RStudio_GIF_demonstration-ref width="20%" fig-align="left"}
-:::
+----
 
 
 ### Figure 13.2
 
 **Licence**: CC BY-NC-SA
 
-**Author/creator**: Lizzie Wadsworth
+**Creator**: Pawel Orzechowski
 
 **Source**: Author's own
 
-**Notes**: print only
+![](chapters/images/c14-inclusion-flipped.png){#c14-inclusion-flipped-ref width=20% fig-align='left' }
 
-![](chapters/images/C04_RStudio_GIF_demonstration.png){width="20%" fig-align="left"}
+----
 
-## Chapter --- Overcoming Coding Anxiety: Lowering the Stakes and Making It Fun
 
 ### Figure 13.3
 
 **Licence**: CC BY-NC-SA
 
-**Author/creator**: Pratik Gupte
-
-**Source**: Reused with the author's permission.
-
-![](chapters/images/C33_coding-anxiety_move.png){#C33_coding-anxiety_move-ref width="20%" fig-align="left"}
-
-## Chapter --- Computer Says No: Reducing Technical Barriers to Help Novice Programmers
-
-### Figure 13.3
-
-**Licence**: CC BY-NC-SA
-
-**Author/creator**: Lizzie Wadsworth
+**Creator**: Pawel Orzechowski
 
 **Source**: Author's own
 
-![](chapters/images/C04_computer-says-no-jupyter-notebook.png){#C04_computer-says-no-jupyter-notebook-ref width="20%" fig-align="left"}
+![](chapters/images/c14-inclusion-modelling-line.png){#c14-inclusion-modelling-line-ref width=20% fig-align='left' }
 
-## Chapter --- Overcoming Coding Anxiety: Lowering the Stakes and Making It Fun
+----
+
 
 ### Figure 13.4
 
 **Licence**: CC BY-NC-SA
 
-**Author/creator**: Tiago Marques
+**Creator**: Pawel Orzechowski
 
 **Source**: Author's own
 
-![](chapters/images/C33_coding-anxiety_memes.png){#C33_coding-anxiety_memes-ref width="20%" fig-align="left"}
+![](chapters/images/c14-inclusion-pair-prog.png){#c14-inclusion-pair-prog-ref width=20% fig-align='left' }
 
-## Chapter --- Computer Says No: Reducing Technical Barriers to Help Novice Programmers
+----
 
-### Figure 13.4
-
-**Licence**: CC BY-NC-SA
-
-**Author/creator**: Lizzie Wadsworth
-
-**Source**: Author's own
-
-![](chapters/images/C04_computer-says-no-quatro-live-exercise.png){#C04_computer-says-no-quatro-live-exercise-ref width="20%" fig-align="left"}
-
-## Chapter --- Overcoming Coding Anxiety: Lowering the Stakes and Making It Fun
 
 ### Figure 13.5
 
 **Licence**: CC BY-NC-SA
 
-**Author/creator**: Maria Zacarias
+**Creator**: Pawel Orzechowski
 
 **Source**: Author's own
 
-![](chapters/images/C33_coding-anxiety_pair.png){#C33_coding-anxiety_pair-ref width="20%" fig-align="left"}
+![](chapters/images/c14-inclusion-lecture-lab.png){#c14-inclusion-lecture-lab-ref width=20% fig-align='left' }
 
-## Chapter --- Computer Says No: Reducing Technical Barriers to Help Novice Programmers
+----
 
-### Figure 13.5
+
+### Figure 13.6
 
 **Licence**: CC BY-NC-SA
 
-**Author/creator**: xkcd
+**Creator**: Pawel Orzechowski
 
-**Source**: <https://xkcd.com/>
+**Source**: Author's own
 
-**Notes**: <https://xkcd.com/license.html>
+![](chapters/images/c14-inclusion-discovery.png){#c14-inclusion-discovery-ref width=20% fig-align='left' }
 
-![](chapters/images/C04_computer-says-no-xkcd-dependency.png){#C04_computer-says-no-xkcd-dependency-ref width="20%" fig-align="left"}
+----
 
-## Chapter --- Peer Programming in Action: Pair Programming in Larger Groups
+
+## Chapter: Overcoming Coding Anxiety: Lowering the Stakes and Making It Fun
+
 
 ### Figure 14.1
 
 **Licence**: CC BY-NC-SA
 
-**Author/creator**: Umberto Noe
+**Creator**: The Square Comic
 
-**Source**: Author's own
+**Source**: https://www.thesquarecomics.com/
 
-![](chapters/images/C16_peer-programming_course-structure.png){#C16_peer-programming_course-structure-ref width="20%" fig-align="left"}
+**Notes**: Via https://www.reddit.com/user/yuva-krishna-memes/
+
+![](chapters/images/C33_coding-anxiety_humour.png){#C33_coding-anxiety_humour-ref width=20% fig-align='left' }
+
+----
+
 
 ### Figure 14.2
 
 **Licence**: CC BY-NC-SA
 
-**Author/creator**: Eileen Xu
+**Creator**: Maria Zacarias
+
+**Source**: Adapted from https://www.mentalyc.com/ 
+
+![](chapters/images/C33_coding-anxiety_cycle.png){#C33_coding-anxiety_cycle-ref width=20% fig-align='left' }
+
+----
+
+
+### Figure 14.3
+
+**Licence**: CC BY-NC-SA
+
+**Creator**: Pratik Gupte
+
+**Source**: Reused with the author's permission.
+
+![](chapters/images/C33_coding-anxiety_move.png){#C33_coding-anxiety_move-ref width=20% fig-align='left' }
+
+----
+
+
+### Figure 14.4
+
+**Licence**: CC BY-NC-SA
+
+**Creator**: Tiago Marques
 
 **Source**: Author's own
 
-![](chapters/images/C16_peer-programming_teaching-room.png){#C16_peer-programming_teaching-room-ref width="20%" fig-align="left"}
+![](chapters/images/C33_coding-anxiety_memes.png){#C33_coding-anxiety_memes-ref width=20% fig-align='left' }
 
-## Chapter --- Leveraging the Heterogeneity: Teaching Computing Skills to a Multidisciplinary Cohort With a Variable Skill Level
+----
+
+
+### Figure 14.5
+
+**Licence**: CC BY-NC-SA
+
+**Creator**: Maria Zacarias
+
+**Source**: Author's own
+
+![](chapters/images/C33_coding-anxiety_pair.png){#C33_coding-anxiety_pair-ref width=20% fig-align='left' }
+
+----
+
+
+## Chapter: 3 Stars and 1 Wish: Small and Frequent Student Reflections Promote a Sense of Wonder and a Community of Vulnerability
+
 
 ### Figure 15.1
 
 **Licence**: CC BY-NC-SA
 
-**Author/creator**: Jonathon Holt
+**Creator**: Pawel Orzechowski
 
 **Source**: Author's own
 
-![](chapters/images/C31_leveraging_heterogeneity_fig1.png){#C31_leveraging_heterogeneity_fig1-ref width="20%" fig-align="left"}
+![](chapters/images/c34-3s1w-post-prompt.png){#c34-3s1w-post-prompt-ref width=20% fig-align='left' }
 
-## Chapter --- 3 Stars and 1 Wish: Small and Frequent Student Reflections Promote a Sense of Wonder and a Community of Vulnerability
+----
 
-### Figure 15.1
-
-**Licence**: CC BY-NC-SA
-
-**Author/creator**: Pawel Orzechowski
-
-**Source**: Author's own
-
-![](chapters/images/c34-3s1w-post-prompt.png){#c34-3s1w-post-prompt-ref width="20%" fig-align="left"}
-
-## Chapter --- Leveraging the Heterogeneity: Teaching Computing Skills to a Multidisciplinary Cohort With a Variable Skill Level
 
 ### Figure 15.2
 
 **Licence**: CC BY-NC-SA
 
-**Author/creator**: Jonathan Holt
+**Creator**: Pawel Orzechowski
 
 **Source**: Author's own
 
-![](chapters/images/C31_leveraging_heterogeneity_fig2.png){#C31_leveraging_heterogeneity_fig2-ref width="20%" fig-align="left"}
+![](chapters/images/c34-3s1w-course-structure.png){#c34-3s1w-course-structure-ref width=20% fig-align='left' }
 
-## Chapter --- 3 Stars and 1 Wish: Small and Frequent Student Reflections Promote a Sense of Wonder and a Community of Vulnerability
-
-### Figure 15.2
-
-**Licence**: CC BY-NC-SA
-
-**Author/creator**: Pawel Orzechowski
-
-**Source**: Author's own
-
-![](chapters/images/c34-3s1w-course-structure.png){#c34-3s1w-course-structure-ref width="20%" fig-align="left"}
-
-## Chapter --- Learning Together Across Modes: Online and On-Site Pair Programming in a Fusion Course
-
-### Figure 16.1
-
-**Licence**: CC BY-NC-SA
-
-**Author/creator**: Pawel Orzechowski
-
-**Source**: Author's own
-
-![](chapters/images/C23_pair-programming-fusion-modes.png){#C23_pair-programming-fusion-modes-ref width="20%" fig-align="left"}
-
-### Figure 16.2
-
-**Licence**: CC BY-NC-SA
-
-**Author/creator**: Pawel Orzechowski
-
-**Source**: Author's own
-
-![](chapters/images/C23_pair-programming-fusion-noisy-background.png){#C23_pair-programming-fusion-noisy-background-ref width="20%" fig-align="left"}
-
-### Figure 16.3
-
-**Licence**: CC BY-NC-SA
-
-**Author/creator**: Pawel Orzechowski
-
-**Source**: Author's own
-
-![](chapters/images/C23_pair-programming-fusion-ghost-helper.png){#C23_pair-programming-fusion-ghost-helper-ref width="20%" fig-align="left"}
-
-### Figure 16.4
-
-**Licence**: CC BY-NC-SA
-
-**Author/creator**: Pawel Orzechowski
-
-**Source**: Author's own
-
-::: {.content-visible unless-format="html"}
-![](chapters/images/C23_pair-programming-fusion-relentless-feedback-gif.png){width="20%" fig-align="left"}
-:::
-::: {.content-visible when-format="html"}
-![](chapters/images/C23_pair-programming-fusion-relentless-feedback-gif.gif){#C23_pair-programming-fusion-relentless-feedback-gif-ref width="20%" fig-align="left"}
-:::
+----
 
 
-### Figure 16.4
+## Chapter: Peer Programming in Action: Pair Programming in Larger Groups
 
-**Licence**: CC BY-NC-SA
-
-**Author/creator**: Pawel Orzechowski
-
-**Source**: Author's own
-
-![](chapters/images/C23_pair-programming-fusion-relentless-feedback-gif.png){width="20%" fig-align="left"}
-
-### Figure 16.5
-
-**Licence**: CC BY-NC-SA
-
-**Author/creator**: Pawel Orzechowski
-
-**Source**: Author's own
-
-![](chapters/images/C23_pair-programming-fusion-relentless-feedback-sharpie.png){#C23_pair-programming-fusion-relentless-feedback-sharpie-ref width="20%" fig-align="left"}
-
-### Figure 16.6
-
-**Licence**: CC BY-NC-SA
-
-**Author/creator**: Pawel Orzechowski
-
-**Source**: Author's own
-
-![](chapters/images/C23_pair-programming-fusion-chat-blast.png){#C23_pair-programming-fusion-chat-blast-ref width="20%" fig-align="left"}
-
-## Chapter --- Notebook for Novices? Pros and Cons of Jupyter
 
 ### Figure 18.1
 
 **Licence**: CC BY-NC-SA
 
-**Author/creator**: Joseph El Gemayel
+**Creator**: Umberto Noe
 
 **Source**: Author's own
 
-![](chapters/images/C29_Figure1_narrow.png){#C29_Figure1_narrow-ref width="20%" fig-align="left"}
+![](chapters/images/C16_peer-programming_course-structure.png){#C16_peer-programming_course-structure-ref width=20% fig-align='left' }
+
+----
+
 
 ### Figure 18.2
 
 **Licence**: CC BY-NC-SA
 
-**Author/creator**: Joseph El Gemayel
+**Creator**: Eileen Xu
 
 **Source**: Author's own
 
-![](chapters/images/C29_Figure2_narrow.png){#C29_Figure2_narrow-ref width="20%" fig-align="left"}
+![](chapters/images/C16_peer-programming_teaching-room.png){#C16_peer-programming_teaching-room-ref width=20% fig-align='left' }
 
-### Figure 18.3
+----
+
+
+## Chapter: Leveraging the Heterogeneity: Teaching Computing Skills to a Multidisciplinary Cohort With a Variable Skill Level
+
+
+### Figure 19.1
 
 **Licence**: CC BY-NC-SA
 
-**Author/creator**: Joseph El Gemayel
+**Creator**: Jonathan Holt
 
 **Source**: Author's own
 
-![](chapters/images/C29_Figure3_narrow.png){#C29_Figure3_narrow-ref width="20%" fig-align="left"}
+![](chapters/images/C31_leveraging_heterogeneity_fig1.png){#C31_leveraging_heterogeneity_fig1-ref width=20% fig-align='left' }
 
-### Figure 18.4
+----
+
+
+### Figure 19.2
 
 **Licence**: CC BY-NC-SA
 
-**Author/creator**: William Bell
+**Creator**: Jonathan Holt
 
 **Source**: Author's own
 
-![](chapters/images/C29_Figure4.png){#C29_Figure4-ref width="20%" fig-align="left"}
+![](chapters/images/C31_leveraging_heterogeneity_fig2.png){#C31_leveraging_heterogeneity_fig2-ref width=20% fig-align='left' }
 
-### Figure 18.5
+----
+
+
+## Chapter: Learning Together Across Modes: Online and On-Site Pair Programming in a Fusion Course
+
+
+### Figure 20.1
 
 **Licence**: CC BY-NC-SA
 
-**Author/creator**: William Bell
+**Creator**: Pawel Orzechowski
 
 **Source**: Author's own
 
-![](chapters/images/C29_Figure5.png){#C29_Figure5-ref width="20%" fig-align="left"}
+![](chapters/images/C23_pair-programming-fusion-modes.png){#C23_pair-programming-fusion-modes-ref width=20% fig-align='left' }
 
-### Figure 18.6
+----
+
+
+### Figure 20.2
 
 **Licence**: CC BY-NC-SA
 
-**Author/creator**: William Bell
+**Creator**: Pawel Orzechowski
 
 **Source**: Author's own
 
-![](chapters/images/C29_Figure6.png){#C29_Figure6-ref width="20%" fig-align="left"}
+![](chapters/images/C23_pair-programming-fusion-noisy-background.png){#C23_pair-programming-fusion-noisy-background-ref width=20% fig-align='left' }
 
-## Chapter --- Removing Barriers By Programming Without Computers
+----
 
-### Figure 21.1
+
+### Figure 20.3
 
 **Licence**: CC BY-NC-SA
 
-**Author/creator**: David Cutting
+**Creator**: Pawel Orzechowski
 
 **Source**: Author's own
 
-![](chapters/images/C15_pb3.jpg){#C15_pb3-ref width="20%" fig-align="left"}
+![](chapters/images/C23_pair-programming-fusion-ghost-helper.png){#C23_pair-programming-fusion-ghost-helper-ref width=20% fig-align='left' }
 
-## Chapter --- Seeing Before Coding, Doodling Before Doing: How Teaching Data Visualisation Transforms the Way Students Think
+----
 
-### Figure 23.1
+
+### Figure 20.4
 
 **Licence**: CC BY-NC-SA
 
-**Author/creator**: Suzanne Goopy
+**Creator**: Pawel Orzechowski
 
 **Source**: Author's own
 
-![](chapters/images/C43-data-vis_table.jpg){#C43-data-vis_table-ref width="20%" fig-align="left"}
+**Notes**: online only
 
-### Figure 23.2
+::: {.content-visible unless-format="html"}
+![](chapters/images/C23_pair-programming-fusion-relentless-feedback-gif.png){#C23_pair-programming-fusion-relentless-feedback-gif-ref width=20% fig-align='left' }
+:::
+::: {.content-visible when-format="html"}
+![](chapters/images/C23_pair-programming-fusion-relentless-feedback-gif.gif){#C23_pair-programming-fusion-relentless-feedback-gif-ref width=20% fig-align='left' }
+:::
+
+----
+
+
+### Figure 20.4
 
 **Licence**: CC BY-NC-SA
 
-**Author/creator**: Suzanne Goopy
+**Creator**: Pawel Orzechowski
 
 **Source**: Author's own
 
-![](chapters/images/C43-data-vis_hand.jpg){#C43-data-vis_hand-ref width="20%" fig-align="left"}
+**Notes**: print only
 
-### Figure 23.3
+![](chapters/images/C23_pair-programming-fusion-relentless-feedback-gif.png){#C23_pair-programming-fusion-relentless-feedback-gif-ref width=20% fig-align='left' }
+
+----
+
+
+### Figure 20.5
 
 **Licence**: CC BY-NC-SA
 
-**Author/creator**: Suzanne Goopy
+**Creator**: Pawel Orzechowski
 
 **Source**: Author's own
 
-![](chapters/images/C43-data-vis_sheet1.jpg){#C43-data-vis_sheet1-ref width="20%" fig-align="left"}
+![](chapters/images/C23_pair-programming-fusion-relentless-feedback-sharpie.png){#C23_pair-programming-fusion-relentless-feedback-sharpie-ref width=20% fig-align='left' }
 
-### Figure 23.4
+----
+
+
+### Figure 20.6
 
 **Licence**: CC BY-NC-SA
 
-**Author/creator**: Suzanne Goopy
+**Creator**: Pawel Orzechowski
 
 **Source**: Author's own
 
-![](chapters/images/C43-data-vis_ideas.jpg){#C43-data-vis_ideas-ref width="20%" fig-align="left"}
+![](chapters/images/C23_pair-programming-fusion-chat-blast.png){#C23_pair-programming-fusion-chat-blast-ref width=20% fig-align='left' }
 
-### Figure 23.5
+----
+
+
+## Chapter: Notebook for Novices? Pros and Cons of Jupyter
+
+
+### Figure 22.1
 
 **Licence**: CC BY-NC-SA
 
-**Author/creator**: Suzanne Goopy
+**Creator**: Joseph El Gemayel
 
 **Source**: Author's own
 
-![](chapters/images/C43-data-vis_corrections.jpg){#C43-data-vis_corrections-ref width="20%" fig-align="left"}
+![](chapters/images/C29_Figure1_narrow.png){#C29_Figure1_narrow-ref width=20% fig-align='left' }
 
-### Figure 23.6
+----
+
+
+### Figure 22.2
 
 **Licence**: CC BY-NC-SA
 
-**Author/creator**: Suzanne Goopy
+**Creator**: Joseph El Gemayel
 
 **Source**: Author's own
 
-![](chapters/images/C43-data-vis_sketch.jpg){#C43-data-vis_sketch-ref width="20%" fig-align="left"}
+![](chapters/images/C29_Figure2_narrow.png){#C29_Figure2_narrow-ref width=20% fig-align='left' }
 
-### Figure 23.7
+----
+
+
+### Figure 22.3
 
 **Licence**: CC BY-NC-SA
 
-**Author/creator**: Suzanne Goopy
+**Creator**: Joseph El Gemayel
 
 **Source**: Author's own
 
-![](chapters/images/C43-data-vis_presentation.jpg){#C43-data-vis_presentation-ref width="20%" fig-align="left"}
+![](chapters/images/C29_Figure3_narrow.png){#C29_Figure3_narrow-ref width=20% fig-align='left' }
 
-### Figure 23.8
+----
+
+
+### Figure 22.4
 
 **Licence**: CC BY-NC-SA
 
-**Author/creator**: Suzanne Goopy
+**Creator**: William Bell
 
 **Source**: Author's own
 
-![](chapters/images/C43-data-vis_records.jpg){#C43-data-vis_records-ref width="20%" fig-align="left"}
+![](chapters/images/C29_Figure4.png){#C29_Figure4-ref width=20% fig-align='left' }
 
-### Figure 23.9
+----
+
+
+### Figure 22.5
 
 **Licence**: CC BY-NC-SA
 
-**Author/creator**: Suzanne Goopy
+**Creator**: William Bell
 
 **Source**: Author's own
 
-![](chapters/images/C43-data-vis_map.jpg){#C43-data-vis_map-ref width="20%" fig-align="left"}
+![](chapters/images/C29_Figure5.png){#C29_Figure5-ref width=20% fig-align='left' }
 
-## Chapter --- Developing a Skills-Based Framework for Assessments in Programming Courses
+----
 
-### Figure 24.1
+
+### Figure 22.6
 
 **Licence**: CC BY-NC-SA
 
-**Author/creator**: Elizabeth Pankratz
+**Creator**: William Bell
 
 **Source**: Author's own
 
-![](chapters/images/C38_skills-based-assessment_levels.png){#C38_skills-based-assessment_levels-ref width="20%" fig-align="left"}
+![](chapters/images/C29_Figure6.png){#C29_Figure6-ref width=20% fig-align='left' }
 
-## Chapter --- Using Automated Marking in Programming Courses to Enhance Learning
+----
+
+
+## Chapter: Removing Barriers by Programming Without Computers
+
+
+### Figure 25.1
+
+**Licence**: CC BY-NC-SA
+
+**Creator**: David Cutting
+
+**Source**: Author's own
+
+![](chapters/images/C15_pb3.jpg){#C15_pb3-ref width=20% fig-align='left' }
+
+----
+
+
+## Chapter: Practical Approaches to Using Sound and Music in Programming Pedagogy
+
+
+### Figure 26.1
+
+**Licence**: CC BY-NC-SA
+
+**Creator**: Matthew Hamilton
+
+**Source**: Author's own
+
+**Notes**: online only
+
+::: {.content-visible unless-format="html"}
+![](chapters/images/C17_fig1_arrays_as_sound_and_music.png){#C17_fig1_arrays_as_sound_and_music-ref width=20% fig-align='left' }
+:::
+::: {.content-visible when-format="html"}
+![](chapters/images/C17_fig1_arrays_as_sound_and_music.svg){#C17_fig1_arrays_as_sound_and_music-ref width=20% fig-align='left' }
+:::
+
+
+----
+
+
+### Figure 26.1
+
+**Licence**: CC BY-NC-SA
+
+**Creator**: Matthew Hamilton
+
+**Source**: Author's own
+
+**Notes**: print only
+
+![](chapters/images/C17_fig1_arrays_as_sound_and_music.png){#C17_fig1_arrays_as_sound_and_music-ref width=20% fig-align='left' }
+
+----
+
+
+### Figure 26.2
+
+**Licence**: CC BY-NC-SA
+
+**Creator**: Matthew Hamilton
+
+**Source**: Author's own
+
+**Notes**: print only
+
+![](chapters/images/C17-resources-available.png){#C17-resources-available-ref width=20% fig-align='left' }
+
+----
+
+
+### Figure 26.3
+
+**Licence**: CC BY-NC-SA
+
+**Creator**: Matthew Hamilton
+
+**Source**: Author's own
+
+![](chapters/images/C17_fig2a_python_piano.png){#C17_fig2a_python_piano-ref width=20% fig-align='left' }
+
+----
+
+
+### Figure 26.3
+
+**Licence**: CC BY-NC-SA
+
+**Creator**: Matthew Hamilton
+
+**Source**: Author's own
+
+![](chapters/images/C17_fig2b_python_piano.png){#C17_fig2b_python_piano-ref width=20% fig-align='left' }
+
+----
+
+
+### Figure 26.4
+
+**Licence**: CC BY-NC-SA
+
+**Creator**: Tom Mudd
+
+**Source**: Author's own
+
+![](chapters/images/C17_fig3_strudel_drums.png){#C17_fig3_strudel_drums-ref width=20% fig-align='left' }
+
+----
+
+
+### Figure 26.5
+
+**Licence**: CC BY-NC-SA
+
+**Creator**: Charlotte Desvages
+
+**Source**: Author's own
+
+![](chapters/images/C17_fig4_function_section.png){#C17_fig4_function_section-ref width=20% fig-align='left' }
+
+----
+
+
+### Figure 26.6
+
+**Licence**: CC BY-NC-SA
+
+**Creator**: Tom Mudd
+
+**Source**: Author's own
+
+![](chapters/images/C17_fig5a_max.png){#C17_fig5a_max-ref width=20% fig-align='left' }
+
+----
+
+
+### Figure 26.6
+
+**Licence**: CC BY-NC-SA
+
+**Creator**: Tom Mudd
+
+**Source**: Author's own
+
+![](chapters/images/C17_fig5b_web_seq_demo.png){#C17_fig5b_web_seq_demo-ref width=20% fig-align='left' }
+
+----
+
+
+### Figure 26.7
+
+**Licence**: CC BY-NC-SA
+
+**Creator**: Mike Taverne
+
+**Source**: Author's own
+
+![](chapters/images/C17_fig6_scale_example.png){#C17_fig6_scale_example-ref width=20% fig-align='left' }
+
+----
+
+
+## Chapter: Seeing Before Coding, Doodling Before Doing: How Teaching Data Visualisation Transforms the Way Students Think
+
 
 ### Figure 28.1
 
 **Licence**: CC BY-NC-SA
 
-**Author/creator**: Leila Shafti
+**Creator**: Suzanne Goopy
 
 **Source**: Author's own
 
-![](chapters/images/C20_Figure1.png){#C20_Figure1-ref width="20%" fig-align="left"}
+![](chapters/images/C43-data-vis_table.jpg){#C43-data-vis_table-ref width=20% fig-align='left' }
+
+----
+
 
 ### Figure 28.2
 
 **Licence**: CC BY-NC-SA
 
-**Author/creator**: Leila Shafti
+**Creator**: Suzanne Goopy
 
 **Source**: Author's own
 
-![](chapters/images/C20_Figure2.png){#C20_Figure2-ref width="20%" fig-align="left"}
+![](chapters/images/C43-data-vis_hand.jpg){#C43-data-vis_hand-ref width=20% fig-align='left' }
+
+----
+
 
 ### Figure 28.3
 
 **Licence**: CC BY-NC-SA
 
-**Author/creator**: Leila Shafti
+**Creator**: Suzanne Goopy
 
 **Source**: Author's own
 
-![](chapters/images/C20_Figure3.png){#C20_Figure3-ref width="20%" fig-align="left"}
+![](chapters/images/C43-data-vis_sheet1.jpg){#C43-data-vis_sheet1-ref width=20% fig-align='left' }
+
+----
+
 
 ### Figure 28.4
 
 **Licence**: CC BY-NC-SA
 
-**Author/creator**: Leila Shafti
+**Creator**: Suzanne Goopy
 
 **Source**: Author's own
 
-![](chapters/images/C20_Figure4.png){#C20_Figure4-ref width="20%" fig-align="left"}
+![](chapters/images/C43-data-vis_ideas.jpg){#C43-data-vis_ideas-ref width=20% fig-align='left' }
 
-## Chapter --- Managing the Rubikï¿½s Cube of Assessment: The Action Feedback Protocol
+----
 
-### Figure 29.1
+
+### Figure 28.5
 
 **Licence**: CC BY-NC-SA
 
-**Author/creator**: Andrew MacLaren
+**Creator**: Suzanne Goopy
 
-**Source**: Image adapted and further modified from ï¿½Rubikï¿½s cube v3ï¿½ by User:Booyabazooka and User:Meph666, modified by User:Niabot, licensed under CC BY-SA 3.0. <https://creativecommons.org/licenses/by-sa/3.0/>
+**Source**: Author's own
 
-![](chapters/images/C35-rubiks-cube.png){#C35-rubiks-cube-ref width="20%" fig-align="left"}
+![](chapters/images/C43-data-vis_corrections.jpg){#C43-data-vis_corrections-ref width=20% fig-align='left' }
 
-## Chapter --- A Gentle Introduction to Coding: Narratives From a Programming Summer School for Social Sciences and Humanities
+----
+
+
+### Figure 28.6
+
+**Licence**: CC BY-NC-SA
+
+**Creator**: Suzanne Goopy
+
+**Source**: Author's own
+
+![](chapters/images/C43-data-vis_sketch.jpg){#C43-data-vis_sketch-ref width=20% fig-align='left' }
+
+----
+
+
+### Figure 28.7
+
+**Licence**: CC BY-NC-SA
+
+**Creator**: Suzanne Goopy
+
+**Source**: Author's own
+
+![](chapters/images/C43-data-vis_presentation.jpg){#C43-data-vis_presentation-ref width=20% fig-align='left' }
+
+----
+
+
+### Figure 28.8
+
+**Licence**: CC BY-NC-SA
+
+**Creator**: Suzanne Goopy
+
+**Source**: Author's own
+
+![](chapters/images/C43-data-vis_records.jpg){#C43-data-vis_records-ref width=20% fig-align='left' }
+
+----
+
+
+### Figure 28.9
+
+**Licence**: CC BY-NC-SA
+
+**Creator**: Suzanne Goopy
+
+**Source**: Author's own
+
+![](chapters/images/C43-data-vis_map.jpg){#C43-data-vis_map-ref width=20% fig-align='left' }
+
+----
+
+
+## Chapter: Developing a Skills-Based Framework for Assessments in Programming Courses
+
 
 ### Figure 30.1
 
 **Licence**: CC BY-NC-SA
 
-**Author/creator**: Pawel Orzechowski
+**Creator**: Elizabeth Pankratz
 
 **Source**: Author's own
 
-![](chapters/images/C39_gentle-introduction-summer-school-laptop-sticker.jpg){#C39_gentle-introduction-summer-school-laptop-sticker-ref width="20%" fig-align="left"}
+![](chapters/images/C38_skills-based-assessment_levels.png){#C38_skills-based-assessment_levels-ref width=20% fig-align='left' }
 
-### Figure 30.2
+----
 
-**Licence**: CC BY-NC-SA
 
-**Author/creator**: Pawel Orzechowski
+## Chapter: Managing the Rubik s Cube of Assessment: The Action Feedback Protocol
 
-**Source**: Author's own
-
-![](chapters/images/C39_gentle-introduction-summer-school-attendees.jpg){#C39_gentle-introduction-summer-school-attendees-ref width="20%" fig-align="left"}
-
-### Figure 30.3
-
-**Licence**: CC BY-NC-SA
-
-**Author/creator**: Pawel Orzechowski
-
-**Source**: Author's own
-
-![](chapters/images/C39_gentle-introduction-summer-school-pair-programming.png){#C39_gentle-introduction-summer-school-pair-programming-ref width="20%" fig-align="left"}
-
-### Figure 30.4
-
-**Licence**: CC BY-NC-SA
-
-**Author/creator**: Pawel Orzechowski
-
-**Source**: Author's own
-
-![](chapters/images/C39_gentle-introduction-summer-school-feedback-days.png){#C39_gentle-introduction-summer-school-feedback-days-ref width="20%" fig-align="left"}
-
-### Figure 30.5
-
-**Licence**: CC BY-NC-SA
-
-**Author/creator**: Pawel Orzechowski
-
-**Source**: Author's own
-
-![](chapters/images/C39_gentle-introduction-summer-school-badges-list.png){#C39_gentle-introduction-summer-school-badges-list-ref width="20%" fig-align="left"}
-
-### Figure 30.6
-
-**Licence**: CC BY-NC-SA
-
-**Author/creator**: Pawel Orzechowski
-
-**Source**: Author's own
-
-![](chapters/images/C39_gentle-introduction-summer-school-badges-structure.png){#C39_gentle-introduction-summer-school-badges-structure-ref width="20%" fig-align="left"}
-
-### Figure 30.7
-
-**Licence**: CC BY-NC-SA
-
-**Author/creator**: Pawel Orzechowski
-
-**Source**: Author's own
-
-![](chapters/images/C39_gentle-introduction-summer-school-skills.png){#C39_gentle-introduction-summer-school-skills-ref width="20%" fig-align="left"}
-
-### Figure 30.8
-
-**Licence**: CC BY-NC-SA
-
-**Author/creator**: Pawel Orzechowski
-
-**Source**: Author's own
-
-![](chapters/images/C39_gentle-introduction-summer-school-timer.jpg){#C39_gentle-introduction-summer-school-timer-ref width="20%" fig-align="left"}
-
-### Figure 30.9
-
-**Licence**: CC BY-NC-SA
-
-**Author/creator**: Pawel Orzechowski
-
-**Source**: Author's own
-
-![](chapters/images/C39_gentle-introduction-summer-school-feedback-course.png){#C39_gentle-introduction-summer-school-feedback-course-ref width="20%" fig-align="left"}
-
-## Chapter --- Case Study From Scotlandï¿½s Rural College: The Wild(Life) Side of Pair Programming
 
 ### Figure 31.1
 
 **Licence**: CC BY-NC-SA
 
-**Author/creator**: Ignacio Sepulveda
+**Creator**: Andrew MacLaren
 
-**Source**: Author's own
+**Source**: Image adapted and further modified from  Rubik s cube v3  by User:Booyabazooka and User:Meph666, modified by User:Niabot, licensed under CC BY-SA 3.0. https://creativecommons.org/licenses/by-sa/3.0/
 
-![](chapters/images/C37_pair-programming-sruc-class.jpg){#C37_pair-programming-sruc-class-ref width="20%" fig-align="left"}
+![](chapters/images/C35-rubiks-cube.png){#C35-rubiks-cube-ref width=20% fig-align='left' }
 
-### Figure 31.2
+----
 
-**Licence**: CC BY-NC-SA
 
-**Author/creator**: Ignacio Sepulveda
+## Chapter: Using Automated Marking in Programming Courses To Enhance Learning
 
-**Source**: Author's own
-
-![](chapters/images/C37_pair-programming-sruc-clock.jpg){#C37_pair-programming-sruc-clock-ref width="20%" fig-align="left"}
-
-### Figure 31.3
-
-**Licence**: CC BY-NC-SA
-
-**Author/creator**: Ignacio Sepulveda
-
-**Source**: Author's own
-
-![](chapters/images/C37_pair-programming-sruc-pairs.jpg){#C37_pair-programming-sruc-pairs-ref width="20%" fig-align="left"}
-
-## Chapter --- Changing Civil Engineering Studentsï¿½ Mindset Toward Programming
-
-### Figure 33.1
-
-**Licence**: CC BY-NC-SA
-
-**Author/creator**: Nguyen Quang Chien
-
-**Source**: Author's own
-
-![](chapters/images/ch32-sed-trans.png){#ch32-sed-trans-ref width="20%" fig-align="left"}
-
-### Figure 33.2
-
-**Licence**: CC BY-NC-SA
-
-**Author/creator**: Nguyen Quang Chien
-
-**Source**: Author's own
-
-![](chapters/images/ch32-lattice1.png){#ch32-lattice1-ref width="20%" fig-align="left"}
-
-### Figure 33.3
-
-**Licence**: CC BY-NC-SA
-
-**Author/creator**: Nguyen Quang Chien
-
-**Source**: Author's own
-
-![](chapters/images/ch32-lattice2.png){#ch32-lattice2-ref width="20%" fig-align="left"}
-
-## Chapter --- Lost in Translation: Complexities and Good Practices of Translating Coding-Based Teaching Materials Across Multiple Human Languages
 
 ### Figure 34.1
 
 **Licence**: CC BY-NC-SA
 
-**Author/creator**: Yanina Bellini Saibene
+**Creator**: Leila Shafti
 
 **Source**: Author's own
 
-**Notes**: print only
+![](chapters/images/C20_Figure1.png){#C20_Figure1-ref width=20% fig-align='left' }
 
-![](chapters/images/C24_Fig_1.png){#C24_Fig_1-ref width="20%" fig-align="left"}
-
-### Figure 34.1
-
-**Licence**: CC BY-NC-SA
-
-**Author/creator**: Yanina Bellini Saibene
-
-**Source**: Author's own
-
-**Notes**: online only
-
-::: {.content-visible unless-format="html"}
-![](chapters/images/C24_Fig_1.png){#C24_Fig_1-ref width="20%" fig-align="left"}
-:::
-::: {.content-visible when-format="html"}
-![](chapters/images/C24_Fig_1.svg){width="20%" fig-align="left"}
-:::
+----
 
 
 ### Figure 34.2
 
 **Licence**: CC BY-NC-SA
 
-**Author/creator**: Yanina Bellini Saibene
+**Creator**: Leila Shafti
 
 **Source**: Author's own
 
-**Notes**: print only
+![](chapters/images/C20_Figure2.png){#C20_Figure2-ref width=20% fig-align='left' }
 
-![](chapters/images/C24_Fig_2.png){#C24_Fig_2-ref width="20%" fig-align="left"}
+----
 
-### Figure 34.2
+
+### Figure 34.3
 
 **Licence**: CC BY-NC-SA
 
-**Author/creator**: Yanina Bellini Saibene
+**Creator**: Leila Shafti
+
+**Source**: Author's own
+
+![](chapters/images/C20_Figure3.png){#C20_Figure3-ref width=20% fig-align='left' }
+
+----
+
+
+### Figure 34.4
+
+**Licence**: CC BY-NC-SA
+
+**Creator**: Leila Shafti
+
+**Source**: Author's own
+
+![](chapters/images/C20_Figure4.png){#C20_Figure4-ref width=20% fig-align='left' }
+
+----
+
+
+## Chapter: A Gentle Introduction to Coding: Narratives From a Programming Summer School for Social Sciences and Humanities
+
+
+### Figure 36.1
+
+**Licence**: CC BY-NC-SA
+
+**Creator**: Pawel Orzechowski
+
+**Source**: Author's own
+
+![](chapters/images/C39_gentle-introduction-summer-school-laptop-sticker.jpg){#C39_gentle-introduction-summer-school-laptop-sticker-ref width=20% fig-align='left' }
+
+----
+
+
+### Figure 36.2
+
+**Licence**: CC BY-NC-SA
+
+**Creator**: Pawel Orzechowski
+
+**Source**: Author's own
+
+![](chapters/images/C39_gentle-introduction-summer-school-attendees.jpg){#C39_gentle-introduction-summer-school-attendees-ref width=20% fig-align='left' }
+
+----
+
+
+### Figure 36.3
+
+**Licence**: CC BY-NC-SA
+
+**Creator**: Pawel Orzechowski
+
+**Source**: Author's own
+
+![](chapters/images/C39_gentle-introduction-summer-school-pair-programming.png){#C39_gentle-introduction-summer-school-pair-programming-ref width=20% fig-align='left' }
+
+----
+
+
+### Figure 36.4
+
+**Licence**: CC BY-NC-SA
+
+**Creator**: Pawel Orzechowski
+
+**Source**: Author's own
+
+![](chapters/images/C39_gentle-introduction-summer-school-feedback-days.png){#C39_gentle-introduction-summer-school-feedback-days-ref width=20% fig-align='left' }
+
+----
+
+
+### Figure 36.5
+
+**Licence**: CC BY-NC-SA
+
+**Creator**: Pawel Orzechowski
+
+**Source**: Author's own
+
+![](chapters/images/C39_gentle-introduction-summer-school-badges-list.png){#C39_gentle-introduction-summer-school-badges-list-ref width=20% fig-align='left' }
+
+----
+
+
+### Figure 36.6
+
+**Licence**: CC BY-NC-SA
+
+**Creator**: Pawel Orzechowski
+
+**Source**: Author's own
+
+![](chapters/images/C39_gentle-introduction-summer-school-badges-structure.png){#C39_gentle-introduction-summer-school-badges-structure-ref width=20% fig-align='left' }
+
+----
+
+
+### Figure 36.7
+
+**Licence**: CC BY-NC-SA
+
+**Creator**: Pawel Orzechowski
+
+**Source**: Author's own
+
+![](chapters/images/C39_gentle-introduction-summer-school-skills.png){#C39_gentle-introduction-summer-school-skills-ref width=20% fig-align='left' }
+
+----
+
+
+### Figure 36.8
+
+**Licence**: CC BY-NC-SA
+
+**Creator**: Pawel Orzechowski
+
+**Source**: Author's own
+
+![](chapters/images/C39_gentle-introduction-summer-school-timer.jpg){#C39_gentle-introduction-summer-school-timer-ref width=20% fig-align='left' }
+
+----
+
+
+### Figure 36.9
+
+**Licence**: CC BY-NC-SA
+
+**Creator**: Pawel Orzechowski
+
+**Source**: Author's own
+
+![](chapters/images/C39_gentle-introduction-summer-school-feedback-course.png){#C39_gentle-introduction-summer-school-feedback-course-ref width=20% fig-align='left' }
+
+----
+
+
+## Chapter: Case Study From Scotland s Rural College: The Wild(Life) Side of Pair Programming
+
+
+### Figure 37.1
+
+**Licence**: CC BY-NC-SA
+
+**Creator**: Ignacio Sepulveda
+
+**Source**: Author's own
+
+![](chapters/images/C37_pair-programming-sruc-pairs.jpg){#C37_pair-programming-sruc-pairs-ref width=20% fig-align='left' }
+
+----
+
+
+### Figure 37.2
+
+**Licence**: CC BY-NC-SA
+
+**Creator**: Ignacio Sepulveda
+
+**Source**: Author's own
+
+![](chapters/images/C37_pair-programming-sruc-clock.jpg){#C37_pair-programming-sruc-clock-ref width=20% fig-align='left' }
+
+----
+
+
+### Figure 37.3
+
+**Licence**: CC BY-NC-SA
+
+**Creator**: Ignacio Sepulveda
+
+**Source**: Author's own
+
+![](chapters/images/C37_pair-programming-sruc-class.jpg){#C37_pair-programming-sruc-class-ref width=20% fig-align='left' }
+
+----
+
+
+## Chapter: Changing Civil Engineering Students  Mindset Toward Programming
+
+
+### Figure 39.1
+
+**Licence**: CC BY-NC-SA
+
+**Creator**: Nguyen Quang Chien
+
+**Source**: Author's own
+
+![](chapters/images/ch32-sed-trans.png){#ch32-sed-trans-ref width=20% fig-align='left' }
+
+----
+
+
+### Figure 39.2
+
+**Licence**: CC BY-NC-SA
+
+**Creator**: Nguyen Quang Chien
+
+**Source**: Author's own
+
+![](chapters/images/ch32-lattice1.png){#ch32-lattice1-ref width=20% fig-align='left' }
+
+----
+
+
+### Figure 39.3
+
+**Licence**: CC BY-NC-SA
+
+**Creator**: Nguyen Quang Chien
+
+**Source**: Author's own
+
+![](chapters/images/ch32-lattice2.png){#ch32-lattice2-ref width=20% fig-align='left' }
+
+----
+
+
+## Chapter: Lost in Translation: Complexities and Good Practices of Translating Coding-Based Teaching Materials Across Multiple Human Languages
+
+
+### Figure 40.1
+
+**Licence**: CC BY-NC-SA
+
+**Creator**: Yanina Bellini Saibene
 
 **Source**: Author's own
 
 **Notes**: online only
 
 ::: {.content-visible unless-format="html"}
-![](chapters/images/C24_Fig_2.png){#C24_Fig_2-ref width="20%" fig-align="left"}
+![](chapters/images/C24_Fig_1.png){#C24_Fig_1-ref width=20% fig-align='left' }
 :::
 ::: {.content-visible when-format="html"}
-![](chapters/images/C24_Fig_2.svg){width="20%" fig-align="left"}
+![](chapters/images/C24_Fig_1.svg){#C24_Fig_1-ref width=20% fig-align='left' }
 :::
 
+----
 
+
+### Figure 40.1
+
+**Licence**: CC BY-NC-SA
+
+**Creator**: Yanina Bellini Saibene
+
+**Source**: Author's own
+
+**Notes**: print only
+
+![](chapters/images/C24_Fig_1.png){#C24_Fig_1-ref width=20% fig-align='left' }
+
+----
+
+
+### Figure 40.2
+
+**Licence**: CC BY-NC-SA
+
+**Creator**: Yanina Bellini Saibene
+
+**Source**: Author's own
+
+**Notes**: online only
+
+::: {.content-visible unless-format="html"}
+![](chapters/images/C24_Fig_2.png){#C24_Fig_2-ref width=20% fig-align='left' }
+:::
+::: {.content-visible when-format="html"}
+![](chapters/images/C24_Fig_2.svg){#C24_Fig_2-ref width=20% fig-align='left' }
+:::
+
+----
+
+
+### Figure 40.2
+
+**Licence**: CC BY-NC-SA
+
+**Creator**: Yanina Bellini Saibene
+
+**Source**: Author's own
+
+**Notes**: print only
+
+![](chapters/images/C24_Fig_2.png){#C24_Fig_2-ref width=20% fig-align='left' }
+
+----
