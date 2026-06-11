@@ -29,7 +29,7 @@ This theme explores how collaboration, peer interaction, and cohort diversity ca
 
 ### Peer Programming in Action: Pair Programming in Larger Groups [@TeachProgAcross_C16]
 
-This chapter expands on the concept of pair programming by introducing "Peer Programming," applying collaborative principles to larger groups. With six case studies from a 20-week course, it offers a practical look at the benefits and challenges of implementing peer programming. 
+This chapter expands on the concept of pair programming by introducing "Peer Programming," applying collaborative principles to larger groups. With five case studies from a 20-week course, it offers a practical look at the benefits and challenges of implementing peer programming. 
 
 This insight is helpful for teachers who aim to boost student engagement through collaborative methods.
 
