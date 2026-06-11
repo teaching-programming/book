@@ -32,7 +32,7 @@ author:
 ## Introduction
 
 Programming courses often focus on what to write... syntax, functions, packages, patterns, pipelines.
-What gets less attention, even in “intermediate” or “advanced” courses, is how context influences the coding approach and how to dynamically adjust approach to fit the context.
+What gets less attention, even in "intermediate" or "advanced" courses, is how context influences the coding approach and how to dynamically adjust approach to fit the context.
 Programming courses and tutorials usually give advice on writing DRY, clean, expressive code.
 We believe there is a gap in how such advice is presented that can be filled by considering three tactics that in combination create a programming "mindset space".
 Having an awareness of these tactics allows a learner to consider which tactics are most useful at a given time, for a given problem, and to understand they can change in response to the different pressures their current situation might be exerting.
@@ -195,7 +195,7 @@ More generally, when building up the awareness of the relative dominance of the 
 * What mindset should I be in right now?
 * How do I even know what mindset I am/should be in right now? What is the primary purpose of the task I am working on? 
 
-[^C40-reprex]: What is a reprex? It’s a reproducible example, as coined by Romain Francois.
+[^C40-reprex]: What is a reprex? It's a reproducible example, as coined by Romain Francois.
     The goal of a reprex is to package your problematic code in such a way that other people can run it and feel your pain.
     Then, hopefully, they can provide a solution and put you out of your misery.
     The vast majority of the time creating an excellent reprex reveals the source of your problem.
@@ -279,7 +279,7 @@ Shifting from rules to judgment is what shows a transition to more mature, adapt
 The framework can be used to hang "good coding practices" on, both language specific and agnostic, and highlight **why** they are useful for considered good practice.
 For example, naming conventions can be good practice aligning with both conscious and social forces.
 File management allows for independent, conscious, and social forces to all shine.
-Code comments are an example of how the forces of coding that you are working in can change to make a “good” or “useful” comment.
+Code comments are an example of how the forces of coding that you are working in can change to make a "good" or "useful" comment.
 A code comment to yourself is very different from one intended for a colleague to maintain the code base and understand your decision making process.
 
 While we will not go into depth here (to save us all the headache for now), it also provides a language for discussing AI use not as something to accept or reject wholesale, but as a tool whose value depends on whether it supports independence, consciousness, and social responsibility. Using LLMs as a collaborator necessarily means that you must not take what is generated blindly and ensure it is social, which requires conscious and independent coding forces to be in full effect and awareness of the social force.
@@ -300,7 +300,7 @@ You need to know how to prompt, which demonstrates a certain level of independen
 This does not demonstrate conscious thought on its own.
 
 In this framework it is your job to change the level of intensity of conscious thought.
-Similarly, you must intentionally decide what advice to listen to - human collaborator or AI? Should you be “guided” by the AI tool or should you be “directing” the tool? This hits all 3 forces.
+Similarly, you must intentionally decide what advice to listen to - human collaborator or AI? Should you be "guided" by the AI tool or should you be "directing" the tool? This hits all 3 forces.
 
 But don't take our word for it.
 Try coming up with your own answer by asking which of the forces the AI is applying.
@@ -316,23 +316,23 @@ If you would like to hear more about our thoughts in this, get in touch or stay 
 
 Yes, none of these forces are a new or unique idea.
 Many of us are familiar with them already.
-If you’ve spent any time around programming education (or lurking on StackOverflow at 2am), you’ve seen them all before.
+If you've spent any time around programming education (or lurking on StackOverflow at 2am), you've seen them all before.
 People talk a lot about things like reading the manual (rtfm)… debugging skills… DRY code (but not too DRY!)… clean code (but not too clean!).
 And entire books exist for each of these, often with very strong opinions.
 And yet, many learners struggle to apply them appropriately.
-The part that’s a bit rarer is seeing them all in the same room, talking to each other - or if you will permit, all together on the same seesaw. 
+The part that's a bit rarer is seeing them all in the same room, talking to each other - or if you will permit, all together on the same seesaw. 
 
-More often, they’re presented like separate “best practices”, each living in its own neat little box.
-We might have read something about clean code… that leans heavily on social practices, presented as “writing for others”, “name things well”, or “write clear documentation”.
+More often, they're presented like separate "best practices", each living in its own neat little box.
+We might have read something about clean code… that leans heavily on social practices, presented as "writing for others", "name things well", or "write clear documentation".
 But without much mention of the messy, trial-and-error habits that actually allow us to make progress in the first place.
-Or a debugging guide might encourage us to poke, prod, and experiment freely, but give us little guidance about when it’s time to slow down and be more deliberate.
+Or a debugging guide might encourage us to poke, prod, and experiment freely, but give us little guidance about when it's time to slow down and be more deliberate.
 
-So the advice isn’t wrong, but tends to come across as ideas that are isolated from each other, instead of as a set of forces that can be deliberately balanced, where we, ourselves, can decide, rather than guess, how much to lean into a given force at a given time.
-And that leaves learners to stitch it all together themselves, which is a bit like being given three excellent maps without being told they’re of the same place.
-That’s where a lot of the tension creeps in.
-Beginners, especially, can end up feeling like they’re being asked to do contradictory things.
-“Write clean, self-documenting code” sits right next to “just try stuff and see what breaks,” with no explanation of how those ideas fit together.
-It’s not obvious that these aren’t competing rules, but different forces that make sense in different situations.
+So the advice isn't wrong, but tends to come across as ideas that are isolated from each other, instead of as a set of forces that can be deliberately balanced, where we, ourselves, can decide, rather than guess, how much to lean into a given force at a given time.
+And that leaves learners to stitch it all together themselves, which is a bit like being given three excellent maps without being told they're of the same place.
+That's where a lot of the tension creeps in.
+Beginners, especially, can end up feeling like they're being asked to do contradictory things.
+"Write clean, self-documenting code" sits right next to "just try stuff and see what breaks," with no explanation of how those ideas fit together.
+It's not obvious that these aren't competing rules, but different forces that make sense in different situations.
 
 ## The Challenge For Educators
 
@@ -340,19 +340,19 @@ Most educators already *feel* this, even if they don't always spell it out.
 You know that a rough, experimental script written while figuring something out is perfectly fine - even desirable.
 You also know that the same code would raise eyebrows (or worse) if it showed up in an assessment or shared project.
 That sense of "what's appropriate here?" develops over time.
-Learners, however, haven’t had time to build those instincts yet.
+Learners, however, haven't had time to build those instincts yet.
 And importantly, they may not even realise there *is* a shift to notice.
 
 A learner who has spent time writing code that is exploratory, maybe slightly chaotic or full of half-formed ideas, comments to self, and creative shortcuts may not understand why those same habits suddenly become a problem elsewhere.
-It's not that they’re being careless, it’s just that they're applying the advice they've encountered in the best way they know how... just without a clear sense of how or when to shift their approach as the context changes.
+It's not that they're being careless, it's just that they're applying the advice they've encountered in the best way they know how... just without a clear sense of how or when to shift their approach as the context changes.
 
 This often shows up in predictable ways.
 Bits of exploratory code sneak into submissions or shared projects, bringing their weirdness and chaos with them.
-The result? Code that’s harder to read, harder to trust, and harder to build on.
+The result? Code that's harder to read, harder to trust, and harder to build on.
 On the flip side, some students go the other way by trying to write perfectly polished, fully documented code at all times.
 Which can be unnecessarily slow and frustrating.
 
-There’s also a slightly awkward truth worth saying out loud: **assessment is collaborative.**
+There's also a slightly awkward truth worth saying out loud: **assessment is collaborative.**
 i.e., the assessor *is* your collaborator.
 If your code is easy to read, understand, and trust, it's not just "good practice", it will also assess well.
 For many students, this is their first real experience of writing code for someone else, and without a clear way to frame that shift, assessment criteria can feel a bit arbitrary.
@@ -363,14 +363,14 @@ For many students, this is their first real experience of writing code for someo
 This framework is an attempt to bring some clarity to a muddy reality, not by adding more rules, but by giving people better language.
 
 Instead of treating good coding as a single fixed standard (which we either meet or don't), it frames things as a space we can move around in.
-Independent, Conscious, and Social aren’t boxes to tick; they’re forces we can lean into more or less, depending on what we’re doing.
+Independent, Conscious, and Social aren't boxes to tick; they're forces we can lean into more or less, depending on what we're doing.
 The more we apply one force to a problem, the more we move our mentality into our desired mode.
-Deliberately! And conversely, the more we feel ourselves being forced into a corner of a space that isn’t working for our problem, the more we can resist that pressure, and move ourselves into a different region of the force-space.
+Deliberately! And conversely, the more we feel ourselves being forced into a corner of a space that isn't working for our problem, the more we can resist that pressure, and move ourselves into a different region of the force-space.
 
 Sometimes we need to experiment quickly and figure things out (Independent).
 Sometimes we need to slow down and think carefully about structure and decisions (Conscious).
 Sometimes we need to prioritise clarity for others (Social).
-Most of the time, we’re somewhere in between.
+Most of the time, we're somewhere in between.
 And importantly, we can apply conscious thought to independently position ourselves where we need to be.
 
 The aim is to make that movement visible and intentional.
@@ -380,4 +380,4 @@ The radar shows that all three forces are always there, just pulling with differ
 We don't have to turn one off to use another - we **rebalance** the forces.
 
 This all works regardless of whether we are using R, Python, C, or something more obscure ([中文](https://esolangs.org/wiki/%E4%B8%AD%E6%96%87) anyone?).
-The specifics change, but the forces don’t, which makes this something we can carry with us across courses, projects, and (eventually) jobs.
+The specifics change, but the forces don't, which makes this something we can carry with us across courses, projects, and (eventually) jobs.

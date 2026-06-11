@@ -39,7 +39,7 @@ The demand for accessible programming education is particularly strong in progra
 
 [Jupyter Notebook](https://jupyter.org/) has emerged as a popular tool for teaching Python for data science and AI/ML applications. A Jupyter Notebook integrates text comments, Python, and visualisation of results from running the Python segments. The visualisation includes values that are returned, as well as graphical displays of selected data. A user is able to modify a Python segment, re-run it and instantly evaluate the result, encouraging experimentation. However, beginners may be confused by hidden execution states and develop poor debugging habits.
 
-This chapter explores Jupyter Notebook’s strengths and weaknesses as a tool to teach computer programming to novice learners, highlighting how instructors and students can leverage its benefits while addressing its limitations. Although Python serves as the primary example in this chapter, Jupyter Notebook can be used with over forty programming languages.
+This chapter explores Jupyter Notebook's strengths and weaknesses as a tool to teach computer programming to novice learners, highlighting how instructors and students can leverage its benefits while addressing its limitations. Although Python serves as the primary example in this chapter, Jupyter Notebook can be used with over forty programming languages.
 
 ##  What Makes Jupyter Notebook Appealing To Beginners?
 
@@ -55,7 +55,7 @@ As shown in @fig-hello-world, there is no need to create a virtual environment, 
 
 ### Working With Code in Pieces
 
-One of Jupyter Notebook’s defining features is its cell-based execution. Instead of writing and running an entire script at once, learners can break programs into smaller, manageable pieces. This modularity allows students to focus on one part of the code at a time and makes it easier to identify where errors occur.
+One of Jupyter Notebook's defining features is its cell-based execution. Instead of writing and running an entire script at once, learners can break programs into smaller, manageable pieces. This modularity allows students to focus on one part of the code at a time and makes it easier to identify where errors occur.
 
 The code in @fig-cell creates a list, defines a function to square all the numbers in that list, and then prints the results. Rather than placing everything in a single large cell, the program is split into three separate cells. If an error appears in one step, the student can rerun only that cell without restarting the whole Notebook.
 
@@ -90,19 +90,19 @@ While Jupyter Notebook has become a popular entry point into programming, especi
 
 ### Hidden Kernel State and Memory Persistence
 
-The Jupyter Notebook’s kernel maintains an active memory state throughout a session, storing all variables until the kernel is restarted. This allows code cells to be executed in any order, where the order of execution defines the memory state rather than the order within the Notebook.  Non-sequential execution implies that variables and functions may exist or vanish depending on the execution sequence.  While the Jupyter Notebook persistent state can be convenient, it obscures the underlying logic of variable scope and memory management.
+The Jupyter Notebook's kernel maintains an active memory state throughout a session, storing all variables until the kernel is restarted. This allows code cells to be executed in any order, where the order of execution defines the memory state rather than the order within the Notebook.  Non-sequential execution implies that variables and functions may exist or vanish depending on the execution sequence.  While the Jupyter Notebook persistent state can be convenient, it obscures the underlying logic of variable scope and memory management.
 
-If the Jupyter Notebook kernel crashes or is manually restarted, all stored variables are lost. Beginners often misinterpret the resulting errors as coding mistakes, which actually stem from changes in the kernel’s memory state.  Students should be encouraged to run cells sequentially from top to bottom before saving or sharing a Jupyter Notebook to maintain a consistent state.  Students should be reminded to restart the kernel and rerun all cells periodically to ensure that errors are not caused by leftover variables. 
+If the Jupyter Notebook kernel crashes or is manually restarted, all stored variables are lost. Beginners often misinterpret the resulting errors as coding mistakes, which actually stem from changes in the kernel's memory state.  Students should be encouraged to run cells sequentially from top to bottom before saving or sharing a Jupyter Notebook to maintain a consistent state.  Students should be reminded to restart the kernel and rerun all cells periodically to ensure that errors are not caused by leftover variables. 
 
 Relying on linear execution alone can discourage students from defining functions or classes, which would otherwise simplify the implementation and associated debugging. Students should be prompted to encapsulate repeated or complex code into functions or classes to improve readability, reusability, and debugging.
 
 ### Markdown vs. Misunderstanding Code Cells
 
-Jupyter Notebook’s integration of Markdown and code cells enables rich documentation alongside executable code. However, this dual format can be confusing for beginners who are unfamiliar with Markdown syntax. When working with Notebooks that are created by instructors or collaborators, users may struggle to distinguish between instructional text and executable code, leading to misinterpretation or accidental modification of non-code cells. Students should be reminded that cell types can be changed at any time using the toolbar or keyboard shortcuts, and that Markdown cells are for text only.
+Jupyter Notebook's integration of Markdown and code cells enables rich documentation alongside executable code. However, this dual format can be confusing for beginners who are unfamiliar with Markdown syntax. When working with Notebooks that are created by instructors or collaborators, users may struggle to distinguish between instructional text and executable code, leading to misinterpretation or accidental modification of non-code cells. Students should be reminded that cell types can be changed at any time using the toolbar or keyboard shortcuts, and that Markdown cells are for text only.
 
 ### Package Installation and Environment Conflicts
 
-Installing external libraries is a common task in Jupyter Notebook, but the coexistence of multiple package managers, such as `pip` and `conda`, can confuse novice developers. Beginners may unknowingly install packages using one method while the Jupyter Notebook’s kernel is tied to another, resulting in “missing module” errors despite successful installation. These issues are not coding errors but arise due to environment mismatches that can be deeply frustrating without a clear understanding of dependency management. Students should be advised to check the active kernel’s environment and install packages consistently using the same package manager to avoid conflicts. It may be necessary to require that only one Python installation is present to prevent beginners from being confused.
+Installing external libraries is a common task in Jupyter Notebook, but the coexistence of multiple package managers, such as `pip` and `conda`, can confuse novice developers. Beginners may unknowingly install packages using one method while the Jupyter Notebook's kernel is tied to another, resulting in "missing module" errors despite successful installation. These issues are not coding errors but arise due to environment mismatches that can be deeply frustrating without a clear understanding of dependency management. Students should be advised to check the active kernel's environment and install packages consistently using the same package manager to avoid conflicts. It may be necessary to require that only one Python installation is present to prevent beginners from being confused.
 
 ### Limited Debugging Capabilities
 
@@ -168,7 +168,7 @@ Students should be encouraged to use Markdown once they have learnt enough Pytho
 
 One of the most common difficulties beginners encounter in Jupyter Notebook is the confusion caused by non-linear execution. Since cells can be run in any order, variables may hold unexpected values, or code may appear to work only because of hidden state carried over from earlier runs. The Jupyter Notebook Kernel menu options can be used to address this. For example:
 
-* “Restart Kernel and Clear Outputs of All Cells” clears the Jupyter Notebook’s memory, ensuring no hidden variables remain, and removes all cell outputs for a fresh start,  
+* "Restart Kernel and Clear Outputs of All Cells" clears the Jupyter Notebook's memory, ensuring no hidden variables remain, and removes all cell outputs for a fresh start,  
 * "Restart Kernel and Run All Cells" forces the Jupyter Notebook to execute in a clean, linear order, making sure all cells run correctly with no issues.
 
 Encouraging students to restart and rerun the Jupyter Notebook periodically helps them avoid memory-related errors, reinforces the importance of execution order, and encourages good habits for reproducible coding.
@@ -177,7 +177,7 @@ Encouraging students to restart and rerun the Jupyter Notebook periodically help
 
 Jupyter Notebook has remained a dominant tool for performing data analysis and AI/ML modelling. It allows the instantaneous execution of commands, such that software developers can see the effects of implemented Python code. It is accessible within the Google Colab cloud platform and may be installed locally within Anaconda or as a `pip` package. It provides students with an interface that is similar to a [Databricks Notebook](https://docs.databricks.com/aws/en/notebooks/), which is used with large data samples.
 
-While care is needed to avoid package manager conflicts and students should be guided on execution order and debugging practices, Jupyter Notebook’s combination of code, visualisations, and text documentation offers a powerful platform for learning and experimentation. By leveraging these features thoughtfully, educators can make programming more accessible and engaging, opening the door for students from diverse fields to develop computational skills and confidence.
+While care is needed to avoid package manager conflicts and students should be guided on execution order and debugging practices, Jupyter Notebook's combination of code, visualisations, and text documentation offers a powerful platform for learning and experimentation. By leveraging these features thoughtfully, educators can make programming more accessible and engaging, opening the door for students from diverse fields to develop computational skills and confidence.
 
 
 

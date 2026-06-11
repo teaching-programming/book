@@ -27,14 +27,14 @@ format:
         include-before-body:
             file: _theme/accessibility.html
         grid:
-            sidebar-width: 330px
+            sidebar-width: 400px
             body-width: 900px
             margin-width: 330px
             gutter-width: 30px
-    pdf:
-        include-in-header: _theme/latex_preamble.tex
-        bibliography: references.bib
-        links-as-notes: true
+    # pdf:
+        # include-in-header: _theme/latex_preamble.tex
+        # bibliography: references.bib
+        # links-as-notes: true
         
     docx:
 #     temp dev note: in terminal use: quarto render --to docx
@@ -61,8 +61,8 @@ format:
         filters:
           - _theme/filters/callout-for-docx.lua
           - _theme/filters/authors-for-docx.lua
-    epub:
-        bibliography: references.bib
+    # epub:
+        # bibliography: references.bib
 
 book:
     title: "Teaching Programming Across Disciplines"

@@ -222,9 +222,7 @@ Apparently, most of the computational workload here lends itself to imperative p
 
 CivEng students understand the use of functions and are adept in translating formulation of various calculation routines into functions. So that should be enough for generalising code, shouldn't it? During a practice session, after having students estimate the derivative $f'(x_0)$ for the specific functions $f(x) = x^2$ and $f(x) = \cos(x)$ with finite differences, I required them to generalise their `deriv_*` function to accept any mathematical function. Well, how can we do that? --- they doubted, until I showed that we can just pass the function under investigation as one of the inputs of the function `deriv` (see the Julia code below) --- a first step toward functional programming.
 
-**Student's version**
-
-```{.julia lst-cap="Student's version"}
+```{#lst-student-func .julia lst-cap="Student's version"}
 deriv_sq = function(o, h)
   ((o + h)^2 - (o - h)^2) / 2h
 end
@@ -237,9 +235,7 @@ deriv_sq(0, 1E-3)
 deriv_cos(0, 1E-3)
 ```
 
-**Recommended version**
-
-```{.julia lst-cap="Recommended version"}
+```{#lst-recommended-func .julia lst-cap="Recommended version"}
 # A generic central-difference approximation
 deriv = function(f, o, h)
   (f(o + h) - f(o - h)) / 2h
@@ -270,7 +266,7 @@ This list is non-exhaustive yet would be useful for CivEng students starting to 
 
 In summary, although there is not much material available for CivEng students' code development, there are patterns they may adopt to boost their performance at work. In this chapter, I present some such common patterns. Due to the varied nature of the disciplines that a CivEng may be involved in, it by no means presents a single context that they can build programs upon. Rather, I present a case of water/hydraulic engineering and sediment transport, showcasing field variables, spatial derivatives and implementing a finite difference numerical solution.
 
-Given the ubiquity of materials and tools to learn and practice programming nowadays, CivEng students can leverage their skills to solve specific problems in their field. However, unlike data science where standardised software libraries have been developed, CivEng students may often find themselves coding from the ground up. In such situations, being able to design their program is crucial; and this can be accomplished through extensive practice with good programming patterns and continually learning to shift the mindset from "computing with numbers" to dealing with data organised on your computer. This is not easy, though, and I would refer to Mindstorms [@papert2020mindstorms], where the author used Turtle’s geometry to dispel the "mathophobia" among schoolchildren.
+Given the ubiquity of materials and tools to learn and practice programming nowadays, CivEng students can leverage their skills to solve specific problems in their field. However, unlike data science where standardised software libraries have been developed, CivEng students may often find themselves coding from the ground up. In such situations, being able to design their program is crucial; and this can be accomplished through extensive practice with good programming patterns and continually learning to shift the mindset from "computing with numbers" to dealing with data organised on your computer. This is not easy, though, and I would refer to Mindstorms [@papert2020mindstorms], where the author used Turtle's geometry to dispel the "mathophobia" among schoolchildren.
 
 These days, with programming a mandatory part of CivEng students' skill set, it is best for them to appreciate programming as a way to represent their own workflow and reach a solution to their engineering problems, which can then be evaluated and improved.
 

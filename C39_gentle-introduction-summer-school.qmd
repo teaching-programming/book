@@ -91,7 +91,7 @@ Here are some of student comments combined:
 >
 > ❓ I only wished to have a lot more time to practise the new skills, ideally over a longer period of time with the support from the teaching assistants/teacher. Maybe there is a scope for a follow-up course or meetup via CDCS?
 
-## “Pair Programming” Is a Collaboration Technique, Where Two People Share One Computer and Take Turns Typing on It
+## "Pair Programming" Is a Collaboration Technique, Where Two People Share One Computer and Take Turns Typing on It
 
 While the 'Driver' (person who types) talks out loud about what they are doing, the 'Navigator' (person who accompanies) is looking out for mistakes and asks clarifying questions. This allows the driver to focus on the challenge at hand, knowing that another set of eyes is checking what they are doing. At the same time the navigator supports and questions them. (I like to conjure an image of a little angel and devil duo sitting on the shoulders of a cartoon character). Every 15 minutes they swap roles, giving both participants the opportunity to practise both skills. This usually is repeated a number of times over a 2 hour session [@hawlitschek2023empirical].
 

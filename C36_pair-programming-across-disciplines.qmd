@@ -41,7 +41,7 @@ author:
 
 In this chapter, we share our experiences with pair programming as a structured group work format that we believe fosters student engagement, well-being, and transferable skills. We argue that the same pedagogical benefits can also be realised when used for non-programming tasks.
 
-## What Is “Pair Programming”? (And Why Should You Care?)
+## What Is "Pair Programming"? (And Why Should You Care?)
 
 In the software industry, people often work in pairs, which evolved over the years into a standard collaborative practice called "pair programming" [@williams2010pair]. Partners take turns playing two different roles: driver and navigator. The driver has exclusive control of the shared computer, and the navigator guides the driver by acting as their sounding board. Being in each role allows them to gain and contribute unique perspectives on the task at hand. Switching roles frequently allows both partners to get the most out of the experience.
 
@@ -81,9 +81,9 @@ If a student is undermined by their partner, they can fall back on the script to
 
 ## Fostering Peer Learning and Community
 
-Pair programming provides plenty of opportunities for peer learning. The driver has to verbalise their specific ideas and problems, discuss them with the navigator, and synthesise the outcomes of their discussion to "put things on paper" and advance the task. The navigator must be an active listener, observer, and helper, and can take the leading role in higher-level strategic thinking. Both students are exposed to each other’s approach, and learn from each other by cross-pollination.
+Pair programming provides plenty of opportunities for peer learning. The driver has to verbalise their specific ideas and problems, discuss them with the navigator, and synthesise the outcomes of their discussion to "put things on paper" and advance the task. The navigator must be an active listener, observer, and helper, and can take the leading role in higher-level strategic thinking. Both students are exposed to each other's approach, and learn from each other by cross-pollination.
 
-> "The most useful part of \[pair programming\] is being able to collaborate with other classmates, which allows me to discover aspects I hadn’t noticed in my own work through the questions raised by others." - Postgraduate Student, Mathematics
+> "The most useful part of \[pair programming\] is being able to collaborate with other classmates, which allows me to discover aspects I hadn't noticed in my own work through the questions raised by others." - Postgraduate Student, Mathematics
 
 > \[A core learning outcome from the course was\] Experience in pair programming and trying to explain concepts to another student. Sometimes it's quite easy to "see" how you'd do something yourself, but actually explaining this instead of doing it is more difficult, so the online sessions were very useful to practice this . I also found it very valuable to see how others work and how they understand code differently." - Postgraduate Student, Medical School
 

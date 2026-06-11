@@ -1,5 +1,5 @@
 ---
-title: "Part I --- Theories and Applications of Teaching Programming"
+title: "⮞ Part I --- Theories and Applications of Teaching Programming"
 bibliography: references.bib
 author:
   - name: Brittany Blankinship
@@ -25,11 +25,11 @@ author:
     affiliations: School of Philosophy, Psychology and Language Sciences, University of Edinburgh
 :::
 
-As a community, our philosophy towards teaching is grounded in the practice and framework of pair programming (if you haven’t heard of this yet, read on!).  This framework for structured group work, taken from industry, was the first aspect of our teaching which we shared amongst ourselves at the University of Edinburgh and became a uniting feature of our teaching.  Today, pair programming features in all of our teaching as a standard. Our teaching and working life centres around the philosophy of working together to create a shared product and vision – that is, working openly, kindly, and together.  
+As a community, our philosophy towards teaching is grounded in the practice and framework of pair programming (if you haven't heard of this yet, read on!).  This framework for structured group work, taken from industry, was the first aspect of our teaching which we shared amongst ourselves at the University of Edinburgh and became a uniting feature of our teaching.  Today, pair programming features in all of our teaching as a standard. Our teaching and working life centres around the philosophy of working together to create a shared product and vision – that is, working openly, kindly, and together.  
 
 In the first theme, you will get acquainted with what pair programming is and how it can be implemented across courses, levels of study, and disciplines. By the end of it, we hope it will convince you that pair programming is a framework worth getting excited about and perhaps something to implement in your own teaching.  
 
-The second theme focuses on a selection of core concepts in programming that are essential for building healthy programming habits. While learning a programming language’s vocabulary and syntax is a fundamental part of learning to code, these chapters propose broader approaches that nurture more general skills required to be successful coders and learners (hello transferrable skills). 
+The second theme focuses on a selection of core concepts in programming that are essential for building healthy programming habits. While learning a programming language's vocabulary and syntax is a fundamental part of learning to code, these chapters propose broader approaches that nurture more general skills required to be successful coders and learners (hello transferrable skills). 
 
 The third theme acknowledges that being a good learner necessarily means thinking critically and making connections across ideas and topics. As educators, we expect our students not only to produce code that executes, but also to interact meaningfully with it and the wider context. It discusses what it means to teach and learn programming in a world of Generative AI, addressing the good, the bad, and the ugly.  You will not find another debate but a range of viewpoints as they exist in our teaching community. These chapters will resonate with educators, address concepts that have always been fundamental to programming, and hopefully reveal a few surprises along the way. 
 
@@ -57,7 +57,7 @@ This chapter is for you if you want to learn more about pair programming or are 
 
 ### A PhD Tutor's Reflections [@TeachProgAcross_C41]
 
-A PhD students’ experience of teaching pair programming in an introductory R course. The author reflects on when pair programming works and when it doesn’t, as well as the tutor's role in facilitating pair programming.  
+A PhD students' experience of teaching pair programming in an introductory R course. The author reflects on when pair programming works and when it doesn't, as well as the tutor's role in facilitating pair programming.  
 
 This chapter is for you if you are a graduate student or tutor on a course that uses pair programming, or are in a position to implement it in a tutorial setting. Course organisers will also benefit from the insightful reflections from the front line of teaching.
 
@@ -67,21 +67,21 @@ This chapter is for you if you are a graduate student or tutor on a course that 
 
 ### A Practical Debugging Framework for Learners [@TeachProgAcross_C09]
 
-An accessible and joyful introduction to debugging via the 5 B’s framework. The sections of Brain, Book, Buddy, Boss, Break are expertly scaffolded and explained, turning this chapter into an adaptable teaching resource.  
+An accessible and joyful introduction to debugging via the 5 B's framework. The sections of Brain, Book, Buddy, Boss, Break are expertly scaffolded and explained, turning this chapter into an adaptable teaching resource.  
 
 This chapter is for you if you teach any programming language and want your students to approach errors and debugging in a critical and independent fashion.
 
 
 ### Empowering Students to Develop a Coding Mindset [@TeachProgAcross_C05]
 
-The most important skillset you can learn when coding is not actually the syntax of the specific programming language, but rather the “coding mindset”. This chapter outlines practical suggestions and approaches for ensuring your teaching goes beyond the syntax and focuses on developing the students’ mindset to allow them to effectively code in other languages too in the future.  
+The most important skillset you can learn when coding is not actually the syntax of the specific programming language, but rather the "coding mindset". This chapter outlines practical suggestions and approaches for ensuring your teaching goes beyond the syntax and focuses on developing the students' mindset to allow them to effectively code in other languages too in the future.  
 
-This chapter is for you if you are embarking on teaching your first programming course and want to develop the course beyond the syntax you might be teaching. Experienced programmers will also find the chapter interesting as a source for reflection on their own “coding mindset” and how it has developed. 
+This chapter is for you if you are embarking on teaching your first programming course and want to develop the course beyond the syntax you might be teaching. Experienced programmers will also find the chapter interesting as a source for reflection on their own "coding mindset" and how it has developed. 
 
 
 ### It Depends: How to Develop Judgement in Programming [@TeachProgAcross_C40]
 
-Extending the idea of “best practice” in coding, this chapter asks the programmer to question the needs of their context rather than seeing “good” and “bad” coding practices in black and white. The central concept, that there are “forces” of coding, will be useful as a teaching resource to help students write good code and consider why they are coding in the first place.  
+Extending the idea of "best practice" in coding, this chapter asks the programmer to question the needs of their context rather than seeing "good" and "bad" coding practices in black and white. The central concept, that there are "forces" of coding, will be useful as a teaching resource to help students write good code and consider why they are coding in the first place.  
 
 This chapter is for anyone who codes and wants to expand their approach to coding independently, consciously, and/or collaboratively.  
 
@@ -120,7 +120,7 @@ For many readers, this will answer the question of why it is a worthwhile endeav
 
 ### Reducing Technological Barriers in Programming Courses [@TeachProgAcross_C04]
 
-Learning to code for the first time is fraught with challenges ranging from the technical, cultural, and practical. As an educator, how do you help your students when “the computer says no”? This chapter covers implementable steps for reducing barriers in programming courses, to ensure students don’t lose motivation to learn programming when faced with such issues, while ensuring instructors are not overworked.
+Learning to code for the first time is fraught with challenges ranging from the technical, cultural, and practical. As an educator, how do you help your students when "the computer says no"? This chapter covers implementable steps for reducing barriers in programming courses, to ensure students don't lose motivation to learn programming when faced with such issues, while ensuring instructors are not overworked.
 
 This chapter is for you if you teach novice programmers and want to reduce friction in getting set up and working through the programming curriculum. With clear suggestions and a summary of pros and cons, it will allow you to pick the best setup for your own course! 
 
@@ -141,14 +141,14 @@ This chapter is for you if you have ever taught coding to anxious students or wo
 
 ### 3 Stars and 1 Wish [@TeachProgAcross_C34]
 
-With its origins in primary school teaching, this reflective practice framework will be a surprising and adaptable tool for use in higher education teaching, both in-person and online. This chapter introduces the idea of ‘3 stars and a wish’, where reflection is a flexible way of creating community that may replace existing discussion boards and feedback surveys. The authors present a case study and practical tips for implementing the framework. 
+With its origins in primary school teaching, this reflective practice framework will be a surprising and adaptable tool for use in higher education teaching, both in-person and online. This chapter introduces the idea of '3 stars and a wish', where reflection is a flexible way of creating community that may replace existing discussion boards and feedback surveys. The authors present a case study and practical tips for implementing the framework. 
 
 This chapter is for you if you are an educator who would like to integrate continuous bite-sized reflection into your teaching or for anyone who is looking for ways to pulse-check student learning and progress.
 
 
 ### Sequential vs. Simultaneous [@TeachProgAcross_C11]
 
-Within many statistics modules, programming is presented as a tool which students need to learn quickly, engage with briefly, and then move on from. Yet, both statistics and programming come with a heavy cognitive load and are sources of angst, anxiety, and confusion for students. This chapter compares three approaches to teaching statistics and programming for students who need to know both. This chapter is for anyone designing (or re-designing) a course teaching both programming and statistics. With concrete examples from the author’s diverse experiences, this chapter presents a practical guide as well as an opportunity to learn from others who have been there before.  
+Within many statistics modules, programming is presented as a tool which students need to learn quickly, engage with briefly, and then move on from. Yet, both statistics and programming come with a heavy cognitive load and are sources of angst, anxiety, and confusion for students. This chapter compares three approaches to teaching statistics and programming for students who need to know both. This chapter is for anyone designing (or re-designing) a course teaching both programming and statistics. With concrete examples from the author's diverse experiences, this chapter presents a practical guide as well as an opportunity to learn from others who have been there before.  
 
 
 ::: {.content-visible when-format="html" unless-format="epub"}

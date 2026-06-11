@@ -1,5 +1,5 @@
 ---
-title: "Part III --- Assessment and Feedback: Principles and Practice"
+title: "⮞ Part III --- Assessment and Feedback: Principles and Practice"
 bibliography: references.bib
 author:
   - name: Umberto Noè
@@ -29,7 +29,7 @@ Assessment is, for many students, the most anxious part of their studies. For ma
 
 The chapters here approach these questions from two angles. The first theme looks at the *frameworks* we use to think about assessment and feedback, i.e. the underlying schools of thought and structures that shape what we measure and how we respond to student work. The second theme turns to how to do this *practically* by looking at how do educators design, deliver, and scale assessment in programming courses, particularly as generative AI and automated tools are changing the landscape rapidly.
 
-## Theme --- Frameworks for Assessment and Feedback
+## Theme --- Frameworks for assessment and feedback
 
 ### Developing a Skills-Based Framework for Assessments [@TeachProgAcross_C38]
 
@@ -43,7 +43,7 @@ Feedback is only useful if students act on it. That sounds obvious, but many fee
 
 This chapter is for you if you have ever written detailed feedback that students ignored, or struggled to get a marking team to produce consistent comments. The AFP is refreshingly practical. It is not a theory of feedback but a working protocol, and the chapter shows how it has been implemented in a way that you can adapt to your own course.
 
-## Theme --- Practical Methods for Assessing Programming
+## Theme --- Practical methods for assessing programming
 
 ### Assessment and Marking in an Introductory Programming Course for Physics Students [@TeachProgAcross_C26.1]
 
