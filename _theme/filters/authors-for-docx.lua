@@ -118,7 +118,8 @@ function authors_as_docx_paragraphs(authors)
     if author.name ~= nil then
       local name_format = author.name
       if author.corresponding then
-          name_format = name_format .. "*"
+          name_format = name_format --.. "*" 
+          --bring the last bit above back with any symbol other than * to indicate corresponding author if we'll want that
       end
       
       table.insert(

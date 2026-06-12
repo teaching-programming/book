@@ -138,6 +138,8 @@ A key concern across all the above projects is that there should be room for mus
 Resources available with this chapter.
 
 ::::
+:::
+
 ::: {.content-visible when-format="docx"}
 ![Resources available with this chapter.](/chapters/images/C17-resources-available.png){#fig-C17-resources-available fig-alt="Resources available with this chapter."}
 :::
@@ -264,11 +266,10 @@ This chapter has touched briefly on some of the many connections between sound, 
 > Have you figured out how to recreate your favorite pop song with code? Great! Now try composing a new song that's all your own. Or see if you can create new types of music that are easier to make with code than without it --- or even types of music that are impossible to create without a computer! What do you come up with? Can you make new sounds that nobody in the world has ever heard before? Can you make musical "instruments" that you can interact with to perform music that you could never make with a piano or a violin? What else could you create, that nobody before you has ever made?
 
 
-::: {.appendix}
 
 ## Appendix: Resource List for Educators {#sec-resourcetable .unnumbered}
 
-:::: {#tbl-resource-list}
+::: {#tbl-resource-list}
 
   -------------------------------------- --------------------------- ----------------------
   **Name**                               **Type**                    **URL**
@@ -287,10 +288,8 @@ This chapter has touched briefly on some of the many connections between sound, 
   -------------------------------------- --------------------------- ----------------------
 
 An non-exhaustive list of software and software libraries for exploring music and sound in coding contexts.
-
-::::
-
 :::
+
 
 
 [^C17-ftn1]: Lots of open source synthesisers are available such as [Surge XT](https://surge-synthesizer.github.io/) or [Dexed](https://asb2m10.github.io/dexed/).
