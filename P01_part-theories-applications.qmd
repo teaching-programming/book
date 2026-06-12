@@ -1,5 +1,5 @@
 ---
-title: "⮞ Part I --- Theories and Applications of Teaching Programming"
+title: "Part I --- Theories and Applications of Teaching Programming"
 bibliography: references.bib
 author:
   - name: Brittany Blankinship
@@ -33,11 +33,11 @@ The second theme focuses on a selection of core concepts in programming that are
 
 The third theme acknowledges that being a good learner necessarily means thinking critically and making connections across ideas and topics. As educators, we expect our students not only to produce code that executes, but also to interact meaningfully with it and the wider context. It discusses what it means to teach and learn programming in a world of Generative AI, addressing the good, the bad, and the ugly.  You will not find another debate but a range of viewpoints as they exist in our teaching community. These chapters will resonate with educators, address concepts that have always been fundamental to programming, and hopefully reveal a few surprises along the way. 
 
-Finally, as programming educators, you may have an idea of what concepts and mindsets you would like to teach your students. But how do you actually implement it in a pragmatic, engaging, and effective way? In the fourth and final theme of Part I, our authors tackle core pedagogical issues from the perspective of teaching programming: 
+Finally, as programming educators, you may have an idea of what concepts and mindsets you would like to teach your students. But how do you actually implement them in a pragmatic, engaging, and effective way? In the fourth and final theme of Part I, our authors tackle core pedagogical issues from the perspective of teaching programming: 
 
-- How do we get total beginners learning a tool they never expected to use in the first place? 
-- How do you teach multiple complex concepts at the same time?  
-- How do you build confidence and create an inclusive and welcoming atmosphere for your students?  
+- How do we get total beginners learning a tool they never expected to use in the first place?
+- How do you teach multiple complex concepts at the same time?
+- How do you build confidence and create an inclusive and welcoming atmosphere for your students?
 
 Some of the concepts and ideas presented in Part I may be familiar to you already, but we hope that you will gain either a framework to describe what you are already doing or a new way to approach teaching.  
 
@@ -47,7 +47,7 @@ Some of the concepts and ideas presented in Part I may be familiar to you alread
 
 An introduction to pair programming in the form of a (written) podcast interview where you can read or listen. This chapter is a joyful and pragmatic approach to answering some of the most frequently asked questions around introducing pair programming in the classroom. 
 
-This chapter is for you if you are interested in pair programming as a teaching practice or you would like ideas around how to explain it to your students or colleagues.  
+This chapter is for you if you are interested in pair programming as a teaching practice or you would like ideas for how to explain it to your students or colleagues.  
 
 ### Lessons From Pair Programming Across Disciplines [@TeachProgAcross_C36]
 
@@ -74,7 +74,7 @@ This chapter is for you if you teach any programming language and want your stud
 
 ### Empowering Students to Develop a Coding Mindset [@TeachProgAcross_C05]
 
-The most important skillset you can learn when coding is not actually the syntax of the specific programming language, but rather the "coding mindset". This chapter outlines practical suggestions and approaches for ensuring your teaching goes beyond the syntax and focuses on developing the students' mindset to allow them to effectively code in other languages too in the future.  
+The most important skillset you can learn when coding is not the syntax of the specific programming language, but rather the "coding mindset". This chapter outlines practical suggestions and approaches for ensuring your teaching goes beyond syntax and focuses on developing students' mindset to allow them to effectively code in other languages in the future.  
 
 This chapter is for you if you are embarking on teaching your first programming course and want to develop the course beyond the syntax you might be teaching. Experienced programmers will also find the chapter interesting as a source for reflection on their own "coding mindset" and how it has developed. 
 
@@ -92,7 +92,7 @@ This chapter is for anyone who codes and wants to expand their approach to codin
 
 Every new computational tool or AI model comes with exciting promises, but it also brings challenges. These often leave behind questions about fairness, who benefits from this technology, and who pays the hidden costs. As educators, we are placed in the middle of this hype, trying to help our students make sense of these tools. 
 
-This chapter will take you through the journey of responsible computing through the lens of the United Nations (UN) Sustainable Development Goals. You will learn how issues like inequality, environmental harm, workforce exploitation, and bias can be part of new technologies. Along this journey, the authors share classroom activities, teaching ideas, and recommended readings you can assign in your own courses. This chapter is for you if you want your students not only to learn about fancy new algorithms, but also to be responsible and sustainable in their usage. 
+This chapter will take you through the history of responsible computing through the lens of the United Nations (UN) Sustainable Development Goals. You will learn how issues like inequality, environmental harm, workforce exploitation, and bias can be part of new technologies. Along this journey, the authors share classroom activities, teaching ideas, and recommended readings you can assign in your own courses. This chapter is for you if you want your students not only to learn about fancy new algorithms, but also to be responsible and sustainable in their usage. 
 
 
 ### Teaching With the Emergence of Generative AI [@TeachProgAcross_C10]

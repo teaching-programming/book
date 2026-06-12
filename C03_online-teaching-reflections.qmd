@@ -55,10 +55,10 @@ author:
 
 In this chapter, educators with a background in teaching online will share some of their experiences. These reflections are intended to be informative and to provide insight, inspiration, and advice to other educators who are undertaking similar teaching. Specifically, the chapter discusses:
 
-* A "Silent Disco" at The University of Edinburgh, where students work through material at their own pace with tutors available to facilitate,
-* An introductory Python course developed on Coursera for early-career researchers at Imperial College London,
-* Four Massive Open Online Courses (MOOCs) integrated into a Masters of Public Health at Imperial College London, including discussions of assessment and interaction between the learners and staff,
-* A selection of blended work-based modules delivered at the University of Strathclyde, designed to be taken by learners while they are in employment.
+- A "Silent Disco" at The University of Edinburgh, where students work through material at their own pace with tutors available to facilitate,
+- An introductory Python course developed on Coursera for early-career researchers at Imperial College London,
+- Four Massive Open Online Courses (MOOCs) integrated into a Masters of Public Health at Imperial College London, including discussions of assessment and interaction between the learners and staff,
+- A selection of blended work-based modules delivered at the University of Strathclyde, designed to be taken by learners while they are in employment.
 
 ## Silent Disco
 

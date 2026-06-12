@@ -114,15 +114,15 @@ A helpful analogy is preparing a cup of tea. There are countless variations: som
 
 The process of problem solving can be broken down into several steps.  Some students will automatically do this, whilst others (particularly those who struggle with executive dysfunction) will benefit from modelling of the different stages and being provided with a checklist to follow: 
 
-* Understanding the problem
-* Identifying constraints
-* Identifying the expected inputs
-* Considering the target audience or users
-* Clarifying expectations
-* Knowing about the desired outcomes (outputs)
-* Designing the solution
-* Testing possible solutions
-* Troubleshooting and refining the approach
+- Understanding the problem
+- Identifying constraints
+- Identifying the expected inputs
+- Considering the target audience or users
+- Clarifying expectations
+- Knowing about the desired outcomes (outputs)
+- Designing the solution
+- Testing possible solutions
+- Troubleshooting and refining the approach
 
 By foregrounding problem-solving instead of syntax, students can focus on creative and strategic thinking, which lowers barriers for those who might lack confidence with coding rules. However, not all learners will find abstract planning easy; some thrive by diving straight into code. For these learners, scaffolding the design stage can be helpful. Progressing from checklist to pseudocode, flowchart, and code supports learners with diverse preferences and reinforces both problem solving and implementation skills. 
 
@@ -147,11 +147,11 @@ The accessibility of lecture sessions can be improved by providing the session m
 
 When done well, the combination of lecture and lab sessions can help facilitate the navigation of the liminal space between a threshold concept being introduced and it being understood. Our learners, may not navigate this linearly, but will go through the stages of developing:
 
-* an abstract (or theoretical) understanding of a concept;
-* a concrete (or applied) understanding --- the ability to write a computer program, for instance;
-* the ability to go from an understanding of the abstract concept to software design or concrete implementation;
-* an understanding of the rationale for learning and using the concept; and
-* an understanding of how to apply the concept to new problems --- problems beyond those given as homework or lab exercises [@mccartney_liminal_2009].
+- an abstract (or theoretical) understanding of a concept;
+- a concrete (or applied) understanding --- the ability to write a computer program, for instance;
+- the ability to go from an understanding of the abstract concept to software design or concrete implementation;
+- an understanding of the rationale for learning and using the concept; and
+- an understanding of how to apply the concept to new problems --- problems beyond those given as homework or lab exercises [@mccartney_liminal_2009].
 
 @knuth_theory_1991 spoke about the close relationship between theory and practice as follows:
 

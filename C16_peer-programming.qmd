@@ -61,10 +61,10 @@ author:
 
 DAPR1 is a 20-week long in-person course (10 weeks per semester) and a typical week on the course involves:
 
-* Two lectures of one hour each. The first focuses on statistical concepts/methods; the second on how to implement concepts/methods in R  
-* A one-hour lab. This is a practical session, where students work to solve tasks with the support of tutors   
-* Assigned reading to consolidate knowledge  
-* A weekly quiz on the previous week's material to ensure that students keep up with the course as its content is cumulative.
+- Two lectures of one hour each. The first focuses on statistical concepts/methods; the second on how to implement concepts/methods in R  
+- A one-hour lab. This is a practical session, where students work to solve tasks with the support of tutors   
+- Assigned reading to consolidate knowledge  
+- A weekly quiz on the previous week's material to ensure that students keep up with the course as its content is cumulative.
 
 The 20 weeks are organised as four blocks of 5 weeks, where each teaching block focuses on a specific topic: exploratory data analysis, probability, inference, and common hypothesis tests. @fig-c16-structure shows a visual schematic of the course. The course materials can be found [on GitHub](https://github.com/uoepsy/dapr1) and the lab worksheets are visible [here](https://uoepsy.github.io/dapr1/2526/labs/).
 
@@ -172,11 +172,11 @@ As educators, we may be concerned (and many students are) with the fact that any
 
 The assessed report created by each group receives a grade from the marker. 80% of the grade is fixed, while 20% of it is variable. Let me give an example: if a marker assigns a grade of 65 to the group report, 52 is the minimum grade that any group member can receive, and 13 points are distributed based on how much each person contributed as rated by their peers, using a Likert scale where 0 \= None, 1 \= Very poor, 2 \= Minimal, 3 \= Average, 4 \= Good, 5 \= Excellent. The rating is done within WebPA, where students use a form to anonymously rate their group members according to the following criteria:
 
-* Overall, rate the positive impact of each group member's contributions to the project  
-* Rate the extent to which each group member actively participated in group discussions/meetings  
-* Rate the extent to which each group member contributed to the analysis strategy  
-* Rate the extent to which each group member contributed to the code  
-* Rate the extent to which each group member contributed to the writing of the report
+- Overall, rate the positive impact of each group member's contributions to the project  
+- Rate the extent to which each group member actively participated in group discussions/meetings  
+- Rate the extent to which each group member contributed to the analysis strategy  
+- Rate the extent to which each group member contributed to the code  
+- Rate the extent to which each group member contributed to the writing of the report
 
 I ask students to self-enrol in groups on Blackboard Learn, the virtual learning platform used by our university. WebPA easily integrates with many virtual learning environment platforms, making it easy to perform the peer assessment of contribution for the same groups created in the virtual learning environment.
 
