@@ -166,10 +166,10 @@ This framework codifies what is a natural, iterative loop for experienced proble
 
 As educators, our role is to consistently remind them of the core principles that underpin this framework:
 
-* **Errors are the Path to Progress** - We must move students away from seeing errors as failure and toward seeing them as the lane bumpers of their journey.  
-* **Time Management Practice** - We must emphasize that time is a non-renewable learning resource. Students should be taught that escalating to a Boss is an act of professional efficiency, not a sign of weakness.  
-* **The Power of the Reset** - We must model the Break as a technical requirement. Stepping away allows the brain to defocus, which is often when the most elegant solutions surface.  
-* **Thoughtful AI Integration** - By using AI as a buddy or a documentation translator, students leverage modern tools without sacrificing their journey of understanding
+- **Errors are the Path to Progress** - We must move students away from seeing errors as failure and toward seeing them as the lane bumpers of their journey.  
+- **Time Management Practice** - We must emphasize that time is a non-renewable learning resource. Students should be taught that escalating to a Boss is an act of professional efficiency, not a sign of weakness.  
+- **The Power of the Reset** - We must model the Break as a technical requirement. Stepping away allows the brain to defocus, which is often when the most elegant solutions surface.  
+- **Thoughtful AI Integration** - By using AI as a buddy or a documentation translator, students leverage modern tools without sacrificing their journey of understanding
 
 The 5Bs are a useful way to remember the common steps in problem solving, but the goal is learning to live in the loop. 
 
