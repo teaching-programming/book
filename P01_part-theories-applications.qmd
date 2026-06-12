@@ -33,7 +33,7 @@ The second theme focuses on a selection of core concepts in programming that are
 
 The third theme acknowledges that being a good learner necessarily means thinking critically and making connections across ideas and topics. As educators, we expect our students not only to produce code that executes, but also to interact meaningfully with it and the wider context. It discusses what it means to teach and learn programming in a world of Generative AI, addressing the good, the bad, and the ugly.  You will not find another debate but a range of viewpoints as they exist in our teaching community. These chapters will resonate with educators, address concepts that have always been fundamental to programming, and hopefully reveal a few surprises along the way. 
 
-Finally, as programming educators, you may have an idea of what concepts and mindsets you would like to teach your students. But how do you actually implement it in a pragmatic, engaging, and effective way? In the fourth and final theme of Part I, our authors tackle core pedagogical issues from the perspective of teaching programming: 
+Finally, as programming educators, you may have an idea of what concepts and mindsets you would like to teach your students. But how do you actually implement them in a pragmatic, engaging, and effective way? In the fourth and final theme of Part I, our authors tackle core pedagogical issues from the perspective of teaching programming: 
 
 - How do we get total beginners learning a tool they never expected to use in the first place? 
 - How do you teach multiple complex concepts at the same time?  
