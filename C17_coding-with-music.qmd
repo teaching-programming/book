@@ -141,7 +141,7 @@ Resources available with this chapter.
 :::
 
 ::: {.content-visible when-format="docx"}
-![Resources available with this chapter.](/chapters/images/C17-resources-available.png){#fig-C17-resources-available fig-alt="Resources available with this chapter."}
+![Resources available with this chapter.](/chapters/images/c17-resources-available.png){#fig-C17-resources-available fig-alt="Resources available with this chapter."}
 :::
 
 Five example resources accompany this chapter, reflecting some of the different approaches to combining aspects of sound, music and programming in the different authors' existing pedagogical work. Each example resource comes with a `readme` that gives a sense of how the resource might be used, who might find it valuable, what prior knowledge the students may need, and what technologies will be needed. Each resource is described briefly below.
