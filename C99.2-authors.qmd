@@ -238,7 +238,7 @@ Work website: <https://edwebprofiles.ed.ac.uk/profile/arifbudiarto>
 
 ----
 
-### Yashique Chalil (He/Him)
+### Yashique Chalil (he/him)
 ##### Tutor, Reid School of Music, University of Edinburgh
 ![](/chapters/authors/yashique-chalil.jpg ){#author-yashique-chalil #author-yashique-chalil fig-alt="Yashique Chalil Profile" width=30% }
 
@@ -330,7 +330,7 @@ LinkedIn: <https://www.linkedin.com/in/lailadababnahas/>
 
 ----
 
-### Frederik Dahl Madsen (He/Him)
+### Frederik Dahl Madsen (he/him)
 ##### PhD Student, School of Geosciences, University of Edinburgh & Lyell Centre, British Geological Survey
 ![](/chapters/authors/frederik-dahl-madsen.jpg ){#author-frederik-dahl-madsen fig-alt="Frederik Dahl Madsen Profile" width=30% }
 
@@ -391,7 +391,7 @@ LinkedIn: <https://uk.linkedin.com/in/tugrulcanelmas>
 
 ----
 
-### Tom Farrington (He/Him)
+### Tom Farrington (he/him)
 ##### Senior User Researcher, Storm ID
 ![](/chapters/authors/tom-farrington.jpg ){#author-tom-farrington fig-alt="Tom Farrington Profile" width=30% }
 
@@ -587,7 +587,7 @@ I specialize in Management Science and Operations Research, focusing on how tech
 
 ----
 
-### Nguyen Quang Chien(He)
+### Nguyen Quang Chien (he/him)
 ##### Research Associate, University of Edinburgh 
 
 I joined the University of Edinburgh, School of Engineering, on a contract-based work related to software development. My background is in civil engineering, more precisely, hydraulics, and I had university teaching experience in Vietnam before Microsoft Copilot and Google Gemini were introduced. Now, civil engineering students are largely accessible to code and data repositories as well as good practices in programming. I believe that a shift in mindset towards programming would help them start their careers strong, and this initiates my contribution to the book.
@@ -644,7 +644,7 @@ LinkedIn: <https://www.linkedin.com/in/gule-saman-389b9ba1/>
 
 ----
 
-### Ignacio Sepulveda (He/Him)
+### Ignacio Sepulveda (he/him)
 ##### Lecturer, Scotland's Rural College (SRUC)
 ![](/chapters/authors/ignacio-sepulveda.jpg ){#author-ignacio-sepulveda fig-alt="Ignacio Sepulveda Profile" width=30% }
 
@@ -706,7 +706,7 @@ Work website: <https://www.gla.ac.uk/schools/physics/staff/samuelskipsey/>
 
 ----
 
-### Luke Stephens (He/Him)
+### Luke Stephens (he/him)
 ##### Research Fellow, University of Edinburgh
 
 ![](/chapters/authors/luke-stephens.jpg ){#author-luke-stephens fig-alt="Luke Stephens Profile" width=30% }
@@ -734,7 +734,7 @@ Personal website: <https://sutherlandecology.com/index.html>
 
 ----
 
-### Mike Taverne (He/Him or They/Them)
+### Mike Taverne (he/him or they/them)
 ##### Research Fellow in Electrical Engineering, Northumbria University
 ![](/chapters/authors/mike-taverne.png ){#author-mike-taverne fig-alt="Mike Taverne Profile" width=30% }
 
