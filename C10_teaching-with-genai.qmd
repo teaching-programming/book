@@ -153,7 +153,7 @@ Positive Aspects:
 
 Areas for Improvement:
 
--   Unused Imports and Variables: The pandas library is imported (import pandas as pd) but not utilised in the provided code snippet. Similarly, the principalComponents variable, which stores the transformed data, is created but not used for any subsequent operations within this specific excerpt.
+-   Unused Imports and Variables: The pandas library is imported (import pandas as pd) but not utilised in the provided code snippet. Similarly, the `principalComponents` variable, which stores the transformed data, is created but not used for any subsequent operations within this specific excerpt.
 -   Scope: While effective for its stated purpose, the snippet could be extended with visualisations (e.g., a scree plot) or further analysis to demonstrate the practical application of the principal components for dimensionality reduction.
 
 :::
