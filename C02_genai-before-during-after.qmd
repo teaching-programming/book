@@ -41,12 +41,12 @@ If at any point during this chapter you feel overwhelmed or confused, we invite 
 
 ## Before Assessment 
 
-Imagine you need to design an assessment --- whether it is a coursework, a lab task, or an exam. Depending on the level of involvement required, designing this assessment can be a time-consuming process. Between thinking of a fun task, writing it out, devising solutions, creating rubrics, and formatting, it quickly adds up. GenAI can help you streamline this process as it offers several time-savers. Let’s look at each of those in detail. 
+Imagine you need to design an assessment --- whether it is a coursework, a lab task, or an exam. Depending on the level of involvement required, designing this assessment can be a time-consuming process. Between thinking of a fun task, writing it out, devising solutions, creating rubrics, and formatting, it quickly adds up. GenAI can help you streamline this process as it offers several time-savers. Let's look at each of those in detail. 
 
 ### Using LLMs To Draft Multiple Choice Questions
 
 Multiple choice questions (MCQs) are convenient in a variety of situations: you may want to quickly check content comprehension during a lecture, create a revision resource, or design a scalable assessment for a large cohort, which is free of grading bias. The idea behind MCQs is attributed to Wood and Thorndike and dates back to the 1920s [@engelhard1988thorndike]. 
-One can design their own questions from scratch or refer to existing question banks. With the emergence of LLMs, educators have started exploring GenAI’s capabilities to brainstorm ideas and accelerate the creation of MCQs. Some companies even developed custom-made solutions for MCQ generation and other teaching-related tasks, e.g. [TeacherMatic](https://teachermatic.com/generators-teaching/). Yet, these systems often require additional licenses that your institution may not have. This, however, is not an issue and you still can generate MCQs using conventional general LLMs. 
+One can design their own questions from scratch or refer to existing question banks. With the emergence of LLMs, educators have started exploring GenAI's capabilities to brainstorm ideas and accelerate the creation of MCQs. Some companies even developed custom-made solutions for MCQ generation and other teaching-related tasks, e.g. [TeacherMatic](https://teachermatic.com/generators-teaching/). Yet, these systems often require additional licenses that your institution may not have. This, however, is not an issue and you still can generate MCQs using conventional general LLMs. 
 
 @tran2023generating compared the capabilities of two OpenAI models to generate isomorphic MCQs, providing the [Canterbury Question Bank](https://web-cat.org/questionbank/) as a reference. @biancini2024multiple experimented with creating MCQs with LLMs, providing a prompt that addresses three basic components of MCQs: *stem* (context for the question), *key* (correct answer), and *distractors* (incorrect options). While the prompt they provide is specifically designed for history-related questions, it can still be used as a starting point for other subjects.
 
@@ -96,7 +96,7 @@ Crafting effective prompts that specify the desired format of GenAI output and r
 
 ### Using GenAI To Write an Assessment Brief
 
-Courseworks are usually rather involved assignments and require a detailed brief. The prompt "recipe" is similar to that of MCQs: provide a *context* (specify the subject, the learning objectives, the audience, and the level at which this subject is assessed), and determine a *format* (by either manually describing it or providing a sample document for reference). You can also use LLMs to help refine your prompt by asking them to serve as your guide --- something some LLM’s, e.g. [GPT-5](https://openai.com/index/introducing-gpt-5/), already offer. Once you’ve got the brief, review and refine it with your human insight.
+Courseworks are usually rather involved assignments and require a detailed brief. The prompt "recipe" is similar to that of MCQs: provide a *context* (specify the subject, the learning objectives, the audience, and the level at which this subject is assessed), and determine a *format* (by either manually describing it or providing a sample document for reference). You can also use LLMs to help refine your prompt by asking them to serve as your guide --- something some LLM's, e.g. [GPT-5](https://openai.com/index/introducing-gpt-5/), already offer. Once you've got the brief, review and refine it with your human insight.
 
 #### Practical Tip: Providing Examples
 
@@ -104,7 +104,7 @@ You can use GenAI to generate an assignment by following these steps:
 
 1. Determine and define the key aspects: the assignment type, the concepts you wish to test, the level of study, and a potential theme. If you do not have a theme, you can ask an LLM for a suggestion. 
 2. Provide some key teaching material you have used (either as PDFs, PPTs or code snippets) to help "ground" your assignment. When doing so, ensure that the LLM you are using does not use your content for training and does not make it publicly accessible. Educational institutions often have special licensing agreements with specific LLM providers to protect institutional data, so it is worth checking whether your university has such an agreement and which provider it covers.
-3. Provide a previous example (such as last year’s coursework) that an LLM can use to format your brief similarly to your previous assignments, so they all look uniform.
+3. Provide a previous example (such as last year's coursework) that an LLM can use to format your brief similarly to your previous assignments, so they all look uniform.
 4. Do not be afraid to ask for multiple suggestions or request changes. Review and refine the LLM output, and then follow institutional moderation guidelines.
 
 ::: {.callout-tip icon=false collapse=false}
@@ -187,7 +187,7 @@ While an LLM is excellent at generating "scaffolded" text, it often relies on ge
 
 Finally, we can request a model solution that incorporates both of these components. This will vary significantly depending on the assignment type; it works best for tests and less well for essays. A typical rule of thumb is that the larger the assessment, the worse the model answer will be. Regardless, these model answers can be used to quickly estimate what a solution may look like --- we can even request multiple solutions from different ability levels! This will help us understand the typical LLM style for solving the problem and provide a better idea of when students overrely on GenAI output.
 
-This can also serve an additional purpose --- to test an LLM’s capability to solve your coursework. This can be a good way to see how "LLM-proof" your assignment is, especially if the use of GenAI is prohibited. This can aid in either redeveloping aspects of an assignment or in developing an understanding of how an LLM may assist students in completing this specific assignment.
+This can also serve an additional purpose --- to test an LLM's capability to solve your coursework. This can be a good way to see how "LLM-proof" your assignment is, especially if the use of GenAI is prohibited. This can aid in either redeveloping aspects of an assignment or in developing an understanding of how an LLM may assist students in completing this specific assignment.
 
 
 #### Practical Tip: Combining Tools
@@ -227,7 +227,7 @@ In our experience, students generally enjoy exploring GenAI as part of an assess
 
 ### Tasks Around Interaction With GenAI and Critical Evaluation of Its Output
 
-This can be anything from asking students to compare their own code with GenAI output or asking GenAI to provide several versions of a problem solution and encouraging students to determine which one is the best [@petrovska2024incorporating]. Alternatively, students can be given a set of solutions --- some human-written and some generated by GenAI --- without being told their origin [@petrovska2025assessing], and asked to identify the best solution and explain the drawbacks of the others. Such hands-on experience and exposure to GenAI’s imperfections should, hopefully, build a more conscientious approach to using these tools. 
+This can be anything from asking students to compare their own code with GenAI output or asking GenAI to provide several versions of a problem solution and encouraging students to determine which one is the best [@petrovska2024incorporating]. Alternatively, students can be given a set of solutions --- some human-written and some generated by GenAI --- without being told their origin [@petrovska2025assessing], and asked to identify the best solution and explain the drawbacks of the others. Such hands-on experience and exposure to GenAI's imperfections should, hopefully, build a more conscientious approach to using these tools. 
 
 
 ### Reflective Components in Programming Assignments
@@ -280,7 +280,7 @@ Using GenAI, you can create a "Feedback Persona" simply by "teaching" a standard
 
 > This is my feedback style. It is encouraging but rigorous. I will provide you with bulleted marking notes, and I want you to turn them into two coherent paragraphs of feedback addressed to the student.
 
-**The Workflow:** For each student, simply paste your shorthand notes. This keeps the feedback customised to the student’s actual work while saving you the "blank page" fatigue of drafting 100+ individual paragraphs of feedback.
+**The Workflow:** For each student, simply paste your shorthand notes. This keeps the feedback customised to the student's actual work while saving you the "blank page" fatigue of drafting 100+ individual paragraphs of feedback.
 
 ::: {.callout-tip icon=false collapse=false}
 
@@ -311,7 +311,7 @@ Using GenAI, you can create a "Feedback Persona" simply by "teaching" a standard
 
 When using a "Feedback Persona", data privacy is paramount. Never input a student's full name, ID number, or sensitive personal details into a public LLM. As mentioned earlier, some institutions may provide you with a more secure, local version of an LLM for safer use. Please read your institution's policy on GenAI and LLM usage before attempting this. 
 
-It is also important to consider what staff-generated materials are shared with commercial LLMs. Uploading assignment briefs, marking schemes, or model solutions to public systems may result in this content being incorporated into future model training data, depending on the provider’s policies. This creates a risk that students could later access high-quality or even complete solutions via the same tools. Where possible, opt out of data sharing (sometimes referred to as incognito or private mode), use institutionally approved systems, or avoid uploading full solutions altogether.
+It is also important to consider what staff-generated materials are shared with commercial LLMs. Uploading assignment briefs, marking schemes, or model solutions to public systems may result in this content being incorporated into future model training data, depending on the provider's policies. This creates a risk that students could later access high-quality or even complete solutions via the same tools. Where possible, opt out of data sharing (sometimes referred to as incognito or private mode), use institutionally approved systems, or avoid uploading full solutions altogether.
 
 Treat the AI-generated text as a "first draft" --- always review it to ensure it accurately reflects your marking notes before sending it to the student. Transparency is also key; informing students that you use GenAI to help synthesise your handwritten notes into formal feedback builds trust and models professional GenAI usage. In our experience, students have been okay with this, and when they have challenged it, we have provided them with the raw feedback notes to show that marking has been done manually.
 

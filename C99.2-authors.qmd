@@ -25,7 +25,7 @@ ORCID: <https://orcid.org/0000-0002-1405-7396>
 ##### Lecturer, Edinburgh Medical School, University of Edinburgh
 ![](/chapters/authors/pawel-orzechowski.jpg ){#author-pawel-orzechowski fig-alt="Pawel Orzechowski Profile" width=30% }
 
-I’m a programmer who fell in love with teaching. I believe that coding is a social and creative activity – it can open up our heart and mind so that we communicate better with each other and computers. For me, coding happens in your head and on paper, as you discuss it with someone... typing it up is just something you do at the end. I’ve taught programming for over a decade in coding bootcamps and universities (in business, social science and medicine contexts). I've contributed time, technical skulls, words and illustrations towards this unique book. I believe in authentic learning and creativity (without LLM reliance) so every letter you read was typed by a human.
+I'm a programmer who fell in love with teaching. I believe that coding is a social and creative activity – it can open up our heart and mind so that we communicate better with each other and computers. For me, coding happens in your head and on paper, as you discuss it with someone... typing it up is just something you do at the end. I've taught programming for over a decade in coding bootcamps and universities (in business, social science and medicine contexts). I've contributed time, technical skulls, words and illustrations towards this unique book. I believe in authentic learning and creativity (without LLM reliance) so every letter you read was typed by a human.
 
 LinkedIn: <https://www.linkedin.com/in/dr-pawel-orzechowski/>
 
@@ -120,7 +120,7 @@ Work website: <https://www.ltg.ed.ac.uk>
 ##### Lecturer in Statistics, School of Mathematics, University of Edinburgh 
 ![](/chapters/authors/ozan-evkaya.jpg ){#author-ozan-evkaya fig-alt="Ozan Evkaya Profile" width=30% }
 
-I am a Lecturer in Statistics (FHEA) at the School of Mathematics (SoM), University of Edinburgh, teaching statistics and data science at undergraduate and postgraduate levels. My research focuses on statistical modelling and copula applications. Recently, I have been interested in generative AI and its impacts on teaching. I have been involved as SIG lead in “AI in statistics education” through the Researchers of Statistics Education Network (RoSE) and the Academy Network of AI Leads in the Mathematical Sciences. As editor of and author of this book, I am motivated to share my diverse set of experiences with interested readers. 
+I am a Lecturer in Statistics (FHEA) at the School of Mathematics (SoM), University of Edinburgh, teaching statistics and data science at undergraduate and postgraduate levels. My research focuses on statistical modelling and copula applications. Recently, I have been interested in generative AI and its impacts on teaching. I have been involved as SIG lead in "AI in statistics education" through the Researchers of Statistics Education Network (RoSE) and the Academy Network of AI Leads in the Mathematical Sciences. As editor of and author of this book, I am motivated to share my diverse set of experiences with interested readers. 
 
 Personal website: <https://oevkaya.netlify.app/home>
 
@@ -147,7 +147,7 @@ ORCID: <https://orcid.org/0009-0007-7218-8523>
 ##### Education Co-Lead, Centre for Advanced Research Computing, University College London
 ![](/chapters/authors/samantha-ahern.jpg ){#author-samantha-ahern fig-alt="Samantha J. Ahern Profile" width=30% }
 
-Academically I’m a Computer Scientist, but am an experienced education professional specialising in computing and digital research skills. I focus on the social impacts of technology, including social justice and environmental sustainability. My work in education development is focused on the notion of intentional hospitality, and I enjoy helping colleagues develop as educators. I am a Fellow of AdvanceHE and a Senior Certified Member of ALT. 
+Academically I'm a Computer Scientist, but am an experienced education professional specialising in computing and digital research skills. I focus on the social impacts of technology, including social justice and environmental sustainability. My work in education development is focused on the notion of intentional hospitality, and I enjoy helping colleagues develop as educators. I am a Fellow of AdvanceHE and a Senior Certified Member of ALT. 
 
 Portfolio: <http://reflect.ucl.ac.uk/sahern>
 
@@ -345,7 +345,7 @@ ORCID: <https://orcid.org/0000-0002-0621-1541>
 ### Louise Dash (she/her)
 ##### Associate Professor (Teaching), University College London
 
-I’m a teaching academic with a research background in computational condensed matter physics. I've been leading in computing education as part of undergraduate physics degrees for over 15 years. I'm particularly passionate about embedding coding as a core skill within physics degrees, not just in programming classes but as a fundamental part of the wider curriculum. Our students come from a diversity of backgrounds and prior experience with programming, and my approach to teaching is to encourage experimentation and increase confidence for all students.
+I'm a teaching academic with a research background in computational condensed matter physics. I've been leading in computing education as part of undergraduate physics degrees for over 15 years. I'm particularly passionate about embedding coding as a core skill within physics degrees, not just in programming classes but as a fundamental part of the wider curriculum. Our students come from a diversity of backgrounds and prior experience with programming, and my approach to teaching is to encourage experimentation and increase confidence for all students.
 
 Work website: <https://profiles.ucl.ac.uk/38506-louise-dash/>
 
@@ -440,7 +440,7 @@ ORCID: <https://orcid.org/0000-0002-6906-4219>
 ### Stuart King
 ##### Reader, University of Edinburgh
 
-I am a Reader in applied mathematics, and my research interests span across applied machine learning and mathematical modelling, with applications from health image data through to environmental problems. I have taught programming and data science in various places over the last twenty years, often with an interdisciplinary angle, and often at an introductory level. I’m really interested in introducing more learners to thinking algorithmically and the value that programming can bring as a way of solving problems. 
+I am a Reader in applied mathematics, and my research interests span across applied machine learning and mathematical modelling, with applications from health image data through to environmental problems. I have taught programming and data science in various places over the last twenty years, often with an interdisciplinary angle, and often at an introductory level. I'm really interested in introducing more learners to thinking algorithmically and the value that programming can bring as a way of solving problems. 
 
 LinkedIn: <https://www.linkedin.com/in/stuart-king-a0b64b311>
 
@@ -476,7 +476,7 @@ Github: <https://github.com/PatriLoto>
 ##### Associate Professor, Heriot-Watt University
 ![](/chapters/authors/andrew-maclaren.jpg ){#author-andrew-maclaren fig-alt="Andrew MacLaren Profile" width=30% }
 
-I have a background in the social sciences, having researched leadership and language in my PhD, and my current research interests focus on teamwork and communication. I see teaching as central in an academic’s life and feedback is fundamental to how our students learn. My work on feedback led to my contribution to this book through the Action Feedback Protocol project, which takes a systems approach to delivering feedback. I also co-host a podcast called Teamcraft which offers an academic and a technology leader’s views on teamwork – available on all platforms and Youtube.
+I have a background in the social sciences, having researched leadership and language in my PhD, and my current research interests focus on teamwork and communication. I see teaching as central in an academic's life and feedback is fundamental to how our students learn. My work on feedback led to my contribution to this book through the Action Feedback Protocol project, which takes a systems approach to delivering feedback. I also co-host a podcast called Teamcraft which offers an academic and a technology leader's views on teamwork – available on all platforms and Youtube.
 
 Personal website: <https://sites.google.com/view/theactionfeedbackprotocol/home>
 
@@ -499,7 +499,7 @@ Github: <https://github.com/TiagoAMarques>
 ### Katerina Michalickova (she/her)
 ##### Principal Teaching Fellow, Imperial College London
 
-I’m an educator with a background in high performance computing and bioinformatics. I focus on coordinating and promoting a comprehensive programme in computing and data skills for early-career researchers. I’m always interested in exploring new ways to facilitate learning and in pondering how to adapt our teaching to the LLM generation.
+I'm an educator with a background in high performance computing and bioinformatics. I focus on coordinating and promoting a comprehensive programme in computing and data skills for early-career researchers. I'm always interested in exploring new ways to facilitate learning and in pondering how to adapt our teaching to the LLM generation.
 
 Work website: <https://profiles.imperial.ac.uk/k.michalickova>
 
@@ -648,11 +648,11 @@ LinkedIn: <https://www.linkedin.com/in/gule-saman-389b9ba1/>
 ##### Lecturer, Scotland's Rural College (SRUC)
 ![](/chapters/authors/ignacio-sepulveda.jpg ){#author-ignacio-sepulveda fig-alt="Ignacio Sepulveda Profile" width=30% }
 
-I’m a chemical engineer doing research and teaching in wildlife and conservation management. My mum used to work as a software engineer, so there were computers around in my house for as long as I can remember. I had my first PC running early versions of DOS and Windows, and I used to invite friends over to play games.
+I'm a chemical engineer doing research and teaching in wildlife and conservation management. My mum used to work as a software engineer, so there were computers around in my house for as long as I can remember. I had my first PC running early versions of DOS and Windows, and I used to invite friends over to play games.
 
 Back at University I learned how to use R and different GIS software. I still remember that feeling, almost like early humans discovering fire.
 
-For the past six years, I’ve been lucky enough to teach conservation students how to discover these skills for themselves. That journey led me to contribute my own experience to this book.
+For the past six years, I've been lucky enough to teach conservation students how to discover these skills for themselves. That journey led me to contribute my own experience to this book.
 
 LinkedIn: <https://www.linkedin.com/in/ignacio-s-6bb90841/>
 
