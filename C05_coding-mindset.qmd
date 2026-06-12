@@ -93,14 +93,14 @@ To help learners receive and process both types of feedback, reflective learning
 
 # Example: Template To Reflect on Error Messages
 
-* **Describe the scenario:** I was practising filtering a dataframe using the built-in `iris` dataset in R.
-* **Describe the problem encountered:** the dataframe did not filter.
-* **Which part of the code was the problem?:** `filter(iris, Species == "setosa")`
-* **What was the error message?:** `Error: object 'Species' not found`
-* **How the problem was solved:** I realised I needed to load the `dplyr` package to access the function that I wanted to use; therefore, at the start of the script, I entered `library(dplyr)` to load the function.
-* **What further guidance is needed:** I wasn't sure why it didn't tell me that the function itself wasn't loaded.
-* **Lessons or code snippets to take forward for next time:** Always check to ensure necessary packages are loaded.
-* **Comments from other learners or educators:** `filter()` is also a function in the `stats` package, which is loaded by default. This is why the error message didn't say the `filter()` function could not be found.
+- **Describe the scenario:** I was practising filtering a dataframe using the built-in `iris` dataset in R.
+- **Describe the problem encountered:** the dataframe did not filter.
+- **Which part of the code was the problem?:** `filter(iris, Species == "setosa")`
+- **What was the error message?:** `Error: object 'Species' not found`
+- **How the problem was solved:** I realised I needed to load the `dplyr` package to access the function that I wanted to use; therefore, at the start of the script, I entered `library(dplyr)` to load the function.
+- **What further guidance is needed:** I wasn't sure why it didn't tell me that the function itself wasn't loaded.
+- **Lessons or code snippets to take forward for next time:** Always check to ensure necessary packages are loaded.
+- **Comments from other learners or educators:** `filter()` is also a function in the `stats` package, which is loaded by default. This is why the error message didn't say the `filter()` function could not be found.
 
 :::
 
