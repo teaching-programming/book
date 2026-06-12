@@ -33,8 +33,8 @@ Printed and bound by BookPrintingUK.com
 This project was supported by a grant from the University of Edinburgh's Principal's Teaching Award Scheme (PTAS), which funded a project coordinator role. No authors or contributors were paid for their contribution to this book.
 
 
-![](chapters/images/C00_UoE_logo.png){fig-alt="The University of Edinburgh logo" fig-alight=left width=40%}
+![](chapters/images/C00_UoE_logo.png){fig-alt="The University of Edinburgh logo" fig-alight=left width=30%}
 
-![](chapters/images/C00_EdinburghDiamond_logo.png){fig-alt="Edinburgh Diamond logo" fig-alight=left width=40%}
+![](chapters/images/C00_EdinburghDiamond_logo.png){fig-alt="Edinburgh Diamond logo" fig-alight=left width=30%}
 
 ---
