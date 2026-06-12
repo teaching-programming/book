@@ -92,7 +92,7 @@ ORCID: <https://orcid.org/0000-0001-8403-6286>
 ----
 
 ### Clare Llewellyn-MacRae (she/her)
-##### Senior Lecturer, University of Edinburgh
+##### Senior Lecturer, School of Social and Political Science, University of Edinburgh
 
 ![](/chapters/authors/clare-llewellyn-macrae.jpg ){#author-clare-llewellyn-macrae fig-alt="Clare Llewellyn-MacRae Profile" width=30% }
 
@@ -105,7 +105,7 @@ LinkedIn: <https://www.linkedin.com/in/clare-llewellyn-4749318/>
 ----
 
 ### Beatrice Alex (she/her)
-##### Professor, Heriot-Watt University
+##### Professor, School of Mathematical & Computer Sciences, Heriot-Watt University
 ![](/chapters/authors/beatrice-alex.jpg ){#author-beatrice-alex fig-alt="Beatrice Alex Profile" width=30% }
 
 I'm a professor and researcher in language technology who's spent years extracting meaning out of messy real-world text: clinical notes from hospitals, 19th-century newspapers, historical archives, you name it. My work sits at the meeting point of natural language processing and the humanities, social sciences and healthcare, which means I've taught programming to people who have never looked at a terminal before but are keen to learn. That experience shapes my contribution here: I care about making computational methods feel approachable, especially for learners who don't see themselves as "tech people" but have brilliant questions worth asking with code.
@@ -117,7 +117,7 @@ Work website: <https://www.ltg.ed.ac.uk>
 ----
 
 ### Ozan Evkaya (he/him)
-##### Lecturer in Statistics, University of Edinburgh 
+##### Lecturer in Statistics, School of Mathematics, University of Edinburgh 
 ![](/chapters/authors/ozan-evkaya.jpg ){#author-ozan-evkaya fig-alt="Ozan Evkaya Profile" width=30% }
 
 I am a Lecturer in Statistics (FHEA) at the School of Mathematics (SoM), University of Edinburgh, teaching statistics and data science at undergraduate and postgraduate levels. My research focuses on statistical modelling and copula applications. Recently, I have been interested in generative AI and its impacts on teaching. I have been involved as SIG lead in “AI in statistics education” through the Researchers of Statistics Education Network (RoSE) and the Academy Network of AI Leads in the Mathematical Sciences. As editor of and author of this book, I am motivated to share my diverse set of experiences with interested readers. 
