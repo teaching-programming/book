@@ -47,6 +47,7 @@ format:
         code-block-border-left: true
         repo-url: https://github.com/teaching-programming/book
         toc: true
+        toc-depth: 1
         links-as-notes: true
         fig-width: 2
         fig-height: 2
