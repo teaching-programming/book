@@ -936,7 +936,7 @@ bibliography: references.bib
 ----
 
 
-### Figure 26.3
+### Figure 26.4
 
 **Licence**: CC BY-NC-SA
 
@@ -949,7 +949,7 @@ bibliography: references.bib
 ----
 
 
-### Figure 26.4
+### Figure 26.5
 
 **Licence**: CC BY-NC-SA
 
@@ -962,7 +962,7 @@ bibliography: references.bib
 ----
 
 
-### Figure 26.5
+### Figure 26.6
 
 **Licence**: CC BY-NC-SA
 
@@ -975,7 +975,7 @@ bibliography: references.bib
 ----
 
 
-### Figure 26.6
+### Figure 26.7
 
 **Licence**: CC BY-NC-SA
 
@@ -988,7 +988,7 @@ bibliography: references.bib
 ----
 
 
-### Figure 26.6
+### Figure 26.8
 
 **Licence**: CC BY-NC-SA
 
@@ -1001,7 +1001,7 @@ bibliography: references.bib
 ----
 
 
-### Figure 26.7
+### Figure 26.9
 
 **Licence**: CC BY-NC-SA
 

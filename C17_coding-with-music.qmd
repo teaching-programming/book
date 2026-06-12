@@ -99,7 +99,8 @@ A key concern across all the above projects is that there should be room for mus
 
 ## Accompanying Resources for Educators {#sec-resources}
 
-::: {#fig-resources}
+::: {.content-visible unless-format="docx"}
+:::: {#fig-C17-resources-available}
 
 ```
 .
@@ -136,6 +137,9 @@ A key concern across all the above projects is that there should be room for mus
 ```
 Resources available with this chapter.
 
+::::
+::: {.content-visible when-format="docx"}
+![Resources available with this chapter.](/chapters/images/C17-resources-available.png){#fig-C17-resources-available fig-alt="Resources available with this chapter."}
 :::
 
 Five example resources accompany this chapter, reflecting some of the different approaches to combining aspects of sound, music and programming in the different authors' existing pedagogical work. Each example resource comes with a `readme` that gives a sense of how the resource might be used, who might find it valuable, what prior knowledge the students may need, and what technologies will be needed. Each resource is described briefly below.
@@ -148,11 +152,11 @@ The resource is archived as part of the accompanying resources [@matthew_hamilto
 
 ::: {.content-visible unless-format="docx"}
 
-:::: {#fig-python-piano layout="[45, 55]" layout-valign="bottom"}
+:::: {layout="[45, 55]" layout-valign="bottom"}
 
-![Code](/chapters/images/C17_fig2a_python_piano.png){fig-alt="A section of commented Python code which generates a piano chord."}
+![Code](/chapters/images/C17_fig2a_python_piano.png){#fig-python-piano-a fig-alt="A section of commented Python code which generates a piano chord."}
 
-![MIDI output](/chapters/images/C17_fig2b_python_piano.png){fig-alt="A screenshot of the generated piano chord displayed in MIDI format."}
+![MIDI output](/chapters/images/C17_fig2b_python_piano.png){#fig-python-piano-b fig-alt="A screenshot of the generated piano chord displayed in MIDI format."}
 
 A subsection of the Python piano learning resource as a Python notebook, with a visualisation of the MIDI output on the side.
 
@@ -182,7 +186,7 @@ The resource is archived as part of the accompanying resources [@matthew_hamilto
 
 ### An Educator's Guide to WAVE Format Files {#sec-wav_writing}
 
-Resources are contained within the `guide-to-wave-format/` directory (@fig-resources). The `guide-to-wave-format/wav_files.ipynb` notebook addresses educators directly, laying down the ground work needed to make the portable and technologically accessible audio programming lessons. No prior knowledge is assumed; the resource is intended to guide the reader through the process of WAVE file creation, the ultimate goal being a simple library ripe for customisation and intimately understood for easy dissemination to students.
+Resources are contained within the `guide-to-wave-format/` directory (@fig-C17-resources-available). The `guide-to-wave-format/wav_files.ipynb` notebook addresses educators directly, laying down the ground work needed to make the portable and technologically accessible audio programming lessons. No prior knowledge is assumed; the resource is intended to guide the reader through the process of WAVE file creation, the ultimate goal being a simple library ripe for customisation and intimately understood for easy dissemination to students.
 
 All data can be represented as sound, and the WAVE file is one of the simplest means of data sonification. Most modern operating systems (and many older ones) will support WAVE file playback through a media player, browser, or command line tool. The resource emphasises the use of standard libraries, both to improve portability and to allow students to get started quickly, instead of burdening them with language-specific ancillary concepts that could potentially be a demotivating obstacle to new programmers.
 
