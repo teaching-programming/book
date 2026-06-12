@@ -1,5 +1,5 @@
 ---
-title: "Notebook for Novices? Pros and Cons of Jupyter"
+title: "Notebooks for Novices? Pros and Cons of Jupyter"
 bibliography: references.bib
 author:
   - name: Joseph El Gemayel
