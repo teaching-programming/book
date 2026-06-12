@@ -177,23 +177,23 @@ Some questions you can ask yourself when searching for the right balance between
 
 **To increase the influence of the Independent coding force:** 
 
-* I am stuck, how can I create a mini-reprex[^C40-reprex] for this issue?
+- I am stuck, how can I create a mini-reprex[^C40-reprex] for this issue?
 
 **To increase the influence of the Social coding force**
 
-* Will a collaborator (or marker) understand this code? 
+- Will a collaborator (or marker) understand this code? 
 
 **To increase the influence of the Conscious coding force**
 
-* Where or how will this code base be used? Does it need to be over-engineered and consider all edge cases, or no?
-* Oh, I have a lot of functions, should I maybe separate them out into a separate script and source them in for debugging and maintainability? 
+- Where or how will this code base be used? Does it need to be over-engineered and consider all edge cases, or no?
+- Oh, I have a lot of functions, should I maybe separate them out into a separate script and source them in for debugging and maintainability? 
 :::
 
 More generally, when building up the awareness of the relative dominance of the coding forces and developing the reflexivity skill, it can be useful to take a step back and reflect on the following: 
 
-* What mindset and coding force am I operating in right now?
-* What mindset should I be in right now?
-* How do I even know what mindset I am/should be in right now? What is the primary purpose of the task I am working on? 
+- What mindset and coding force am I operating in right now?
+- What mindset should I be in right now?
+- How do I even know what mindset I am/should be in right now? What is the primary purpose of the task I am working on? 
 
 [^C40-reprex]: What is a reprex? It's a reproducible example, as coined by Romain Francois.
     The goal of a reprex is to package your problematic code in such a way that other people can run it and feel your pain.
@@ -286,9 +286,9 @@ While we will not go into depth here (to save us all the headache for now), it a
 Reading and working with AI generated code also requires some intensity in the social force.
 Guiding questions if using tools such as LLMs when coding are:
 
-* Do you understand the code that has been generated? Do you understand it well enough to debug it, not just what it is doing?
-* Would your colleagues understand this code?
-* If the LLM is a collaborator, how do you weigh its suggestions vs other (likely human) collaborator inputs?
+- Do you understand the code that has been generated? Do you understand it well enough to debug it, not just what it is doing?
+- Would your colleagues understand this code?
+- If the LLM is a collaborator, how do you weigh its suggestions vs other (likely human) collaborator inputs?
 
 Equally, we would suggest that this framework provides a structured answer to ridiculous questions such as *"Why should I learn to code if AI can seemingly generate code for me?"*
 
