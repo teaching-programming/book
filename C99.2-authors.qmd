@@ -58,7 +58,7 @@ Work website: <https://edwebprofiles.ed.ac.uk/profile/kasia-banas>
 ----
 
 ### Umberto Noè (he/him)
-##### Lecturer, University of Edinburgh
+##### Lecturer, School of Philosophy, Psychology and Language Sciences, University of Edinburgh
 ![](/chapters/authors/umberto-noe.jpg ){#author-umberto-noe fig-alt="Umberto Noè Profile" width=30% }
 
 I am a Lecturer in the Department of Psychology at the University of Edinburgh, where I focus on creating inclusive learning environments in statistics and programming. I care about making technical education accessible to all students, regardless of background. With over a decade of experience, I champion innovative methods like peer programming, i.e. the extension of pair programming to larger groups, to foster engagement, belonging, and collaboration. As editor of and author on this book, I want to share my expertise to support educators and future students.
