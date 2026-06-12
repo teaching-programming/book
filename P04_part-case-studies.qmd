@@ -1,5 +1,5 @@
 ---
-title: "⮞ Part IV --- Case Studies"
+title: "Part IV --- Case Studies"
 bibliography: references.bib
 author:
   - name: Pawel Orzechowski
