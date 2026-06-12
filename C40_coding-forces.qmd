@@ -248,7 +248,7 @@ As a learner acquiring a new programming language, you can think of your progres
 Once an understanding of the independent, conscious, and social pieces are acquired, you realize they are complimentary elements that fit together and form a globe-like mindset-space.
 If you think of each force as a direction of travel within that globe, a new action is unlocked: spinning the globe and navigating the full 3D space! 
 
-![Extending the 2D radar plot into a third dimension lets us imagine a continous volume, through wich we can navigate by changing the influence of the coding forces, until we find the region that corresponds to the best balance between the forces.](/chapters/images/C40_nutshell.png){#fig-nutshell width=50%}
+![Extending the 2D radar plot into a third dimension lets us imagine a continous volume, through which we can navigate by changing the influence of the coding forces, until we find the region that corresponds to the best balance between the forces.](/chapters/images/C40_nutshell.png){#fig-nutshell width=50%}
 
 In this metaphor, meta-awareness and reflection is the glue that fits the puzzle pieces together forming the globe and allowing you to take on the hands of God role and move the globe. This meta-awareness is only possible to reach once you have knowledge of all 3 forces. It is required to then apply a fitting intensity and direct forces that feels appropriate for the problem at hand. 
 
