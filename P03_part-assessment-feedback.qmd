@@ -1,5 +1,5 @@
 ---
-title: "⮞ Part III --- Assessment and Feedback: Principles and Practice"
+title: "Part III --- Assessment and Feedback: Principles and Practice"
 bibliography: references.bib
 author:
   - name: Umberto Noè

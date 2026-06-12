@@ -1,5 +1,5 @@
 ---
-title: "⮞ Part I --- Theories and Applications of Teaching Programming"
+title: "Part I --- Theories and Applications of Teaching Programming"
 bibliography: references.bib
 author:
   - name: Brittany Blankinship
@@ -35,9 +35,9 @@ The third theme acknowledges that being a good learner necessarily means thinkin
 
 Finally, as programming educators, you may have an idea of what concepts and mindsets you would like to teach your students. But how do you actually implement them in a pragmatic, engaging, and effective way? In the fourth and final theme of Part I, our authors tackle core pedagogical issues from the perspective of teaching programming: 
 
-- How do we get total beginners learning a tool they never expected to use in the first place? 
-- How do you teach multiple complex concepts at the same time?  
-- How do you build confidence and create an inclusive and welcoming atmosphere for your students?  
+- How do we get total beginners learning a tool they never expected to use in the first place?
+- How do you teach multiple complex concepts at the same time?
+- How do you build confidence and create an inclusive and welcoming atmosphere for your students?
 
 Some of the concepts and ideas presented in Part I may be familiar to you already, but we hope that you will gain either a framework to describe what you are already doing or a new way to approach teaching.  
 

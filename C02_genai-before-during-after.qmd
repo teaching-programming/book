@@ -292,11 +292,11 @@ Using GenAI, you can create a "Feedback Persona" simply by "teaching" a standard
 >
 > Marking Notes:
 >
-> • [Note 1: e.g., Great use of Python libraries, very efficient.]
+> - [Note 1: e.g., Great use of Python libraries, very efficient.]
 >
-> • [Note 2: e.g., Missed the requirement for error handling on line 42.]
+> - [Note 2: e.g., Missed the requirement for error handling on line 42.]
 >
-> • [Note 3: e.g., Next time, try to modularize the functions.]
+> - [Note 3: e.g., Next time, try to modularize the functions.]
 > …
 >
 > Ensure the tone remains [Insert Tone, e.g., Professional and encouraging].

@@ -175,13 +175,13 @@ We wrote this text based on the experience and/or recommendations from [The Carp
 
 If you wish to explore more hands-on examples of translation projects, you can have a look at the following:
 
-* [Multilingual Data Science](https://datasciencebydesign.org/blog/multilingual-data-science) is a blog by Yanina Bellini Saibene, where she explores her own experience in creating multilingual data science teaching material.
-* The [documentation for The Turing Way translation workflow](https://github.com/TWTranslation/translation_workflow).
-* The [documentation for the internationalisation of The Carpentries lessons](https://github.com/joelnitta/carp-i18n-guide).
-* An example of [guidance for translators](https://github.com/ukrainian-carpentries/translation-guide) from the Ukrainian Carpentries subcommunity.
-* A [multi-lingual glossary](https://github.com/carpentries/glosario) for computing and data science terms with a GitHub-based contributing workflow.
-* The [rOpenSci Localisation and Translation Guidelines](https://translationguide.ropensci.org/) explain why and how they localize and translate their resources.
-* The [guidelines for translations of Programming Historian material](https://programminghistorian.org/en/translator-guidelines).
+- [Multilingual Data Science](https://datasciencebydesign.org/blog/multilingual-data-science) is a blog by Yanina Bellini Saibene, where she explores her own experience in creating multilingual data science teaching material.
+- The [documentation for The Turing Way translation workflow](https://github.com/TWTranslation/translation_workflow).
+- The [documentation for the internationalisation of The Carpentries lessons](https://github.com/joelnitta/carp-i18n-guide).
+- An example of [guidance for translators](https://github.com/ukrainian-carpentries/translation-guide) from the Ukrainian Carpentries subcommunity.
+- A [multi-lingual glossary](https://github.com/carpentries/glosario) for computing and data science terms with a GitHub-based contributing workflow.
+- The [rOpenSci Localisation and Translation Guidelines](https://translationguide.ropensci.org/) explain why and how they localize and translate their resources.
+- The [guidelines for translations of Programming Historian material](https://programminghistorian.org/en/translator-guidelines).
 
 Through translation initiatives, we can help lower these barriers by expanding access to knowledge and participation. By creating technical and social infrastructure for multilingual resources and recognising translation as a meaningful form of contribution, we can foster more inclusive and diverse communities and enable more people to engage, contribute, and shape open source projects. 
 
