@@ -47,7 +47,7 @@ Some of the concepts and ideas presented in Part I may be familiar to you alread
 
 An introduction to pair programming in the form of a (written) podcast interview where you can read or listen. This chapter is a joyful and pragmatic approach to answering some of the most frequently asked questions around introducing pair programming in the classroom. 
 
-This chapter is for you if you are interested in pair programming as a teaching practice or you would like ideas around how to explain it to your students or colleagues.  
+This chapter is for you if you are interested in pair programming as a teaching practice or you would like ideas for how to explain it to your students or colleagues.  
 
 ### Lessons From Pair Programming Across Disciplines [@TeachProgAcross_C36]
 
@@ -74,7 +74,7 @@ This chapter is for you if you teach any programming language and want your stud
 
 ### Empowering Students to Develop a Coding Mindset [@TeachProgAcross_C05]
 
-The most important skillset you can learn when coding is not actually the syntax of the specific programming language, but rather the “coding mindset”. This chapter outlines practical suggestions and approaches for ensuring your teaching goes beyond the syntax and focuses on developing the students’ mindset to allow them to effectively code in other languages too in the future.  
+The most important skillset you can learn when coding is not the syntax of the specific programming language, but rather the “coding mindset”. This chapter outlines practical suggestions and approaches for ensuring your teaching goes beyond syntax and focuses on developing students’ mindset to allow them to effectively code in other languages in the future.  
 
 This chapter is for you if you are embarking on teaching your first programming course and want to develop the course beyond the syntax you might be teaching. Experienced programmers will also find the chapter interesting as a source for reflection on their own “coding mindset” and how it has developed. 
 
