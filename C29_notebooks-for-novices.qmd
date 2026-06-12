@@ -67,9 +67,9 @@ The cell-based workflow encourages experimentation, where learners modify input 
 
 Programming often requires teamwork. Jupyter Notebook supports collaboration seamlessly through platforms such as Google Colab. Students can share a link to a Jupyter Notebook, allowing others to edit or comment in real time, similar to working on a shared online document. For example, a group project for an AI/ML course can happen entirely within Colab, during which:
 
-* one student writes the data pre-processing code,  
-* another tests different models,  
-* a third documents the process using Markdown cells.
+- one student writes the data pre-processing code,  
+- another tests different models,  
+- a third documents the process using Markdown cells.
 
 [Google Colaboratory (Colab)] (https://colab.research.google.com/) supports the development of Jupyter Notebooks within a cloud platform, such that software does not need to be installed on a local PC. Collaboration becomes natural, and the focus remains on the problem being solved rather than on technical barriers.
 
@@ -168,8 +168,8 @@ Students should be encouraged to use Markdown once they have learnt enough Pytho
 
 One of the most common difficulties beginners encounter in Jupyter Notebook is the confusion caused by non-linear execution. Since cells can be run in any order, variables may hold unexpected values, or code may appear to work only because of hidden state carried over from earlier runs. The Jupyter Notebook Kernel menu options can be used to address this. For example:
 
-* "Restart Kernel and Clear Outputs of All Cells" clears the Jupyter Notebook's memory, ensuring no hidden variables remain, and removes all cell outputs for a fresh start,  
-* "Restart Kernel and Run All Cells" forces the Jupyter Notebook to execute in a clean, linear order, making sure all cells run correctly with no issues.
+- "Restart Kernel and Clear Outputs of All Cells" clears the Jupyter Notebook's memory, ensuring no hidden variables remain, and removes all cell outputs for a fresh start,  
+- "Restart Kernel and Run All Cells" forces the Jupyter Notebook to execute in a clean, linear order, making sure all cells run correctly with no issues.
 
 Encouraging students to restart and rerun the Jupyter Notebook periodically helps them avoid memory-related errors, reinforces the importance of execution order, and encourages good habits for reproducible coding.
 
