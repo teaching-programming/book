@@ -162,15 +162,11 @@ A subsection of the Python piano learning resource as a Python notebook, with a 
 
 ::: {.content-visible when-format="docx"}
 
-:::: {#fig-python-piano}
+The following shows a subsection of the Python piano learning resource as a Python notebook, followed by a visualisation of the MIDI output.
 
-![Code](/chapters/images/C17_fig2a_python_piano.png){fig-alt="A section of commented Python code which generates a piano chord."}
+![Code](/chapters/images/C17_fig2a_python_piano.png){#fig-python-piano-a fig-alt="A section of commented Python code which generates a piano chord."}
 
-![MIDI output](/chapters/images/C17_fig2b_python_piano.png){fig-alt="A screenshot of the generated piano chord displayed in MIDI format."}
-
-A subsection of the Python piano learning resource as a Python notebook, with a visualisation of the MIDI output on the side.
-
-::::
+![MIDI output](/chapters/images/C17_fig2b_python_piano.png){#fig-python-piano-b fig-alt="A screenshot of the generated piano chord displayed in MIDI format."}
 
 :::
 
@@ -208,17 +204,15 @@ The exercises rely on using the Python module `wav_library.py` described in @sec
 
 ### Gestural Instruments in the Browser
 
-This resource demonstrates the creation of a web-based musical instrument that can be controlled via the sensors on a smart phone. This kind of activity would require students to have some existing experience of the coding language, so would fit well as an exercise or assignment as part of a wider course on music, art, design or programming. The coding is primarily done in [Max](https://cycling74.com/products/max), a proprietary visual programming environment aimed at musicians, as shown in @fig-rnbo (left). [RNBO](https://cycling74.com/products/rnbo) --- an extension of Max --- allows the visual code to be exported as JavaScript, and will auto-generate a simple HTML page that embeds the project.
+This resource demonstrates the creation of a web-based musical instrument that can be controlled via the sensors on a smart phone. This kind of activity would require students to have some existing experience of the coding language, so would fit well as an exercise or assignment as part of a wider course on music, art, design or programming. The coding is primarily done in [Max](https://cycling74.com/products/max), a proprietary visual programming environment aimed at musicians, as shown in @fig-rnbo-a. [RNBO](https://cycling74.com/products/rnbo) --- an extension of Max --- allows the visual code to be exported as JavaScript, and will auto-generate a simple HTML page that embeds the project.
 
 ::: {.content-visible unless-format="docx"}
 
-:::: {#fig-rnbo layout-ncol=2 layout-valign="bottom"}
+:::: {layout-ncol=2 layout-valign="bottom"}
 
-![Max](/chapters/images/C17_fig5a_max.png){fig-alt="A screenshot of a Max patch with multiple linked modules."}
+![Max, a visual programming language is used to create the instrument. RNBO, an extension of MAX can be used to export patches to external targets such as C++, VSTs (Virtual Studio Technology), JavaScript or Raspberry Pi.](/chapters/images/C17_fig5a_max.png){#fig-rnbo-a fig-alt="A screenshot of a Max patch with multiple linked modules."}
 
-![Exported web app](/chapters/images/C17_fig5b_web_seq_demo.png){fig-alt="A screenshot of a web app with sliders and controls, shown on a mobile device."}
-
-Max (left), a visual programming language is used to create the instrument. RNBO, an extension of MAX can be used to export patches to external targets such as C++, VSTs (Virtual Studio Technology), JavaScript or Raspberry Pi. The exported web app (right) can be accessed on a mobile web browser. The program will then map the relevant motion sensors to the assigned parameters.
+![Web app exported from Max, which can be accessed on a mobile web browser. The program will then map the relevant motion sensors to the assigned parameters.](/chapters/images/C17_fig5b_web_seq_demo.png){#fig-rnbo-b fig-alt="A screenshot of a web app with sliders and controls, shown on a mobile device."}
 
 ::::
 
@@ -226,20 +220,14 @@ Max (left), a visual programming language is used to create the instrument. RNBO
 
 ::: {.content-visible when-format="docx"}
 
-:::: {#fig-rnbo}
+![Max, a visual programming language is used to create the instrument. RNBO, an extension of MAX can be used to export patches to external targets such as C++, VSTs (Virtual Studio Technology), JavaScript or Raspberry Pi.](/chapters/images/C17_fig5a_max.png){#fig-rnbo-a fig-alt="A screenshot of a Max patch with multiple linked modules."}
 
-![Max](/chapters/images/C17_fig5a_max.png){fig-alt="A screenshot of a Max patch with multiple linked modules."}
-
-![Exported web app](/chapters/images/C17_fig5b_web_seq_demo.png){fig-alt="A screenshot of a web app with sliders and controls, shown on a mobile device."}
-
-Max (left), a visual programming language is used to create the instrument. RNBO, an extension of MAX can be used to export patches to external targets such as C++, VSTs (Virtual Studio Technology), JavaScript or Raspberry Pi. The exported web app (right) can be accessed on a mobile web browser. The program will then map the relevant motion sensors to the assigned parameters.
-
-::::
+![Web app exported from Max, which can be accessed on a mobile web browser. The program will then map the relevant motion sensors to the assigned parameters.](/chapters/images/C17_fig5b_web_seq_demo.png){#fig-rnbo-b fig-alt="A screenshot of a web app with sliders and controls, shown on a mobile device."}
 
 :::
 
 
-One of the potential benefits of working in this way is that although students start from a visual programming environment, their software can be made available to anyone with a browser (see @fig-rnbo (right)), and they begin to get an exposure to JavaScript and web development. As this resource shows, small tweaks to this JavaScript can be added to refine the user interface, and add extra functionality such as smart phone sensor control.
+One of the potential benefits of working in this way is that although students start from a visual programming environment, their software can be made available to anyone with a browser (see @fig-rnbo-b), and they begin to get an exposure to JavaScript and web development. As this resource shows, small tweaks to this JavaScript can be added to refine the user interface, and add extra functionality such as smart phone sensor control.
 
 The example provided here is a responsive synthesiser hosted on the web that, when accessed from a smartphone, utilises the motion sensors to control specific parameters of the synthesiser. Once the code has been exported, it can be further developed through the generated JavaScript/HTML. In this example, a simple sequencer for playing notes and visual feedback is added using the [p5.js](https://p5js.org/) library. Motion data from a smartphone's orientation sensors is mapped in real time so that gestures like tilting or twisting can be used to control the sound. The resource is provided as a worked example that can be adapted for musical instruments, live installations, audience-participation performances, or experimental audio-visual tools. The resource is archived as part of the accompanying resources [@matthew_hamilton_2026], and at the time of writing can be accessed [here](https://github.com/mhamilt/teaching-programming-music-with-code/tree/main/resources/gestural-instruments).
 

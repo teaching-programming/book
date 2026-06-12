@@ -52,7 +52,7 @@ There are many (we have yet to quantify an exhaustive list) ways in which a read
 
 ## A Note on Vocabulary 
 
-We would not be a community of academics working on a project together if we did not do the very academic thing of defining our terms. At some higher education institutions, the terms “course” and “module” are used to refer to the overall degree program of study and individual organized learning opportunities bearing credit, while others use “program” and “course”. Similarly, you may notice “student” and “learner” are both used. As editors, we have left it to the authors’ discretion as this is most representative of how the terms are used across our community.  
+We would not be a community of academics working on a project together if we did not do the very academic thing of defining our terms. At some higher education institutions, the terms "course" and "module" are used to refer to the overall degree program of study and individual organized learning opportunities bearing credit, while others use "program" and "course". Similarly, you may notice "student" and "learner" are both used. As editors, we have left it to the authors' discretion as this is most representative of how the terms are used across our community.  
 
 We hope you find something interesting to you as a human and perhaps even useful if you are an educator in the chapters that follow. Happy reading!  
 

@@ -91,10 +91,10 @@ By helping students see that their final choice of a solution might be informed 
 
 ## Balancing AI Use
 
-While AI can be a powerful tool to enhance learning and productivity, it’s important for you to use it as a supplement rather than a replacement for your own efforts. Encouraging a balanced approach can help maintain and even enhance your critical thinking skills. For example, you can use AI to check your work or, perhaps, generate ideas, but make sure to engage deeply with the material and develop your own understanding and solutions. If you need any further convincing, ask yourself if you have ever felt “imposter syndrome”. Then, ask if the confidence with which AI speaks actually increases your own confidence in your own knowledge...
+While AI can be a powerful tool to enhance learning and productivity, it's important for you to use it as a supplement rather than a replacement for your own efforts. Encouraging a balanced approach can help maintain and even enhance your critical thinking skills. For example, you can use AI to check your work or, perhaps, generate ideas, but make sure to engage deeply with the material and develop your own understanding and solutions. If you need any further convincing, ask yourself if you have ever felt "imposter syndrome". Then, ask if the confidence with which AI speaks actually increases your own confidence in your own knowledge...
 
 AI tools like Copilot certainly offer significant benefits, but what we need to impress upon students is that using these tools has a real effect on development of vital academic skills.
-Even using for the widely “accepted” use cases, e.g. “idea generation”, is problematic.
+Even using for the widely "accepted" use cases, e.g. "idea generation", is problematic.
 If ideas-generation or direction-finding are delegated to AI, students risk becoming invisible in their own work, their work risks disappearing from the wider literature landscape, and, ultimately, they end up doing the bidding of our robot overlords.
 
 ::: {.content-visible when-format="html" unless-format="epub"}

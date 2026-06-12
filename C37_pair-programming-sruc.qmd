@@ -1,5 +1,5 @@
 ---
-title: "Case Study From Scotland’s Rural College: The Wild(Life) Side of Pair Programming"
+title: "Case Study From Scotland's Rural College: The Wild(Life) Side of Pair Programming"
 bibliography: references.bib
 author:
   - name: Ignacio Sepúlveda
@@ -36,8 +36,8 @@ Over the next couple of years, I added a few workshops on advanced Excel and Wor
 
 ## A Leap of Faith
 
-Over the past two years, I’ve been experimenting with new teaching techniques for my second-year students, having them share roles while tackling Excel data analysis or collaborating on map creation in QGIS. Looking back now, I realise I was using pair programming [@TeachProgAcross_C36] (two students working together on one computer) all along, unaware of its formal framework or established structure. It had emerged from my imagination during those late Sunday night planning sessions, born out of necessity and intuition.
-That initial gut feeling pushed me to learn more about pair programming, and I was ready to apply it. I wanted to show my students that programming isn’t just for coders; it’s for them too, demonstrating that when we work together, share our thinking, and build on each other's strengths, even the most intimidating technical challenges become accessible.
+Over the past two years, I've been experimenting with new teaching techniques for my second-year students, having them share roles while tackling Excel data analysis or collaborating on map creation in QGIS. Looking back now, I realise I was using pair programming [@TeachProgAcross_C36] (two students working together on one computer) all along, unaware of its formal framework or established structure. It had emerged from my imagination during those late Sunday night planning sessions, born out of necessity and intuition.
+That initial gut feeling pushed me to learn more about pair programming, and I was ready to apply it. I wanted to show my students that programming isn't just for coders; it's for them too, demonstrating that when we work together, share our thinking, and build on each other's strengths, even the most intimidating technical challenges become accessible.
 
 ### The Challenge Begins
 
@@ -53,7 +53,7 @@ We'll work in pairs. One student will be the **driver**, controlling the main PC
 
 This time, they had to download a real dataset from the MetOffice: climate data from Scotland in a strange-looking format (.txt). It involved conversion, structuring, and cleaning all at once. I could see them struggling with this. Some groups were trying different options, while others were looking for answers on websites or asking me questions. I could see how different strategies arose, but most importantly, each pair was using their different skill sets to solve this first part. Some of them almost gave up, while others were thriving and moving into the analysis stage.
 
-Fifteen minutes passed and the roles changed. There were some chuckles to hide the despair, but overall, I saw optimism and the spirit of cooperation. Most of them went through the first section and started their analysis: sorting and filtering columns, organising data, using formulas. I tried to explain that, although basic, the use of those formulas, especially the newly introduced “IF” and “AND/OR”, are fundamental for any programmer, and that these short formulas are actually lines of code. I could see some sparks in their eyes.
+Fifteen minutes passed and the roles changed. There were some chuckles to hide the despair, but overall, I saw optimism and the spirit of cooperation. Most of them went through the first section and started their analysis: sorting and filtering columns, organising data, using formulas. I tried to explain that, although basic, the use of those formulas, especially the newly introduced "IF" and "AND/OR", are fundamental for any programmer, and that these short formulas are actually lines of code. I could see some sparks in their eyes.
 
 ![Digital clock on the whiteboard showing the 15 minutes intervals.](/chapters/images/C37_pair-programming-sruc-clock.jpg){#fig-c37-clock fig-alt="Times counting down from 15 minutes displayed on a projector in a classroom."}
 
@@ -65,11 +65,11 @@ A few more 15-minute rounds cycle by. Most groups progress steadily, completing 
 
 ### Feelings! All the feelings!
 
-Time’s up! That was it for today’s challenge.
-I could notice some tiredness mixed with happiness. Some students were proud of completing all the instructions, while others were still a bit confused. I was clear that this had been a real challenge, and these are never easy. Still, I told them how impressed I was. To be honest, I wasn’t expecting this level of courage and commitment with a new activity like this one, which requires cooperation, trust, and agility like no other.
+Time's up! That was it for today's challenge.
+I could notice some tiredness mixed with happiness. Some students were proud of completing all the instructions, while others were still a bit confused. I was clear that this had been a real challenge, and these are never easy. Still, I told them how impressed I was. To be honest, I wasn't expecting this level of courage and commitment with a new activity like this one, which requires cooperation, trust, and agility like no other.
 
 Just as the last group prepares to leave, one student turns back. "Ignacio, could you beat this challenge yourself? Why don't you time it and show us next week?"
-I wasn’t expecting that, but I couldn’t resist. “Challenge accepted,” I said, laughing. “I’ll record my attempt and see if I can beat my personal record for the next Excel championship.”
+I wasn't expecting that, but I couldn't resist. "Challenge accepted," I said, laughing. "I'll record my attempt and see if I can beat my personal record for the next Excel championship."
 
 Walking back to my desk, I realised how much this small experiment has transformed the atmosphere of the class. Pair programming converted what could have been a routine IT lesson into a shared experience, a moment of collective struggle and triumph.
 More importantly, perhaps, they've learned that the programming world isn't locked behind some exclusive door. And just as their favourite glen, rivers, mountains, and woodlands; It's theirs to explore.
