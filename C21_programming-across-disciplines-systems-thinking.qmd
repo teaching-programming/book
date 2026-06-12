@@ -54,11 +54,11 @@ Learning to code is associated with improved problem solving skills in some doma
 
 In learning to code, students encounter computational thinking [@C15_r1]. Computational thinking involves taking a problem and developing solutions we can use a computer to execute. Although different models of computational thinking consist of different steps, @c21_DemystifyingComputationalThinking describes it as a process which includes
 
-* Problem reformulation, where we reframe a problem into a solvable and familiar one
-* Recursion, where we incrementally construct a solution based on preceding information
-* Decomposition, where we break a large problem down into more manageable sub-problems
-* Abstraction, where we model the core aspects of a complex problem or system
-* Systematic testing, where we take purposeful steps to derive solutions
+- Problem reformulation, where we reframe a problem into a solvable and familiar one
+- Recursion, where we incrementally construct a solution based on preceding information
+- Decomposition, where we break a large problem down into more manageable sub-problems
+- Abstraction, where we model the core aspects of a complex problem or system
+- Systematic testing, where we take purposeful steps to derive solutions
 
 Computational thinking has applications beyond computing. It is seen as fundamental for analysing and solving all sorts of problems, because we can transfer techniques we use to make our solutions efficient for computers to other disciplines[^c21_NuancedPoint] [@c21_ComputationalThinkingWhatAndWhy; @c21_ComputationalThinkingTransferrable]. Programming is a tool to teach computational thinking, but computational thinking can be applied to other problems. Even if one disagrees with the premise that computational thinking provides skills which are directly transferrable to other disciplines, learning to code is a good form of mental exercise and teaches us to solve problems [@c21_ComputationalThinkingTransfersUnproven; @c21_CodingProblemSolvingSkills].
 
@@ -82,19 +82,19 @@ By our definition of a system, computer programs are also systems. They are a co
 
 The obvious elements of a simple computer program include, among other things,
 
-* its inputs,
-* its outputs,
-* its application code,
-* the internal state it maintains and any stored data.
+- its inputs,
+- its outputs,
+- its application code,
+- the internal state it maintains and any stored data.
 
 Computer programs also feature many intangible elements, including
 
-* accessibility for users of assistive technologies and users with disabilities,
-* its availability and uptime,
-* its maintainability, and the ease with which changes can be made,
-* its correctness, where a given input produces an expected output. This can be assured with manual and automated system testing, and in some cases, can be formally verified,
-* its stability, in its ability to handle large volumes of input and remain stable if those limits are exceeded,
-* the aesthetics of its source code, often enforced by code review and code linters.
+- accessibility for users of assistive technologies and users with disabilities,
+- its availability and uptime,
+- its maintainability, and the ease with which changes can be made,
+- its correctness, where a given input produces an expected output. This can be assured with manual and automated system testing, and in some cases, can be formally verified,
+- its stability, in its ability to handle large volumes of input and remain stable if those limits are exceeded,
+- the aesthetics of its source code, often enforced by code review and code linters.
 
 These elements are inherently interconnected and dependent on each other. The application code transforms the input, considering and possibly updating its internal state in the process. Data can be stored for retrieval at another time, and can form a state which affects future outputs of the same program. The application code directly affects the correctness and stability of the program. A computer program produces output to fulfil its purpose, and that output can even be the input of another computer program. The general purpose of computer programs is to compute, to process some form of input into some form of output. The purpose of a particular piece of software can be deduced by how it processes data, looking at its inputs, outputs, and side effects. This makes a computer program a system which, in turn, runs on a computer system. It's a system within a system!
 
