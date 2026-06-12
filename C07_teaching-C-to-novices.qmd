@@ -118,13 +118,13 @@ For our physics and computing science cohorts, there are therefore different rea
 
 **Physics students:**
 
-* To develop mental models of low-level interfaces, important for those students who will develop experimental skills with electronic data taking, or hardware design; for example, the design of particle detectors may involve firmware development and FPGA programming.
-* To give experience in performance programming in a language in which many core scientific libraries are still written.
+- To develop mental models of low-level interfaces, important for those students who will develop experimental skills with electronic data taking, or hardware design; for example, the design of particle detectors may involve firmware development and FPGA programming.
+- To give experience in performance programming in a language in which many core scientific libraries are still written.
 
 **Computing students:**
 
-* To develop mental models extending their knowledge of machine behaviour from assembly courses studied in first year, and feeding into low-level topics covered at honours level, such as operating system and compiler design.
-* To appreciate that the Python runtime abstracts away many aspects of program behaviour, including dynamic memory management.
+- To develop mental models extending their knowledge of machine behaviour from assembly courses studied in first year, and feeding into low-level topics covered at honours level, such as operating system and compiler design.
+- To appreciate that the Python runtime abstracts away many aspects of program behaviour, including dynamic memory management.
 
 As such, appropriate mechanisms for developing those mental models may differ between the two cohorts. We explore two potential 'bridge' languages to scaffold the mental models for students before their introduction to C: one already existing for computing science students, and one proposed for physicists that may even be able to supplant C for many of these students. 
 
