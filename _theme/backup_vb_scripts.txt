@@ -1,0 +1,345 @@
+
+'add space before any paragraph right after a quote (so that squiggly like looks good)
+Sub AddSpaceAfterQuote()
+    Dim i As Long
+    Dim para As Paragraph
+    Dim nextPara As Paragraph
+    For i = 1 To ActiveDocument.Paragraphs.Count - 1
+        Set para = ActiveDocument.Paragraphs(i)
+        If para.Style = "Quote" Then
+            Set nextPara = ActiveDocument.Paragraphs(i + 1)
+            ' Add space before next paragraph
+            With nextPara.Format
+                .SpaceBefore = 12   ' points (adjust as needed)
+            End With
+        End If
+    Next i
+End Sub
+
+Function IsInArray(value As String, arr As Variant) As Boolean
+    Dim item As Variant
+    For Each item In arr
+        If item = value Then
+            IsInArray = True
+            Exit Function
+        End If
+    Next item
+    IsInArray = False
+End Function
+
+Sub ConvertPandocFigureTables()
+    'images with titles are rendered as one-cell tables. let's untable them
+    Dim i As Long
+    Dim tbl As Table
+
+    For i = ActiveDocument.Tables.Count To 1 Step -1 'backwards, for stability
+        Set tbl = ActiveDocument.Tables(i)
+        If tbl.Rows.Count = 1 _
+           And tbl.Columns.Count = 1 _
+           And tbl.Range.InlineShapes.Count > 0 Then
+            tbl.ConvertToText _
+                Separator:=wdSeparateByParagraphs
+        End If
+    Next i
+
+End Sub
+
+
+Sub ResizeSelectedImages()
+
+    Dim para As Paragraph
+    Dim tbl As Table
+    Dim ils As InlineShape
+    Dim shp As Shape
+    Dim insertRange As Range
+    Dim txt As String
+    Dim NameIndex, SizeIndex As Integer
+    Dim sizeColumn As Double
+    Dim sizeCm As Double
+    Dim prevPara As Paragraph
+    NameIndex = 0
+    SizeIndex = 1
+    Dim targetList As Variant
+    Dim targetImageData As Variant
+    'here put image names which should be stretched beyond one column and by how much
+    imageTransformations = Array( _
+        Array("Figure 2.1*", 1.5), Array("Figure 2.2*", 1.5), Array("Figure 2.3*", 1.5), Array("Figure 2.4*", 1.5), Array("Figure 7.4*", 1.5), Array("Figure 9.1*", 1.5), Array("Figure 10.1*", 1.5), _
+        Array("Figure 12.1*", 1.5), Array("Figure 12.2*", 1.5), Array("Figure 12.3*", 1.5), Array("Figure 12.4*", 1.5), Array("Figure 13.1*", 1.5), Array("Figure 13.2*", 1.5), _
+        Array("Figure 13.3*", 1.9), Array("Figure 13.4*", 1.5), Array("Figure 13.5*", 1.5), Array("Figure 13.6*", 1.5), Array("Figure 14.1*", 1.5), Array("Figure 14.2*", 1.5), _
+        Array("Figure 14.3*", 1.5), Array("Figure 14.4*", 1.9), Array("Figure 12.3*", 1.5), Array("Figure 12.4*", 1.5), Array("Figure 14.5*", 1.5), Array("Figure 15.1*", 1.9), _
+        Array("Figure 15.2*", 1.9), Array("Figure 18.1*", 1.9), Array("Figure 18.2*", 1.9), Array("Figure 19.1*", 1.9), Array("Figure 19.2*", 1.9), Array("Figure 20.1*", 1.5), _
+        Array("Figure 20.2*", 1.5), Array("Figure 20.3*", 1.5), Array("Figure 20.4*", 1.5), Array("Figure 20.5*", 1.5), Array("Figure 20.6*", 1.9), Array("Figure 22.1*", 1.5), _
+        Array("Figure 22.2*", 1.5), Array("Figure 22.3*", 1.5), Array("Figure 22.4*", 1.9), Array("Figure 22.6*", 1.9), Array("Figure 25.1*", 1.5), Array("Figure 26.1*", 1.9), _
+        Array("Figure 26.4*", 1.5), Array("Figure 26.5*", 1.5), Array("Figure 26.7*", 1.9), Array("Figure 28.1*", 1.5), Array("Figure 28.3*", 1.9), Array("Figure 28.5*", 1.5), _
+        Array("Figure 28.7*", 1.5), Array("Figure 28.8*", 1.9), Array("Figure 28.9*", 1.9), Array("Figure 30.1*", 1.9), Array("Figure 34.1*", 1.5), Array("Figure 34.2*", 1.5), _
+        Array("Figure 34.3*", 1.5), Array("Figure 34.4*", 1.5), Array("Figure 34.1*", 1.5), Array("Figure 36.1*", 1.5), Array("Figure 36.2*", 1.9), Array("Figure 36.3*", 1.9), _
+        Array("Figure 36.4*", 1.9), Array("Figure 36.5*", 1.5), Array("Figure 36.6*", 1.5), Array("Figure 36.7*", 1.9), Array("Figure 36.9*", 1.9), Array("Figure 37.1*", 1.5), _
+        Array("Figure 37.3*", 1.5), Array("Figure 39.1*", 1.5), Array("Figure 40.1*", 1.9), Array("Figure 40.2*", 1.9) _
+    )
+
+
+    For Each para In ActiveDocument.Paragraphs
+        txt = CleanWordText(para.Range.Text)
+            If txt Like "Figure *" Then
+                    targetImageData = Array("Any Image", 1)
+                    For whichImage = LBound(imageTransformations) To UBound(imageTransformations)
+                        If txt Like imageTransformations(whichImage)(NameIndex) Then
+                              targetImageData = imageTransformations(whichImage)  'it's one of those special images to transform!
+                        End If
+                    Next whichImage
+
+                Set prevPara = para.Range.Previous(Unit:=wdParagraph, Count:=1).Paragraphs(1)
+                'Check for image
+                If prevPara.Range.InlineShapes.Count > 0 Then
+                    Set ils = prevPara.Range.InlineShapes(1)
+                    Set theImageToChange = ils.ConvertToShape
+                    theImageToChange.LockAspectRatio = msoTrue
+                    sizeColumn = 5.56
+                    
+
+                    
+                    If targetImageData(SizeIndex) <> 1 Then
+                        sizeCm = sizeColumn * targetImageData(SizeIndex)
+                        theImageToChange.WrapFormat.Type = wdWrapTight
+                    Else
+                        sizeCm = sizeColumn
+                        theImageToChange.WrapFormat.Type = wdWrapInline
+                    End If
+                    theImageToChange.Width = CentimetersToPoints(sizeCm)
+                    
+                    If prevPara.Range.ListFormat.ListType = wdListBullet Then
+                         prevPara.Range.ListFormat.RemoveNumbers
+                    End If
+                    
+                End If
+            End If
+
+    Next para
+
+End Sub
+
+Function CleanWordText(txt As String) As String
+        txt = Replace(txt, Chr(13), "")
+        txt = Replace(txt, Chr(7), "")
+        txt = Replace(txt, Chr(160), " ") 'weird space
+        txt = Replace(txt, Chr(110), " ") 'weird space
+        txt = Replace(txt, Chr(190), " ") 'weird space
+        txt = Replace(txt, Chr(202), " ") 'weird space
+        txt = Replace(txt, vbTab, " ")
+        CleanWordText = txt
+End Function
+
+
+
+Sub SetListIndentation()
+
+    Dim para As Paragraph
+    Dim lf As ListFormat
+    Dim lvl As ListLevel
+
+    For Each para In ActiveDocument.Paragraphs
+
+        Set lf = para.Range.ListFormat
+
+        ' Check if paragraph is part of a list
+        If lf.ListType <> wdListNoNumbering Then
+
+            Set lvl = lf.ListTemplate.ListLevels(lf.ListLevelNumber)
+            ' Bullet/number position
+            lvl.NumberPosition = CentimetersToPoints(0)
+            ' Text position
+            lvl.TextPosition = CentimetersToPoints(0.3)
+            ' Optional: tab follows bullet
+            lvl.TabPosition = CentimetersToPoints(0.3)
+        End If
+    Next para
+End Sub
+
+Sub FixImagesBeingLists()
+
+    Dim para As Paragraph
+    Dim lf As ListFormat
+    Dim lvl As ListLevel
+
+    For Each para In ActiveDocument.Paragraphs
+
+        Set lf = para.Range.ListFormat
+
+        ' Check if paragraph is part of a list
+        If lf.ListType <> wdListNoNumbering Then
+
+            'also, if this is a single-image list (some bug in quarto exporting does this) make it not a list
+            
+             ' range
+            Set listParas = para.Range.ListFormat.List.Range
+            If listParas.Paragraphs.Count = 1 Then    'one paragraph
+                If para.Range.InlineShapes.Count > 0 Or para.Range.ShapeRange.Count > 0 Then
+                    ' Remove bullets/numbering
+                    para.Range.ListFormat.RemoveNumbers NumberType:=wdNumberParagraph
+                End If
+            End If
+        End If
+    Next para
+End Sub
+
+Sub ReplaceStyle(StyleOld As String, StyleNew As String)
+    Dim para As Paragraph
+    Dim wasBulletpoint As String
+    Dim ListTemplateToUse As ListTemplate
+    For Each para In ActiveDocument.Paragraphs
+        If para.Style = StyleOld Then
+        'keep numbering style
+                Set ListTemplateToUse = para.Range.ListFormat.ListTemplate
+                para.Style = StyleNew
+                If para.Range.ListFormat.ListType <> wdListNoNumbering Then
+                 'para.Range.ListFormat.ApplyListTemplate ListTemplate:=ListTemplateToUse
+                End If
+        End If
+    Next para
+End Sub
+
+Sub StyleNamesCleanup()
+    ReplaceStyle "Block Text", "Quote"
+    ReplaceStyle "Compact", "Compact" 'reapply compact (bulletpoints within callout)
+End Sub
+
+Sub ShowMessage(message As String)
+    Application.StatusBar = message
+    DoEvents
+End Sub
+
+Sub ModifyCaptionStyle()
+    Dim textStyle As Style
+    Set textStyle = ActiveDocument.Styles("Image Caption")
+
+    With textStyle.Font
+        .Size = 9
+        .Italic = True
+        .Bold = False
+        .Color = RGB(64, 64, 64)
+    End With
+
+    With textStyle.ParagraphFormat
+        .SpaceBefore = 6
+        .SpaceAfter = 6
+    End With
+
+End Sub
+
+Sub ChangeFirstH2AfterH1()
+    Dim para As Paragraph
+    Dim foundH1 As Boolean
+    Dim changed As Boolean
+
+    foundH1 = False
+    changedH2 = False
+
+    'step over headings, and after each H1 change first H2 to heave less spacing on top
+    For Each para In ActiveDocument.Paragraphs
+
+        If IsInArray(para.Style, Array("AuthorName", "AuthorAffiliation", "AuthorEmail")) Then
+        '(para.Style = ActiveDocument.Styles("AuthorEmail")) Or (para.Style = ActiveDocument.Styles("AuthorAffiliation")) Then
+            foundH1 = True
+            changedH2 = False
+        'End If
+        ' After first Heading 1, look for first Heading 2. add column break.
+        ElseIf foundH1 And Not changedH2 Then
+            If para.Style = ActiveDocument.Styles("Heading 2") Then
+                para.Range.Style = ActiveDocument.Styles("Heading2-Top")
+            End If
+            Set rng = para.Range.Duplicate
+            rng.Collapse wdCollapseStart
+            rng.InsertBreak Type:=wdColumnBreak
+            
+            
+            changedH2 = True
+            foundH1 = False
+
+        End If
+    Next para
+    ShowMessage "First Heading 2 after Heading 1 updated."
+
+End Sub
+
+Sub authorsChangeFirstH3AfterAuthorsH1()
+    Dim para As Paragraph
+    Dim foundH1 As Boolean
+    Dim changed As Boolean
+
+    foundH1 = False
+    keepChanging = False
+
+    'step over headings, and after each H1 change first H2 to heave less spacing on top
+    For Each para In ActiveDocument.Paragraphs
+
+        If IsInArray(para.Style, Array("Heading 1")) And para.Range.Text Like "Authors*" Then
+            foundH1 = True
+            keepChanging = True
+        ' After first Heading 1, look for first Heading 2. add column break.
+        ElseIf foundH1 And IsInArray(para.Style, Array("Heading 1")) Then
+            keepChanging = False
+        ElseIf keepChanging And para.Style = ActiveDocument.Styles("Heading 3") Then
+            Set rng = para.Range.Duplicate
+            rng.Collapse wdCollapseStart
+            rng.InsertBreak Type:=wdColumnBreak
+        End If
+    Next para
+    ShowMessage "First Heading 2 after Heading 1 updated."
+
+End Sub
+
+Sub partIntrosChangeFirstH2AfterPartH1()
+    Dim para As Paragraph
+    Dim foundH1 As Boolean
+    Dim changed As Boolean
+
+    foundH1 = False
+    keepChanging = False
+
+    'step over headings, and after each H1 change first H2 to heave less spacing on top
+    For Each para In ActiveDocument.Paragraphs
+
+        If IsInArray(para.Style, Array("Heading 1")) And para.Range.Text Like "Part*" Then
+            foundH1 = True
+            keepChanging = True
+
+        ElseIf foundH1 And IsInArray(para.Style, Array("Heading 1")) Then
+            keepChanging = False
+        ElseIf keepChanging And para.Style = ActiveDocument.Styles("Heading 2") Then
+            para.Range.Style = ActiveDocument.Styles("Heading2-Top")
+            Set rng = para.Range.Duplicate
+            rng.Collapse wdCollapseStart
+            rng.InsertBreak Type:=wdColumnBreak
+        End If
+    Next para
+    ShowMessage "First Heading 2 after Heading 1 updated."
+
+End Sub
+
+
+Sub AllBookFilters()
+    ShowMessage "Indenting..."
+    SetListIndentation
+    
+    ShowMessage "ChangeFirstH2AfterH1..."
+    ChangeFirstH2AfterH1
+    authorsChangeFirstH3AfterAuthorsH1
+    partIntrosChangeFirstH2AfterPartH1
+    
+    ShowMessage "Styles..."
+    StyleNamesCleanup
+    ModifyCaptionStyle
+    
+    ShowMessage "Image Sizes..."
+    ConvertPandocFigureTables
+    ResizeSelectedImages
+    
+    ShowMessage "Space after quotes..."
+    AddSpaceAfterQuote
+    
+    ShowMessage "FixImagesBeingLists.."
+    FixImagesBeingLists
+    
+    ShowMessage "DONE..."
+End Sub
+
