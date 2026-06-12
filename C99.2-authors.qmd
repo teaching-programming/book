@@ -432,8 +432,17 @@ ORCID: <https://orcid.org/0000-0002-6906-4219>
 
 ----
 
-### William P. Kay
+### William Kay (he/him)
 ##### Lecturer in Statistics, Cardiff University | Prifysgol Caerdydd
+![](/chapters/authors/will-kay.jpg ){#author-will-kay fig-alt="Will Kay Profile" width=30% }
+
+I trained as an ecologist and, for most of my time as a student, never imagined I would become a Lecturer in Statistics - I was intimidated by both statistics and programming and avoided them whenever possible! Everything changed during my PhD, when my supervisors encouraged me to learn R. What began as a necessity quickly became a passion. I realised that programming was not just a reproducible way to run analyses, but a powerful tool for understanding statistics and tackling the messy, complex data that ecologists work with every day.
+
+Today, I lead statistics teaching across all levels in the School of Biosciences at Cardiff University, and lead the School's digital education strategy. My scholarship focuses on statistics pedagogy; helping students build confidence in statistics and programming through mitigating anxiety, and developing statistics curricula. I am inspired by Steve Jobs' observation that “coding is a mirror to your thought process - it teaches you how to think” and remind my students that learning statistics and programming requires only three things: patience, persistence, and faith.
+
+ORCID: <https://orcid.org/0000-0001-6855-7153>
+
+Work website: <https://profiles.cardiff.ac.uk/staff/kayw>
 
 ----
 
