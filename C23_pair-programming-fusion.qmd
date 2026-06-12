@@ -138,22 +138,22 @@ After two intensive days in the trenches of fusion teaching, we emerged with bat
 
 **Before You Begin:**
 
-* **Rehearse every scenario.** Practice switching between online and on-site interactions until it becomes second nature. We literally role-played "How do I help a mixed-mode pair when one student is confused?"  
-* **Audio is everything.** Invest in quality headsets and microphones for all teaching staff and test for feedback loops before the course begins. Poor audio will sink your fusion dreams faster than any pedagogical mistake.  
-* **Designate an online advocate.** Assign one person the specific job of watching for raised hands, chat messages and overlooked online participants. Without this, online students become invisible.
+- **Rehearse every scenario.** Practice switching between online and on-site interactions until it becomes second nature. We literally role-played "How do I help a mixed-mode pair when one student is confused?"  
+- **Audio is everything.** Invest in quality headsets and microphones for all teaching staff and test for feedback loops before the course begins. Poor audio will sink your fusion dreams faster than any pedagogical mistake.  
+- **Designate an online advocate.** Assign one person the specific job of watching for raised hands, chat messages and overlooked online participants. Without this, online students become invisible.
 
 **During the Course:**
 
-* **Start mixed, then adapt.** Begin with mixed-mode pairs when energy is highest, but don't be afraid to switch to same-mode pairs if fatigue sets in. Flexibility is not failure; it is responsive teaching.  
-* **Feedback must be quick and visual.** Our slider system took 30 seconds to complete and showed results immediately. Long surveys kill momentum.  
-* **Normalise the weird moments.** When your voice appears "ghost-like" in someone's headphones, acknowledge it with humour. Students need permission to find fusion teaching delightfully strange.
+- **Start mixed, then adapt.** Begin with mixed-mode pairs when energy is highest, but don't be afraid to switch to same-mode pairs if fatigue sets in. Flexibility is not failure; it is responsive teaching.  
+- **Feedback must be quick and visual.** Our slider system took 30 seconds to complete and showed results immediately. Long surveys kill momentum.  
+- **Normalise the weird moments.** When your voice appears "ghost-like" in someone's headphones, acknowledge it with humour. Students need permission to find fusion teaching delightfully strange.
 
 **Technical Essentials:**
 
-* **Font size matters.** What looks readable to you will be too small for online partners watching code.  
-* **Avoid unnecessary scrolling.** Every rapid scroll or sudden page jump becomes disorienting for online partners trying to follow along. Move deliberately through content.  
-* **Camera angles are crucial.** Online students want to see both your face and the classroom; position cameras accordingly.  
-* **Have a backup space ready.** Whether it is a smaller room, or yes, even a "broom cupboard," you'll need overflow space for mixed-mode pairs.
+- **Font size matters.** What looks readable to you will be too small for online partners watching code.  
+- **Avoid unnecessary scrolling.** Every rapid scroll or sudden page jump becomes disorienting for online partners trying to follow along. Move deliberately through content.  
+- **Camera angles are crucial.** Online students want to see both your face and the classroom; position cameras accordingly.  
+- **Have a backup space ready.** Whether it is a smaller room, or yes, even a "broom cupboard," you'll need overflow space for mixed-mode pairs.
 
 The hard truth is that some days, same-mode pairs will work better than mixed-mode ones. Accept this not as defeat, but as responsive teaching. The goal is not perfect fusion; it is creating a cohort that learns together, regardless of location.
 
