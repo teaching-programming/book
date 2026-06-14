@@ -71,7 +71,7 @@ Programming often requires teamwork. Jupyter Notebook supports collaboration sea
 - another tests different models,  
 - a third documents the process using Markdown cells.
 
-[Google Colaboratory (Colab)] (https://colab.research.google.com/) supports the development of Jupyter Notebooks within a cloud platform, such that software does not need to be installed on a local PC. Collaboration becomes natural, and the focus remains on the problem being solved rather than on technical barriers.
+[Google Colaboratory (Colab)](https://colab.research.google.com/) supports the development of Jupyter Notebooks within a cloud platform, such that software does not need to be installed on a local PC. Collaboration becomes natural, and the focus remains on the problem being solved rather than on technical barriers.
 
 ### Using Libraries With Ease
 

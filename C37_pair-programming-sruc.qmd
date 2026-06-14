@@ -39,7 +39,7 @@ Over the next couple of years, I added a few workshops on advanced Excel and Wor
 Over the past two years, I've been experimenting with new teaching techniques for my second-year students, having them share roles while tackling Excel data analysis or collaborating on map creation in QGIS. Looking back now, I realise I was using pair programming [@TeachProgAcross_C36] (two students working together on one computer) all along, unaware of its formal framework or established structure. It had emerged from my imagination during those late Sunday night planning sessions, born out of necessity and intuition.
 That initial gut feeling pushed me to learn more about pair programming, and I was ready to apply it. I wanted to show my students that programming isn't just for coders; it's for them too, demonstrating that when we work together, share our thinking, and build on each other's strengths, even the most intimidating technical challenges become accessible.
 
-### The Challenge Begins
+## The Challenge Begins
 
 My first-year students had already a gentle introduction to Excel, mostly through a few easy-to-follow examples that they then replicated in their own computers. A good start? Yes. Enough for their current needs? Not quite. That was when pair programming emerged as a good idea to try - for the first time in this module.
 
@@ -63,7 +63,7 @@ A few more 15-minute rounds cycle by. Most groups progress steadily, completing 
 
 ![Group of first year students in the middle of their pair programming challenge.](/chapters/images/C37_pair-programming-sruc-class.jpg){#fig-c37-class fig-alt="Number of pairs of students on their driver and co-pilot roles ready to start the challenge."}
 
-### Feelings! All the feelings!
+## Feelings! All the feelings!
 
 Time's up! That was it for today's challenge.
 I could notice some tiredness mixed with happiness. Some students were proud of completing all the instructions, while others were still a bit confused. I was clear that this had been a real challenge, and these are never easy. Still, I told them how impressed I was. To be honest, I wasn't expecting this level of courage and commitment with a new activity like this one, which requires cooperation, trust, and agility like no other.

@@ -3,7 +3,7 @@ title: "Authors' Biographies"
 bibliography: references.bib
 ---
 
-## Book Editors
+## Book Editors & Chapter Authors
 
 ----
 
@@ -140,7 +140,7 @@ ORCID: <https://orcid.org/0009-0007-7218-8523>
 
 ----
 
-## All Chapter Authors
+## Chapter Authors
 
 
 ### Samantha J. Ahern (she/her)
@@ -432,7 +432,7 @@ ORCID: <https://orcid.org/0000-0002-6906-4219>
 
 ----
 
-### William Kay (he/him)
+### William P. Kay (he/him)
 ##### Lecturer in Statistics, Cardiff University | Prifysgol Caerdydd
 ![](/chapters/authors/will-kay.jpg ){#author-will-kay fig-alt="Will Kay Profile" width=30% }
 

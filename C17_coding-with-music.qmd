@@ -197,7 +197,7 @@ The intention is not to be prescriptive, but rather show how malleable the WAVE 
 The central lesson is provided in an IPython (Jupyter) notebook, but the resource in `guide-to-wave-format/wav_library` provides companion code in C, C++, Java and Rust to reinforce the basic elements needed to solve the problem. The resource is archived as part of the accompanying resources [@matthew_hamilton_2026], and at the time of writing can be accessed [here](https://github.com/mhamilt/teaching-programming-music-with-code/tree/main/resources/guide-to-wave-format).
 
 
-### Introducing Functions by Blaying With Audio Files {#sec-functions}
+### Introducing Functions by Playing With Audio Files {#sec-functions}
 
 This resource is aimed at novice Python programmers, with some familiarity with variables, lists, and loops. It motivates the use of user-defined functions and introduces their syntax, using fade-ins and fade-outs on audio files as examples. Throughout the activity, students are encouraged to iterate on their function structure and choice of input arguments and return values, to help them take ownership of their program design, to better understand how and why these choices are made, and to internalise that one-shot perfect code structure isn't necessarily achievable (or even a goal that one should aim for).
 

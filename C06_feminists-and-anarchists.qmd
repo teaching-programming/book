@@ -19,7 +19,6 @@ author:
     email: f.queiroz@leeds.ac.uk
     affiliations: School of Design, University of Leeds
   - name: Maeve Murphy Quinlan
-    email: TODO
     affiliations: Research Computing, University of Leeds
 :::
 
