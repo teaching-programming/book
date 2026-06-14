@@ -178,7 +178,7 @@ It is good practice to design your rubric in a step-by-step fashion. Here is a q
 
 :::
 
-#### Reflection: Refining the Tubric
+#### Reflection: Refining the Rubric
 
 While an LLM is excellent at generating "scaffolded" text, it often relies on generic adjectives like "good" or "very good." Review the output to ensure that a "70+" in your rubric specifically describes what a top-tier student in your field looks like. Additionally, you may not use terms like "good" and opt to use percentages or grade boundaries instead. Once refined, the LLM can also reformat this rubric into a standalone document or a table ready to be pasted into your Virtual Learning Environment (VLE).
 
