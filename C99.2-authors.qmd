@@ -432,7 +432,7 @@ ORCID: <https://orcid.org/0000-0002-6906-4219>
 
 ----
 
-### William Kay (he/him)
+### William P. Kay (he/him)
 ##### Lecturer in Statistics, Cardiff University | Prifysgol Caerdydd
 ![](/chapters/authors/will-kay.jpg ){#author-will-kay fig-alt="Will Kay Profile" width=30% }
 
