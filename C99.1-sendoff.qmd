@@ -1,5 +1,5 @@
 ---
-title: "Send-Off"
+title: "Closing Remarks for This Book"
 author:
   - name: Brittany Blankinship
     email: b.blankinship@ed.ac.uk
