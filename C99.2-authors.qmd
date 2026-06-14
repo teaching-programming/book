@@ -3,7 +3,7 @@ title: "Authors' Biographies"
 bibliography: references.bib
 ---
 
-## Book Editors
+## Book Editors & Chapter Authors
 
 ----
 
@@ -140,7 +140,7 @@ ORCID: <https://orcid.org/0009-0007-7218-8523>
 
 ----
 
-## All Chapter Authors
+## Chapter Authors
 
 
 ### Samantha J. Ahern (she/her)
