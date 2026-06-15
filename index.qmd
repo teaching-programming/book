@@ -1,3 +1,12 @@
 # Teaching Programming Across Disciplines {.unnumbered .unlisted}
 
-<!-- TODO: here will be the web landing page -->
+![](/chapters/images/C00_book_logo.jpg){#abook_logo fig-alt="Graphic with words Teaching Programming Across Disciplines" width=100% }
+
+
+<!-- ## a collection of articles on teaching coding kindly, openly, and together -->
+
+## Co-written by 75 authors.
+
+## Edited by Brittany Blankinship, Pawel Orzechowski, Charlotte Desvages, Kasia Banas, Umberto Noè, Chris Oldnall, Serveh Sharifi Far, Clare Llewellyn-MacRae, Beatrice Alex, Ozan Evkaya and Franziska McManus.
+
+## Project coordinated by Franziska McManus.
