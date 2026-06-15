@@ -47,6 +47,11 @@ input[type="range"] {
     margin-left: 0.5em;
 }
 
+.sidebar-item.sidebar-item-section {
+    font-size: large;
+    font-weight: 600;
+    line-height: normal;
+}
 
 /* Drop-down box */
 select {
