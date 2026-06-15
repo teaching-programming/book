@@ -1,3 +1,5 @@
 # Teaching Programming Across Disciplines {.unnumbered .unlisted}
 
+## a collection of articles on teaching coding kindly, openly, and together
+
 <!-- TODO: here will be the web landing page -->
