@@ -85,7 +85,7 @@ book:
         - C00.2_this_book.qmd
         - C00.3_all_parts_introduction.qmd
         
-        - part: "Part I — Theories and Applications of Teaching Programming"
+        - part: "=== Part I — Theories and Applications of Teaching Programming"
         - text: "Introduction to Part I"
           file: P01_part-theories-applications.qmd
         - part: "Theme — Pair Programming: What? How? Why?"
@@ -126,7 +126,7 @@ book:
         - C03_online-teaching-reflections.qmd
         - C43-data-vis.qmd
           
-        - part: "Part III — Assessment and Feedback: Principles and Practice"
+        - part: "=== Part III — Assessment and Feedback: Principles and Practice"
         - text: "Introduction to Part III"
           file: P03_part-assessment-feedback.qmd
         - part: "Theme — Frameworks for Assessment and Feedback"
@@ -137,7 +137,7 @@ book:
         - C02_genai-before-during-after.qmd
         - C20_automatic-marking.qmd
         
-        - part: "Part IV — Case Studies"
+        - part: "=== Part IV — Case Studies"
         - text: "Introduction to Part IV"
           file: P04_part-case-studies.qmd
         - part: "Theme — Building Learning Communities and Resources"
