@@ -23,6 +23,8 @@ format:
         site-url: https://teaching-programming.github.io/book
         link-external-newwindow: true
 
+        csl: apa-6th-edition.csl
+
         toc: true
         include-before-body:
             file: _theme/accessibility.html
