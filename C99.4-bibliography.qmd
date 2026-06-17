@@ -6,4 +6,6 @@ nocite: |
 
 # Bibliography {.unnumbered}
 
-::: {#refs} :::
+::: {#refs}
+
+:::
