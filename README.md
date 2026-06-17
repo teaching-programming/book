@@ -1,3 +1,11 @@
+!["Graphic with words Teaching Programming Across Disciplines"](/chapters/images/C00_book_logo.jpg)
+
+# Teaching Programming Across Disciplines - Resources for Readers
+
+[Read complete book online here](https://teaching-programming.github.io/book/)
+
+[Find out more about the organisers](https://pairprogramming.ed.ac.uk/)
+
 # Teaching Programming Across Disciplines - Guidance for chapter authors
 
 [Video instructions are available](https://media.ed.ac.uk/media//1_7nk68kt4) for chapter authors on how to submit your reviewed chapter to the GitHub repository. The PDF slides can be downloaded from the video attachments. The main steps are also summarised below.
