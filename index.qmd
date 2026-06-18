@@ -21,7 +21,7 @@
 
 [Welcome to the Book](C00.3_all_parts_introduction.qmd)
 
-### === Part I - Theories and Applications of Teaching Programming
+### Part I - Theories and Applications of Teaching Programming
 
 [Introduction to Part I](P01_part-theories-applications.qmd)
 
@@ -63,7 +63,7 @@
 
 [Sequential vs.&nbsp;Simultaneous: Approaches to Learning Programming and Statistics](C11_sequential-vs-simultaneous.qmd)
 
-### === Part II - Teaching Programming in Context: Design and Practice
+### Part II - Teaching Programming in Context: Design and Practice
 
 [Introduction to Part II](P02_part-design-practice.qmd)
 
@@ -95,7 +95,7 @@
 
 [Seeing Before Coding, Doodling Before Doing: How Teaching Data Visualisation Transforms the Way Students Think](C43-data-vis.qmd)
 
-### === Part III - Assessment and Feedback: Principles and Practice
+### Part III - Assessment and Feedback: Principles and Practice
 
 [Introduction to Part III](P03_part-assessment-feedback.qmd)
 
@@ -113,7 +113,7 @@
 
 [Using Automated Marking in Programming Courses To Enhance Learning](C20_automatic-marking.qmd)
 
-### === Part IV - Case Studies
+### Part IV - Case Studies
 
 [Introduction to Part IV](P04_part-case-studies.qmd)
 
@@ -129,7 +129,7 @@
 
 [Lost in Translation: Complexities and Good Practices of Translating Coding-Based Teaching Materials Across Multiple Human Languages](C24_lost-in-translation.qmd)
 
-### === Authors and Images
+### Authors and Images
 
 [Closing Remarks for This Book](C99.1-sendoff.qmd)
 
