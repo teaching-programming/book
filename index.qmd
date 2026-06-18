@@ -10,3 +10,136 @@
 ## Edited by Brittany Blankinship, Pawel Orzechowski, Charlotte Desvages, Kasia Banas, Umberto Noè, Chris Oldnall, Serveh Sharifi Far, Clare Llewellyn-MacRae, Beatrice Alex, Ozan Evkaya and Franziska McManus.
 
 ## Project coordinated by Franziska McManus.
+
+## Table of Contents:
+
+[Copyright](C00.0_book_copyright_page.qmd)
+
+[Dedication](C00.1_dedication.qmd)
+
+[Who Are We and How Did We Get Here?](C00.2_this_book.qmd)
+
+[Welcome to the Book](C00.3_all_parts_introduction.qmd)
+
+### === Part I - Theories and Applications of Teaching Programming
+
+[Introduction to Part I](P01_part-theories-applications.qmd)
+
+#### Theme — Pair Programming: What? How? Why?
+
+[Where Do I Even Start With Pair Programming in My Classroom? A Conversation With Seasoned Practitioners](C12_pair-programming-overview.qmd)
+
+[Structured Group Work With Assigned Asymmetrical Roles and Switching: Lessons From Pair Programming Across Disciplines](C36_pair-programming-across-disciplines.qmd)
+
+[Pair Programming in Practice: A PhD Tutor's Reflections](C41_pair-programming-tutor-reflections.qmd)
+
+#### Theme - Building Healthy Programming Habits
+
+[Brain Book Buddy Boss Break: A Practical Debugging Framework for Learners](C09_debugging-beyond-the-debugger.qmd)
+
+[A Guide on Empowering Students to Develop a Coding Mindset](C05_coding-mindset.qmd)
+
+[It Depends: How to Develop Judgement in Programming](C40_coding-forces.qmd)
+
+#### Theme - Programming in a World of Generative AI
+
+[Hype and The Need for Responsible Compute](C08_hype-need-responsible-compute.qmd)
+
+[An Optimistic Outlook on Teaching, Learning and Assessment for Coding With the Emergence of Generative AI](C10_teaching-with-genai.qmd)
+
+[AI, Voice, and Style in Programming Education](C44_ai-voice-and-style-in-programming-education.qmd)
+
+[How Teaching Programming Across Disciplines Can Instil Systems Thinking](C21_programming-across-disciplines-systems-thinking.qmd)
+
+#### Theme - Teaching Programming Courses: What Worked for Us
+
+[Computer Says No: Reducing Technical Barriers to Help Novice Programmers](C04_computer-says-no.qmd)
+
+[Practices To Foster Inclusion and Accessibility in Programming Teaching](C14_foster-inclusion-and-accessibility.qmd)
+
+[Overcoming Coding Anxiety: Lowering the Stakes and Making It Fun](C33_coding-anxiety.qmd)
+
+[3 Stars and 1 Wish: Small and Frequent Student Reflections Promote a Sense of Wonder and a Community of Vulnerability](C34_three-stars-one-wish.qmd)
+
+[Sequential vs.&nbsp;Simultaneous: Approaches to Learning Programming and Statistics](C11_sequential-vs-simultaneous.qmd)
+
+### === Part II - Teaching Programming in Context: Design and Practice
+
+[Introduction to Part II](P02_part-design-practice.qmd)
+
+#### Theme - Drawing on Group Dynamics for Programming Education
+
+[Peer Programming in Action: Pair Programming in Larger Groups](C16_peer-programming.qmd)
+
+[Leveraging the Heterogeneity: Teaching Computing Skills to a Multidisciplinary Cohort With a Variable Skill Level](C31_leveraging-the-heterogeneity.qmd)
+
+[Learning Together Across Modes: Online and On-Site Pair Programming in a Fusion Course](C23_pair-programming-fusion.qmd)
+
+#### Theme - Teaching Programming to Novices: Python and Beyond
+
+[A Practical Guide to Teaching Python as a Computational Tool in an Introductory Data Analysis Course](C01_teaching-python.qmd)
+
+[Notebooks for Novices? Pros and Cons of Jupyter](C29_notebooks-for-novices.qmd)
+
+[Bridging Languages: Teaching C to Python Novices](C07_teaching-C-to-novices.qmd)
+
+#### Theme - Thinking Outside the Box: Designing Engaging Learning Experiences
+
+[Dungeon Crawlers and Anarchists: Co-Designing Programming Teaching Experiences](C06_feminists-and-anarchists.qmd)
+
+[Removing Barriers by Programming Without Computers](C15_programming-without-computers.qmd)
+
+[Practical Approaches to Using Sound and Music in Programming Pedagogy](C17_coding-with-music.qmd)
+
+[Ways to Teach Online: Lessons Learned Through Experience](C03_online-teaching-reflections.qmd)
+
+[Seeing Before Coding, Doodling Before Doing: How Teaching Data Visualisation Transforms the Way Students Think](C43-data-vis.qmd)
+
+### === Part III - Assessment and Feedback: Principles and Practice
+
+[Introduction to Part III](P03_part-assessment-feedback.qmd)
+
+#### Theme - Frameworks for Assessment and Feedback
+
+[Developing a Skills-Based Framework for Assessments in Programming Courses](C38_skills-based-assessment.qmd)
+
+[Managing the Rubik's Cube of Assessment: The Action Feedback Protocol](C35_action-feedback-plan.qmd)
+
+#### Theme - Practical Methods for Assessing Programming
+
+[Assessment and Marking in an Introductory Programming Course for Physics Students](C26.1-assessment-case-study.qmd)
+
+[Generative AI in Assessments: Before, During, and After](C02_genai-before-during-after.qmd)
+
+[Using Automated Marking in Programming Courses To Enhance Learning](C20_automatic-marking.qmd)
+
+### === Part IV - Case Studies
+
+[Introduction to Part IV](P04_part-case-studies.qmd)
+
+#### Theme - Building Learning Communities and Resources
+
+[A Gentle Introduction to Coding: Narratives From a Programming Summer School for Social Sciences and Humanities](C39_gentle-introduction-summer-school.qmd)
+
+[Case Study From Scotland's Rural College: The Wild(Life) Side of Pair Programming](C37_pair-programming-sruc.qmd)
+
+[Interdisciplinary by Design: The Centre for Data, Culture, &amp; Society Training Programme](C22_interdisciplinary-by-design.qmd)
+
+[Changing Civil Engineering Students' Mindset Toward Programming](C32_civil-engineering.qmd)
+
+[Lost in Translation: Complexities and Good Practices of Translating Coding-Based Teaching Materials Across Multiple Human Languages](C24_lost-in-translation.qmd)
+
+### === Authors and Images
+
+[Closing Remarks for This Book](C99.1-sendoff.qmd)
+
+[Authors' Biographies](C99.2-authors.qmd)
+
+[Image Register](C99.3-images.qmd)
+
+[Bibliography](C99.4-bibliography.qmd)
+
+        
+
+
+        

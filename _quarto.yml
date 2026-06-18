@@ -26,7 +26,7 @@ format:
         csl: apa-6th-edition.csl
 
         toc: true
-        toc-location: body # TODO NOT WORKING, puts TOC at start of each chapter
+        # toc-location: body # TODO NOT WORKING, puts TOC at start of each chapter
         include-before-body:
             file: _theme/accessibility.html
         grid:
