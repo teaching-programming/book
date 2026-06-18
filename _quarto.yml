@@ -75,10 +75,16 @@ book:
         style: "docked"
         search: true
         collapse-level: 1
+
+        tools:
+          - icon: download
+            menu:
+              - text: Download PDF
+                href: TODO_ADD_PDF_URL_FROM_ED
+
     margin-header: _theme/_accessibility_sidebar.qmd
 
     output-file: teaching_programming_across_disciplines
-    downloads: [pdf, epub]
 
     chapters:
         - index.qmd
