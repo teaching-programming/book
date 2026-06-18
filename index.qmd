@@ -3,7 +3,7 @@
 ![](/chapters/images/C00_book_logo.jpg){#abook_logo fig-alt="Graphic with words Teaching Programming Across Disciplines" width=100% }
 
 
-<!-- ## a collection of articles on teaching coding kindly, openly, and together -->
+### a collection of articles on teaching coding kindly, openly, and together
 
 ## Co-written by 75 authors.
 
@@ -11,6 +11,7 @@
 
 ## Project coordinated by Franziska McManus.
 
+::: {.content-visible unless-format="docx" }
 ## Table of Contents:
 
 [Copyright](C00.0_book_copyright_page.qmd)
@@ -139,7 +140,4 @@
 
 [Bibliography](C99.4-bibliography.qmd)
 
-        
-
-
-        
+:::
