@@ -2,7 +2,6 @@
 format:
   html:
     execute: false
-    code-fold: true
     code-line-numbers: false
 ---
 
