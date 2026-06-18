@@ -1,3 +1,10 @@
+---
+format:
+  html:
+    execute: false
+    code-line-numbers: false
+---
+
 # Copyright {.unnumbered .unlisted}
 
 First published in 2026 by the University of Edinburgh
@@ -18,6 +25,23 @@ Further details about Creative Commons licenses are available at <https://creati
 _Attribution should include the following information:_  
 Blankinship, B., Orzechowski, P., Desvages, C., Banas, K., Noè, U., Oldnall, C.A., Sharifi Far, S., Llewellyn-MacRae, C., Alex, B., Evkaya, O., and McManus, F. 2026. Teaching Programming Across Disciplines.  
 Edinburgh: University of Edinburgh. <https://doi.org/10.2218/ED.9781836450795>
+
+::: {.content-visible when-format="html"}
+
+BibTeX citation:
+
+```default
+@book{TPAD2026,
+  title     = {{Teaching Programming Across Disciplines}},
+  editor    = {Blankinship, Brittany and Orzechowski, Pawel and Desvages, Charlotte and Banas, Kasia and No\`{e}, Umberto and Oldnall, Christopher A. and Sharifi Far, Serveh and Llewellyn-MacRae, Clare and Alex, Beatrice and Evkaya, Ozan and McManus, Franziska},
+  year      = 2026,
+  publisher = {{Edinburgh: University of Edinburgh}},
+  doi       = {10.2218/ED.9781836450795},
+  isbn      = {978-1-83645-079-5}
+}
+```
+
+:::
 
 Any third-party material in this book is not covered by the book's Creative Commons license. Details of the copyright ownership and permitted use of third-party material is given in the image credit lines. If you would like to reuse any third-party material not covered by the book's Creative Commons license, you will need to obtain permission directly from the copyright owner. 
 
