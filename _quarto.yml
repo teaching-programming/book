@@ -26,6 +26,7 @@ format:
         csl: apa-6th-edition.csl
 
         toc: true
+        toc-location: body # TODO NOT WORKING, puts TOC at start of each chapter
         include-before-body:
             file: _theme/accessibility.html
         grid:
@@ -75,6 +76,7 @@ book:
         style: "docked"
         search: true
         collapse-level: 1
+        pinned: true
     margin-header: _theme/_accessibility_sidebar.qmd
 
     output-file: teaching_programming_across_disciplines
