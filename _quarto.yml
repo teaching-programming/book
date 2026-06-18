@@ -62,7 +62,6 @@ format:
         margin-top: 0cm
         margin-bottom: 0cm
         fig-align: center 
-        toc-depth: 1
         filters:
           - _theme/filters/callout-for-docx.lua
           - _theme/filters/authors-for-docx.lua
