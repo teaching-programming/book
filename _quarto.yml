@@ -26,6 +26,7 @@ format:
         csl: apa-6th-edition.csl
 
         toc: true
+        # toc-location: body # TODO NOT WORKING, puts TOC at start of each chapter
         include-before-body:
             file: _theme/accessibility.html
         grid:
@@ -64,6 +65,11 @@ format:
         filters:
           - _theme/filters/callout-for-docx.lua
           - _theme/filters/authors-for-docx.lua
+          - _theme/filters/footnote-links-for-docx.lua
+          - quarto
+          - section-bibliographies
+        reference-section-title: References
+        citeproc: false
     # epub:
         # bibliography: references.bib
 
@@ -82,6 +88,7 @@ book:
               - text: Download PDF
                 href: https://drive.google.com/file/d/1RXSGxyDcteqqrIdwouAdJ0ayOzNCw2cp/view?usp=sharing
 
+        pinned: true
     margin-header: _theme/_accessibility_sidebar.qmd
 
     output-file: teaching_programming_across_disciplines
