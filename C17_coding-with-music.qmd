@@ -45,7 +45,7 @@ author:
 
 ## Introduction
 
-This chapter is designed to serve as a brief tour of connections between sound, music, programming and pedagogy. In particular, it is aimed at educators who want to explore sound and music in their own programming pedagogy. The chapter presents motivations for connecting these domains, introduces prior work in this area, and presents a range of [@matthew_hamilton_2026] that can be taken up or adapted to bring sound and music into coding education.
+This chapter is designed to serve as a brief tour of connections between sound, music, programming and pedagogy. In particular, it is aimed at educators who want to explore sound and music in their own programming pedagogy. The chapter presents motivations for connecting these domains, introduces prior work in this area, and presents a range of accompanying resources [@matthew_hamilton_2026] that can be taken up or adapted to bring sound and music into coding education.
 
 Making code that engages with sound and music can be fun, even with only a very basic understanding of programming concepts, and regardless of any prior music education. There are many ways in which sound and music may connect with programming. For example:
 
