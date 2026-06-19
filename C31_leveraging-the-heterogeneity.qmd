@@ -15,6 +15,10 @@ author:
 keywords:
   - curriculum-design	
   - student-engagement
+
+format:
+  html:
+    css: _theme/html-table.css
 ---
 
 ::: {.content-visible when-format="docx" note="this should be identical as authors above, for docx"}
@@ -92,7 +96,15 @@ During the module design phase, we defined the following intended learning outco
 
 4.  Effectively communicate project progress and results to a multidisciplinary audience.
 
-[Table 1](#table1) presents the module content in a nutshell. It is colour-coded based on the type of pedagogical approach used to deliver a particular module part. Each face-to-face session provides a good mix of activities and most of the module involves active learning. The main component is group work on project of students' own choice (GW labels in [Table 1](#table1)). Individual learning takes place via pragmatic instructions on the fundamental topics and Python self-study (LS and HO labels in [Table 1](#table1)).
+
+[Table 1](#table1) below presents the module content in a nutshell. It is colour-coded based on the type of pedagogical approach used to deliver a particular module part.
+ 
+- [Whole-cohort "Hands On" (HO): yellow]{.C31-yellow}
+- ["Group Work" (GW): blue]{.C31-blue}
+- ["Lecture Style" (LS): green]{.C31-green}
+- "Administrative" (ADM): white
+ 
+Each face-to-face session provides a good mix of activities and most of the module involves active learning. The main component is group work on projects of students’ own choice (GW). Individual learning takes place via pragmatic instructions (lecture style (LS)) on the fundamental topics and Python self-study (hands on tasks (HO)).
 
 <a name="table1"></a>
 **Table 1: The Interdisciplinary Research Computing module content overview. Guide for learning experience: HO - whole cohort hands-on, GW - group work, LS - lecture style, ADM - administrative.**
@@ -124,73 +136,73 @@ During the module design phase, we defined the following intended learning outco
 <tr>
 <td>1</td>
 <td>Introduction, Module Information (ADM)</td>
-<td>Guest Talk (LS)</td>
+<td class="C31-green">Guest Talk (LS)</td>
 <td> </td>
-<td>Group Introductions and Contract (GW)</td>
-<td>Meet your Disciplinary Colleagues (HO)</td>
+<td class="C31-blue">Group Introductions and Contract (GW)</td>
+<td class="C31-yellow">Meet your Disciplinary Colleagues (HO)</td>
 </tr>
 <tr>
 <td>2</td>
-<td>Python and Group Work Q&amp;A (HO)</td>
-<td>Final Project Introduction, Guidelines for Project Selection (GW)</td>
+<td class="C31-yellow">Python and Group Work Q&amp;A (HO)</td>
+<td class="C31-blue">Final Project Introduction, Guidelines for Project Selection (GW)</td>
 <td> </td>
-<td>Group Work - Identify Commonalities Between Disciplinary Examples (GW)</td>
-<td>Guest Talk (LS)</td>
+<td class="C31-blue">Group Work - Identify Commonalities Between Disciplinary Examples (GW)</td>
+<td class="C31-green">Guest Talk (LS)</td>
 </tr>
 <tr>
 <td>3</td>
-<td>Python and Group Work Q&amp;A (HO)</td>
-<td>Project Discussion (GW)</td>
+<td class="C31-yellow">Python and Group Work Q&amp;A (HO)</td>
+<td class="C31-blue">Project Discussion (GW)</td>
 <td></td>
-<td>Guest Talk (LS)</td>
-<td>Introduction to Git (HO)</td>
+<td class="C31-green">Guest Talk (LS)</td>
+<td class="C31-yellow">Introduction to Git (HO)</td>
 </tr>
 <tr>
 <td>4</td>
-<td>Project Plan Discussion, Group Check-in (GW)</td>
-<td>Python and Group Work Q&amp;A (HO)</td>
+<td class="C31-blue">Project Plan Discussion, Group Check-in (GW)</td>
+<td class="C31-yellow">Python and Group Work Q&amp;A (HO)</td>
 <td></td>
-<td colspan="2">Introduction to GitHub (HO)</td>
+<td colspan="2" class="C31-yellow">Introduction to GitHub (HO)</td>
 </tr>
 <tr>
 <td>5</td>
-<td>Project Plan Discussion (GW)</td>
-<td>Connect 4 Tournament (HO)</td>
+<td class="C31-blue">Project Plan Discussion (GW)</td>
+<td class="C31-yellow">Connect 4 Tournament (HO)</td>
 <td></td>
-<td>Connect 4 Tournament (HO)</td>
-<td>Gentle Introduction to Computer Architecture 1 (LS)</td>
+<td class="C31-yellow">Connect 4 Tournament (HO)</td>
+<td class="C31-green">Gentle Introduction to Computer Architecture 1 (LS)</td>
 </tr>
 <tr>
 <td>6</td>
-<td>Gentle Introduction to Computer Architecture 2 (LS)</td>
-<td>Visiting Scientists (GW)</td>
+<td class="C31-green">Gentle Introduction to Computer Architecture 2 (LS)</td>
+<td class="C31-blue">Visiting Scientists (GW)</td>
 <td></td>
-<td>Project discussion, Group Check-in (GW)</td>
-<td>Finalise Git and GitHub Project Setup (GW)</td>
+<td class="C31-blue">Project discussion, Group Check-in (GW)</td>
+<td class="C31-blue">Finalise Git and GitHub Project Setup (GW)</td>
 </tr>
 <tr>
 <td>7</td>
-<td colspan="2">Visualising Data in Python (HO)</td>
+<td colspan="2" class="C31-yellow">Visualising Data in Python (HO)</td>
 <td></td>
-<td>Visualising Data Practice (HO)</td>
-<td>Group Work with Advisors (GW)</td>
+<td class="C31-yellow">Visualising Data Practice (HO)</td>
+<td class="C31-blue">Group Work with Advisors (GW)</td>
 </tr>
 <tr>
 <td>8</td>
-<td colspan="2">Introduction to the Command Line and Command Line Practice (HO)</td>
+<td colspan="2" class="C31-yellow">Introduction to the Command Line and Command Line Practice (HO)</td>
 <td> </td>
-<td colspan="2">Group Work with Advisors, Group Check-in (GW)</td>
+<td colspan="2" class="C31-blue">Group Work with Advisors, Group Check-in (GW)</td>
 </tr>
 <tr>
 <td>9</td>
-<td colspan="2">Introduction to High Performance Computing (LS)</td>
+<td colspan="2" class="C31-green">Introduction to High Performance Computing (LS)</td>
 <td></td>
-<td colspan="2">Group Work with Advisors (GW)</td>
+<td colspan="2" class="C31-blue">Group Work with Advisors (GW)</td>
 </tr>
 <tr>
 <td>10</td>
-<td colspan="4">Poster Presentations (GW)</td>
-<td>Prizes and feedback (LS)</td>
+<td colspan="4" class="C31-blue">Poster Presentations (GW)</td>
+<td class="C31-green">Prizes and feedback (LS)</td>
 </tr>
 </tbody>
 </table>
@@ -235,28 +247,28 @@ For the third theme, students' suggestions for future cohorts were in line with 
 
 
 <a name="table2"></a>
-**Table 2: Summary of the main themes identified in student reflections. Each theme is divided into several sub-themes, and short explanations and representative quotes are included. Average frequencies per reflection for themes and sub-themes are also included.**
+**Table 2: Summary of the main themes identified in student reflections. Each theme is divided into several sub-themes, and short explanations and representative quotes are included. Average frequencies per reflection for themes and sub-themes are also given (in brackets).**
 
+```{=html}
 <table style="width:100%;">
 <colgroup>
-<col style="width: 13%" />
-<col style="width: 13%" />
+<col style="width: 15%" />
+<col style="width: 45%" />
 <col style="width: 40%" />
-<col style="width: 31%" />
 </colgroup>
 <thead>
 <tr>
-<th><p><strong>Theme</strong></p>
-<p><strong>(Average frequency per reflection)</strong></p></th>
 <th><p><strong>Subtheme</strong></p>
 <p><strong>(Average frequency per reflection)</strong></p></th>
-<th><strong>Representative topics and notes</strong></th>
-<th><strong>Representative quote</strong></th>
+<th style="vertical-align: middle"><strong>Representative topics and notes</strong></th>
+<th style="vertical-align: middle"><strong>Representative quote</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td rowspan="4"><strong>Opinions on the module as a whole (4)</strong></td>
+<td colspan="3"><strong>Theme: Opinions on the module as a whole (4)</strong></td>
+</tr>
+<tr>
 <td>General appraisal (1)</td>
 <td>Positive or very positive, often using word challenge, a few unmet expectations statements that acknowledge the understanding of intent behind the design.</td>
 <td><em>"Much appreciation to the absolutely encouraging and skilful teaching staff, and this one-term study is one of my highlights in my university career!" (2023-2024)</em></td>
@@ -277,7 +289,9 @@ For the third theme, students' suggestions for future cohorts were in line with 
 <td><em>"This module changed the way I see computing. I used to think of research and computing as two separate things, but now I realise that computing can be a powerful research tool in nearly every field." (2024-2025)</em></td>
 </tr>
 <tr>
-<td rowspan="3"><strong>Group work (4.5)</strong></td>
+<td colspan="3"><strong>Theme: Group work (4.5)</strong></td>
+</tr>
+<tr>
 <td>General appraisal (2.7)</td>
 <td>Group work was commented on most frequently and prompted frequent honest disclosure. A mix of positive statements and expressions of frustration. Multiple factors influencing group work were mentioned: expectation, scheduling and degree course load, motivation, self-efficacy, ethic, health (physical and mental). Challenges: work division causing some students to miss out on learning opportunities, not speaking early enough when group dynamics was suboptimal.</td>
 <td><em>"I cannot overstate the value of effective communication within our team. Despite our diverse academic backgrounds, we managed to find a common language through the shared goal of the project." (2023-2024)</em></td>
@@ -293,7 +307,9 @@ For the third theme, students' suggestions for future cohorts were in line with 
 <td><em>"As my group members were inexperienced with coding, whereas I felt more confident, it quickly became clear that I would have to take leadership of the project. I was happy to do this." (2023-2024)</em></td>
 </tr>
 <tr>
-<td rowspan="2"><strong>Message for future cohorts - "I wish I did this…" (1.2)</strong></td>
+<td colspan="3"><strong>Theme: Message for future cohorts - "I wish I did this…" (1.2)</strong></td>
+</tr>
+<tr>
 <td>Points for group work (0.6)</td>
 <td>The statements clustered into the following categories (by order of frequency): select a motivating project for all group members, manage your time better and avoid rush at the module end, be strict about accountability, realistic scoping, divide work fairly and strategically, communicate efficiently and honestly, make an effort to get to know your colleagues.</td>
 <td><em>"Maintaining strict goals from the beginning and conducting regular meetings so that the project remains on course." (2024-2025)</em></td>
@@ -305,6 +321,7 @@ For the third theme, students' suggestions for future cohorts were in line with 
 </tr>
 </tbody>
 </table>
+```
 
 ## Student-Centred Analysis: Finding the Essential Details
 

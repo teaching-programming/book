@@ -1,0 +1,23 @@
+table {
+  border: 1px solid black;
+  text-align: center;
+}
+
+th, td {
+  /* border-left: 1px solid black; */
+  border: 1px solid black;
+  padding: 5px;
+  text-align: center;
+}
+
+.C31-yellow {
+    background-color: #FBE8A2;
+}
+
+.C31-green {
+    background-color: #CBDFB9;
+}
+
+.C31-blue {
+    background-color: #C2D7ED;
+}

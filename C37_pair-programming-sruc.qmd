@@ -76,3 +76,9 @@ More importantly, perhaps, they've learned that the programming world isn't lock
 
 [^C37-R-footnote]: R: open‑source software for statistics and data analysis.
 [^C37-QGIS-footnote]: QGIS: open‑source software for mapping and spatial data analysis.
+
+::: {.content-visible when-format="html" unless-format="epub"}
+
+## References {.unnumbered}
+
+:::
