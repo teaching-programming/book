@@ -81,11 +81,17 @@ book:
         style: "docked"
         search: true
         collapse-level: 1
+
+        tools:
+          - icon: download
+            menu:
+              - text: Download PDF
+                href: https://drive.google.com/file/d/1RXSGxyDcteqqrIdwouAdJ0ayOzNCw2cp/view?usp=sharing
+
         pinned: true
     margin-header: _theme/_accessibility_sidebar.qmd
 
     output-file: teaching_programming_across_disciplines
-    downloads: [pdf, epub]
 
     chapters:
         - index.qmd
