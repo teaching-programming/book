@@ -51,7 +51,7 @@ author:
     affiliations: Department of Earth Science and Engineering, Imperial College London
   - name: Tiago A. Marques 
     email: tiago.marques@st-andrews.ac.uk 
-    affiliations: School of Mathematics, University of St Andrews 
+    affiliations: Centre for Research into Ecological and Environmental Modelling, University of St Andrews; Departamento de Biologia Animal, Faculdade de Ciências da Universidade de Lisboa
   - name: Brittany Blankinship 
     email: B.Blankinship@ed.ac.uk 
     affiliations: Edinburgh Medical School, University of Edinburgh 
