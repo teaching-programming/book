@@ -11,6 +11,11 @@
 
 ## Project coordinated by Franziska McManus.
 
+## [Buy a Printed Version of this Book](https://www.lulu.com/shop/brittany-blankinship-and-pawel-orzechowski-and-charlotte-desvages-and-kasia-banas/teaching-programming-across-disciplines/paperback/product-p6n2ewq.html?page=1&pageSize=4)
+
+## [Watch Videos from our Book Launch Event](https://pairprogramming.ed.ac.uk/our-book-teaching-programming-across-disciplines-is-launched/)
+
+
 ::: {.content-visible unless-format="docx" }
 ## Table of Contents:
 
