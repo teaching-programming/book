@@ -15,6 +15,7 @@
 
 ## [Watch Videos from our Book Launch Event](https://pairprogramming.ed.ac.uk/our-book-teaching-programming-across-disciplines-is-launched/)
 
+## [Source code for this book on Github](https://github.com/teaching-programming/book)
 
 ::: {.content-visible unless-format="docx" }
 ## Table of Contents:
