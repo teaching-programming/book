@@ -1,0 +1,32 @@
+---
+title: "Closing Remarks for This Book"
+author:
+  - name: Brittany Blankinship
+    email: b.blankinship@ed.ac.uk
+    affiliations: Edinburgh Medical School, University of Edinburgh 
+  - name: Franziska McManus
+    email: z.mcmanus@ed.ac.uk
+    affiliations: Edinburgh Medical School, University of Edinburgh
+  - name: Pawel Orzechowski
+    email: pawel.orzechowski@ed.ac.uk
+    affiliations: Edinburgh Medical School, University of Edinburgh
+---
+
+::: {.content-visible when-format="docx" note="this should be identical as authors above, for docx"}
+author:
+  - name: Brittany Blankinship
+    email: b.blankinship@ed.ac.uk
+    affiliations: Edinburgh Medical School, University of Edinburgh 
+  - name: Franziska McManus
+    email: z.mcmanus@ed.ac.uk
+    affiliations: Edinburgh Medical School, University of Edinburgh
+  - name: Pawel Orzechowski
+    email: pawel.orzechowski@ed.ac.uk
+    affiliations: Edinburgh Medical School, University of Edinburgh
+:::
+
+You have made it to the end! Well, the end for now...cue the dramatic music \<dun dun dun\>. Much like our community, which is open and ever growing, this book is a living document. There will be a second version at some point, which expands and fills gaps in the current version. If you have read this far, you may want to join us and contribute! 
+
+We hope you have enjoyed reading the diverse range of experiences and perspectives provided by our authors. While the named editors have edited the book and wrangled it into its current format, this book has truly been a grassroots community effort. Our 75 authors have all taken time out of their lives, unpaid, to work together and share their experiences. Our editors have learned new programming languages and tools (Quarto, Lua, Visual Basic), new workflows (github forks), project management and editing skills in order to make this endeavor a success and, in doing so, we have asked our authors to engage with new software and workflows (hands up if you created your first fork on this project). If you were to look up "passion project" in the dictionary, this book would be there.  
+
+Get in touch by emailing us at <pairprogramming@ed.ac.uk> with any questions, suggestions, or feedback. All teachers will recognize the importance of feedback - If something you have read in the book has impacted you or your teaching practice, we would love to hear from you!  

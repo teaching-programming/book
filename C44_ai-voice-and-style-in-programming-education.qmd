@@ -1,0 +1,104 @@
+---
+title: "AI, Voice, and Style in Programming Education"
+bibliography: references.bib
+author:
+  - name: John Wilson
+    email: jwilso3@ed.ac.uk
+    affiliations: Edinburgh Medical School, University of Edinburgh
+
+keywords:
+  - responsible-programming	
+  - LLMs	
+  - critical-thinking
+---
+
+::: {.content-visible when-format="docx" note="this should be identical as authors above, for docx"}
+author:
+  - name: John Wilson
+    email: jwilso3@ed.ac.uk
+    affiliation: Edinburgh Medical School, University of Edinburgh
+:::
+
+This article originally appeared as a post on the University of Edinburgh blog Teaching Matters in February 2025.
+
+Back in September 2024, an "Angry Developer" posted their opinion on the effect of AI code tools ([Why Copilot is making programmers worse at programming](https://www.darrenhorrocks.co.uk/why-copilot-making-programmers-worse-at-programming/)).
+
+This got me thinking about the effect of AI LLM tools on _academic skills_.
+Hopefully in a way that gives some useful perspective on why-or-when _not_ to turn to AI, beyond the "because the uni said 'No!'" rules, and that might resonate with our students on a more personal level.
+
+## Erosion of Academic Skills
+
+Just as AI can cause programmers to lose their deep understanding of coding principles, it can also cause every one of us to lose essential academic skills.
+An important reason for this is that LLMs have __no knowledge of their own!__
+They _literally_ make stuff up [@hicks2024chatgpt].
+Therefore, relying too heavily on AI to write reports will have an impact on students' development of critical reasoning and writing skills.
+If students mostly use AI to write their work, there will be a noticeable (negative) effect on how they learn to structure arguments and use evidence to effectively support their narrative.
+Similarly, if students rely on AI to generate code, they are likely to lose opportunities to develop the important underlying skills like problem-solving and debugging skills. Over time this may reduce their ability to explain their thinking, evaluate alternative approaches, and adapt solutions independently.
+
+As a marker, one of the things that really stands out about AI-generated work is the "voice", or in programming, probably best compared to "style".
+By relying on AI, students not only remove their voice from the content, but they lose the opportunity of ever even developing their own voice in the first instance.
+And as coders they produce code that maybe works or is technically fine, but feels disjoint, somehow disconnected from the wider purpose and context of their project.
+
+## Reduced Practical Learning
+
+In programming, we never get our code right first time, and our feedback comes in the form of error messages.
+In our own studies, engaging directly with material is essential for "deep learning" (pun not _really_ intended, but I'll take it).
+For example, if students routinely use AI to quickly summarise articles or generate lab reports, they will find it more difficult to develop a whole chain of skills.
+
+![Over-reliance on AI tools is likely to weaken key academic skills, which once weakened, will lead to a cycle of continued skills impoverishment.
+(Totally based on opinion - I got no refs for this)](/chapters/images/C44_ai-vs-ac-flowchart.png){#fig-c44-diagram fig-alt="A sequence of academic skills pointing from 'Meaningful Engagement', 'Developing Critical Thinking', 'Extracting Personal Insights', 'Forming Hypotheses Independently', and then to 'Creating Original Conclusions'.
+An arrow loops back from 'Creating Original Conclusions' to 'Meaningful Engagement', labeled 'Reinforced weakening of academic skills'."}
+
+And most importantly, if the work is mostly AI-generated, the feedback the student receives does not apply to them personally.
+So it's worthless!
+
+
+## Dependence on AI for Solutions
+
+AI generated code often results in code that is... just... a bit... _odd!_ And that is assuming that the code even works.
+So, when programmers use AI to generate code, they might not fully understand the solutions it has provided.
+There is a parallel here in academic settings where students might use AI to complete assignments without fully engaging with the underlying concepts.
+I think it should be self-evident that copy-pasting a generated response does nothing to help us as academics.
+But it flows beyond just the academic context.
+Imagine a situation where you were asked a coding question identical to one you encountered in a University exam... in a _job interview_.
+But imagine you had used AI to produce your exam answer...?
+
+
+## Narrowed Creative Thinking
+
+AI tools can definitely be an efficient way to complete a task, but they might limit creative thinking.
+In academic work, students might miss out on the creative process of developing unique (think "novel") ideas and solutions.
+Yes, AI might sometimes suggest a promising idea, but it really does not have any clue about the topic.
+And, with an over-reliance on AI for our work, neither do we.
+For example, using AI to brainstorm essay questions or projects can prevent students from both conceiving and exploring their own interesting ideas.
+Again, if it helps, think in terms of "novelty", often a requirement for publishing later in their careers.
+
+## Promoting Students' Lived Experience, Individuality and Own Voice
+
+AI models are trained on vast datasets from the internet, reflecting the "most common" values and perspectives, often dominated by only a few societal groups.
+This can lead to reinforcement of their viewpoints while under representing diverse experiences, especially those from minority groups.
+
+Relying heavily on AI for ideas might dilute students' unique lived experience, regardless of their background.
+Remember, AI lacks personal insights and creativity.
+Helping students understand that having their own voice shine through in their work, will become an increasingly important approach to showing independence and judgement in an AI world.
+Because in learning and teaching this is what distinguishes students' work from that of others, student or AI.
+Students may need to be shown how to critically assess AI-generated content, particularly when they have unique perspectives to share.
+As educators we need to highlight to students that their individuality, lived experiences, and perspectives have value, but are in danger of being lost in an AI-generated assignment.
+
+In programming, these individual perspectives often show through in the way students interpret requirements.
+For example how they frame problems, or identify user needs.
+By helping students see that their final choice of a solution might be informed by their own, personal context we can, perhaps, help them understand why AI generated code sometimes just misses the mark.
+
+## Balancing AI Use
+
+While AI can be a powerful tool to enhance learning and productivity, it's important for you to use it as a supplement rather than a replacement for your own efforts. Encouraging a balanced approach can help maintain and even enhance your critical thinking skills. For example, you can use AI to check your work or, perhaps, generate ideas, but make sure to engage deeply with the material and develop your own understanding and solutions. If you need any further convincing, ask yourself if you have ever felt "imposter syndrome". Then, ask if the confidence with which AI speaks actually increases your own confidence in your own knowledge...
+
+AI tools like Copilot certainly offer significant benefits, but what we need to impress upon students is that using these tools has a real effect on development of vital academic skills.
+Even using for the widely "accepted" use cases, e.g. "idea generation", is problematic.
+If ideas-generation or direction-finding are delegated to AI, students risk becoming invisible in their own work, their work risks disappearing from the wider literature landscape, and, ultimately, they end up doing the bidding of our robot overlords.
+
+::: {.content-visible when-format="html" unless-format="epub"}
+
+## References {.unnumbered}
+
+:::

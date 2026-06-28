@@ -20,10 +20,10 @@ local function styled_paragraph(inlines, style)
 end
 
 function Callout(el)
+--    print("CALLOUT!!")
   if not quarto.doc.is_format("docx") then
     return el
   end
-
   local result = {}
   local headerStyleToUse = style_map[el.type]
 --  print("headerStyleToUse" .. headerStyleToUse)

@@ -7,16 +7,16 @@ author:
     affiliations: UK Health Security Agency
   - name: Samantha Alvarez Madrazo
     email: s.alvarez-madrazo@imperial.ac.uk
-    affiliations: Imperial College London
+    affiliations: School of Public Health, Imperial College London
   - name: Lucia Michielin
     email: lucia.michielin@ed.ac.uk
-    affiliations: University of Edinburgh
+    affiliations: Edinburgh Futures Institute, University of Edinburgh
   - name: Nick Jayanth
     email: nick.jayanth19@imperial.ac.uk
-    affiliations: Imperial College London
+    affiliations: School of Public Health, Imperial College London
   - name: Sam Skipsey
     email: Samuel.Skipsey@glasgow.ac.uk
-    affiliations: University of Glasgow
+    affiliations: School of Physics and Astronomy, University of Glasgow
 
 keywords:
   - coding-mindset	
@@ -31,25 +31,25 @@ author:
     affiliations: UK Health Security Agency
   - name: Samantha Alvarez Madrazo
     email: s.alvarez-madrazo@imperial.ac.uk
-    affiliations: Imperial College London
+    affiliations: School of Public Health, Imperial College London
   - name: Lucia Michielin
     email: lucia.michielin@ed.ac.uk
-    affiliations: University of Edinburgh
+    affiliations: Edinburgh Futures Institute, University of Edinburgh
   - name: Nick Jayanth
     email: nick.jayanth19@imperial.ac.uk
-    affiliations: Imperial College London
+    affiliations: School of Public Health, Imperial College London
   - name: Sam Skipsey
     email: Samuel.Skipsey@glasgow.ac.uk
-    affiliations: University of Glasgow
+    affiliations: School of Physics and Astronomy, University of Glasgow
 :::
 
-## About us
+## About Us
 
 We're writing this chapter because when we started teaching students to code "from scratch", we would have liked something similar to show us what's worked for other people. Much of the existing resources are direct teaching materials, rather than discussions of how to teach, and, especially, how to teach in the service of other skills, not as an end unto itself. A "coding mindset" develops over time as a combination of problem decomposition, embracing iterative improvement, and expectation management (each of which are also applicable outside coding!). Rather than a rigid set of rules, all the examples below can be seen as "good enough" practices we developed across time, aiming to support beginners in developing those aspects of themselves.
 
 It's also important to recognise that everyone's situation will be different. The five of us are predominantly from statistical or quantitative disciplines (all but one!). This inevitably means that we tend to think of coding as a means to perform statistical analysis and therefore the "coding mindset" we want overlaps with a statistician's. We also mostly tend to "think" in R or Python (one of us thinks in Julia), which will almost certainly flavour our examples. We hope this chapter will be of use to you, it is however, not a reflection on your own practice if some of our specific examples don't work for you. After all, there are as many legitimate use cases for coding as there are people and disciplines. If you can adapt the concepts here to teaching engineers to code in Ada, or game designers to code in Lua, or any other combination, then more power to you.
 
-## Set learning expectations
+## Set Learning Expectations
 
 > Reassure learners that the goal is not to become an expert coder overnight but to achieve clear and realistic learning outcomes. Encourage learners to ask questions and to not compare themselves against more experienced coders.
 
@@ -63,7 +63,7 @@ With the availability of code on the internet, it is important to encourage lear
 
 By focusing on what the learning expectations are (and aren't), educators can help learners focus fully on adopting a coding mindset, a skill that transfers across computer languages.
 
-## Building motivation
+## Building Motivation
 
 > Demonstrate coding solutions to inspire the class. Assess motivation for learning how to code by exploring confidence and perceived importance. Use this to support learning and reassure the class that everyone has similar concerns and aspirations.
 
@@ -75,11 +75,11 @@ Concepts used to assess motivation are fully explained by @miller2013motivationa
 
 Learners are first asked to rate how confident they feel in learning how to code on a scale of 1 to 10. This is then followed up with two questions: why they didn't choose a lower number to uncover strengths, and why they didn't choose a higher number to identify barriers. This process is then repeated with learners rating how important they feel learning to code is, again giving reasons why they didn't choose a lower or higher number.
 
-A learner may respond that they rate themselves as 5 out of 10 in terms of how confident they feel in learning to code. The learner explains that they have some prior experience writing code, but that they became frustrated by frequent error messages. However, they rate the importance of learning to code as 9 out of 10 because they understand it would be beneficial for their career. In response to this, the educator can offer reassurance that frustration is one of the common concerns that students face when first learning to code, as explained further later in the chapter.
+A learner may respond that they rate themselves as 5 out of 10 in terms of how confident they feel in learning to code. The learner explains that they have some prior experience writing code, but that they became frustrated by frequent error messages. However, they rate the importance of learning to code as 9 out of 10 because they understand it would be beneficial for their career. In response to this, the educator can offer reassurance that frustration is one of the common concerns that students face when first learning to code, as explained later in the chapter.
 
 We suggest this exercise only needs to be completed once as an assessment tool and is most effective in the early stages of a learning programme, during the first class if possible. Educators benefit from this as it provides insight into the needs of the class. The need for additional support, such as drop-in workshops, can be assessed, which is especially helpful in remote settings with limited contact time. As responses are shared within the group, for learners, it can create a sense of peer support when others share similar concerns, and it may also highlight positives they hadn't yet thought of. It is anticipated that this exercise will help learners embrace the learning process rather than being undermined by self-doubt.
 
-## Embracing feedback
+## Embracing Feedback
 
 > Computer error messages and receiving human feedback are a normal part of coding. Learners should embrace both, reflect, and share their learning.
 
@@ -91,22 +91,22 @@ To help learners receive and process both types of feedback, reflective learning
 
 ::: {.callout-tip icon=false}
 
-# Example: Template to reflect on error messages
+# Example: Template To Reflect on Error Messages
 
-* **Describe the scenario:** I was practising filtering a dataframe using the built-in `iris` dataset in R.
-* **Describe the problem encountered:** the dataframe did not filter.
-* **Which part of the code was the problem?:** `filter(iris, Species == "setosa")`
-* **What was the error message?:** `Error: object ‘Species' not found`
-* **How the problem was solved:** I realised I needed to load the `dplyr` library to access the function that I wanted to use; therefore, at the start of the script, I entered `library(dplyr)` to load the function.
-* **What further guidance is needed:** I wasn't sure why it didn't tell me that the function itself wasn't loaded.
-* **Lessons or code snippets to take forward for next time:** Always check to ensure necessary libraries are loaded.
-* **Comments from other learners or educators:** "filter" is also the name of a function from the stats package, which is loaded by default. This is why the error message didn't say the filter function could not be found.
+- **Describe the scenario:** I was practising filtering a dataframe using the built-in `iris` dataset in R.
+- **Describe the problem encountered:** the dataframe did not filter.
+- **Which part of the code was the problem?:** `filter(iris, Species == "setosa")`
+- **What was the error message?:** `Error: object 'Species' not found`
+- **How the problem was solved:** I realised I needed to load the `dplyr` package to access the function that I wanted to use; therefore, at the start of the script, I entered `library(dplyr)` to load the function.
+- **What further guidance is needed:** I wasn't sure why it didn't tell me that the function itself wasn't loaded.
+- **Lessons or code snippets to take forward for next time:** Always check to ensure necessary packages are loaded.
+- **Comments from other learners or educators:** `filter()` is also a function in the `stats` package, which is loaded by default. This is why the error message didn't say the `filter()` function could not be found.
 
 :::
 
 Learners are invited to pick an error message they have encountered over the course and present it using the above template in a short, five-minute presentation. By sharing their reflections with the class, learners can see different problem-solving approaches, resolve error messages, practice receiving feedback, and develop resilience.
 
-## Normalising frustration
+## Normalising Frustration
 
 > Frustration is a normal aspect of coding for beginner and experienced coders. Include examples of sources of frustration into your teaching methods and provide support whilst the learner works through them.
 
@@ -121,7 +121,7 @@ Introducing intentional small errors or typos in demonstration code can also be 
 Organising follow-up classes, particularly those that adopt a flexible, open-ended format, can be exceedingly beneficial for students. These sessions, which we tend to call BYOD ("Bring Your Own Data") classes, provide a unique opportunity for students to apply the concepts they have learnt in a practical, supportive environment. Such classes encourage students to bring their own datasets or project ideas, which they can then explore with the guidance of an instructor. This hands-on approach not only helps to consolidate their learning but also enhances their ability to apply coding skills to real-world scenarios.
 Having an instructor present to offer assistance is crucial, especially when students encounter obstacles. This support can significantly boost their confidence and competence, enabling them to tackle challenges more effectively and with less apprehension. During these sessions, it is particularly productive to encourage collaborative problem-solving. For example, when a student brings a specific dataset or a coding issue to class, working as a group to resolve these issues can be extremely advantageous. Not only does the student who brought the data benefit from collective insights, but other participants also gain a deeper understanding of how to approach similar problems. This type of interaction often leads to valuable discussions that reveal multiple approaches to solving the same problem. The group overall benefits from this by enhancing their analytical skills and fostering a more comprehensive understanding of the subject matter.
 
-## Framing coding as a problem-solving activity
+## Framing Coding as a Problem-Solving Activity
 
 > Instruct learners to outline the coding problem they are trying to solve, break this down into manageable steps and write code to address each one.
 
@@ -148,19 +148,17 @@ With this list in mind, the student can then ask more targeted questions about h
 
 It is anticipated that this approach will help learners think through a coding problem and identify the steps they need to take irrespective of their coding ability. As learners gain experience, developing this discipline will support their ability to write more complex and structured code.
 
-## Myth busting
+## Myth Busting
 
 > Learners may arrive at classes with self-limiting beliefs, educators can help replace these with more constructive thoughts to help aid the learning process.
 
 Common self-limiting beliefs that students might hold often fall into the themes of the learning process, self-belief, writing code, and the relevance of coding to them. To address these, we have compiled a "Myth vs. Reality" table summarising what we believe to be the most common misconceptions. The goal is for students to identify any myths they may hold and feel encouraged to replace them with more constructive thoughts.
 
-Where possible, the educator can encourage students to add to the table with their own barriers, either by using those highlighted in the motivational exercise or following a brainstorming exercise. It is important that educators use supportive language when working through this exercise. For example, rather than describing code as a "failure", they can take the opportunity to reinforce that coding is an iterative discipline. This helps develop the coding mindset and prepare learners for working on their own projects outside the classroom. 
+Where possible, the educator can encourage students to add to the table with their own barriers, either by using those highlighted in the motivational exercise described earlier in the chapter or following a brainstorming exercise. It is important that educators use supportive language when working through this exercise. For example, rather than describing code as a "failure", they can take the opportunity to reinforce that coding is an iterative discipline. This helps develop the coding mindset and prepare learners for working on their own projects outside the classroom. 
 
 This activity empowers learners to tackle their self-limiting beliefs and also provides educators with insight into their students' mindsets.
 
-::: {.callout-tip icon=false}
-
-# Myth vs. Reality: common misconceptions surrounding learning to code
+### Myth vs. Reality: Common Misconceptions Surrounding Learning to Code
 
 | Myth | Reality|
 |:--|:---|
@@ -175,9 +173,7 @@ This activity empowers learners to tackle their self-limiting beliefs and also p
 |You need to work in technical roles such as web services or statistics for coding to be relevant.|Coding is not limited to one type of role. You can use coding for developing websites, games, managing databases, creating applications and generating artwork.|
 |You can learn the basics, but advanced skills such as modelling will be too difficult.|If you pursue a data modelling career, you will spend a lot of time focusing on data quality rather than complex modelling. If you learn the basics, it helps to make the advanced skills more achievable.|
 
-:::
-
-## Know your audience 
+## Know Your Audience 
 
 > Consider the needs of your learners and modify your teaching methods accordingly. Understanding specific needs and using relevant examples encourages learners to engage with the learning process.
 
@@ -203,7 +199,7 @@ We also find that explicitly linking the problems solved to the material student
 
 When we begin teaching C, the first compiled language the students have met, we explicitly begin by giving them broken code. This normalises the process of trying to compile it, reading what the compiler says is wrong, and iterating on this. This helps to break down the "fear" of compiler error messages --- we know the code is broken, so the framing is that it is helping us spot the mistakes, not berating us.
 
-## Developing the coding mindset
+## Developing the Coding Mindset
 
 Coding is as much about mindset as it is about syntax. We hope this chapter has shown that building confidence, resilience, and collaboration matters just as much as technical skills. Remember: every coder faces frustration, but these challenges are stepping stones, not barriers.
 

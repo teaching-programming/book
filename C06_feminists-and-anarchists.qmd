@@ -6,7 +6,6 @@ author:
     email: f.queiroz@leeds.ac.uk
     affiliations: School of Design, University of Leeds
   - name: Maeve Murphy Quinlan
-    email: TODO
     affiliations: Research Computing, University of Leeds
 
 keywords:
@@ -20,7 +19,6 @@ author:
     email: f.queiroz@leeds.ac.uk
     affiliations: School of Design, University of Leeds
   - name: Maeve Murphy Quinlan
-    email: TODO
     affiliations: Research Computing, University of Leeds
 :::
 
@@ -30,7 +28,7 @@ You find yourself in a large room with no windows; the air is still, and nothing
 
 Students.
 
-Fear not, though. You are about to learn how to deal with this kind of situation. Dealing with students’ expectations (and your own) can be hard, but we believe that by working together, you will be able to deliver the learning experience that gets everyone to the next level. 
+Fear not, though. You are about to learn how to deal with this kind of situation. Dealing with students' expectations (and your own) can be hard, but we believe that by working together, you will be able to deliver the learning experience that gets everyone to the next level. 
 
 This chapter is inspired in equal parts by tabletop role-playing and anarchist pedagogies. It was created to help you in structuring the learning experience for your course. More specifically, we present steps you can take during an initial or preliminary learning activity for a course, preparing material that will help you:
 
@@ -51,7 +49,7 @@ The collaborative, open-ended nature of some steps described here might suit wor
 
 :::
 
-## Accessing the toolkit
+## Accessing the Toolkit
 
 Go to [this chapter's companion repository](https://zenodo.org/records/17702161). There, you will find a toolkit for planning your teaching that includes templates for:
 
@@ -64,7 +62,7 @@ Go to [this chapter's companion repository](https://zenodo.org/records/17702161)
 
 These are available as `.docx` and `.rtf` documents, but feel free to adapt them to whatever format or platform you want.
 
-## Character building: presenting learners and educators' profiles
+## Character Building: Presenting Learners and Educators' Profiles
 
 A good first step is to understand everyone's aspirations and previous experiences. At this stage, invite all students and educators (including yourself) to complete a **Character Sheet**[^C06-ftn00]. Once everyone has completed theirs, go through a round of introductions. Focus on understanding everyone's strong points, ambitions, and fears.
 
@@ -92,7 +90,7 @@ The Character Sheet could potentially help identify potential topics for class a
 :::
 
 ::: {.callout-important icon="false"}
-# The anarchist bit:
+# The Anarchist Bit:
 
 Anarchist pedagogies support and are supported by the construction of subjectivities [@deleon2012anarchism]. Feel free to extrapolate the Character Sheet to an exploration of long-term goals, ideals, and a broader sense of identity, even if (perhaps *especially* if) they diverge from immediate, utilitarian aims of the course. 
 
@@ -100,7 +98,7 @@ In some cases, however, discourse around subjectivities and course objectives mi
 
 :::
 
-## Challenges ahead: establishing learning outcomes and syllabus
+## Challenges Ahead: Establishing Learning Outcomes and Syllabus
 
 Use the **Bestiary** template to establish (or remind) learners of the course learning outcomes and syllabus. Discuss what they will learn, giving examples if necessary. Depending on your course's flexibility, outcomes and topics can be decided on the spot. Usually, you will want to choose a set of learning outcomes and lessons beforehand[^C06-ftn01].
 
@@ -111,7 +109,7 @@ Use the **Bestiary** template to establish (or remind) learners of the course le
 
 | **Name:**
 | Create GitHub repository for your project
-| **\[x\]** Main Quest  **\[ \]** Side Quest
+| **\[x\]** Main Quest **\[ \]** Side Quest
 |
 | **Learning Outcomes:**
 | 1. Apply best practices to source code management and versioning
@@ -125,7 +123,7 @@ Use the **Bestiary** template to establish (or remind) learners of the course le
 :::
 
 ::: {.callout-important icon="false"}
-# The anarchist bit:
+# The Anarchist Bit:
 
 Once again, there should be plenty of space for learners to express themselves by suggesting topics for co-creating their learning experience. Such a practice is present in many other progressive pedagogies [for instance, see @Freire1996].
 
@@ -135,7 +133,7 @@ In practical terms, that can be very beneficial to the course. It's not uncommon
 
 [^C06-ftn01]: Many programmes require educators to achieve specific learning outcomes. If you are the one in charge of keeping the programme or module specification form, a good practice would be keeping it flexible enough so that new, emerging topics can be brought into the syllabus.
 
-## The treasure map: structuring the course and learning activities
+## The Treasure Map: Structuring the Course and Learning Activities
 
 Use the **Adventure Map**[^C06-ftn02] to discuss the sequence of learning material and activities, assessment (beasts), and how they relate to learning outcomes. Keep the discussion open so that learners can suggest, based on their expertise, perceived needs, or fears, how to best organise the learning trajectory. To structure their journey, place items from the **Bestiary** into the journey map, associating them with the course's learning outcomes.
 
@@ -152,7 +150,7 @@ Use the **Adventure Map**[^C06-ftn02] to discuss the sequence of learning materi
 :::
 
 ::: {.callout-important icon="false"}
-# The anarchist bit:
+# The Anarchist Bit:
 
 The collective effort into creating a learning journey that does not follow a blueprint is characteristic of anarchist pedagogies [@deleon2012anarchism]. Still, students and educators might benefit from some structure, in which case it is advisable to outline a learning path. Feel free, however, to continuously discuss, review, and re-negotiate that path.
 
@@ -165,7 +163,7 @@ That discussion could open opportunities for improving and streamlining teaching
 [^C06-ftn02]: The Adventure Map document was designed to help educators and students to set out learning outcomes, syllabi, and assessments. It is informed by [material created by the University of Leeds OD&PL](https://sway.cloud.microsoft/C1YkluhNgPxGx5um?ref=Link).
 
 
-## P.A.R.T.Y: organising groups and groupwork
+## P.A.R.T.Y: Organising Groups and Groupwork
 
 As a group (or groups, depending on the number of students), complete the **Party Guidelines** sheet[^C06-ftn03], establishing ground rules on how to deal with each other and the group, as well as roles for each participant.
 
@@ -185,7 +183,7 @@ Party Guidelines should help teamwork run smoothly, including agreements for con
 :::
 
 ::: {.callout-important icon="false"}
-# The anarchist bit:
+# The Anarchist Bit:
 
 When deciding rules for working groups, aiming for consensus would be ideal. A quick introduction and [effective guide on how to achieve consensus](http://www.seedsforchange.org.uk/shortconsensus) in group meetings was created by workers' co-op of campaigners Seeds for Change, and could be brought into discussion.
 
@@ -198,7 +196,7 @@ In practice, students might need to be reminded of how group work allows them to
 [^C06-ftn03]: The Party Guidelines document was designed to help learners manage their groupwork. They are informed by [frameworks from the Institute for Academic Development](https://institute-academic-development.ed.ac.uk/study-hub/learning-resources/group-working) [@IADUniversityofEdinburgh_2024] and the Learn Higher CETL at the University of Bradford [@LearnHigher_2012a; @LearnHigher_2012b] under Creative Commons Attribution-Non-Commercial licences.
 
 
-## A kind of magic: distributing learning material
+## A Kind of Magic: Distributing Learning Material
 
 Whether you are using a textbook, slides, PDFs, online videos, or anything else, use the **Skills and Spellbook** to signpost where students can find learning material that is relevant to their learning journey. This can be tailored to individual lessons and activities, or as a general compendium (Warhammer pun not intended), and they could be presented all at once or separately as the learning advances. Again, you could populate it with resources related to students' aspirations.
 
@@ -222,7 +220,7 @@ Whether you are using a textbook, slides, PDFs, online videos, or anything else,
 
 :::
 
-## Equipment list: providing software and resources
+## Equipment List: Providing Software and Resources
 
 To complete the setup, provide your group with an **Equipment List** of software and other resources they might need to use to advance the journey. You should have a preliminary list ready, but be open to suggestions from students. Below, an example that would support our student with his desire to learn source code management and versioning.
 
@@ -242,7 +240,7 @@ To complete the setup, provide your group with an **Equipment List** of software
 :::
 
 
-## Setup complete: happy adventures!
+## Setup Complete: Happy Adventures!
 
 Once you have completed the previous steps, you will have generated everything you and your students need to accomplish course objectives and keep track of your achievements. 
 At the start of each learning session, use the **Adventure Map** to update students on their next steps, and on how far they have travelled so far.
@@ -258,7 +256,7 @@ At the end of the course, remind students of their journey, highlighting the lea
 Happy teaching.
 
 ::: {.callout-important icon="false"}
-# The anarchist bit:
+# The Anarchist Bit:
 
 Another characteristic of anarchist pedagogies, particularly in the arts (and programming is often seen as a liberal art), is how they embrace the fluidity that is necessary for making changes to the learning experience after reflection and evaluation [@wilkinson2025fragments]. After running your campaign, don't be afraid of modifying, discarding, or adapting the system we just proposed according to your experience and that of your students.
 

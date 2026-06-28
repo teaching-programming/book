@@ -1,5 +1,5 @@
 ---
-title: "Practical approaches to using sound and music in programming pedagogy"
+title: "Practical Approaches to Using Sound and Music in Programming Pedagogy"
 bibliography: references.bib
 author:
   - name: Tom Mudd
@@ -19,24 +19,33 @@ author:
     affiliations: School of Engineering, Physics and Mathematics, Northumbria University
 
 keywords:
-  - practical
-  - resources
-  - music
-  - audio
-  - beginner
+  - student-engagement	
+  - tool-review
 ---
 
 ::: {.content-visible when-format="docx" note="this should be identical as authors above, for docx"}
 author:
-  - name: Author One
-    email: author@one.com
-    affiliations: institution or company
+  - name: Tom Mudd
+    email: tom.mudd@ed.ac.uk
+    affiliations: Reid School of Music, Edinburgh College of Art, University of Edinburgh
+  - name: Yashique Chalil
+    email: ychalil@ed.ac.uk
+    affiliations: Reid School of Music, Edinburgh College of Art, University of Edinburgh
+  - name: Matthew Hamilton
+    email: s0674653@ed.ac.uk
+    affiliations: Reid School of Music, Edinburgh College of Art, University of Edinburgh
+  - name: Charlotte Desvages
+    email: charlotte.desvages@ed.ac.uk
+    affiliations: School of Mathematics and Maxwell Institute for the Mathematical Sciences, University of Edinburgh
+  - name: Mike Taverne
+    email: mike.taverne@northumbria.ac.uk
+    affiliations: School of Engineering, Physics and Mathematics, Northumbria University
 :::
 
 
 ## Introduction
 
-This chapter is designed to serve as a brief tour of connections between sound, music, programming and pedagogy. In particular, it is aimed at educators who want to explore sound and music in their own programming pedagogy. The chapter presents motivations for connecting these domains, introduces prior work in this area, and presents a range of [@matthew_hamilton_2026] that can be taken up or adapted to bring sound and music into coding education.
+This chapter is designed to serve as a brief tour of connections between sound, music, programming and pedagogy. In particular, it is aimed at educators who want to explore sound and music in their own programming pedagogy. The chapter presents motivations for connecting these domains, introduces prior work in this area, and presents a range of accompanying resources [@matthew_hamilton_2026] that can be taken up or adapted to bring sound and music into coding education.
 
 Making code that engages with sound and music can be fun, even with only a very basic understanding of programming concepts, and regardless of any prior music education. There are many ways in which sound and music may connect with programming. For example:
 
@@ -55,7 +64,7 @@ Making code that engages with sound and music can be fun, even with only a very 
 We will first explore motivations for connecting music with programming, followed by a brief overview of the rich existing work in this domain. The set of practical accompanying resources that can serve as starting points into different kinds of music/coding projects are then introduced. The resources themselves are accessible [here](https://github.com/mhamilt/teaching-programming-music-with-code/).
 
 
-## Why combine programming with sound and music? {#sec-why}
+## Why Combine Programming With Sound and Music? {#sec-why}
 
 Music and programming have a rich intertwined history. Simple but effective connections can be found between programming concepts --- such as iteration, abstraction, conditionals, loops --- and musical concepts such as rhythm, timing, harmony, pattern and so on. Writing a program that generates sound provides an immediate, engaging way to manifest abstract processes. In a pedagogical sense, the sound output is a form of feedback. Programs don't have to be complicated or sophisticated in terms of the coding to be musically satisfying. Students can create sound and music that they can share with friends and relatives, who may not know the first thing about programming but can nonetheless engage with the creative outcomes.
 
@@ -63,15 +72,20 @@ Programming concepts can be playfully explored in musical contexts. For example,
 
 Sound and music can also be used to present and experience data in different ways. Data sonification has a long history [@worrall_2019], from giving a constant awareness of something otherwise invisible as with Geiger counters or medical monitoring devices, to hearing emergent behaviours in dynamical systems, providing auditory graphs for the visually impaired [@walker_mauney_2010], or creative projects that use the data for musical ends [@bulley_jones_2011; @barrett_mair_2014].
 
+::: {.content-visible unless-format="html"}
+![Two examples of arrays becoming sound and music. On the left, the array is translated into note values. On the right, the array is translated directly to an audio file.](/chapters/images/C17_fig1_arrays_as_sound_and_music.png){#fig-arrays-as-music fig-alt="Left image: a command to create an array of numbers, above a representation of a MIDI score and a traditional music score. Right image: another command to create an array of numbers, above a plot of a single period of a sin wave."}
+:::
+::: {.content-visible when-format="html"}
 ![Two examples of arrays becoming sound and music. On the left, the array is translated into note values. On the right, the array is translated directly to an audio file.](/chapters/images/C17_fig1_arrays_as_sound_and_music.svg){#fig-arrays-as-music fig-alt="Left image: a command to create an array of numbers, above a representation of a MIDI score and a traditional music score. Right image: another command to create an array of numbers, above a plot of a single period of a sin wave."}
+:::
 
 There are obvious parallels here with coding and visual art. Environments such as Processing [@reas_2006] connect programming with image and animation, motivating learning and exploration [@reas_and_fry_2007 p. 1]. As explored in the following section, there is a similarly rich history of music making in programming pedagogy. To mix music, art, computers and coding therefore continues a long and fruitful tradition [@reichardt_1971; @dreher_2014; @wang_17], and can serve as a reminder to both students and educators that coding is fundamentally about making things and is therefore a creative act.
 
-## Overview of existing work {#sec-literature}
+## Overview of Existing Work {#sec-literature}
 
 Music and programming have been connected in a wide variety of ways, sometimes through the addition of libraries for integrating musical inputs and outputs with existing languages, and sometimes through the development of specifically designed languages or environments. As this is a very short chapter, it only scratches the surface of many of the interesting work done in this domain, and the focus is on music/code projects with explicit pedagogical dimensions.
 
-Most mainstream programming languages are able to work with sound and music as outputs. This could be achieved by writing data to a file, e.g. an audio file (see @sec-wav_writing below) or a MIDI file (a common musical data format that can be used to synthesise sound). The program could also transmit real-time messages to an audio engine that runs separately, e.g. a standalone synthesiser or sampler[^C17-ftn1], a digital audio workstation, or frameworks such as [SuperDirt](https://github.com/musikinformatik/SuperDirt). Most mainstream programming languages will have libraries available for these purposes, making it relatively easy to adapt any simple programming exercise into a sonic/musical exercise.
+Most mainstream programming languages are able to work with sound and music as outputs. This could be achieved by writing data to a file, e.g. an audio file (see 'An Educator's Guide to WAVE Format Files' below) or a MIDI file (a common musical data format that can be used to synthesise sound). The program could also transmit real-time messages to an audio engine that runs separately, e.g. a standalone synthesiser or sampler[^C17-ftn1], a digital audio workstation, or frameworks such as [SuperDirt](https://github.com/musikinformatik/SuperDirt). Most mainstream programming languages will have libraries available for these purposes, making it relatively easy to adapt any simple programming exercise into a sonic/musical exercise.
 
 The [Scratch programming language](https://scratch.mit.edu/educators/) is a well-established starting point for young people to engage with coding. While sound and music are not usually the primary focus for students, there is still considerable scope for creativity and experimentation. Brown and Ruthman present a useful range of project types in their _Scratch Music Projects_ book [@brown_20], from simple theremin-like interactive instruments, through playing simple riffs, up to thinking about loops, musical structures, generative music, and live coding performance. As Scratch is used more generally for creating games, stories or animations, students can be motivated to explore sound and music as one component in wider creative projects.
 
@@ -83,9 +97,10 @@ The [EarSketch](https://earsketch.gatech.edu/) [@engelman_earsketch_2017] and [T
 
 A key concern across all the above projects is that there should be room for musical variety and expression; although they may present simple entry points to engaging with programming, it is possible to create rich and interesting creative work that students will be proud of.
 
-## Accompanying resources for educators {#sec-resources}
+## Accompanying Resources for Educators {#sec-resources}
 
-::: {#fig-resources}
+::: {.content-visible unless-format="docx"}
+:::: {#fig-C17-resources-available}
 
 ```
 .
@@ -122,28 +137,47 @@ A key concern across all the above projects is that there should be room for mus
 ```
 Resources available with this chapter.
 
+::::
+:::
+
+::: {.content-visible when-format="docx"}
+![Resources available with this chapter.](/chapters/images/c17-resources-available.png){#fig-C17-resources-available fig-alt="Resources available with this chapter."}
 :::
 
 Five example resources accompany this chapter, reflecting some of the different approaches to combining aspects of sound, music and programming in the different authors' existing pedagogical work. Each example resource comes with a `readme` that gives a sense of how the resource might be used, who might find it valuable, what prior knowledge the students may need, and what technologies will be needed. Each resource is described briefly below.
 
-### Creating a piano piece with Python
+### Creating a Piano Piece With Python
 
 This resource is aimed at students who have started on Python quite recently. It attempts to make musical output as simple and accessible as possible. Students are shown how to generate piano pieces as MIDI data which can be played back directly within a Python notebook. Students can develop their understanding of fundamental programming concepts such as lists, loops and conditionals. The ability to directly hear the results is intended to motivate students to think about how they can develop the code by themselves to try to explore how they can start to tailor the musical output towards something they find sonically interesting or satisfying.
 
 The resource is archived as part of the accompanying resources [@matthew_hamilton_2026], and at the time of writing can be accessed [here](https://github.com/mhamilt/teaching-programming-music-with-code/tree/main/resources/python-piano).
 
-::: {#fig-python-piano layout="[45, 55]" layout-valign="bottom"}
+::: {.content-visible unless-format="docx"}
 
-![Code](/chapters/images/C17_fig2a_python_piano.png){fig-alt="A section of commented Python code which generates a piano chord."}
+:::: {layout="[45, 55]" layout-valign="bottom"}
 
-![MIDI output](/chapters/images/C17_fig2b_python_piano.png){fig-alt="A screenshot of the generated piano chord displayed in MIDI format."}
+![Code](/chapters/images/C17_fig2a_python_piano.png){#fig-python-piano-a fig-alt="A section of commented Python code which generates a piano chord."}
+
+![MIDI output](/chapters/images/C17_fig2b_python_piano.png){#fig-python-piano-b fig-alt="A screenshot of the generated piano chord displayed in MIDI format."}
 
 A subsection of the Python piano learning resource as a Python notebook, with a visualisation of the MIDI output on the side.
+
+::::
+
+:::
+
+::: {.content-visible when-format="docx"}
+
+The following shows a subsection of the Python piano learning resource as a Python notebook, followed by a visualisation of the MIDI output.
+
+![Code](/chapters/images/C17_fig2a_python_piano.png){#fig-python-piano-a fig-alt="A section of commented Python code which generates a piano chord."}
+
+![MIDI output](/chapters/images/C17_fig2b_python_piano.png){#fig-python-piano-b fig-alt="A screenshot of the generated piano chord displayed in MIDI format."}
 
 :::
 
 
-### Creating drum patterns in the browser with Strudel
+### Creating Drum Patterns in the Browser With Strudel
 
 This resource is both similar and different to the piano example. Students engage with [Strudel](https://strudel.cc/workshop/getting-started/#what-is-strudel), a browser-based JavaScript port of the popular [TidalCycles](https://tidalcycles.org/) live coding language. The language has been particularly popular for exploring algorithmic approaches to beat making[^C17-ftn3]. The editor provides useful visual feedback to show how the code relates to the unfolding beats. Both TidalCycles and Strudel have been popular and accessible ways to engage with code for the first time. They also present a useful introduction to Haskell and functional programming for others. Substantial communities have been built around these technologies [@blackwell_livecoding_2022], offering routes for those new to either coding or music making to quickly connect to others working in this way.
 
@@ -154,7 +188,7 @@ The resource is archived as part of the accompanying resources [@matthew_hamilto
 
 ### An Educator's Guide to WAVE Format Files {#sec-wav_writing}
 
-Resources are contained within the `guide-to-wave-format/` directory (@fig-resources). The `guide-to-wave-format/wav_files.ipynb` notebook addresses educators directly, laying down the ground work needed to make the portable and technologically accessible audio programming lessons. No prior knowledge is assumed; the resource is intended to guide the reader through the process of WAVE file creation, the ultimate goal being a simple library ripe for customisation and intimately understood for easy dissemination to students.
+Resources are contained within the `guide-to-wave-format/` directory (@fig-C17-resources-available). The `guide-to-wave-format/wav_files.ipynb` notebook addresses educators directly, laying down the ground work needed to make the portable and technologically accessible audio programming lessons. No prior knowledge is assumed; the resource is intended to guide the reader through the process of WAVE file creation, the ultimate goal being a simple library ripe for customisation and intimately understood for easy dissemination to students.
 
 All data can be represented as sound, and the WAVE file is one of the simplest means of data sonification. Most modern operating systems (and many older ones) will support WAVE file playback through a media player, browser, or command line tool. The resource emphasises the use of standard libraries, both to improve portability and to allow students to get started quickly, instead of burdening them with language-specific ancillary concepts that could potentially be a demotivating obstacle to new programmers.
 
@@ -163,7 +197,7 @@ The intention is not to be prescriptive, but rather show how malleable the WAVE 
 The central lesson is provided in an IPython (Jupyter) notebook, but the resource in `guide-to-wave-format/wav_library` provides companion code in C, C++, Java and Rust to reinforce the basic elements needed to solve the problem. The resource is archived as part of the accompanying resources [@matthew_hamilton_2026], and at the time of writing can be accessed [here](https://github.com/mhamilt/teaching-programming-music-with-code/tree/main/resources/guide-to-wave-format).
 
 
-### Introducing functions by playing with audio files {#sec-functions}
+### Introducing Functions by Playing With Audio Files {#sec-functions}
 
 This resource is aimed at novice Python programmers, with some familiarity with variables, lists, and loops. It motivates the use of user-defined functions and introduces their syntax, using fade-ins and fade-outs on audio files as examples. Throughout the activity, students are encouraged to iterate on their function structure and choice of input arguments and return values, to help them take ownership of their program design, to better understand how and why these choices are made, and to internalise that one-shot perfect code structure isn't necessarily achievable (or even a goal that one should aim for).
 
@@ -171,28 +205,39 @@ Working with audio files is an intuitive way to understand how one chooses input
 
 ![A short section of the activity notebook, introducing input arguments as a first design choice when writing functions.](/chapters/images/C17_fig4_function_section.png){#fig-function-inputs width=70% fig-alt="A written tutorial section explaining the choice of input arguments for a Python function."}
 
-The exercises rely on using the Python module `wav_library.py` described in @sec-wav_writing as a tool to read WAVE audio files, with no requirement for students to fully understand it or to have done the activity described there previously. The resource is archived as part of the accompanying resources [@matthew_hamilton_2026], and at the time of writing can be accessed [here](https://github.com/mhamilt/teaching-programming-music-with-code/tree/main/resources/python-functions-fade).
+The exercises rely on using the Python module `wav_library.py` described below in 'An Educator's Guide to WAVE Format Files' as a tool to read WAVE audio files, with no requirement for students to fully understand it or to have done the activity described there previously. The resource is archived as part of the accompanying resources [@matthew_hamilton_2026], and at the time of writing can be accessed [here](https://github.com/mhamilt/teaching-programming-music-with-code/tree/main/resources/python-functions-fade).
 
 
-### Gestural instruments in the browser
+### Gestural Instruments in the Browser
 
-This resource demonstrates the creation of a web-based musical instrument that can be controlled via the sensors on a smart phone. This kind of activity would require students to have some existing experience of the coding language, so would fit well as an exercise or assignment as part of a wider course on music, art, design or programming. The coding is primarily done in [Max](https://cycling74.com/products/max), a proprietary visual programming environment aimed at musicians, as shown in @fig-rnbo (left). [RNBO](https://cycling74.com/products/rnbo) --- an extension of Max --- allows the visual code to be exported as JavaScript, and will auto-generate a simple HTML page that embeds the project.
+This resource demonstrates the creation of a web-based musical instrument that can be controlled via the sensors on a smart phone. This kind of activity would require students to have some existing experience of the coding language, so would fit well as an exercise or assignment as part of a wider course on music, art, design or programming. The coding is primarily done in [Max](https://cycling74.com/products/max), a proprietary visual programming environment aimed at musicians, as shown in @fig-rnbo-a. [RNBO](https://cycling74.com/products/rnbo) --- an extension of Max --- allows the visual code to be exported as JavaScript, and will auto-generate a simple HTML page that embeds the project.
 
-::: {#fig-rnbo layout-ncol=2 layout-valign="bottom"}
+::: {.content-visible unless-format="docx"}
 
-![Max](/chapters/images/C17_fig5a_max.png){fig-alt="A screenshot of a Max patch with multiple linked modules."}
+:::: {layout-ncol=2 layout-valign="bottom"}
 
-![Exported web app](/chapters/images/C17_fig5b_web_seq_demo.png){fig-alt="A screenshot of a web app with sliders and controls, shown on a mobile device."}
+![Max, a visual programming language is used to create the instrument. RNBO, an extension of MAX can be used to export patches to external targets such as C++, VSTs (Virtual Studio Technology), JavaScript or Raspberry Pi.](/chapters/images/C17_fig5a_max.png){#fig-rnbo-a fig-alt="A screenshot of a Max patch with multiple linked modules."}
 
-Max (left), a visual programming language is used to create the instrument. RNBO, an extension of MAX can be used to export patches to external targets such as C++, VSTs (Virtual Studio Technology), JavaScript or Raspberry Pi. The exported web app (right) can be accessed on a mobile web browser. The program will then map the relevant motion sensors to the assigned parameters.
+![Web app exported from Max, which can be accessed on a mobile web browser. The program will then map the relevant motion sensors to the assigned parameters.](/chapters/images/C17_fig5b_web_seq_demo.png){#fig-rnbo-b fig-alt="A screenshot of a web app with sliders and controls, shown on a mobile device."}
+
+::::
 
 :::
 
-One of the potential benefits of working in this way is that although students start from a visual programming environment, their software can be made available to anyone with a browser (see @fig-rnbo (right)), and they begin to get an exposure to JavaScript and web development. As this resource shows, small tweaks to this JavaScript can be added to refine the user interface, and add extra functionality such as smart phone sensor control.
+::: {.content-visible when-format="docx"}
+
+![Max, a visual programming language is used to create the instrument. RNBO, an extension of MAX can be used to export patches to external targets such as C++, VSTs (Virtual Studio Technology), JavaScript or Raspberry Pi.](/chapters/images/C17_fig5a_max.png){#fig-rnbo-a fig-alt="A screenshot of a Max patch with multiple linked modules."}
+
+![Web app exported from Max, which can be accessed on a mobile web browser. The program will then map the relevant motion sensors to the assigned parameters.](/chapters/images/C17_fig5b_web_seq_demo.png){#fig-rnbo-b fig-alt="A screenshot of a web app with sliders and controls, shown on a mobile device."}
+
+:::
+
+
+One of the potential benefits of working in this way is that although students start from a visual programming environment, their software can be made available to anyone with a browser (see @fig-rnbo-b), and they begin to get an exposure to JavaScript and web development. As this resource shows, small tweaks to this JavaScript can be added to refine the user interface, and add extra functionality such as smart phone sensor control.
 
 The example provided here is a responsive synthesiser hosted on the web that, when accessed from a smartphone, utilises the motion sensors to control specific parameters of the synthesiser. Once the code has been exported, it can be further developed through the generated JavaScript/HTML. In this example, a simple sequencer for playing notes and visual feedback is added using the [p5.js](https://p5js.org/) library. Motion data from a smartphone's orientation sensors is mapped in real time so that gestures like tilting or twisting can be used to control the sound. The resource is provided as a worked example that can be adapted for musical instruments, live installations, audience-participation performances, or experimental audio-visual tools. The resource is archived as part of the accompanying resources [@matthew_hamilton_2026], and at the time of writing can be accessed [here](https://github.com/mhamilt/teaching-programming-music-with-code/tree/main/resources/gestural-instruments).
 
-### Building a digital circuit to play sounds and notes using Logisim Evolution
+### Building a Digital Circuit To Play Sounds and Notes Using Logisim Evolution
 
 This resource explores sound and music making in the context of logic circuits.
 It is aimed at students working with the basics of digital logic circuit simulator [Logisim Evolution](https://github.com/logisim-evolution/logisim-evolution).
@@ -221,11 +266,10 @@ This chapter has touched briefly on some of the many connections between sound, 
 > Have you figured out how to recreate your favorite pop song with code? Great! Now try composing a new song that's all your own. Or see if you can create new types of music that are easier to make with code than without it --- or even types of music that are impossible to create without a computer! What do you come up with? Can you make new sounds that nobody in the world has ever heard before? Can you make musical "instruments" that you can interact with to perform music that you could never make with a piano or a violin? What else could you create, that nobody before you has ever made?
 
 
-::: {.appendix}
 
-## Appendix: Resource list for educators {#sec-resourcetable .unnumbered}
+## Appendix: Resource List for Educators {#sec-resourcetable .unnumbered}
 
-:::: {#tbl-resource-list}
+::: {#tbl-resource-list}
 
   -------------------------------------- --------------------------- ----------------------
   **Name**                               **Type**                    **URL**
@@ -244,10 +288,8 @@ This chapter has touched briefly on some of the many connections between sound, 
   -------------------------------------- --------------------------- ----------------------
 
 An non-exhaustive list of software and software libraries for exploring music and sound in coding contexts.
-
-::::
-
 :::
+
 
 
 [^C17-ftn1]: Lots of open source synthesisers are available such as [Surge XT](https://surge-synthesizer.github.io/) or [Dexed](https://asb2m10.github.io/dexed/).

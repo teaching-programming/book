@@ -44,19 +44,21 @@ author:
 
 Hypes come and go, and in their aftermath we are left with rubbish and confusion. We are aware of physical trash in landfills, but rapid technological change also leads to inequality, injustice, and unhelpful social patterns. It is like technical debt (the price we pay later for poor and short-sighted technological decisions now), but on a social level. It is something we can't responsibly ignore as educators and humans.
 
-It's very relevant now that we are in the midst of (another!) AI hype. And if history taught us anything, after summer will come winter, with its sloppy sludge of half-melted mess to deal with. Disturbingly, current narratives of this hype are written by tech bros with a strong (self-serving) agenda. The chorus of this song is 'growth, growth, growth', but growth where and why? We were sold on the dream of machines doing the dishes so that we can write poetry... but instead machines write poetry and we are left with a pile of dirty dishes. Can we afford for art and critical thinking to become on-demand paid subscriptions ('brain as a service') as we outsource our criticality like we delegate our driving to Uber? Is it good for society to replace human companionship with chatbot ‘partners’?
+It's very relevant now that we are in the midst of (another!) AI hype. And if history taught us anything, after summer will come winter, with its sloppy sludge of half-melted mess to deal with. Disturbingly, current narratives of this hype are written by tech bros with a strong (self-serving) agenda. The chorus of this song is 'growth, growth, growth', but growth where and why? We were sold on the dream of machines doing the dishes so that we can write poetry... but instead machines write poetry and we are left with a pile of dirty dishes. Can we afford for art and critical thinking to become on-demand paid subscriptions ('brain as a service') as we outsource our criticality like we delegate our driving to Uber? Is it good for society to replace human companionship with chatbot 'partners'?
 
-> “how do we guarantee that computers and other cultural products are not so pleasurable that they discourage us from engaging in absolutely necessary forms of social engagement?” [@golumbia_cultural_2009]
+> "how do we guarantee that computers and other cultural products are not so pleasurable that they discourage us from engaging in absolutely necessary forms of social engagement?" [@golumbia_cultural_2009]
 
 As educators, our responsibility is not to prepare students for the grim post-brain-apocalyptic future, but to inspire them to create a better, sustainable world.
 
 The worst that can happen, is that we educate another generation of self-serving tech bros, who will ruin the world and humanity further. It's irresponsible to teach any skill without also teaching the ethical, social, economical or political context, especially when topics we teach have strong creative and destructive potential (martial arts, nuclear physics, programming). But how do we make these responsibility topics 'not skippable'? In a university setting, ethics can't just be an optional elective subject, or even just a week of content within a core compulsory subject. We need 5 mins of ethics in every hour of teaching, we need a thought about ethics in every sentence. We do not need ethical bits in our yoghurt, we need ethics-flavoured yoghurt.
 
-In this chapter, we look at a number of topics where sustainability, AI, and education (or even wider culture) overlap. We will structure our thoughts around the international framework suggested by the United Nations: the [UN Sustainable Development Goals](https://sdgs.un.org/goals). Join us on this exploration of what is possible, but also of what went terribly wrong in the past. We will look especially at purposefully forgotten (or swept under the carpet) aftermaths of previous technological hypes.
+In this chapter, we look at a number of topics where sustainability, AI, and education (or even wider culture) overlap. We will structure our thoughts around the international framework suggested by the United Nations[^C08-un-disclaimer]: the [UN Sustainable Development Goals](https://sdgs.un.org/goals). Join us on this exploration of what is possible, but also of what went terribly wrong in the past. We will look especially at purposefully forgotten (or swept under the carpet) aftermaths of previous technological hypes.
 
-At the end of this chapter, we will bring it back to education and share some practical resources you can use. You will find classroom activities that support responsible computing interspersed throughout, as well as a reading list (@sec-reading-list) of our favourite articles and books. Feel free to pick some of them and plant them straight into your own curriculum. And weather-allowing, from these seeds we will watch the growth of a new, curious and slightly more sustainable generation of students and future teachers.
+[^C08-un-disclaimer]: Read more about United Nations Sustainable Development Goals on their website <https://www.un.org/sustainabledevelopment>. The content of this publication has not been approved by the United Nations and does not reflect the views of the United Nations or its officials or Member States.
 
-## Responsible compute and the UN Sustainable Development Goals
+At the end of this chapter, we will bring it back to education and share some practical resources you can use. You will find classroom activities that support responsible computing interspersed throughout, as well as a reading list (see "Summary" below) of our favourite articles and books. Feel free to pick some of them and plant them straight into your own curriculum. And weather-allowing, from these seeds we will watch the growth of a new, curious and slightly more sustainable generation of students and future teachers.
+
+## Responsible Compute and the UN Sustainable Development Goals
 
 In this section, we will introduce a number of the key issues relating to responsible compute through the lens of the UN Sustainable Development Goals, an outcome of the 2025 [UN 2030 Agenda for Sustainable Development](https://sdgs.un.org/2030agenda). These are a series of 17 goals that address a number of key international issues.
 
@@ -64,29 +66,29 @@ In this section, we will introduce a number of the key issues relating to respon
 
 [![](/chapters/images/C08_E-WEB-Goal-10.png "SDG 10: Reduced Inequalities"){fig-alt="SDG 10: Reduced Inequalities" width=15% fig-align="left"}](https://sdgs.un.org/goals/goal10)
 
-Failure to consider all members of society in the design and development of products can lead to technologies that privilege some but are not fit for purpose for others. Examples of this include near infra-red automatic soap dispensers, which do not “see” darker skin tones due to their lower reflectivity, and “Shirley” cards in photography, which were designed to help colour balance films but were entirely based on white models [@benjamin_race_2019]. Despite known issues with the film itself and how the printing machines were configured, a diverse “Shirley” card was not introduced until the mid-1990s.
+Failure to consider all members of society in the design and development of products can lead to technologies that privilege some but are not fit for purpose for others. Examples of this include near infra-red automatic soap dispensers, which do not "see" darker skin tones due to their lower reflectivity, and "Shirley" cards in photography, which were designed to help colour balance films but were entirely based on white models [@benjamin_race_2019]. Despite known issues with the film itself and how the printing machines were configured, a diverse "Shirley" card was not introduced until the mid-1990s.
 
-These inequities in film photography have been echoed in facial recognition technologies. For over 50 years, the standard reference image used in image processing papers was “Lena”, a cropped image from a November 1972 issue of Playboy. As a result, this image also appears in many course materials and textbooks on image recognition. Use of the image in academic articles has since been banned, due to ethical issues relating to its provenance. In 2015, an issue was reported with the Google Photos app labelling black people as gorillas. Google claimed that this is due to a lack of diverse images of people in its training set, and that the label “gorilla” would no longer be applied to groups of photos while an alternative solution was developed. In 2023, the New York Times reported that the issue was still yet to be resolved, and was also impacting Apple’s image recognition [@bandara_googles_2023].
+These inequities in film photography have been echoed in facial recognition technologies. For over 50 years, the standard reference image used in image processing papers was "Lena", a cropped image from a November 1972 issue of Playboy. As a result, this image also appears in many course materials and textbooks on image recognition. Use of the image in academic articles has since been banned, due to ethical issues relating to its provenance. In 2015, an issue was reported with the Google Photos app labelling black people as gorillas. Google claimed that this is due to a lack of diverse images of people in its training set, and that the label "gorilla" would no longer be applied to groups of photos while an alternative solution was developed. In 2023, the New York Times reported that the issue was still yet to be resolved, and was also impacting Apple's image recognition [@bandara_googles_2023].
 
-In 2018, Michael Rosen received a standing ovation at the last ever National Union of Teachers conference after reciting his poem [The Data Have Landed](https://michaelrosenblog.blogspot.com/2018/02/the-data-have-landed.html). The poem concludes with pupils becoming data, reflecting concerns over the datafication of compulsory education, reiterating sentiments in his previously published short story [Alice in Dataland](https://www.theguardian.com/education/2017/dec/19/alice-in-dataland-original-story-education-michael-rosen). Social inequities have long been highlighted in popular culture, for example the hip-hop classic White Lines and Bret Easton Ellis’ novel American Psycho. In the lyrics to White Lines a business man is treated more favourably than a young black man, despite being arrested for the possessionnof significantly more illegal drugs. 
-In American Psycho, the wealth a power of the main protagonist leads to them literally getting away with murder. Some are repeated in the data driven decision making systems that influence all dimensions of our daily lives, multiple examples of which are highlighted in Virginia Eubanks’ 2018 book Automating Inequality [@eubanks_automating_2019]. 
+In 2018, Michael Rosen received a standing ovation at the last ever National Union of Teachers conference after reciting his poem [The Data Have Landed](https://michaelrosenblog.blogspot.com/2018/02/the-data-have-landed.html). The poem concludes with pupils becoming data, reflecting concerns over the datafication of compulsory education, reiterating sentiments in his previously published short story [Alice in Dataland](https://www.theguardian.com/education/2017/dec/19/alice-in-dataland-original-story-education-michael-rosen). Social inequities have long been highlighted in popular culture, for example the hip-hop classic White Lines and Bret Easton Ellis' novel American Psycho. In the lyrics to White Lines a business man is treated more favourably than a young black man, despite being arrested for the possessionnof significantly more illegal drugs. 
+In American Psycho, the wealth a power of the main protagonist leads to them literally getting away with murder. Some are repeated in the data driven decision making systems that influence all dimensions of our daily lives, multiple examples of which are highlighted in Virginia Eubanks' 2018 book Automating Inequality [@eubanks_automating_2019]. 
 
 The free website [`inequalities.ai`](https://inequalities.ai/) provides maps that show how ChatGPT 4o-mini rates regions by comparative properties. The default map shows how it compares countries by "is smarter", placing Europe, North America, China, India and Australasia as "smart", and much of central and western Africa as "not smart" by comparison. This illustrates how bias continues to be an issue with modern, popular "AI" tools.
 
 ::: {.callout-tip icon=false}
 
-# Classroom activities: Facial Recognition workshop
+# Classroom Activities: Facial Recognition Workshop
 
 The Programming Historian lesson [**Facial Recognition in Historical Photographs with Artificial Intelligence in Python**](https://programminghistorian.org/en/lessons/facial-recognition-ai-python) introduces key concepts of facial recognition. This tutorial can be expanded to introduce key issues related to inequalities.
 
-- **Example: Blackish, Series 5 Episode 10**. In this episode Diane is “invisible” in her class photo. This can be a starting point to discuss engineered inequity. 
-- **Example: Lena and Google Photos**. An opportunity to discuss the culture of the research labs where image recognition technologies were developed, how this became part of the “canon”, and issues with inadequate training data.
+- **Example: Blackish, Series 5 Episode 10**. In this episode Diane is "invisible" in her class photo. This can be a starting point to discuss engineered inequity. 
+- **Example: Lena and Google Photos**. An opportunity to discuss the culture of the research labs where image recognition technologies were developed, how this became part of the "canon", and issues with inadequate training data.
 
 For an example of how these resources can be included, see @ahern_2026_image.
 
 :::
 
-### Hardware and the environment
+### Hardware and the Environment
 
 [![](/chapters/images/C08_E-WEB-Goal-08.png "SDG 8: Decent work and Economic Growth"){ fig-alt="SDG 8: Decent work and Economic Growth" width=15% fig-align="left"}](https://sdgs.un.org/goals/goal8)
 [![](/chapters/images/C08_E-WEB-Goal-12.png "SDG 12: Responsible Consumption and Production"){ fig-alt="SDG 12: Responsible Consumption and Production" width=15% fig-align="left"}](https://sdgs.un.org/goals/goal12)
@@ -95,13 +97,13 @@ Most environmental discussions relating to data-intensive computing are focused 
 
 However, the main environmental harms relate to the acquisition of the raw materials required and the embedded carbon in the manufacturing process. **Tantalum, tin, gold**, and other elements are all essential to the production of modern microelectronics. Their minerals are often located in regions with a history of conflict --- most notably the Democratic Republic of Congo (DRC) --- where demand results in neocolonial forces driving further instability on top of the existing legacies of colonial pasts [@batha_how_nodate]. A rush for gold has led to deforestation in the Amazon and increasing concern about the safety of workers in artisanal mines [@noauthor_blood_2022]. Blood gold, which is illegally mined, finds its way into legitimate supply chains with false documentation [@federl_investigating_2025].
 
-The brine beneath Bolivia’s salt flats contain rich deposits of lithium, an essential component in electric batteries. As this is becoming industrialised, there are concerns about who really benefits --- the local communities or the companies involved --- and about the proposed process and the levels of water required which may impact on neighbouring settlements.
+The brine beneath Bolivia's salt flats contain rich deposits of lithium, an essential component in electric batteries. As this is becoming industrialised, there are concerns about who really benefits --- the local communities or the companies involved --- and about the proposed process and the levels of water required which may impact on neighbouring settlements.
 
 Mining of **coltan**, the dominant source of tantalum (and niobium), is infamous for being deeply exploitative, with hard manual labour the dominant process used in the DRC. As the drive to build data centres has led to natural land being displaced in North America, China, and Europe, so has coltan mining led to deforestation, the near eradication of endangered species (gorillas, in particular, hunted for bushmeat to also feed the miners), and water pollution from dust spoil. There are significant health implications for the workers themselves, with elevated respiratory problems due to that same dust pollution [@leon-kabamba_respiratory_2018], and ionising radiation doses approaching the annual exposure limits for UK nuclear industry employees [@mustapha_occupational_2007;@uk_health_security_agency_ionising_2011].
 
 ::: {.callout-tip icon=false}
 
-# Classroom activities: Exploring the impact of mining 
+# Classroom Activities: Exploring the Impact of Mining 
 
 Current business models are based upon planned obsolescence. This could lead to a discussion of the sustainability of this business model --- why the hardware cannot just be manufactured and why computational hardware has a short supported lifespan compared to its actual usable lifespan.
 
@@ -109,13 +111,13 @@ Current business models are based upon planned obsolescence. This could lead to 
     - Watch the documentary [River of Gold](https://riverofgoldfilm.com/about-the-film/)
     - Explore how the [Amazon Aid Be a Better Guide](https://amazonaid.org/be-a-better-consumer/) relates to the production of electronic hardware
 
-- **Example: Simon Reeve’s South America, Episodes 3 & 4**. Episode 3 is in the Andes and features a high altitude gold mine and the working conditions of employees. Episode 4 features the salt flats and lithium extraction.
+- **Example: Simon Reeve's South America, Episodes 3 & 4**. Episode 3 is in the Andes and features a high altitude gold mine and the working conditions of employees. Episode 4 features the salt flats and lithium extraction.
 
 These issues can also be discussed in workshops relating to code optimisation and green compute. Reasons for optimisation may be for decreasing time to result, or to optimise the amount of social good for the environmental harms.
 
 :::
 
-### Data acquisition and workforce exploitation {#sec-data-acquisition}
+### Data Acquisition and Workforce Exploitation {#sec-data-acquisition}
 
 [![](/chapters/images/C08_E-WEB-Goal-03.png "SDG 3: Good health and Well-being"){ fig-alt="SDG 3: Good health and Well-being" width=15% fig-align="left"}](https://sdgs.un.org/goals/goal3)
 [![](/chapters/images/C08_E-WEB-Goal-08.png "SDG 8: Decent work and Economic Growth"){ fig-alt="SDG 8: Decent work and Economic Growth" width=15% fig-align="left"}](https://sdgs.un.org/goals/goal8)
@@ -124,46 +126,46 @@ In 2019, the IBM corporation was criticised for using Flickr photos in a facial-
 
 As most images used for machine learning are scraped from the internet and are not well tagged, a large workforce is needed to create this additional metadata. Similarly, tagging of content as illegal or otherwise problematic requires a large amount of initial training data which is manually tagged by humans. To do so at scale, at an affordable cost, AI companies employ outsourcing partners such as Sama, which pay workers in Kenya, Uganda and India a pittance (typically \$2/hr) for this work [@perrigo_exclusive_2023]. This is true even when the content being labelled is known to be obscene and/or deeply distressing --- graphic descriptions of sexual assault, for example, or images depicting abuse. To their credit, eventually Sama cancelled some of their worst contracts with AI companies, but other outsourcing companies exist and still perform similar work.
 
-The recent AI boom and the [Data Workers Inquiry](https://data-workers.org/) have highlighted these issues, but concerns regarding Amazon’s Mechanical Turk (MTurk) and its workers were being raised back in 2015, and again in 2024 [@dholakia_my_2015;@klovig_skelton_amazon_2024]. Despite these concerns, MTurk is still used by many researchers across multiple domains.
+The recent AI boom and the [Data Workers Inquiry](https://data-workers.org/) have highlighted these issues, but concerns regarding Amazon's Mechanical Turk (MTurk) and its workers were being raised back in 2015, and again in 2024 [@dholakia_my_2015;@klovig_skelton_amazon_2024]. Despite these concerns, MTurk is still used by many researchers across multiple domains.
 
 ::: {.callout-tip icon=false}
 
-# Classroom activities: Data sources for training models
+# Classroom Activities: Data Sources for Training Models
 
 - **Example: Data Workers Inquiry**. Explore ["Data Workers in Europe Speak Out"](https://data-workers.org/). Do these experiences align with notions of decent work? What are the harms?
 - **Example: [Hugging Face RAG tutorial](https://huggingface.co/blog/ngxson/make-your-own-rag)**. In this part of the tutorial, you could discuss the source of the file contents for the RAG training. This could then lead into discussions around access and licensing. 
 
 :::
 
-### Surveillance, sousveillance, and civil liberties
+### Surveillance, Sousveillance, and Civil Liberties
 
 [![](/chapters/images/C08_E-WEB-Goal-16.png "SDG 16: Peace, Justice and String institutions"){
 fig-alt="SDG 16: Peace, Justice and String institutions" width=15% fig-align="left"}](https://sdgs.un.org/goals/goal16)
 
-In 2018, the British Council published an article based on a letter by Tim Berners-Lee [@berners-lee_web_2013], where he raised concerns about the dark side of the web, alongside his hopes for the future. Specifically, he raised concerns around the concentration of power and the gatekeeping effect which enables a “handful of platforms to control which ideas and opinions are seen and shared”.
+In 2018, the British Council published an article based on a letter by Tim Berners-Lee [@berners-lee_web_2013], where he raised concerns about the dark side of the web, alongside his hopes for the future. Specifically, he raised concerns around the concentration of power and the gatekeeping effect which enables a "handful of platforms to control which ideas and opinions are seen and shared".
 
 These fears are now being realised. According to the Fortune 500 Global rankings [@fortunecom_fortune_2023], Amazon is the second largest grossing organisation in 2025 and has been in the Fortune 500 Global rankings list for 17 years. Apple is 8th, Alphabet 13th, Microsoft 22nd and Meta Platforms 41st. These companies rely heavily on our data for their platforms and services, producing tools and platforms that shape our everyday lives.
 
-This sentiment is also echoed by contemporary academics. Take David Golumbia, who in the introductory chapter of The Cultural Logic of Computation, asks [@golumbia_cultural_2009] “what happens when powerful institutions --- corporations, governments, schools --- embrace computationalism as a working philosophy”. It entrenches power and enmeshes instrumental reason with neoliberalism, despite being framed in terms of distributed power and democratic participation.
+This sentiment is also echoed by contemporary academics. Take David Golumbia, who in the introductory chapter of The Cultural Logic of Computation, asks [@golumbia_cultural_2009] "what happens when powerful institutions --- corporations, governments, schools --- embrace computationalism as a working philosophy". It entrenches power and enmeshes instrumental reason with neoliberalism, despite being framed in terms of distributed power and democratic participation.
 
-In surveillance and sousveillance, the same technologies are used by both those in positions of authority and those wishing to hold them to account. The majority of public spaces are fitted with cameras and other monitoring equipment, many of which have been introduced as public safety initiatives; the few watching the many. There have been concerns related to privacy associated with these technologies --- most recently, an [audit by the Information Commissioner’s Office](https://ico.org.uk/about-the-ico/media-centre/news-and-blogs/2025/08/ico-steps-up-scrutiny-of-police-use-of-facial-recognition-technology-with-audit-of-south-wales-police-and-gwent-police/) on the use of facial recognition technology by South Wales Police and Gwent Police. Sousveillance is a form of inverse surveillance, “watching the watchers”, facilitated by mobile digital camera technologies and high speed mobile data connections, which has steadily been growing. It can be used either for recording personal experiences, or for the monitoring of authority figures (hierarchical sousveillance) [@baker_sousveillance_2020], and can have both positive (e.g. the recording of the George Floyd incident) and negative impacts on individuals (e.g. cyber harassment) and organisations.
+In surveillance and sousveillance, the same technologies are used by both those in positions of authority and those wishing to hold them to account. The majority of public spaces are fitted with cameras and other monitoring equipment, many of which have been introduced as public safety initiatives; the few watching the many. There have been concerns related to privacy associated with these technologies --- most recently, an [audit by the Information Commissioner's Office](https://ico.org.uk/about-the-ico/media-centre/news-and-blogs/2025/08/ico-steps-up-scrutiny-of-police-use-of-facial-recognition-technology-with-audit-of-south-wales-police-and-gwent-police/) on the use of facial recognition technology by South Wales Police and Gwent Police. Sousveillance is a form of inverse surveillance, "watching the watchers", facilitated by mobile digital camera technologies and high speed mobile data connections, which has steadily been growing. It can be used either for recording personal experiences, or for the monitoring of authority figures (hierarchical sousveillance) [@baker_sousveillance_2020], and can have both positive (e.g. the recording of the George Floyd incident) and negative impacts on individuals (e.g. cyber harassment) and organisations.
 
 ::: {.callout-tip icon=false}
 
-# Classroom activities: Responsible AI
+# Classroom Activities: Responsible AI
 
 - **Example: [Datopolis --- The Open Data Board Game](https://datopolis.theodi.org/)**. This board game from the Open Data Initiative is available to play online. It introduces key ideas around why data may be open or closed, and longer versions of the game introduce different perspectives on how data can be used. This helps learners to understand that decisions around data use are political and opens up the idea that data itself may not be neutral.
 - **Example: Explore whether AI smart glasses should be a consumer technology**.
   In 2013, Google launched its Google Glass smart glasses. Due to resistance and concerns over use, these were withdrawn from the market in 2015. However, this technology has seen a resurgence. Meta launched AI enabled smart glasses in the autumn of 2025, and Google are considering re-entering the market. However, there are already rising concerns over how these devices are being used.
   
-  A number of campuses in the USA have issued guidance to students over use on campus and threats to safety [@clack_university_2025]. Smart glasses also pose risks to their wearers: a recent expose revealed that all video recorded on Meta smart glasses is reviewed by data annotators employed by Sama (see @sec-data-acquisition). This is not made clear to users of the glasses, who often record intimate parts of their lives on their product. The Information Commissioner’s Office has written to Meta about concerns [@vallance_ico_2026].
+  A number of campuses in the USA have issued guidance to students over use on campus and threats to safety [@clack_university_2025]. Smart glasses also pose risks to their wearers: a recent expose revealed that all video recorded on Meta smart glasses is reviewed by data annotators employed by Sama (see "Data Acquisition and Workforce Exploitation"). This is not made clear to users of the glasses, who often record intimate parts of their lives on their product. The Information Commissioner's Office has written to Meta about concerns [@vallance_ico_2026].
   
   Students may discuss what the benefit is for Meta and Google in providing smart glasses. Should they be an industrial or a consumer product? This can lead into discussions about corporate responsibility and "surveillance capitalism".
 - **Example: [Explore the AI Incidents Database](https://incidentdatabase.ai/)**. This website is a project of the Responsible AI Collective, an archive of actual harms or near harms of deployed AI systems. The taxonomies of [Goals, Methods, and Failures (GMF)](https://incidentdatabase.ai/taxonomies/gmf/) and the [MIT AI Risk Repository](https://incidentdatabase.ai/taxonomies/mit/) are particularly interesting and could be used when discussing a particular technology or potential for harm.
 
 :::
 
-### Cultural colonialism
+### Cultural Colonialism
 
 [![](/chapters/images/C08_E-WEB-Goal-04.png "SDG 4: Quality Education"){ fig-alt="SDG 4: Quality Education" width=15% fig-align="left"}](https://sdgs.un.org/goals/goal4)
 [![](/chapters/images/C08_E-WEB-Goal-10.png "SDG 10: Reduced Inequalities"){ fig-alt="SDG 10: Reduced Inequalities" width=15% fig-align="left"}](https://sdgs.un.org/goals/goal10)
@@ -182,7 +184,7 @@ Indeed, even before LLMs, the ease with which Internet-based technologies has al
 
 ::: {.callout-tip icon=false}
 
-# Classroom activities: Generative AI and homogenisation
+# Classroom Activities: Generative AI and Homogenisation
 
 - **Example: Volume of content generation**. A Graphite study [@paredes_more_2025] shows that LLMs now generate more content on the internet than humans. Students can discuss what this might mean about unique perspectives and the place for human voices and thought. Students may be prompted to consider the danger of conformity in general, and how much we can trust online content without provenance! Educators might discuss the Scots Wikipedia scandal mentioned above as an example of how, even without LLMs, technology amplifies the actions of individuals in potentially harmful ways.
 - **Example: Essay "help"**. Students almost certainly have used LLMs to generate or "help" with essay writing or editing. Discuss, with prompting an LLM in class, where individual style may be a matter of taste --- and how the style biases of the LLM are themselves obvious. Compare to the diverse range of styles found in (English) literature --- do the students think that an LLM would have allowed James Joyce to write Ulysses? Or William Shakespeare to write his plays, given his invention (or at least promotion) of many new words in the English language? (This can become a discussion about the need for critical thinking, creativity and analysis in any text.)
@@ -192,18 +194,16 @@ Indeed, even before LLMs, the ease with which Internet-based technologies has al
 
 ## Summary {#sec-reading-list}
 
-In this chapter, we have raised a number of repeating socio-technical issues and linked these to the UN Sustainable Development Goals. We have also provided examples of how these topics could be introduced to learners. These examples are directly linked to the [QAA Computing Subject Benchmark](https://www.qaa.ac.uk/docs/qaa/sbs/sbs-computing-22.pdf?sfvrsn=ebb3dc81_4) statement 1.17 regarding sustainability and 1.14 regarding equality, diversity and inclusion, specifically the consideration point: “demonstrating areas in software engineering and application development that require a professional and reflective approach to addressing bias and lack of diversity in data and design of computing solutions, systems and protocols.”
+In this chapter, we have raised a number of repeating socio-technical issues and linked these to the UN Sustainable Development Goals. We have also provided examples of how these topics could be introduced to learners. These examples are directly linked to the [QAA Computing Subject Benchmark](https://www.qaa.ac.uk/docs/qaa/sbs/sbs-computing-22.pdf?sfvrsn=ebb3dc81_4) statement 1.17 regarding sustainability and 1.14 regarding equality, diversity and inclusion, specifically the consideration point: "demonstrating areas in software engineering and application development that require a professional and reflective approach to addressing bias and lack of diversity in data and design of computing solutions, systems and protocols."
 
 We hope that these examples, alongside the [QAA and AdvanceHE Education for Sustainable Development Guidance](https://www.advance-he.ac.uk/knowledge-hub/education-sustainable-development-guidance), will help embed these key ideas throughout our curricula. In addition, we have provided a list of recommended further reading that will expand on the ideas introduced more fully, and provide inspiration for how we can introduce these key topics to our students and lead to a more sustainable, and ethical, future for all.
 
-::: {.callout-tip icon=false}
-
-# Further reading
+## Further Reading
 
 - @eubanks_automating_2019, **Automating inequality: how high-tech tools profile, police, and punish the poor.**
-  This is a USA focused book. It discusses a range of issues related to algorithmic decision making that have negatively impacted on less privileged areas of society. The spur for writing the book was Eubanks’ partner falling foul of a health insurance algorithm and being denied funding for health care.
+  This is a USA focused book. It discusses a range of issues related to algorithmic decision making that have negatively impacted on less privileged areas of society. The spur for writing the book was Eubanks' partner falling foul of a health insurance algorithm and being denied funding for health care.
 - @benjamin_race_2019, **Race after technology: abolitionist tools for the New Jim Code.**
-  History is littered with technologies that “other”; in this book, Benjamin explores how technologies have the ability to entrench existing inequities whilst appearing at a surface level to be neutral.
+  History is littered with technologies that "other"; in this book, Benjamin explores how technologies have the ability to entrench existing inequities whilst appearing at a surface level to be neutral.
 - @mejias2024data, **Data grab: The new colonialism of big tech and how to fight back.**
   This book explores data acquisition as a colonial act, comparing it to the land grabs during the age of Empire. It introduces and discusses key topics such as data ownership and individual data rights.
 - @jasanoff2019dreamscapes, **Dreamscapes of modernity: Sociotechnical imaginaries and the fabrication of power.**
@@ -215,7 +215,6 @@ We hope that these examples, alongside the [QAA and AdvanceHE Education for Sust
 - @black2012ibm, **IBM and the Holocaust: The Strategic Alliance Between Nazi Germany and America's Most Powerful Corporation -- Expanded Edition.**
   A meticulously researched piece covering the knowing involvement of IBM (and its German subsiduaries) in the actions of Nazi Germany. A good example of where prioritising profit over ethics once led us, and can lead us again.
 
-:::
 
 ::: {.content-visible when-format="html" unless-format="epub"}
 

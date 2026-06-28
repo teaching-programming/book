@@ -31,7 +31,7 @@ This chapter is for you if you are curious about how lofty, idealistic ideals (o
 
 ### The Wild(Life) Side of Pair Programming [@TeachProgAcross_C37]
 
-A fascinating story about a group of students from Scotland’s Rural College who pair-analysed environmental data in Excel. Most of students did not join the BSc Wildlife and Conservation Management to learn coding or data analysis. But they will need those skills in their daily work of maintaining natural environments. The author describes a journey of searching and testing various ways to excite the class, which then culminates in cross-pollinating of ideas a buzzing classroom. 
+A fascinating story about a group of students from Scotland's Rural College who pair-analysed environmental data in Excel. Most of students did not join the BSc Wildlife and Conservation Management to learn coding or data analysis. But they will need those skills in their daily work of maintaining natural environments. The author describes a journey of searching and testing various ways to excite the class, which then culminates in cross-pollinating of ideas a buzzing classroom. 
 
 This chapter is for you if you want to be inspired by how a simple change in a teaching method can transform the classroom - especially when the teacher emphatically customises it for the specific audience. 
 
@@ -41,7 +41,7 @@ To create a sustainable training ecosystem it takes planning, skills and determi
 
 This chapter is for you if you are looking for different training approaches that target scholars from non-technical backgrounds. You might get inspired by specific teaching materials, teaching methods or the very way in which CDCS serves its purpose. You'll also find useful insights if you're planning to start or rejuvenate a training programme in your own organisation. 
 
-### Changing Civil Engineering Students’ Mindset Toward Programming [@TeachProgAcross_C32]
+### Changing Civil Engineering Students' Mindset Toward Programming [@TeachProgAcross_C32]
 
 Ponder this question: does being an expert in one area (e.g., civil engineering) change the way you program? The author describes what patterns they noticed among civil engineering students in terms of problem solving and code writing. You'll see how skills of connecting physical structures, logic and math get translated into code. Is their impact visible even in high level activities like code reuse, generalisation, and problem decomposition? It is not just about the differences in applications, but also about finding a golden middle ground between high-level and detailed, between applied and abstract. 
 

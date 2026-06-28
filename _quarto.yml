@@ -23,18 +23,21 @@ format:
         site-url: https://teaching-programming.github.io/book
         link-external-newwindow: true
 
+        csl: apa-6th-edition.csl
+
         toc: true
+        # toc-location: body # TODO NOT WORKING, puts TOC at start of each chapter
         include-before-body:
             file: _theme/accessibility.html
         grid:
-            sidebar-width: 330px
+            sidebar-width: 400px
             body-width: 900px
             margin-width: 330px
             gutter-width: 30px
-    pdf:
-        include-in-header: _theme/latex_preamble.tex
-        bibliography: references.bib
-        links-as-notes: true
+    # pdf:
+        # include-in-header: _theme/latex_preamble.tex
+        # bibliography: references.bib
+        # links-as-notes: true
         
     docx:
 #     temp dev note: in terminal use: quarto render --to docx
@@ -47,6 +50,7 @@ format:
         code-block-border-left: true
         repo-url: https://github.com/teaching-programming/book
         toc: true
+        toc-depth: 1
         links-as-notes: true
         fig-width: 2
         fig-height: 2
@@ -61,96 +65,105 @@ format:
         filters:
           - _theme/filters/callout-for-docx.lua
           - _theme/filters/authors-for-docx.lua
-    epub:
-        bibliography: references.bib
+          - _theme/filters/footnote-links-for-docx.lua
+          - quarto
+          - section-bibliographies
+        reference-section-title: References
+        citeproc: false
+    # epub:
+        # bibliography: references.bib
 
 book:
-    title: "Teaching Programming across Disciplines"
+    title: "Teaching Programming Across Disciplines"
 
     page-navigation: true
     sidebar:
         style: "docked"
         search: true
         collapse-level: 1
+
+        tools:
+          - icon: download
+            menu:
+              - text: Download PDF
+                href: https://drive.google.com/file/d/1RXSGxyDcteqqrIdwouAdJ0ayOzNCw2cp/view?usp=sharing
+
+        pinned: true
     margin-header: _theme/_accessibility_sidebar.qmd
 
     output-file: teaching_programming_across_disciplines
-    downloads: [pdf, epub]
 
     chapters:
         - index.qmd
-        # - 00-chapter-template.qmd
-
-        # - P00_part-preface.qmd
-        # C0.1 How this book/comminity came about: Chapter from editors - how we got here and how we did it 
-        # C0.2 What's in the book (introduce the parts) 
+        - C00.0_book_copyright_page.qmd
+        - C00.1_dedication.qmd
+        - C00.2_this_book.qmd
+        - C00.3_all_parts_introduction.qmd
         
-        # - P01_part-theories-applications.qmd
-        
+        - part: "=== Part I — Theories and Applications of Teaching Programming"
+        - text: "Introduction to Part I"
+          file: P01_part-theories-applications.qmd
+        - part: "Theme — Pair Programming: What? How? Why?"
         - C12_pair-programming-overview.qmd
         - C36_pair-programming-across-disciplines.qmd
         - C41_pair-programming-tutor-reflections.qmd
-        
+        - part: "Theme — Building Healthy Programming Habits"
         - C09_debugging-beyond-the-debugger.qmd
-        # - C40_TODO.qmd
         - C05_coding-mindset.qmd
-
+        - C40_coding-forces.qmd
+        - part: "Theme — Programming in a World of Generative AI"
         - C08_hype-need-responsible-compute.qmd
         - C10_teaching-with-genai.qmd
+        - C44_ai-voice-and-style-in-programming-education.qmd
         - C21_programming-across-disciplines-systems-thinking.qmd
-        - C44_genai-vs-academic-development.qmd
-
-        - C11_sequential-vs-simultaneous.qmd
+        - part: "Theme — Teaching Programming Courses: What Worked for Us"
+        - C04_computer-says-no.qmd
         - C14_foster-inclusion-and-accessibility.qmd
-#        - C04_computer-says-no.qmd
         - C33_coding-anxiety.qmd
-#        - C34_three-stars-one-wish.qmd
-
-        # - P02_part-design-practice.qmd
+        - C34_three-stars-one-wish.qmd
+        - C11_sequential-vs-simultaneous.qmd
         
+        - part: "=== Part II — Teaching Programming in Context: Design and Practice"
+        - text: "Introduction to Part II"
+          file: P02_part-design-practice.qmd
+        - part: "Theme — Drawing on Group Dynamics for Programming Education"
         - C16_peer-programming.qmd
         - C31_leveraging-the-heterogeneity.qmd
         - C23_pair-programming-fusion.qmd
-
+        - part: "Theme — Teaching Programming to Novices: Python and Beyond"
         - C01_teaching-python.qmd
         - C29_notebooks-for-novices.qmd
         - C07_teaching-C-to-novices.qmd
-        
+        - part: "Theme — Thinking Outside the Box: Designing Engaging Learning Experiences"
         - C06_feminists-and-anarchists.qmd
         - C15_programming-without-computers.qmd
         - C17_coding-with-music.qmd
         - C03_online-teaching-reflections.qmd
         - C43-data-vis.qmd
-
-        # - P03_part-assessment-feedback.qmd
-        
+          
+        - part: "=== Part III — Assessment and Feedback: Principles and Practice"
+        - text: "Introduction to Part III"
+          file: P03_part-assessment-feedback.qmd
+        - part: "Theme — Frameworks for Assessment and Feedback"
         - C38_skills-based-assessment.qmd
         - C35_action-feedback-plan.qmd
-        
+        - part: "Theme — Practical Methods for Assessing Programming"
         - C26.1-assessment-case-study.qmd
         - C02_genai-before-during-after.qmd
         - C20_automatic-marking.qmd
-
-        - P04_part-case-studies.qmd
-
+        
+        - part: "=== Part IV — Case Studies"
+        - text: "Introduction to Part IV"
+          file: P04_part-case-studies.qmd
+        - part: "Theme — Building Learning Communities and Resources"
         - C39_gentle-introduction-summer-school.qmd
         - C37_pair-programming-sruc.qmd
         - C22_interdisciplinary-by-design.qmd
         - C32_civil-engineering.qmd
         - C24_lost-in-translation.qmd
 
-        # - TODO_SendOFF.qmd
-        - CAB_Authors.qmd
-        # - TODO_Images.qmd
-        - 99-bibliography.qmd
-        
-#         # Possibly abandoned chapters:
-#        - C08_ai-boom-or-bust.qmd
-#        - C13_pair-programming-adventure.qmd
-#        - C18_social-learning-modelling.qmd
-#        - C19_genai-capabilities-and-challenges.qmd
-#        - C25_supporting-new-tutors.qmd
-#        - C26_assessment-and-feedback-overview.qmd
-#        - C27_curriculum-design-overview.qmd
-#        - C28_incorporating-reproducibility.qmd
-#        - C30_project-based-teaching.qmd
+        - part: "=== Authors and Images"
+        - C99.1-sendoff.qmd
+        - C99.2-authors.qmd
+        - C99.3-images.qmd
+        - C99.4-bibliography.qmd

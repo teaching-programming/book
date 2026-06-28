@@ -21,7 +21,7 @@ author:
     affiliations: School of Philosophy, Psychology, and Language Sciences, University of Edinburgh
 :::
 
-## In this chapter
+## In This Chapter
 
 To learn to program is to develop a new set of skills.
 In this chapter, I'll discuss an approach to course design and assessment that brings skill development to the fore: the skills-based assessment framework.
@@ -30,7 +30,7 @@ And I'll share a case study from my own context: I work as a Lecturer in Psychol
 With my colleagues, I have developed an introductory course for these students using the skills-based framework, and our experience will be the focus of the final part of this chapter.
 
 
-## What is skills-based assessment?
+## What Is Skills-Based Assessment?
 
 A course built for skills-based assessment comes with an inventory of skills that the course developer wants their students to learn.
 For example, in our intro statistics course, skills include "I can represent binary predictors using treatment coding" and "I can transform a variable into z-scores"; in a more coding-focused course, skills might be something like "I can explain the difference between while loops and for loops" or "I can use pseudocode to write basic sorting algorithms".
@@ -54,18 +54,18 @@ Second, I consider grades on the whole to be an unnecessary evil [see, e.g., @Ko
 
 
 
-## Why is the skills-based framework well-suited for teaching new programmers?
+## Why Is the Skills-Based Framework Well-Suited for Teaching New Programmers?
 
 In this section, I'll highlight three features of skills-based assessment that, in my view, make it much better than traditional weighted-averages grading for teaching programming to new programmers.
 Skills-based assessment:
 
 1. reduces students' academic anxiety and stress;
-1. lets students learn at their own pace; and
-1. helps students facing structural disadvantages to succeed.
+2. lets students learn at their own pace; and
+3. helps students facing structural disadvantages to succeed.
 
 
 
-### 1. Reduces students' academic anxiety and stress
+### 1. Reduces Students' Academic Anxiety and Stress
 
 Many students, especially those from non-STEM disciplines, are anxious about learning to program [an observation to which a whole chapter in this volume is dedicated: @TeachProgAcross_C33].
 And learning to program in a traditionally-graded course is like adding salt to the wound.
@@ -81,7 +81,7 @@ In an ongoing research study, my colleagues and I are gathering data about how o
 Based on the literature mentioned here, we hypothesise (and very much hope!) that our redesign will help ease our students' anxiety and stress.
 
 
-### 2. Lets students learn at their own pace
+### 2. Lets Students Learn at Their Own Pace
 
 Programming can be hard to learn.
 And while some people will take to it straight away, others need more time to develop this new way of thinking [@CaspersenBennedsen2007; @OffuttEtAl2017].
@@ -93,7 +93,7 @@ Students can demonstrate skills at any point during the course, so learners who 
 @OffuttEtAl2017 report that letting students pace their own learning in an introductory computer science course has led to great results: students learn better and are reportedly disinclined toward academic dishonesty, because the time pressure that had motivated them to cheat has been lifted.
 
 
-### 3. Helps students facing structural disadvantages to succeed
+### 3. Helps Students Facing Structural Disadvantages To Succeed
 
 The culturally ideal programmer is an able-bodied white man.
 Anyone who diverges from this ideal, along whichever dimension or dimensions, has extra cultural and emotional work to do when learning to code.
@@ -113,11 +113,11 @@ Further dimensions compound the challenge of belonging in traditional academic s
 All of these disadvantages can present a serious barrier in traditionally graded courses, in which students are commonly graded on things that go beyond the course's content-related learning objectives, such as regular attendance, active verbal in-class participation, and (as mentioned above) the timeliness of their understanding.
 
 But in the skills-based framework, barriers like these are softened.
-Where clear expectations and goals are provided, less background knowledge is required, making the space more inclusive to people with different backgrounds [@Parker2018].[^1]
+Where clear expectations and goals are provided, less background knowledge is required, making the space more inclusive to people with different backgrounds [@Parker2018].[^C38_1]
 As such, skills-based courses have been shown to achieve more equitable outcomes for a wider range of learners [e.g., by @OLearyStockwell2021; @OLearyStockwell2022].
 I really hope that the more flexible structure of skills-based assessment will help our intersectionally disadvantaged students build their skills as well as their sense of self-efficacy in a more compassionate space.
 
-[^1]: A well-formulated rubric may accomplish a similar goal, but rubrics tend to have two issues that skills do not. 
+[^C38_1]: A well-formulated rubric may accomplish a similar goal, but rubrics tend to have two issues that skills do not. 
   For one, by their nature, rubrics focus on the work's deficits until the very highest levels of achievement.
   Here is an example from one of our earlier report-based assessments: "Results are mostly clear and logically presented.
   Interpretation is mostly accurate but may lack depth in linkage to analysis strategy".
@@ -135,14 +135,14 @@ Everybody benefits from inclusive pedagogy.
 For further discussion of inclusion and accessibility in teaching programming, see @TeachProgAcross_C14 in this volume.
 
 
-## Case study: Developing a skills-based course introducing statistics using R
+## Case Study: Developing a Skills-Based Course Introducing Statistics Using R
 
 For all the reasons discussed above and more, my team and I in Psychology at the University of Edinburgh are using the skills-based framework to redesign our undergraduate statistics curriculum.
 The [redesigned first-year course (link to the University of Edinburgh course catalogue DRPS)](https://www.drps.ed.ac.uk/26-27/dpt/cxpsyl08013.htm) will launch in September 2026, so as of this writing, no students have experienced it yet.
 In this section, I'll describe the path we took [largely guided by @ClarkTalbert2023, Chapter 11] and some key decisions we made along the way.
 
 
-### Our development process
+### Our Development Process
 
 We began by dreaming up, in very broad strokes, what topics and methods we wanted to cover in our ideal version of the course.
 Our early notes included, for example, "intro tidyverse", "descriptive stats", and "simple linear model".
@@ -185,14 +185,14 @@ After integrating the very useful input we got from all these people (examples o
 At that point, with the administrative overhead off our desks for a while, we started to fine-tune the skills that the first iteration of the course will actually assess.
 
 
-### Top tips for writing assessment skills
+### Top Tips For Writing Assessment Skills
 
 Designing the skills themselves is a creative logistical challenge with many degrees of freedom.
 In this section, I'll walk through how we resolved two major questions that came up repeatedly along the way: how specific vs. how high-level should each skill be? 
 And what level of cognitive engagement should each skill call for?
 
 
-#### Granularity of assessment skills
+#### Granularity of Assessment Skills
 
 In our early list of topics, we wrote, for example, that we want students to learn to summarise data using the mean, the median, and the mode.
 How many skills should we use to assess this learning?
@@ -245,7 +245,7 @@ We therefore chose to assess the most consolidated, broadest, highest-level vers
 
 
 
-#### Cognitive level of assessment skills
+#### Cognitive Level of Assessment Skills
 
 Each skill should call for an action that a student can easily understand and that an assessor can easily observe [@ClarkTalbert2023].
 But for a given skill, we found that often, several different actions will all seem reasonable.
@@ -267,7 +267,7 @@ They comment (p. 165) that hands-on, skills-building courses tend to use vocabul
 We want our students to focus on building skills, so we opted for the more hands-on "conduct a t-test" variant throughout.
 
 
-## The big skills-based picture
+## The Big Skills-Based Picture
 
 To conclude, let's zoom back out: what makes skills-based assessment well-suited for helping students learn to program?
 The picture I hope to have painted in this chapter shows a different way of checking in on how people learn, one that genuinely recognises students as the learners they are, not just as faulty repositories for the information we bestow [@Freire1996].
