@@ -72,6 +72,10 @@ format:
         citeproc: false
     # epub:
         # bibliography: references.bib
+        
+website:
+  plausible-analytics:
+    path: _plausible_snippet.html
 
 book:
     title: "Teaching Programming Across Disciplines"
