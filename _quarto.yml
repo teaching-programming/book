@@ -74,6 +74,7 @@ format:
         # bibliography: references.bib
         
 website:
+  favicon: chapters/images/favicon.png
   plausible-analytics:
     path: _plausible_snippet.html
 
