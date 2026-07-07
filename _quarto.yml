@@ -80,6 +80,7 @@ website:
 
 book:
     title: "Teaching Programming Across Disciplines"
+    favicon: chapters/images/favicon.png
 
     page-navigation: true
     sidebar:
