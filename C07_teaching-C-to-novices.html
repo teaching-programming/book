@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -17,10 +17,13 @@
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -101,10 +104,10 @@ div.csl-indent {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-136cf767a9531f2487009142f5ee0ff5.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-ef926c78cfc3abd30850c2d2fda68663.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -169,16 +172,8 @@ div.csl-indent {
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Teaching Programming Across Disciplines</a> 
         <div class="sidebar-tools-main">
-    <div class="dropdown">
-      <a href="" title="" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label=""><i class="bi bi-download"></i></a>
-      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
-          <li>
-            <a class="dropdown-item sidebar-tools-main-item" href="https://drive.google.com/file/d/1RXSGxyDcteqqrIdwouAdJ0ayOzNCw2cp/view?usp=sharing">
-            Download PDF
-            </a>
-          </li>
-      </ul>
-    </div>
+    <a href="https://books.ed.ac.uk/edinburgh-diamond/catalog/book/ed-9781836450795" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-download"></i></a>
+    <a href="https://github.com/teaching-programming/book" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
 </div>
     </div>
       </div>
@@ -821,22 +816,22 @@ div.csl-indent {
 <p>Indeed, one of the issues with the arguments for Python and against performance languages, such as those given in <span class="citation" data-cites="Balreira_2023">(<a href="#ref-Balreira_2023" role="doc-biblioref">Balreira et al., 2022</a>)</span>, is that they beg the question, assuming that by definition a “performance” language must also be inherently less syntactically and semantically natural than an “intuitive” one (such as, it is argued, Python). This is neither obvious, nor actually true in the general case; C and C++ are arguably very unapproachable languages, but this is a consequence of their age and accretion of features more than it is due to their performance characteristics.</p>
 <p>The power of Julia as a bridge language from Python is that one can gradually add more layers of subtlety and complexity as students develop their mental models. The equivalent process in Python requires learning large external modules such as NumPy, which effectively provide an additional domain-specific language wrapped in Python for dealing with these concepts. In Julia, such concepts are supported within the core of the language itself.</p>
 <p>A common pattern in development in Julia is to write functions in a general sense first, with no type specifiers on their parameters:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode numberSource julia number-lines code-with-copy"><code class="sourceCode julia"><span id="cb1-1"><a href="#cb1-1"></a><span class="st">"quotient(numerator, denominator) : Quotient of two values"</span></span>
-<span id="cb1-2"><a href="#cb1-2"></a><span class="kw">function</span> <span class="fu">quotient</span>(numerator, denominator)</span>
-<span id="cb1-3"><a href="#cb1-3"></a>    numerator <span class="op">/</span> denominator </span>
-<span id="cb1-4"><a href="#cb1-4"></a><span class="kw">end</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode numberSource julia number-lines code-with-copy"><code class="sourceCode julia"><span id="cb1-1"><a href="#cb1-1" aria-label="1"></a><span class="st">"quotient(numerator, denominator) : Quotient of two values"</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-label="2"></a><span class="kw">function</span> <span class="fu">quotient</span>(numerator, denominator)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-label="3"></a>    numerator <span class="op">/</span> denominator </span>
+<span id="cb1-4"><a href="#cb1-4" aria-label="4"></a><span class="kw">end</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Then, when necessary, one can specialise methods of the function for particular cases:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode numberSource julia number-lines code-with-copy"><code class="sourceCode julia"><span id="cb2-1"><a href="#cb2-1"></a><span class="st">"quotient(numerator::Integer, denominator::Integer) : Quotient of two Integers - returns a Rational"</span></span>
-<span id="cb2-2"><a href="#cb2-2"></a><span class="kw">function</span> <span class="fu">quotient</span>(numerator<span class="op">::</span><span class="dt">Integer</span>, denominator<span class="op">::</span><span class="dt">Integer</span>)</span>
-<span id="cb2-3"><a href="#cb2-3"></a>    numerator<span class="op">//</span>denominator</span>
-<span id="cb2-4"><a href="#cb2-4"></a><span class="kw">end</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode numberSource julia number-lines code-with-copy"><code class="sourceCode julia"><span id="cb2-1"><a href="#cb2-1" aria-label="1"></a><span class="st">"quotient(numerator::Integer, denominator::Integer) : Quotient of two Integers - returns a Rational"</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-label="2"></a><span class="kw">function</span> <span class="fu">quotient</span>(numerator<span class="op">::</span><span class="dt">Integer</span>, denominator<span class="op">::</span><span class="dt">Integer</span>)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-label="3"></a>    numerator<span class="op">//</span>denominator</span>
+<span id="cb2-4"><a href="#cb2-4" aria-label="4"></a><span class="kw">end</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>(Here we specialise <code>quotient</code> for any concrete <code>Integer</code> type variables to return a <code>Rational</code> fraction, rather than a simple division.)</p>
 <p>This provides a natural way to introduce types and their relevance to students. In fact, internally Julia always specialises a function invocation by the types of the argument, and we can also introspect this if we want to demonstrate this fact to students.</p>
 <p>Of course, Python does provide <em>type hints</em> as an optional feature from version 3.9. Unlike true type constraints, however, Python’s hints have no effect on the Python interpreter itself; they are annotations to be parsed by external linters, or to act as additional documentation for the human reader. The actual output of the Python interpreter itself is unchanged by their introduction.</p>
 <p>Furthermore, as almost all of Julia’s standard library is itself implemented in Julia, Julia’s introspection tools can provide a way for learners to look under the bonnet and explore the internals of the language. Unlike Python, there are almost no black-boxes that we can’t examine. For example: the <code>@less</code> macro allows the student to look at the source code for any function that is loaded from a file in the current session. While this doesn’t work for things defined in the REPL itself, there are packages that provide this functionality should it be needed.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode numberSource julia number-lines code-with-copy"><code class="sourceCode julia"><span id="cb3-1"><a href="#cb3-1"></a><span class="pp">@less</span> <span class="fu">isodd</span>(<span class="fl">3</span>)</span>
-<span id="cb3-2"><a href="#cb3-2"></a></span>
-<span id="cb3-3"><a href="#cb3-3"></a><span class="op">&gt;</span> <span class="fu">isodd</span>(n<span class="op">::</span><span class="dt">Real</span>) <span class="op">=</span> <span class="fu">isinteger</span>(n) <span class="op">&amp;&amp;</span> !<span class="fu">iszero</span>(<span class="fu">rem</span>(<span class="fu">Integer</span>(n), <span class="fl">2</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode numberSource julia number-lines code-with-copy"><code class="sourceCode julia"><span id="cb3-1"><a href="#cb3-1" aria-label="1"></a><span class="pp">@less</span> <span class="fu">isodd</span>(<span class="fl">3</span>)</span>
+<span id="cb3-2"><a href="#cb3-2" aria-label="2"></a></span>
+<span id="cb3-3"><a href="#cb3-3" aria-label="3"></a><span class="op">&gt;</span> <span class="fu">isodd</span>(n<span class="op">::</span><span class="dt">Real</span>) <span class="op">=</span> <span class="fu">isinteger</span>(n) <span class="op">&amp;&amp;</span> !<span class="fu">iszero</span>(<span class="fu">rem</span>(<span class="fu">Integer</span>(n), <span class="fl">2</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>(In fact, a view of the file in which this is defined, with the above line highlighted.)</p>
 <p>Teaching performance programming in Python is — by contrast with teaching fundamental programming concepts — quixotically harder, in that much of the answer is to use Python fundamental constructs as rarely as possible. Whilst algorithmic design plays some part, the fact that we can make an implementation orders of magnitude faster by using NumPy intrinsics instead of for-loops muddies the lesson that we need students to extract from the experience. By contrast, in both C and Julia, implementations in the base language are about as fast as they can be. Efficiency is almost always gained by either algorithmic improvement or, in extremis, by making use of deep systems knowledge (cache-width, layout of data in memory, etc.) which is mostly language-agnostic, and can be relegated to a later course.</p>
 <p>Because Julia <em>is</em> JAOT-compiled, however, lower-level representations are always available to the programmer, which can be useful for pedagogic purposes; something which is not possible with Python. That is, we can always use the <code>@code_</code> family of macros to expose what Julia code is compiled to, in an active session, at various levels in the compilation process, including at that of the native assembly code (via <code>@code_native</code>). For example, this lets us show the significant changes in code generation when switching between floating-point and integer types for mathematical operations, or how tail-call recursion is optimised to more efficient loops!</p>

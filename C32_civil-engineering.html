@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -14,10 +14,13 @@
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -98,10 +101,10 @@ div.csl-indent {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-136cf767a9531f2487009142f5ee0ff5.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-ef926c78cfc3abd30850c2d2fda68663.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -137,7 +140,7 @@ div.csl-indent {
 </script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -195,16 +198,8 @@ window.Quarto = {
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Teaching Programming Across Disciplines</a> 
         <div class="sidebar-tools-main">
-    <div class="dropdown">
-      <a href="" title="" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label=""><i class="bi bi-download"></i></a>
-      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
-          <li>
-            <a class="dropdown-item sidebar-tools-main-item" href="https://drive.google.com/file/d/1RXSGxyDcteqqrIdwouAdJ0ayOzNCw2cp/view?usp=sharing">
-            Download PDF
-            </a>
-          </li>
-      </ul>
-    </div>
+    <a href="https://books.ed.ac.uk/edinburgh-diamond/catalog/book/ed-9781836450795" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-download"></i></a>
+    <a href="https://github.com/teaching-programming/book" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
 </div>
     </div>
       </div>
@@ -860,28 +855,28 @@ Figure&nbsp;39.3: Lattice 2
 <p>To CivEng students, reusing code is actually more difficult than writing new code! While the students can implement the code quite well in terms of logic and calculation (see the previous section), they somehow feel embarrassed when having to perform the calculation again with a slightly different input data, or in the CivEng’s language, another “scenario”. Given the intuitive layout of code blocks in a notebook, the students tend to just copy-and-paste code and make minor edits, which leads to code with excessive repetition. Other related “gotchas” are discussed in other chapters of this book <span class="citation" data-cites="TeachProgAcross_C29 TeachProgAcross_C07">(<a href="#ref-TeachProgAcross_C29" role="doc-biblioref">El Gemayel, Budiarto, &amp; Bell, 2026</a>; <a href="#ref-TeachProgAcross_C07" role="doc-biblioref">Skipsey, Stewart, Singer, &amp; Cutting, 2026</a>)</span>.</p>
 <p>During my tutorials in the past, students were exposed to a limited amount of pre-written code in the form of Jupyter notebooks only. By reading these Jupyter notebooks, the students were able to pick out relevant code cells and run them. They would know which chunks of code should be executed and in what order, so that no errors emerge showing undefined variables. But when students copy chunks of code from the sample file to their <em>own</em> notebook, renaming variables is often required.</p>
 <p>Another issue is lexical scoping. Being more acquainted to “physical” objects rather than information “pieces”, CivEng students would insist on using different names for variables appearing in both the inner and outer scopes despite the fact that these names would not conflict. This is reasonable for array data types, as in the case below, where the CivEng student creates a <code>zb_init</code> variable to store the initial state of the system (and the use of <code>copy()</code> to avoid the potential issues with using matrix views mentioned above). However, the situation is different for single numbers (scalars). Consider a variable for the characteristic “near-bed” flow velocity, <code>Uf</code>, which is created outside and being updated inside the function body, without affecting its original value.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9" data-lst-cap="Lexical scoping-aware example"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1"></a>zb <span class="op">=</span> np.zeros((nx,ny))</span>
-<span id="cb9-2"><a href="#cb9-2"></a>zb_init <span class="op">=</span> np.copy(zb)  <span class="co"># initial value</span></span>
-<span id="cb9-3"><a href="#cb9-3"></a>dt <span class="op">=</span> <span class="fl">2.0</span>  <span class="co"># const param</span></span>
-<span id="cb9-4"><a href="#cb9-4"></a>S <span class="op">=</span> <span class="fl">1E-4</span>  <span class="co"># const param</span></span>
-<span id="cb9-5"><a href="#cb9-5"></a>zs <span class="op">=</span> <span class="fl">1.0</span>  <span class="co"># const state variable</span></span>
-<span id="cb9-6"><a href="#cb9-6"></a>Uf <span class="op">=</span> np.sqrt(<span class="fl">9.81</span> <span class="op">*</span> zs <span class="op">*</span> S)</span>
-<span id="cb9-7"><a href="#cb9-7"></a></span>
-<span id="cb9-8"><a href="#cb9-8"></a></span>
-<span id="cb9-9"><a href="#cb9-9"></a><span class="kw">def</span> evolve():</span>
-<span id="cb9-10"><a href="#cb9-10"></a>  <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>,nx): </span>
-<span id="cb9-11"><a href="#cb9-11"></a>    <span class="cf">for</span> j <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>,ny):</span>
-<span id="cb9-12"><a href="#cb9-12"></a>      zb[i][j] <span class="op">+=</span> dzbdt[i][j] <span class="op">*</span> dt</span>
-<span id="cb9-13"><a href="#cb9-13"></a>  </span>
-<span id="cb9-14"><a href="#cb9-14"></a>  Uf <span class="op">=</span> np.sqrt(<span class="fl">9.81</span> <span class="op">*</span> (zs <span class="op">-</span> zb.mean()) <span class="op">*</span> S)</span>
-<span id="cb9-15"><a href="#cb9-15"></a></span>
-<span id="cb9-16"><a href="#cb9-16"></a></span>
-<span id="cb9-17"><a href="#cb9-17"></a><span class="cf">for</span> _ <span class="kw">in</span> <span class="bu">range</span>(nt):</span>
-<span id="cb9-18"><a href="#cb9-18"></a>  evolve()</span>
-<span id="cb9-19"><a href="#cb9-19"></a></span>
-<span id="cb9-20"><a href="#cb9-20"></a></span>
-<span id="cb9-21"><a href="#cb9-21"></a><span class="bu">print</span>(<span class="st">'Initial zb:'</span>, zb_init)</span>
-<span id="cb9-22"><a href="#cb9-22"></a><span class="bu">print</span>(<span class="st">'Initial Uf:'</span>, Uf)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9" data-lst-cap="Lexical scoping-aware example"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-label="1"></a>zb <span class="op">=</span> np.zeros((nx,ny))</span>
+<span id="cb9-2"><a href="#cb9-2" aria-label="2"></a>zb_init <span class="op">=</span> np.copy(zb)  <span class="co"># initial value</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-label="3"></a>dt <span class="op">=</span> <span class="fl">2.0</span>  <span class="co"># const param</span></span>
+<span id="cb9-4"><a href="#cb9-4" aria-label="4"></a>S <span class="op">=</span> <span class="fl">1E-4</span>  <span class="co"># const param</span></span>
+<span id="cb9-5"><a href="#cb9-5" aria-label="5"></a>zs <span class="op">=</span> <span class="fl">1.0</span>  <span class="co"># const state variable</span></span>
+<span id="cb9-6"><a href="#cb9-6" aria-label="6"></a>Uf <span class="op">=</span> np.sqrt(<span class="fl">9.81</span> <span class="op">*</span> zs <span class="op">*</span> S)</span>
+<span id="cb9-7"><a href="#cb9-7" aria-label="7"></a></span>
+<span id="cb9-8"><a href="#cb9-8" aria-label="8"></a></span>
+<span id="cb9-9"><a href="#cb9-9" aria-label="9"></a><span class="kw">def</span> evolve():</span>
+<span id="cb9-10"><a href="#cb9-10" aria-label="10"></a>  <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>,nx): </span>
+<span id="cb9-11"><a href="#cb9-11" aria-label="11"></a>    <span class="cf">for</span> j <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>,ny):</span>
+<span id="cb9-12"><a href="#cb9-12" aria-label="12"></a>      zb[i][j] <span class="op">+=</span> dzbdt[i][j] <span class="op">*</span> dt</span>
+<span id="cb9-13"><a href="#cb9-13" aria-label="13"></a>  </span>
+<span id="cb9-14"><a href="#cb9-14" aria-label="14"></a>  Uf <span class="op">=</span> np.sqrt(<span class="fl">9.81</span> <span class="op">*</span> (zs <span class="op">-</span> zb.mean()) <span class="op">*</span> S)</span>
+<span id="cb9-15"><a href="#cb9-15" aria-label="15"></a></span>
+<span id="cb9-16"><a href="#cb9-16" aria-label="16"></a></span>
+<span id="cb9-17"><a href="#cb9-17" aria-label="17"></a><span class="cf">for</span> _ <span class="kw">in</span> <span class="bu">range</span>(nt):</span>
+<span id="cb9-18"><a href="#cb9-18" aria-label="18"></a>  evolve()</span>
+<span id="cb9-19"><a href="#cb9-19" aria-label="19"></a></span>
+<span id="cb9-20"><a href="#cb9-20" aria-label="20"></a></span>
+<span id="cb9-21"><a href="#cb9-21" aria-label="21"></a><span class="bu">print</span>(<span class="st">'Initial zb:'</span>, zb_init)</span>
+<span id="cb9-22"><a href="#cb9-22" aria-label="22"></a><span class="bu">print</span>(<span class="st">'Initial Uf:'</span>, Uf)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="code-development" class="level2">
 <h2 class="anchored" data-anchor-id="code-development">Code Development</h2>
@@ -933,24 +928,24 @@ Figure&nbsp;39.3: Lattice 2
 <h2 class="anchored" data-anchor-id="generalisation">Generalisation</h2>
 <p>CivEng students understand the use of functions and are adept in translating formulation of various calculation routines into functions. So that should be enough for generalising code, shouldn’t it? During a practice session, after having students estimate the derivative <span class="math inline">\(f'(x_0)\)</span> for the specific functions <span class="math inline">\(f(x) = x^2\)</span> and <span class="math inline">\(f(x) = \cos(x)\)</span> with finite differences, I required them to generalise their <code>deriv_*</code> function to accept any mathematical function. Well, how can we do that? — they doubted, until I showed that we can just pass the function under investigation as one of the inputs of the function <code>deriv</code> (see the Julia code below) — a first step toward functional programming.</p>
 <p><strong>Student’s version</strong></p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10" data-lst-cap="Student's version"><pre class="sourceCode numberSource julia number-lines code-with-copy"><code class="sourceCode julia"><span id="cb10-1"><a href="#cb10-1"></a>deriv_sq <span class="op">=</span> <span class="kw">function</span>(o, h)</span>
-<span id="cb10-2"><a href="#cb10-2"></a>  ((o <span class="op">+</span> h)<span class="op">^</span><span class="fl">2</span> <span class="op">-</span> (o <span class="op">-</span> h)<span class="op">^</span><span class="fl">2</span>) <span class="op">/</span> <span class="fl">2</span>h</span>
-<span id="cb10-3"><a href="#cb10-3"></a><span class="kw">end</span></span>
-<span id="cb10-4"><a href="#cb10-4"></a></span>
-<span id="cb10-5"><a href="#cb10-5"></a>deriv_cos <span class="op">=</span> <span class="kw">function</span>(o, h)</span>
-<span id="cb10-6"><a href="#cb10-6"></a>  (<span class="fu">cos</span>(o <span class="op">+</span> h) <span class="op">-</span> <span class="fu">cos</span>(o <span class="op">-</span> h)) <span class="op">/</span> <span class="fl">2</span>h</span>
-<span id="cb10-7"><a href="#cb10-7"></a><span class="kw">end</span></span>
-<span id="cb10-8"><a href="#cb10-8"></a></span>
-<span id="cb10-9"><a href="#cb10-9"></a><span class="fu">deriv_sq</span>(<span class="fl">0</span>, <span class="fl">1E-3</span>)</span>
-<span id="cb10-10"><a href="#cb10-10"></a><span class="fu">deriv_cos</span>(<span class="fl">0</span>, <span class="fl">1E-3</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10" data-lst-cap="Student's version"><pre class="sourceCode numberSource julia number-lines code-with-copy"><code class="sourceCode julia"><span id="cb10-1"><a href="#cb10-1" aria-label="1"></a>deriv_sq <span class="op">=</span> <span class="kw">function</span>(o, h)</span>
+<span id="cb10-2"><a href="#cb10-2" aria-label="2"></a>  ((o <span class="op">+</span> h)<span class="op">^</span><span class="fl">2</span> <span class="op">-</span> (o <span class="op">-</span> h)<span class="op">^</span><span class="fl">2</span>) <span class="op">/</span> <span class="fl">2</span>h</span>
+<span id="cb10-3"><a href="#cb10-3" aria-label="3"></a><span class="kw">end</span></span>
+<span id="cb10-4"><a href="#cb10-4" aria-label="4"></a></span>
+<span id="cb10-5"><a href="#cb10-5" aria-label="5"></a>deriv_cos <span class="op">=</span> <span class="kw">function</span>(o, h)</span>
+<span id="cb10-6"><a href="#cb10-6" aria-label="6"></a>  (<span class="fu">cos</span>(o <span class="op">+</span> h) <span class="op">-</span> <span class="fu">cos</span>(o <span class="op">-</span> h)) <span class="op">/</span> <span class="fl">2</span>h</span>
+<span id="cb10-7"><a href="#cb10-7" aria-label="7"></a><span class="kw">end</span></span>
+<span id="cb10-8"><a href="#cb10-8" aria-label="8"></a></span>
+<span id="cb10-9"><a href="#cb10-9" aria-label="9"></a><span class="fu">deriv_sq</span>(<span class="fl">0</span>, <span class="fl">1E-3</span>)</span>
+<span id="cb10-10"><a href="#cb10-10" aria-label="10"></a><span class="fu">deriv_cos</span>(<span class="fl">0</span>, <span class="fl">1E-3</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p><strong>Recommended version</strong></p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11" data-lst-cap="Recommended version"><pre class="sourceCode numberSource julia number-lines code-with-copy"><code class="sourceCode julia"><span id="cb11-1"><a href="#cb11-1"></a><span class="co"># A generic central-difference approximation</span></span>
-<span id="cb11-2"><a href="#cb11-2"></a>deriv <span class="op">=</span> <span class="kw">function</span>(f, o, h)</span>
-<span id="cb11-3"><a href="#cb11-3"></a>  (<span class="fu">f</span>(o <span class="op">+</span> h) <span class="op">-</span> <span class="fu">f</span>(o <span class="op">-</span> h)) <span class="op">/</span> <span class="fl">2</span>h</span>
-<span id="cb11-4"><a href="#cb11-4"></a><span class="kw">end</span></span>
-<span id="cb11-5"><a href="#cb11-5"></a></span>
-<span id="cb11-6"><a href="#cb11-6"></a><span class="fu">deriv</span>(x <span class="op">-&gt;</span> x<span class="op">^</span><span class="fl">2</span>, <span class="fl">0</span>, <span class="fl">1E-3</span>)</span>
-<span id="cb11-7"><a href="#cb11-7"></a><span class="fu">deriv</span>(x <span class="op">-&gt;</span> <span class="fu">cos</span>(x), <span class="fl">0</span>, <span class="fl">1E-3</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11" data-lst-cap="Recommended version"><pre class="sourceCode numberSource julia number-lines code-with-copy"><code class="sourceCode julia"><span id="cb11-1"><a href="#cb11-1" aria-label="1"></a><span class="co"># A generic central-difference approximation</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-label="2"></a>deriv <span class="op">=</span> <span class="kw">function</span>(f, o, h)</span>
+<span id="cb11-3"><a href="#cb11-3" aria-label="3"></a>  (<span class="fu">f</span>(o <span class="op">+</span> h) <span class="op">-</span> <span class="fu">f</span>(o <span class="op">-</span> h)) <span class="op">/</span> <span class="fl">2</span>h</span>
+<span id="cb11-4"><a href="#cb11-4" aria-label="4"></a><span class="kw">end</span></span>
+<span id="cb11-5"><a href="#cb11-5" aria-label="5"></a></span>
+<span id="cb11-6"><a href="#cb11-6" aria-label="6"></a><span class="fu">deriv</span>(x <span class="op">-&gt;</span> x<span class="op">^</span><span class="fl">2</span>, <span class="fl">0</span>, <span class="fl">1E-3</span>)</span>
+<span id="cb11-7"><a href="#cb11-7" aria-label="7"></a><span class="fu">deriv</span>(x <span class="op">-&gt;</span> <span class="fu">cos</span>(x), <span class="fl">0</span>, <span class="fl">1E-3</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="tooling" class="level2">
 <h2 class="anchored" data-anchor-id="tooling">Tooling</h2>
