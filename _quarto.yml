@@ -34,6 +34,7 @@ format:
             body-width: 900px
             margin-width: 330px
             gutter-width: 30px
+        include-in-header: _plausible_snippet.html
     # pdf:
         # include-in-header: _theme/latex_preamble.tex
         # bibliography: references.bib
@@ -75,8 +76,8 @@ format:
         
 website:
   favicon: chapters/images/favicon.png
-  plausible-analytics:
-    path: _plausible_snippet.html
+  
+  
 
 book:
     title: "Teaching Programming Across Disciplines"
@@ -90,9 +91,9 @@ book:
 
         tools:
           - icon: download
-            menu:
-              - text: Download PDF
-                href: https://drive.google.com/file/d/1RXSGxyDcteqqrIdwouAdJ0ayOzNCw2cp/view?usp=sharing
+            href: https://books.ed.ac.uk/edinburgh-diamond/catalog/book/ed-9781836450795
+          - icon: github
+            href: https://github.com/teaching-programming/book
 
         pinned: true
     margin-header: _theme/_accessibility_sidebar.qmd
