@@ -25,6 +25,7 @@ format:
 
         csl: apa-6th-edition.csl
 
+        include-in-header: _plausible_snippet.html
         toc: true
         # toc-location: body # TODO NOT WORKING, puts TOC at start of each chapter
         include-before-body:
@@ -34,7 +35,6 @@ format:
             body-width: 900px
             margin-width: 330px
             gutter-width: 30px
-        include-in-header: _plausible_snippet.html
     # pdf:
         # include-in-header: _theme/latex_preamble.tex
         # bibliography: references.bib
@@ -77,12 +77,13 @@ format:
 website:
   favicon: chapters/images/favicon.png
   
-  
-
 book:
     title: "Teaching Programming Across Disciplines"
     favicon: chapters/images/favicon.png
 
+    # quarto team will fix this at some point, bot for now analytics are in format-html-header above
+    # plausible-analytics:
+    #   path: _plausible_snippet.html
     page-navigation: true
     sidebar:
         style: "docked"
