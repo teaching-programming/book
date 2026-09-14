@@ -35,6 +35,8 @@ format:
             body-width: 900px
             margin-width: 330px
             gutter-width: 30px
+        filters:
+          - _theme/filters/inner-refs-as-links.lua
     # pdf:
         # include-in-header: _theme/latex_preamble.tex
         # bibliography: references.bib
