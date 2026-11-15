@@ -36,7 +36,7 @@ author:
 
 In this chapter we present a conversation between three educators who have been using pair programming for many years. They will introduce the practice and answer frequently asked questions about using pair programming in education.
 
-You can also listen to the [audio podcast version of this interview](https://media.ed.ac.uk/media/1_xnjvow1u). Thank you to Miłosz Karpowicz and Jan Banaś for audio editing advice and help.
+You can also listen to the [audio podcast version of this interview on Spotify/iTunes/other](https://pairprogramming.ed.ac.uk/podcast-announcement/). Thank you to Miłosz Karpowicz and Jan Banaś for audio editing advice and help.
 
 ![Authors recording the podcast version. We rigged the space for optimal audio quality and comfort.](/chapters/images/C12_pair-programming-overview_podcast_recording.jpg "Authors recording the podcast version. We rigged the space for optimal audio quality and comfort."){#fig-c12-authors fig-alt="Photo of authors recoring the podcast. On the photo there are annotations about how we created a standing table from ironingboard, and used carpets and curtains to control external noise." width=70%}
 
